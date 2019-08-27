@@ -1,0 +1,8 @@
+<map id="WireCell::IFrameSink" name="WireCell::IFrameSink">
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_dump_frames.html" title="WireCell::Gen::DumpFrames" alt="" coords="5,483,196,509"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; IFrame \&gt;" alt="" coords="30,319,171,360"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_sink_node_base.html" title="WireCell::ISinkNodeBase" alt="" coords="15,244,186,271"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="43,169,158,196"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="25,80,176,121"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="35,5,166,32"/>
+</map>

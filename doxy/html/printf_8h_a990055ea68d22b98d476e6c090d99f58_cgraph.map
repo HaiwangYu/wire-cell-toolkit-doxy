@@ -1,0 +1,9 @@
+<map id="vprintf" name="vprintf">
+<area shape="rect" id="node2" href="$printf_8h.html#a8e76ca41df7c4f7dc305be2db6dbe298" title="vfprintf" alt="" coords="156,111,219,137"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#adb04322abcec003865318281a6952434" title="internal::printf" alt="" coords="338,5,439,32"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="311,188,467,215"/>
+<area shape="rect" id="node7" href="$printf_8h.html#a185a2245cd387f5548816f3f004f8e33" title="FMT_ENABLE_IF_T" alt="" coords="116,212,259,239"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#a14d62818b14fe8556fdb1718e12fd1ab" title="internal::check_format\l_string" alt="" coords="112,263,263,305"/>
+<area shape="rect" id="node5" href="$classinternal_1_1basic__buffer.html#abc95713c3873c5820f10105fe7c7af93" title="internal::basic_buffer\l::size" alt="" coords="317,57,460,98"/>
+<area shape="rect" id="node6" href="$classinternal_1_1basic__buffer.html#ab4a96d7d4394f469568d290fde5a75a7" title="internal::basic_buffer\l::data" alt="" coords="317,122,460,163"/>
+</map>

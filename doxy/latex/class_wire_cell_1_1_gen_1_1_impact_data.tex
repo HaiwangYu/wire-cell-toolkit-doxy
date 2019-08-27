@@ -1,0 +1,257 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_impact_data}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Impact\+Data Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_impact_data}\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+
+
+Information that has been collected at one impact position.  
+
+
+
+
+{\ttfamily \#include $<$Impact\+Data.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data}{Impact\+Data} $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a6a085b06dc01a1c1b1cd44fb4a034f83}{mutable\+\_\+pointer}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ const \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data}{Impact\+Data} $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a4fb9b565e1525c7ccde05ded67f467c2}{pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a7e5a8376b65210d695b42d0cd587372f}{Impact\+Data} (int impact)
+\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_ac43cc32d2ea372cfc6807a72774493ec}{add} (\hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac7fce7070c18877fa61abc26ad410ce9}{Gaussian\+Diffusion\+::pointer} diffusion)
+\item 
+const std\+::vector$<$ \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac7fce7070c18877fa61abc26ad410ce9}{Gaussian\+Diffusion\+::pointer} $>$ \& \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a90443997dcd6a04fafe2f1c1fbd90bce}{diffusions} () const
+\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a323019d50d44dea084f1691da674b755}{calculate} (int nticks) const
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \& \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a80d2f6a9ccdbba236c9e75360316b014}{waveform} () const
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Waveform\+::compseq\+\_\+t} \& \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_afb1c936f26afc1f968f727b3f72af2e4}{spectrum} () const
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \& \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a8a2ccedf08eab6acee300809308ef216}{weightform} () const
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Waveform\+::compseq\+\_\+t} \& \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a81cef30a2ec41d8b63f07267506582d1}{weight\+\_\+spectrum} () const
+\item 
+int \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a00db275ffb82f82831016b7ebaaed6e3}{impact\+\_\+number} () const
+\item 
+std\+::pair$<$ double, double $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_acccaa5e82f44245eaa0bfbd6f99eecce}{span} (double nsigma=0.\+0) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Information that has been collected at one impact position. 
+
+Definition at line 18 of file Impact\+Data.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_a6a085b06dc01a1c1b1cd44fb4a034f83}\label{class_wire_cell_1_1_gen_1_1_impact_data_a6a085b06dc01a1c1b1cd44fb4a034f83}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!mutable\+\_\+pointer@{mutable\+\_\+pointer}}
+\index{mutable\+\_\+pointer@{mutable\+\_\+pointer}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{mutable\+\_\+pointer}{mutable\_pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_gen_1_1_impact_data}{Impact\+Data}$>$ \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a6a085b06dc01a1c1b1cd44fb4a034f83}{Wire\+Cell\+::\+Gen\+::\+Impact\+Data\+::mutable\+\_\+pointer}}
+
+
+
+Definition at line 29 of file Impact\+Data.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_a4fb9b565e1525c7ccde05ded67f467c2}\label{class_wire_cell_1_1_gen_1_1_impact_data_a4fb9b565e1525c7ccde05ded67f467c2}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$const \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data}{Impact\+Data}$>$ \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a4fb9b565e1525c7ccde05ded67f467c2}{Wire\+Cell\+::\+Gen\+::\+Impact\+Data\+::pointer}}
+
+
+
+Definition at line 30 of file Impact\+Data.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_a7e5a8376b65210d695b42d0cd587372f}\label{class_wire_cell_1_1_gen_1_1_impact_data_a7e5a8376b65210d695b42d0cd587372f}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!Impact\+Data@{Impact\+Data}}
+\index{Impact\+Data@{Impact\+Data}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{Impact\+Data()}{ImpactData()}}
+{\footnotesize\ttfamily Gen\+::\+Impact\+Data\+::\+Impact\+Data (\begin{DoxyParamCaption}\item[{int}]{impact }\end{DoxyParamCaption})}
+
+Create an \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data}{Impact\+Data} associated with the given absolute impact position. See \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a00db275ffb82f82831016b7ebaaed6e3}{impact\+\_\+number()} for description of the impact. 
+
+Definition at line 8 of file Impact\+Data.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_ac43cc32d2ea372cfc6807a72774493ec}\label{class_wire_cell_1_1_gen_1_1_impact_data_ac43cc32d2ea372cfc6807a72774493ec}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!add@{add}}
+\index{add@{add}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Gen\+::\+Impact\+Data\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac7fce7070c18877fa61abc26ad410ce9}{Gaussian\+Diffusion\+::pointer}}]{diffusion }\end{DoxyParamCaption})}
+
+Add a (shared) \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion}{Gaussian\+Diffusion} object for consideration. If any are added which do not overlap with this \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data}{Impact\+Data}\textquotesingle{}s impact/pitch sample point then they will not contribute to the waveform nor spectrum at this impact. 
+
+Definition at line 12 of file Impact\+Data.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_a323019d50d44dea084f1691da674b755}\label{class_wire_cell_1_1_gen_1_1_impact_data_a323019d50d44dea084f1691da674b755}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!calculate@{calculate}}
+\index{calculate@{calculate}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily void Gen\+::\+Impact\+Data\+::calculate (\begin{DoxyParamCaption}\item[{int}]{nticks }\end{DoxyParamCaption}) const}
+
+The {\ttfamily calculate\+\_\+$\ast$()} methods finalize the underlying waveform data for this slice in time across the collected \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion}{Gaussian\+Diffusion} object.
+
+These methods are idempotent and one must be called before \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a80d2f6a9ccdbba236c9e75360316b014}{waveform()}, \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_afb1c936f26afc1f968f727b3f72af2e4}{spectrum()} and \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a8a2ccedf08eab6acee300809308ef216}{weightform()} return valid results. Calculate the impact data assuming a weighting, linear or constant (all = 0.\+5), and honoring the Gaussian distribution (diffusion). 
+
+Definition at line 37 of file Impact\+Data.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_data_a323019d50d44dea084f1691da674b755_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_data_a323019d50d44dea084f1691da674b755_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_a90443997dcd6a04fafe2f1c1fbd90bce}\label{class_wire_cell_1_1_gen_1_1_impact_data_a90443997dcd6a04fafe2f1c1fbd90bce}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!diffusions@{diffusions}}
+\index{diffusions@{diffusions}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{diffusions()}{diffusions()}}
+{\footnotesize\ttfamily const std\+::vector$<$\hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac7fce7070c18877fa61abc26ad410ce9}{Gaussian\+Diffusion\+::pointer}$>$\& Wire\+Cell\+::\+Gen\+::\+Impact\+Data\+::diffusions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 44 of file Impact\+Data.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_data_a90443997dcd6a04fafe2f1c1fbd90bce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_a00db275ffb82f82831016b7ebaaed6e3}\label{class_wire_cell_1_1_gen_1_1_impact_data_a00db275ffb82f82831016b7ebaaed6e3}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!impact\+\_\+number@{impact\+\_\+number}}
+\index{impact\+\_\+number@{impact\+\_\+number}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{impact\+\_\+number()}{impact\_number()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Gen\+::\+Impact\+Data\+::impact\+\_\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the associated impact number. This provides a sample count along the pitch direction starting from some externally defined pitch origin. 
+
+Definition at line 85 of file Impact\+Data.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_data_a00db275ffb82f82831016b7ebaaed6e3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_acccaa5e82f44245eaa0bfbd6f99eecce}\label{class_wire_cell_1_1_gen_1_1_impact_data_acccaa5e82f44245eaa0bfbd6f99eecce}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!span@{span}}
+\index{span@{span}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{span()}{span()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Gen\+::\+Impact\+Data\+::span (\begin{DoxyParamCaption}\item[{double}]{nsigma = {\ttfamily 0.0} }\end{DoxyParamCaption}) const}
+
+Return the max time range spanned by the difussions that cover this impact including a width expressed as a factor multiplied by the sigma of the time Gaussian. Set to 0.\+0 gives collective span of centers. 
+
+Definition at line 89 of file Impact\+Data.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_data_acccaa5e82f44245eaa0bfbd6f99eecce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_afb1c936f26afc1f968f727b3f72af2e4}\label{class_wire_cell_1_1_gen_1_1_impact_data_afb1c936f26afc1f968f727b3f72af2e4}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!spectrum@{spectrum}}
+\index{spectrum@{spectrum}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{spectrum()}{spectrum()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Waveform\+::compseq\+\_\+t} \& Gen\+::\+Impact\+Data\+::spectrum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the discrete Fourier transform of the above. See {\ttfamily \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a323019d50d44dea084f1691da674b755}{calculate()}}. 
+
+Definition at line 22 of file Impact\+Data.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_data_afb1c936f26afc1f968f727b3f72af2e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_a80d2f6a9ccdbba236c9e75360316b014}\label{class_wire_cell_1_1_gen_1_1_impact_data_a80d2f6a9ccdbba236c9e75360316b014}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!waveform@{waveform}}
+\index{waveform@{waveform}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{waveform()}{waveform()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \& Gen\+::\+Impact\+Data\+::waveform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the time domain waveform of drifted/diffused charge at this impact position. See {\ttfamily \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data_a323019d50d44dea084f1691da674b755}{calculate()}}. 
+
+Definition at line 17 of file Impact\+Data.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_data_a80d2f6a9ccdbba236c9e75360316b014_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_a81cef30a2ec41d8b63f07267506582d1}\label{class_wire_cell_1_1_gen_1_1_impact_data_a81cef30a2ec41d8b63f07267506582d1}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!weight\+\_\+spectrum@{weight\+\_\+spectrum}}
+\index{weight\+\_\+spectrum@{weight\+\_\+spectrum}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{weight\+\_\+spectrum()}{weight\_spectrum()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Waveform\+::compseq\+\_\+t} \& Gen\+::\+Impact\+Data\+::weight\+\_\+spectrum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 32 of file Impact\+Data.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_data_a81cef30a2ec41d8b63f07267506582d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_data_a8a2ccedf08eab6acee300809308ef216}\label{class_wire_cell_1_1_gen_1_1_impact_data_a8a2ccedf08eab6acee300809308ef216}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}!weightform@{weightform}}
+\index{weightform@{weightform}!Wire\+Cell\+::\+Gen\+::\+Impact\+Data@{Wire\+Cell\+::\+Gen\+::\+Impact\+Data}}
+\subsubsection{\texorpdfstring{weightform()}{weightform()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \& Gen\+::\+Impact\+Data\+::weightform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The \char`\"{}weightform\char`\"{} is a waveform of weights and gives, for each tick, a measure of where the charge is \char`\"{}concentrated\char`\"{} (by some measure) along the distance from the low impact number edge to the high impact number edge. In general, the weights depend on the local (microscopic) charge distribution as well as which {\ttfamily calculate\+\_\+$\ast$()} method was used. 
+
+Definition at line 27 of file Impact\+Data.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_data_a8a2ccedf08eab6acee300809308ef216_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_impact_data_8h}{Impact\+Data.\+h}\item 
+gen/src/\hyperlink{_impact_data_8cxx}{Impact\+Data.\+cxx}\end{DoxyCompactItemize}

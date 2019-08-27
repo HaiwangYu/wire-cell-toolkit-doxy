@@ -1,0 +1,8 @@
+<map id="spdlog::details::os::sleep_for_millis" name="spdlog::details::os::sleep_for_millis">
+<area shape="rect" id="node2" href="$classspdlog_1_1details_1_1file__helper.html#a8612066fd098080cc60e3aefed6a6085" title="spdlog::details::file\l_helper::open" alt="" coords="191,104,321,145"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#ae93e4792b76f73bb0be8e50b5c5e889b" title="spdlog::sinks::rotating\l_file_sink::flush_" alt="" coords="609,100,760,141"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1sinks_1_1android__sink.html#ab91c7aabd013d009ff811e6d34324128" title="spdlog::sinks::android\l_sink::sink_it_" alt="" coords="181,253,331,295"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1details_1_1file__helper.html#a21c688da7f241c53871b462c3a5c2c94" title="spdlog::details::file\l_helper::reopen" alt="" coords="405,5,535,47"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1sinks_1_1basic__file__sink.html#a799e95cc46fd69b03f4ef7497aa21436" title="spdlog::sinks::basic\l_file_sink::basic_file_sink" alt="" coords="385,71,555,112"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#a0e754181168b32e8b1b60b82c35179e8" title="spdlog::sinks::rotating\l_file_sink::rotating_file_sink" alt="" coords="379,136,561,177"/>
+</map>

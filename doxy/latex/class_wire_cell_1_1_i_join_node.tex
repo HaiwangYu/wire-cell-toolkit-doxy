@@ -1,0 +1,198 @@
+\hypertarget{class_wire_cell_1_1_i_join_node}{}\section{Wire\+Cell\+:\+:I\+Join\+Node$<$ Input\+Tuple, Output\+Type $>$ Class Template Reference}
+\label{class_wire_cell_1_1_i_join_node}\index{Wire\+Cell\+::\+I\+Join\+Node$<$ Input\+Tuple, Output\+Type $>$@{Wire\+Cell\+::\+I\+Join\+Node$<$ Input\+Tuple, Output\+Type $>$}}
+
+
+{\ttfamily \#include $<$I\+Join\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Join\+Node$<$ Input\+Tuple, Output\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_wire_cell_1_1_i_join_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Join\+Node$<$ Input\+Tuple, Output\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_wire_cell_1_1_i_join_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{struct_wire_cell_1_1tuple__helper}{tuple\+\_\+helper}$<$ Input\+Tuple $>$ \hyperlink{class_wire_cell_1_1_i_join_node_a7ca2ba39650f70ca5afe7d60ffcb662d}{port\+\_\+helper\+\_\+type}
+\item 
+typedef port\+\_\+helper\+\_\+type\+::template Wrapped\+Const$<$ std\+::shared\+\_\+ptr $>$\+::\hyperlink{namespace_wire_cell_a1f69a2598e2cdb413ffac1157b50670a}{type} \hyperlink{class_wire_cell_1_1_i_join_node_ae9ca74a75f29555ad20944d585f3b232}{input\+\_\+tuple\+\_\+type}
+\item 
+typedef \hyperlink{struct_wire_cell_1_1tuple__helper}{tuple\+\_\+helper}$<$ \hyperlink{class_wire_cell_1_1_i_join_node_ae9ca74a75f29555ad20944d585f3b232}{input\+\_\+tuple\+\_\+type} $>$ \hyperlink{class_wire_cell_1_1_i_join_node_ab2bee25205e04b7620344e5fccd27180}{input\+\_\+helper\+\_\+type}
+\item 
+typedef Output\+Type \hyperlink{class_wire_cell_1_1_i_join_node_a792ae482c431febcce7de37f0ab10d82}{output\+\_\+type}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ const Output\+Type $>$ \hyperlink{class_wire_cell_1_1_i_join_node_a7af33cc87415e15f0e7db2b083f3def7}{output\+\_\+pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_join_node_abc2bb6894c26c1a7bf6eac433a2fa25b}{$\sim$\+I\+Join\+Node} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_join_node_ab807b2f2f3abbfedc1c1292f8a9cd617}{operator()} (const \hyperlink{class_wire_cell_1_1_i_join_node_base_a5d53e0f00c30b472677c399c7d358fa3}{any\+\_\+vector} \&anyv, boost\+::any \&anyout)
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_join_node_aef2cc0875f30a08b19b0478c48c190cc}{operator()} (const \hyperlink{class_wire_cell_1_1_i_join_node_ae9ca74a75f29555ad20944d585f3b232}{input\+\_\+tuple\+\_\+type} \&intup, \hyperlink{class_wire_cell_1_1_i_join_node_a7af33cc87415e15f0e7db2b083f3def7}{output\+\_\+pointer} \&out)=0
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_join_node_a2a9b72881831998cb7c66825f2101abb}{input\+\_\+types} ()
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_join_node_abd32af32f2ed933356b4b3b7591cded3}{output\+\_\+types} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Input\+Tuple, typename Output\+Type$>$\newline
+class Wire\+Cell\+::\+I\+Join\+Node$<$ Input\+Tuple, Output\+Type $>$}
+
+
+
+Definition at line 42 of file I\+Join\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_ab2bee25205e04b7620344e5fccd27180}\label{class_wire_cell_1_1_i_join_node_ab2bee25205e04b7620344e5fccd27180}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}!input\+\_\+helper\+\_\+type@{input\+\_\+helper\+\_\+type}}
+\index{input\+\_\+helper\+\_\+type@{input\+\_\+helper\+\_\+type}!Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+helper\+\_\+type}{input\_helper\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Type$>$ \\
+typedef \hyperlink{struct_wire_cell_1_1tuple__helper}{tuple\+\_\+helper}$<$\hyperlink{class_wire_cell_1_1_i_join_node_ae9ca74a75f29555ad20944d585f3b232}{input\+\_\+tuple\+\_\+type}$>$ \hyperlink{class_wire_cell_1_1_i_join_node}{Wire\+Cell\+::\+I\+Join\+Node}$<$ Input\+Tuple, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_join_node_ab2bee25205e04b7620344e5fccd27180}{input\+\_\+helper\+\_\+type}}
+
+
+
+Definition at line 47 of file I\+Join\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_ae9ca74a75f29555ad20944d585f3b232}\label{class_wire_cell_1_1_i_join_node_ae9ca74a75f29555ad20944d585f3b232}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}!input\+\_\+tuple\+\_\+type@{input\+\_\+tuple\+\_\+type}}
+\index{input\+\_\+tuple\+\_\+type@{input\+\_\+tuple\+\_\+type}!Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+tuple\+\_\+type}{input\_tuple\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Type$>$ \\
+typedef port\+\_\+helper\+\_\+type\+::template Wrapped\+Const$<$std\+::shared\+\_\+ptr$>$\+::\hyperlink{namespace_wire_cell_a1f69a2598e2cdb413ffac1157b50670a}{type} \hyperlink{class_wire_cell_1_1_i_join_node}{Wire\+Cell\+::\+I\+Join\+Node}$<$ Input\+Tuple, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_join_node_ae9ca74a75f29555ad20944d585f3b232}{input\+\_\+tuple\+\_\+type}}
+
+
+
+Definition at line 46 of file I\+Join\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_a7af33cc87415e15f0e7db2b083f3def7}\label{class_wire_cell_1_1_i_join_node_a7af33cc87415e15f0e7db2b083f3def7}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}!output\+\_\+pointer@{output\+\_\+pointer}}
+\index{output\+\_\+pointer@{output\+\_\+pointer}!Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+pointer}{output\_pointer}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Type$>$ \\
+typedef std\+::shared\+\_\+ptr$<$const Output\+Type$>$ \hyperlink{class_wire_cell_1_1_i_join_node}{Wire\+Cell\+::\+I\+Join\+Node}$<$ Input\+Tuple, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_join_node_a7af33cc87415e15f0e7db2b083f3def7}{output\+\_\+pointer}}
+
+
+
+Definition at line 51 of file I\+Join\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_a792ae482c431febcce7de37f0ab10d82}\label{class_wire_cell_1_1_i_join_node_a792ae482c431febcce7de37f0ab10d82}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}!output\+\_\+type@{output\+\_\+type}}
+\index{output\+\_\+type@{output\+\_\+type}!Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+type}{output\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Type$>$ \\
+typedef Output\+Type \hyperlink{class_wire_cell_1_1_i_join_node}{Wire\+Cell\+::\+I\+Join\+Node}$<$ Input\+Tuple, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_join_node_a792ae482c431febcce7de37f0ab10d82}{output\+\_\+type}}
+
+
+
+Definition at line 49 of file I\+Join\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_a7ca2ba39650f70ca5afe7d60ffcb662d}\label{class_wire_cell_1_1_i_join_node_a7ca2ba39650f70ca5afe7d60ffcb662d}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}!port\+\_\+helper\+\_\+type@{port\+\_\+helper\+\_\+type}}
+\index{port\+\_\+helper\+\_\+type@{port\+\_\+helper\+\_\+type}!Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}}
+\subsubsection{\texorpdfstring{port\+\_\+helper\+\_\+type}{port\_helper\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Type$>$ \\
+typedef \hyperlink{struct_wire_cell_1_1tuple__helper}{tuple\+\_\+helper}$<$Input\+Tuple$>$ \hyperlink{class_wire_cell_1_1_i_join_node}{Wire\+Cell\+::\+I\+Join\+Node}$<$ Input\+Tuple, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_join_node_a7ca2ba39650f70ca5afe7d60ffcb662d}{port\+\_\+helper\+\_\+type}}
+
+
+
+Definition at line 45 of file I\+Join\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_abc2bb6894c26c1a7bf6eac433a2fa25b}\label{class_wire_cell_1_1_i_join_node_abc2bb6894c26c1a7bf6eac433a2fa25b}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}!````~I\+Join\+Node@{$\sim$\+I\+Join\+Node}}
+\index{````~I\+Join\+Node@{$\sim$\+I\+Join\+Node}!Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Join\+Node()}{~IJoinNode()}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Type$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_join_node}{Wire\+Cell\+::\+I\+Join\+Node}$<$ Input\+Tuple, Output\+Type $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_i_join_node}{I\+Join\+Node} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 53 of file I\+Join\+Node.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_a2a9b72881831998cb7c66825f2101abb}\label{class_wire_cell_1_1_i_join_node_a2a9b72881831998cb7c66825f2101abb}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}!input\+\_\+types@{input\+\_\+types}}
+\index{input\+\_\+types@{input\+\_\+types}!Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+types()}{input\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Type$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_join_node}{Wire\+Cell\+::\+I\+Join\+Node}$<$ Input\+Tuple, Output\+Type $>$\+::input\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_ae13fc140c8e815fac9327dfa5b43f853}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 70 of file I\+Join\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_ab807b2f2f3abbfedc1c1292f8a9cd617}\label{class_wire_cell_1_1_i_join_node_ab807b2f2f3abbfedc1c1292f8a9cd617}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Type$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_join_node}{Wire\+Cell\+::\+I\+Join\+Node}$<$ Input\+Tuple, Output\+Type $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_join_node_base_a5d53e0f00c30b472677c399c7d358fa3}{any\+\_\+vector} \&}]{anyin,  }\item[{boost\+::any \&}]{anyout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The calling signature\+: 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_join_node_base_a8d90a969ef56dbb0731e70b05a9d06f8}{Wire\+Cell\+::\+I\+Join\+Node\+Base}.
+
+
+
+Definition at line 55 of file I\+Join\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_aef2cc0875f30a08b19b0478c48c190cc}\label{class_wire_cell_1_1_i_join_node_aef2cc0875f30a08b19b0478c48c190cc}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Type$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_join_node}{Wire\+Cell\+::\+I\+Join\+Node}$<$ Input\+Tuple, Output\+Type $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_join_node_ae9ca74a75f29555ad20944d585f3b232}{input\+\_\+tuple\+\_\+type} \&}]{intup,  }\item[{\hyperlink{class_wire_cell_1_1_i_join_node_a7af33cc87415e15f0e7db2b083f3def7}{output\+\_\+pointer} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_abd32af32f2ed933356b4b3b7591cded3}\label{class_wire_cell_1_1_i_join_node_abd32af32f2ed933356b4b3b7591cded3}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}!output\+\_\+types@{output\+\_\+types}}
+\index{output\+\_\+types@{output\+\_\+types}!Wire\+Cell\+::\+I\+Join\+Node@{Wire\+Cell\+::\+I\+Join\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+types()}{output\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Type$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_join_node}{Wire\+Cell\+::\+I\+Join\+Node}$<$ Input\+Tuple, Output\+Type $>$\+::output\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 75 of file I\+Join\+Node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_join_node_8h}{I\+Join\+Node.\+h}\end{DoxyCompactItemize}

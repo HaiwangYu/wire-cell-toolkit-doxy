@@ -1,0 +1,5 @@
+<map id="spdlog::details::registry::get" name="spdlog::details::registry::get">
+<area shape="rect" id="node2" href="$namespacespdlog.html#a658d68d4ebdb11793b1e78582f108674" title="spdlog::get" alt="" coords="236,35,323,61"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a135f5624f6539777a653836901ec2e9a" title="internal::for_each" alt="" coords="371,35,493,61"/>
+<area shape="rect" id="node4" href="$structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d.html#a7d5dc29d45fc8f500059ce69020b2ea6" title="formatter\&lt; TupleT,\l Char, typename std\l::enable_if\&lt; fmt::is\l_tuple_like\&lt; TupleT \&gt;\l::value \&gt;::type \&gt;::format" alt="" coords="541,5,704,91"/>
+</map>

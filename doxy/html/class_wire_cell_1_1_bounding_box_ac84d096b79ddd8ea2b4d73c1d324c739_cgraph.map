@@ -1,0 +1,5 @@
+<map id="WireCell::BoundingBox::BoundingBox" name="WireCell::BoundingBox::BoundingBox">
+<area shape="rect" id="node2" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="243,5,336,32"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_bounding_box.html#a5d0ef4e3335f0aaf0a4a8fa577914539" title="Return true if point is inside bounding box. " alt="" coords="211,57,368,98"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_bounding_box.html#a142836bb402b1c40c0dd19dd4c88a548" title="WireCell::BoundingBox\l::empty" alt="" coords="416,57,573,98"/>
+</map>

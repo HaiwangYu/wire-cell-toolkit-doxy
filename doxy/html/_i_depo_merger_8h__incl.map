@@ -1,0 +1,13 @@
+<map id="iface/inc/WireCellIface/IDepoMerger.h" name="iface/inc/WireCellIface/IDepoMerger.h">
+<area shape="rect" id="node2" href="$_i_hydra_node_8h.html" title="WireCellIface/IHydraNode.h" alt="" coords="1347,95,1533,121"/>
+<area shape="rect" id="node16" href="$_i_depo_8h.html" title="WireCellIface/IDepo.h" alt="" coords="823,95,974,121"/>
+<area shape="rect" id="node3" href="$_i_node_8h.html" title="WireCellIface/INode.h" alt="" coords="1309,169,1459,196"/>
+<area shape="rect" id="node9" href="$_tuple_helpers_8h.html" title="WireCellUtil/TupleHelpers.h" alt="" coords="1677,169,1861,196"/>
+<area shape="rect" id="node4" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="1192,244,1371,271"/>
+<area shape="rect" id="node5" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="1202,326,1361,353"/>
+<area shape="rect" id="node17" href="$_i_data_8h.html" title="WireCellIface/IData.h" alt="" coords="918,244,1066,271"/>
+<area shape="rect" id="node18" href="$_point_8h.html" title="WireCellUtil/Point.h" alt="" coords="723,169,861,196"/>
+<area shape="rect" id="node29" href="$_units_8h.html" title="WireCellUtil/Units.h" alt="" coords="560,169,699,196"/>
+<area shape="rect" id="node19" href="$_d3_vector_8h.html" title="WireCellUtil/D3Vector.h" alt="" coords="141,244,304,271"/>
+<area shape="rect" id="node23" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="544,244,728,271"/>
+</map>

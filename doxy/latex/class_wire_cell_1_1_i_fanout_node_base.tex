@@ -1,0 +1,154 @@
+\hypertarget{class_wire_cell_1_1_i_fanout_node_base}{}\section{Wire\+Cell\+:\+:I\+Fanout\+Node\+Base Class Reference}
+\label{class_wire_cell_1_1_i_fanout_node_base}\index{Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}}
+
+
+{\ttfamily \#include $<$I\+Fanout\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Fanout\+Node\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_fanout_node_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Fanout\+Node\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{class_wire_cell_1_1_i_fanout_node_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_fanout_node_base}{I\+Fanout\+Node\+Base} $>$ \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a0c125eb41bc2290d1ffd5d93ea0185ac}{pointer}
+\item 
+typedef std\+::vector$<$ boost\+::any $>$ \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a855b32ed7f2d37d84aaf21e94edeacc4}{any\+\_\+vector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a2f3f4b680932e70f5a04146d06a781ef}{$\sim$\+I\+Fanout\+Node\+Base} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a2d8314d252381eaeb96c43f312eda8b7}{operator()} (const boost\+::any \&anyin, \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a855b32ed7f2d37d84aaf21e94edeacc4}{any\+\_\+vector} \&anyout)=0
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a9532dcaebc70f1ecdfaf3526c32f8c40}{category} ()
+\begin{DoxyCompactList}\small\item\em Return the behavior category type. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_fanout_node_base_abda7275bd1a34eab0dfffa8dc29f3b61}{concurrency} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_fanout}{Fanout} nodes can usually do their thing stateless. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A node which accepts one object of the given Input\+Type and produces N of the given Output\+Type. 
+
+Definition at line 14 of file I\+Fanout\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_base_a855b32ed7f2d37d84aaf21e94edeacc4}\label{class_wire_cell_1_1_i_fanout_node_base_a855b32ed7f2d37d84aaf21e94edeacc4}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}!any\+\_\+vector@{any\+\_\+vector}}
+\index{any\+\_\+vector@{any\+\_\+vector}!Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}}
+\subsubsection{\texorpdfstring{any\+\_\+vector}{any\_vector}}
+{\footnotesize\ttfamily typedef std\+::vector$<$boost\+::any$>$ \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a855b32ed7f2d37d84aaf21e94edeacc4}{Wire\+Cell\+::\+I\+Fanout\+Node\+Base\+::any\+\_\+vector}}
+
+
+
+Definition at line 21 of file I\+Fanout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_base_a0c125eb41bc2290d1ffd5d93ea0185ac}\label{class_wire_cell_1_1_i_fanout_node_base_a0c125eb41bc2290d1ffd5d93ea0185ac}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_fanout_node_base}{I\+Fanout\+Node\+Base}$>$ \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a0c125eb41bc2290d1ffd5d93ea0185ac}{Wire\+Cell\+::\+I\+Fanout\+Node\+Base\+::pointer}}
+
+
+
+Definition at line 17 of file I\+Fanout\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_base_a2f3f4b680932e70f5a04146d06a781ef}\label{class_wire_cell_1_1_i_fanout_node_base_a2f3f4b680932e70f5a04146d06a781ef}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}!````~I\+Fanout\+Node\+Base@{$\sim$\+I\+Fanout\+Node\+Base}}
+\index{````~I\+Fanout\+Node\+Base@{$\sim$\+I\+Fanout\+Node\+Base}!Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Fanout\+Node\+Base()}{~IFanoutNodeBase()}}
+{\footnotesize\ttfamily I\+Fanout\+Node\+Base\+::$\sim$\+I\+Fanout\+Node\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 130 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_base_a9532dcaebc70f1ecdfaf3526c32f8c40}\label{class_wire_cell_1_1_i_fanout_node_base_a9532dcaebc70f1ecdfaf3526c32f8c40}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}!category@{category}}
+\index{category@{category}!Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}}
+\subsubsection{\texorpdfstring{category()}{category()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} Wire\+Cell\+::\+I\+Fanout\+Node\+Base\+::category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the behavior category type. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_node_a58c07f15b165e5fb33bbc7b2e047b39b}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 26 of file I\+Fanout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_base_abda7275bd1a34eab0dfffa8dc29f3b61}\label{class_wire_cell_1_1_i_fanout_node_base_abda7275bd1a34eab0dfffa8dc29f3b61}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}!concurrency@{concurrency}}
+\index{concurrency@{concurrency}!Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}}
+\subsubsection{\texorpdfstring{concurrency()}{concurrency()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Fanout\+Node\+Base\+::concurrency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_fanout}{Fanout} nodes can usually do their thing stateless. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_a87d2b7293da4f6955e389ac6a2011306}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 31 of file I\+Fanout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_base_a2d8314d252381eaeb96c43f312eda8b7}\label{class_wire_cell_1_1_i_fanout_node_base_a2d8314d252381eaeb96c43f312eda8b7}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Fanout\+Node\+Base@{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual bool Wire\+Cell\+::\+I\+Fanout\+Node\+Base\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::any \&}]{anyin,  }\item[{\hyperlink{class_wire_cell_1_1_i_fanout_node_base_a855b32ed7f2d37d84aaf21e94edeacc4}{any\+\_\+vector} \&}]{anyout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The calling signature\+: 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_i_fanout_node_a813e5346a910147df1d57d955c303129}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a813e5346a910147df1d57d955c303129}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Frame, I\+Frame, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a813e5346a910147df1d57d955c303129}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Blob\+Set\+::vector, I\+Blob\+Set, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a813e5346a910147df1d57d955c303129}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Slice, I\+Slice, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a813e5346a910147df1d57d955c303129}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Depo, I\+Depo, 0 $>$}, and \hyperlink{class_wire_cell_1_1_i_fanout_node_a813e5346a910147df1d57d955c303129}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Depo\+Set, I\+Depo\+Set, 0 $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_fanout_node_base_a2d8314d252381eaeb96c43f312eda8b7_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_fanout_node_8h}{I\+Fanout\+Node.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

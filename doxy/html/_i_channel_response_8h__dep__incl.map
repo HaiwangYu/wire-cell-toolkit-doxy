@@ -1,0 +1,10 @@
+<map id="iface/inc/WireCellIface/IChannelResponse.h" name="iface/inc/WireCellIface/IChannelResponse.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_per_channel_variation_8h.html" title="gen/inc/WireCellGen\l/PerChannelVariation.h" alt="" coords="235,95,391,136"/>
+<area shape="rect" id="node5" href="$_nominal_channel_response_8h.html" title="sigproc/inc/WireCellSigProc\l/NominalChannelResponse.h" alt="" coords="416,95,608,136"/>
+<area shape="rect" id="node7" href="$_per_channel_response_8h.html" title="sigproc/inc/WireCellSigProc\l/PerChannelResponse.h" alt="" coords="633,95,818,136"/>
+<area shape="rect" id="node9" href="$_omnibus_sig_proc_8cxx.html" title="sigproc/src/OmnibusSigProc.cxx" alt="" coords="843,102,1056,129"/>
+<area shape="rect" id="node4" href="$_per_channel_variation_8cxx.html" title="gen/src/PerChannelVariation.cxx" alt="" coords="181,191,395,218"/>
+<area shape="rect" id="node6" href="$_nominal_channel_response_8cxx.html" title="sigproc/src/NominalChannel\lResponse.cxx" alt="" coords="419,184,605,225"/>
+<area shape="rect" id="node8" href="$_per_channel_response_8cxx.html" title="sigproc/src/PerChannelResponse.cxx" alt="" coords="629,191,872,218"/>
+</map>

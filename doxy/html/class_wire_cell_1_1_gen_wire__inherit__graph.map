@@ -1,0 +1,4 @@
+<map id="WireCell::GenWire" name="WireCell::GenWire">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_wire.html" title="Interface to information about a physical wire segment. " alt="" coords="33,80,144,107"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_data.html" title="WireCell::IData\&lt; IWire \&gt;" alt="" coords="5,5,172,32"/>
+</map>

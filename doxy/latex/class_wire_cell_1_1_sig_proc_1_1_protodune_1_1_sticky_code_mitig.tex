@@ -1,0 +1,159 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Protodune\+:\+:Sticky\+Code\+Mitig Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}}
+
+
+{\ttfamily \#include $<$Protodune.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Protodune\+:\+:Sticky\+Code\+Mitig\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Protodune\+:\+:Sticky\+Code\+Mitig\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_ae8377478ef6da491ced84f14b87f2127}{Sticky\+Code\+Mitig} (const std\+::string \&anode\+\_\+tn=\char`\"{}Anode\+Plane\char`\"{}, const std\+::string \&noisedb=\char`\"{}Omni\+Channel\+Noise\+DB\char`\"{}, float stky\+\_\+sig\+\_\+like\+\_\+val=15.\+0, float stky\+\_\+sig\+\_\+like\+\_\+rms=2.\+0, int stky\+\_\+max\+\_\+len=5)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_ad6d860f39562b48b523c376390a247e8}{$\sim$\+Sticky\+Code\+Mitig} ()
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a158d7c7d804ad6548383fedba2d3f115}{apply} (int channel, \hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&sig) const
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a59d9c2567caa4f84b0e1a2cba57c0b6d}{apply} (\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t} \&chansig) const
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a26422e4f93a396fa3e72809377ed4567}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_aa42dce81ba4e7dad67cc5653c9a8249f}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Microboone/\+Proto\+D\+U\+NE style noise subtraction.
+
+Fixme\+: in principle, this class could be general purpose for other detectors. However, it uses the functions above which hard code microboone-\/isms. If those microboone/protodune-\/specific parameters can be pulled out to a higher layer then this class can become generic and move outside of this file. 
+
+Definition at line 61 of file Protodune.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_ae8377478ef6da491ced84f14b87f2127}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_ae8377478ef6da491ced84f14b87f2127}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}!Sticky\+Code\+Mitig@{Sticky\+Code\+Mitig}}
+\index{Sticky\+Code\+Mitig@{Sticky\+Code\+Mitig}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}}
+\subsubsection{\texorpdfstring{Sticky\+Code\+Mitig()}{StickyCodeMitig()}}
+{\footnotesize\ttfamily Protodune\+::\+Sticky\+Code\+Mitig\+::\+Sticky\+Code\+Mitig (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{anode\+\_\+tn = {\ttfamily \char`\"{}AnodePlane\char`\"{}},  }\item[{const std\+::string \&}]{noisedb = {\ttfamily \char`\"{}OmniChannelNoiseDB\char`\"{}},  }\item[{float}]{stky\+\_\+sig\+\_\+like\+\_\+val = {\ttfamily 15.0},  }\item[{float}]{stky\+\_\+sig\+\_\+like\+\_\+rms = {\ttfamily 2.0},  }\item[{int}]{stky\+\_\+max\+\_\+len = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 621 of file Protodune.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_ad6d860f39562b48b523c376390a247e8}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_ad6d860f39562b48b523c376390a247e8}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}!````~Sticky\+Code\+Mitig@{$\sim$\+Sticky\+Code\+Mitig}}
+\index{````~Sticky\+Code\+Mitig@{$\sim$\+Sticky\+Code\+Mitig}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}}
+\subsubsection{\texorpdfstring{$\sim$\+Sticky\+Code\+Mitig()}{~StickyCodeMitig()}}
+{\footnotesize\ttfamily Protodune\+::\+Sticky\+Code\+Mitig\+::$\sim$\+Sticky\+Code\+Mitig (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 631 of file Protodune.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a158d7c7d804ad6548383fedba2d3f115}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a158d7c7d804ad6548383fedba2d3f115}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig\+::apply (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&}]{sig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Filter in place the signal {\ttfamily sig} from given {\ttfamily channel}. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_filter_a6981186ee38a4b9b66e16c0d9b376b08}{Wire\+Cell\+::\+I\+Channel\+Filter}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a158d7c7d804ad6548383fedba2d3f115_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a59d9c2567caa4f84b0e1a2cba57c0b6d}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a59d9c2567caa4f84b0e1a2cba57c0b6d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} Protodune\+::\+Sticky\+Code\+Mitig\+::apply (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t} \&}]{chansig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Filter in place a group of signals together. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_filter_a47554d77b1dca5596dc61e2221e0a137}{Wire\+Cell\+::\+I\+Channel\+Filter}.
+
+
+
+Definition at line 770 of file Protodune.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a26422e4f93a396fa3e72809377ed4567}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a26422e4f93a396fa3e72809377ed4567}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Protodune\+::\+Sticky\+Code\+Mitig\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 635 of file Protodune.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_aa42dce81ba4e7dad67cc5653c9a8249f}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_aa42dce81ba4e7dad67cc5653c9a8249f}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Protodune\+::\+Sticky\+Code\+Mitig\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 675 of file Protodune.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_aa42dce81ba4e7dad67cc5653c9a8249f_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_protodune_8h}{Protodune.\+h}\item 
+sigproc/src/\hyperlink{_protodune_8cxx}{Protodune.\+cxx}\end{DoxyCompactItemize}

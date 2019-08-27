@@ -1,0 +1,8 @@
+<map id="WireCell::RayGrid::Tiling::operator()" name="WireCell::RayGrid::Tiling::operator()">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#a4319dbeecdffdfe805f768530e0cbe9f" title="WireCell::RayGrid::\lActivity::make_strips" alt="" coords="189,104,335,145"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#aae8ad1d5d95c9f5f4668975db2b68f3b" title="WireCell::RayGrid::\lActivity::active_ranges" alt="" coords="383,71,537,112"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#a08432ca0d7411ba1c990e2e53b46975d" title="WireCell::RayGrid::\lActivity::make_strip" alt="" coords="391,136,529,177"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#acb7cccddf07994a3bdc300dfb818dbf8" title="WireCell::RayGrid::\lActivity::end" alt="" coords="587,5,723,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#abb7e7e8dd7757d7efbd31b3f85f2a69a" title="WireCell::RayGrid::\lActivity::begin" alt="" coords="587,71,723,112"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#add0847697b47de9b2e1c6c6d46cc31e7" title="WireCell::RayGrid::\lActivity::pitch_index" alt="" coords="585,136,725,177"/>
+</map>

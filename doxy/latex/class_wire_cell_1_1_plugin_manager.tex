@@ -1,0 +1,120 @@
+\hypertarget{class_wire_cell_1_1_plugin_manager}{}\section{Wire\+Cell\+:\+:Plugin\+Manager Class Reference}
+\label{class_wire_cell_1_1_plugin_manager}\index{Wire\+Cell\+::\+Plugin\+Manager@{Wire\+Cell\+::\+Plugin\+Manager}}
+
+
+{\ttfamily \#include $<$Plugin\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_plugin}{Plugin} $\ast$ \hyperlink{class_wire_cell_1_1_plugin_manager_a91f5a66757079562b579ef7eae374c6d}{add} (const std\+::string \&plugin\+\_\+name, const std\+::string \&libname=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Add a plugin. If libname is not given, try to derive it. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_plugin}{Plugin} $\ast$ \hyperlink{class_wire_cell_1_1_plugin_manager_a0a1c54eebefd68844a29101629b70f6e}{get} (const std\+::string \&plugin\+\_\+name)
+\item 
+\hyperlink{class_wire_cell_1_1_plugin}{Plugin} $\ast$ \hyperlink{class_wire_cell_1_1_plugin_manager_ad83fad032405351bde15ad4abeeef819}{find} (const std\+::string \&symbol\+\_\+name)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_wire_cell_1_1_plugin_manager}{Plugin\+Manager} \& \hyperlink{class_wire_cell_1_1_plugin_manager_aa1a081d67e99b8ef796b879e450fc8e0}{instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is meant to be used from a \hyperlink{class_wire_cell_1_1_singleton}{Wire\+Cell\+::\+Singleton}. 
+
+Definition at line 32 of file Plugin\+Manager.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_plugin_manager_a91f5a66757079562b579ef7eae374c6d}\label{class_wire_cell_1_1_plugin_manager_a91f5a66757079562b579ef7eae374c6d}} 
+\index{Wire\+Cell\+::\+Plugin\+Manager@{Wire\+Cell\+::\+Plugin\+Manager}!add@{add}}
+\index{add@{add}!Wire\+Cell\+::\+Plugin\+Manager@{Wire\+Cell\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_plugin}{Wire\+Cell\+::\+Plugin} $\ast$ Wire\+Cell\+::\+Plugin\+Manager\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{plugin\+\_\+name,  }\item[{const std\+::string \&}]{libname = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Add a plugin. If libname is not given, try to derive it. 
+
+
+
+Definition at line 32 of file Plugin\+Manager.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_plugin_manager_a91f5a66757079562b579ef7eae374c6d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_plugin_manager_a91f5a66757079562b579ef7eae374c6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_plugin_manager_ad83fad032405351bde15ad4abeeef819}\label{class_wire_cell_1_1_plugin_manager_ad83fad032405351bde15ad4abeeef819}} 
+\index{Wire\+Cell\+::\+Plugin\+Manager@{Wire\+Cell\+::\+Plugin\+Manager}!find@{find}}
+\index{find@{find}!Wire\+Cell\+::\+Plugin\+Manager@{Wire\+Cell\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_plugin}{Wire\+Cell\+::\+Plugin} $\ast$ Wire\+Cell\+::\+Plugin\+Manager\+::find (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file Plugin\+Manager.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_plugin_manager_ad83fad032405351bde15ad4abeeef819_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_plugin_manager_ad83fad032405351bde15ad4abeeef819_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_plugin_manager_a0a1c54eebefd68844a29101629b70f6e}\label{class_wire_cell_1_1_plugin_manager_a0a1c54eebefd68844a29101629b70f6e}} 
+\index{Wire\+Cell\+::\+Plugin\+Manager@{Wire\+Cell\+::\+Plugin\+Manager}!get@{get}}
+\index{get@{get}!Wire\+Cell\+::\+Plugin\+Manager@{Wire\+Cell\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_plugin}{Wire\+Cell\+::\+Plugin} $\ast$ Wire\+Cell\+::\+Plugin\+Manager\+::get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{plugin\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file Plugin\+Manager.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_plugin_manager_aa1a081d67e99b8ef796b879e450fc8e0}\label{class_wire_cell_1_1_plugin_manager_aa1a081d67e99b8ef796b879e450fc8e0}} 
+\index{Wire\+Cell\+::\+Plugin\+Manager@{Wire\+Cell\+::\+Plugin\+Manager}!instance@{instance}}
+\index{instance@{instance}!Wire\+Cell\+::\+Plugin\+Manager@{Wire\+Cell\+::\+Plugin\+Manager}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_plugin_manager}{Plugin\+Manager} \& Wire\+Cell\+::\+Plugin\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 26 of file Plugin\+Manager.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_plugin_manager_aa1a081d67e99b8ef796b879e450fc8e0_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_plugin_manager_8h}{Plugin\+Manager.\+h}\item 
+util/src/\hyperlink{_plugin_manager_8cxx}{Plugin\+Manager.\+cxx}\end{DoxyCompactItemize}

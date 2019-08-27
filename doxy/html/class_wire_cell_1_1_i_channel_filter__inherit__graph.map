@@ -1,0 +1,11 @@
+<map id="WireCell::IChannelFilter" name="WireCell::IChannelFilter">
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_a_d_c_bit_shift.html" title="WireCell::SigProc::\lMicroboone::ADCBitShift" alt="" coords="611,5,780,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub.html" title="WireCell::SigProc::\lMicroboone::CoherentNoiseSub" alt="" coords="592,71,799,112"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_noise.html" title="WireCell::SigProc::\lMicroboone::OneChannelNoise" alt="" coords="594,136,797,177"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status.html" title="WireCell::SigProc::\lMicroboone::OneChannelStatus" alt="" coords="592,201,799,243"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise.html" title="WireCell::SigProc::\lProtodune::OneChannelNoise" alt="" coords="598,267,793,308"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_rel_gain_calib.html" title="WireCell::SigProc::\lProtodune::RelGainCalib" alt="" coords="612,332,779,373"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig.html" title="WireCell::SigProc::\lProtodune::StickyCodeMitig" alt="" coords="603,397,788,439"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelFilter \&gt;" alt="" coords="184,201,335,243"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,209,136,235"/>
+</map>

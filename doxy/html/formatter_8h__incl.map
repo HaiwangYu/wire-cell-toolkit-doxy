@@ -1,0 +1,10 @@
+<map id="util/inc/spdlog/formatter.h" name="util/inc/spdlog/formatter.h">
+<area shape="rect" id="node2" href="$fmt_8h.html" title="fmt/fmt.h" alt="" coords="263,326,337,353"/>
+<area shape="rect" id="node17" href="$log__msg_8h.html" title="spdlog/details/log\l_msg.h" alt="" coords="1457,80,1580,121"/>
+<area shape="rect" id="node3" href="$core_8h.html" title="bundled/core.h" alt="" coords="135,483,241,509"/>
+<area shape="rect" id="node10" href="$format_8h.html" title="bundled/format.h" alt="" coords="235,408,354,435"/>
+<area shape="rect" id="node18" href="$common_8h.html" title="spdlog/common.h" alt="" coords="815,244,940,271"/>
+<area shape="rect" id="node26" href="$os_8h.html" title="spdlog/details/os.h" alt="" coords="1453,169,1584,196"/>
+<area shape="rect" id="node19" href="$tweakme_8h.html" title="spdlog/tweakme.h" alt="" coords="473,326,601,353"/>
+<area shape="rect" id="node25" href="$null__mutex_8h.html" title="spdlog/details/null\l_mutex.h" alt="" coords="626,319,753,360"/>
+</map>

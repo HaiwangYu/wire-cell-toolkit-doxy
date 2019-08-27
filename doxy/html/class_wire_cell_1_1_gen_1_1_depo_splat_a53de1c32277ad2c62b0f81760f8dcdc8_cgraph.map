@@ -1,0 +1,9 @@
+<map id="WireCell::Gen::DepoSplat::process_face" name="WireCell::Gen::DepoSplat::process_face">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_pimpos.html#ac2d0a4ce2474237948537f0e4bd358f5" title="WireCell::Pimpos::region\l_binning" alt="" coords="234,5,401,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_pimpos.html#abeadf8b503815d0dbfaf5d94d245b5bd" title="WireCell::Pimpos::distance" alt="" coords="227,71,408,98"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_binning.html#a826dbaafb7bc50a2c2767cc4deb190f0" title="WireCell::Binning::bin" alt="" coords="243,122,391,149"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_pimpos.html#a0eed2ce13249e92b343e94e0ecaa3953" title="WireCell::Pimpos::axis" alt="" coords="456,71,612,98"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_pimpos.html#a291dda9270d9feb2a0f8afa18e4cf9e2" title="Return the vector from the origin to the given point. " alt="" coords="895,21,1069,47"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_d3_vector.html#ad116deec8357b27dcad6be127c209490" title="Return the dot product of this vector and the other. " alt="" coords="901,97,1063,123"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_pimpos.html#a0d2db56d6956aee06d0218ee50400f25" title="WireCell::Pimpos::transform" alt="" coords="660,71,847,98"/>
+</map>

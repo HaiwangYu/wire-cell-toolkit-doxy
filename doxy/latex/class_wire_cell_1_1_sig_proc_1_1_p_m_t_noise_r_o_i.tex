@@ -1,0 +1,512 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:P\+M\+T\+Noise\+R\+OI Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+
+
+{\ttfamily \#include $<$P\+M\+T\+Noise\+R\+O\+I.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a86b042170d45fcc2da43e249f266782a}{P\+M\+T\+Noise\+R\+OI} (int start\+\_\+bin, int end\+\_\+bin, int peak, int channel, float peak\+\_\+height)
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ae6cc0bab207dcb5653efa9f023ad0cdc}{$\sim$\+P\+M\+T\+Noise\+R\+OI} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a4122e466578dee161bee0219bceec33e}{get\+\_\+start\+\_\+bin} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a33db997dd906db5cb63ba630e9d0f882}{get\+\_\+end\+\_\+bin} ()
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ab7da8d38dd37b3f81e064a9970e581f8}{insert\+\_\+peak} (int peak)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a97674ed5490b45c6e8e72292ee4012e7}{insert\+\_\+uwires} (int wire\+\_\+no, float peak\+\_\+height)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a117ae1e99cce01f1c72a55905f7fcf7e}{insert\+\_\+vwires} (int wire\+\_\+no, float peak\+\_\+height)
+\item 
+std\+::vector$<$ int $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a55cdf5dad6e7476bbb73226876feb55f}{get\+\_\+peaks} ()
+\item 
+std\+::vector$<$ int $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a56d725f413f496bd67f8cc8917fd5f2c}{get\+\_\+uwires} ()
+\item 
+std\+::vector$<$ int $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a388a75bac2d59d83ee61b7f33e8757a2}{get\+\_\+vwires} ()
+\item 
+std\+::vector$<$ int $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a37bf42499b39970780687fe960df6006}{get\+\_\+wwires} ()
+\item 
+std\+::map$<$ int, float $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a6810688bbdacd8489d7641a231f25c72}{get\+\_\+uwires\+\_\+peak\+\_\+heights} ()
+\item 
+std\+::map$<$ int, float $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a85ce56dcca5e91eb335e8c12b984bc4d}{get\+\_\+vwires\+\_\+peak\+\_\+heights} ()
+\item 
+std\+::map$<$ int, float $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ac801578d1580a4d8eb0ba98b20f2191a}{get\+\_\+wwires\+\_\+peak\+\_\+heights} ()
+\item 
+float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a3a991d86acfa1be6a8070ac516a624c9}{get\+\_\+average\+\_\+uwires\+\_\+peak\+\_\+height} (int group)
+\item 
+float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_aeff495991c25c4ff4091eb839835e230}{get\+\_\+average\+\_\+vwires\+\_\+peak\+\_\+height} (int group)
+\item 
+float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a44c13f88197acd2204d17bc2b9b75f3e}{get\+\_\+max\+\_\+uwires\+\_\+peak\+\_\+height} (int group)
+\item 
+float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a5c9e02b024551af28776257cfb336f45}{get\+\_\+max\+\_\+vwires\+\_\+peak\+\_\+height} (int group)
+\item 
+float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a89da1079a85e1cfa87962daefc2d0266}{get\+\_\+average\+\_\+wwires\+\_\+peak\+\_\+height} ()
+\item 
+float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a9239f0b7d6fa6d9bb1c12129e7d34352}{get\+\_\+max\+\_\+wwires\+\_\+peak\+\_\+height} ()
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ad037eeda9c0e6e50ad4a57d731cb8f56}{get\+\_\+sorted\+\_\+uwires} ()
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a72a080e71cf66af837197e4aa1ca8060}{get\+\_\+sorted\+\_\+vwires} ()
+\item 
+std\+::vector$<$ int $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a7031b3d183118e24d277e7c8deb50a1d}{get\+\_\+sorted\+\_\+wwires} ()
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_adcf6d65537ca5b9853a3801251f97d8e}{sort\+\_\+wires} (int nwire=1)
+\item 
+bool \hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a4b2640ed0856098cada1ba918b1e53d6}{merge\+\_\+\+R\+OI} (\hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i}{P\+M\+T\+Noise\+R\+OI} \&R\+OI)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a86b042170d45fcc2da43e249f266782a}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a86b042170d45fcc2da43e249f266782a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!P\+M\+T\+Noise\+R\+OI@{P\+M\+T\+Noise\+R\+OI}}
+\index{P\+M\+T\+Noise\+R\+OI@{P\+M\+T\+Noise\+R\+OI}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{P\+M\+T\+Noise\+R\+O\+I()}{PMTNoiseROI()}}
+{\footnotesize\ttfamily P\+M\+T\+Noise\+R\+O\+I\+::\+P\+M\+T\+Noise\+R\+OI (\begin{DoxyParamCaption}\item[{int}]{start\+\_\+bin,  }\item[{int}]{end\+\_\+bin,  }\item[{int}]{peak,  }\item[{int}]{channel,  }\item[{float}]{peak\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ae6cc0bab207dcb5653efa9f023ad0cdc}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ae6cc0bab207dcb5653efa9f023ad0cdc}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!````~P\+M\+T\+Noise\+R\+OI@{$\sim$\+P\+M\+T\+Noise\+R\+OI}}
+\index{````~P\+M\+T\+Noise\+R\+OI@{$\sim$\+P\+M\+T\+Noise\+R\+OI}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{$\sim$\+P\+M\+T\+Noise\+R\+O\+I()}{~PMTNoiseROI()}}
+{\footnotesize\ttfamily P\+M\+T\+Noise\+R\+O\+I\+::$\sim$\+P\+M\+T\+Noise\+R\+OI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a3a991d86acfa1be6a8070ac516a624c9}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a3a991d86acfa1be6a8070ac516a624c9}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+average\+\_\+uwires\+\_\+peak\+\_\+height@{get\+\_\+average\+\_\+uwires\+\_\+peak\+\_\+height}}
+\index{get\+\_\+average\+\_\+uwires\+\_\+peak\+\_\+height@{get\+\_\+average\+\_\+uwires\+\_\+peak\+\_\+height}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+average\+\_\+uwires\+\_\+peak\+\_\+height()}{get\_average\_uwires\_peak\_height()}}
+{\footnotesize\ttfamily float P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+average\+\_\+uwires\+\_\+peak\+\_\+height (\begin{DoxyParamCaption}\item[{int}]{group }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a3a991d86acfa1be6a8070ac516a624c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_aeff495991c25c4ff4091eb839835e230}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_aeff495991c25c4ff4091eb839835e230}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+average\+\_\+vwires\+\_\+peak\+\_\+height@{get\+\_\+average\+\_\+vwires\+\_\+peak\+\_\+height}}
+\index{get\+\_\+average\+\_\+vwires\+\_\+peak\+\_\+height@{get\+\_\+average\+\_\+vwires\+\_\+peak\+\_\+height}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+average\+\_\+vwires\+\_\+peak\+\_\+height()}{get\_average\_vwires\_peak\_height()}}
+{\footnotesize\ttfamily float P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+average\+\_\+vwires\+\_\+peak\+\_\+height (\begin{DoxyParamCaption}\item[{int}]{group }\end{DoxyParamCaption})}
+
+
+
+Definition at line 107 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_aeff495991c25c4ff4091eb839835e230_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a89da1079a85e1cfa87962daefc2d0266}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a89da1079a85e1cfa87962daefc2d0266}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+average\+\_\+wwires\+\_\+peak\+\_\+height@{get\+\_\+average\+\_\+wwires\+\_\+peak\+\_\+height}}
+\index{get\+\_\+average\+\_\+wwires\+\_\+peak\+\_\+height@{get\+\_\+average\+\_\+wwires\+\_\+peak\+\_\+height}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+average\+\_\+wwires\+\_\+peak\+\_\+height()}{get\_average\_wwires\_peak\_height()}}
+{\footnotesize\ttfamily float P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+average\+\_\+wwires\+\_\+peak\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 53 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a89da1079a85e1cfa87962daefc2d0266_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a33db997dd906db5cb63ba630e9d0f882}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a33db997dd906db5cb63ba630e9d0f882}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+end\+\_\+bin@{get\+\_\+end\+\_\+bin}}
+\index{get\+\_\+end\+\_\+bin@{get\+\_\+end\+\_\+bin}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+end\+\_\+bin()}{get\_end\_bin()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+end\+\_\+bin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 15 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a33db997dd906db5cb63ba630e9d0f882_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a33db997dd906db5cb63ba630e9d0f882_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a44c13f88197acd2204d17bc2b9b75f3e}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a44c13f88197acd2204d17bc2b9b75f3e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+max\+\_\+uwires\+\_\+peak\+\_\+height@{get\+\_\+max\+\_\+uwires\+\_\+peak\+\_\+height}}
+\index{get\+\_\+max\+\_\+uwires\+\_\+peak\+\_\+height@{get\+\_\+max\+\_\+uwires\+\_\+peak\+\_\+height}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+max\+\_\+uwires\+\_\+peak\+\_\+height()}{get\_max\_uwires\_peak\_height()}}
+{\footnotesize\ttfamily float P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+max\+\_\+uwires\+\_\+peak\+\_\+height (\begin{DoxyParamCaption}\item[{int}]{group }\end{DoxyParamCaption})}
+
+
+
+Definition at line 68 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a44c13f88197acd2204d17bc2b9b75f3e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a5c9e02b024551af28776257cfb336f45}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a5c9e02b024551af28776257cfb336f45}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+max\+\_\+vwires\+\_\+peak\+\_\+height@{get\+\_\+max\+\_\+vwires\+\_\+peak\+\_\+height}}
+\index{get\+\_\+max\+\_\+vwires\+\_\+peak\+\_\+height@{get\+\_\+max\+\_\+vwires\+\_\+peak\+\_\+height}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+max\+\_\+vwires\+\_\+peak\+\_\+height()}{get\_max\_vwires\_peak\_height()}}
+{\footnotesize\ttfamily float P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+max\+\_\+vwires\+\_\+peak\+\_\+height (\begin{DoxyParamCaption}\item[{int}]{group }\end{DoxyParamCaption})}
+
+
+
+Definition at line 79 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a5c9e02b024551af28776257cfb336f45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a9239f0b7d6fa6d9bb1c12129e7d34352}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a9239f0b7d6fa6d9bb1c12129e7d34352}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+max\+\_\+wwires\+\_\+peak\+\_\+height@{get\+\_\+max\+\_\+wwires\+\_\+peak\+\_\+height}}
+\index{get\+\_\+max\+\_\+wwires\+\_\+peak\+\_\+height@{get\+\_\+max\+\_\+wwires\+\_\+peak\+\_\+height}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+max\+\_\+wwires\+\_\+peak\+\_\+height()}{get\_max\_wwires\_peak\_height()}}
+{\footnotesize\ttfamily float P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+max\+\_\+wwires\+\_\+peak\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 44 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a9239f0b7d6fa6d9bb1c12129e7d34352_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a55cdf5dad6e7476bbb73226876feb55f}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a55cdf5dad6e7476bbb73226876feb55f}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+peaks@{get\+\_\+peaks}}
+\index{get\+\_\+peaks@{get\+\_\+peaks}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+peaks()}{get\_peaks()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+peaks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a55cdf5dad6e7476bbb73226876feb55f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ad037eeda9c0e6e50ad4a57d731cb8f56}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ad037eeda9c0e6e50ad4a57d731cb8f56}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+sorted\+\_\+uwires@{get\+\_\+sorted\+\_\+uwires}}
+\index{get\+\_\+sorted\+\_\+uwires@{get\+\_\+sorted\+\_\+uwires}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+sorted\+\_\+uwires()}{get\_sorted\_uwires()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+sorted\+\_\+uwires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 44 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a72a080e71cf66af837197e4aa1ca8060}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a72a080e71cf66af837197e4aa1ca8060}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+sorted\+\_\+vwires@{get\+\_\+sorted\+\_\+vwires}}
+\index{get\+\_\+sorted\+\_\+vwires@{get\+\_\+sorted\+\_\+vwires}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+sorted\+\_\+vwires()}{get\_sorted\_vwires()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+sorted\+\_\+vwires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a7031b3d183118e24d277e7c8deb50a1d}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a7031b3d183118e24d277e7c8deb50a1d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+sorted\+\_\+wwires@{get\+\_\+sorted\+\_\+wwires}}
+\index{get\+\_\+sorted\+\_\+wwires@{get\+\_\+sorted\+\_\+wwires}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+sorted\+\_\+wwires()}{get\_sorted\_wwires()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+sorted\+\_\+wwires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 46 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a7031b3d183118e24d277e7c8deb50a1d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a4122e466578dee161bee0219bceec33e}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a4122e466578dee161bee0219bceec33e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+start\+\_\+bin@{get\+\_\+start\+\_\+bin}}
+\index{get\+\_\+start\+\_\+bin@{get\+\_\+start\+\_\+bin}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+start\+\_\+bin()}{get\_start\_bin()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+start\+\_\+bin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 14 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a4122e466578dee161bee0219bceec33e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a56d725f413f496bd67f8cc8917fd5f2c}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a56d725f413f496bd67f8cc8917fd5f2c}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+uwires@{get\+\_\+uwires}}
+\index{get\+\_\+uwires@{get\+\_\+uwires}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+uwires()}{get\_uwires()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+uwires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a6810688bbdacd8489d7641a231f25c72}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a6810688bbdacd8489d7641a231f25c72}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+uwires\+\_\+peak\+\_\+heights@{get\+\_\+uwires\+\_\+peak\+\_\+heights}}
+\index{get\+\_\+uwires\+\_\+peak\+\_\+heights@{get\+\_\+uwires\+\_\+peak\+\_\+heights}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+uwires\+\_\+peak\+\_\+heights()}{get\_uwires\_peak\_heights()}}
+{\footnotesize\ttfamily std\+::map$<$int,float$>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+uwires\+\_\+peak\+\_\+heights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a388a75bac2d59d83ee61b7f33e8757a2}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a388a75bac2d59d83ee61b7f33e8757a2}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+vwires@{get\+\_\+vwires}}
+\index{get\+\_\+vwires@{get\+\_\+vwires}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+vwires()}{get\_vwires()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+vwires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 26 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a85ce56dcca5e91eb335e8c12b984bc4d}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a85ce56dcca5e91eb335e8c12b984bc4d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+vwires\+\_\+peak\+\_\+heights@{get\+\_\+vwires\+\_\+peak\+\_\+heights}}
+\index{get\+\_\+vwires\+\_\+peak\+\_\+heights@{get\+\_\+vwires\+\_\+peak\+\_\+heights}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+vwires\+\_\+peak\+\_\+heights()}{get\_vwires\_peak\_heights()}}
+{\footnotesize\ttfamily std\+::map$<$int,float$>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+vwires\+\_\+peak\+\_\+heights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 30 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a37bf42499b39970780687fe960df6006}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a37bf42499b39970780687fe960df6006}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+wwires@{get\+\_\+wwires}}
+\index{get\+\_\+wwires@{get\+\_\+wwires}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+wwires()}{get\_wwires()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+wwires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 27 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a37bf42499b39970780687fe960df6006_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ac801578d1580a4d8eb0ba98b20f2191a}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ac801578d1580a4d8eb0ba98b20f2191a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!get\+\_\+wwires\+\_\+peak\+\_\+heights@{get\+\_\+wwires\+\_\+peak\+\_\+heights}}
+\index{get\+\_\+wwires\+\_\+peak\+\_\+heights@{get\+\_\+wwires\+\_\+peak\+\_\+heights}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+wwires\+\_\+peak\+\_\+heights()}{get\_wwires\_peak\_heights()}}
+{\footnotesize\ttfamily std\+::map$<$int,float$>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+O\+I\+::get\+\_\+wwires\+\_\+peak\+\_\+heights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 31 of file P\+M\+T\+Noise\+R\+O\+I.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ac801578d1580a4d8eb0ba98b20f2191a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ac801578d1580a4d8eb0ba98b20f2191a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ab7da8d38dd37b3f81e064a9970e581f8}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ab7da8d38dd37b3f81e064a9970e581f8}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!insert\+\_\+peak@{insert\+\_\+peak}}
+\index{insert\+\_\+peak@{insert\+\_\+peak}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{insert\+\_\+peak()}{insert\_peak()}}
+{\footnotesize\ttfamily void P\+M\+T\+Noise\+R\+O\+I\+::insert\+\_\+peak (\begin{DoxyParamCaption}\item[{int}]{peak }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ab7da8d38dd37b3f81e064a9970e581f8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_ab7da8d38dd37b3f81e064a9970e581f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a97674ed5490b45c6e8e72292ee4012e7}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a97674ed5490b45c6e8e72292ee4012e7}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!insert\+\_\+uwires@{insert\+\_\+uwires}}
+\index{insert\+\_\+uwires@{insert\+\_\+uwires}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{insert\+\_\+uwires()}{insert\_uwires()}}
+{\footnotesize\ttfamily void P\+M\+T\+Noise\+R\+O\+I\+::insert\+\_\+uwires (\begin{DoxyParamCaption}\item[{int}]{wire\+\_\+no,  }\item[{float}]{peak\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a97674ed5490b45c6e8e72292ee4012e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a97674ed5490b45c6e8e72292ee4012e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a117ae1e99cce01f1c72a55905f7fcf7e}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a117ae1e99cce01f1c72a55905f7fcf7e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!insert\+\_\+vwires@{insert\+\_\+vwires}}
+\index{insert\+\_\+vwires@{insert\+\_\+vwires}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{insert\+\_\+vwires()}{insert\_vwires()}}
+{\footnotesize\ttfamily void P\+M\+T\+Noise\+R\+O\+I\+::insert\+\_\+vwires (\begin{DoxyParamCaption}\item[{int}]{wire\+\_\+no,  }\item[{float}]{peak\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a117ae1e99cce01f1c72a55905f7fcf7e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a117ae1e99cce01f1c72a55905f7fcf7e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a4b2640ed0856098cada1ba918b1e53d6}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a4b2640ed0856098cada1ba918b1e53d6}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!merge\+\_\+\+R\+OI@{merge\+\_\+\+R\+OI}}
+\index{merge\+\_\+\+R\+OI@{merge\+\_\+\+R\+OI}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{merge\+\_\+\+R\+O\+I()}{merge\_ROI()}}
+{\footnotesize\ttfamily bool P\+M\+T\+Noise\+R\+O\+I\+::merge\+\_\+\+R\+OI (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i}{P\+M\+T\+Noise\+R\+OI} \&}]{R\+OI }\end{DoxyParamCaption})}
+
+
+
+Definition at line 124 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a4b2640ed0856098cada1ba918b1e53d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_a4b2640ed0856098cada1ba918b1e53d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_adcf6d65537ca5b9853a3801251f97d8e}\label{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_adcf6d65537ca5b9853a3801251f97d8e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}!sort\+\_\+wires@{sort\+\_\+wires}}
+\index{sort\+\_\+wires@{sort\+\_\+wires}!Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+P\+M\+T\+Noise\+R\+OI}}
+\subsubsection{\texorpdfstring{sort\+\_\+wires()}{sort\_wires()}}
+{\footnotesize\ttfamily void P\+M\+T\+Noise\+R\+O\+I\+::sort\+\_\+wires (\begin{DoxyParamCaption}\item[{int}]{nwire = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 168 of file P\+M\+T\+Noise\+R\+O\+I.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i_adcf6d65537ca5b9853a3801251f97d8e_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/src/\hyperlink{_p_m_t_noise_r_o_i_8h}{P\+M\+T\+Noise\+R\+O\+I.\+h}\item 
+sigproc/src/\hyperlink{_p_m_t_noise_r_o_i_8cxx}{P\+M\+T\+Noise\+R\+O\+I.\+cxx}\end{DoxyCompactItemize}

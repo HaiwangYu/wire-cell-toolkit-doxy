@@ -1,0 +1,85 @@
+\hypertarget{class_wire_cell_1_1_i_channel_status}{}\section{Wire\+Cell\+:\+:I\+Channel\+Status Class Reference}
+\label{class_wire_cell_1_1_i_channel_status}\index{Wire\+Cell\+::\+I\+Channel\+Status@{Wire\+Cell\+::\+I\+Channel\+Status}}
+
+
+{\ttfamily \#include $<$I\+Channel\+Status.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Channel\+Status\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_wire_cell_1_1_i_channel_status__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Channel\+Status\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_wire_cell_1_1_i_channel_status__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_status_a4991418ba6fbaedb6722a473440bf1a9}{$\sim$\+I\+Channel\+Status} ()
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_channel_status_ab9df0f4008fbdc708b7feea486da5c36}{preamp\+\_\+gain} (int chid) const =0
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_channel_status_a330bd0e9627def4736eb1caed6a2fdba}{preamp\+\_\+shaping} (int chid) const =0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file I\+Channel\+Status.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_status_a4991418ba6fbaedb6722a473440bf1a9}\label{class_wire_cell_1_1_i_channel_status_a4991418ba6fbaedb6722a473440bf1a9}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Status@{Wire\+Cell\+::\+I\+Channel\+Status}!````~I\+Channel\+Status@{$\sim$\+I\+Channel\+Status}}
+\index{````~I\+Channel\+Status@{$\sim$\+I\+Channel\+Status}!Wire\+Cell\+::\+I\+Channel\+Status@{Wire\+Cell\+::\+I\+Channel\+Status}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Channel\+Status()}{~IChannelStatus()}}
+{\footnotesize\ttfamily I\+Channel\+Status\+::$\sim$\+I\+Channel\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 105 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_status_ab9df0f4008fbdc708b7feea486da5c36}\label{class_wire_cell_1_1_i_channel_status_ab9df0f4008fbdc708b7feea486da5c36}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Status@{Wire\+Cell\+::\+I\+Channel\+Status}!preamp\+\_\+gain@{preamp\+\_\+gain}}
+\index{preamp\+\_\+gain@{preamp\+\_\+gain}!Wire\+Cell\+::\+I\+Channel\+Status@{Wire\+Cell\+::\+I\+Channel\+Status}}
+\subsubsection{\texorpdfstring{preamp\+\_\+gain()}{preamp\_gain()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Channel\+Status\+::preamp\+\_\+gain (\begin{DoxyParamCaption}\item[{int}]{chid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the current gain for the preamplifier in units of \mbox{[}voltage\mbox{]}/\mbox{[}charge\mbox{]}. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_a7a43a5c1f263a985a705b24669b8cda1}{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_status_a330bd0e9627def4736eb1caed6a2fdba}\label{class_wire_cell_1_1_i_channel_status_a330bd0e9627def4736eb1caed6a2fdba}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Status@{Wire\+Cell\+::\+I\+Channel\+Status}!preamp\+\_\+shaping@{preamp\+\_\+shaping}}
+\index{preamp\+\_\+shaping@{preamp\+\_\+shaping}!Wire\+Cell\+::\+I\+Channel\+Status@{Wire\+Cell\+::\+I\+Channel\+Status}}
+\subsubsection{\texorpdfstring{preamp\+\_\+shaping()}{preamp\_shaping()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Channel\+Status\+::preamp\+\_\+shaping (\begin{DoxyParamCaption}\item[{int}]{chid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the current shaping time of the preamplifier for the given channel in units of \mbox{[}time\mbox{]}. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_a8275297c1a7d034e3050827eaa8d6fb1}{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_channel_status_8h}{I\+Channel\+Status.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

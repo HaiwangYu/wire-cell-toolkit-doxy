@@ -1,0 +1,4 @@
+<map id="WireCell::SigProc::Microboone::NoisyFilterAlg" name="WireCell::SigProc::Microboone::NoisyFilterAlg">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_sig_proc_1_1_microboone.html#ae364f8dbc0dad92d515850a86baefb13" title="WireCell::SigProc::\lMicroboone::CalcRMSWithFlags" alt="" coords="232,5,445,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#ae080d239c8b4426a6d74f9fd8ce85f1a" title="WireCell::Waveform\l::percentile_binned" alt="" coords="493,5,633,47"/>
+</map>

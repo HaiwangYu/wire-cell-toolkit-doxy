@@ -1,0 +1,10 @@
+<map id="dynamic_formatter::parse" name="dynamic_formatter::parse">
+<area shape="rect" id="node2" href="$namespaceinternal.html#af89a4b19adfe070b0cb66cf9f694caf3" title="internal::parse_format\l_specs" alt="" coords="192,167,340,208"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a265f36d9dee68d3f44381347ef2fd5cb" title="internal::begin" alt="" coords="1024,174,1127,201"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a07a6cecb40169f9f2eb091d0e83cc52f" title="internal::parse_align" alt="" coords="583,22,721,49"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#aa5e9c93ad05ebd920505acdd2122ede6" title="internal::parse_width" alt="" coords="388,225,531,251"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#af621000934cb16d73595619aebb0a35a" title="internal::parse_nonnegative_int" alt="" coords="773,275,976,302"/>
+<area shape="rect" id="node7" href="$namespaceinternal.html#a0f424657f3b1900377b8597f5516432e" title="internal::parse_arg_id" alt="" coords="579,174,725,201"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#ad6d8c955cfd596d1b78f1cc87d2cc489" title="internal::is_name_start" alt="" coords="797,73,952,99"/>
+<area shape="rect" id="node9" href="$namespaceinternal.html#acc608c40c33952a5382db8aaaddfc854" title="internal::to_unsigned" alt="" coords="803,123,946,150"/>
+</map>

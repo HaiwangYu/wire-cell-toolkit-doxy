@@ -1,0 +1,9 @@
+<map id="WireCell::IFrameSource" name="WireCell::IFrameSource">
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_noise_source.html" title="WireCell::Gen::NoiseSource" alt="" coords="5,483,192,509"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_silent_noise.html" title="WireCell::Gen::SilentNoise" alt="" coords="216,483,395,509"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_source_node.html" title="WireCell::ISourceNode\l\&lt; IFrame \&gt;" alt="" coords="123,319,279,360"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_source_node_base.html" title="WireCell::ISourceNodeBase" alt="" coords="108,244,295,271"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="144,169,259,196"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="126,80,277,121"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="136,5,267,32"/>
+</map>

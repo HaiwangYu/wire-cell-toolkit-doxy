@@ -1,0 +1,154 @@
+\hypertarget{class_wire_cell_1_1_fanout}{}\section{Wire\+Cell\+:\+:Fanout$<$ Data, Address $>$ Class Template Reference}
+\label{class_wire_cell_1_1_fanout}\index{Wire\+Cell\+::\+Fanout$<$ Data, Address $>$@{Wire\+Cell\+::\+Fanout$<$ Data, Address $>$}}
+
+
+{\ttfamily \#include $<$Faninout.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Data \hyperlink{class_wire_cell_1_1_fanout_ab2aa0c746557cf71d0454640c91ce0c5}{result\+\_\+type}
+\item 
+typedef Address \hyperlink{class_wire_cell_1_1_fanout_ab1b06d1a80be80055b2e76ca512294c5}{address\+\_\+type}
+\item 
+typedef std\+::deque$<$ \hyperlink{class_wire_cell_1_1_fanout_ab2aa0c746557cf71d0454640c91ce0c5}{result\+\_\+type} $>$ \hyperlink{class_wire_cell_1_1_fanout_aa4d6a2413f61c755cc749775651b5c49}{data\+\_\+queue}
+\item 
+typedef std\+::map$<$ int, \hyperlink{class_wire_cell_1_1_fanout_aa4d6a2413f61c755cc749775651b5c49}{data\+\_\+queue} $>$ \hyperlink{class_wire_cell_1_1_fanout_ad269356c60cd434e19c962907611e36d}{queue\+\_\+map}
+\item 
+typedef boost\+::signals2\+::signal$<$ \hyperlink{class_wire_cell_1_1_fanout_ab2aa0c746557cf71d0454640c91ce0c5}{result\+\_\+type}()$>$ \hyperlink{class_wire_cell_1_1_fanout_a776717aca6409f33b43c69b4770cd1dd}{signal}
+\item 
+typedef signal\+::slot\+\_\+type \hyperlink{class_wire_cell_1_1_fanout_aad9b77d911095ea21e611a806ee42d00}{slot}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_wire_cell_1_1_fanout_a9dda7047d121f8054792658dc6aba664}{connect} (const \hyperlink{class_wire_cell_1_1_fanout_aad9b77d911095ea21e611a806ee42d00}{slot} \&s)
+\item 
+void \hyperlink{class_wire_cell_1_1_fanout_ae47d24683d1dfb632e8e70397344e6da}{address} (const \hyperlink{class_wire_cell_1_1_fanout_ab1b06d1a80be80055b2e76ca512294c5}{address\+\_\+type} \&addr)
+\begin{DoxyCompactList}\small\item\em Register an address. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_fanout_ab2aa0c746557cf71d0454640c91ce0c5}{result\+\_\+type} \hyperlink{class_wire_cell_1_1_fanout_a162e0d8a0d078ae641140c1e62354394}{operator()} (const \hyperlink{class_wire_cell_1_1_fanout_ab1b06d1a80be80055b2e76ca512294c5}{address\+\_\+type} \&addr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Data, typename Address = int$>$\newline
+class Wire\+Cell\+::\+Fanout$<$ Data, Address $>$}
+
+A fanout which takes in Data from a connected slot and buffers it into set of addressable queues. 
+
+Definition at line 14 of file Faninout.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_fanout_ab1b06d1a80be80055b2e76ca512294c5}\label{class_wire_cell_1_1_fanout_ab1b06d1a80be80055b2e76ca512294c5}} 
+\index{Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}!address\+\_\+type@{address\+\_\+type}}
+\index{address\+\_\+type@{address\+\_\+type}!Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}}
+\subsubsection{\texorpdfstring{address\+\_\+type}{address\_type}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+typedef Address \hyperlink{class_wire_cell_1_1_fanout}{Wire\+Cell\+::\+Fanout}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_fanout_ab1b06d1a80be80055b2e76ca512294c5}{address\+\_\+type}}
+
+
+
+Definition at line 18 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_fanout_aa4d6a2413f61c755cc749775651b5c49}\label{class_wire_cell_1_1_fanout_aa4d6a2413f61c755cc749775651b5c49}} 
+\index{Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}!data\+\_\+queue@{data\+\_\+queue}}
+\index{data\+\_\+queue@{data\+\_\+queue}!Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}}
+\subsubsection{\texorpdfstring{data\+\_\+queue}{data\_queue}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+typedef std\+::deque$<$\hyperlink{class_wire_cell_1_1_fanout_ab2aa0c746557cf71d0454640c91ce0c5}{result\+\_\+type}$>$ \hyperlink{class_wire_cell_1_1_fanout}{Wire\+Cell\+::\+Fanout}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_fanout_aa4d6a2413f61c755cc749775651b5c49}{data\+\_\+queue}}
+
+
+
+Definition at line 19 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_fanout_ad269356c60cd434e19c962907611e36d}\label{class_wire_cell_1_1_fanout_ad269356c60cd434e19c962907611e36d}} 
+\index{Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}!queue\+\_\+map@{queue\+\_\+map}}
+\index{queue\+\_\+map@{queue\+\_\+map}!Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}}
+\subsubsection{\texorpdfstring{queue\+\_\+map}{queue\_map}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+typedef std\+::map$<$ int, \hyperlink{class_wire_cell_1_1_fanout_aa4d6a2413f61c755cc749775651b5c49}{data\+\_\+queue} $>$ \hyperlink{class_wire_cell_1_1_fanout}{Wire\+Cell\+::\+Fanout}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_fanout_ad269356c60cd434e19c962907611e36d}{queue\+\_\+map}}
+
+
+
+Definition at line 20 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_fanout_ab2aa0c746557cf71d0454640c91ce0c5}\label{class_wire_cell_1_1_fanout_ab2aa0c746557cf71d0454640c91ce0c5}} 
+\index{Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}!result\+\_\+type@{result\+\_\+type}}
+\index{result\+\_\+type@{result\+\_\+type}!Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}}
+\subsubsection{\texorpdfstring{result\+\_\+type}{result\_type}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+typedef Data \hyperlink{class_wire_cell_1_1_fanout}{Wire\+Cell\+::\+Fanout}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_fanout_ab2aa0c746557cf71d0454640c91ce0c5}{result\+\_\+type}}
+
+
+
+Definition at line 17 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_fanout_a776717aca6409f33b43c69b4770cd1dd}\label{class_wire_cell_1_1_fanout_a776717aca6409f33b43c69b4770cd1dd}} 
+\index{Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}!signal@{signal}}
+\index{signal@{signal}!Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}}
+\subsubsection{\texorpdfstring{signal}{signal}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+typedef boost\+::signals2\+::signal$<$\hyperlink{class_wire_cell_1_1_fanout_ab2aa0c746557cf71d0454640c91ce0c5}{result\+\_\+type} ()$>$ \hyperlink{class_wire_cell_1_1_fanout}{Wire\+Cell\+::\+Fanout}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_fanout_a776717aca6409f33b43c69b4770cd1dd}{signal}}
+
+
+
+Definition at line 23 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_fanout_aad9b77d911095ea21e611a806ee42d00}\label{class_wire_cell_1_1_fanout_aad9b77d911095ea21e611a806ee42d00}} 
+\index{Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}!slot@{slot}}
+\index{slot@{slot}!Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}}
+\subsubsection{\texorpdfstring{slot}{slot}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+typedef signal\+::slot\+\_\+type \hyperlink{class_wire_cell_1_1_fanout}{Wire\+Cell\+::\+Fanout}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_fanout_aad9b77d911095ea21e611a806ee42d00}{slot}}
+
+
+
+Definition at line 25 of file Faninout.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_fanout_ae47d24683d1dfb632e8e70397344e6da}\label{class_wire_cell_1_1_fanout_ae47d24683d1dfb632e8e70397344e6da}} 
+\index{Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}!address@{address}}
+\index{address@{address}!Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}}
+\subsubsection{\texorpdfstring{address()}{address()}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+void \hyperlink{class_wire_cell_1_1_fanout}{Wire\+Cell\+::\+Fanout}$<$ Data, Address $>$\+::address (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_fanout_ab1b06d1a80be80055b2e76ca512294c5}{address\+\_\+type} \&}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Register an address. 
+
+
+
+Definition at line 31 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_fanout_a9dda7047d121f8054792658dc6aba664}\label{class_wire_cell_1_1_fanout_a9dda7047d121f8054792658dc6aba664}} 
+\index{Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}!connect@{connect}}
+\index{connect@{connect}!Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+void \hyperlink{class_wire_cell_1_1_fanout}{Wire\+Cell\+::\+Fanout}$<$ Data, Address $>$\+::connect (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_fanout_aad9b77d911095ea21e611a806ee42d00}{slot} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 28 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_fanout_a162e0d8a0d078ae641140c1e62354394}\label{class_wire_cell_1_1_fanout_a162e0d8a0d078ae641140c1e62354394}} 
+\index{Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Fanout@{Wire\+Cell\+::\+Fanout}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+\hyperlink{class_wire_cell_1_1_fanout_ab2aa0c746557cf71d0454640c91ce0c5}{result\+\_\+type} \hyperlink{class_wire_cell_1_1_fanout}{Wire\+Cell\+::\+Fanout}$<$ Data, Address $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_fanout_ab1b06d1a80be80055b2e76ca512294c5}{address\+\_\+type} \&}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return a data from the given address. If the address has not yet been registered it will be but any previously returned data will not be seen. 
+
+Definition at line 38 of file Faninout.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_faninout_8h}{Faninout.\+h}\end{DoxyCompactItemize}

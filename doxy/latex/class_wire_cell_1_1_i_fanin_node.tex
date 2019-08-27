@@ -1,0 +1,202 @@
+\hypertarget{class_wire_cell_1_1_i_fanin_node}{}\section{Wire\+Cell\+:\+:I\+Fanin\+Node$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$ Class Template Reference}
+\label{class_wire_cell_1_1_i_fanin_node}\index{Wire\+Cell\+::\+I\+Fanin\+Node$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$@{Wire\+Cell\+::\+I\+Fanin\+Node$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$}}
+
+
+{\ttfamily \#include $<$I\+Fanin\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Fanin\+Node$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_wire_cell_1_1_i_fanin_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Fanin\+Node$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_wire_cell_1_1_i_fanin_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Input\+Type \hyperlink{class_wire_cell_1_1_i_fanin_node_ac47c1dc3929cef7fb2ff2412eaf984a1}{input\+\_\+type}
+\item 
+typedef Output\+Type \hyperlink{class_wire_cell_1_1_i_fanin_node_ab0058a83fd6ff641a73f24d4fa7bbd9d}{output\+\_\+type}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ const Input\+Type $>$ \hyperlink{class_wire_cell_1_1_i_fanin_node_ae4f0134fe2d798f865d358b24ab0ba9c}{input\+\_\+pointer}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ const Output\+Type $>$ \hyperlink{class_wire_cell_1_1_i_fanin_node_a748d9cd1916dda1cb12c3376b229f906}{output\+\_\+pointer}
+\item 
+typedef std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_fanin_node_ae4f0134fe2d798f865d358b24ab0ba9c}{input\+\_\+pointer} $>$ \hyperlink{class_wire_cell_1_1_i_fanin_node_aec26233b8b7756c5a42280a5db47ffda}{input\+\_\+vector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_fanin_node_a95c4f9e85f09e8c0e438bf92cc189940}{$\sim$\+I\+Fanin\+Node} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_fanin_node_a36fa55f6c92585211789beab2e2ef46a}{operator()} (const \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a9dc315fe5b56f41f13ea247fc4b7f34b}{any\+\_\+vector} \&anyv, boost\+::any \&anyout)
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_fanin_node_a48e76217dae73d64cb0b40cf8291564a}{operator()} (const \hyperlink{class_wire_cell_1_1_i_fanin_node_aec26233b8b7756c5a42280a5db47ffda}{input\+\_\+vector} \&invec, \hyperlink{class_wire_cell_1_1_i_fanin_node_a748d9cd1916dda1cb12c3376b229f906}{output\+\_\+pointer} \&out)=0
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_fanin_node_a102c43a647e2e0070e329c397e27c2f5}{input\+\_\+types} ()
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_fanin_node_a4d30445b258b6534fdc7825b63687642}{output\+\_\+types} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$\newline
+class Wire\+Cell\+::\+I\+Fanin\+Node$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$}
+
+
+
+Definition at line 39 of file I\+Fanin\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_ae4f0134fe2d798f865d358b24ab0ba9c}\label{class_wire_cell_1_1_i_fanin_node_ae4f0134fe2d798f865d358b24ab0ba9c}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}!input\+\_\+pointer@{input\+\_\+pointer}}
+\index{input\+\_\+pointer@{input\+\_\+pointer}!Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+pointer}{input\_pointer}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$ \\
+typedef std\+::shared\+\_\+ptr$<$const Input\+Type$>$ \hyperlink{class_wire_cell_1_1_i_fanin_node}{Wire\+Cell\+::\+I\+Fanin\+Node}$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+::\hyperlink{class_wire_cell_1_1_i_fanin_node_ae4f0134fe2d798f865d358b24ab0ba9c}{input\+\_\+pointer}}
+
+
+
+Definition at line 44 of file I\+Fanin\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_ac47c1dc3929cef7fb2ff2412eaf984a1}\label{class_wire_cell_1_1_i_fanin_node_ac47c1dc3929cef7fb2ff2412eaf984a1}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}!input\+\_\+type@{input\+\_\+type}}
+\index{input\+\_\+type@{input\+\_\+type}!Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+type}{input\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$ \\
+typedef Input\+Type \hyperlink{class_wire_cell_1_1_i_fanin_node}{Wire\+Cell\+::\+I\+Fanin\+Node}$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+::\hyperlink{class_wire_cell_1_1_i_fanin_node_ac47c1dc3929cef7fb2ff2412eaf984a1}{input\+\_\+type}}
+
+
+
+Definition at line 42 of file I\+Fanin\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_aec26233b8b7756c5a42280a5db47ffda}\label{class_wire_cell_1_1_i_fanin_node_aec26233b8b7756c5a42280a5db47ffda}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}!input\+\_\+vector@{input\+\_\+vector}}
+\index{input\+\_\+vector@{input\+\_\+vector}!Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+vector}{input\_vector}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$ \\
+typedef std\+::vector$<$\hyperlink{class_wire_cell_1_1_i_fanin_node_ae4f0134fe2d798f865d358b24ab0ba9c}{input\+\_\+pointer}$>$ \hyperlink{class_wire_cell_1_1_i_fanin_node}{Wire\+Cell\+::\+I\+Fanin\+Node}$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+::\hyperlink{class_wire_cell_1_1_i_fanin_node_aec26233b8b7756c5a42280a5db47ffda}{input\+\_\+vector}}
+
+
+
+Definition at line 46 of file I\+Fanin\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_a748d9cd1916dda1cb12c3376b229f906}\label{class_wire_cell_1_1_i_fanin_node_a748d9cd1916dda1cb12c3376b229f906}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}!output\+\_\+pointer@{output\+\_\+pointer}}
+\index{output\+\_\+pointer@{output\+\_\+pointer}!Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+pointer}{output\_pointer}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$ \\
+typedef std\+::shared\+\_\+ptr$<$const Output\+Type$>$ \hyperlink{class_wire_cell_1_1_i_fanin_node}{Wire\+Cell\+::\+I\+Fanin\+Node}$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+::\hyperlink{class_wire_cell_1_1_i_fanin_node_a748d9cd1916dda1cb12c3376b229f906}{output\+\_\+pointer}}
+
+
+
+Definition at line 45 of file I\+Fanin\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_ab0058a83fd6ff641a73f24d4fa7bbd9d}\label{class_wire_cell_1_1_i_fanin_node_ab0058a83fd6ff641a73f24d4fa7bbd9d}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}!output\+\_\+type@{output\+\_\+type}}
+\index{output\+\_\+type@{output\+\_\+type}!Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+type}{output\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$ \\
+typedef Output\+Type \hyperlink{class_wire_cell_1_1_i_fanin_node}{Wire\+Cell\+::\+I\+Fanin\+Node}$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+::\hyperlink{class_wire_cell_1_1_i_fanin_node_ab0058a83fd6ff641a73f24d4fa7bbd9d}{output\+\_\+type}}
+
+
+
+Definition at line 43 of file I\+Fanin\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_a95c4f9e85f09e8c0e438bf92cc189940}\label{class_wire_cell_1_1_i_fanin_node_a95c4f9e85f09e8c0e438bf92cc189940}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}!````~I\+Fanin\+Node@{$\sim$\+I\+Fanin\+Node}}
+\index{````~I\+Fanin\+Node@{$\sim$\+I\+Fanin\+Node}!Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Fanin\+Node()}{~IFaninNode()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_fanin_node}{Wire\+Cell\+::\+I\+Fanin\+Node}$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_i_fanin_node}{I\+Fanin\+Node} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 48 of file I\+Fanin\+Node.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_a102c43a647e2e0070e329c397e27c2f5}\label{class_wire_cell_1_1_i_fanin_node_a102c43a647e2e0070e329c397e27c2f5}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}!input\+\_\+types@{input\+\_\+types}}
+\index{input\+\_\+types@{input\+\_\+types}!Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+types()}{input\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_fanin_node}{Wire\+Cell\+::\+I\+Fanin\+Node}$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+::input\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_ae13fc140c8e815fac9327dfa5b43f853}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_i_cluster_fanin_a4021793d08233b3cb10f788d20d313c2}{Wire\+Cell\+::\+I\+Cluster\+Fanin}, \hyperlink{class_wire_cell_1_1_img_1_1_blob_set_sync_aa32d9014596aec6bcbdcd8ed027a95ad}{Wire\+Cell\+::\+Img\+::\+Blob\+Set\+Sync}, \hyperlink{class_wire_cell_1_1_i_frame_fanin_a7c19800cac1dc1bf67199b067811f500}{Wire\+Cell\+::\+I\+Frame\+Fanin}, \hyperlink{class_wire_cell_1_1_i_blob_set_fanin_a1783b57125c4b9df55a828ec832dbb72}{Wire\+Cell\+::\+I\+Blob\+Set\+Fanin}, and \hyperlink{class_wire_cell_1_1_gen_1_1_frame_fanin_aeba173a6fd84de2b655fe56fd41d8c05}{Wire\+Cell\+::\+Gen\+::\+Frame\+Fanin}.
+
+
+
+Definition at line 70 of file I\+Fanin\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_a36fa55f6c92585211789beab2e2ef46a}\label{class_wire_cell_1_1_i_fanin_node_a36fa55f6c92585211789beab2e2ef46a}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_fanin_node}{Wire\+Cell\+::\+I\+Fanin\+Node}$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a9dc315fe5b56f41f13ea247fc4b7f34b}{any\+\_\+vector} \&}]{anyin,  }\item[{boost\+::any \&}]{anyout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The calling signature\+: 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a7fd741cc204d2eb03402709bff0694f2}{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}.
+
+
+
+Definition at line 50 of file I\+Fanin\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_a48e76217dae73d64cb0b40cf8291564a}\label{class_wire_cell_1_1_i_fanin_node_a48e76217dae73d64cb0b40cf8291564a}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_fanin_node}{Wire\+Cell\+::\+I\+Fanin\+Node}$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_fanin_node_aec26233b8b7756c5a42280a5db47ffda}{input\+\_\+vector} \&}]{invec,  }\item[{\hyperlink{class_wire_cell_1_1_i_fanin_node_a748d9cd1916dda1cb12c3376b229f906}{output\+\_\+pointer} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_a4d30445b258b6534fdc7825b63687642}\label{class_wire_cell_1_1_i_fanin_node_a4d30445b258b6534fdc7825b63687642}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}!output\+\_\+types@{output\+\_\+types}}
+\index{output\+\_\+types@{output\+\_\+types}!Wire\+Cell\+::\+I\+Fanin\+Node@{Wire\+Cell\+::\+I\+Fanin\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+types()}{output\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanin\+Multiplicity = 3$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_fanin_node}{Wire\+Cell\+::\+I\+Fanin\+Node}$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$\+::output\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 75 of file I\+Fanin\+Node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_fanin_node_8h}{I\+Fanin\+Node.\+h}\end{DoxyCompactItemize}

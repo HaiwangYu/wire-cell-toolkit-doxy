@@ -1,0 +1,12 @@
+<map id="formatter&lt; T, Char, typename std::enable_if&lt; internal::is_streamable&lt; T, Char &gt;::value &amp;&amp;!internal::format_type&lt; typename buffer_context&lt; Char &gt;::type, T &gt;::value &gt;::type &gt;::format" name="formatter&lt; T, Char, typename std::enable_if&lt; internal::is_streamable&lt; T, Char &gt;::value &amp;&amp;!internal::format_type&lt; typename buffer_context&lt; Char &gt;::type, T &gt;::value &gt;::type &gt;::format">
+<area shape="rect" id="node2" href="$namespaceinternal.html#a1be3f9974ada7afa2fc121fd6cf13521" title="internal::format_value" alt="" coords="277,35,424,62"/>
+<area shape="rect" id="node4" href="$classinternal_1_1basic__buffer.html#abc95713c3873c5820f10105fe7c7af93" title="internal::basic_buffer\l::size" alt="" coords="663,72,805,113"/>
+<area shape="rect" id="node5" href="$classinternal_1_1basic__buffer.html#ab4a96d7d4394f469568d290fde5a75a7" title="internal::basic_buffer\l::data" alt="" coords="663,137,805,179"/>
+<area shape="rect" id="node6" href="$core_8h.html#ae4af59c87c10d9a8d3ebd3eb455a25c1" title="format" alt="" coords="321,221,380,247"/>
+<area shape="rect" id="node3" href="$classinternal_1_1basic__buffer.html#adbd2b147e114f0cc4573f734d4326669" title="internal::basic_buffer\l::resize" alt="" coords="472,28,615,69"/>
+<area shape="rect" id="node7" href="$namespaceinternal.html#a581988072e193a0fb0f54827f1b42cfd" title="internal::vformat" alt="" coords="485,246,601,273"/>
+<area shape="rect" id="node9" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="853,254,1009,281"/>
+<area shape="rect" id="node11" href="$core_8h.html#a7122c6820a7e6319d6fc2f30d1292faa" title="vprint" alt="" coords="516,195,571,222"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#a9f6f592ec8a979251038265f241e7d48" title="internal::vformat_to" alt="" coords="667,203,801,230"/>
+<area shape="rect" id="node10" href="$format_8h.html#afe05b087244838ced775fa3f28134c34" title="to_string" alt="" coords="698,254,770,281"/>
+</map>

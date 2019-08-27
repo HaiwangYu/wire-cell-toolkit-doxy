@@ -1,0 +1,59 @@
+\hypertarget{class_wire_cell_1_1_depo_plane}{}\section{Wire\+Cell\+:\+:Depo\+Plane Class Reference}
+\label{class_wire_cell_1_1_depo_plane}\index{Wire\+Cell\+::\+Depo\+Plane@{Wire\+Cell\+::\+Depo\+Plane}}
+
+
+{\ttfamily \#include $<$Depo\+Plane.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_depo_plane_a4d0ce33e64a212ad9f77e5d995b4d7c8}{Depo\+Plane} (\hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} wire\+\_\+pitch, double start\+\_\+time, double tick, double sigmaT, double sigmaL, double drift\+\_\+velocity)
+\item 
+bool \hyperlink{class_wire_cell_1_1_depo_plane_adbcc6a073be3c7b686d79cab4eb98408}{add} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} depo)
+\begin{DoxyCompactList}\small\item\em Add a deposition to the buffer. Return true if we have enough to pop. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{class_wire_cell_1_1_depo_plane_a9b25723a24fe7c59c1be3bae8e3497fa}{pop} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Spread deposits on a plane.
+
+Maintain a buffer in time (longitudinal to drift direction) and space (transverse to drift direction, parallel to wire pitch direction) of energy depositions.
+
+The change is spread in both directions according to given sigma and according to the longitudinal drift distance that the deposition has or must travel (prior deposition is checked of originating point). 
+
+Definition at line 14 of file Depo\+Plane.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_depo_plane_a4d0ce33e64a212ad9f77e5d995b4d7c8}\label{class_wire_cell_1_1_depo_plane_a4d0ce33e64a212ad9f77e5d995b4d7c8}} 
+\index{Wire\+Cell\+::\+Depo\+Plane@{Wire\+Cell\+::\+Depo\+Plane}!Depo\+Plane@{Depo\+Plane}}
+\index{Depo\+Plane@{Depo\+Plane}!Wire\+Cell\+::\+Depo\+Plane@{Wire\+Cell\+::\+Depo\+Plane}}
+\subsubsection{\texorpdfstring{Depo\+Plane()}{DepoPlane()}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Depo\+Plane\+::\+Depo\+Plane (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}}]{wire\+\_\+pitch,  }\item[{double}]{start\+\_\+time,  }\item[{double}]{tick,  }\item[{double}]{sigmaT,  }\item[{double}]{sigmaL,  }\item[{double}]{drift\+\_\+velocity }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_depo_plane_adbcc6a073be3c7b686d79cab4eb98408}\label{class_wire_cell_1_1_depo_plane_adbcc6a073be3c7b686d79cab4eb98408}} 
+\index{Wire\+Cell\+::\+Depo\+Plane@{Wire\+Cell\+::\+Depo\+Plane}!add@{add}}
+\index{add@{add}!Wire\+Cell\+::\+Depo\+Plane@{Wire\+Cell\+::\+Depo\+Plane}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Depo\+Plane\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer}}]{depo }\end{DoxyParamCaption})}
+
+
+
+Add a deposition to the buffer. Return true if we have enough to pop. 
+
+\mbox{\Hypertarget{class_wire_cell_1_1_depo_plane_a9b25723a24fe7c59c1be3bae8e3497fa}\label{class_wire_cell_1_1_depo_plane_a9b25723a24fe7c59c1be3bae8e3497fa}} 
+\index{Wire\+Cell\+::\+Depo\+Plane@{Wire\+Cell\+::\+Depo\+Plane}!pop@{pop}}
+\index{pop@{pop}!Wire\+Cell\+::\+Depo\+Plane@{Wire\+Cell\+::\+Depo\+Plane}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Wire\+Cell\+::\+Depo\+Plane\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return next tick worth of charge. Vector is indexed by wire index starting from wire zero as determined by pitch ray. An empty vector indicates underflow and more depositions should be \hyperlink{class_wire_cell_1_1_depo_plane_adbcc6a073be3c7b686d79cab4eb98408}{add()}\textquotesingle{}ed. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_depo_plane_8h}{Depo\+Plane.\+h}\end{DoxyCompactItemize}

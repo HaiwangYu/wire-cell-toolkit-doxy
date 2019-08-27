@@ -1,0 +1,5 @@
+<map id="WireCell::Response::wire_region_average" name="WireCell::Response::wire_region_average">
+<area shape="rect" id="node2" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#ae156e1d6bbf8be35451100d1d43d9aaa" title="WireCell::Response\l::Schema::FieldResponse\l::plane" alt="" coords="203,5,376,61"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#a4c7b82a4567d6c94227398f9511ffb92" title="Return sum of all entries in sequence. " alt="" coords="203,85,376,112"/>
+<area shape="rect" id="node4" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#a9f3b786a9adf83b6bf536d6442d53207" title="WireCell::Response\l::Schema::FieldResponse\l::FieldResponse" alt="" coords="203,136,376,192"/>
+</map>

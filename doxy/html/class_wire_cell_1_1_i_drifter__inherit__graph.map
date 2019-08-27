@@ -1,0 +1,10 @@
+<map id="WireCell::IDrifter" name="WireCell::IDrifter">
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_drifter.html" title="WireCell::Gen::Drifter" alt="" coords="1217,5,1365,32"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_time_gated_depos.html" title="WireCell::Gen::TimeGated\lDepos" alt="" coords="1203,57,1379,98"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_gen_1_1_wire_bounded_depos.html" title="WireCell::Gen::WireBounded\lDepos" alt="" coords="1196,122,1387,163"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IDepo, IDepo \&gt;" alt="" coords="801,57,980,98"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_queuedout_node_base.html" title="WireCell::IQueuedoutNodeBase" alt="" coords="545,64,753,91"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="383,64,497,91"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="184,57,335,98"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,64,136,91"/>
+</map>

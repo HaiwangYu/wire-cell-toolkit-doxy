@@ -1,0 +1,8 @@
+<map id="internal::reserve" name="internal::reserve">
+<area shape="rect" id="node2" href="$classinternal_1_1basic__buffer.html#adbd2b147e114f0cc4573f734d4326669" title="internal::basic_buffer\l\&lt; Char \&gt;::resize" alt="" coords="176,5,319,47"/>
+<area shape="rect" id="node3" href="$classinternal_1_1basic__buffer.html#a8dd9de72728ab902c31f22bdba9a7a55" title="internal::basic_buffer\l\&lt; Char \&gt;::push_back" alt="" coords="175,71,320,112"/>
+<area shape="rect" id="node4" href="$classinternal_1_1basic__buffer.html#aba7ea1a95a28bc123712f2fd24cf7414" title="internal::basic_buffer\l\&lt; Char \&gt;::append" alt="" coords="176,136,319,177"/>
+<area shape="rect" id="node5" href="$classbasic__writer.html#a1046134b869e509059ab496f1f6e9ab9" title="basic_writer::write" alt="" coords="183,202,311,229"/>
+<area shape="rect" id="node6" href="$structfloat__spec__handler.html#ae7ee9d59f1624b0cc52fe767a5ef96bf" title="float_spec_handler\l::on_error" alt="" coords="182,253,313,295"/>
+<area shape="rect" id="node7" href="$structformat__handler.html#a0658a1b87089088fae4267f567e9ee7d" title="format_handler::on_text" alt="" coords="168,319,327,346"/>
+</map>

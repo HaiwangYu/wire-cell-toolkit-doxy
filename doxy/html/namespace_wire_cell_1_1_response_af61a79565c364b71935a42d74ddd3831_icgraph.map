@@ -1,0 +1,4 @@
+<map id="WireCell::Response::lf_filter" name="WireCell::Response::lf_filter">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_lf_filter.html#a4b53fff2e1a37331fa8d8a62438c581f" title="Provide the filter waveform with a given number of frequency bins. " alt="" coords="192,5,351,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_response_1_1_lf_filter.html#a476aa965cb6af0ba6dada07d6558c856" title="WireCell::Response\l::LfFilter::operator()" alt="" coords="202,71,341,112"/>
+</map>

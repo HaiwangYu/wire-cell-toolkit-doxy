@@ -1,0 +1,4 @@
+<map id="WireCell::ray_unit" name="WireCell::ray_unit">
+<area shape="rect" id="node2" href="$namespace_wire_cell.html#a3e825e090f86eed7647960e8e611a144" title="WireCell::ray_vector" alt="" coords="180,5,321,32"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_d3_vector.html#a9cff9bf6015c3f7742d4fae7aac7c4a5" title="Return a normalized vector in the direction of this vector. " alt="" coords="183,57,318,98"/>
+</map>

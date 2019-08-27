@@ -1,0 +1,9 @@
+<map id="WireCell::IFrameFanout" name="WireCell::IFrameFanout">
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_frame_fanout.html" title="WireCell::Gen::FrameFanout" alt="" coords="5,490,195,517"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_sig_proc_1_1_channel_splitter.html" title="WireCell::SigProc::\lChannelSplitter" alt="" coords="219,483,354,524"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; IFrame, IFrame, 0 \&gt;" alt="" coords="116,319,271,360"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_fanout_node_base.html" title="WireCell::IFanoutNodeBase" alt="" coords="101,244,286,271"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="136,169,251,196"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="118,80,269,121"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="128,5,259,32"/>
+</map>

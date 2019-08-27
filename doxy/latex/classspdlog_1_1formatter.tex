@@ -1,0 +1,69 @@
+\hypertarget{classspdlog_1_1formatter}{}\section{spdlog\+:\+:formatter Class Reference}
+\label{classspdlog_1_1formatter}\index{spdlog\+::formatter@{spdlog\+::formatter}}
+
+
+{\ttfamily \#include $<$formatter.\+h$>$}
+
+
+
+Inheritance diagram for spdlog\+:\+:formatter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classspdlog_1_1formatter__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classspdlog_1_1formatter_a63ee38e660519d09020b21dd7d54d4fe}{$\sim$formatter} ()=default
+\item 
+virtual void \hyperlink{classspdlog_1_1formatter_ad50e2b119d08fad952b0f885455b3bee}{format} (const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&msg, \hyperlink{format_8h_a21cbf729f69302f578e6db21c5e9e0d2}{fmt\+::memory\+\_\+buffer} \&dest)=0
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{formatter} $>$ \hyperlink{classspdlog_1_1formatter_ae9857a794904d98a4a9527a742e37129}{clone} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file formatter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1formatter_a63ee38e660519d09020b21dd7d54d4fe}\label{classspdlog_1_1formatter_a63ee38e660519d09020b21dd7d54d4fe}} 
+\index{spdlog\+::formatter@{spdlog\+::formatter}!````~formatter@{$\sim$formatter}}
+\index{````~formatter@{$\sim$formatter}!spdlog\+::formatter@{spdlog\+::formatter}}
+\subsubsection{\texorpdfstring{$\sim$formatter()}{~formatter()}}
+{\footnotesize\ttfamily virtual spdlog\+::formatter\+::$\sim$formatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1formatter_ae9857a794904d98a4a9527a742e37129}\label{classspdlog_1_1formatter_ae9857a794904d98a4a9527a742e37129}} 
+\index{spdlog\+::formatter@{spdlog\+::formatter}!clone@{clone}}
+\index{clone@{clone}!spdlog\+::formatter@{spdlog\+::formatter}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$\hyperlink{classspdlog_1_1formatter}{formatter}$>$ spdlog\+::formatter\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classspdlog_1_1pattern__formatter_a73a60f53c23e860a2c1229c0781819f9}{spdlog\+::pattern\+\_\+formatter}.
+
+\mbox{\Hypertarget{classspdlog_1_1formatter_ad50e2b119d08fad952b0f885455b3bee}\label{classspdlog_1_1formatter_ad50e2b119d08fad952b0f885455b3bee}} 
+\index{spdlog\+::formatter@{spdlog\+::formatter}!format@{format}}
+\index{format@{format}!spdlog\+::formatter@{spdlog\+::formatter}}
+\subsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily virtual void spdlog\+::formatter\+::format (\begin{DoxyParamCaption}\item[{const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&}]{msg,  }\item[{\hyperlink{format_8h_a21cbf729f69302f578e6db21c5e9e0d2}{fmt\+::memory\+\_\+buffer} \&}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classspdlog_1_1pattern__formatter_ae43e84d7421ee7810b22ce1dc817ca3f}{spdlog\+::pattern\+\_\+formatter}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/\hyperlink{formatter_8h}{formatter.\+h}\end{DoxyCompactItemize}

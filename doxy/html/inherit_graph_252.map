@@ -1,0 +1,254 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_wire_cell_1_1_i_data.html" title="WireCell::IData\&lt; IWaveform \&gt;" alt="" coords="951,56,1151,83"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_waveform.html" title="WireCell::IWaveform" alt="" coords="1246,56,1390,83"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_elec_response.html" title="WireCell::Gen::ElecResponse" alt="" coords="1493,107,1691,133"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_r_c_response.html" title="WireCell::Gen::RCResponse" alt="" coords="1497,5,1687,32"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_response_sys.html" title="WireCell::Gen::ResponseSys" alt="" coords="1495,56,1689,83"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_detsim.html" title="WireCell::Detsim" alt="" coords="1531,157,1653,184"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,1680,136,1707"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IAnodeFace \&gt;" alt="" coords="203,950,353,991"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IAnodePlane \&gt;" alt="" coords="453,1006,603,1047"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IApplication \&gt;" alt="" coords="453,1071,603,1113"/>
+<area shape="rect" id="node23" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelFilter \&gt;" alt="" coords="453,1189,603,1230"/>
+<area shape="rect" id="node32" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelNoiseDatabase \&gt;" alt="" coords="184,1134,372,1175"/>
+<area shape="rect" id="node36" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelResponse \&gt;" alt="" coords="449,1254,607,1295"/>
+<area shape="rect" id="node40" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelSpectrum \&gt;" alt="" coords="201,1313,355,1354"/>
+<area shape="rect" id="node43" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelStatus \&gt;" alt="" coords="203,1378,353,1419"/>
+<area shape="rect" id="node46" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="203,1930,353,1971"/>
+<area shape="rect" id="node120" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IDataFlowGraph \&gt;" alt="" coords="203,1443,353,1485"/>
+<area shape="rect" id="node122" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IDeconvolution \&gt;" alt="" coords="203,1574,353,1615"/>
+<area shape="rect" id="node124" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IFactory \&gt;" alt="" coords="203,1509,353,1550"/>
+<area shape="rect" id="node128" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IFieldResponse \&gt;" alt="" coords="203,1639,353,1681"/>
+<area shape="rect" id="node130" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IFilterWaveform \&gt;" alt="" coords="714,1754,865,1795"/>
+<area shape="rect" id="node132" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IImpactResponse \&gt;" alt="" coords="203,1705,353,1746"/>
+<area shape="rect" id="node135" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="203,2211,353,2253"/>
+<area shape="rect" id="node239" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IPlaneImpactResponse \&gt;" alt="" coords="187,2710,369,2751"/>
+<area shape="rect" id="node241" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IRandom \&gt;" alt="" coords="714,5130,865,5171"/>
+<area shape="rect" id="node243" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IRecombinationModel \&gt;" alt="" coords="192,2937,364,2978"/>
+<area shape="rect" id="node245" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IWireParameters \&gt;" alt="" coords="453,5438,603,5479"/>
+<area shape="rect" id="node247" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IWirePlane \&gt;" alt="" coords="203,3054,353,3095"/>
+<area shape="rect" id="node250" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IWireSchema \&gt;" alt="" coords="203,3119,353,3161"/>
+<area shape="rect" id="node252" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; Type \&gt;" alt="" coords="203,3185,353,3226"/>
+<area shape="rect" id="node253" href="$class_wire_cell_1_1_i_processor.html" title="WireCell::IProcessor" alt="" coords="207,3251,349,3277"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_i_anode_face.html" title="WireCell::IAnodeFace" alt="" coords="453,955,603,981"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_gen_1_1_anode_face.html" title="WireCell::Gen::AnodeFace" alt="" coords="700,955,879,981"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_i_anode_plane.html" title="WireCell::IAnodePlane" alt="" coords="1241,332,1395,359"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html" title="WireCell::Gen::AnodePlane" alt="" coords="1501,208,1683,235"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_gen_1_1_mega_anode_plane.html" title="WireCell::Gen::MegaAnode\lPlane" alt="" coords="1501,325,1683,366"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_i_application.html" title="WireCell::IApplication" alt="" coords="1244,533,1392,560"/>
+<area shape="rect" id="node18" href="$class_wire_cell_1_1_gen_1_1_fourdee.html" title="WireCell::Gen::Fourdee" alt="" coords="1513,391,1671,417"/>
+<area shape="rect" id="node19" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus.html" title="WireCell::SigProc::\lOmnibus" alt="" coords="1525,442,1659,483"/>
+<area shape="rect" id="node20" href="$class_wire_cell_apps_1_1_config_dumper.html" title="WireCellApps::ConfigDumper" alt="" coords="1495,508,1689,535"/>
+<area shape="rect" id="node21" href="$class_wire_cell_apps_1_1_node_dumper.html" title="WireCellApps::NodeDumper" alt="" coords="1499,559,1685,585"/>
+<area shape="rect" id="node22" href="$class_wire_cell_tbb_1_1_tbb_flow.html" title="WireCellTbb::TbbFlow" alt="" coords="1516,777,1668,804"/>
+<area shape="rect" id="node24" href="$class_wire_cell_1_1_i_channel_filter.html" title="WireCell::IChannelFilter" alt="" coords="1237,1011,1399,1037"/>
+<area shape="rect" id="node25" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_a_d_c_bit_shift.html" title="WireCell::SigProc::\lMicroboone::ADCBitShift" alt="" coords="1507,1075,1677,1117"/>
+<area shape="rect" id="node26" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub.html" title="WireCell::SigProc::\lMicroboone::CoherentNoiseSub" alt="" coords="1755,1413,1961,1454"/>
+<area shape="rect" id="node27" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_noise.html" title="WireCell::SigProc::\lMicroboone::OneChannelNoise" alt="" coords="1757,2382,1959,2423"/>
+<area shape="rect" id="node28" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status.html" title="WireCell::SigProc::\lMicroboone::OneChannelStatus" alt="" coords="1489,1141,1695,1182"/>
+<area shape="rect" id="node29" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise.html" title="WireCell::SigProc::\lProtodune::OneChannelNoise" alt="" coords="1761,895,1955,937"/>
+<area shape="rect" id="node30" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_rel_gain_calib.html" title="WireCell::SigProc::\lProtodune::RelGainCalib" alt="" coords="1509,945,1675,986"/>
+<area shape="rect" id="node31" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig.html" title="WireCell::SigProc::\lProtodune::StickyCodeMitig" alt="" coords="1499,1010,1685,1051"/>
+<area shape="rect" id="node33" href="$class_wire_cell_1_1_i_channel_noise_database.html" title="WireCell::IChannelNoiseDatabase" alt="" coords="1207,887,1429,913"/>
+<area shape="rect" id="node34" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html" title="WireCell::SigProc::\lOmniChannelNoiseDB" alt="" coords="1515,879,1669,921"/>
+<area shape="rect" id="node35" href="$class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b.html" title="WireCell::SigProc::\lSimpleChannelNoiseDB" alt="" coords="1511,259,1673,301"/>
+<area shape="rect" id="node37" href="$class_wire_cell_1_1_i_channel_response.html" title="WireCell::IChannelResponse" alt="" coords="1223,1261,1413,1288"/>
+<area shape="rect" id="node38" href="$class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response.html" title="WireCell::SigProc::\lNominalChannelResponse" alt="" coords="1503,1271,1681,1313"/>
+<area shape="rect" id="node39" href="$class_wire_cell_1_1_sig_proc_1_1_per_channel_response.html" title="WireCell::SigProc::\lPerChannelResponse" alt="" coords="1517,1206,1667,1247"/>
+<area shape="rect" id="node41" href="$class_wire_cell_1_1_i_channel_spectrum.html" title="WireCell::IChannelSpectrum" alt="" coords="434,1320,622,1347"/>
+<area shape="rect" id="node42" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html" title="WireCell::Gen::Empirical\lNoiseModel" alt="" coords="1509,1337,1675,1378"/>
+<area shape="rect" id="node44" href="$class_wire_cell_1_1_i_channel_status.html" title="WireCell::IChannelStatus" alt="" coords="443,1379,613,1405"/>
+<area shape="rect" id="node45" href="$class_wire_cell_1_1_gen_1_1_static_channel_status.html" title="WireCell::Gen::StaticChannel\lStatus" alt="" coords="1495,1402,1689,1443"/>
+<area shape="rect" id="node47" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="1239,2740,1397,2767"/>
+<area shape="rect" id="node48" href="$class_wire_cell_1_1_diffuser.html" title="WireCell::Diffuser" alt="" coords="1529,4028,1655,4055"/>
+<area shape="rect" id="node49" href="$class_wire_cell_1_1_gen_1_1_add_noise.html" title="WireCell::Gen::AddNoise" alt="" coords="1507,3575,1677,3601"/>
+<area shape="rect" id="node50" href="$class_wire_cell_1_1_gen_1_1_birks_recombination.html" title="WireCell::Gen::BirksRecombination" alt="" coords="1477,5189,1707,5216"/>
+<area shape="rect" id="node51" href="$class_wire_cell_1_1_gen_1_1_blip_source.html" title="WireCell::Gen::BlipSource" alt="" coords="1505,1969,1679,1996"/>
+<area shape="rect" id="node52" href="$class_wire_cell_1_1_gen_1_1_box_recombination.html" title="WireCell::Gen::BoxRecombination" alt="" coords="1481,5139,1703,5165"/>
+<area shape="rect" id="node53" href="$class_wire_cell_1_1_gen_1_1_depo_bagger.html" title="WireCell::Gen::DepoBagger" alt="" coords="1500,4383,1684,4409"/>
+<area shape="rect" id="node54" href="$class_wire_cell_1_1_gen_1_1_depo_chunker.html" title="WireCell::Gen::DepoChunker" alt="" coords="1496,4433,1688,4460"/>
+<area shape="rect" id="node55" href="$class_wire_cell_1_1_gen_1_1_depo_fanout.html" title="WireCell::Gen::DepoFanout" alt="" coords="1501,2172,1683,2199"/>
+<area shape="rect" id="node56" href="$class_wire_cell_1_1_gen_1_1_depo_framer.html" title="WireCell::Gen::DepoFramer" alt="" coords="1500,2791,1684,2817"/>
+<area shape="rect" id="node57" href="$class_wire_cell_1_1_gen_1_1_depo_merger.html" title="WireCell::Gen::DepoMerger" alt="" coords="1501,3860,1683,3887"/>
+<area shape="rect" id="node58" href="$class_wire_cell_1_1_gen_1_1_depo_set_fanout.html" title="WireCell::Gen::DepoSetFanout" alt="" coords="1491,2223,1693,2249"/>
+<area shape="rect" id="node59" href="$class_wire_cell_1_1_gen_1_1_depo_transform.html" title="WireCell::Gen::DepoTransform" alt="" coords="1491,2841,1693,2868"/>
+<area shape="rect" id="node60" href="$class_wire_cell_1_1_gen_1_1_depo_zipper.html" title="WireCell::Gen::DepoZipper" alt="" coords="1503,2892,1681,2919"/>
+<area shape="rect" id="node61" href="$class_wire_cell_1_1_gen_1_1_digitizer.html" title="WireCell::Gen::Digitizer" alt="" coords="1512,3625,1672,3652"/>
+<area shape="rect" id="node62" href="$class_wire_cell_1_1_gen_1_1_drifter.html" title="WireCell::Gen::Drifter" alt="" coords="1518,4616,1666,4643"/>
+<area shape="rect" id="node63" href="$class_wire_cell_1_1_gen_1_1_ductor.html" title="WireCell::Gen::Ductor" alt="" coords="1517,4281,1667,4308"/>
+<area shape="rect" id="node65" href="$class_wire_cell_1_1_gen_1_1_frame_fanin.html" title="WireCell::Gen::FrameFanin" alt="" coords="1501,2121,1683,2148"/>
+<area shape="rect" id="node66" href="$class_wire_cell_1_1_gen_1_1_frame_fanout.html" title="WireCell::Gen::FrameFanout" alt="" coords="1497,2273,1687,2300"/>
+<area shape="rect" id="node67" href="$class_wire_cell_1_1_gen_1_1_frame_summer.html" title="WireCell::Gen::FrameSummer" alt="" coords="1493,3977,1691,4004"/>
+<area shape="rect" id="node68" href="$class_wire_cell_1_1_gen_1_1_mip_recombination.html" title="Model for a MIP, dQ = (Rmip/Wi)*dE. " alt="" coords="1482,5240,1702,5267"/>
+<area shape="rect" id="node69" href="$class_wire_cell_1_1_gen_1_1_misconfigure.html" title="WireCell::Gen::Misconfigure" alt="" coords="1499,3524,1685,3551"/>
+<area shape="rect" id="node70" href="$class_wire_cell_1_1_gen_1_1_multi_ductor.html" title="WireCell::Gen::MultiDuctor" alt="" coords="1503,4180,1681,4207"/>
+<area shape="rect" id="node71" href="$class_wire_cell_1_1_gen_1_1_noise_source.html" title="WireCell::Gen::NoiseSource" alt="" coords="1499,1767,1685,1793"/>
+<area shape="rect" id="node72" href="$class_wire_cell_1_1_gen_1_1_per_channel_variation.html" title="WireCell::Gen::PerChannel\lVariation" alt="" coords="1502,3677,1682,3718"/>
+<area shape="rect" id="node73" href="$class_wire_cell_1_1_gen_1_1_plane_impact_response.html" title="WireCell::Gen::PlaneImpact\lResponse" alt="" coords="1499,4769,1685,4810"/>
+<area shape="rect" id="node74" href="$class_wire_cell_1_1_gen_1_1_random.html" title="WireCell::Gen::Random" alt="" coords="1511,5088,1673,5115"/>
+<area shape="rect" id="node75" href="$class_wire_cell_1_1_gen_1_1_reframer.html" title="WireCell::Gen::Reframer" alt="" coords="1509,3743,1675,3769"/>
+<area shape="rect" id="node76" href="$class_wire_cell_1_1_gen_1_1_retagger.html" title="WireCell::Gen::Retagger" alt="" coords="1509,3145,1675,3172"/>
+<area shape="rect" id="node77" href="$class_wire_cell_1_1_gen_1_1_silent_noise.html" title="WireCell::Gen::SilentNoise" alt="" coords="1503,1817,1681,1844"/>
+<area shape="rect" id="node78" href="$class_wire_cell_1_1_gen_1_1_time_gated_depos.html" title="WireCell::Gen::TimeGated\lDepos" alt="" coords="1504,4485,1680,4526"/>
+<area shape="rect" id="node79" href="$class_wire_cell_1_1_gen_1_1_track_depos.html" title="A producer of depositions created from some number of simple, linear tracks. " alt="" coords="1501,2020,1683,2047"/>
+<area shape="rect" id="node80" href="$class_wire_cell_1_1_gen_1_1_truth_smearer.html" title="WireCell::Gen::TruthSmearer" alt="" coords="1497,4231,1687,4257"/>
+<area shape="rect" id="node81" href="$class_wire_cell_1_1_gen_1_1_truth_trace_i_d.html" title="WireCell::Gen::TruthTraceID" alt="" coords="1497,4332,1687,4359"/>
+<area shape="rect" id="node82" href="$class_wire_cell_1_1_gen_1_1_wire_bounded_depos.html" title="WireCell::Gen::WireBounded\lDepos" alt="" coords="1497,4550,1687,4591"/>
+<area shape="rect" id="node83" href="$class_wire_cell_1_1_gen_1_1_wire_schema_file.html" title="WireCell::Gen::WireSchemaFile" alt="" coords="1488,5553,1696,5580"/>
+<area shape="rect" id="node84" href="$class_wire_cell_1_1_img_1_1_blob_clustering.html" title="WireCell::Img::BlobClustering" alt="" coords="1495,4667,1689,4693"/>
+<area shape="rect" id="node85" href="$class_wire_cell_1_1_img_1_1_blob_grouping.html" title="WireCell::Img::BlobGrouping" alt="" coords="1498,2993,1686,3020"/>
+<area shape="rect" id="node86" href="$class_wire_cell_1_1_img_1_1_blob_reframer.html" title="WireCell::Img::BlobReframer" alt="" coords="1497,3095,1687,3121"/>
+<area shape="rect" id="node87" href="$class_wire_cell_1_1_img_1_1_blob_set_sync.html" title="WireCell::Img::BlobSetSync" alt="" coords="1499,2071,1685,2097"/>
+<area shape="rect" id="node88" href="$class_wire_cell_1_1_img_1_1_blob_solving.html" title="WireCell::Img::BlobSolving" alt="" coords="1503,3044,1681,3071"/>
+<area shape="rect" id="node89" href="$class_wire_cell_1_1_img_1_1_cluster_sink.html" title="WireCell::Img::ClusterSink" alt="" coords="1503,5037,1681,5064"/>
+<area shape="rect" id="node90" href="$class_wire_cell_1_1_img_1_1_grid_tiling.html" title="WireCell::Img::GridTiling" alt="" coords="1509,2441,1675,2468"/>
+<area shape="rect" id="node91" href="$class_wire_cell_1_1_img_1_1_json_blob_set_sink.html" title="WireCell::Img::JsonBlobSetSink" alt="" coords="1487,4936,1697,4963"/>
+<area shape="rect" id="node92" href="$class_wire_cell_1_1_img_1_1_json_cluster_tap.html" title="WireCell::Img::JsonClusterTap" alt="" coords="1491,2943,1693,2969"/>
+<area shape="rect" id="node93" href="$class_wire_cell_1_1_img_1_1_naive_striper.html" title="WireCell::Img::NaiveStriper" alt="" coords="1501,2492,1683,2519"/>
+<area shape="rect" id="node94" href="$class_wire_cell_1_1_img_1_1_slice_fanout.html" title="WireCell::Img::SliceFanout" alt="" coords="1503,2391,1681,2417"/>
+<area shape="rect" id="node95" href="$class_wire_cell_1_1_img_1_1_slices_sink.html" title="WireCell::Img::SlicesSink" alt="" coords="1506,4835,1678,4861"/>
+<area shape="rect" id="node96" href="$class_wire_cell_1_1_img_1_1_sum_slice_base.html" title="WireCell::Img::SumSliceBase" alt="" coords="1494,2740,1690,2767"/>
+<area shape="rect" id="node99" href="$class_wire_cell_1_1_plane_diffuser.html" title="WireCell::PlaneDiffuser" alt="" coords="1513,4079,1671,4105"/>
+<area shape="rect" id="node100" href="$class_wire_cell_1_1_sig_proc_1_1_channel_selector.html" title="WireCell::SigProc::\lChannelSelector" alt="" coords="1525,2674,1659,2715"/>
+<area shape="rect" id="node102" href="$class_wire_cell_1_1_sig_proc_1_1_channel_splitter.html" title="WireCell::SigProc::\lChannelSplitter" alt="" coords="1525,2325,1659,2366"/>
+<area shape="rect" id="node103" href="$class_wire_cell_1_1_sig_proc_1_1_field_response.html" title="WireCell::SigProc::\lFieldResponse" alt="" coords="1525,1519,1659,1561"/>
+<area shape="rect" id="node104" href="$class_wire_cell_1_1_sig_proc_1_1_frame_merger.html" title="WireCell::SigProc::\lFrameMerger" alt="" coords="1525,3911,1659,3953"/>
+<area shape="rect" id="node105" href="$class_wire_cell_1_1_sig_proc_1_1_hf_filter.html" title="WireCell::SigProc::\lHfFilter" alt="" coords="1525,1585,1659,1626"/>
+<area shape="rect" id="node106" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html" title="WireCell::SigProc::\lL1SPFilter" alt="" coords="1525,3197,1659,3238"/>
+<area shape="rect" id="node107" href="$class_wire_cell_1_1_sig_proc_1_1_lf_filter.html" title="WireCell::SigProc::\lLfFilter" alt="" coords="1525,1650,1659,1691"/>
+<area shape="rect" id="node108" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base.html" title="WireCell::SigProc::\lMicroboone::ConfigFilterBase" alt="" coords="1495,2609,1689,2650"/>
+<area shape="rect" id="node109" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter.html" title="WireCell::SigProc::\lOmnibusNoiseFilter" alt="" coords="1523,3262,1661,3303"/>
+<area shape="rect" id="node110" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_p_m_t_noise_filter.html" title="WireCell::SigProc::\lOmnibusPMTNoiseFilter" alt="" coords="1509,3327,1675,3369"/>
+<area shape="rect" id="node111" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_sig_proc.html" title="WireCell::SigProc::\lOmnibusSigProc" alt="" coords="1525,3393,1659,3434"/>
+<area shape="rect" id="node112" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base.html" title="WireCell::SigProc::\lProtodune::ConfigFilterBase" alt="" coords="1499,2543,1685,2585"/>
+<area shape="rect" id="node113" href="$class_wire_cell_1_1_sio_1_1_bee_depo_source.html" title="WireCell::Sio::BeeDepoSource" alt="" coords="1491,1868,1693,1895"/>
+<area shape="rect" id="node114" href="$class_wire_cell_1_1_sio_1_1_json_depo_source.html" title="WireCell::Sio::JsonDepoSource" alt="" coords="1489,1919,1695,1945"/>
+<area shape="rect" id="node115" href="$class_wire_cell_1_1_sio_1_1_numpy_depo_saver.html" title="WireCell::Sio::NumpyDepo\lSaver" alt="" coords="1502,3794,1682,3835"/>
+<area shape="rect" id="node116" href="$class_wire_cell_1_1_sio_1_1_numpy_frame_saver.html" title="WireCell::Sio::NumpyFrame\lSaver" alt="" coords="1499,3458,1685,3499"/>
+<area shape="rect" id="node117" href="$class_wire_cell_1_1_wire_params.html" title="WireCell::WireParams" alt="" coords="1516,5291,1668,5317"/>
+<area shape="rect" id="node118" href="$class_wire_cell_1_1_wire_source.html" title="WireCell::WireSource" alt="" coords="1518,1716,1666,1743"/>
+<area shape="rect" id="node119" href="$class_wire_cell_tbb_1_1_data_flow_graph.html" title="WireCellTbb::DataFlowGraph" alt="" coords="1495,1468,1689,1495"/>
+<area shape="rect" id="node64" href="$class_wire_cell_1_1_gen_1_1_depo_splat.html" title="WireCell::Gen::DepoSplat" alt="" coords="1771,4281,1945,4308"/>
+<area shape="rect" id="node97" href="$class_wire_cell_1_1_img_1_1_sum_slicer.html" title="WireCell::Img::SumSlicer" alt="" coords="1773,3435,1943,3461"/>
+<area shape="rect" id="node98" href="$class_wire_cell_1_1_img_1_1_sum_slices.html" title="WireCell::Img::SumSlices" alt="" coords="1771,4659,1945,4685"/>
+<area shape="rect" id="node101" href="$class_wire_cell_1_1_sig_proc_1_1_d_b_channel_selector.html" title="WireCell::SigProc::\lDBChannelSelector" alt="" coords="1789,2674,1927,2715"/>
+<area shape="rect" id="node121" href="$class_wire_cell_1_1_i_data_flow_graph.html" title="WireCell::IDataFlowGraph" alt="" coords="441,1440,615,1467"/>
+<area shape="rect" id="node123" href="$class_wire_cell_1_1_i_deconvolution.html" title="WireCell::IDeconvolution" alt="" coords="445,1581,611,1608"/>
+<area shape="rect" id="node125" href="$class_wire_cell_1_1_i_factory.html" title="WireCell::IFactory" alt="" coords="464,1504,592,1531"/>
+<area shape="rect" id="node126" href="$class_wire_cell_1_1_i_named_factory.html" title="WireCell::INamedFactory" alt="" coords="704,1484,875,1511"/>
+<area shape="rect" id="node127" href="$class_wire_cell_1_1_named_factory.html" title="WireCell::NamedFactory\l\&lt; Type \&gt;" alt="" coords="967,1473,1134,1514"/>
+<area shape="rect" id="node129" href="$class_wire_cell_1_1_i_field_response.html" title="WireCell::IFieldResponse" alt="" coords="443,1640,613,1667"/>
+<area shape="rect" id="node131" href="$class_wire_cell_1_1_i_filter_waveform.html" title="WireCell::IFilterWaveform" alt="" coords="1231,1657,1405,1684"/>
+<area shape="rect" id="node133" href="$class_wire_cell_1_1_i_impact_response.html" title="WireCell::IImpactResponse" alt="" coords="437,1697,619,1724"/>
+<area shape="rect" id="node134" href="$class_wire_cell_1_1_gen_1_1_impact_response.html" title="WireCell::Gen::ImpactResponse" alt="" coords="684,1644,895,1671"/>
+<area shape="rect" id="node136" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="471,2784,585,2811"/>
+<area shape="rect" id="node137" href="$class_wire_cell_1_1_i_fanin_node_base.html" title="WireCell::IFaninNodeBase" alt="" coords="701,2187,878,2213"/>
+<area shape="rect" id="node145" href="$class_wire_cell_1_1_i_fanout_node_base.html" title="WireCell::IFanoutNodeBase" alt="" coords="697,2529,882,2556"/>
+<area shape="rect" id="node157" href="$class_wire_cell_1_1_i_function_node_base.html" title="WireCell::IFunctionNodeBase" alt="" coords="692,3092,887,3119"/>
+<area shape="rect" id="node181" href="$class_wire_cell_1_1_i_hydra_node_base.html" title="WireCell::IHydraNodeBase" alt="" coords="699,3653,879,3680"/>
+<area shape="rect" id="node185" href="$class_wire_cell_1_1_i_join_node_base.html" title="WireCell::IJoinNodeBase" alt="" coords="705,3916,874,3943"/>
+<area shape="rect" id="node189" href="$class_wire_cell_1_1_i_queuedout_node_base.html" title="WireCell::IQueuedoutNodeBase" alt="" coords="685,4403,893,4429"/>
+<area shape="rect" id="node205" href="$class_wire_cell_1_1_i_sink_node_base.html" title="WireCell::ISinkNodeBase" alt="" coords="704,4996,875,5023"/>
+<area shape="rect" id="node226" href="$class_wire_cell_1_1_i_source_node_base.html" title="WireCell::ISourceNodeBase" alt="" coords="696,1925,883,1952"/>
+<area shape="rect" id="node234" href="$class_wire_cell_1_1_i_split_node_base.html" title="WireCell::ISplitNodeBase" alt="" coords="704,1695,875,1721"/>
+<area shape="rect" id="node138" href="$class_wire_cell_1_1_i_fanin_node.html" title="WireCell::IFaninNode\l\&lt; IBlobSet, IBlobSet, 0 \&gt;" alt="" coords="966,2049,1135,2090"/>
+<area shape="rect" id="node140" href="$class_wire_cell_1_1_i_fanin_node.html" title="WireCell::IFaninNode\l\&lt; ICluster, ICluster, 0 \&gt;" alt="" coords="970,2179,1131,2221"/>
+<area shape="rect" id="node142" href="$class_wire_cell_1_1_i_fanin_node.html" title="WireCell::IFaninNode\l\&lt; IFrame, IFrame, 0 \&gt;" alt="" coords="975,2114,1126,2155"/>
+<area shape="rect" id="node144" href="$class_wire_cell_1_1_i_fanin_node.html" title="WireCell::IFaninNode\l\&lt; InputType, OutputType,\l FaninMultiplicity \&gt;" alt="" coords="965,2245,1137,2301"/>
+<area shape="rect" id="node139" href="$class_wire_cell_1_1_i_blob_set_fanin.html" title="WireCell::IBlobSetFanin" alt="" coords="1237,2063,1399,2089"/>
+<area shape="rect" id="node141" href="$class_wire_cell_1_1_i_cluster_fanin.html" title="WireCell::IClusterFanin" alt="" coords="1239,2187,1397,2213"/>
+<area shape="rect" id="node143" href="$class_wire_cell_1_1_i_frame_fanin.html" title="WireCell::IFrameFanin" alt="" coords="1241,2121,1395,2148"/>
+<area shape="rect" id="node146" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; IBlobSet::vector, IBlobSet, 0 \&gt;" alt="" coords="944,2457,1157,2498"/>
+<area shape="rect" id="node148" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; IDepo, IDepo, 0 \&gt;" alt="" coords="973,2326,1128,2367"/>
+<area shape="rect" id="node150" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; IDepoSet, IDepoSet, 0 \&gt;" alt="" coords="961,2391,1140,2433"/>
+<area shape="rect" id="node152" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; IFrame, IFrame, 0 \&gt;" alt="" coords="973,2522,1128,2563"/>
+<area shape="rect" id="node154" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; ISlice, ISlice, 0 \&gt;" alt="" coords="973,2587,1128,2629"/>
+<area shape="rect" id="node156" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; InputType, OutputType,\l FanoutMultiplicity \&gt;" alt="" coords="965,2653,1137,2709"/>
+<area shape="rect" id="node147" href="$class_wire_cell_1_1_i_blob_set_fanout.html" title="WireCell::IBlobSetFanout" alt="" coords="1233,2457,1403,2484"/>
+<area shape="rect" id="node149" href="$class_wire_cell_1_1_i_depo_fanout.html" title="WireCell::IDepoFanout" alt="" coords="1241,2285,1395,2312"/>
+<area shape="rect" id="node151" href="$class_wire_cell_1_1_i_depo_set_fanout.html" title="WireCell::IDepoSetFanout" alt="" coords="1231,2368,1405,2395"/>
+<area shape="rect" id="node153" href="$class_wire_cell_1_1_i_frame_fanout.html" title="WireCell::IFrameFanout" alt="" coords="1237,2508,1399,2535"/>
+<area shape="rect" id="node155" href="$class_wire_cell_1_1_i_slice_fanout.html" title="WireCell::ISliceFanout" alt="" coords="1241,2569,1395,2596"/>
+<area shape="rect" id="node158" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; ICluster, ICluster \&gt;" alt="" coords="968,2986,1133,3027"/>
+<area shape="rect" id="node160" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; ICluster, IFrame \&gt;" alt="" coords="968,3117,1133,3158"/>
+<area shape="rect" id="node162" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IDepo, IDepo \&gt;" alt="" coords="968,3253,1133,3294"/>
+<area shape="rect" id="node164" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IDepoSet, IFrame \&gt;" alt="" coords="968,2919,1133,2961"/>
+<area shape="rect" id="node166" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IFrame, IFrame \&gt;" alt="" coords="968,3183,1133,3225"/>
+<area shape="rect" id="node168" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IFrame, ISliceFrame \&gt;" alt="" coords="968,3325,1133,3366"/>
+<area shape="rect" id="node170" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; ISlice, IBlobSet \&gt;" alt="" coords="968,2786,1133,2827"/>
+<area shape="rect" id="node172" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; ISlice, IStripeSet \&gt;" alt="" coords="968,2854,1133,2895"/>
+<area shape="rect" id="node174" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IWire::vector, IWireSummary \&gt;" alt="" coords="943,3403,1159,3445"/>
+<area shape="rect" id="node177" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IWireParameters, IWire\l::vector \&gt;" alt="" coords="965,3496,1136,3552"/>
+<area shape="rect" id="node180" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; InputType, OutputType \&gt;" alt="" coords="961,3051,1141,3093"/>
+<area shape="rect" id="node159" href="$class_wire_cell_1_1_i_cluster_filter.html" title="WireCell::IClusterFilter" alt="" coords="1241,2993,1395,3020"/>
+<area shape="rect" id="node161" href="$class_wire_cell_1_1_i_cluster_framer.html" title="WireCell::IClusterFramer" alt="" coords="1235,3109,1401,3136"/>
+<area shape="rect" id="node163" href="$class_wire_cell_1_1_i_depo_filter.html" title="WireCell::IDepoFilter" alt="" coords="1246,3627,1390,3653"/>
+<area shape="rect" id="node165" href="$class_wire_cell_1_1_i_depo_framer.html" title="WireCell::IDepoFramer" alt="" coords="1240,2867,1396,2893"/>
+<area shape="rect" id="node167" href="$class_wire_cell_1_1_i_frame_filter.html" title="WireCell::IFrameFilter" alt="" coords="1243,3400,1393,3427"/>
+<area shape="rect" id="node169" href="$class_wire_cell_1_1_i_frame_slicer.html" title="WireCell::IFrameSlicer" alt="" coords="1241,4129,1395,4156"/>
+<area shape="rect" id="node171" href="$class_wire_cell_1_1_i_tiling.html" title="WireCell::ITiling" alt="" coords="1261,2631,1375,2657"/>
+<area shape="rect" id="node173" href="$class_wire_cell_1_1_i_slice_striper.html" title="WireCell::ISliceStriper" alt="" coords="1243,2684,1393,2711"/>
+<area shape="rect" id="node175" href="$class_wire_cell_1_1_i_wire_summarizer.html" title="WireCell::IWireSummarizer" alt="" coords="1227,4453,1409,4480"/>
+<area shape="rect" id="node176" href="$class_wire_cell_1_1_wire_summarizer.html" title="WireCell::WireSummarizer" alt="" coords="1503,4717,1681,4744"/>
+<area shape="rect" id="node178" href="$class_wire_cell_1_1_i_wire_generator.html" title="WireCell::IWireGenerator" alt="" coords="1234,4555,1402,4581"/>
+<area shape="rect" id="node179" href="$class_wire_cell_1_1_wire_generator.html" title="WireCell::WireGenerator" alt="" coords="1510,4885,1674,4912"/>
+<area shape="rect" id="node182" href="$class_wire_cell_1_1_i_hydra_node.html" title="WireCell::IHydraNode\l\&lt; std::tuple\&lt; IDepo,\l IDepo \&gt;, std::tuple\&lt;\l IDepo \&gt; \&gt;" alt="" coords="975,3631,1126,3702"/>
+<area shape="rect" id="node184" href="$class_wire_cell_1_1_i_hydra_node.html" title="WireCell::IHydraNode\l\&lt; InputTuple, OutputTuple \&gt;" alt="" coords="957,3726,1144,3767"/>
+<area shape="rect" id="node183" href="$class_wire_cell_1_1_i_depo_merger.html" title="WireCell::IDepoMerger" alt="" coords="1241,3769,1395,3796"/>
+<area shape="rect" id="node186" href="$class_wire_cell_1_1_i_join_node.html" title="WireCell::IJoinNode\l\&lt; std::tuple\&lt; IFrame,\l IFrame \&gt;, IFrame \&gt;" alt="" coords="978,3901,1123,3957"/>
+<area shape="rect" id="node188" href="$class_wire_cell_1_1_i_join_node.html" title="WireCell::IJoinNode\l\&lt; InputTuple, OutputType \&gt;" alt="" coords="959,3982,1142,4023"/>
+<area shape="rect" id="node187" href="$class_wire_cell_1_1_i_frame_joiner.html" title="WireCell::IFrameJoiner" alt="" coords="1240,3919,1396,3945"/>
+<area shape="rect" id="node190" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IBlobSet, IBlobSet \&gt;" alt="" coords="961,4643,1140,4685"/>
+<area shape="rect" id="node192" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IBlobSet, ICluster \&gt;" alt="" coords="961,4461,1140,4502"/>
+<area shape="rect" id="node194" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IDepo, IDepo \&gt;" alt="" coords="961,4395,1140,4437"/>
+<area shape="rect" id="node196" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IDepo, IDepoSet \&gt;" alt="" coords="961,4330,1140,4371"/>
+<area shape="rect" id="node198" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IDepo, IDiffusion \&gt;" alt="" coords="961,4139,1140,4181"/>
+<area shape="rect" id="node200" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IDepo, IFrame \&gt;" alt="" coords="961,4265,1140,4306"/>
+<area shape="rect" id="node202" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IFrame, ISlice \&gt;" alt="" coords="1229,4606,1407,4647"/>
+<area shape="rect" id="node204" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; InputType, OutputType \&gt;" alt="" coords="961,4578,1141,4619"/>
+<area shape="rect" id="node191" href="$class_wire_cell_1_1_i_blob_set_processor.html" title="WireCell::IBlobSetProcessor" alt="" coords="1223,4672,1413,4699"/>
+<area shape="rect" id="node193" href="$class_wire_cell_1_1_i_clustering.html" title="WireCell::IClustering" alt="" coords="1247,4504,1389,4531"/>
+<area shape="rect" id="node195" href="$class_wire_cell_1_1_i_drifter.html" title="WireCell::IDrifter" alt="" coords="1258,4403,1378,4429"/>
+<area shape="rect" id="node197" href="$class_wire_cell_1_1_i_depo_collector.html" title="WireCell::IDepoCollector" alt="" coords="1235,4352,1401,4379"/>
+<area shape="rect" id="node199" href="$class_wire_cell_1_1_i_diffuser.html" title="WireCell::IDiffuser" alt="" coords="1253,4079,1383,4105"/>
+<area shape="rect" id="node201" href="$class_wire_cell_1_1_i_ductor.html" title="WireCell::IDuctor" alt="" coords="1257,4272,1379,4299"/>
+<area shape="rect" id="node203" href="$class_wire_cell_1_1_i_frame_slices.html" title="WireCell::IFrameSlices" alt="" coords="1513,4987,1671,5013"/>
+<area shape="rect" id="node206" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; IBlobSet \&gt;" alt="" coords="980,4826,1121,4867"/>
+<area shape="rect" id="node208" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; ICluster \&gt;" alt="" coords="980,4891,1121,4933"/>
+<area shape="rect" id="node210" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; IDepo \&gt;" alt="" coords="980,5335,1121,5377"/>
+<area shape="rect" id="node213" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; IFrame \&gt;" alt="" coords="980,5153,1121,5194"/>
+<area shape="rect" id="node216" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; ISliceFrame \&gt;" alt="" coords="980,4761,1121,4802"/>
+<area shape="rect" id="node218" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; IStripeSet \&gt;" alt="" coords="980,5270,1121,5311"/>
+<area shape="rect" id="node221" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; PointVector \&gt;" alt="" coords="980,4957,1121,4998"/>
+<area shape="rect" id="node223" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; ScalarField \&gt;" alt="" coords="980,5022,1121,5063"/>
+<area shape="rect" id="node225" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; InputType \&gt;" alt="" coords="980,5087,1121,5129"/>
+<area shape="rect" id="node207" href="$class_wire_cell_1_1_i_blob_set_sink.html" title="WireCell::IBlobSetSink" alt="" coords="1240,4849,1396,4876"/>
+<area shape="rect" id="node209" href="$class_wire_cell_1_1_i_cluster_sink.html" title="WireCell::IClusterSink" alt="" coords="1242,4907,1394,4933"/>
+<area shape="rect" id="node211" href="$class_wire_cell_1_1_i_depo_sink.html" title="WireCell::IDepoSink" alt="" coords="1247,5503,1389,5529"/>
+<area shape="rect" id="node212" href="$class_wire_cell_1_1_dump_depos.html" title="WireCell::DumpDepos" alt="" coords="1515,5503,1669,5529"/>
+<area shape="rect" id="node214" href="$class_wire_cell_1_1_i_frame_sink.html" title="WireCell::IFrameSink" alt="" coords="1245,5317,1391,5344"/>
+<area shape="rect" id="node215" href="$class_wire_cell_1_1_gen_1_1_dump_frames.html" title="WireCell::Gen::DumpFrames" alt="" coords="1497,5341,1687,5368"/>
+<area shape="rect" id="node217" href="$class_wire_cell_1_1_i_slice_frame_sink.html" title="WireCell::ISliceFrameSink" alt="" coords="1230,4780,1406,4807"/>
+<area shape="rect" id="node219" href="$class_wire_cell_1_1_i_stripe_set_sink.html" title="WireCell::IStripeSetSink" alt="" coords="1236,5380,1400,5407"/>
+<area shape="rect" id="node220" href="$class_wire_cell_1_1_img_1_1_stripes_sink.html" title="WireCell::Img::StripesSink" alt="" coords="1503,5392,1681,5419"/>
+<area shape="rect" id="node222" href="$class_wire_cell_1_1_i_point_field_sink.html" title="WireCell::IPointFieldSink" alt="" coords="1234,4964,1402,4991"/>
+<area shape="rect" id="node224" href="$class_wire_cell_1_1_i_scalar_field_sink.html" title="WireCell::IScalarFieldSink" alt="" coords="1231,5029,1405,5056"/>
+<area shape="rect" id="node227" href="$class_wire_cell_1_1_i_source_node.html" title="WireCell::ISourceNode\l\&lt; IDepo \&gt;" alt="" coords="973,1983,1129,2025"/>
+<area shape="rect" id="node229" href="$class_wire_cell_1_1_i_source_node.html" title="WireCell::ISourceNode\l\&lt; IFrame \&gt;" alt="" coords="973,1853,1129,1894"/>
+<area shape="rect" id="node231" href="$class_wire_cell_1_1_i_source_node.html" title="WireCell::ISourceNode\l\&lt; IWire::vector \&gt;" alt="" coords="973,1787,1129,1829"/>
+<area shape="rect" id="node233" href="$class_wire_cell_1_1_i_source_node.html" title="WireCell::ISourceNode\l\&lt; OutputType \&gt;" alt="" coords="973,1918,1129,1959"/>
+<area shape="rect" id="node228" href="$class_wire_cell_1_1_i_depo_source.html" title="WireCell::IDepoSource" alt="" coords="1240,1969,1396,1996"/>
+<area shape="rect" id="node230" href="$class_wire_cell_1_1_i_frame_source.html" title="WireCell::IFrameSource" alt="" coords="1237,1817,1399,1844"/>
+<area shape="rect" id="node232" href="$class_wire_cell_1_1_i_wire_source.html" title="WireCell::IWireSource" alt="" coords="1242,1741,1394,1768"/>
+<area shape="rect" id="node235" href="$class_wire_cell_1_1_i_split_node.html" title="WireCell::ISplitNode\l\&lt; IFrame, std::tuple\l\&lt; IFrame, IFrame \&gt; \&gt;" alt="" coords="977,1589,1125,1645"/>
+<area shape="rect" id="node238" href="$class_wire_cell_1_1_i_split_node.html" title="WireCell::ISplitNode\l\&lt; InputType, OutputTuple \&gt;" alt="" coords="959,1670,1142,1711"/>
+<area shape="rect" id="node236" href="$class_wire_cell_1_1_i_frame_splitter.html" title="WireCell::IFrameSplitter" alt="" coords="1237,952,1399,979"/>
+<area shape="rect" id="node237" href="$class_wire_cell_1_1_sig_proc_1_1_frame_splitter.html" title="WireCell::SigProc::\lFrameSplitter" alt="" coords="1525,610,1659,651"/>
+<area shape="rect" id="node240" href="$class_wire_cell_1_1_i_plane_impact_response.html" title="WireCell::IPlaneImpactResponse" alt="" coords="420,2835,636,2861"/>
+<area shape="rect" id="node242" href="$class_wire_cell_1_1_i_random.html" title="WireCell::IRandom" alt="" coords="984,5219,1117,5245"/>
+<area shape="rect" id="node244" href="$class_wire_cell_1_1_i_recombination_model.html" title="WireCell::IRecombination\lModel" alt="" coords="1233,5205,1403,5246"/>
+<area shape="rect" id="node246" href="$class_wire_cell_1_1_i_wire_parameters.html" title="WireCell::IWireParameters" alt="" coords="700,5449,879,5476"/>
+<area shape="rect" id="node248" href="$class_wire_cell_1_1_i_wire_plane.html" title="WireCell::IWirePlane" alt="" coords="456,5504,600,5531"/>
+<area shape="rect" id="node249" href="$class_wire_cell_1_1_gen_1_1_wire_plane.html" title="WireCell::Gen::WirePlane" alt="" coords="703,5504,875,5531"/>
+<area shape="rect" id="node251" href="$class_wire_cell_1_1_i_wire_schema.html" title="WireCell::IWireSchema" alt="" coords="449,5555,607,5581"/>
+</map>

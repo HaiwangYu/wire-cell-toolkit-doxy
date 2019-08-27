@@ -1,0 +1,187 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Protodune\+:\+:Config\+Filter\+Base Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}}
+
+
+{\ttfamily \#include $<$Protodune.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Protodune\+:\+:Config\+Filter\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Protodune\+:\+:Config\+Filter\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_ac4e78e426df5a24a4b8638597f0ab6d1}{Config\+Filter\+Base} (const std\+::string \&anode=\char`\"{}Anode\+Plane\char`\"{}, const std\+::string \&noisedb=\char`\"{}Omni\+Channel\+Noise\+DB\char`\"{})
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a35b2519db55618d3bc2b167bc3964404}{$\sim$\+Config\+Filter\+Base} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a70292e077d8a9a578494a64e9f9afa6a}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a68b71c244f3a6ade0320a43f1699f1c9}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a4a6d78e4e3977165a24420463bc32526}{set\+\_\+channel\+\_\+noisedb} (\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::pointer} ndb)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_ae56db38557652b3c87a209776caf8680}{m\+\_\+anode\+\_\+tn}
+\item 
+std\+::string \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a7db12939221989208e6ebc9340e18581}{m\+\_\+noisedb\+\_\+tn}
+\item 
+\hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{I\+Anode\+Plane\+::pointer} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a913bad0068f27d0e77626b812be512a9}{m\+\_\+anode}
+\item 
+\hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{I\+Channel\+Noise\+Database\+::pointer} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a26a540a159b64fc2633fbf8566ba616c}{m\+\_\+noisedb}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file Protodune.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_ac4e78e426df5a24a4b8638597f0ab6d1}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_ac4e78e426df5a24a4b8638597f0ab6d1}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}!Config\+Filter\+Base@{Config\+Filter\+Base}}
+\index{Config\+Filter\+Base@{Config\+Filter\+Base}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{Config\+Filter\+Base()}{ConfigFilterBase()}}
+{\footnotesize\ttfamily Protodune\+::\+Config\+Filter\+Base\+::\+Config\+Filter\+Base (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{anode = {\ttfamily \char`\"{}AnodePlane\char`\"{}},  }\item[{const std\+::string \&}]{noisedb = {\ttfamily \char`\"{}OmniChannelNoiseDB\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 599 of file Protodune.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a35b2519db55618d3bc2b167bc3964404}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a35b2519db55618d3bc2b167bc3964404}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}!````~Config\+Filter\+Base@{$\sim$\+Config\+Filter\+Base}}
+\index{````~Config\+Filter\+Base@{$\sim$\+Config\+Filter\+Base}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Config\+Filter\+Base()}{~ConfigFilterBase()}}
+{\footnotesize\ttfamily Protodune\+::\+Config\+Filter\+Base\+::$\sim$\+Config\+Filter\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 602 of file Protodune.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a70292e077d8a9a578494a64e9f9afa6a}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a70292e077d8a9a578494a64e9f9afa6a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Protodune\+::\+Config\+Filter\+Base\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_acf32ea2e00ad1f3e39e987aa30ca60c3}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}.
+
+
+
+Definition at line 603 of file Protodune.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a68b71c244f3a6ade0320a43f1699f1c9}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a68b71c244f3a6ade0320a43f1699f1c9}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Protodune\+::\+Config\+Filter\+Base\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a2f0a41f11d154f971da95d9127be594d}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}.
+
+
+
+Definition at line 611 of file Protodune.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a4a6d78e4e3977165a24420463bc32526}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a4a6d78e4e3977165a24420463bc32526}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}!set\+\_\+channel\+\_\+noisedb@{set\+\_\+channel\+\_\+noisedb}}
+\index{set\+\_\+channel\+\_\+noisedb@{set\+\_\+channel\+\_\+noisedb}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+channel\+\_\+noisedb()}{set\_channel\_noisedb()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base\+::set\+\_\+channel\+\_\+noisedb (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::pointer}}]{ndb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file Protodune.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a913bad0068f27d0e77626b812be512a9}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a913bad0068f27d0e77626b812be512a9}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}!m\+\_\+anode@{m\+\_\+anode}}
+\index{m\+\_\+anode@{m\+\_\+anode}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+anode}{m\_anode}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{I\+Anode\+Plane\+::pointer} Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base\+::m\+\_\+anode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 45 of file Protodune.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_ae56db38557652b3c87a209776caf8680}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_ae56db38557652b3c87a209776caf8680}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}!m\+\_\+anode\+\_\+tn@{m\+\_\+anode\+\_\+tn}}
+\index{m\+\_\+anode\+\_\+tn@{m\+\_\+anode\+\_\+tn}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+anode\+\_\+tn}{m\_anode\_tn}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base\+::m\+\_\+anode\+\_\+tn\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 44 of file Protodune.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a26a540a159b64fc2633fbf8566ba616c}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a26a540a159b64fc2633fbf8566ba616c}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}!m\+\_\+noisedb@{m\+\_\+noisedb}}
+\index{m\+\_\+noisedb@{m\+\_\+noisedb}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+noisedb}{m\_noisedb}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{I\+Channel\+Noise\+Database\+::pointer} Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base\+::m\+\_\+noisedb\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 46 of file Protodune.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a7db12939221989208e6ebc9340e18581}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a7db12939221989208e6ebc9340e18581}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}!m\+\_\+noisedb\+\_\+tn@{m\+\_\+noisedb\+\_\+tn}}
+\index{m\+\_\+noisedb\+\_\+tn@{m\+\_\+noisedb\+\_\+tn}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+noisedb\+\_\+tn}{m\_noisedb\_tn}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base\+::m\+\_\+noisedb\+\_\+tn\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 44 of file Protodune.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_protodune_8h}{Protodune.\+h}\item 
+sigproc/src/\hyperlink{_protodune_8cxx}{Protodune.\+cxx}\end{DoxyCompactItemize}

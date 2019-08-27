@@ -1,0 +1,6 @@
+<map id="cnpy::NpyArray::num_bytes" name="cnpy::NpyArray::num_bytes">
+<area shape="rect" id="node2" href="$cnpy_8cxx.html#a677640ee1bd85eaa2dd020dc15b1992f" title="load_the_npy_file" alt="" coords="206,56,329,83"/>
+<area shape="rect" id="node5" href="$cnpy_8cxx.html#aa2884b9a3917403b3007f6d03cf6df19" title="load_the_npz_array" alt="" coords="200,5,335,32"/>
+<area shape="rect" id="node3" href="$namespacecnpy.html#ab6ef932e48b81bddc5457ff4ceb44a3a" title="cnpy::npz_load" alt="" coords="383,5,493,32"/>
+<area shape="rect" id="node4" href="$namespacecnpy.html#abffb25587a54473fbe1d3c86fa4df4fb" title="cnpy::npy_load" alt="" coords="383,56,493,83"/>
+</map>

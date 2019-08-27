@@ -1,0 +1,10 @@
+<map id="WireCell::Img::NaiveStriper" name="WireCell::Img::NaiveStriper">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_slice_striper.html" title="WireCell::ISliceStriper" alt="" coords="1001,18,1152,45"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; ISlice, IStripeSet \&gt;" alt="" coords="788,7,953,48"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_function_node_base.html" title="WireCell::IFunctionNodeBase" alt="" coords="545,14,740,41"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="383,14,497,41"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="184,5,335,47"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,46,136,73"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="184,71,335,112"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="564,75,721,102"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="spdlog::sinks::android_sink::sink_it_" name="spdlog::sinks::android_sink::sink_it_">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1fmt__helper.html#a603f4d0d8853a61610a0042d5d62fe94" title="spdlog::details::fmt\l_helper::append_string_view" alt="" coords="203,5,389,47"/>
+<area shape="rect" id="node3" href="$namespacespdlog_1_1details_1_1os.html#a49ccbc872aa679db9d1187a48897804e" title="spdlog::details::os\l::sleep_for_millis" alt="" coords="232,71,360,112"/>
+<area shape="rect" id="node4" href="$namespacespdlog_1_1details_1_1os.html#ac7c0d6af1f3f652f23e57f057217b9a7" title="spdlog::details::os\l::filename_to_str" alt="" coords="437,71,565,112"/>
+</map>

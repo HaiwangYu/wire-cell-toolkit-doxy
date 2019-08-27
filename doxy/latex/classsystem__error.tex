@@ -1,0 +1,126 @@
+\hypertarget{classsystem__error}{}\section{system\+\_\+error Class Reference}
+\label{classsystem__error}\index{system\+\_\+error@{system\+\_\+error}}
+
+
+{\ttfamily \#include $<$format.\+h$>$}
+
+
+
+Inheritance diagram for system\+\_\+error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classsystem__error__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for system\+\_\+error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classsystem__error__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classsystem__error_a6761fd4c8604a59a7c79f6bfdfaf25cb}{system\+\_\+error} (int \hyperlink{classerror__code}{error\+\_\+code}, \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view} message, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+int \hyperlink{classsystem__error_a9c095f54f80c8393f6bf24eb9d188ec4}{error\+\_\+code} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsystem__error_a0a883f3911253771f2e8fea883ccb21d}{system\+\_\+error} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classsystem__error_a35ed90a7a994961cdb27b5a004b0e9de}{error\+\_\+code\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An error returned by an operating system or a language runtime, for example a file opening error. 
+
+Definition at line 2198 of file format.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystem__error_a0a883f3911253771f2e8fea883ccb21d}\label{classsystem__error_a0a883f3911253771f2e8fea883ccb21d}} 
+\index{system\+\_\+error@{system\+\_\+error}!system\+\_\+error@{system\+\_\+error}}
+\index{system\+\_\+error@{system\+\_\+error}!system\+\_\+error@{system\+\_\+error}}
+\subsubsection{\texorpdfstring{system\+\_\+error()}{system\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily system\+\_\+error\+::system\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 2205 of file format.\+h.
+
+\mbox{\Hypertarget{classsystem__error_a6761fd4c8604a59a7c79f6bfdfaf25cb}\label{classsystem__error_a6761fd4c8604a59a7c79f6bfdfaf25cb}} 
+\index{system\+\_\+error@{system\+\_\+error}!system\+\_\+error@{system\+\_\+error}}
+\index{system\+\_\+error@{system\+\_\+error}!system\+\_\+error@{system\+\_\+error}}
+\subsubsection{\texorpdfstring{system\+\_\+error()}{system\_error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+system\+\_\+error\+::system\+\_\+error (\begin{DoxyParamCaption}\item[{int}]{error\+\_\+code,  }\item[{\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view}}]{message,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a \+:class\+:{\ttfamily fmt\+::system\+\_\+error} object with a description formatted with {\ttfamily fmt\+::format\+\_\+system\+\_\+error}. {\itshape message} and additional arguments passed into the constructor are formatted similarly to {\ttfamily fmt\+::format}.
+
+Example$\ast$$\ast$\+:\+:
+
+This throws a \hyperlink{classsystem__error}{system\+\_\+error} with the description cannot open file \textquotesingle{}madeup\textquotesingle{}\+: No such file or directory or similar (system message may vary). const char $\ast$filename = \char`\"{}madeup\char`\"{}; std\+::\+F\+I\+LE $\ast$file = std\+::fopen(filename, \char`\"{}r\char`\"{}); if (!file) throw fmt\+::system\+\_\+error(errno, \char`\"{}cannot open file \textquotesingle{}\{\}\textquotesingle{}\char`\"{}, filename);  
+
+Definition at line 2227 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classsystem__error_a6761fd4c8604a59a7c79f6bfdfaf25cb_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystem__error_a9c095f54f80c8393f6bf24eb9d188ec4}\label{classsystem__error_a9c095f54f80c8393f6bf24eb9d188ec4}} 
+\index{system\+\_\+error@{system\+\_\+error}!error\+\_\+code@{error\+\_\+code}}
+\index{error\+\_\+code@{error\+\_\+code}!system\+\_\+error@{system\+\_\+error}}
+\subsubsection{\texorpdfstring{error\+\_\+code()}{error\_code()}}
+{\footnotesize\ttfamily int system\+\_\+error\+::error\+\_\+code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2232 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystem__error_a9c095f54f80c8393f6bf24eb9d188ec4_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystem__error_a35ed90a7a994961cdb27b5a004b0e9de}\label{classsystem__error_a35ed90a7a994961cdb27b5a004b0e9de}} 
+\index{system\+\_\+error@{system\+\_\+error}!error\+\_\+code\+\_\+@{error\+\_\+code\+\_\+}}
+\index{error\+\_\+code\+\_\+@{error\+\_\+code\+\_\+}!system\+\_\+error@{system\+\_\+error}}
+\subsubsection{\texorpdfstring{error\+\_\+code\+\_\+}{error\_code\_}}
+{\footnotesize\ttfamily int system\+\_\+error\+::error\+\_\+code\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 2203 of file format.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{format_8h}{format.\+h}\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{format-inl_8h}{format-\/inl.\+h}\end{DoxyCompactItemize}

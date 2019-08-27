@@ -1,0 +1,7 @@
+<map id="spdlog::sinks::sink::sink" name="spdlog::sinks::sink::sink">
+<area shape="rect" id="node2" href="$classspdlog_1_1sinks_1_1sink.html#a2637af0973ac863eedd76ee683279c0b" title="spdlog::sinks::sink\l::~sink" alt="" coords="197,5,327,47"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1sinks_1_1sink.html#a51d8f34ad79064e0dc13c6013236e427" title="spdlog::sinks::sink::log" alt="" coords="184,71,340,98"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1sinks_1_1sink.html#a8a0674ae3bca8f1617aef820e23a2ccd" title="spdlog::sinks::sink\l::flush" alt="" coords="197,123,327,164"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1sinks_1_1sink.html#a7e5cfd4b683c8bfa8fbd602d7f409632" title="spdlog::sinks::sink\l::set_pattern" alt="" coords="197,188,327,229"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1sinks_1_1sink.html#ac410f2229e583a75337a5fdf45d020be" title="spdlog::sinks::sink\l::set_formatter" alt="" coords="197,253,327,295"/>
+</map>

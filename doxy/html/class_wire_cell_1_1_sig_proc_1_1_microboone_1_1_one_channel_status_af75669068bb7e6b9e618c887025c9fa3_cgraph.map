@@ -1,0 +1,5 @@
+<map id="WireCell::SigProc::Microboone::OneChannelStatus::apply" name="WireCell::SigProc::Microboone::OneChannelStatus::apply">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status.html#a3836d07fe79d2efedd72838ac4e13d92" title="WireCell::SigProc::\lMicroboone::OneChannelStatus\l::ID_lf_noisy" alt="" coords="260,27,467,83"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#ae080d239c8b4426a6d74f9fd8ce85f1a" title="WireCell::Waveform\l::percentile_binned" alt="" coords="526,5,666,47"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="515,71,677,98"/>
+</map>

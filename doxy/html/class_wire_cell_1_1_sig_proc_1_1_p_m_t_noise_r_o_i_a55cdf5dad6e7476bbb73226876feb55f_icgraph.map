@@ -1,0 +1,7 @@
+<map id="WireCell::SigProc::PMTNoiseROI::get_peaks" name="WireCell::SigProc::PMTNoiseROI::get_peaks">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_p_m_t_noise_filter.html#af007f96c1c669926b51dce67928fbf60" title="WireCell::SigProc::\lOmnibusPMTNoiseFilter\l::IDPMTSignalInduction" alt="" coords="238,5,403,61"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a4b2640ed0856098cada1ba918b1e53d6" title="WireCell::SigProc::\lPMTNoiseROI::merge_ROI" alt="" coords="229,86,412,127"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_p_m_t_noise_filter.html#ad33bf21dae5ad22503a33e6444057dcb" title="IFrameFilter interface. " alt="" coords="685,39,851,95"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_p_m_t_noise_filter.html#a404245bd0dfdbd9447aecb5a19226df4" title="Explicitly inject required services. " alt="" coords="465,71,632,127"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a7031b3d183118e24d277e7c8deb50a1d" title="WireCell::SigProc::\lPMTNoiseROI::get_sorted\l_wwires" alt="" coords="460,151,637,207"/>
+</map>

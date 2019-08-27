@@ -1,0 +1,11 @@
+<map id="internal::write" name="internal::write">
+<area shape="rect" id="node2" href="$structinternal_1_1chrono__formatter.html#a5c9271dd72f0802191c6adfaeae8a1dc" title="internal::chrono_formatter\l::on_24_hour_time" alt="" coords="153,5,324,47"/>
+<area shape="rect" id="node3" href="$structinternal_1_1chrono__formatter.html#a578e890af81d7ea6c4c3dcb64ba2e8e2" title="internal::chrono_formatter\l::on_iso_time" alt="" coords="153,71,324,112"/>
+<area shape="rect" id="node4" href="$classinternal_1_1arg__formatter__base.html#a7cf58948dafdb66e977cfadb03176de5" title="internal::arg_formatter\l_base::operator()" alt="" coords="164,136,313,177"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a47fffd25c13670b8e2eb6559caeef974" title="internal::parse_format\l_string" alt="" coords="165,201,313,243"/>
+<area shape="rect" id="node6" href="$ostream_8h.html#a928c1e51eee22713de6b27dada091c40" title="vprint" alt="" coords="211,267,266,294"/>
+<area shape="rect" id="node8" href="$classfile.html#a14a03f1516c926cc0785728ebad4175c" title="file::descriptor" alt="" coords="187,318,291,345"/>
+<area shape="rect" id="node9" href="$classprintf__arg__formatter.html#adf72c691ec2561e444ac9520cc158243" title="printf_arg_formatter\l::operator()" alt="" coords="171,369,306,411"/>
+<area shape="rect" id="node10" href="$printf_8h.html#aee35a45c63a0f61f10fcb3dde7ae07ce" title="vfprintf" alt="" coords="207,435,270,462"/>
+<area shape="rect" id="node7" href="$ostream_8h.html#ac1dc30880e72d663127488352238aac0" title="print" alt="" coords="372,267,419,294"/>
+</map>

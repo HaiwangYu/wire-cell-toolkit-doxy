@@ -1,0 +1,72 @@
+\hypertarget{_json_cluster_tap_8cxx}{}\section{img/src/\+Json\+Cluster\+Tap.cxx File Reference}
+\label{_json_cluster_tap_8cxx}\index{img/src/\+Json\+Cluster\+Tap.\+cxx@{img/src/\+Json\+Cluster\+Tap.\+cxx}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Img/\+Json\+Cluster\+Tap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Channel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Anode\+Face.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Wire.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Blob.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Frame.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Units.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+String.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Named\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Include dependency graph for Json\+Cluster\+Tap.\+cxx\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_json_cluster_tap_8cxx__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structblob__jsoner}{blob\+\_\+jsoner}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_json_cluster_tap_8cxx_a3b4fcc87b774f121bde7202c5105c16b}{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY} (Json\+Cluster\+Tap, \hyperlink{class_wire_cell_1_1_img_1_1_json_cluster_tap}{Wire\+Cell\+::\+Img\+::\+Json\+Cluster\+Tap}, \hyperlink{class_wire_cell_1_1_i_cluster_filter}{Wire\+Cell\+::\+I\+Cluster\+Filter}, \hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable}) using namespace Wire\+Cell
+\item 
+Json\+::\+Value \hyperlink{_json_cluster_tap_8cxx_aa2eb7d090ad49b6f6ef384dfe2c7d4b5}{slice\+\_\+jsoner} (const \hyperlink{struct_wire_cell_1_1cluster__node__t}{cluster\+\_\+node\+\_\+t} \&\hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n})
+\item 
+Json\+::\+Value \hyperlink{_json_cluster_tap_8cxx_a73ed545358af78c16da3cc271c3b8f7b}{measurement\+\_\+jsoner} (const \hyperlink{struct_wire_cell_1_1cluster__node__t}{cluster\+\_\+node\+\_\+t} \&\hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_json_cluster_tap_8cxx_a73ed545358af78c16da3cc271c3b8f7b}\label{_json_cluster_tap_8cxx_a73ed545358af78c16da3cc271c3b8f7b}} 
+\index{Json\+Cluster\+Tap.\+cxx@{Json\+Cluster\+Tap.\+cxx}!measurement\+\_\+jsoner@{measurement\+\_\+jsoner}}
+\index{measurement\+\_\+jsoner@{measurement\+\_\+jsoner}!Json\+Cluster\+Tap.\+cxx@{Json\+Cluster\+Tap.\+cxx}}
+\subsubsection{\texorpdfstring{measurement\+\_\+jsoner()}{measurement\_jsoner()}}
+{\footnotesize\ttfamily Json\+::\+Value measurement\+\_\+jsoner (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1cluster__node__t}{cluster\+\_\+node\+\_\+t} \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 176 of file Json\+Cluster\+Tap.\+cxx.
+
+\mbox{\Hypertarget{_json_cluster_tap_8cxx_aa2eb7d090ad49b6f6ef384dfe2c7d4b5}\label{_json_cluster_tap_8cxx_aa2eb7d090ad49b6f6ef384dfe2c7d4b5}} 
+\index{Json\+Cluster\+Tap.\+cxx@{Json\+Cluster\+Tap.\+cxx}!slice\+\_\+jsoner@{slice\+\_\+jsoner}}
+\index{slice\+\_\+jsoner@{slice\+\_\+jsoner}!Json\+Cluster\+Tap.\+cxx@{Json\+Cluster\+Tap.\+cxx}}
+\subsubsection{\texorpdfstring{slice\+\_\+jsoner()}{slice\_jsoner()}}
+{\footnotesize\ttfamily Json\+::\+Value slice\+\_\+jsoner (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1cluster__node__t}{cluster\+\_\+node\+\_\+t} \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 159 of file Json\+Cluster\+Tap.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_json_cluster_tap_8cxx_aa2eb7d090ad49b6f6ef384dfe2c7d4b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_json_cluster_tap_8cxx_a3b4fcc87b774f121bde7202c5105c16b}\label{_json_cluster_tap_8cxx_a3b4fcc87b774f121bde7202c5105c16b}} 
+\index{Json\+Cluster\+Tap.\+cxx@{Json\+Cluster\+Tap.\+cxx}!W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}}
+\index{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}!Json\+Cluster\+Tap.\+cxx@{Json\+Cluster\+Tap.\+cxx}}
+\subsubsection{\texorpdfstring{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+R\+Y()}{WIRECELL\_FACTORY()}}
+{\footnotesize\ttfamily W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY (\begin{DoxyParamCaption}\item[{Json\+Cluster\+Tap}]{,  }\item[{\hyperlink{class_wire_cell_1_1_img_1_1_json_cluster_tap}{Wire\+Cell\+::\+Img\+::\+Json\+Cluster\+Tap}}]{,  }\item[{\hyperlink{class_wire_cell_1_1_i_cluster_filter}{Wire\+Cell\+::\+I\+Cluster\+Filter}}]{,  }\item[{\hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable}}]{ }\end{DoxyParamCaption})}
+

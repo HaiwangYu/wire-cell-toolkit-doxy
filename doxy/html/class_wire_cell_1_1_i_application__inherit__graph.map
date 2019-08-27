@@ -1,0 +1,9 @@
+<map id="WireCell::IApplication" name="WireCell::IApplication">
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_fourdee.html" title="WireCell::Gen::Fourdee" alt="" coords="597,5,755,32"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus.html" title="WireCell::SigProc::\lOmnibus" alt="" coords="609,57,743,98"/>
+<area shape="rect" id="node6" href="$class_wire_cell_apps_1_1_config_dumper.html" title="WireCellApps::ConfigDumper" alt="" coords="579,123,773,149"/>
+<area shape="rect" id="node7" href="$class_wire_cell_apps_1_1_node_dumper.html" title="WireCellApps::NodeDumper" alt="" coords="583,173,769,200"/>
+<area shape="rect" id="node8" href="$class_wire_cell_tbb_1_1_tbb_flow.html" title="WireCellTbb::TbbFlow" alt="" coords="600,224,752,251"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IApplication \&gt;" alt="" coords="184,115,335,157"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,123,136,149"/>
+</map>

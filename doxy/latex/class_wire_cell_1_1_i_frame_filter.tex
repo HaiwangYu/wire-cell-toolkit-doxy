@@ -1,0 +1,100 @@
+\hypertarget{class_wire_cell_1_1_i_frame_filter}{}\section{Wire\+Cell\+:\+:I\+Frame\+Filter Class Reference}
+\label{class_wire_cell_1_1_i_frame_filter}\index{Wire\+Cell\+::\+I\+Frame\+Filter@{Wire\+Cell\+::\+I\+Frame\+Filter}}
+
+
+{\ttfamily \#include $<$I\+Frame\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Frame\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_frame_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Frame\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_wire_cell_1_1_i_frame_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_frame_filter}{I\+Frame\+Filter} $>$ \hyperlink{class_wire_cell_1_1_i_frame_filter_ada9e2548319a557401707cbc299166f0}{pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_frame_filter_a5a59a124637dd0cbe7ff6840dbd341f1}{$\sim$\+I\+Frame\+Filter} ()
+\item 
+virtual std\+::string \hyperlink{class_wire_cell_1_1_i_frame_filter_ad6ce7c354f616ea9eec2f857165f936d}{signature} ()
+\begin{DoxyCompactList}\small\item\em Set the signature for all subclasses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A frame filter is something that applies some transformation on its input frame to produce and output frame. This is a functional node so does no buffering. The unit of the sample of the output frame may differ from input.
+
+Note, if the output frame samples are conceptually integral they are nonetheless still stored as floating point values. Consumers of the output frame should take care of rounding and truncating as required. 
+
+Definition at line 20 of file I\+Frame\+Filter.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_frame_filter_ada9e2548319a557401707cbc299166f0}\label{class_wire_cell_1_1_i_frame_filter_ada9e2548319a557401707cbc299166f0}} 
+\index{Wire\+Cell\+::\+I\+Frame\+Filter@{Wire\+Cell\+::\+I\+Frame\+Filter}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Frame\+Filter@{Wire\+Cell\+::\+I\+Frame\+Filter}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_frame_filter}{I\+Frame\+Filter}$>$ \hyperlink{class_wire_cell_1_1_i_frame_filter_ada9e2548319a557401707cbc299166f0}{Wire\+Cell\+::\+I\+Frame\+Filter\+::pointer}}
+
+
+
+Definition at line 23 of file I\+Frame\+Filter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_frame_filter_a5a59a124637dd0cbe7ff6840dbd341f1}\label{class_wire_cell_1_1_i_frame_filter_a5a59a124637dd0cbe7ff6840dbd341f1}} 
+\index{Wire\+Cell\+::\+I\+Frame\+Filter@{Wire\+Cell\+::\+I\+Frame\+Filter}!````~I\+Frame\+Filter@{$\sim$\+I\+Frame\+Filter}}
+\index{````~I\+Frame\+Filter@{$\sim$\+I\+Frame\+Filter}!Wire\+Cell\+::\+I\+Frame\+Filter@{Wire\+Cell\+::\+I\+Frame\+Filter}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Frame\+Filter()}{~IFrameFilter()}}
+{\footnotesize\ttfamily I\+Frame\+Filter\+::$\sim$\+I\+Frame\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 136 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_frame_filter_ad6ce7c354f616ea9eec2f857165f936d}\label{class_wire_cell_1_1_i_frame_filter_ad6ce7c354f616ea9eec2f857165f936d}} 
+\index{Wire\+Cell\+::\+I\+Frame\+Filter@{Wire\+Cell\+::\+I\+Frame\+Filter}!signature@{signature}}
+\index{signature@{signature}!Wire\+Cell\+::\+I\+Frame\+Filter@{Wire\+Cell\+::\+I\+Frame\+Filter}}
+\subsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily virtual std\+::string Wire\+Cell\+::\+I\+Frame\+Filter\+::signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the signature for all subclasses. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Frame, I\+Frame $>$}.
+
+
+
+Definition at line 27 of file I\+Frame\+Filter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_frame_filter_8h}{I\+Frame\+Filter.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

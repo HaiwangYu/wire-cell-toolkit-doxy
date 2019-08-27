@@ -1,0 +1,161 @@
+\hypertarget{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4}{}\section{Wire\+Cell\+:\+:shared\+\_\+queued$<$ T$<$ Types... $>$ $>$ Struct Template Reference}
+\label{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4}\index{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}}
+
+
+{\ttfamily \#include $<$Tuple\+Helpers.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_1_1_wrapped_shared}{Wrapped\+Shared}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T$<$ Types... $>$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a707744c73233f8c1ab8943ebd2c3e7e1}{tuple\+\_\+type}
+\item 
+typedef std\+::deque$<$ boost\+::any $>$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type}
+\item 
+typedef Wrapped\+Shared$<$ std\+::deque $>$\+::\hyperlink{namespace_wire_cell_a1f69a2598e2cdb413ffac1157b50670a}{type} \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}{shared\+\_\+queued\+\_\+tuple\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Element $>$ }\\\hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a7e41a94985bfcf931dcbe6068a47f59e}{as\+\_\+any\+\_\+queue\+\_\+convert} (const std\+::deque$<$ std\+::shared\+\_\+ptr$<$ const Element $>$ $>$ \&in)
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t... Indices$>$ }\\std\+::vector$<$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} $>$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab40492fc67fd4361340d9d3f2cff79ce}{as\+\_\+any\+\_\+queue\+\_\+impl} (const \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}{shared\+\_\+queued\+\_\+tuple\+\_\+type} \&toq, \hyperlink{structstd_1_1index__sequence}{std\+::index\+\_\+sequence}$<$ Indices... $>$)
+\item 
+std\+::vector$<$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} $>$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_aff51f08da8659b24a7976cf41208188b}{as\+\_\+any\+\_\+queue} (const \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}{shared\+\_\+queued\+\_\+tuple\+\_\+type} \&toq)
+\item 
+{\footnotesize template$<$typename Type $>$ }\\std\+::deque$<$ std\+::shared\+\_\+ptr$<$ const Type $>$ $>$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a1c5cc010c23aafb78d2acc2986455e9b}{from\+\_\+any\+\_\+queue\+\_\+convert} (const \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} \&aq)
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t... Indices$>$ }\\\hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}{shared\+\_\+queued\+\_\+tuple\+\_\+type} \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a05f808da0c56b9db19c890882ac71fc6}{from\+\_\+any\+\_\+queue\+\_\+impl} (const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} $>$ \&vaq, \hyperlink{structstd_1_1index__sequence}{std\+::index\+\_\+sequence}$<$ Indices... $>$)
+\item 
+\hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}{shared\+\_\+queued\+\_\+tuple\+\_\+type} \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_aa9a1f473b6503cd70756adf590f008c3}{from\+\_\+any\+\_\+queue} (const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} $>$ \&vaq)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$template$<$ typename... $>$ class T, typename... Types$>$\newline
+struct Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}
+
+
+
+Definition at line 135 of file Tuple\+Helpers.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}\label{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}} 
+\index{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}!any\+\_\+queue\+\_\+type@{any\+\_\+queue\+\_\+type}}
+\index{any\+\_\+queue\+\_\+type@{any\+\_\+queue\+\_\+type}!Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}}
+\subsubsection{\texorpdfstring{any\+\_\+queue\+\_\+type}{any\_queue\_type}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename... Types$>$ \\
+typedef std\+::deque$<$boost\+::any$>$ \hyperlink{struct_wire_cell_1_1shared__queued}{Wire\+Cell\+::shared\+\_\+queued}$<$ T$<$ Types... $>$ $>$\+::\hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type}}
+
+
+
+Definition at line 145 of file Tuple\+Helpers.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}\label{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}} 
+\index{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}!shared\+\_\+queued\+\_\+tuple\+\_\+type@{shared\+\_\+queued\+\_\+tuple\+\_\+type}}
+\index{shared\+\_\+queued\+\_\+tuple\+\_\+type@{shared\+\_\+queued\+\_\+tuple\+\_\+type}!Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}}
+\subsubsection{\texorpdfstring{shared\+\_\+queued\+\_\+tuple\+\_\+type}{shared\_queued\_tuple\_type}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename... Types$>$ \\
+typedef Wrapped\+Shared$<$std\+::deque$>$\+::\hyperlink{namespace_wire_cell_a1f69a2598e2cdb413ffac1157b50670a}{type} \hyperlink{struct_wire_cell_1_1shared__queued}{Wire\+Cell\+::shared\+\_\+queued}$<$ T$<$ Types... $>$ $>$\+::\hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}{shared\+\_\+queued\+\_\+tuple\+\_\+type}}
+
+
+
+Definition at line 148 of file Tuple\+Helpers.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a707744c73233f8c1ab8943ebd2c3e7e1}\label{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a707744c73233f8c1ab8943ebd2c3e7e1}} 
+\index{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}!tuple\+\_\+type@{tuple\+\_\+type}}
+\index{tuple\+\_\+type@{tuple\+\_\+type}!Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}}
+\subsubsection{\texorpdfstring{tuple\+\_\+type}{tuple\_type}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename... Types$>$ \\
+typedef T$<$Types...$>$ \hyperlink{struct_wire_cell_1_1shared__queued}{Wire\+Cell\+::shared\+\_\+queued}$<$ T$<$ Types... $>$ $>$\+::\hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a707744c73233f8c1ab8943ebd2c3e7e1}{tuple\+\_\+type}}
+
+
+
+Definition at line 137 of file Tuple\+Helpers.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_aff51f08da8659b24a7976cf41208188b}\label{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_aff51f08da8659b24a7976cf41208188b}} 
+\index{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}!as\+\_\+any\+\_\+queue@{as\+\_\+any\+\_\+queue}}
+\index{as\+\_\+any\+\_\+queue@{as\+\_\+any\+\_\+queue}!Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}}
+\subsubsection{\texorpdfstring{as\+\_\+any\+\_\+queue()}{as\_any\_queue()}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename... Types$>$ \\
+std\+::vector$<$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} $>$ \hyperlink{struct_wire_cell_1_1shared__queued}{Wire\+Cell\+::shared\+\_\+queued}$<$ T$<$ Types... $>$ $>$\+::as\+\_\+any\+\_\+queue (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}{shared\+\_\+queued\+\_\+tuple\+\_\+type} \&}]{toq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a tuple of queues of types to a vector of queues of boost\+::any.
+
+typedef typename tuple\+\_\+helper$<$\+I\+F\+D\+C\+S$>$\+::\+Wrapped$<$std\+::deque$>$\+::type I\+F\+D\+C\+S\+\_\+queues; I\+F\+D\+C\+S\+\_\+queues qs; auto any\+\_\+q = as\+\_\+any\+\_\+queue(qs); cerr $<$$<$ \char`\"{}\+First element from each queue\+:\textbackslash{}n\char`\"{}; cerr $<$$<$ any\+\_\+cast$<$int$>$(any\+\_\+q\mbox{[}0\mbox{]}\mbox{[}0\mbox{]}) $<$$<$ endl; cerr $<$$<$ any\+\_\+cast$<$float$>$(any\+\_\+q\mbox{[}1\mbox{]}\mbox{[}0\mbox{]}) $<$$<$ endl; cerr $<$$<$ any\+\_\+cast$<$double$>$(any\+\_\+q\mbox{[}2\mbox{]}\mbox{[}0\mbox{]}) $<$$<$ endl; cerr $<$$<$ any\+\_\+cast$<$char$>$(any\+\_\+q\mbox{[}3\mbox{]}\mbox{[}0\mbox{]}) $<$$<$ endl; cerr $<$$<$ any\+\_\+cast$<$std\+::string$>$(any\+\_\+q\mbox{[}4\mbox{]}\mbox{[}0\mbox{]}) $<$$<$ endl; 
+
+Definition at line 175 of file Tuple\+Helpers.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a7e41a94985bfcf931dcbe6068a47f59e}\label{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a7e41a94985bfcf931dcbe6068a47f59e}} 
+\index{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}!as\+\_\+any\+\_\+queue\+\_\+convert@{as\+\_\+any\+\_\+queue\+\_\+convert}}
+\index{as\+\_\+any\+\_\+queue\+\_\+convert@{as\+\_\+any\+\_\+queue\+\_\+convert}!Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}}
+\subsubsection{\texorpdfstring{as\+\_\+any\+\_\+queue\+\_\+convert()}{as\_any\_queue\_convert()}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename... Types$>$ \\
+template$<$typename Element $>$ \\
+\hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} \hyperlink{struct_wire_cell_1_1shared__queued}{Wire\+Cell\+::shared\+\_\+queued}$<$ T$<$ Types... $>$ $>$\+::as\+\_\+any\+\_\+queue\+\_\+convert (\begin{DoxyParamCaption}\item[{const std\+::deque$<$ std\+::shared\+\_\+ptr$<$ const Element $>$ $>$ \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 152 of file Tuple\+Helpers.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab40492fc67fd4361340d9d3f2cff79ce}\label{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab40492fc67fd4361340d9d3f2cff79ce}} 
+\index{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}!as\+\_\+any\+\_\+queue\+\_\+impl@{as\+\_\+any\+\_\+queue\+\_\+impl}}
+\index{as\+\_\+any\+\_\+queue\+\_\+impl@{as\+\_\+any\+\_\+queue\+\_\+impl}!Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}}
+\subsubsection{\texorpdfstring{as\+\_\+any\+\_\+queue\+\_\+impl()}{as\_any\_queue\_impl()}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename... Types$>$ \\
+template$<$std\+::size\+\_\+t... Indices$>$ \\
+std\+::vector$<$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} $>$ \hyperlink{struct_wire_cell_1_1shared__queued}{Wire\+Cell\+::shared\+\_\+queued}$<$ T$<$ Types... $>$ $>$\+::as\+\_\+any\+\_\+queue\+\_\+impl (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}{shared\+\_\+queued\+\_\+tuple\+\_\+type} \&}]{toq,  }\item[{\hyperlink{structstd_1_1index__sequence}{std\+::index\+\_\+sequence}$<$ Indices... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 158 of file Tuple\+Helpers.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_aa9a1f473b6503cd70756adf590f008c3}\label{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_aa9a1f473b6503cd70756adf590f008c3}} 
+\index{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}!from\+\_\+any\+\_\+queue@{from\+\_\+any\+\_\+queue}}
+\index{from\+\_\+any\+\_\+queue@{from\+\_\+any\+\_\+queue}!Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}}
+\subsubsection{\texorpdfstring{from\+\_\+any\+\_\+queue()}{from\_any\_queue()}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename... Types$>$ \\
+\hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}{shared\+\_\+queued\+\_\+tuple\+\_\+type} \hyperlink{struct_wire_cell_1_1shared__queued}{Wire\+Cell\+::shared\+\_\+queued}$<$ T$<$ Types... $>$ $>$\+::from\+\_\+any\+\_\+queue (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} $>$ \&}]{vaq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a vector of queues of any to a tuple of queues of type. 
+
+Definition at line 199 of file Tuple\+Helpers.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a1c5cc010c23aafb78d2acc2986455e9b}\label{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a1c5cc010c23aafb78d2acc2986455e9b}} 
+\index{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}!from\+\_\+any\+\_\+queue\+\_\+convert@{from\+\_\+any\+\_\+queue\+\_\+convert}}
+\index{from\+\_\+any\+\_\+queue\+\_\+convert@{from\+\_\+any\+\_\+queue\+\_\+convert}!Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}}
+\subsubsection{\texorpdfstring{from\+\_\+any\+\_\+queue\+\_\+convert()}{from\_any\_queue\_convert()}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename... Types$>$ \\
+template$<$typename Type $>$ \\
+std\+::deque$<$ std\+::shared\+\_\+ptr$<$const Type$>$ $>$ \hyperlink{struct_wire_cell_1_1shared__queued}{Wire\+Cell\+::shared\+\_\+queued}$<$ T$<$ Types... $>$ $>$\+::from\+\_\+any\+\_\+queue\+\_\+convert (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} \&}]{aq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 183 of file Tuple\+Helpers.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a05f808da0c56b9db19c890882ac71fc6}\label{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a05f808da0c56b9db19c890882ac71fc6}} 
+\index{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}!from\+\_\+any\+\_\+queue\+\_\+impl@{from\+\_\+any\+\_\+queue\+\_\+impl}}
+\index{from\+\_\+any\+\_\+queue\+\_\+impl@{from\+\_\+any\+\_\+queue\+\_\+impl}!Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$@{Wire\+Cell\+::shared\+\_\+queued$<$ T$<$ Types... $>$ $>$}}
+\subsubsection{\texorpdfstring{from\+\_\+any\+\_\+queue\+\_\+impl()}{from\_any\_queue\_impl()}}
+{\footnotesize\ttfamily template$<$template$<$ typename... $>$ class T, typename... Types$>$ \\
+template$<$std\+::size\+\_\+t... Indices$>$ \\
+\hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_ab8420ec9cbc02f0d73f0e7521a063cb0}{shared\+\_\+queued\+\_\+tuple\+\_\+type} \hyperlink{struct_wire_cell_1_1shared__queued}{Wire\+Cell\+::shared\+\_\+queued}$<$ T$<$ Types... $>$ $>$\+::from\+\_\+any\+\_\+queue\+\_\+impl (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1shared__queued_3_01_t_3_01_types_8_8_8_01_4_01_4_a8ff8e1f0ff23fd750a91eeb2d4952bb0}{any\+\_\+queue\+\_\+type} $>$ \&}]{vaq,  }\item[{\hyperlink{structstd_1_1index__sequence}{std\+::index\+\_\+sequence}$<$ Indices... $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 193 of file Tuple\+Helpers.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_tuple_helpers_8h}{Tuple\+Helpers.\+h}\end{DoxyCompactItemize}

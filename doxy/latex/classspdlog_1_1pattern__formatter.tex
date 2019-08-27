@@ -1,0 +1,127 @@
+\hypertarget{classspdlog_1_1pattern__formatter}{}\section{spdlog\+:\+:pattern\+\_\+formatter Class Reference}
+\label{classspdlog_1_1pattern__formatter}\index{spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}}
+
+
+{\ttfamily \#include $<$pattern\+\_\+formatter.\+h$>$}
+
+
+
+Inheritance diagram for spdlog\+:\+:pattern\+\_\+formatter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classspdlog_1_1pattern__formatter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for spdlog\+:\+:pattern\+\_\+formatter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classspdlog_1_1pattern__formatter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1pattern__formatter_a77d5f83cf0e00029d5796b81de1e1a9e}{pattern\+\_\+formatter} (std\+::string pattern, \hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}{pattern\+\_\+time\+\_\+type} time\+\_\+type=\hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07cedaf5ddaf0ca7929578b408c909429f68f2}{pattern\+\_\+time\+\_\+type\+::local}, std\+::string eol=spdlog\+::details\+::os\+::default\+\_\+eol)
+\item 
+\hyperlink{classspdlog_1_1pattern__formatter_a4c11f41c2e6a62ac10e80170c0958192}{pattern\+\_\+formatter} (\hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}{pattern\+\_\+time\+\_\+type} time\+\_\+type=\hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07cedaf5ddaf0ca7929578b408c909429f68f2}{pattern\+\_\+time\+\_\+type\+::local}, std\+::string eol=spdlog\+::details\+::os\+::default\+\_\+eol)
+\item 
+\hyperlink{classspdlog_1_1pattern__formatter_a3c7051314c9422b667e254cb27d81b80}{pattern\+\_\+formatter} (const \hyperlink{classspdlog_1_1pattern__formatter}{pattern\+\_\+formatter} \&other)=delete
+\item 
+\hyperlink{classspdlog_1_1pattern__formatter}{pattern\+\_\+formatter} \& \hyperlink{classspdlog_1_1pattern__formatter_a868ba15a181c7a407780aaa84902de31}{operator=} (const \hyperlink{classspdlog_1_1pattern__formatter}{pattern\+\_\+formatter} \&other)=delete
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{formatter} $>$ \hyperlink{classspdlog_1_1pattern__formatter_a73a60f53c23e860a2c1229c0781819f9}{clone} () const override
+\item 
+void \hyperlink{classspdlog_1_1pattern__formatter_ae43e84d7421ee7810b22ce1dc817ca3f}{format} (const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&msg, \hyperlink{format_8h_a21cbf729f69302f578e6db21c5e9e0d2}{fmt\+::memory\+\_\+buffer} \&dest) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 1014 of file pattern\+\_\+formatter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1pattern__formatter_a77d5f83cf0e00029d5796b81de1e1a9e}\label{classspdlog_1_1pattern__formatter_a77d5f83cf0e00029d5796b81de1e1a9e}} 
+\index{spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}!pattern\+\_\+formatter@{pattern\+\_\+formatter}}
+\index{pattern\+\_\+formatter@{pattern\+\_\+formatter}!spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}}
+\subsubsection{\texorpdfstring{pattern\+\_\+formatter()}{pattern\_formatter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily spdlog\+::pattern\+\_\+formatter\+::pattern\+\_\+formatter (\begin{DoxyParamCaption}\item[{std\+::string}]{pattern,  }\item[{\hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}{pattern\+\_\+time\+\_\+type}}]{time\+\_\+type = {\ttfamily \hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07cedaf5ddaf0ca7929578b408c909429f68f2}{pattern\+\_\+time\+\_\+type\+::local}},  }\item[{std\+::string}]{eol = {\ttfamily spdlog\+:\+:details\+:\+:os\+:\+:default\+\_\+eol} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 1017 of file pattern\+\_\+formatter.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1pattern__formatter_a4c11f41c2e6a62ac10e80170c0958192}\label{classspdlog_1_1pattern__formatter_a4c11f41c2e6a62ac10e80170c0958192}} 
+\index{spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}!pattern\+\_\+formatter@{pattern\+\_\+formatter}}
+\index{pattern\+\_\+formatter@{pattern\+\_\+formatter}!spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}}
+\subsubsection{\texorpdfstring{pattern\+\_\+formatter()}{pattern\_formatter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily spdlog\+::pattern\+\_\+formatter\+::pattern\+\_\+formatter (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}{pattern\+\_\+time\+\_\+type}}]{time\+\_\+type = {\ttfamily \hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07cedaf5ddaf0ca7929578b408c909429f68f2}{pattern\+\_\+time\+\_\+type\+::local}},  }\item[{std\+::string}]{eol = {\ttfamily spdlog\+:\+:details\+:\+:os\+:\+:default\+\_\+eol} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 1029 of file pattern\+\_\+formatter.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1pattern__formatter_a3c7051314c9422b667e254cb27d81b80}\label{classspdlog_1_1pattern__formatter_a3c7051314c9422b667e254cb27d81b80}} 
+\index{spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}!pattern\+\_\+formatter@{pattern\+\_\+formatter}}
+\index{pattern\+\_\+formatter@{pattern\+\_\+formatter}!spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}}
+\subsubsection{\texorpdfstring{pattern\+\_\+formatter()}{pattern\_formatter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily spdlog\+::pattern\+\_\+formatter\+::pattern\+\_\+formatter (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1pattern__formatter}{pattern\+\_\+formatter} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1pattern__formatter_a73a60f53c23e860a2c1229c0781819f9}\label{classspdlog_1_1pattern__formatter_a73a60f53c23e860a2c1229c0781819f9}} 
+\index{spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}!clone@{clone}}
+\index{clone@{clone}!spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classspdlog_1_1formatter}{formatter}$>$ spdlog\+::pattern\+\_\+formatter\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1formatter_ae9857a794904d98a4a9527a742e37129}{spdlog\+::formatter}.
+
+
+
+Definition at line 1042 of file pattern\+\_\+formatter.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1pattern__formatter_ae43e84d7421ee7810b22ce1dc817ca3f}\label{classspdlog_1_1pattern__formatter_ae43e84d7421ee7810b22ce1dc817ca3f}} 
+\index{spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}!format@{format}}
+\index{format@{format}!spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}}
+\subsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily void spdlog\+::pattern\+\_\+formatter\+::format (\begin{DoxyParamCaption}\item[{const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&}]{msg,  }\item[{\hyperlink{format_8h_a21cbf729f69302f578e6db21c5e9e0d2}{fmt\+::memory\+\_\+buffer} \&}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1formatter_ad50e2b119d08fad952b0f885455b3bee}{spdlog\+::formatter}.
+
+
+
+Definition at line 1047 of file pattern\+\_\+formatter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1pattern__formatter_ae43e84d7421ee7810b22ce1dc817ca3f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1pattern__formatter_a868ba15a181c7a407780aaa84902de31}\label{classspdlog_1_1pattern__formatter_a868ba15a181c7a407780aaa84902de31}} 
+\index{spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}!operator=@{operator=}}
+\index{operator=@{operator=}!spdlog\+::pattern\+\_\+formatter@{spdlog\+::pattern\+\_\+formatter}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classspdlog_1_1pattern__formatter}{pattern\+\_\+formatter}\& spdlog\+::pattern\+\_\+formatter\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1pattern__formatter}{pattern\+\_\+formatter} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/details/\hyperlink{pattern__formatter_8h}{pattern\+\_\+formatter.\+h}\end{DoxyCompactItemize}

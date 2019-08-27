@@ -1,0 +1,68 @@
+\hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_derivations}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Derivations Namespace Reference}
+\label{namespace_wire_cell_1_1_sig_proc_1_1_derivations}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations@{Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_derivations_a162c77ac9d9ea28303c9a0c843e052a8}{Calc\+Median} (const \hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{Wire\+Cell\+::\+I\+Channel\+Filter\+::channel\+\_\+signals\+\_\+t} \&chansig)
+\item 
+std\+::pair$<$ double, double $>$ \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_derivations_a3119f257567050bd02427bbcd2cd3a7b}{Calc\+R\+MS} (const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&signal)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_derivations_a162c77ac9d9ea28303c9a0c843e052a8}\label{namespace_wire_cell_1_1_sig_proc_1_1_derivations_a162c77ac9d9ea28303c9a0c843e052a8}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations@{Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations}!Calc\+Median@{Calc\+Median}}
+\index{Calc\+Median@{Calc\+Median}!Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations@{Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations}}
+\subsubsection{\texorpdfstring{Calc\+Median()}{CalcMedian()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations\+::\+Calc\+Median (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{Wire\+Cell\+::\+I\+Channel\+Filter\+::channel\+\_\+signals\+\_\+t} \&}]{chansig }\end{DoxyParamCaption})}
+
+Return a sequence of the median values, one for each channel signal.
+
+fixme and warning\+: this ignores small and large signal with fixed thresholds which need to be set as parameters. 
+
+Definition at line 22 of file Derivations.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_derivations_a162c77ac9d9ea28303c9a0c843e052a8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_derivations_a162c77ac9d9ea28303c9a0c843e052a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_derivations_a3119f257567050bd02427bbcd2cd3a7b}\label{namespace_wire_cell_1_1_sig_proc_1_1_derivations_a3119f257567050bd02427bbcd2cd3a7b}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations@{Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations}!Calc\+R\+MS@{Calc\+R\+MS}}
+\index{Calc\+R\+MS@{Calc\+R\+MS}!Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations@{Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations}}
+\subsubsection{\texorpdfstring{Calc\+R\+M\+S()}{CalcRMS()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Wire\+Cell\+::\+Sig\+Proc\+::\+Derivations\+::\+Calc\+R\+MS (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{signal }\end{DoxyParamCaption})}
+
+Return the R\+MS of a signal
+
+fixme and warning\+: this ignores large signal with a fixed threshold which needs to be set as parameters. 
+
+Definition at line 7 of file Derivations.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_derivations_a3119f257567050bd02427bbcd2cd3a7b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_derivations_a3119f257567050bd02427bbcd2cd3a7b_icgraph}
+\end{center}
+\end{figure}

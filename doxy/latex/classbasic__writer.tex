@@ -1,0 +1,379 @@
+\hypertarget{classbasic__writer}{}\section{basic\+\_\+writer$<$ Range $>$ Class Template Reference}
+\label{classbasic__writer}\index{basic\+\_\+writer$<$ Range $>$@{basic\+\_\+writer$<$ Range $>$}}
+
+
+{\ttfamily \#include $<$format.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Range\+::value\+\_\+type \hyperlink{classbasic__writer_ad6f1b4f79aa917bb28c4f4a37fabf0b7}{char\+\_\+type}
+\item 
+typedef \hyperlink{structbasic__format__specs}{basic\+\_\+format\+\_\+specs}$<$ \hyperlink{classbasic__writer_ad6f1b4f79aa917bb28c4f4a37fabf0b7}{char\+\_\+type} $>$ \hyperlink{classbasic__writer_ad0e2925cf7d02e0ccb6da44c06d64e55}{format\+\_\+specs}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbasic__writer_adf48e39fa8f224aad0d3e1da992d505d}{basic\+\_\+writer} (Range \hyperlink{classbasic__writer_abeb203681ca5e1d2b5fe1d2a7bbd7996}{out}, \hyperlink{classinternal_1_1locale__ref}{internal\+::locale\+\_\+ref} loc=\hyperlink{classinternal_1_1locale__ref}{internal\+::locale\+\_\+ref}())
+\item 
+\hyperlink{classbasic__writer_a8e2b191740ebdbd67284ff5d5647ff62}{iterator} \hyperlink{classbasic__writer_abeb203681ca5e1d2b5fe1d2a7bbd7996}{out} () const
+\item 
+void \hyperlink{classbasic__writer_a1d44923710a19cdeb09ca5e834641ea8}{write} (int value)
+\item 
+void \hyperlink{classbasic__writer_a93f39d53e8c24f5de9522a02ca039f52}{write} (long value)
+\item 
+void \hyperlink{classbasic__writer_a928529c6c90018e60784c3ecd0a01aee}{write} (long long value)
+\item 
+void \hyperlink{classbasic__writer_adb334d561ee8eaa8cddf802474df5f61}{write} (unsigned value)
+\item 
+void \hyperlink{classbasic__writer_a06f88cd4866e68b27bf64c96ec8582c4}{write} (unsigned long value)
+\item 
+void \hyperlink{classbasic__writer_a2ba7259021f6b8dc58add730649af065}{write} (unsigned long long value)
+\item 
+{\footnotesize template$<$typename T , typename Format\+Spec , typename... Format\+Specs$>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+integral$<$ T $>$\+::value, void $>$\+::type \hyperlink{classbasic__writer_a87b081da019e2423162de1491d62b796}{write} (T value, Format\+Spec spec, Format\+Specs... specs)
+\item 
+void \hyperlink{classbasic__writer_aa1734a46d67c4f0aa23c45c648360d61}{write} (double value)
+\item 
+void \hyperlink{classbasic__writer_a76b033a93868ee4692055c9567436c7a}{write} (long double value)
+\item 
+void \hyperlink{classbasic__writer_a1046134b869e509059ab496f1f6e9ab9}{write} (char value)
+\item 
+void \hyperlink{classbasic__writer_a343bc30c71b3fcd298c0ddd78bf9e8ee}{write} (wchar\+\_\+t value)
+\item 
+void \hyperlink{classbasic__writer_a9145dbe901036b8f1a35587faac5e74e}{write} (\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view} value)
+\item 
+void \hyperlink{classbasic__writer_ac6bb2fa0a1325a20d4288b66378fb4dd}{write} (\hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view} value)
+\item 
+{\footnotesize template$<$typename Char $>$ }\\void \hyperlink{classbasic__writer_ab3396f1d61f77e4a3c2e12062f206a5c}{write} (const Char $\ast$s, std\+::size\+\_\+t size, const \hyperlink{structalign__spec}{align\+\_\+spec} \&spec)
+\item 
+{\footnotesize template$<$typename Char $>$ }\\void \hyperlink{classbasic__writer_a616e9e28d4395a215f7844b983c6bee5}{write} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ s, const \hyperlink{classbasic__writer_ad0e2925cf7d02e0ccb6da44c06d64e55}{format\+\_\+specs} \&spec=\hyperlink{classbasic__writer_ad0e2925cf7d02e0ccb6da44c06d64e55}{format\+\_\+specs}())
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+same$<$ T, void $>$\+::value $>$\+::type \hyperlink{classbasic__writer_ae8492113422d70a65c845000e9f964a0}{write} (const T $\ast$p)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+decltype(\hyperlink{namespaceinternal_a5f61aadb1d6afc8b79ef7ea57c39eafc}{internal\+::declval}$<$ Range $>$().begin()) typedef \hyperlink{classbasic__writer_a8e2b191740ebdbd67284ff5d5647ff62}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Char $>$ }\\class \hyperlink{classbasic__writer_a12c04f5659906e93c2418a4eb6358bd2}{internal\+::arg\+\_\+formatter\+\_\+base}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Range$>$\newline
+class basic\+\_\+writer$<$ Range $>$}
+
+This template provides operations for formatting and writing data into a character range. 
+
+Definition at line 330 of file format.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classbasic__writer_ad6f1b4f79aa917bb28c4f4a37fabf0b7}\label{classbasic__writer_ad6f1b4f79aa917bb28c4f4a37fabf0b7}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!char\+\_\+type@{char\+\_\+type}}
+\index{char\+\_\+type@{char\+\_\+type}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{char\+\_\+type}{char\_type}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+typedef Range\+::value\+\_\+type \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::\hyperlink{classbasic__writer_ad6f1b4f79aa917bb28c4f4a37fabf0b7}{char\+\_\+type}}
+
+
+
+Definition at line 2261 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_ad0e2925cf7d02e0ccb6da44c06d64e55}\label{classbasic__writer_ad0e2925cf7d02e0ccb6da44c06d64e55}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!format\+\_\+specs@{format\+\_\+specs}}
+\index{format\+\_\+specs@{format\+\_\+specs}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{format\+\_\+specs}{format\_specs}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+typedef \hyperlink{structbasic__format__specs}{basic\+\_\+format\+\_\+specs}$<$\hyperlink{classbasic__writer_ad6f1b4f79aa917bb28c4f4a37fabf0b7}{char\+\_\+type}$>$ \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::\hyperlink{classbasic__writer_ad0e2925cf7d02e0ccb6da44c06d64e55}{format\+\_\+specs}}
+
+
+
+Definition at line 2263 of file format.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbasic__writer_adf48e39fa8f224aad0d3e1da992d505d}\label{classbasic__writer_adf48e39fa8f224aad0d3e1da992d505d}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!basic\+\_\+writer@{basic\+\_\+writer}}
+\index{basic\+\_\+writer@{basic\+\_\+writer}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{basic\+\_\+writer()}{basic\_writer()}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+\hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::\hyperlink{classbasic__writer}{basic\+\_\+writer} (\begin{DoxyParamCaption}\item[{Range}]{out,  }\item[{\hyperlink{classinternal_1_1locale__ref}{internal\+::locale\+\_\+ref}}]{loc = {\ttfamily \hyperlink{classinternal_1_1locale__ref}{internal\+::locale\+\_\+ref}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constructs a {\ttfamily \hyperlink{classbasic__writer}{basic\+\_\+writer}} object. 
+
+Definition at line 2567 of file format.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbasic__writer_abeb203681ca5e1d2b5fe1d2a7bbd7996}\label{classbasic__writer_abeb203681ca5e1d2b5fe1d2a7bbd7996}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!out@{out}}
+\index{out@{out}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{out()}{out()}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+\hyperlink{classbasic__writer_a8e2b191740ebdbd67284ff5d5647ff62}{iterator} \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2571 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_a1d44923710a19cdeb09ca5e834641ea8}\label{classbasic__writer_a1d44923710a19cdeb09ca5e834641ea8}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2573 of file format.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__writer_a1d44923710a19cdeb09ca5e834641ea8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__writer_a93f39d53e8c24f5de9522a02ca039f52}\label{classbasic__writer_a93f39d53e8c24f5de9522a02ca039f52}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{long}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2574 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_a928529c6c90018e60784c3ecd0a01aee}\label{classbasic__writer_a928529c6c90018e60784c3ecd0a01aee}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [3/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{long long}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2575 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_adb334d561ee8eaa8cddf802474df5f61}\label{classbasic__writer_adb334d561ee8eaa8cddf802474df5f61}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [4/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{unsigned}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2577 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_a06f88cd4866e68b27bf64c96ec8582c4}\label{classbasic__writer_a06f88cd4866e68b27bf64c96ec8582c4}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [5/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{unsigned long}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2578 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_a2ba7259021f6b8dc58add730649af065}\label{classbasic__writer_a2ba7259021f6b8dc58add730649af065}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [6/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{unsigned long long}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2579 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_a87b081da019e2423162de1491d62b796}\label{classbasic__writer_a87b081da019e2423162de1491d62b796}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [7/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+template$<$typename T , typename Format\+Spec , typename... Format\+Specs$>$ \\
+std\+::enable\+\_\+if$<$std\+::is\+\_\+integral$<$T$>$\+::value, void$>$\+::type \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{T}]{value,  }\item[{Format\+Spec}]{spec,  }\item[{Format\+Specs...}]{specs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Formats {\itshape value} and writes it to the buffer.  
+
+Definition at line 2588 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_aa1734a46d67c4f0aa23c45c648360d61}\label{classbasic__writer_aa1734a46d67c4f0aa23c45c648360d61}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [8/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2594 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_a76b033a93868ee4692055c9567436c7a}\label{classbasic__writer_a76b033a93868ee4692055c9567436c7a}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [9/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{long double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Formats {\itshape value} using the general format for floating-\/point numbers ({\ttfamily \textquotesingle{}g\textquotesingle{}}) and writes it to the buffer.  
+
+Definition at line 2604 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_a1046134b869e509059ab496f1f6e9ab9}\label{classbasic__writer_a1046134b869e509059ab496f1f6e9ab9}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [10/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{char}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Writes a character to the buffer. 
+
+Definition at line 2609 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__writer_a1046134b869e509059ab496f1f6e9ab9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__writer_a343bc30c71b3fcd298c0ddd78bf9e8ee}\label{classbasic__writer_a343bc30c71b3fcd298c0ddd78bf9e8ee}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [11/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{wchar\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2612 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__writer_a343bc30c71b3fcd298c0ddd78bf9e8ee_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__writer_a9145dbe901036b8f1a35587faac5e74e}\label{classbasic__writer_a9145dbe901036b8f1a35587faac5e74e}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [12/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Writes {\itshape value} to the buffer.  
+
+Definition at line 2622 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__writer_a9145dbe901036b8f1a35587faac5e74e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__writer_ac6bb2fa0a1325a20d4288b66378fb4dd}\label{classbasic__writer_ac6bb2fa0a1325a20d4288b66378fb4dd}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [13/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{\hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2626 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__writer_ac6bb2fa0a1325a20d4288b66378fb4dd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__writer_ab3396f1d61f77e4a3c2e12062f206a5c}\label{classbasic__writer_ab3396f1d61f77e4a3c2e12062f206a5c}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [14/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+template$<$typename Char $>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{const Char $\ast$}]{s,  }\item[{std\+::size\+\_\+t}]{size,  }\item[{const \hyperlink{structalign__spec}{align\+\_\+spec} \&}]{spec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2634 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_a616e9e28d4395a215f7844b983c6bee5}\label{classbasic__writer_a616e9e28d4395a215f7844b983c6bee5}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [15/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+template$<$typename Char $>$ \\
+void \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{s,  }\item[{const \hyperlink{classbasic__writer_ad0e2925cf7d02e0ccb6da44c06d64e55}{format\+\_\+specs} \&}]{spec = {\ttfamily \hyperlink{classbasic__writer_ad0e2925cf7d02e0ccb6da44c06d64e55}{format\+\_\+specs}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2639 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__writer_ae8492113422d70a65c845000e9f964a0}\label{classbasic__writer_ae8492113422d70a65c845000e9f964a0}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!write@{write}}
+\index{write@{write}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [16/16]}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+template$<$typename T $>$ \\
+std\+::enable\+\_\+if$<$std\+::is\+\_\+same$<$T, void$>$\+::value$>$\+::type \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{const T $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2650 of file format.\+h.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classbasic__writer_a12c04f5659906e93c2418a4eb6358bd2}\label{classbasic__writer_a12c04f5659906e93c2418a4eb6358bd2}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{internal\+::arg\+\_\+formatter\+\_\+base}{internal::arg\_formatter\_base}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+template$<$typename Char $>$ \\
+friend class \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 2563 of file format.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classbasic__writer_a8e2b191740ebdbd67284ff5d5647ff62}\label{classbasic__writer_a8e2b191740ebdbd67284ff5d5647ff62}} 
+\index{basic\+\_\+writer@{basic\+\_\+writer}!iterator@{iterator}}
+\index{iterator@{iterator}!basic\+\_\+writer@{basic\+\_\+writer}}
+\subsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$typename Range$>$ \\
+decltype(\hyperlink{namespaceinternal_a5f61aadb1d6afc8b79ef7ea57c39eafc}{internal\+::declval}$<$Range$>$().begin()) typedef \hyperlink{classbasic__writer}{basic\+\_\+writer}$<$ Range $>$\+::iterator}
+
+
+
+Definition at line 2262 of file format.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{format_8h}{format.\+h}\end{DoxyCompactItemize}

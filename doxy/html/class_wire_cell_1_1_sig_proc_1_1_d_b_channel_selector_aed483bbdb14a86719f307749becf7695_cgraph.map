@@ -1,0 +1,7 @@
+<map id="WireCell::SigProc::DBChannelSelector::operator()" name="WireCell::SigProc::DBChannelSelector::operator()">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_channel_selector.html#a4f6162b720052e906073139e952769e5" title="WireCell::SigProc::\lChannelSelector::set\l_channels" alt="" coords="272,5,416,61"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_channel_selector.html#aaca59eb8b7d47e29fed24f6976adc4f3" title="IFrameFilter interface. " alt="" coords="253,86,435,127"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_frame_tools.html#ab39e5b3fae9cf0abda7e6795007ad6df" title="WireCell::FrameTools\l::untagged_traces" alt="" coords="680,57,829,98"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_frame_tools.html#ab75409594f96814edb45d39db9d705f6" title="WireCell::FrameTools\l::tagged_traces" alt="" coords="483,115,632,157"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#a1fb268779155d9e5cb2ee01298cf5541" title="internal::find" alt="" coords="708,123,801,149"/>
+</map>

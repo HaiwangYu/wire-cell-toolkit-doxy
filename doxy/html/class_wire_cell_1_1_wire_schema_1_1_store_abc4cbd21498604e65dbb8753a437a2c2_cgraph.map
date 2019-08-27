@@ -1,0 +1,6 @@
+<map id="WireCell::WireSchema::Store::wire_pitch" name="WireCell::WireSchema::Store::wire_pitch">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_wire_schema_1_1_store.html#acdd83e45f8004e2ad4ac625d7fce47d3" title="WireCell::WireSchema\l::Store::wires" alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell.html#a3e825e090f86eed7647960e8e611a144" title="WireCell::ray_vector" alt="" coords="215,71,356,98"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_d3_vector.html#a9cff9bf6015c3f7742d4fae7aac7c4a5" title="Return a normalized vector in the direction of this vector. " alt="" coords="218,123,353,164"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_d3_vector.html#a23dc4ec801eb35c96d5843d1beed8bd2" title="Return the cross product of this vector and the other. " alt="" coords="218,188,353,229"/>
+</map>

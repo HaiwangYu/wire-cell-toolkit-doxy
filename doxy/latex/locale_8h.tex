@@ -1,0 +1,119 @@
+\hypertarget{locale_8h}{}\section{util/inc/spdlog/fmt/bundled/locale.h File Reference}
+\label{locale_8h}\index{util/inc/spdlog/fmt/bundled/locale.\+h@{util/inc/spdlog/fmt/bundled/locale.\+h}}
+{\ttfamily \#include \char`\"{}format.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+Include dependency graph for locale.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{locale_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{locale_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceinternal}{internal}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Char $>$ }\\\hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type\+::iterator \hyperlink{namespaceinternal_acc6b15a4992910ac85ba84aa7dfede48}{internal\+::vformat\+\_\+to} (const std\+::locale \&loc, basic\+\_\+buffer$<$ Char $>$ \&buf, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename Char $>$ }\\std\+::basic\+\_\+string$<$ Char $>$ \hyperlink{namespaceinternal_a1904f9fcad1333e8658da7816f8df368}{internal\+::vformat} (const std\+::locale \&loc, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ }\\std\+::basic\+\_\+string$<$ Char $>$ \hyperlink{locale_8h_a1348d1312264bd011c54db919e0602b7}{vformat} (const std\+::locale \&loc, const S \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename... Args$>$ }\\std\+::basic\+\_\+string$<$ \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$ \hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format} (const std\+::locale \&loc, const S \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename String , typename Output\+It , typename... Args$>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{classinternal_1_1is__output__iterator}{internal\+::is\+\_\+output\+\_\+iterator}$<$ Output\+It $>$\+::value, Output\+It $>$\+::type \hyperlink{locale_8h_a44546389c7dc301317d0df8239070a8c}{vformat\+\_\+to} (Output\+It out, const std\+::locale \&loc, const String \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, typename \hyperlink{structformat__args__t}{format\+\_\+args\+\_\+t}$<$ Output\+It, \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(String)$>$\+::type \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename Output\+It , typename S , typename... Args$>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value \&\&\hyperlink{classinternal_1_1is__output__iterator}{internal\+::is\+\_\+output\+\_\+iterator}$<$ Output\+It $>$\+::value, Output\+It $>$\+::type \hyperlink{locale_8h_a445b5c38e591de47adb8ebd54d5d0f7d}{format\+\_\+to} (Output\+It out, const std\+::locale \&loc, const S \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}\label{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}} 
+\index{locale.\+h@{locale.\+h}!format@{format}}
+\index{format@{format}!locale.\+h@{locale.\+h}}
+\subsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily template$<$typename S , typename... Args$>$ \\
+std\+::basic\+\_\+string$<$\hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$ format (\begin{DoxyParamCaption}\item[{const std\+::locale \&}]{loc,  }\item[{const S \&}]{format\+\_\+str,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file locale.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{locale_8h_a4d9ddd9260f49d99308d41580d169bd2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{locale_8h_a445b5c38e591de47adb8ebd54d5d0f7d}\label{locale_8h_a445b5c38e591de47adb8ebd54d5d0f7d}} 
+\index{locale.\+h@{locale.\+h}!format\+\_\+to@{format\+\_\+to}}
+\index{format\+\_\+to@{format\+\_\+to}!locale.\+h@{locale.\+h}}
+\subsubsection{\texorpdfstring{format\+\_\+to()}{format\_to()}}
+{\footnotesize\ttfamily template$<$typename Output\+It , typename S , typename... Args$>$ \\
+std\+::enable\+\_\+if$<$ \hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$S$>$\+::value \&\& \hyperlink{classinternal_1_1is__output__iterator}{internal\+::is\+\_\+output\+\_\+iterator}$<$Output\+It$>$\+::value, Output\+It$>$\+::type format\+\_\+to (\begin{DoxyParamCaption}\item[{Output\+It}]{out,  }\item[{const std\+::locale \&}]{loc,  }\item[{const S \&}]{format\+\_\+str,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file locale.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{locale_8h_a445b5c38e591de47adb8ebd54d5d0f7d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{locale_8h_a1348d1312264bd011c54db919e0602b7}\label{locale_8h_a1348d1312264bd011c54db919e0602b7}} 
+\index{locale.\+h@{locale.\+h}!vformat@{vformat}}
+\index{vformat@{vformat}!locale.\+h@{locale.\+h}}
+\subsubsection{\texorpdfstring{vformat()}{vformat()}}
+{\footnotesize\ttfamily template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ \\
+std\+::basic\+\_\+string$<$Char$>$ vformat (\begin{DoxyParamCaption}\item[{const std\+::locale \&}]{loc,  }\item[{const S \&}]{format\+\_\+str,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 38 of file locale.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{locale_8h_a1348d1312264bd011c54db919e0602b7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{locale_8h_a44546389c7dc301317d0df8239070a8c}\label{locale_8h_a44546389c7dc301317d0df8239070a8c}} 
+\index{locale.\+h@{locale.\+h}!vformat\+\_\+to@{vformat\+\_\+to}}
+\index{vformat\+\_\+to@{vformat\+\_\+to}!locale.\+h@{locale.\+h}}
+\subsubsection{\texorpdfstring{vformat\+\_\+to()}{vformat\_to()}}
+{\footnotesize\ttfamily template$<$typename String , typename Output\+It , typename... Args$>$ \\
+std\+::enable\+\_\+if$<$\hyperlink{classinternal_1_1is__output__iterator}{internal\+::is\+\_\+output\+\_\+iterator}$<$Output\+It$>$\+::value, Output\+It$>$\+::type vformat\+\_\+to (\begin{DoxyParamCaption}\item[{Output\+It}]{out,  }\item[{const std\+::locale \&}]{loc,  }\item[{const String \&}]{format\+\_\+str,  }\item[{typename \hyperlink{structformat__args__t}{format\+\_\+args\+\_\+t}$<$ Output\+It, \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(String)$>$\+::type}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 55 of file locale.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{locale_8h_a44546389c7dc301317d0df8239070a8c_cgraph}
+\end{center}
+\end{figure}

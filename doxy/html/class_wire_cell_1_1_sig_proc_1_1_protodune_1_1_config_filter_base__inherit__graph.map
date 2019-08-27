@@ -1,0 +1,6 @@
+<map id="WireCell::SigProc::Protodune::ConfigFilterBase" name="WireCell::SigProc::Protodune::ConfigFilterBase">
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise.html" title="WireCell::SigProc::\lProtodune::OneChannelNoise" alt="" coords="5,333,200,375"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="24,169,181,196"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="27,80,178,121"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="37,5,168,32"/>
+</map>

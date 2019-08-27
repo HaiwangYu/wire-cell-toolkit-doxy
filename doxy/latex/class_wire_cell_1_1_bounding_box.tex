@@ -1,0 +1,254 @@
+\hypertarget{class_wire_cell_1_1_bounding_box}{}\section{Wire\+Cell\+:\+:Bounding\+Box Class Reference}
+\label{class_wire_cell_1_1_bounding_box}\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+
+
+{\ttfamily \#include $<$Bounding\+Box.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_bounding_box_a7b87ed5ef66808aef4ad0d3c6b23482d}{Bounding\+Box} ()
+\begin{DoxyCompactList}\small\item\em Create a bounding box without an initial point or ray. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_bounding_box_a223a5a27ee7198e141c2c7da91292ddc}{Bounding\+Box} (const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&initial)
+\begin{DoxyCompactList}\small\item\em Create a bounding box bounding an initial point. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_bounding_box_a243f42132a2da67f25125b60491d87ad}{Bounding\+Box} (const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&initial)
+\begin{DoxyCompactList}\small\item\em Create a bounding box bounding an initial ray. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Ray\+Or\+Point\+Iterator $>$ }\\\hyperlink{class_wire_cell_1_1_bounding_box_ac84d096b79ddd8ea2b4d73c1d324c739}{Bounding\+Box} (const Ray\+Or\+Point\+Iterator \&begin, const Ray\+Or\+Point\+Iterator \&end)
+\begin{DoxyCompactList}\small\item\em Create a bounding box from an iterator pair. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wire_cell_1_1_bounding_box_a5d0ef4e3335f0aaf0a4a8fa577914539}{inside} (const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&point) const
+\begin{DoxyCompactList}\small\item\em Return true if point is inside bounding box. \end{DoxyCompactList}\item 
+const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& \hyperlink{class_wire_cell_1_1_bounding_box_a3a0816d852fb478e057496a0409e0c72}{bounds} () const
+\begin{DoxyCompactList}\small\item\em Return the ray representing the bounds. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_bounding_box_a2f43d9aa9cf70e9515cdad9e43537575}{operator()} (const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&p)
+\begin{DoxyCompactList}\small\item\em Enlarge bounds to hold point. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_bounding_box_afcc27be243bd23302b647ac9eafa536b}{operator()} (const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&r)
+\begin{DoxyCompactList}\small\item\em Enlarge bounds to hold ray. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Ray\+Or\+Point\+Iterator $>$ }\\void \hyperlink{class_wire_cell_1_1_bounding_box_ad5b6bb08392180f15f1647a8b76ffcc9}{operator()} (const Ray\+Or\+Point\+Iterator \&begin, const Ray\+Or\+Point\+Iterator \&end)
+\item 
+bool \hyperlink{class_wire_cell_1_1_bounding_box_a142836bb402b1c40c0dd19dd4c88a548}{empty} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A bounding box parallel to the Cartesian axes. 
+
+Definition at line 11 of file Bounding\+Box.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_bounding_box_a7b87ed5ef66808aef4ad0d3c6b23482d}\label{class_wire_cell_1_1_bounding_box_a7b87ed5ef66808aef4ad0d3c6b23482d}} 
+\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
+\index{Bounding\+Box@{Bounding\+Box}!Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{Bounding\+Box()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a bounding box without an initial point or ray. 
+
+
+
+Definition at line 18 of file Bounding\+Box.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_bounding_box_a223a5a27ee7198e141c2c7da91292ddc}\label{class_wire_cell_1_1_bounding_box_a223a5a27ee7198e141c2c7da91292ddc}} 
+\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
+\index{Bounding\+Box@{Bounding\+Box}!Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{Bounding\+Box()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&}]{initial }\end{DoxyParamCaption})}
+
+
+
+Create a bounding box bounding an initial point. 
+
+
+
+Definition at line 3 of file Bounding\+Box.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_bounding_box_a243f42132a2da67f25125b60491d87ad}\label{class_wire_cell_1_1_bounding_box_a243f42132a2da67f25125b60491d87ad}} 
+\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
+\index{Bounding\+Box@{Bounding\+Box}!Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{Bounding\+Box()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&}]{initial }\end{DoxyParamCaption})}
+
+
+
+Create a bounding box bounding an initial ray. 
+
+
+
+Definition at line 4 of file Bounding\+Box.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_bounding_box_ac84d096b79ddd8ea2b4d73c1d324c739}\label{class_wire_cell_1_1_bounding_box_ac84d096b79ddd8ea2b4d73c1d324c739}} 
+\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
+\index{Bounding\+Box@{Bounding\+Box}!Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{Bounding\+Box()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Ray\+Or\+Point\+Iterator $>$ \\
+Wire\+Cell\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const Ray\+Or\+Point\+Iterator \&}]{begin,  }\item[{const Ray\+Or\+Point\+Iterator \&}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a bounding box from an iterator pair. 
+
+
+
+Definition at line 28 of file Bounding\+Box.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_bounding_box_ac84d096b79ddd8ea2b4d73c1d324c739_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_bounding_box_a3a0816d852fb478e057496a0409e0c72}\label{class_wire_cell_1_1_bounding_box_a3a0816d852fb478e057496a0409e0c72}} 
+\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}!bounds@{bounds}}
+\index{bounds@{bounds}!Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{bounds()}{bounds()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}\& Wire\+Cell\+::\+Bounding\+Box\+::bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the ray representing the bounds. 
+
+
+
+Definition at line 36 of file Bounding\+Box.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_bounding_box_a3a0816d852fb478e057496a0409e0c72_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_bounding_box_a3a0816d852fb478e057496a0409e0c72_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_bounding_box_a142836bb402b1c40c0dd19dd4c88a548}\label{class_wire_cell_1_1_bounding_box_a142836bb402b1c40c0dd19dd4c88a548}} 
+\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}!empty@{empty}}
+\index{empty@{empty}!Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Bounding\+Box\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 49 of file Bounding\+Box.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_bounding_box_a142836bb402b1c40c0dd19dd4c88a548_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_bounding_box_a5d0ef4e3335f0aaf0a4a8fa577914539}\label{class_wire_cell_1_1_bounding_box_a5d0ef4e3335f0aaf0a4a8fa577914539}} 
+\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}!inside@{inside}}
+\index{inside@{inside}!Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{inside()}{inside()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Bounding\+Box\+::inside (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&}]{point }\end{DoxyParamCaption}) const}
+
+
+
+Return true if point is inside bounding box. 
+
+
+
+Definition at line 29 of file Bounding\+Box.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_bounding_box_a5d0ef4e3335f0aaf0a4a8fa577914539_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_bounding_box_a5d0ef4e3335f0aaf0a4a8fa577914539_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_bounding_box_a2f43d9aa9cf70e9515cdad9e43537575}\label{class_wire_cell_1_1_bounding_box_a2f43d9aa9cf70e9515cdad9e43537575}} 
+\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Bounding\+Box\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Enlarge bounds to hold point. 
+
+
+
+Definition at line 10 of file Bounding\+Box.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_bounding_box_a2f43d9aa9cf70e9515cdad9e43537575_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_bounding_box_a2f43d9aa9cf70e9515cdad9e43537575_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_bounding_box_afcc27be243bd23302b647ac9eafa536b}\label{class_wire_cell_1_1_bounding_box_afcc27be243bd23302b647ac9eafa536b}} 
+\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Bounding\+Box\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+Enlarge bounds to hold ray. 
+
+
+
+Definition at line 5 of file Bounding\+Box.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_bounding_box_ad5b6bb08392180f15f1647a8b76ffcc9}\label{class_wire_cell_1_1_bounding_box_ad5b6bb08392180f15f1647a8b76ffcc9}} 
+\index{Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Bounding\+Box@{Wire\+Cell\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Ray\+Or\+Point\+Iterator $>$ \\
+void Wire\+Cell\+::\+Bounding\+Box\+::operator() (\begin{DoxyParamCaption}\item[{const Ray\+Or\+Point\+Iterator \&}]{begin,  }\item[{const Ray\+Or\+Point\+Iterator \&}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file Bounding\+Box.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_wire_cell_1_1_bounding_box_ad5b6bb08392180f15f1647a8b76ffcc9_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_bounding_box_8h}{Bounding\+Box.\+h}\item 
+util/src/\hyperlink{_bounding_box_8cxx}{Bounding\+Box.\+cxx}\end{DoxyCompactItemize}

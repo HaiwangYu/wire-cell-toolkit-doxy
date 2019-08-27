@@ -1,0 +1,395 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Anode\+Plane Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_anode_plane}\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+
+
+{\ttfamily \#include $<$Anode\+Plane.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Anode\+Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_wire_cell_1_1_gen_1_1_anode_plane__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Anode\+Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_wire_cell_1_1_gen_1_1_anode_plane__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_a07e74cb8207634c5064d5a186f61e9b6}{Anode\+Plane} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_a41df48506ad084531fa7ac376f454894}{$\sim$\+Anode\+Plane} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_a2d1c7a1dded73fe3b51cbcfb8d9e0e04}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_acc2e184daee40976feb1b2a1b6171905}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_afe12d9d6f826b42e66d9ab9da7799dae}{ident} () const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_anode_plane}{I\+Anode\+Plane} interface. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_a67547b54d01b3112b8a194660d1d2f2a}{nfaces} () const
+\begin{DoxyCompactList}\small\item\em Return number of faces (eg, Micro\+Boo\+NE=1, D\+U\+NE=2) \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Anode\+Face\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_a429403f80c922cd168213c049ecadeea}{face} (int \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_afe12d9d6f826b42e66d9ab9da7799dae}{ident}) const
+\begin{DoxyCompactList}\small\item\em Return a anode face by its ident number. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}{I\+Anode\+Face\+::vector} \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_ad25ce7beb274de6570cbb104a1a67702}{faces} () const
+\begin{DoxyCompactList}\small\item\em Return all faces. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_abfe29b697f36910a6b7a08c9e4b984bd}{resolve} (int \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_ae5d1df06d19a616c9d0c46a0b74f7c81}{channel}) const
+\begin{DoxyCompactList}\small\item\em Resolve a channel ident number to a \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id}. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ int $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_ad934104bec0191d14920a1ef01cc8f00}{channels} () const
+\begin{DoxyCompactList}\small\item\em Return a collection of all channels. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Channel\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_ae5d1df06d19a616c9d0c46a0b74f7c81}{channel} (int chident) const
+\begin{DoxyCompactList}\small\item\em Return an \hyperlink{class_wire_cell_1_1_i_channel}{I\+Channel} with the associated channel ID. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Wire\+::vector} \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_ad16d32c787a7ee9ea8c6c556bbab2e4f}{wires} (int \hyperlink{class_wire_cell_1_1_gen_1_1_anode_plane_ae5d1df06d19a616c9d0c46a0b74f7c81}{channel}) const
+\begin{DoxyCompactList}\small\item\em Return all wires connected into the given channel ident number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Anode\+Plane.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_a07e74cb8207634c5064d5a186f61e9b6}\label{class_wire_cell_1_1_gen_1_1_anode_plane_a07e74cb8207634c5064d5a186f61e9b6}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!Anode\+Plane@{Anode\+Plane}}
+\index{Anode\+Plane@{Anode\+Plane}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{Anode\+Plane()}{AnodePlane()}}
+{\footnotesize\ttfamily Gen\+::\+Anode\+Plane\+::\+Anode\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file Anode\+Plane.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_a41df48506ad084531fa7ac376f454894}\label{class_wire_cell_1_1_gen_1_1_anode_plane_a41df48506ad084531fa7ac376f454894}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!````~Anode\+Plane@{$\sim$\+Anode\+Plane}}
+\index{````~Anode\+Plane@{$\sim$\+Anode\+Plane}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{$\sim$\+Anode\+Plane()}{~AnodePlane()}}
+{\footnotesize\ttfamily virtual Wire\+Cell\+::\+Gen\+::\+Anode\+Plane\+::$\sim$\+Anode\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 22 of file Anode\+Plane.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_a41df48506ad084531fa7ac376f454894_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_ae5d1df06d19a616c9d0c46a0b74f7c81}\label{class_wire_cell_1_1_gen_1_1_anode_plane_ae5d1df06d19a616c9d0c46a0b74f7c81}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!channel@{channel}}
+\index{channel@{channel}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{channel()}{channel()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Channel\+::pointer} Gen\+::\+Anode\+Plane\+::channel (\begin{DoxyParamCaption}\item[{int}]{chident }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return an \hyperlink{class_wire_cell_1_1_i_channel}{I\+Channel} with the associated channel ID. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_ab9cab29e958c7cc4aa7dd9cb600c33cd}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 297 of file Anode\+Plane.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_ae5d1df06d19a616c9d0c46a0b74f7c81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_ad934104bec0191d14920a1ef01cc8f00}\label{class_wire_cell_1_1_gen_1_1_anode_plane_ad934104bec0191d14920a1ef01cc8f00}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!channels@{channels}}
+\index{channels@{channels}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{channels()}{channels()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Gen\+::\+Anode\+Plane\+::channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a collection of all channels. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_a8de1ff56146e343b9ad266eaa011065a}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 306 of file Anode\+Plane.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_ad934104bec0191d14920a1ef01cc8f00_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_a2d1c7a1dded73fe3b51cbcfb8d9e0e04}\label{class_wire_cell_1_1_gen_1_1_anode_plane_a2d1c7a1dded73fe3b51cbcfb8d9e0e04}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Anode\+Plane\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 108 of file Anode\+Plane.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_a2d1c7a1dded73fe3b51cbcfb8d9e0e04_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_a2d1c7a1dded73fe3b51cbcfb8d9e0e04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_acc2e184daee40976feb1b2a1b6171905}\label{class_wire_cell_1_1_gen_1_1_anode_plane_acc2e184daee40976feb1b2a1b6171905}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Anode\+Plane\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+This number is used to take from the wire file the anode
+
+Name of a \hyperlink{class_wire_cell_1_1_i_wire_schema}{I\+Wire\+Schema} component. 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 38 of file Anode\+Plane.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_acc2e184daee40976feb1b2a1b6171905_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_acc2e184daee40976feb1b2a1b6171905_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_a429403f80c922cd168213c049ecadeea}\label{class_wire_cell_1_1_gen_1_1_anode_plane_a429403f80c922cd168213c049ecadeea}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!face@{face}}
+\index{face@{face}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{face()}{face()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Anode\+Face\+::pointer} Gen\+::\+Anode\+Plane\+::face (\begin{DoxyParamCaption}\item[{int}]{ident }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a anode face by its ident number. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_ad420395805cd4a1c07253b535768fd5a}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 275 of file Anode\+Plane.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_a429403f80c922cd168213c049ecadeea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_a429403f80c922cd168213c049ecadeea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_ad25ce7beb274de6570cbb104a1a67702}\label{class_wire_cell_1_1_gen_1_1_anode_plane_ad25ce7beb274de6570cbb104a1a67702}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!faces@{faces}}
+\index{faces@{faces}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{faces()}{faces()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}{I\+Anode\+Face\+::vector} Wire\+Cell\+::\+Gen\+::\+Anode\+Plane\+::faces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return all faces. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_a22ebdffd5613bf8007e0ae314984c36a}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 34 of file Anode\+Plane.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_ad25ce7beb274de6570cbb104a1a67702_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_afe12d9d6f826b42e66d9ab9da7799dae}\label{class_wire_cell_1_1_gen_1_1_anode_plane_afe12d9d6f826b42e66d9ab9da7799dae}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!ident@{ident}}
+\index{ident@{ident}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{ident()}{ident()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+Gen\+::\+Anode\+Plane\+::ident (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_anode_plane}{I\+Anode\+Plane} interface. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_a18dfeccffc41a8fca3631a4e98967c57}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 31 of file Anode\+Plane.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_afe12d9d6f826b42e66d9ab9da7799dae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_a67547b54d01b3112b8a194660d1d2f2a}\label{class_wire_cell_1_1_gen_1_1_anode_plane_a67547b54d01b3112b8a194660d1d2f2a}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!nfaces@{nfaces}}
+\index{nfaces@{nfaces}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{nfaces()}{nfaces()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+Gen\+::\+Anode\+Plane\+::nfaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return number of faces (eg, Micro\+Boo\+NE=1, D\+U\+NE=2) 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_ace24697d669e5b25613db8ad110611f0}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 32 of file Anode\+Plane.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_a67547b54d01b3112b8a194660d1d2f2a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_a67547b54d01b3112b8a194660d1d2f2a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_abfe29b697f36910a6b7a08c9e4b984bd}\label{class_wire_cell_1_1_gen_1_1_anode_plane_abfe29b697f36910a6b7a08c9e4b984bd}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!resolve@{resolve}}
+\index{resolve@{resolve}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} Gen\+::\+Anode\+Plane\+::resolve (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Resolve a channel ident number to a \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id}. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_a566ba20aec7e85b99a9f4304f073afa0}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 286 of file Anode\+Plane.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_abfe29b697f36910a6b7a08c9e4b984bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_plane_ad16d32c787a7ee9ea8c6c556bbab2e4f}\label{class_wire_cell_1_1_gen_1_1_anode_plane_ad16d32c787a7ee9ea8c6c556bbab2e4f}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}!wires@{wires}}
+\index{wires@{wires}!Wire\+Cell\+::\+Gen\+::\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{wires()}{wires()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Wire\+::vector} Gen\+::\+Anode\+Plane\+::wires (\begin{DoxyParamCaption}\item[{int}]{chident }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return all wires connected into the given channel ident number. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_a58f3e7e47cfe10a141e0275f80dcc789}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 311 of file Anode\+Plane.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_plane_ad16d32c787a7ee9ea8c6c556bbab2e4f_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_anode_plane_8h}{Anode\+Plane.\+h}\item 
+gen/src/\hyperlink{_anode_plane_8cxx}{Anode\+Plane.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,28 @@
+var class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i =
+[
+    [ "PMTNoiseROI", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a86b042170d45fcc2da43e249f266782a", null ],
+    [ "~PMTNoiseROI", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#ae6cc0bab207dcb5653efa9f023ad0cdc", null ],
+    [ "get_average_uwires_peak_height", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a3a991d86acfa1be6a8070ac516a624c9", null ],
+    [ "get_average_vwires_peak_height", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#aeff495991c25c4ff4091eb839835e230", null ],
+    [ "get_average_wwires_peak_height", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a89da1079a85e1cfa87962daefc2d0266", null ],
+    [ "get_end_bin", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a33db997dd906db5cb63ba630e9d0f882", null ],
+    [ "get_max_uwires_peak_height", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a44c13f88197acd2204d17bc2b9b75f3e", null ],
+    [ "get_max_vwires_peak_height", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a5c9e02b024551af28776257cfb336f45", null ],
+    [ "get_max_wwires_peak_height", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a9239f0b7d6fa6d9bb1c12129e7d34352", null ],
+    [ "get_peaks", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a55cdf5dad6e7476bbb73226876feb55f", null ],
+    [ "get_sorted_uwires", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#ad037eeda9c0e6e50ad4a57d731cb8f56", null ],
+    [ "get_sorted_vwires", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a72a080e71cf66af837197e4aa1ca8060", null ],
+    [ "get_sorted_wwires", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a7031b3d183118e24d277e7c8deb50a1d", null ],
+    [ "get_start_bin", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a4122e466578dee161bee0219bceec33e", null ],
+    [ "get_uwires", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a56d725f413f496bd67f8cc8917fd5f2c", null ],
+    [ "get_uwires_peak_heights", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a6810688bbdacd8489d7641a231f25c72", null ],
+    [ "get_vwires", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a388a75bac2d59d83ee61b7f33e8757a2", null ],
+    [ "get_vwires_peak_heights", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a85ce56dcca5e91eb335e8c12b984bc4d", null ],
+    [ "get_wwires", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a37bf42499b39970780687fe960df6006", null ],
+    [ "get_wwires_peak_heights", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#ac801578d1580a4d8eb0ba98b20f2191a", null ],
+    [ "insert_peak", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#ab7da8d38dd37b3f81e064a9970e581f8", null ],
+    [ "insert_uwires", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a97674ed5490b45c6e8e72292ee4012e7", null ],
+    [ "insert_vwires", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a117ae1e99cce01f1c72a55905f7fcf7e", null ],
+    [ "merge_ROI", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a4b2640ed0856098cada1ba918b1e53d6", null ],
+    [ "sort_wires", "class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#adcf6d65537ca5b9853a3801251f97d8e", null ]
+];

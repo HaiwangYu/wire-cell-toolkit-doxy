@@ -1,0 +1,32 @@
+<map id="WireCell::Waveform::sum" name="WireCell::Waveform::sum">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_diagnostics_1_1_partial.html#a59f6ea2384f9ca2b516ab25426ddb2d0" title="Return true if given frequency spectrum consistent with a partial waveform. " alt="" coords="233,202,369,258"/>
+<area shape="rect" id="node3" href="$namespacewct_1_1sigproc.html#ad945dd464ab9a75f638922e67891daf3" title="wct::sigproc::dump\l_frame" alt="" coords="459,100,592,141"/>
+<area shape="rect" id="node5" href="$_omni_channel_noise_d_b_8cxx.html#aeb2c6539e86b3e67f77e0ee0b93beecf" title="dump_cfg" alt="" coords="262,399,341,426"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_response.html#a11620870420942188de46612d3e2022f" title="WireCell::Response\l::wire_region_average" alt="" coords="227,668,376,709"/>
+<area shape="rect" id="node12" href="$namespace_wire_cell_1_1_waveform.html#af0395e9b0e5e9e86a26579badb834092" title="WireCell::Waveform\l::mean_rms" alt="" coords="231,333,371,375"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus.html#ab79548e4b108f011bfc6dd1dae434804" title="Implement to run something. " alt="" coords="703,5,838,47"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a7a1a60aef8d2935c36e27a735117a1cb" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lset_misconfigured" alt="" coords="444,661,607,717"/>
+<area shape="rect" id="node9" href="$namespace_wire_cell_1_1_response.html#a465144cc99feb1c0e2e85c6928ae2506" title="WireCell::Response\l::average_1D" alt="" coords="456,741,595,783"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a42c1e7613ec776da66d7f30238128ce7" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lset_bad_channels" alt="" coords="689,661,852,717"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ad93828b53fee0709cd9649526b5884e7" title="WireCell::SigProc::\lL1SPFilter::init_resp" alt="" coords="701,741,841,783"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ac58397721b0a7b485d46ac63522ebe87" title="IFrameFilter interface. " alt="" coords="945,741,1091,783"/>
+<area shape="rect" id="node13" href="$namespace_wire_cell_1_1_sig_proc_1_1_derivations.html#a3119f257567050bd02427bbcd2cd3a7b" title="WireCell::SigProc::\lDerivations::CalcRMS" alt="" coords="449,363,602,404"/>
+<area shape="rect" id="node18" href="$namespace_wire_cell_1_1_sig_proc_1_1_derivations.html#a162c77ac9d9ea28303c9a0c843e052a8" title="WireCell::SigProc::\lDerivations::CalcMedian" alt="" coords="688,312,853,353"/>
+<area shape="rect" id="node19" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_noise.html#a4d5cb537b5d9ca736fc1bbd3c463b76f" title="WireCell::SigProc::\lMicroboone::OneChannelNoise\l::apply" alt="" coords="424,231,627,287"/>
+<area shape="rect" id="node20" href="$_protodune_8cxx.html#a3a9df7d770471e6f9902f08cf54d45ba" title="LedgeIdentify1" alt="" coords="472,610,579,637"/>
+<area shape="rect" id="node21" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig.html#aa42dce81ba4e7dad67cc5653c9a8249f" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="678,562,863,618"/>
+<area shape="rect" id="node22" href="$_protodune_8cxx.html#a7aac856fd8d0ee8ddb8672c2fe6ae215" title="LedgeIdentify" alt="" coords="475,429,575,455"/>
+<area shape="rect" id="node23" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise.html#a2f0a41f11d154f971da95d9127be594d" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="428,479,623,535"/>
+<area shape="rect" id="node24" href="$namespace_wire_cell_1_1_waveform.html#a6aa0cf31fb8548b1f74ffb3f77350668" title="Return sum of square of all entries in sequence. " alt="" coords="455,165,595,207"/>
+<area shape="rect" id="node14" href="$namespace_wire_cell_1_1_sig_proc_1_1_microboone.html#a06023d4f9428b8e2f9ce469d3bacb7b4" title="WireCell::SigProc::\lMicroboone::Subtract\l_WScaling" alt="" coords="697,231,844,287"/>
+<area shape="rect" id="node16" href="$namespace_wire_cell_1_1_sig_proc_1_1_microboone.html#a3502d22dc7280eeea95f3a2f2d52891c" title="WireCell::SigProc::\lMicroboone::SignalProtection" alt="" coords="675,377,867,419"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_p_m_t_noise_filter.html#ad33bf21dae5ad22503a33e6444057dcb" title="IFrameFilter interface. " alt="" coords="688,443,853,499"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub.html#a0c98bcbea0288592dfe6603e92b742b5" title="WireCell::SigProc::\lMicroboone::CoherentNoiseSub\l::apply" alt="" coords="915,305,1121,361"/>
+<area shape="rect" id="node25" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#aadada4e6a77ac41217a7b8858b26355f" title="WireCell::SigProc::\lROI_formation::extend\l_ROI_loose" alt="" coords="693,151,848,207"/>
+<area shape="rect" id="node27" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#aed20acd4564c60d6ebfc1d0c0b3c27b6" title="WireCell::SigProc::\lSignalROI::get_average\l_heights" alt="" coords="690,71,851,127"/>
+<area shape="rect" id="node26" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#af11c69caa55a69618d96892afcb46933" title="WireCell::SigProc::\lROI_formation::find\l_ROI_loose" alt="" coords="950,151,1086,207"/>
+<area shape="rect" id="node28" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement.html#a2752abfaf6f0c8e84cef5dcec56010ee" title="WireCell::SigProc::\lROI_refinement::load_data" alt="" coords="1169,20,1348,61"/>
+<area shape="rect" id="node29" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#aa2fee1613b1c49322cf5d738261cf1c9" title="WireCell::SigProc::\lSignalROI::get_contents" alt="" coords="935,83,1101,124"/>
+<area shape="rect" id="node30" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a19b3f1c69aa59c14e928af82302de058" title="WireCell::SigProc::\lSignalROI::SignalROI" alt="" coords="1183,151,1334,192"/>
+<area shape="rect" id="node31" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#af714fd2a4bba4597bea27d2ab34f0d8d" title="WireCell::SigProc::\lSignalROI::overlap" alt="" coords="1191,85,1326,127"/>
+</map>

@@ -1,0 +1,129 @@
+\hypertarget{pattern__formatter_8h}{}\section{util/inc/spdlog/details/pattern\+\_\+formatter.h File Reference}
+\label{pattern__formatter_8h}\index{util/inc/spdlog/details/pattern\+\_\+formatter.\+h@{util/inc/spdlog/details/pattern\+\_\+formatter.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/details/fmt\+\_\+helper.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/log\+\_\+msg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/os.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/fmt/fmt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/formatter.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for pattern\+\_\+formatter.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pattern__formatter_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pattern__formatter_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structspdlog_1_1details_1_1padding__info}{spdlog\+::details\+::padding\+\_\+info}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1scoped__pad}{spdlog\+::details\+::scoped\+\_\+pad}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1flag__formatter}{spdlog\+::details\+::flag\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1name__formatter}{spdlog\+::details\+::name\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1level__formatter}{spdlog\+::details\+::level\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1short__level__formatter}{spdlog\+::details\+::short\+\_\+level\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1a__formatter}{spdlog\+::details\+::a\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_a__formatter}{spdlog\+::details\+::\+A\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1b__formatter}{spdlog\+::details\+::b\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_b__formatter}{spdlog\+::details\+::\+B\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1c__formatter}{spdlog\+::details\+::c\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_c__formatter}{spdlog\+::details\+::\+C\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_d__formatter}{spdlog\+::details\+::\+D\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_y__formatter}{spdlog\+::details\+::\+Y\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1m__formatter}{spdlog\+::details\+::m\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1d__formatter}{spdlog\+::details\+::d\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_h__formatter}{spdlog\+::details\+::\+H\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_i__formatter}{spdlog\+::details\+::\+I\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_m__formatter}{spdlog\+::details\+::\+M\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_s__formatter}{spdlog\+::details\+::\+S\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1e__formatter}{spdlog\+::details\+::e\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1f__formatter}{spdlog\+::details\+::f\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_f__formatter}{spdlog\+::details\+::\+F\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_e__formatter}{spdlog\+::details\+::\+E\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1p__formatter}{spdlog\+::details\+::p\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1r__formatter}{spdlog\+::details\+::r\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_r__formatter}{spdlog\+::details\+::\+R\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1_t__formatter}{spdlog\+::details\+::\+T\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1z__formatter}{spdlog\+::details\+::z\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1t__formatter}{spdlog\+::details\+::t\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1pid__formatter}{spdlog\+::details\+::pid\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1i__formatter}{spdlog\+::details\+::i\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1v__formatter}{spdlog\+::details\+::v\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1ch__formatter}{spdlog\+::details\+::ch\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1aggregate__formatter}{spdlog\+::details\+::aggregate\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1color__start__formatter}{spdlog\+::details\+::color\+\_\+start\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1color__stop__formatter}{spdlog\+::details\+::color\+\_\+stop\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1source__location__formatter}{spdlog\+::details\+::source\+\_\+location\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1source__filename__formatter}{spdlog\+::details\+::source\+\_\+filename\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1source__linenum__formatter}{spdlog\+::details\+::source\+\_\+linenum\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1source__funcname__formatter}{spdlog\+::details\+::source\+\_\+funcname\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1details_1_1full__formatter}{spdlog\+::details\+::full\+\_\+formatter}
+\item 
+class \hyperlink{classspdlog_1_1pattern__formatter}{spdlog\+::pattern\+\_\+formatter}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1details}{spdlog\+::details}
+\end{DoxyCompactItemize}

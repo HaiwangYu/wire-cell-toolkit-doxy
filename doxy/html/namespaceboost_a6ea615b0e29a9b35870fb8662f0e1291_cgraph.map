@@ -1,0 +1,10 @@
+<map id="boost::assertion_failed" name="boost::assertion_failed">
+<area shape="rect" id="node2" href="$namespaceboost.html#afbd4a259de77230355c3c2de9ce6d6c9" title="boost::assertion_failed_msg" alt="" coords="207,107,392,134"/>
+<area shape="rect" id="node3" href="$namespacespdlog.html#a753989ee0011b7d977e04a278b9380a2" title="spdlog::critical" alt="" coords="440,107,547,134"/>
+<area shape="rect" id="node4" href="$namespacespdlog.html#a2c623c9fadba3efc09b48dac8a3990be" title="spdlog::default_logger_raw" alt="" coords="595,78,772,105"/>
+<area shape="rect" id="node8" href="$classspdlog_1_1logger.html#a3d11416764fe7ead94868d4c6438f583" title="spdlog::logger::critical" alt="" coords="609,133,758,159"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1details_1_1registry.html#a58a1bbb352f751f6b729bc57bfadd6be" title="spdlog::details::registry\l::instance" alt="" coords="820,5,977,47"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1details_1_1registry.html#a1fd3bc96c2a7be1af1841f5980cd5f4c" title="spdlog::details::registry\l::get_default_raw" alt="" coords="820,71,977,112"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1logger.html#a0d0307a6501a9f56689c386a006991fe" title="spdlog::logger::default\l_level" alt="" coords="1025,5,1176,47"/>
+<area shape="rect" id="node9" href="$classspdlog_1_1logger.html#a1e4b2c515490efb5456665a9a64382d9" title="spdlog::logger::log" alt="" coords="835,137,963,163"/>
+</map>

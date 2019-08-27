@@ -1,0 +1,184 @@
+\hypertarget{structcnpy_1_1_npy_array}{}\section{cnpy\+:\+:Npy\+Array Struct Reference}
+\label{structcnpy_1_1_npy_array}\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+
+
+{\ttfamily \#include $<$cnpy.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcnpy_1_1_npy_array_a9660f15110b46ee3384505cb7819531c}{Npy\+Array} (const std\+::vector$<$ size\+\_\+t $>$ \&\+\_\+shape, size\+\_\+t \+\_\+word\+\_\+size, bool \+\_\+fortran\+\_\+order)
+\item 
+\hyperlink{structcnpy_1_1_npy_array_a22a4c264b18f3411bf739d91ffb4389f}{Npy\+Array} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \hyperlink{structcnpy_1_1_npy_array_a367b7feaf166b62930cc6ce1c4426fc4}{data} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\const T $\ast$ \hyperlink{structcnpy_1_1_npy_array_a1622cd2863fb3f238c2b777a74d5a4e2}{data} () const
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ T $>$ \hyperlink{structcnpy_1_1_npy_array_a4cf626dc18eec8b40fabd499253a069c}{as\+\_\+vec} () const
+\item 
+size\+\_\+t \hyperlink{structcnpy_1_1_npy_array_ae8004f74b07e6148d7342c2d063e12fc}{num\+\_\+bytes} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::vector$<$ char $>$ $>$ \hyperlink{structcnpy_1_1_npy_array_a274276ea92cf0839ee14a292f4d0dc2f}{data\+\_\+holder}
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \hyperlink{structcnpy_1_1_npy_array_a60dc8f8953d4b90d5a71a2af42f8de83}{shape}
+\item 
+size\+\_\+t \hyperlink{structcnpy_1_1_npy_array_ada76e18467c2e3d2c3100fdde6dce358}{word\+\_\+size}
+\item 
+bool \hyperlink{structcnpy_1_1_npy_array_a073fe36f66efb1ef9229dafeac1c43c2}{fortran\+\_\+order}
+\item 
+size\+\_\+t \hyperlink{structcnpy_1_1_npy_array_a8eba9ba1c8987d9364312b579f3444b8}{num\+\_\+vals}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file cnpy.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_a9660f15110b46ee3384505cb7819531c}\label{structcnpy_1_1_npy_array_a9660f15110b46ee3384505cb7819531c}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!Npy\+Array@{Npy\+Array}}
+\index{Npy\+Array@{Npy\+Array}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{Npy\+Array()}{NpyArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily cnpy\+::\+Npy\+Array\+::\+Npy\+Array (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ size\+\_\+t $>$ \&}]{\+\_\+shape,  }\item[{size\+\_\+t}]{\+\_\+word\+\_\+size,  }\item[{bool}]{\+\_\+fortran\+\_\+order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file cnpy.\+h.
+
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_a22a4c264b18f3411bf739d91ffb4389f}\label{structcnpy_1_1_npy_array_a22a4c264b18f3411bf739d91ffb4389f}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!Npy\+Array@{Npy\+Array}}
+\index{Npy\+Array@{Npy\+Array}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{Npy\+Array()}{NpyArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily cnpy\+::\+Npy\+Array\+::\+Npy\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file cnpy.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_a4cf626dc18eec8b40fabd499253a069c}\label{structcnpy_1_1_npy_array_a4cf626dc18eec8b40fabd499253a069c}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!as\+\_\+vec@{as\+\_\+vec}}
+\index{as\+\_\+vec@{as\+\_\+vec}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{as\+\_\+vec()}{as\_vec()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$T$>$ cnpy\+::\+Npy\+Array\+::as\+\_\+vec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 47 of file cnpy.\+h.
+
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_a367b7feaf166b62930cc6ce1c4426fc4}\label{structcnpy_1_1_npy_array_a367b7feaf166b62930cc6ce1c4426fc4}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!data@{data}}
+\index{data@{data}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ cnpy\+::\+Npy\+Array\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file cnpy.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcnpy_1_1_npy_array_a367b7feaf166b62930cc6ce1c4426fc4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_a1622cd2863fb3f238c2b777a74d5a4e2}\label{structcnpy_1_1_npy_array_a1622cd2863fb3f238c2b777a74d5a4e2}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!data@{data}}
+\index{data@{data}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T$\ast$ cnpy\+::\+Npy\+Array\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file cnpy.\+h.
+
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_ae8004f74b07e6148d7342c2d063e12fc}\label{structcnpy_1_1_npy_array_ae8004f74b07e6148d7342c2d063e12fc}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!num\+\_\+bytes@{num\+\_\+bytes}}
+\index{num\+\_\+bytes@{num\+\_\+bytes}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{num\+\_\+bytes()}{num\_bytes()}}
+{\footnotesize\ttfamily size\+\_\+t cnpy\+::\+Npy\+Array\+::num\+\_\+bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 52 of file cnpy.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcnpy_1_1_npy_array_ae8004f74b07e6148d7342c2d063e12fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_a274276ea92cf0839ee14a292f4d0dc2f}\label{structcnpy_1_1_npy_array_a274276ea92cf0839ee14a292f4d0dc2f}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!data\+\_\+holder@{data\+\_\+holder}}
+\index{data\+\_\+holder@{data\+\_\+holder}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{data\+\_\+holder}{data\_holder}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::vector$<$char$>$ $>$ cnpy\+::\+Npy\+Array\+::data\+\_\+holder}
+
+
+
+Definition at line 56 of file cnpy.\+h.
+
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_a073fe36f66efb1ef9229dafeac1c43c2}\label{structcnpy_1_1_npy_array_a073fe36f66efb1ef9229dafeac1c43c2}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!fortran\+\_\+order@{fortran\+\_\+order}}
+\index{fortran\+\_\+order@{fortran\+\_\+order}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{fortran\+\_\+order}{fortran\_order}}
+{\footnotesize\ttfamily bool cnpy\+::\+Npy\+Array\+::fortran\+\_\+order}
+
+
+
+Definition at line 59 of file cnpy.\+h.
+
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_a8eba9ba1c8987d9364312b579f3444b8}\label{structcnpy_1_1_npy_array_a8eba9ba1c8987d9364312b579f3444b8}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!num\+\_\+vals@{num\+\_\+vals}}
+\index{num\+\_\+vals@{num\+\_\+vals}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{num\+\_\+vals}{num\_vals}}
+{\footnotesize\ttfamily size\+\_\+t cnpy\+::\+Npy\+Array\+::num\+\_\+vals}
+
+
+
+Definition at line 60 of file cnpy.\+h.
+
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_a60dc8f8953d4b90d5a71a2af42f8de83}\label{structcnpy_1_1_npy_array_a60dc8f8953d4b90d5a71a2af42f8de83}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!shape@{shape}}
+\index{shape@{shape}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{shape}{shape}}
+{\footnotesize\ttfamily std\+::vector$<$size\+\_\+t$>$ cnpy\+::\+Npy\+Array\+::shape}
+
+
+
+Definition at line 57 of file cnpy.\+h.
+
+\mbox{\Hypertarget{structcnpy_1_1_npy_array_ada76e18467c2e3d2c3100fdde6dce358}\label{structcnpy_1_1_npy_array_ada76e18467c2e3d2c3100fdde6dce358}} 
+\index{cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}!word\+\_\+size@{word\+\_\+size}}
+\index{word\+\_\+size@{word\+\_\+size}!cnpy\+::\+Npy\+Array@{cnpy\+::\+Npy\+Array}}
+\subsubsection{\texorpdfstring{word\+\_\+size}{word\_size}}
+{\footnotesize\ttfamily size\+\_\+t cnpy\+::\+Npy\+Array\+::word\+\_\+size}
+
+
+
+Definition at line 58 of file cnpy.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{cnpy_8h}{cnpy.\+h}\end{DoxyCompactItemize}

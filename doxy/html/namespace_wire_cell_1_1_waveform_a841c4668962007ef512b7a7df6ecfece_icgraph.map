@@ -1,0 +1,4 @@
+<map id="WireCell::Waveform::sub_sample" name="WireCell::Waveform::sub_sample">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_waveform.html#a76b0099d7c51a9e0a915bbee0fe48069" title="Return the sample size if domain is equally sampled with given number of samples. ..." alt="" coords="193,5,333,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#ad08232b659cba09cf7174b900c557be5" title="WireCell::Waveform\l::resample" alt="" coords="381,5,521,47"/>
+</map>

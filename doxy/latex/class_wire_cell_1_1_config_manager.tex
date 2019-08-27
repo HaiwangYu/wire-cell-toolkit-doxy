@@ -1,0 +1,321 @@
+\hypertarget{class_wire_cell_1_1_config_manager}{}\section{Wire\+Cell\+:\+:Config\+Manager Class Reference}
+\label{class_wire_cell_1_1_config_manager}\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+
+
+{\ttfamily \#include $<$Config\+Manager.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ std\+::string, std\+::string $>$ \hyperlink{class_wire_cell_1_1_config_manager_adffbbcadcf6c79655c6809b9155184cb}{Class\+Instance}
+\begin{DoxyCompactList}\small\item\em Return a list of all known configurables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_config_manager_a7d3d7c10423d969f7544509f6fcca32f}{Config\+Manager} ()
+\item 
+\hyperlink{class_wire_cell_1_1_config_manager_a7fa65fdff98bdd5bbbf72196bd9ccf17}{$\sim$\+Config\+Manager} ()
+\item 
+void \hyperlink{class_wire_cell_1_1_config_manager_abd465f55ebf6135f5e24b5074020fa36}{extend} (\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} more)
+\begin{DoxyCompactList}\small\item\em Extend current list of configuration objects with more. \end{DoxyCompactList}\item 
+int \hyperlink{class_wire_cell_1_1_config_manager_a7e1e1b91cdecd2c5464d2b8bf422d329}{add} (\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \&cfg)
+\item 
+int \hyperlink{class_wire_cell_1_1_config_manager_a8c96b5d7ab755d24a7dc9d9c2ea6cf4b}{add} (\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \&data, const std\+::string \&\hyperlink{namespace_wire_cell_a1f69a2598e2cdb413ffac1157b50670a}{type}, const std\+::string \&name=\char`\"{}\char`\"{})
+\item 
+\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \hyperlink{class_wire_cell_1_1_config_manager_a51fb922bec307a48b4e7424d5d417955}{all} () const
+\begin{DoxyCompactList}\small\item\em Return top-\/level, aggregate configuration. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \hyperlink{class_wire_cell_1_1_config_manager_a598ade80af4432ce25beac1d2ba3028e}{at} (int \hyperlink{class_wire_cell_1_1_config_manager_aca683be02b131cdab4a1a54aeb635206}{index}) const
+\item 
+int \hyperlink{class_wire_cell_1_1_config_manager_aca683be02b131cdab4a1a54aeb635206}{index} (const std\+::string \&\hyperlink{namespace_wire_cell_a1f69a2598e2cdb413ffac1157b50670a}{type}, const std\+::string \&name=\char`\"{}\char`\"{}) const
+\item 
+int \hyperlink{class_wire_cell_1_1_config_manager_ad47aaaeff27496deac1eb2eae1bd01c8}{size} () const
+\begin{DoxyCompactList}\small\item\em Return the number of configuration objects. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \hyperlink{class_wire_cell_1_1_config_manager_a4168a64d0957e95cf64565ef8f74fbf8}{pop} (int ind)
+\begin{DoxyCompactList}\small\item\em Remove configuration at given index and return it. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_wire_cell_1_1_config_manager_adffbbcadcf6c79655c6809b9155184cb}{Class\+Instance} $>$ \hyperlink{class_wire_cell_1_1_config_manager_a7981627a4327f308bc3008337c39db07}{configurables} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bundle up some policy for handling configuration.
+
+Overall configuration object is a list of configuration objects for each configurable instance.
+
+Each instance configuration is a dict with keys\+:
+
+
+\begin{DoxyItemize}
+\item type gives the registered class name
+\item name gives an instance name, (\char`\"{}\char`\"{} by default if omitted)
+\item data gives a type-\/specific Configuration dictionary for the instance. 
+\end{DoxyItemize}
+
+Definition at line 20 of file Config\+Manager.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_adffbbcadcf6c79655c6809b9155184cb}\label{class_wire_cell_1_1_config_manager_adffbbcadcf6c79655c6809b9155184cb}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!Class\+Instance@{Class\+Instance}}
+\index{Class\+Instance@{Class\+Instance}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{Class\+Instance}{ClassInstance}}
+{\footnotesize\ttfamily typedef std\+::pair$<$std\+::string, std\+::string$>$ \hyperlink{class_wire_cell_1_1_config_manager_adffbbcadcf6c79655c6809b9155184cb}{Wire\+Cell\+::\+Config\+Manager\+::\+Class\+Instance}}
+
+
+
+Return a list of all known configurables. 
+
+
+
+Definition at line 52 of file Config\+Manager.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_a7d3d7c10423d969f7544509f6fcca32f}\label{class_wire_cell_1_1_config_manager_a7d3d7c10423d969f7544509f6fcca32f}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!Config\+Manager@{Config\+Manager}}
+\index{Config\+Manager@{Config\+Manager}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{Config\+Manager()}{ConfigManager()}}
+{\footnotesize\ttfamily Config\+Manager\+::\+Config\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Config\+Manager.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_a7fa65fdff98bdd5bbbf72196bd9ccf17}\label{class_wire_cell_1_1_config_manager_a7fa65fdff98bdd5bbbf72196bd9ccf17}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!````~Config\+Manager@{$\sim$\+Config\+Manager}}
+\index{````~Config\+Manager@{$\sim$\+Config\+Manager}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Config\+Manager()}{~ConfigManager()}}
+{\footnotesize\ttfamily Config\+Manager\+::$\sim$\+Config\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file Config\+Manager.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_a7e1e1b91cdecd2c5464d2b8bf422d329}\label{class_wire_cell_1_1_config_manager_a7e1e1b91cdecd2c5464d2b8bf422d329}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!add@{add}}
+\index{add@{add}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Config\+Manager\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \&}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file Config\+Manager.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_a7e1e1b91cdecd2c5464d2b8bf422d329_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_a7e1e1b91cdecd2c5464d2b8bf422d329_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_a8c96b5d7ab755d24a7dc9d9c2ea6cf4b}\label{class_wire_cell_1_1_config_manager_a8c96b5d7ab755d24a7dc9d9c2ea6cf4b}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!add@{add}}
+\index{add@{add}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Config\+Manager\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \&}]{data,  }\item[{const std\+::string \&}]{type,  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file Config\+Manager.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_a8c96b5d7ab755d24a7dc9d9c2ea6cf4b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_a51fb922bec307a48b4e7424d5d417955}\label{class_wire_cell_1_1_config_manager_a51fb922bec307a48b4e7424d5d417955}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!all@{all}}
+\index{all@{all}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} Wire\+Cell\+::\+Config\+Manager\+::all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return top-\/level, aggregate configuration. 
+
+
+
+Definition at line 37 of file Config\+Manager.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_a51fb922bec307a48b4e7424d5d417955_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_a51fb922bec307a48b4e7424d5d417955_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_a598ade80af4432ce25beac1d2ba3028e}\label{class_wire_cell_1_1_config_manager_a598ade80af4432ce25beac1d2ba3028e}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!at@{at}}
+\index{at@{at}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} Config\+Manager\+::at (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 58 of file Config\+Manager.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_a598ade80af4432ce25beac1d2ba3028e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_a598ade80af4432ce25beac1d2ba3028e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_a7981627a4327f308bc3008337c39db07}\label{class_wire_cell_1_1_config_manager_a7981627a4327f308bc3008337c39db07}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!configurables@{configurables}}
+\index{configurables@{configurables}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{configurables()}{configurables()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_wire_cell_1_1_config_manager_adffbbcadcf6c79655c6809b9155184cb}{Config\+Manager\+::\+Class\+Instance} $>$ Config\+Manager\+::configurables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 66 of file Config\+Manager.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_abd465f55ebf6135f5e24b5074020fa36}\label{class_wire_cell_1_1_config_manager_abd465f55ebf6135f5e24b5074020fa36}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!extend@{extend}}
+\index{extend@{extend}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily void Config\+Manager\+::extend (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration}}]{more }\end{DoxyParamCaption})}
+
+
+
+Extend current list of configuration objects with more. 
+
+
+
+Definition at line 16 of file Config\+Manager.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_wire_cell_1_1_config_manager_abd465f55ebf6135f5e24b5074020fa36_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_abd465f55ebf6135f5e24b5074020fa36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_aca683be02b131cdab4a1a54aeb635206}\label{class_wire_cell_1_1_config_manager_aca683be02b131cdab4a1a54aeb635206}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!index@{index}}
+\index{index@{index}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily int Config\+Manager\+::index (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type,  }\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption}) const}
+
+Return index of configuration for given class and instance names. If not found, returned index == -\/1; 
+
+Definition at line 22 of file Config\+Manager.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_aca683be02b131cdab4a1a54aeb635206_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_a4168a64d0957e95cf64565ef8f74fbf8}\label{class_wire_cell_1_1_config_manager_a4168a64d0957e95cf64565ef8f74fbf8}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!pop@{pop}}
+\index{pop@{pop}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} Config\+Manager\+::pop (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption})}
+
+
+
+Remove configuration at given index and return it. 
+
+
+
+Definition at line 75 of file Config\+Manager.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_a4168a64d0957e95cf64565ef8f74fbf8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_a4168a64d0957e95cf64565ef8f74fbf8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_config_manager_ad47aaaeff27496deac1eb2eae1bd01c8}\label{class_wire_cell_1_1_config_manager_ad47aaaeff27496deac1eb2eae1bd01c8}} 
+\index{Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}!size@{size}}
+\index{size@{size}!Wire\+Cell\+::\+Config\+Manager@{Wire\+Cell\+::\+Config\+Manager}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Config\+Manager\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the number of configuration objects. 
+
+
+
+Definition at line 46 of file Config\+Manager.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_ad47aaaeff27496deac1eb2eae1bd01c8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_config_manager_ad47aaaeff27496deac1eb2eae1bd01c8_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_config_manager_8h}{Config\+Manager.\+h}\item 
+util/src/\hyperlink{_config_manager_8cxx}{Config\+Manager.\+cxx}\end{DoxyCompactItemize}

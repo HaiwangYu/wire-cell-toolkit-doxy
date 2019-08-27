@@ -1,0 +1,5 @@
+<map id="wct::sigproc::tagged_traces" name="wct::sigproc::tagged_traces">
+<area shape="rect" id="node2" href="$namespacewct_1_1sigproc.html#ad081c59d5eae16e2375425a9e1a65679" title="wct::sigproc::raster" alt="" coords="209,5,343,32"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter.html#a861a76be3558adf47d2f7da5b00357f1" title="IFrameFilter interface. " alt="" coords="203,56,349,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_p_m_t_noise_filter.html#ad33bf21dae5ad22503a33e6444057dcb" title="IFrameFilter interface. " alt="" coords="193,136,359,192"/>
+</map>

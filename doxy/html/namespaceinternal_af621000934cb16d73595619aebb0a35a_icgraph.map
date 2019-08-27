@@ -1,0 +1,12 @@
+<map id="internal::parse_nonnegative_int" name="internal::parse_nonnegative_int">
+<area shape="rect" id="node2" href="$namespaceinternal.html#a0f424657f3b1900377b8597f5516432e" title="internal::parse_arg_id" alt="" coords="256,169,403,195"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#aa5e9c93ad05ebd920505acdd2122ede6" title="internal::parse_width" alt="" coords="453,74,596,101"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#af89a4b19adfe070b0cb66cf9f694caf3" title="internal::parse_format\l_specs" alt="" coords="651,129,799,171"/>
+<area shape="rect" id="node10" href="$classbasic__printf__context.html#ae71967bec500702473ba5b98d4e36aa2" title="basic_printf_context\l::basic_printf_context" alt="" coords="256,293,403,335"/>
+<area shape="rect" id="node11" href="$classbasic__printf__context.html#a1740a3a0a6d2748e4f489fb9b4b9e82c" title="basic_printf_context\l::format" alt="" coords="260,359,399,400"/>
+<area shape="rect" id="node9" href="$namespaceinternal.html#a47fffd25c13670b8e2eb6559caeef974" title="internal::parse_format\l_string" alt="" coords="451,176,599,217"/>
+<area shape="rect" id="node4" href="$structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a0b4553a087ee08ec032965fe1fc35ff4" title="formatter\&lt; std::chrono\l::duration\&lt; Rep, Period\l \&gt;, Char \&gt;::parse" alt="" coords="647,49,804,105"/>
+<area shape="rect" id="node6" href="$structformatter_3_01_t_00_01_char_00_01typename_01std_1_1enable__if_3_01internal_1_1format__typeef2b7d59b5441fbead72290e06693dea.html#ae66fc4d23664a9533b055208fa9692bf" title="formatter\&lt; T, Char,\l typename std::enable\l_if\&lt; internal::format\l_type\&lt; typename buffer\l_context\&lt; Char \&gt;::type,\l T \&gt;::value \&gt;::type \&gt;::parse" alt="" coords="852,5,1035,105"/>
+<area shape="rect" id="node7" href="$classdynamic__formatter.html#aa9bc96ae30462d4e5f13d207f957fc0b" title="dynamic_formatter::\lparse" alt="" coords="874,129,1013,171"/>
+<area shape="rect" id="node8" href="$structformat__handler.html#a4d16ddae0958acb12d0606038c393b24" title="format_handler::on\l_format_specs" alt="" coords="878,195,1009,236"/>
+</map>

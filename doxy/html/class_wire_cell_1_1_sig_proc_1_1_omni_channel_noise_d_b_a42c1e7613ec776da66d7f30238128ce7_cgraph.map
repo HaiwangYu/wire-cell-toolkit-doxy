@@ -1,0 +1,27 @@
+<map id="WireCell::SigProc::OmniChannelNoiseDB::set_bad_channels" name="WireCell::SigProc::OmniChannelNoiseDB::set_bad_channels">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a7a1a60aef8d2935c36e27a735117a1cb" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lset_misconfigured" alt="" coords="231,193,394,249"/>
+<area shape="rect" id="node12" href="$namespace_wire_cell_1_1_string.html#ade706f4cfc3f6e8a946d95f1b06dbb56" title="WireCell::String::format" alt="" coords="459,307,618,333"/>
+<area shape="rect" id="node14" href="$namespace_wire_cell_1_1_frame_tools.html#aa68b64d0bc1fd1daa0646a35c26edcbb" title="WireCell::FrameTools\l::channels" alt="" coords="238,346,387,387"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a7d762e341143dea15eb2d8f57aac9c86" title="Return a nominal baseline correction (additive offset) " alt="" coords="231,412,394,468"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a60802eabcf081d7b82ed7b270dcefe00" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lgain_correction" alt="" coords="231,492,394,548"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a0b6fa7b4d342adf1313b86684b811023" title="Return a time offset associated with the response(). " alt="" coords="231,572,394,628"/>
+<area shape="rect" id="node18" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a37f1dda111792a36315f977c2ade5783" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lmin_rms_cut" alt="" coords="231,652,394,708"/>
+<area shape="rect" id="node19" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a494d0e48066357d8e86ea7ce4d462bdb" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lmax_rms_cut" alt="" coords="231,732,394,788"/>
+<area shape="rect" id="node20" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#afc69ca596a5ff6f8a63fc64234c8062e" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lpad_window_front" alt="" coords="231,812,394,868"/>
+<area shape="rect" id="node21" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#ac765001725b5a181ccfd605d0221e0ef" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lpad_window_back" alt="" coords="231,892,394,948"/>
+<area shape="rect" id="node22" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a0155aba843a5a04966ffcfe556b207f8" title="Return the filter for the RC+RC coupling response function. " alt="" coords="221,973,405,1014"/>
+<area shape="rect" id="node24" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#acc904d0a6472acede55bd40ef8b6cd01" title="Return the filter to correct any wrongly configured channels. " alt="" coords="231,1039,394,1095"/>
+<area shape="rect" id="node25" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a125b09b4d7d5cb973ae418936343bf4a" title="Return the filter to attenuate noise. " alt="" coords="216,1119,409,1161"/>
+<area shape="rect" id="node26" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#ae269e377629b9a96c8e0cdb0f30353a4" title="A nominal detector response spectrum for a given channel. " alt="" coords="231,1185,394,1241"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_wire_plane_id.html#adff770cfb3d3ddfa42ff55dbbb5cf0b9" title="Unit ID as integer. " alt="" coords="463,59,614,101"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_response.html#a11620870420942188de46612d3e2022f" title="WireCell::Response\l::wire_region_average" alt="" coords="464,125,613,166"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_wire_plane_id.html#a72e32df6a0f0721dba0f1c5c76649c9a" title="Layer as index number (0,1 or 2). &#45;1 if unknown. " alt="" coords="463,190,614,231"/>
+<area shape="rect" id="node11" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="457,256,620,283"/>
+<area shape="rect" id="node5" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#ae156e1d6bbf8be35451100d1d43d9aaa" title="WireCell::Response\l::Schema::FieldResponse\l::plane" alt="" coords="668,5,841,61"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_waveform.html#a4c7b82a4567d6c94227398f9511ffb92" title="Return sum of all entries in sequence. " alt="" coords="668,85,841,112"/>
+<area shape="rect" id="node7" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#a9f3b786a9adf83b6bf536d6442d53207" title="WireCell::Response\l::Schema::FieldResponse\l::FieldResponse" alt="" coords="668,136,841,192"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_wire_plane_id.html#a203ede27a759b00518be11b8d23776fd" title="Layer as enum. " alt="" coords="679,217,830,258"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_wire_plane_id.html#a33a565cfc76f84e9bc103b1ca33d0974" title="Layer as integer (not index!) " alt="" coords="889,217,1040,258"/>
+<area shape="rect" id="node13" href="$namespace_wire_cell_1_1_string.html#a483dc976ea784d91bef184a893e9bba8" title="WireCell::String::format\l_flatten" alt="" coords="675,299,834,341"/>
+<area shape="rect" id="node23" href="$_wire_cell_util_8cxx.html#a100d09f9a57d44745299c28c63c98745" title="dummy" alt="" coords="506,1089,571,1116"/>
+</map>

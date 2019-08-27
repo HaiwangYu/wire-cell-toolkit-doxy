@@ -1,0 +1,19 @@
+<map id="iface/inc/WireCellIface/IDepoSet.h" name="iface/inc/WireCellIface/IDepoSet.h">
+<area shape="rect" id="node2" href="$_i_depo_collector_8h.html" title="iface/inc/WireCellIface\l/IDepoCollector.h" alt="" coords="943,95,1098,136"/>
+<area shape="rect" id="node3" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="741,191,946,218"/>
+<area shape="rect" id="node8" href="$_i_depo_framer_8h.html" title="iface/inc/WireCellIface\l/IDepoFramer.h" alt="" coords="401,95,555,136"/>
+<area shape="rect" id="node15" href="$_i_depo_set_fanout_8h.html" title="iface/inc/WireCellIface\l/IDepoSetFanout.h" alt="" coords="673,95,827,136"/>
+<area shape="rect" id="node18" href="$_simple_depo_set_8h.html" title="iface/inc/WireCellIface\l/SimpleDepoSet.h" alt="" coords="1191,95,1346,136"/>
+<area shape="rect" id="node4" href="$_depo_bagger_8h.html" title="gen/inc/WireCellGen\l/DepoBagger.h" alt="" coords="971,184,1113,225"/>
+<area shape="rect" id="node6" href="$_depo_chunker_8h.html" title="gen/inc/WireCellGen\l/DepoChunker.h" alt="" coords="1137,184,1280,225"/>
+<area shape="rect" id="node5" href="$_depo_bagger_8cxx.html" title="gen/src/DepoBagger.cxx" alt="" coords="992,273,1159,300"/>
+<area shape="rect" id="node7" href="$_depo_chunker_8cxx.html" title="gen/src/DepoChunker.cxx" alt="" coords="1248,273,1423,300"/>
+<area shape="rect" id="node9" href="$_depo_framer_8h.html" title="gen/inc/WireCellGen\l/DepoFramer.h" alt="" coords="43,184,185,225"/>
+<area shape="rect" id="node11" href="$_depo_transform_8h.html" title="gen/inc/WireCellGen\l/DepoTransform.h" alt="" coords="225,184,368,225"/>
+<area shape="rect" id="node13" href="$_depo_zipper_8h.html" title="gen/inc/WireCellGen\l/DepoZipper.h" alt="" coords="407,184,549,225"/>
+<area shape="rect" id="node10" href="$_depo_framer_8cxx.html" title="gen/src/DepoFramer.cxx" alt="" coords="5,273,172,300"/>
+<area shape="rect" id="node12" href="$_depo_transform_8cxx.html" title="gen/src/DepoTransform.cxx" alt="" coords="197,273,381,300"/>
+<area shape="rect" id="node14" href="$_depo_zipper_8cxx.html" title="gen/src/DepoZipper.cxx" alt="" coords="405,273,567,300"/>
+<area shape="rect" id="node16" href="$_depo_set_fanout_8h.html" title="gen/inc/WireCellGen\l/DepoSetFanout.h" alt="" coords="573,184,716,225"/>
+<area shape="rect" id="node17" href="$_depo_set_fanout_8cxx.html" title="gen/src/DepoSetFanout.cxx" alt="" coords="591,273,776,300"/>
+</map>

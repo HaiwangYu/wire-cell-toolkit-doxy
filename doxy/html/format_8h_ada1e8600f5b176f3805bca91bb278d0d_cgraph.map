@@ -1,0 +1,6 @@
+<map id="formatted_size" name="formatted_size">
+<area shape="rect" id="node2" href="$format_8h.html#a6ded0fd13db9db393b6d6cd571eb6c74" title="format_to" alt="" coords="161,71,239,98"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a14d62818b14fe8556fdb1718e12fd1ab" title="internal::check_format\l_string" alt="" coords="287,5,437,47"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a9f6f592ec8a979251038265f241e7d48" title="internal::vformat_to" alt="" coords="295,71,429,98"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="485,97,641,123"/>
+</map>

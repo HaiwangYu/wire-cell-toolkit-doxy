@@ -1,0 +1,10 @@
+<map id="WireCell::Gen::Digitizer" name="WireCell::Gen::Digitizer">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_frame_filter.html" title="WireCell::IFrameFilter" alt="" coords="81,408,231,435"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IFrame, IFrame \&gt;" alt="" coords="60,319,225,360"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_function_node_base.html" title="WireCell::IFunctionNodeBase" alt="" coords="5,244,200,271"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="57,169,172,196"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="46,80,197,121"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="143,5,273,32"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="223,80,374,121"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="224,244,381,271"/>
+</map>

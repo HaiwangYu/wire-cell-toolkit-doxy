@@ -1,0 +1,190 @@
+\hypertarget{namespace_wire_cell_1_1_response}{}\section{Wire\+Cell\+:\+:Response Namespace Reference}
+\label{namespace_wire_cell_1_1_response}\index{Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_response_1_1_schema}{Schema}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_cold_elec}{Cold\+Elec}
+\begin{DoxyCompactList}\small\item\em A functional object caching gain and shape. \end{DoxyCompactList}\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_generator}{Generator}
+\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_hf_filter}{Hf\+Filter}
+\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_lf_filter}{Lf\+Filter}
+\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_simple_r_c}{Simple\+RC}
+\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_sys_resp}{Sys\+Resp}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Schema\+::\+Field\+Response} \hyperlink{namespace_wire_cell_1_1_response_a11620870420942188de46612d3e2022f}{wire\+\_\+region\+\_\+average} (const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Schema\+::\+Field\+Response} \&fr)
+\item 
+\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Schema\+::\+Field\+Response} \hyperlink{namespace_wire_cell_1_1_response_a465144cc99feb1c0e2e85c6928ae2506}{average\+\_\+1D} (const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Schema\+::\+Field\+Response} \&fr)
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \hyperlink{namespace_wire_cell_1_1_response_a8f1890f06132c13edca92ab1d9ea9263}{as\+\_\+array} (const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Schema\+::\+Plane\+Response} \&pr)
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \hyperlink{namespace_wire_cell_1_1_response_aeb8f98a26e027557baaaafe032d887e7}{as\+\_\+array} (const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Schema\+::\+Plane\+Response} \&pr, int set\+\_\+nrows, int set\+\_\+ncols)
+\item 
+double \hyperlink{namespace_wire_cell_1_1_response_a4fc0f118f72199a91582863c978b803c}{coldelec} (double time, double gain=7.\+8, double shaping=1.\+0 $\ast$units\+::us)
+\begin{DoxyCompactList}\small\item\em The cold electronics response function. \end{DoxyCompactList}\item 
+double \hyperlink{namespace_wire_cell_1_1_response_a1a0252a5992f6d7cf76f5b1b0adcf544}{hf\+\_\+filter} (double freq, double sigma=1, double power=2, bool zero\+\_\+freq\+\_\+removal=true)
+\item 
+double \hyperlink{namespace_wire_cell_1_1_response_af61a79565c364b71935a42d74ddd3831}{lf\+\_\+filter} (double freq, double tau=0.\+02)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_response_a8f1890f06132c13edca92ab1d9ea9263}\label{namespace_wire_cell_1_1_response_a8f1890f06132c13edca92ab1d9ea9263}} 
+\index{Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}!as\+\_\+array@{as\+\_\+array}}
+\index{as\+\_\+array@{as\+\_\+array}!Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}}
+\subsubsection{\texorpdfstring{as\+\_\+array()}{as\_array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} Wire\+Cell\+::\+Response\+::as\+\_\+array (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Schema\+::\+Plane\+Response} \&}]{pr }\end{DoxyParamCaption})}
+
+Return the plane\textquotesingle{}s response as a 2D array. This is a straight copy of the plane\textquotesingle{}s current vectors into rows of the returned array. The first \char`\"{}path\char`\"{} will be in row 0. Each column thus contains the same sample (aka tick) across all current waveforms. Column 0 is first sample. The plane response input data is taken at face value an not attempt to resolve any implicit symmetries is made. 
+
+Definition at line 279 of file Response.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_response_a8f1890f06132c13edca92ab1d9ea9263_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_response_aeb8f98a26e027557baaaafe032d887e7}\label{namespace_wire_cell_1_1_response_aeb8f98a26e027557baaaafe032d887e7}} 
+\index{Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}!as\+\_\+array@{as\+\_\+array}}
+\index{as\+\_\+array@{as\+\_\+array}!Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}}
+\subsubsection{\texorpdfstring{as\+\_\+array()}{as\_array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} Wire\+Cell\+::\+Response\+::as\+\_\+array (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Schema\+::\+Plane\+Response} \&}]{pr,  }\item[{int}]{set\+\_\+nrows,  }\item[{int}]{set\+\_\+ncols }\end{DoxyParamCaption})}
+
+
+
+Definition at line 256 of file Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_response_aeb8f98a26e027557baaaafe032d887e7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_response_a465144cc99feb1c0e2e85c6928ae2506}\label{namespace_wire_cell_1_1_response_a465144cc99feb1c0e2e85c6928ae2506}} 
+\index{Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}!average\+\_\+1D@{average\+\_\+1D}}
+\index{average\+\_\+1D@{average\+\_\+1D}!Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}}
+\subsubsection{\texorpdfstring{average\+\_\+1\+D()}{average\_1D()}}
+{\footnotesize\ttfamily \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Response\+::\+Schema\+::\+Field\+Response} Wire\+Cell\+::\+Response\+::average\+\_\+1D (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Schema\+::\+Field\+Response} \&}]{fr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 224 of file Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_response_a465144cc99feb1c0e2e85c6928ae2506_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_response_a465144cc99feb1c0e2e85c6928ae2506_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_response_a4fc0f118f72199a91582863c978b803c}\label{namespace_wire_cell_1_1_response_a4fc0f118f72199a91582863c978b803c}} 
+\index{Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}!coldelec@{coldelec}}
+\index{coldelec@{coldelec}!Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}}
+\subsubsection{\texorpdfstring{coldelec()}{coldelec()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Response\+::coldelec (\begin{DoxyParamCaption}\item[{double}]{time,  }\item[{double}]{gain = {\ttfamily 7.8},  }\item[{double}]{shaping = {\ttfamily 1.0$\ast$units\+:\+:us} }\end{DoxyParamCaption})}
+
+
+
+The cold electronics response function. 
+
+
+
+Definition at line 350 of file Response.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespace_wire_cell_1_1_response_a4fc0f118f72199a91582863c978b803c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_response_a1a0252a5992f6d7cf76f5b1b0adcf544}\label{namespace_wire_cell_1_1_response_a1a0252a5992f6d7cf76f5b1b0adcf544}} 
+\index{Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}!hf\+\_\+filter@{hf\+\_\+filter}}
+\index{hf\+\_\+filter@{hf\+\_\+filter}!Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}}
+\subsubsection{\texorpdfstring{hf\+\_\+filter()}{hf\_filter()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Response\+::hf\+\_\+filter (\begin{DoxyParamCaption}\item[{double}]{freq,  }\item[{double}]{sigma = {\ttfamily 1},  }\item[{double}]{power = {\ttfamily 2},  }\item[{bool}]{zero\+\_\+freq\+\_\+removal = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 377 of file Response.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{namespace_wire_cell_1_1_response_a1a0252a5992f6d7cf76f5b1b0adcf544_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_response_af61a79565c364b71935a42d74ddd3831}\label{namespace_wire_cell_1_1_response_af61a79565c364b71935a42d74ddd3831}} 
+\index{Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}!lf\+\_\+filter@{lf\+\_\+filter}}
+\index{lf\+\_\+filter@{lf\+\_\+filter}!Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}}
+\subsubsection{\texorpdfstring{lf\+\_\+filter()}{lf\_filter()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Response\+::lf\+\_\+filter (\begin{DoxyParamCaption}\item[{double}]{freq,  }\item[{double}]{tau = {\ttfamily 0.02} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 386 of file Response.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{namespace_wire_cell_1_1_response_af61a79565c364b71935a42d74ddd3831_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_response_a11620870420942188de46612d3e2022f}\label{namespace_wire_cell_1_1_response_a11620870420942188de46612d3e2022f}} 
+\index{Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}!wire\+\_\+region\+\_\+average@{wire\+\_\+region\+\_\+average}}
+\index{wire\+\_\+region\+\_\+average@{wire\+\_\+region\+\_\+average}!Wire\+Cell\+::\+Response@{Wire\+Cell\+::\+Response}}
+\subsubsection{\texorpdfstring{wire\+\_\+region\+\_\+average()}{wire\_region\_average()}}
+{\footnotesize\ttfamily \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Response\+::\+Schema\+::\+Field\+Response} Wire\+Cell\+::\+Response\+::wire\+\_\+region\+\_\+average (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Schema\+::\+Field\+Response} \&}]{fr }\end{DoxyParamCaption})}
+
+Return a reduced Field\+Response structure where the Path\+::\+Response\+::current arrays are reduced by averaging over each wire region.
+
+Warning! this function is N\+OT G\+E\+N\+E\+R\+AL. It is actually specific to Garfield 1D line of paths with half the impact positions represented! 
+
+Definition at line 99 of file Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_response_a11620870420942188de46612d3e2022f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_response_a11620870420942188de46612d3e2022f_icgraph}
+\end{center}
+\end{figure}

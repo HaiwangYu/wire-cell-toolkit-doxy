@@ -1,0 +1,308 @@
+\hypertarget{classspdlog_1_1sinks_1_1wincolor__sink}{}\section{spdlog\+:\+:sinks\+:\+:wincolor\+\_\+sink$<$ Out\+Handle, Console\+Mutex $>$ Class Template Reference}
+\label{classspdlog_1_1sinks_1_1wincolor__sink}\index{spdlog\+::sinks\+::wincolor\+\_\+sink$<$ Out\+Handle, Console\+Mutex $>$@{spdlog\+::sinks\+::wincolor\+\_\+sink$<$ Out\+Handle, Console\+Mutex $>$}}
+
+
+{\ttfamily \#include $<$wincolor\+\_\+sink.\+h$>$}
+
+
+
+Inheritance diagram for spdlog\+:\+:sinks\+:\+:wincolor\+\_\+sink$<$ Out\+Handle, Console\+Mutex $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classspdlog_1_1sinks_1_1wincolor__sink__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for spdlog\+:\+:sinks\+:\+:wincolor\+\_\+sink$<$ Out\+Handle, Console\+Mutex $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classspdlog_1_1sinks_1_1wincolor__sink__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a4ed05c6780bc65806080c88202d80577}{wincolor\+\_\+sink} ()
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a229d666b7880d587aefa8c5d999acfb4}{$\sim$wincolor\+\_\+sink} () override
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a89e2ddbd1297c8c722d63277b458b5c1}{wincolor\+\_\+sink} (const \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{wincolor\+\_\+sink} \&other)=delete
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{wincolor\+\_\+sink} \& \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a54ca784b8f5e1ee9c2adcda3125c3515}{operator=} (const \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{wincolor\+\_\+sink} \&other)=delete
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a914a0d9aed02627be8cd287a2dee9916}{set\+\_\+color} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} \hyperlink{classspdlog_1_1sinks_1_1sink_ae59ca2b418c5cdfed1c04e49a444be1c}{level}, W\+O\+RD \hyperlink{color_8h_a80d1dc5f416b97f92939a4166d41203c}{color})
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a64d98363a05d1a7a4f295f6de1b5cec1}{log} (const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&msg) final override
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a3746a35fc36218e76dc3080e52fe6233}{flush} () final override
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a5032da6fc760507134a7d1eff1a20b0a}{set\+\_\+pattern} (const std\+::string \&pattern) override final
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a48cc1a252565bdbb66b12ba2a40e62f9}{set\+\_\+formatter} (std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$ sink\+\_\+formatter) override final
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a77ef730edcfe9f6f000bed8c846aa6bf}{B\+O\+LD} = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+N\+S\+I\+TY
+\item 
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a8635f904f1dad9e60aaefe307e076f1d}{R\+ED} = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+R\+ED
+\item 
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a39daa889c7395936e2caf95baf2c4181}{G\+R\+E\+EN} = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+G\+R\+E\+EN
+\item 
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a6cbc30363fd20b20c1cd0f22211f0612}{C\+Y\+AN} = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+G\+R\+E\+EN $\vert$ F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+B\+L\+UE
+\item 
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a32682f38336031a282e1681622f1cff4}{W\+H\+I\+TE} = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+R\+ED $\vert$ F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+G\+R\+E\+EN $\vert$ F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+B\+L\+UE
+\item 
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_aa148f87d2c8b234c306009268ac7b812}{Y\+E\+L\+L\+OW} = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+R\+ED $\vert$ F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+G\+R\+E\+EN
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Out\+Handle, typename Console\+Mutex$>$\newline
+class spdlog\+::sinks\+::wincolor\+\_\+sink$<$ Out\+Handle, Console\+Mutex $>$}
+
+
+
+Definition at line 30 of file wincolor\+\_\+sink.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a4ed05c6780bc65806080c88202d80577}\label{classspdlog_1_1sinks_1_1wincolor__sink_a4ed05c6780bc65806080c88202d80577}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!wincolor\+\_\+sink@{wincolor\+\_\+sink}}
+\index{wincolor\+\_\+sink@{wincolor\+\_\+sink}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{wincolor\+\_\+sink()}{wincolor\_sink()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{wincolor\+\_\+sink} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file wincolor\+\_\+sink.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classspdlog_1_1sinks_1_1wincolor__sink_a4ed05c6780bc65806080c88202d80577_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a229d666b7880d587aefa8c5d999acfb4}\label{classspdlog_1_1sinks_1_1wincolor__sink_a229d666b7880d587aefa8c5d999acfb4}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!````~wincolor\+\_\+sink@{$\sim$wincolor\+\_\+sink}}
+\index{````~wincolor\+\_\+sink@{$\sim$wincolor\+\_\+sink}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{$\sim$wincolor\+\_\+sink()}{~wincolor\_sink()}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::$\sim$\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{wincolor\+\_\+sink} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Definition at line 53 of file wincolor\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classspdlog_1_1sinks_1_1wincolor__sink_a229d666b7880d587aefa8c5d999acfb4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a89e2ddbd1297c8c722d63277b458b5c1}\label{classspdlog_1_1sinks_1_1wincolor__sink_a89e2ddbd1297c8c722d63277b458b5c1}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!wincolor\+\_\+sink@{wincolor\+\_\+sink}}
+\index{wincolor\+\_\+sink@{wincolor\+\_\+sink}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{wincolor\+\_\+sink()}{wincolor\_sink()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{wincolor\+\_\+sink} (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a3746a35fc36218e76dc3080e52fe6233}\label{classspdlog_1_1sinks_1_1wincolor__sink_a3746a35fc36218e76dc3080e52fe6233}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!flush@{flush}}
+\index{flush@{flush}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1sink_a8a0674ae3bca8f1617aef820e23a2ccd}{spdlog\+::sinks\+::sink}.
+
+
+
+Definition at line 92 of file wincolor\+\_\+sink.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classspdlog_1_1sinks_1_1wincolor__sink_a3746a35fc36218e76dc3080e52fe6233_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a64d98363a05d1a7a4f295f6de1b5cec1}\label{classspdlog_1_1sinks_1_1wincolor__sink_a64d98363a05d1a7a4f295f6de1b5cec1}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!log@{log}}
+\index{log@{log}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::log (\begin{DoxyParamCaption}\item[{const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1sink_a51d8f34ad79064e0dc13c6013236e427}{spdlog\+::sinks\+::sink}.
+
+
+
+Definition at line 68 of file wincolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a54ca784b8f5e1ee9c2adcda3125c3515}\label{classspdlog_1_1sinks_1_1wincolor__sink_a54ca784b8f5e1ee9c2adcda3125c3515}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!operator=@{operator=}}
+\index{operator=@{operator=}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{wincolor\+\_\+sink}\& \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classspdlog_1_1sinks_1_1wincolor__sink_a54ca784b8f5e1ee9c2adcda3125c3515_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a914a0d9aed02627be8cd287a2dee9916}\label{classspdlog_1_1sinks_1_1wincolor__sink_a914a0d9aed02627be8cd287a2dee9916}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!set\+\_\+color@{set\+\_\+color}}
+\index{set\+\_\+color@{set\+\_\+color}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{set\+\_\+color()}{set\_color()}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{level,  }\item[{W\+O\+RD}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 62 of file wincolor\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classspdlog_1_1sinks_1_1wincolor__sink_a914a0d9aed02627be8cd287a2dee9916_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a48cc1a252565bdbb66b12ba2a40e62f9}\label{classspdlog_1_1sinks_1_1wincolor__sink_a48cc1a252565bdbb66b12ba2a40e62f9}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!set\+\_\+formatter@{set\+\_\+formatter}}
+\index{set\+\_\+formatter@{set\+\_\+formatter}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{set\+\_\+formatter()}{set\_formatter()}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::set\+\_\+formatter (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$}]{sink\+\_\+formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1sink_ac410f2229e583a75337a5fdf45d020be}{spdlog\+::sinks\+::sink}.
+
+
+
+Definition at line 103 of file wincolor\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classspdlog_1_1sinks_1_1wincolor__sink_a48cc1a252565bdbb66b12ba2a40e62f9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a5032da6fc760507134a7d1eff1a20b0a}\label{classspdlog_1_1sinks_1_1wincolor__sink_a5032da6fc760507134a7d1eff1a20b0a}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!set\+\_\+pattern@{set\+\_\+pattern}}
+\index{set\+\_\+pattern@{set\+\_\+pattern}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{set\+\_\+pattern()}{set\_pattern()}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::set\+\_\+pattern (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1sink_a7e5cfd4b683c8bfa8fbd602d7f409632}{spdlog\+::sinks\+::sink}.
+
+
+
+Definition at line 97 of file wincolor\+\_\+sink.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a77ef730edcfe9f6f000bed8c846aa6bf}\label{classspdlog_1_1sinks_1_1wincolor__sink_a77ef730edcfe9f6f000bed8c846aa6bf}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!B\+O\+LD@{B\+O\+LD}}
+\index{B\+O\+LD@{B\+O\+LD}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{B\+O\+LD}{BOLD}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::B\+O\+LD = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+N\+S\+I\+TY}
+
+
+
+Definition at line 33 of file wincolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a6cbc30363fd20b20c1cd0f22211f0612}\label{classspdlog_1_1sinks_1_1wincolor__sink_a6cbc30363fd20b20c1cd0f22211f0612}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!C\+Y\+AN@{C\+Y\+AN}}
+\index{C\+Y\+AN@{C\+Y\+AN}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{C\+Y\+AN}{CYAN}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::C\+Y\+AN = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+G\+R\+E\+EN $\vert$ F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+B\+L\+UE}
+
+
+
+Definition at line 36 of file wincolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a39daa889c7395936e2caf95baf2c4181}\label{classspdlog_1_1sinks_1_1wincolor__sink_a39daa889c7395936e2caf95baf2c4181}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!G\+R\+E\+EN@{G\+R\+E\+EN}}
+\index{G\+R\+E\+EN@{G\+R\+E\+EN}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{G\+R\+E\+EN}{GREEN}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::G\+R\+E\+EN = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+G\+R\+E\+EN}
+
+
+
+Definition at line 35 of file wincolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a8635f904f1dad9e60aaefe307e076f1d}\label{classspdlog_1_1sinks_1_1wincolor__sink_a8635f904f1dad9e60aaefe307e076f1d}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!R\+ED@{R\+ED}}
+\index{R\+ED@{R\+ED}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{R\+ED}{RED}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::R\+ED = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+R\+ED}
+
+
+
+Definition at line 34 of file wincolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_a32682f38336031a282e1681622f1cff4}\label{classspdlog_1_1sinks_1_1wincolor__sink_a32682f38336031a282e1681622f1cff4}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!W\+H\+I\+TE@{W\+H\+I\+TE}}
+\index{W\+H\+I\+TE@{W\+H\+I\+TE}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{W\+H\+I\+TE}{WHITE}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::W\+H\+I\+TE = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+R\+ED $\vert$ F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+G\+R\+E\+EN $\vert$ F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+B\+L\+UE}
+
+
+
+Definition at line 37 of file wincolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1wincolor__sink_aa148f87d2c8b234c306009268ac7b812}\label{classspdlog_1_1sinks_1_1wincolor__sink_aa148f87d2c8b234c306009268ac7b812}} 
+\index{spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}!Y\+E\+L\+L\+OW@{Y\+E\+L\+L\+OW}}
+\index{Y\+E\+L\+L\+OW@{Y\+E\+L\+L\+OW}!spdlog\+::sinks\+::wincolor\+\_\+sink@{spdlog\+::sinks\+::wincolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{Y\+E\+L\+L\+OW}{YELLOW}}
+{\footnotesize\ttfamily template$<$typename Out\+Handle , typename Console\+Mutex $>$ \\
+const W\+O\+RD \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink}{spdlog\+::sinks\+::wincolor\+\_\+sink}$<$ Out\+Handle, Console\+Mutex $>$\+::Y\+E\+L\+L\+OW = F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+R\+ED $\vert$ F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+G\+R\+E\+EN}
+
+
+
+Definition at line 38 of file wincolor\+\_\+sink.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/sinks/\hyperlink{wincolor__sink_8h}{wincolor\+\_\+sink.\+h}\end{DoxyCompactItemize}

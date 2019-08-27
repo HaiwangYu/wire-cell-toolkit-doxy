@@ -1,0 +1,174 @@
+\hypertarget{class_wire_cell_1_1_iterator_base}{}\section{Wire\+Cell\+:\+:Iterator\+Base$<$ Value\+Type $>$ Class Template Reference}
+\label{class_wire_cell_1_1_iterator_base}\index{Wire\+Cell\+::\+Iterator\+Base$<$ Value\+Type $>$@{Wire\+Cell\+::\+Iterator\+Base$<$ Value\+Type $>$}}
+
+
+{\ttfamily \#include $<$Iterator\+Base.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Value\+Type \hyperlink{class_wire_cell_1_1_iterator_base_af263e640de56fa27ae9eed3cddd7a9e0}{value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_iterator_base_ae1705c915b813d46644cfeb09c94b505}{$\sim$\+Iterator\+Base} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_iterator_base_aa2dc364b16da871fd63983ec04b58ca0}{operator==} (const \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base} \&rhs) const =0
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_iterator_base_a25557feb11a250eb324a33b7114f2f40}{operator!=} (const \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base} \&rhs) const =0
+\item 
+virtual \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base} \& \hyperlink{class_wire_cell_1_1_iterator_base_ad62dd2f5a05b89ce63ad9b9e62167856}{operator=} (const \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base} \&rhs)=0
+\item 
+virtual \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base} \& \hyperlink{class_wire_cell_1_1_iterator_base_a8f75296f57c6f4261dc3c4f7c085a5b8}{operator++} ()=0
+\item 
+virtual \hyperlink{class_wire_cell_1_1_iterator_base_af263e640de56fa27ae9eed3cddd7a9e0}{value\+\_\+type} \hyperlink{class_wire_cell_1_1_iterator_base_a24cb604201a8b614f8ee4aa8062ae63c}{operator$\ast$} () const =0
+\item 
+virtual \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base} $\ast$ \hyperlink{class_wire_cell_1_1_iterator_base_a6bb7f1f53c37dc1518291f09f493f2be}{clone} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Value\+Type$>$\newline
+class Wire\+Cell\+::\+Iterator\+Base$<$ Value\+Type $>$}
+
+An abstract base class for an iterator providing access to an object of type V\+Type.
+
+See \hyperlink{class_wire_cell_1_1_iterator}{Wire\+Cell\+::\+Iterator} for what to expose to the client in your class/interface A\+PI. 
+
+Definition at line 16 of file Iterator\+Base.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_base_af263e640de56fa27ae9eed3cddd7a9e0}\label{class_wire_cell_1_1_iterator_base_af263e640de56fa27ae9eed3cddd7a9e0}} 
+\index{Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+typedef Value\+Type \hyperlink{class_wire_cell_1_1_iterator_base}{Wire\+Cell\+::\+Iterator\+Base}$<$ Value\+Type $>$\+::\hyperlink{class_wire_cell_1_1_iterator_base_af263e640de56fa27ae9eed3cddd7a9e0}{value\+\_\+type}}
+
+
+
+Definition at line 19 of file Iterator\+Base.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_base_ae1705c915b813d46644cfeb09c94b505}\label{class_wire_cell_1_1_iterator_base_ae1705c915b813d46644cfeb09c94b505}} 
+\index{Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}!````~Iterator\+Base@{$\sim$\+Iterator\+Base}}
+\index{````~Iterator\+Base@{$\sim$\+Iterator\+Base}!Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Iterator\+Base()}{~IteratorBase()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+virtual \hyperlink{class_wire_cell_1_1_iterator_base}{Wire\+Cell\+::\+Iterator\+Base}$<$ Value\+Type $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 21 of file Iterator\+Base.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_iterator_base_ae1705c915b813d46644cfeb09c94b505_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_base_a6bb7f1f53c37dc1518291f09f493f2be}\label{class_wire_cell_1_1_iterator_base_a6bb7f1f53c37dc1518291f09f493f2be}} 
+\index{Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}!clone@{clone}}
+\index{clone@{clone}!Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+virtual \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base}$\ast$ \hyperlink{class_wire_cell_1_1_iterator_base}{Wire\+Cell\+::\+Iterator\+Base}$<$ Value\+Type $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_iterator_base_a6bb7f1f53c37dc1518291f09f493f2be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_base_a25557feb11a250eb324a33b7114f2f40}\label{class_wire_cell_1_1_iterator_base_a25557feb11a250eb324a33b7114f2f40}} 
+\index{Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_iterator_base}{Wire\+Cell\+::\+Iterator\+Base}$<$ Value\+Type $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base}$<$ Value\+Type $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_iterator_base_a25557feb11a250eb324a33b7114f2f40_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_base_a24cb604201a8b614f8ee4aa8062ae63c}\label{class_wire_cell_1_1_iterator_base_a24cb604201a8b614f8ee4aa8062ae63c}} 
+\index{Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+virtual \hyperlink{class_wire_cell_1_1_iterator_base_af263e640de56fa27ae9eed3cddd7a9e0}{value\+\_\+type} \hyperlink{class_wire_cell_1_1_iterator_base}{Wire\+Cell\+::\+Iterator\+Base}$<$ Value\+Type $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_iterator_base_a24cb604201a8b614f8ee4aa8062ae63c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_base_a8f75296f57c6f4261dc3c4f7c085a5b8}\label{class_wire_cell_1_1_iterator_base_a8f75296f57c6f4261dc3c4f7c085a5b8}} 
+\index{Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}!operator++@{operator++}}
+\index{operator++@{operator++}!Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+virtual \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base}\& \hyperlink{class_wire_cell_1_1_iterator_base}{Wire\+Cell\+::\+Iterator\+Base}$<$ Value\+Type $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_iterator_base_a8f75296f57c6f4261dc3c4f7c085a5b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_base_ad62dd2f5a05b89ce63ad9b9e62167856}\label{class_wire_cell_1_1_iterator_base_ad62dd2f5a05b89ce63ad9b9e62167856}} 
+\index{Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+virtual \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base}\& \hyperlink{class_wire_cell_1_1_iterator_base}{Wire\+Cell\+::\+Iterator\+Base}$<$ Value\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base}$<$ Value\+Type $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_iterator_base_ad62dd2f5a05b89ce63ad9b9e62167856_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_base_aa2dc364b16da871fd63983ec04b58ca0}\label{class_wire_cell_1_1_iterator_base_aa2dc364b16da871fd63983ec04b58ca0}} 
+\index{Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}!operator==@{operator==}}
+\index{operator==@{operator==}!Wire\+Cell\+::\+Iterator\+Base@{Wire\+Cell\+::\+Iterator\+Base}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_iterator_base}{Wire\+Cell\+::\+Iterator\+Base}$<$ Value\+Type $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_iterator_base}{Iterator\+Base}$<$ Value\+Type $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_iterator_base_aa2dc364b16da871fd63983ec04b58ca0_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_iterator_base_8h}{Iterator\+Base.\+h}\end{DoxyCompactItemize}

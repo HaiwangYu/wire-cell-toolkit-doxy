@@ -1,0 +1,48 @@
+\hypertarget{null__sink_8h}{}\section{util/inc/spdlog/sinks/null\+\_\+sink.h File Reference}
+\label{null__sink_8h}\index{util/inc/spdlog/sinks/null\+\_\+sink.\+h@{util/inc/spdlog/sinks/null\+\_\+sink.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/spdlog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/null\+\_\+mutex.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/sinks/base\+\_\+sink.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+Include dependency graph for null\+\_\+sink.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{null__sink_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{null__sink_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classspdlog_1_1sinks_1_1null__sink}{spdlog\+::sinks\+::null\+\_\+sink$<$ Mutex $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1sinks}{spdlog\+::sinks}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_a0712014c0dae16e0b332d3caba31435a}{spdlog\+::sinks\+::null\+\_\+sink\+\_\+mt} = null\+\_\+sink$<$ std\+::mutex $>$
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_a44a99e8a56b2f902ffd50da4f8628100}{spdlog\+::sinks\+::null\+\_\+sink\+\_\+st} = null\+\_\+sink$<$ details\+::null\+\_\+mutex $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_a6d6344c349d1c6d957d5f21f4387c8f8}{spdlog\+::null\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_af6a7d6f86b50ab1c5c346949ca5af564}{spdlog\+::null\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name)
+\end{DoxyCompactItemize}

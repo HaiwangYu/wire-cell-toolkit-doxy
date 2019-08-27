@@ -1,0 +1,162 @@
+\hypertarget{class_wire_cell_1_1_img_1_1_sum_slice_base}{}\section{Wire\+Cell\+:\+:Img\+:\+:Sum\+Slice\+Base Class Reference}
+\label{class_wire_cell_1_1_img_1_1_sum_slice_base}\index{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}}
+
+
+{\ttfamily \#include $<$Sum\+Slice.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Img\+:\+:Sum\+Slice\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_img_1_1_sum_slice_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Img\+:\+:Sum\+Slice\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_wire_cell_1_1_img_1_1_sum_slice_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_img_1_1_sum_slice_base_ab45edb5d82e7950893e68e2f2272b289}{Sum\+Slice\+Base} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_img_1_1_sum_slice_base_aa29c4757b69e8fe2da9b519995bb916f}{$\sim$\+Sum\+Slice\+Base} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_img_1_1_sum_slice_base_adcf3268fc426d4158c87d091370f93df}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&cfg)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_img_1_1_sum_slice_base_a2df3fdb91e31ad9d5051537bdc3ee124}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ size\+\_\+t, \hyperlink{class_wire_cell_1_1_img_1_1_data_1_1_slice}{Data\+::\+Slice} $\ast$ $>$ \hyperlink{class_wire_cell_1_1_img_1_1_sum_slice_base_a282d10c443ad41866ab0595af2c56e54}{slice\+\_\+map\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_wire_cell_1_1_img_1_1_sum_slice_base_a173581daeeac8e467120be1a0a9eea82}{slice} (const \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer} \&in, \hyperlink{class_wire_cell_1_1_img_1_1_sum_slice_base_a282d10c443ad41866ab0595af2c56e54}{slice\+\_\+map\+\_\+t} \&sm)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 44 of file Sum\+Slice.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_img_1_1_sum_slice_base_a282d10c443ad41866ab0595af2c56e54}\label{class_wire_cell_1_1_img_1_1_sum_slice_base_a282d10c443ad41866ab0595af2c56e54}} 
+\index{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}!slice\+\_\+map\+\_\+t@{slice\+\_\+map\+\_\+t}}
+\index{slice\+\_\+map\+\_\+t@{slice\+\_\+map\+\_\+t}!Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}}
+\subsubsection{\texorpdfstring{slice\+\_\+map\+\_\+t}{slice\_map\_t}}
+{\footnotesize\ttfamily typedef std\+::map$<$size\+\_\+t, \hyperlink{class_wire_cell_1_1_img_1_1_data_1_1_slice}{Data\+::\+Slice}$\ast$$>$ \hyperlink{class_wire_cell_1_1_img_1_1_sum_slice_base_a282d10c443ad41866ab0595af2c56e54}{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base\+::slice\+\_\+map\+\_\+t}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 55 of file Sum\+Slice.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_img_1_1_sum_slice_base_ab45edb5d82e7950893e68e2f2272b289}\label{class_wire_cell_1_1_img_1_1_sum_slice_base_ab45edb5d82e7950893e68e2f2272b289}} 
+\index{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}!Sum\+Slice\+Base@{Sum\+Slice\+Base}}
+\index{Sum\+Slice\+Base@{Sum\+Slice\+Base}!Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}}
+\subsubsection{\texorpdfstring{Sum\+Slice\+Base()}{SumSliceBase()}}
+{\footnotesize\ttfamily Img\+::\+Sum\+Slice\+Base\+::\+Sum\+Slice\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 18 of file Sum\+Slice.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_img_1_1_sum_slice_base_aa29c4757b69e8fe2da9b519995bb916f}\label{class_wire_cell_1_1_img_1_1_sum_slice_base_aa29c4757b69e8fe2da9b519995bb916f}} 
+\index{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}!````~Sum\+Slice\+Base@{$\sim$\+Sum\+Slice\+Base}}
+\index{````~Sum\+Slice\+Base@{$\sim$\+Sum\+Slice\+Base}!Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Sum\+Slice\+Base()}{~SumSliceBase()}}
+{\footnotesize\ttfamily Img\+::\+Sum\+Slice\+Base\+::$\sim$\+Sum\+Slice\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 19 of file Sum\+Slice.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_img_1_1_sum_slice_base_adcf3268fc426d4158c87d091370f93df}\label{class_wire_cell_1_1_img_1_1_sum_slice_base_adcf3268fc426d4158c87d091370f93df}} 
+\index{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Img\+::\+Sum\+Slice\+Base\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 40 of file Sum\+Slice.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_img_1_1_sum_slice_base_a2df3fdb91e31ad9d5051537bdc3ee124}\label{class_wire_cell_1_1_img_1_1_sum_slice_base_a2df3fdb91e31ad9d5051537bdc3ee124}} 
+\index{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Img\+::\+Sum\+Slice\+Base\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 23 of file Sum\+Slice.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_img_1_1_sum_slice_base_a173581daeeac8e467120be1a0a9eea82}\label{class_wire_cell_1_1_img_1_1_sum_slice_base_a173581daeeac8e467120be1a0a9eea82}} 
+\index{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}!slice@{slice}}
+\index{slice@{slice}!Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base@{Wire\+Cell\+::\+Img\+::\+Sum\+Slice\+Base}}
+\subsubsection{\texorpdfstring{slice()}{slice()}}
+{\footnotesize\ttfamily void Img\+::\+Sum\+Slice\+Base\+::slice (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer} \&}]{in,  }\item[{\hyperlink{class_wire_cell_1_1_img_1_1_sum_slice_base_a282d10c443ad41866ab0595af2c56e54}{slice\+\_\+map\+\_\+t} \&}]{sm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 48 of file Sum\+Slice.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_img_1_1_sum_slice_base_a173581daeeac8e467120be1a0a9eea82_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_img_1_1_sum_slice_base_a173581daeeac8e467120be1a0a9eea82_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+img/inc/\+Wire\+Cell\+Img/\hyperlink{_sum_slice_8h}{Sum\+Slice.\+h}\item 
+img/src/\hyperlink{_sum_slice_8cxx}{Sum\+Slice.\+cxx}\end{DoxyCompactItemize}

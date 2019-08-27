@@ -1,0 +1,8 @@
+<map id="WireCell::WireGenerator" name="WireCell::WireGenerator">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_wire_generator.html" title="WireCell::IWireGenerator" alt="" coords="19,423,187,449"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IWireParameters, IWire\l::vector \&gt;" alt="" coords="17,319,188,375"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_function_node_base.html" title="WireCell::IFunctionNodeBase" alt="" coords="5,244,200,271"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="45,169,160,196"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="27,80,178,121"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="37,5,168,32"/>
+</map>

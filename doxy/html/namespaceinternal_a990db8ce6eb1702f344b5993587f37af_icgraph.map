@@ -1,0 +1,10 @@
+<map id="internal::localtime_s" name="internal::localtime_s">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1os.html#aef63b92ee93ec66603c0357d0ac75bed" title="spdlog::details::os\l::localtime" alt="" coords="192,136,320,177"/>
+<area shape="rect" id="node9" href="$time_8h.html#a2b11a736f2ef77ba69490af3f5081abf" title="localtime" alt="" coords="219,202,293,229"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1logger.html#a3432e21bdc19d74024b57cc3f26a8471" title="spdlog::logger::default\l_err_handler_" alt="" coords="376,5,527,47"/>
+<area shape="rect" id="node4" href="$namespacespdlog_1_1details_1_1os.html#a3c7704d0c74aed204f258ac1fc7d4576" title="spdlog::details::os\l::localtime" alt="" coords="387,71,515,112"/>
+<area shape="rect" id="node5" href="$namespacespdlog_1_1details_1_1os.html#a6dce662c3a4ea0b6e95468272ec37047" title="spdlog::details::os\l::utc_minutes_offset" alt="" coords="381,136,522,177"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1pattern__formatter.html#ae43e84d7421ee7810b22ce1dc817ca3f" title="spdlog::pattern_formatter\l::format" alt="" coords="368,201,535,243"/>
+<area shape="rect" id="node8" href="$classspdlog_1_1sinks_1_1daily__file__sink.html#a37199f25868ac70b91e4f126bcc4b3f8" title="spdlog::sinks::daily\l_file_sink::flush_" alt="" coords="384,267,519,308"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1details_1_1z__formatter.html#ada7a5e9a3c30039cbfb684b7743b8945" title="spdlog::details::z\l_formatter::format" alt="" coords="583,136,709,177"/>
+</map>

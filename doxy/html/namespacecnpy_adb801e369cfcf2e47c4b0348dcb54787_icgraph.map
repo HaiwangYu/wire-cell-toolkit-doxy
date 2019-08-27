@@ -1,0 +1,8 @@
+<map id="cnpy::parse_npy_header" name="cnpy::parse_npy_header">
+<area shape="rect" id="node2" href="$namespacecnpy.html#abd95249bf67216d36416294df339fb47" title="cnpy::npy_save" alt="" coords="227,5,342,32"/>
+<area shape="rect" id="node4" href="$cnpy_8cxx.html#a677640ee1bd85eaa2dd020dc15b1992f" title="load_the_npy_file" alt="" coords="223,107,346,133"/>
+<area shape="rect" id="node7" href="$cnpy_8cxx.html#aa2884b9a3917403b3007f6d03cf6df19" title="load_the_npz_array" alt="" coords="217,56,352,83"/>
+<area shape="rect" id="node3" href="$namespacecnpy.html#a9311beeca7e441c777c78fc80be40649" title="cnpy::npy_save" alt="" coords="400,5,515,32"/>
+<area shape="rect" id="node5" href="$namespacecnpy.html#ab6ef932e48b81bddc5457ff4ceb44a3a" title="cnpy::npz_load" alt="" coords="402,56,513,83"/>
+<area shape="rect" id="node6" href="$namespacecnpy.html#abffb25587a54473fbe1d3c86fa4df4fb" title="cnpy::npy_load" alt="" coords="402,107,513,133"/>
+</map>

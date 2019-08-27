@@ -1,0 +1,142 @@
+\hypertarget{class_wire_cell_1_1_i_function_node_base}{}\section{Wire\+Cell\+:\+:I\+Function\+Node\+Base Class Reference}
+\label{class_wire_cell_1_1_i_function_node_base}\index{Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}}
+
+
+{\ttfamily \#include $<$I\+Function\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Function\+Node\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_function_node_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Function\+Node\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_wire_cell_1_1_i_function_node_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_function_node_base}{I\+Function\+Node\+Base} $>$ \hyperlink{class_wire_cell_1_1_i_function_node_base_a8c48cb6d791f15206f0d00fed70e05f3}{pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_function_node_base_aca515a5de2dabccf0e02f967fd2fb0ca}{$\sim$\+I\+Function\+Node\+Base} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_function_node_base_a8928d96f5d2030a52a490cf1d71c096f}{operator()} (const boost\+::any \&anyin, boost\+::any \&anyout)=0
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} \hyperlink{class_wire_cell_1_1_i_function_node_base_aea2adac35fc9aa54a82525ccb32471f7}{category} ()
+\begin{DoxyCompactList}\small\item\em Return the behavior category type. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_function_node_base_a19383abea731c6cbafc88fb9ffe11ee9}{concurrency} ()
+\begin{DoxyCompactList}\small\item\em By default assume all subclasses are stateless. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A node which acts as a simple function. 
+
+Definition at line 13 of file I\+Function\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_function_node_base_a8c48cb6d791f15206f0d00fed70e05f3}\label{class_wire_cell_1_1_i_function_node_base_a8c48cb6d791f15206f0d00fed70e05f3}} 
+\index{Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_function_node_base}{I\+Function\+Node\+Base}$>$ \hyperlink{class_wire_cell_1_1_i_function_node_base_a8c48cb6d791f15206f0d00fed70e05f3}{Wire\+Cell\+::\+I\+Function\+Node\+Base\+::pointer}}
+
+
+
+Definition at line 16 of file I\+Function\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_function_node_base_aca515a5de2dabccf0e02f967fd2fb0ca}\label{class_wire_cell_1_1_i_function_node_base_aca515a5de2dabccf0e02f967fd2fb0ca}} 
+\index{Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}!````~I\+Function\+Node\+Base@{$\sim$\+I\+Function\+Node\+Base}}
+\index{````~I\+Function\+Node\+Base@{$\sim$\+I\+Function\+Node\+Base}!Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Function\+Node\+Base()}{~IFunctionNodeBase()}}
+{\footnotesize\ttfamily I\+Function\+Node\+Base\+::$\sim$\+I\+Function\+Node\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 143 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_function_node_base_aea2adac35fc9aa54a82525ccb32471f7}\label{class_wire_cell_1_1_i_function_node_base_aea2adac35fc9aa54a82525ccb32471f7}} 
+\index{Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}!category@{category}}
+\index{category@{category}!Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}}
+\subsubsection{\texorpdfstring{category()}{category()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} Wire\+Cell\+::\+I\+Function\+Node\+Base\+::category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the behavior category type. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_node_a58c07f15b165e5fb33bbc7b2e047b39b}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 23 of file I\+Function\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_function_node_base_a19383abea731c6cbafc88fb9ffe11ee9}\label{class_wire_cell_1_1_i_function_node_base_a19383abea731c6cbafc88fb9ffe11ee9}} 
+\index{Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}!concurrency@{concurrency}}
+\index{concurrency@{concurrency}!Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}}
+\subsubsection{\texorpdfstring{concurrency()}{concurrency()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Function\+Node\+Base\+::concurrency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+By default assume all subclasses are stateless. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_a87d2b7293da4f6955e389ac6a2011306}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 28 of file I\+Function\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_function_node_base_a8928d96f5d2030a52a490cf1d71c096f}\label{class_wire_cell_1_1_i_function_node_base_a8928d96f5d2030a52a490cf1d71c096f}} 
+\index{Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Function\+Node\+Base@{Wire\+Cell\+::\+I\+Function\+Node\+Base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual bool Wire\+Cell\+::\+I\+Function\+Node\+Base\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::any \&}]{anyin,  }\item[{boost\+::any \&}]{anyout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The calling signature\+: 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ Input\+Type, Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Wire\+Parameters, I\+Wire\+::vector $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Depo\+Set, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Slice, I\+Stripe\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Wire\+::vector, I\+Wire\+Summary $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Cluster, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Frame, I\+Slice\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Frame, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Slice, I\+Blob\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Depo, I\+Depo $>$}, and \hyperlink{class_wire_cell_1_1_i_function_node_a93547dd6b1a2a44dfc9d5fb458d2ef04}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Cluster, I\+Cluster $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_function_node_base_a8928d96f5d2030a52a490cf1d71c096f_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_function_node_8h}{I\+Function\+Node.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

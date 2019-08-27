@@ -1,0 +1,29 @@
+<map id="sio/src/NumpyDepoSaver.cxx" name="sio/src/NumpyDepoSaver.cxx">
+<area shape="rect" id="node2" href="$_numpy_depo_saver_8h.html" title="WireCellSio/NumpyDepoSaver.h" alt="" coords="825,80,1039,107"/>
+<area shape="rect" id="node16" href="$_frame_tools_8h.html" title="WireCellIface/FrameTools.h" alt="" coords="1381,155,1566,181"/>
+<area shape="rect" id="node28" href="$_named_factory_8h.html" title="WireCellUtil/NamedFactory.h" alt="" coords="1885,155,2078,181"/>
+<area shape="rect" id="node45" href="$cnpy_8h.html" title="WireCellUtil/cnpy.h" alt="" coords="2727,379,2862,405"/>
+<area shape="rect" id="node3" href="$_i_depo_filter_8h.html" title="WireCellIface/IDepoFilter.h" alt="" coords="842,155,1022,181"/>
+<area shape="rect" id="node13" href="$_i_configurable_8h.html" title="WireCellIface/IConfigurable.h" alt="" coords="371,304,565,331"/>
+<area shape="rect" id="node4" href="$_i_function_node_8h.html" title="WireCellIface/IFunctionNode.h" alt="" coords="82,229,283,256"/>
+<area shape="rect" id="node10" href="$_i_depo_8h.html" title="WireCellIface/IDepo.h" alt="" coords="1285,229,1435,256"/>
+<area shape="rect" id="node5" href="$_i_node_8h.html" title="WireCellIface/INode.h" alt="" coords="145,304,295,331"/>
+<area shape="rect" id="node6" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="379,379,557,405"/>
+<area shape="rect" id="node11" href="$_i_data_8h.html" title="WireCellIface/IData.h" alt="" coords="1137,379,1285,405"/>
+<area shape="rect" id="node14" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="877,379,1061,405"/>
+<area shape="rect" id="node17" href="$_i_frame_8h.html" title="WireCellIface/IFrame.h" alt="" coords="1037,229,1195,256"/>
+<area shape="rect" id="node26" href="$_array_8h.html" title="WireCellUtil/Array.h" alt="" coords="1335,304,1473,331"/>
+<area shape="rect" id="node18" href="$_i_trace_8h.html" title="WireCellIface/ITrace.h" alt="" coords="845,304,998,331"/>
+<area shape="rect" id="node19" href="$_i_wire_plane_8h.html" title="WireCellIface/IWirePlane.h" alt="" coords="589,304,769,331"/>
+<area shape="rect" id="node20" href="$_wire_plane_id_8h.html" title="WireCellIface/WirePlaneId.h" alt="" coords="1023,304,1209,331"/>
+<area shape="rect" id="node21" href="$_waveform_8h.html" title="WireCellUtil/Waveform.h" alt="" coords="1711,379,1878,405"/>
+<area shape="rect" id="node29" href="$_i_factory_8h.html" title="WireCellUtil/IFactory.h" alt="" coords="311,229,465,256"/>
+<area shape="rect" id="node30" href="$_singleton_8h.html" title="WireCellUtil/Singleton.h" alt="" coords="2215,229,2377,256"/>
+<area shape="rect" id="node31" href="$_plugin_manager_8h.html" title="WireCellUtil/PluginManager.h" alt="" coords="2401,229,2594,256"/>
+<area shape="rect" id="node32" href="$_logging_8h.html" title="WireCellUtil/Logging.h" alt="" coords="2021,304,2173,331"/>
+<area shape="rect" id="node35" href="$_type_8h.html" title="WireCellUtil/Type.h" alt="" coords="2567,379,2703,405"/>
+<area shape="rect" id="node37" href="$_string_8h.html" title="WireCellUtil/String.h" alt="" coords="2351,379,2492,405"/>
+<area shape="rect" id="node40" href="$_exceptions_8h.html" title="WireCellUtil/Exceptions.h" alt="" coords="2019,229,2191,256"/>
+<area shape="rect" id="node33" href="$spdlog_8h.html" title="spdlog/spdlog.h" alt="" coords="1574,379,1687,405"/>
+<area shape="rect" id="node34" href="$ostr_8h.html" title="spdlog/fmt/ostr.h" alt="" coords="2055,379,2175,405"/>
+</map>

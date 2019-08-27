@@ -1,0 +1,7 @@
+<map id="WireCell::Gen::PlaneImpactResponse" name="WireCell::Gen::PlaneImpactResponse">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_plane_impact_response.html" title="WireCell::IPlaneImpactResponse" alt="" coords="415,17,631,43"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IPlaneImpactResponse \&gt;" alt="" coords="184,5,367,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,46,136,73"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="200,71,351,112"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="444,71,601,98"/>
+</map>

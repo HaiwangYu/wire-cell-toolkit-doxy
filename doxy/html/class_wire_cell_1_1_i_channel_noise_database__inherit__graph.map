@@ -1,0 +1,6 @@
+<map id="WireCell::IChannelNoiseDatabase" name="WireCell::IChannelNoiseDatabase">
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html" title="WireCell::SigProc::\lOmniChannelNoiseDB" alt="" coords="5,244,160,285"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b.html" title="WireCell::SigProc::\lSimpleChannelNoiseDB" alt="" coords="184,244,347,285"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelNoiseDatabase \&gt;" alt="" coords="79,80,267,121"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="108,5,239,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="WireCell::tagrules::Context::transform" name="WireCell::tagrules::Context::transform">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_frame_fanin.html#a07a4dc2a3d5126a5540613534c73b914" title="WireCell::Gen::FrameFanin\l::operator()" alt="" coords="196,5,377,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_frame_fanout.html#ab76cea3280afa9eb3ad4b64f2e12d666" title="WireCell::Gen::FrameFanout\l::operator()" alt="" coords="192,71,381,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_retagger.html#a4bbeda9e4329bfa262e8248f5a876267" title="WireCell::Gen::Retagger\l::operator()" alt="" coords="204,136,369,177"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_channel_splitter.html#a715114dbeb142744c3a140a902907ff0" title="WireCell::SigProc::\lChannelSplitter::operator()" alt="" coords="199,201,374,243"/>
+</map>

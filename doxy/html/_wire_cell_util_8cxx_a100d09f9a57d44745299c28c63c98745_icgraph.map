@@ -1,0 +1,9 @@
+<map id="dummy" name="dummy">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_wire_summary.html#a0b38146487504f384c0a619db67f6e4a" title="Return a unit vector along the direction of the pitch. " alt="" coords="134,5,297,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a0155aba843a5a04966ffcfe556b207f8" title="Return the filter for the RC+RC coupling response function. " alt="" coords="123,152,307,193"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#acc904d0a6472acede55bd40ef8b6cd01" title="Return the filter to correct any wrongly configured channels. " alt="" coords="134,218,297,274"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a125b09b4d7d5cb973ae418936343bf4a" title="Return the filter to attenuate noise. " alt="" coords="119,299,312,340"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#ae269e377629b9a96c8e0cdb0f30353a4" title="A nominal detector response spectrum for a given channel. " alt="" coords="134,71,297,127"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a42c1e7613ec776da66d7f30238128ce7" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lset_bad_channels" alt="" coords="360,142,523,198"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a64273a955c13ca79dc40939d2684b1ff" title="WireCell::SigProc::\lOmniChannelNoiseDB::\l~OmniChannelNoiseDB" alt="" coords="360,222,523,278"/>
+</map>

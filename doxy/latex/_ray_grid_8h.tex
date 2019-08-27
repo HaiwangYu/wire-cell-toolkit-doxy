@@ -1,0 +1,65 @@
+\hypertarget{_ray_grid_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Ray\+Grid.h File Reference}
+\label{_ray_grid_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Ray\+Grid.\+h@{util/inc/\+Wire\+Cell\+Util/\+Ray\+Grid.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Object\+Array2d.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/multi\+\_\+array.\+hpp$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+Include dependency graph for Ray\+Grid.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_ray_grid_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_ray_grid_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_ray_grid_1_1coordinate__t}{Wire\+Cell\+::\+Ray\+Grid\+::coordinate\+\_\+t}
+\item 
+class \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates}{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_ray_grid}{Wire\+Cell\+::\+Ray\+Grid}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{Wire\+Cell\+::\+Ray\+Grid\+::layer\+\_\+index\+\_\+t}
+\item 
+typedef int \hyperlink{namespace_wire_cell_1_1_ray_grid_ae97b5b26d015cd99f7d4566f3a7310d0}{Wire\+Cell\+::\+Ray\+Grid\+::grid\+\_\+index\+\_\+t}
+\item 
+typedef std\+::pair$<$ layer\+\_\+index\+\_\+t, layer\+\_\+index\+\_\+t $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_afb22be32dcc5907267d4b0a75321187c}{Wire\+Cell\+::\+Ray\+Grid\+::layer\+\_\+pair\+\_\+t}
+\item 
+typedef std\+::tuple$<$ layer\+\_\+index\+\_\+t, layer\+\_\+index\+\_\+t, layer\+\_\+index\+\_\+t $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_a4a0ec28f63c71de061dcc8ca912f8437}{Wire\+Cell\+::\+Ray\+Grid\+::layer\+\_\+triple\+\_\+t}
+\item 
+typedef boost\+::multi\+\_\+array$<$ double, 3 $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_adaca791d3ebd5f5c455aa89966289111}{Wire\+Cell\+::\+Ray\+Grid\+::tensor\+\_\+t}
+\item 
+typedef std\+::vector$<$ Vector $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_a0406c6b8a3dc5f9127d665b6a2e6854a}{Wire\+Cell\+::\+Ray\+Grid\+::vector\+\_\+array1d\+\_\+t}
+\item 
+typedef Object\+Array2d$<$ Vector $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_a5fe54fc4af050aa1782db6b9761df515}{Wire\+Cell\+::\+Ray\+Grid\+::vector\+\_\+array2d\+\_\+t}
+\item 
+typedef std\+::pair$<$ grid\+\_\+index\+\_\+t, grid\+\_\+index\+\_\+t $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_a4f0a195ceaa41bf0c9d13f0c81309633}{Wire\+Cell\+::\+Ray\+Grid\+::grid\+\_\+range\+\_\+t}
+\item 
+typedef std\+::pair$<$ coordinate\+\_\+t, coordinate\+\_\+t $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_ad8870c962588c4492b1f7c5ad1552a7e}{Wire\+Cell\+::\+Ray\+Grid\+::crossing\+\_\+t}
+\item 
+typedef std\+::vector$<$ crossing\+\_\+t $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_a100185dcaa66f6b2b42c53c40c37fb49}{Wire\+Cell\+::\+Ray\+Grid\+::crossings\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{namespace_wire_cell_1_1_ray_grid_a345bd1e2da7956f3bc4740cded096200}{Wire\+Cell\+::\+Ray\+Grid\+::operator$<$$<$} (std\+::ostream \&os, const \hyperlink{struct_wire_cell_1_1_ray_grid_1_1coordinate__t}{Wire\+Cell\+::\+Ray\+Grid\+::coordinate\+\_\+t} \&ra)
+\end{DoxyCompactItemize}

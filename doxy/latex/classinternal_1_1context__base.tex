@@ -1,0 +1,261 @@
+\hypertarget{classinternal_1_1context__base}{}\section{internal\+:\+:context\+\_\+base$<$ Output\+It, Context, Char $>$ Class Template Reference}
+\label{classinternal_1_1context__base}\index{internal\+::context\+\_\+base$<$ Output\+It, Context, Char $>$@{internal\+::context\+\_\+base$<$ Output\+It, Context, Char $>$}}
+
+
+{\ttfamily \#include $<$core.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Output\+It \hyperlink{classinternal_1_1context__base_a6486e3c9656c10eb99a4731fb169e51b}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ \hyperlink{classinternal_1_1context__base_a012818dce2cbba8d267491288b9f3f63}{char\+\_\+type} $>$ \& \hyperlink{classinternal_1_1context__base_a8b2dea2761b5bd19dfe60435a68f80d6}{parse\+\_\+context} ()
+\item 
+\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$ \hyperlink{classinternal_1_1context__base_a2dffc62b4cf30e9a359c1c85827c8c43}{args} () const
+\item 
+\hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ \hyperlink{classinternal_1_1context__base_a87e06ec53f13930b9e1fb1e3e6762632}{arg} (unsigned id) const
+\item 
+\hyperlink{structinternal_1_1error__handler}{internal\+::error\+\_\+handler} \hyperlink{classinternal_1_1context__base_a75d451a0b31787d6e482e7b8c8886f45}{error\+\_\+handler} ()
+\item 
+void \hyperlink{classinternal_1_1context__base_a79b1e03aabedc2e157b34cc7adadf451}{on\+\_\+error} (const char $\ast$message)
+\item 
+\hyperlink{classinternal_1_1context__base_a6486e3c9656c10eb99a4731fb169e51b}{iterator} \hyperlink{classinternal_1_1context__base_ab77c1d5e2cf72ef323e1599be8567fee}{out} ()
+\item 
+\hyperlink{classinternal_1_1context__base_a6486e3c9656c10eb99a4731fb169e51b}{iterator} \hyperlink{classinternal_1_1context__base_a9de5734a58ca81e3fadf0a01c78acfa5}{begin} ()
+\item 
+void \hyperlink{classinternal_1_1context__base_a9b9ce1c9b8d586251ab40312840779c9}{advance\+\_\+to} (\hyperlink{classinternal_1_1context__base_a6486e3c9656c10eb99a4731fb169e51b}{iterator} it)
+\item 
+\hyperlink{classinternal_1_1locale__ref}{locale\+\_\+ref} \hyperlink{classinternal_1_1context__base_aa60dff208558ea95aadc2cc20af382ce}{locale} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Char \hyperlink{classinternal_1_1context__base_a012818dce2cbba8d267491288b9f3f63}{char\+\_\+type}
+\item 
+typedef \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ \hyperlink{classinternal_1_1context__base_aa0c806d3176db7f4c5e5a0fa08561102}{format\+\_\+arg}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinternal_1_1context__base_adf802ddfa4af4dcc110b82fa298f9e59}{context\+\_\+base} (Output\+It \hyperlink{classinternal_1_1context__base_ab77c1d5e2cf72ef323e1599be8567fee}{out}, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ \hyperlink{classinternal_1_1context__base_a012818dce2cbba8d267491288b9f3f63}{char\+\_\+type} $>$ \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$ ctx\+\_\+args, \hyperlink{classinternal_1_1locale__ref}{locale\+\_\+ref} loc=\hyperlink{classinternal_1_1locale__ref}{locale\+\_\+ref}())
+\item 
+\hyperlink{classinternal_1_1context__base_aa0c806d3176db7f4c5e5a0fa08561102}{format\+\_\+arg} \hyperlink{classinternal_1_1context__base_aba7fbe1704fbe9409fce1aa51e75e0f1}{do\+\_\+get\+\_\+arg} (unsigned arg\+\_\+id)
+\item 
+\hyperlink{classinternal_1_1context__base_aa0c806d3176db7f4c5e5a0fa08561102}{format\+\_\+arg} \hyperlink{classinternal_1_1context__base_acf1edcc7f389838d65ea8261d4c267e6}{get\+\_\+arg} (unsigned arg\+\_\+id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Output\+It, typename Context, typename Char$>$\newline
+class internal\+::context\+\_\+base$<$ Output\+It, Context, Char $>$}
+
+
+
+Definition at line 988 of file core.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classinternal_1_1context__base_a012818dce2cbba8d267491288b9f3f63}\label{classinternal_1_1context__base_a012818dce2cbba8d267491288b9f3f63}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!char\+\_\+type@{char\+\_\+type}}
+\index{char\+\_\+type@{char\+\_\+type}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{char\+\_\+type}{char\_type}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+typedef Char \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::\hyperlink{classinternal_1_1context__base_a012818dce2cbba8d267491288b9f3f63}{char\+\_\+type}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 999 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1context__base_aa0c806d3176db7f4c5e5a0fa08561102}\label{classinternal_1_1context__base_aa0c806d3176db7f4c5e5a0fa08561102}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!format\+\_\+arg@{format\+\_\+arg}}
+\index{format\+\_\+arg@{format\+\_\+arg}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{format\+\_\+arg}{format\_arg}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+typedef \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$Context$>$ \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::\hyperlink{classinternal_1_1context__base_aa0c806d3176db7f4c5e5a0fa08561102}{format\+\_\+arg}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1000 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1context__base_a6486e3c9656c10eb99a4731fb169e51b}\label{classinternal_1_1context__base_a6486e3c9656c10eb99a4731fb169e51b}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!iterator@{iterator}}
+\index{iterator@{iterator}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+typedef Output\+It \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::\hyperlink{classinternal_1_1context__base_a6486e3c9656c10eb99a4731fb169e51b}{iterator}}
+
+
+
+Definition at line 990 of file core.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinternal_1_1context__base_adf802ddfa4af4dcc110b82fa298f9e59}\label{classinternal_1_1context__base_adf802ddfa4af4dcc110b82fa298f9e59}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!context\+\_\+base@{context\+\_\+base}}
+\index{context\+\_\+base@{context\+\_\+base}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{context\+\_\+base()}{context\_base()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+\hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::\hyperlink{classinternal_1_1context__base}{context\+\_\+base} (\begin{DoxyParamCaption}\item[{Output\+It}]{out,  }\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ \hyperlink{classinternal_1_1context__base_a012818dce2cbba8d267491288b9f3f63}{char\+\_\+type} $>$}]{format\+\_\+str,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$}]{ctx\+\_\+args,  }\item[{\hyperlink{classinternal_1_1locale__ref}{locale\+\_\+ref}}]{loc = {\ttfamily \hyperlink{classinternal_1_1locale__ref}{locale\+\_\+ref}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 1002 of file core.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinternal_1_1context__base_a9b9ce1c9b8d586251ab40312840779c9}\label{classinternal_1_1context__base_a9b9ce1c9b8d586251ab40312840779c9}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!advance\+\_\+to@{advance\+\_\+to}}
+\index{advance\+\_\+to@{advance\+\_\+to}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{advance\+\_\+to()}{advance\_to()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+void \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::advance\+\_\+to (\begin{DoxyParamCaption}\item[{\hyperlink{classinternal_1_1context__base_a6486e3c9656c10eb99a4731fb169e51b}{iterator}}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1038 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classinternal_1_1context__base_a9b9ce1c9b8d586251ab40312840779c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1context__base_a87e06ec53f13930b9e1fb1e3e6762632}\label{classinternal_1_1context__base_a87e06ec53f13930b9e1fb1e3e6762632}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!arg@{arg}}
+\index{arg@{arg}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{arg()}{arg()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+\hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$Context$>$ \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::arg (\begin{DoxyParamCaption}\item[{unsigned}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1025 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1context__base_a2dffc62b4cf30e9a359c1c85827c8c43}\label{classinternal_1_1context__base_a2dffc62b4cf30e9a359c1c85827c8c43}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!args@{args}}
+\index{args@{args}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{args()}{args()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$Context$>$ \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1024 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1context__base_a9de5734a58ca81e3fadf0a01c78acfa5}\label{classinternal_1_1context__base_a9de5734a58ca81e3fadf0a01c78acfa5}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!begin@{begin}}
+\index{begin@{begin}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+\hyperlink{classinternal_1_1context__base_a6486e3c9656c10eb99a4731fb169e51b}{iterator} \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1035 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1context__base_aba7fbe1704fbe9409fce1aa51e75e0f1}\label{classinternal_1_1context__base_aba7fbe1704fbe9409fce1aa51e75e0f1}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!do\+\_\+get\+\_\+arg@{do\+\_\+get\+\_\+arg}}
+\index{do\+\_\+get\+\_\+arg@{do\+\_\+get\+\_\+arg}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{do\+\_\+get\+\_\+arg()}{do\_get\_arg()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+\hyperlink{classinternal_1_1context__base_aa0c806d3176db7f4c5e5a0fa08561102}{format\+\_\+arg} \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::do\+\_\+get\+\_\+arg (\begin{DoxyParamCaption}\item[{unsigned}]{arg\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 1008 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1context__base_a75d451a0b31787d6e482e7b8c8886f45}\label{classinternal_1_1context__base_a75d451a0b31787d6e482e7b8c8886f45}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!error\+\_\+handler@{error\+\_\+handler}}
+\index{error\+\_\+handler@{error\+\_\+handler}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{error\+\_\+handler()}{error\_handler()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+\hyperlink{structinternal_1_1error__handler}{internal\+::error\+\_\+handler} \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::\hyperlink{structinternal_1_1error__handler}{error\+\_\+handler} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1027 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1context__base_acf1edcc7f389838d65ea8261d4c267e6}\label{classinternal_1_1context__base_acf1edcc7f389838d65ea8261d4c267e6}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!get\+\_\+arg@{get\+\_\+arg}}
+\index{get\+\_\+arg@{get\+\_\+arg}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{get\+\_\+arg()}{get\_arg()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+\hyperlink{classinternal_1_1context__base_aa0c806d3176db7f4c5e5a0fa08561102}{format\+\_\+arg} \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::get\+\_\+arg (\begin{DoxyParamCaption}\item[{unsigned}]{arg\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 1017 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1context__base_aa60dff208558ea95aadc2cc20af382ce}\label{classinternal_1_1context__base_aa60dff208558ea95aadc2cc20af382ce}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!locale@{locale}}
+\index{locale@{locale}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{locale()}{locale()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+\hyperlink{classinternal_1_1locale__ref}{locale\+\_\+ref} \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::locale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1040 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1context__base_a79b1e03aabedc2e157b34cc7adadf451}\label{classinternal_1_1context__base_a79b1e03aabedc2e157b34cc7adadf451}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!on\+\_\+error@{on\+\_\+error}}
+\index{on\+\_\+error@{on\+\_\+error}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{on\+\_\+error()}{on\_error()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+void \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::on\+\_\+error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1031 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1context__base_ab77c1d5e2cf72ef323e1599be8567fee}\label{classinternal_1_1context__base_ab77c1d5e2cf72ef323e1599be8567fee}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!out@{out}}
+\index{out@{out}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{out()}{out()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+\hyperlink{classinternal_1_1context__base_a6486e3c9656c10eb99a4731fb169e51b}{iterator} \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1034 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1context__base_ab77c1d5e2cf72ef323e1599be8567fee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1context__base_a8b2dea2761b5bd19dfe60435a68f80d6}\label{classinternal_1_1context__base_a8b2dea2761b5bd19dfe60435a68f80d6}} 
+\index{internal\+::context\+\_\+base@{internal\+::context\+\_\+base}!parse\+\_\+context@{parse\+\_\+context}}
+\index{parse\+\_\+context@{parse\+\_\+context}!internal\+::context\+\_\+base@{internal\+::context\+\_\+base}}
+\subsubsection{\texorpdfstring{parse\+\_\+context()}{parse\_context()}}
+{\footnotesize\ttfamily template$<$typename Output\+It, typename Context, typename Char$>$ \\
+\hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$\hyperlink{classinternal_1_1context__base_a012818dce2cbba8d267491288b9f3f63}{char\+\_\+type}$>$\& \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base}$<$ Output\+It, Context, Char $>$\+::\hyperlink{core_8h_a2707bfb24ad4e3cf64af9a8f9eb733e0}{parse\+\_\+context} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1023 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classinternal_1_1context__base_a8b2dea2761b5bd19dfe60435a68f80d6_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{core_8h}{core.\+h}\end{DoxyCompactItemize}

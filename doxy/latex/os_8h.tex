@@ -1,0 +1,124 @@
+\hypertarget{os_8h}{}\section{util/inc/spdlog/details/os.h File Reference}
+\label{os_8h}\index{util/inc/spdlog/details/os.\+h@{util/inc/spdlog/details/os.\+h}}
+{\ttfamily \#include \char`\"{}../common.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+Include dependency graph for os.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{os_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{os_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1details}{spdlog\+::details}
+\item 
+ \hyperlink{namespacespdlog_1_1details_1_1os}{spdlog\+::details\+::os}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{os_8h_af989845e24678c452b9222afdac95e7f}{\+\_\+\+\_\+has\+\_\+feature}(x)~0
+\item 
+\#define \hyperlink{os_8h_a3c16021694c04b9b7341a9348b6d8dd4}{S\+P\+D\+L\+O\+G\+\_\+\+E\+OL}~\char`\"{}\textbackslash{}n\char`\"{}
+\item 
+\#define \hyperlink{os_8h_a63d60ea1c1a925d3db13864d37bd2da2}{S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+T}(s)~s
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+spdlog\+::log\+\_\+clock\+::time\+\_\+point \hyperlink{namespacespdlog_1_1details_1_1os_ab86a7d9f1495a0edae71ce647bae6a66}{spdlog\+::details\+::os\+::now} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::tm \hyperlink{namespacespdlog_1_1details_1_1os_aef63b92ee93ec66603c0357d0ac75bed}{spdlog\+::details\+::os\+::localtime} (const std\+::time\+\_\+t \&time\+\_\+tt) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::tm \hyperlink{namespacespdlog_1_1details_1_1os_a3c7704d0c74aed204f258ac1fc7d4576}{spdlog\+::details\+::os\+::localtime} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::tm \hyperlink{namespacespdlog_1_1details_1_1os_ac993ad051e07cd5bda5328be2a54b0a8}{spdlog\+::details\+::os\+::gmtime} (const std\+::time\+\_\+t \&time\+\_\+tt) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::tm \hyperlink{namespacespdlog_1_1details_1_1os_a504776f0a18b0090f66778f7ad8add0b}{spdlog\+::details\+::os\+::gmtime} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+void \hyperlink{namespacespdlog_1_1details_1_1os_a58e68538bb3667c56f3623bf047093d6}{spdlog\+::details\+::os\+::prevent\+\_\+child\+\_\+fd} (F\+I\+LE $\ast$f)
+\item 
+bool \hyperlink{namespacespdlog_1_1details_1_1os_af2d11a0b892e2f0cb3c6beba4c659a47}{spdlog\+::details\+::os\+::fopen\+\_\+s} (F\+I\+LE $\ast$$\ast$fp, const filename\+\_\+t \&filename, const filename\+\_\+t \&mode)
+\item 
+int \hyperlink{namespacespdlog_1_1details_1_1os_a08477012dc14c38d86657b40edd2f534}{spdlog\+::details\+::os\+::remove} (const filename\+\_\+t \&filename) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+int \hyperlink{namespacespdlog_1_1details_1_1os_a88940402c9b1b8c9d01ea7dae8f26127}{spdlog\+::details\+::os\+::rename} (const filename\+\_\+t \&filename1, const filename\+\_\+t \&filename2) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+bool \hyperlink{namespacespdlog_1_1details_1_1os_a0831288e524f8cf53c98bce8facd0a0c}{spdlog\+::details\+::os\+::file\+\_\+exists} (const filename\+\_\+t \&filename) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+size\+\_\+t \hyperlink{namespacespdlog_1_1details_1_1os_a6d2fb5a293e8515f651288992d5443cc}{spdlog\+::details\+::os\+::filesize} (F\+I\+LE $\ast$f)
+\item 
+int \hyperlink{namespacespdlog_1_1details_1_1os_a6dce662c3a4ea0b6e95468272ec37047}{spdlog\+::details\+::os\+::utc\+\_\+minutes\+\_\+offset} (const std\+::tm \&tm=\hyperlink{time_8h_a2b11a736f2ef77ba69490af3f5081abf}{details\+::os\+::localtime}())
+\item 
+size\+\_\+t \hyperlink{namespacespdlog_1_1details_1_1os_a4cb88fcf54ef3878c1ff660456e9819c}{spdlog\+::details\+::os\+::\+\_\+thread\+\_\+id} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+size\+\_\+t \hyperlink{namespacespdlog_1_1details_1_1os_ad0fc3a9bd510324d2d5f31acb3607e90}{spdlog\+::details\+::os\+::thread\+\_\+id} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+void \hyperlink{namespacespdlog_1_1details_1_1os_a49ccbc872aa679db9d1187a48897804e}{spdlog\+::details\+::os\+::sleep\+\_\+for\+\_\+millis} (int milliseconds) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::string \hyperlink{namespacespdlog_1_1details_1_1os_ac7c0d6af1f3f652f23e57f057217b9a7}{spdlog\+::details\+::os\+::filename\+\_\+to\+\_\+str} (const filename\+\_\+t \&filename)
+\item 
+int \hyperlink{namespacespdlog_1_1details_1_1os_afa5e2f0096ec0aa63c2d20143cb18b17}{spdlog\+::details\+::os\+::pid} ()
+\item 
+bool \hyperlink{namespacespdlog_1_1details_1_1os_a41c3f67d2cbabfcb20e89d0524e5097f}{spdlog\+::details\+::os\+::is\+\_\+color\+\_\+terminal} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+bool \hyperlink{namespacespdlog_1_1details_1_1os_a2d4716c3ff12a2cc7f3bae7f3f769917}{spdlog\+::details\+::os\+::in\+\_\+terminal} (F\+I\+LE $\ast$\hyperlink{classfile}{file}) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{os_8h_af989845e24678c452b9222afdac95e7f}\label{os_8h_af989845e24678c452b9222afdac95e7f}} 
+\index{os.\+h@{os.\+h}!\+\_\+\+\_\+has\+\_\+feature@{\+\_\+\+\_\+has\+\_\+feature}}
+\index{\+\_\+\+\_\+has\+\_\+feature@{\+\_\+\+\_\+has\+\_\+feature}!os.\+h@{os.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+has\+\_\+feature}{\_\_has\_feature}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+has\+\_\+feature(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~0}
+
+
+
+Definition at line 53 of file os.\+h.
+
+\mbox{\Hypertarget{os_8h_a3c16021694c04b9b7341a9348b6d8dd4}\label{os_8h_a3c16021694c04b9b7341a9348b6d8dd4}} 
+\index{os.\+h@{os.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+E\+OL@{S\+P\+D\+L\+O\+G\+\_\+\+E\+OL}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+E\+OL@{S\+P\+D\+L\+O\+G\+\_\+\+E\+OL}!os.\+h@{os.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+E\+OL}{SPDLOG\_EOL}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+E\+OL~\char`\"{}\textbackslash{}n\char`\"{}}
+
+
+
+Definition at line 116 of file os.\+h.
+
+\mbox{\Hypertarget{os_8h_a63d60ea1c1a925d3db13864d37bd2da2}\label{os_8h_a63d60ea1c1a925d3db13864d37bd2da2}} 
+\index{os.\+h@{os.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+T@{S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+T}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+T@{S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+T}!os.\+h@{os.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+T}{SPDLOG\_FILENAME\_T}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+N\+A\+M\+E\+\_\+T(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~s}
+
+
+
+Definition at line 369 of file os.\+h.
+

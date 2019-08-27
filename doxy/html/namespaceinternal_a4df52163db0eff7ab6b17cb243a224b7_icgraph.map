@@ -1,0 +1,8 @@
+<map id="internal::gmtime_s" name="internal::gmtime_s">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1os.html#ac993ad051e07cd5bda5328be2a54b0a8" title="spdlog::details::os\l::gmtime" alt="" coords="183,71,311,112"/>
+<area shape="rect" id="node7" href="$time_8h.html#aaf8e0f0ff843757380c35a9ec5321168" title="gmtime" alt="" coords="214,137,279,163"/>
+<area shape="rect" id="node3" href="$namespacespdlog_1_1details_1_1os.html#a504776f0a18b0090f66778f7ad8add0b" title="spdlog::details::os\l::gmtime" alt="" coords="378,5,506,47"/>
+<area shape="rect" id="node4" href="$namespacespdlog_1_1details_1_1os.html#a6dce662c3a4ea0b6e95468272ec37047" title="spdlog::details::os\l::utc_minutes_offset" alt="" coords="371,71,513,112"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1pattern__formatter.html#ae43e84d7421ee7810b22ce1dc817ca3f" title="spdlog::pattern_formatter\l::format" alt="" coords="359,136,525,177"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1details_1_1z__formatter.html#ada7a5e9a3c30039cbfb684b7743b8945" title="spdlog::details::z\l_formatter::format" alt="" coords="573,71,700,112"/>
+</map>

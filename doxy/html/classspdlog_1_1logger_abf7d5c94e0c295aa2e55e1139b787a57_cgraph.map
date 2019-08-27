@@ -1,0 +1,8 @@
+<map id="spdlog::logger::log" name="spdlog::logger::log">
+<area shape="rect" id="node2" href="$classspdlog_1_1logger.html#a94c77395570c462953ded4188aaaf655" title="spdlog::logger::should_log" alt="" coords="181,27,355,54"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1logger.html#a43ac8d73671a109cba253eadb0b049e2" title="spdlog::logger::sink_it_" alt="" coords="190,78,346,105"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1logger.html#a55bf9c5c960391a56399b5f1ea601b4b" title="spdlog::logger::incr\l_msg_counter_" alt="" coords="411,5,543,47"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1logger.html#aa1bbe703cdeed2aef722a97a2bc1a800" title="spdlog::logger::should\l_flush_" alt="" coords="403,71,552,112"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1logger.html#a98981b19089a6000fdfa8765af52ef0e" title="spdlog::logger::flush_" alt="" coords="404,137,551,163"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1logger.html#a1b9b7304f017163d181692e41101b648" title="spdlog::logger::flush\l_level" alt="" coords="600,71,739,112"/>
+</map>

@@ -1,0 +1,188 @@
+\hypertarget{struct_wire_cell_1_1_gen_1_1_gaus_desc}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Gaus\+Desc Struct Reference}
+\label{struct_wire_cell_1_1_gen_1_1_gaus_desc}\index{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}}
+
+
+{\ttfamily \#include $<$Gaussian\+Diffusion.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc_a3cb2ea1d5e31b758df540cdd6cace465}{Gaus\+Desc} (double \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc_aee8eb7e424437c7bab67828f4bf78c77}{center}, double \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc_aa9d4b50ba1852c92f5e9b8bb7d63c2bd}{sigma})
+\item 
+double \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc_a769c9958842435a1dba72113be6d8f09}{distance} (double x)
+\begin{DoxyCompactList}\small\item\em Return the distance in number of sigma that x is from the center. \end{DoxyCompactList}\item 
+std\+::pair$<$ double, double $>$ \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc_a5340bfa4adeaccdcac2766ecd1b4a3b0}{sigma\+\_\+range} (double nsigma=3.\+0)
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc_a0d636bf5b689646d52f07cac3432824e}{sample} (double start, double step, int nsamples) const
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc_a1b437283fecc3cbfcdb616179381d666}{binint} (double start, double step, int nbins) const
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc_aa7099866e931d552fead98c5fcfcefb8}{weight} (double start, double step, int nbins, std\+::vector$<$ double $>$ pvec) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc_aee8eb7e424437c7bab67828f4bf78c77}{center}
+\item 
+double \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc_aa9d4b50ba1852c92f5e9b8bb7d63c2bd}{sigma}
+\begin{DoxyCompactList}\small\item\em The Gaussian sigma (half) width. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc}{Gaus\+Desc} describes a Gaussian distribution.
+
+Two are used by \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion}{Gaussian\+Diffusion}. One describes the transverse dimension along the direction of wire pitch (and for a given wire plane) and one the longitudinal dimension is along the drift direction as measured in time. 
+
+Definition at line 21 of file Gaussian\+Diffusion.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_gen_1_1_gaus_desc_a3cb2ea1d5e31b758df540cdd6cace465}\label{struct_wire_cell_1_1_gen_1_1_gaus_desc_a3cb2ea1d5e31b758df540cdd6cace465}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}!Gaus\+Desc@{Gaus\+Desc}}
+\index{Gaus\+Desc@{Gaus\+Desc}!Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}}
+\subsubsection{\texorpdfstring{Gaus\+Desc()}{GausDesc()}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc\+::\+Gaus\+Desc (\begin{DoxyParamCaption}\item[{double}]{center,  }\item[{double}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file Gaussian\+Diffusion.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_gen_1_1_gaus_desc_a1b437283fecc3cbfcdb616179381d666}\label{struct_wire_cell_1_1_gen_1_1_gaus_desc_a1b437283fecc3cbfcdb616179381d666}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}!binint@{binint}}
+\index{binint@{binint}!Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}}
+\subsubsection{\texorpdfstring{binint()}{binint()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Gen\+::\+Gaus\+Desc\+::binint (\begin{DoxyParamCaption}\item[{double}]{start,  }\item[{double}]{step,  }\item[{int}]{nbins }\end{DoxyParamCaption}) const}
+
+Integrate Gaussian across uniform bins. Result is normalized assuming integral of Gaussian over entire domain is 1.\+0. 
+
+Definition at line 31 of file Gaussian\+Diffusion.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_gen_1_1_gaus_desc_a1b437283fecc3cbfcdb616179381d666_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_gen_1_1_gaus_desc_a769c9958842435a1dba72113be6d8f09}\label{struct_wire_cell_1_1_gen_1_1_gaus_desc_a769c9958842435a1dba72113be6d8f09}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}!distance@{distance}}
+\index{distance@{distance}!Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}}
+\subsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc\+::distance (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the distance in number of sigma that x is from the center. 
+
+
+
+Definition at line 35 of file Gaussian\+Diffusion.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_gen_1_1_gaus_desc_a769c9958842435a1dba72113be6d8f09_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_gen_1_1_gaus_desc_a0d636bf5b689646d52f07cac3432824e}\label{struct_wire_cell_1_1_gen_1_1_gaus_desc_a0d636bf5b689646d52f07cac3432824e}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}!sample@{sample}}
+\index{sample@{sample}!Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}}
+\subsubsection{\texorpdfstring{sample()}{sample()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Gen\+::\+Gaus\+Desc\+::sample (\begin{DoxyParamCaption}\item[{double}]{start,  }\item[{double}]{step,  }\item[{int}]{nsamples }\end{DoxyParamCaption}) const}
+
+Sample the Gaussian at points on a uniform linear grid. 
+
+Definition at line 8 of file Gaussian\+Diffusion.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_gen_1_1_gaus_desc_a0d636bf5b689646d52f07cac3432824e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_gen_1_1_gaus_desc_a5340bfa4adeaccdcac2766ecd1b4a3b0}\label{struct_wire_cell_1_1_gen_1_1_gaus_desc_a5340bfa4adeaccdcac2766ecd1b4a3b0}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}!sigma\+\_\+range@{sigma\+\_\+range}}
+\index{sigma\+\_\+range@{sigma\+\_\+range}!Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}}
+\subsubsection{\texorpdfstring{sigma\+\_\+range()}{sigma\_range()}}
+{\footnotesize\ttfamily std\+::pair$<$double,double$>$ Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc\+::sigma\+\_\+range (\begin{DoxyParamCaption}\item[{double}]{nsigma = {\ttfamily 3.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 46 of file Gaussian\+Diffusion.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_gen_1_1_gaus_desc_a5340bfa4adeaccdcac2766ecd1b4a3b0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_gen_1_1_gaus_desc_a5340bfa4adeaccdcac2766ecd1b4a3b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_gen_1_1_gaus_desc_aa7099866e931d552fead98c5fcfcefb8}\label{struct_wire_cell_1_1_gen_1_1_gaus_desc_aa7099866e931d552fead98c5fcfcefb8}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}!weight@{weight}}
+\index{weight@{weight}!Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}}
+\subsubsection{\texorpdfstring{weight()}{weight()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Gen\+::\+Gaus\+Desc\+::weight (\begin{DoxyParamCaption}\item[{double}]{start,  }\item[{double}]{step,  }\item[{int}]{nbins,  }\item[{std\+::vector$<$ double $>$}]{pvec }\end{DoxyParamCaption}) const}
+
+Integrate Gaussian diffusion with linear weighting to redistribute the charge to the two neartest impact positions for linear interpolation of the field response 
+
+Definition at line 64 of file Gaussian\+Diffusion.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_gen_1_1_gaus_desc_aa7099866e931d552fead98c5fcfcefb8_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_gen_1_1_gaus_desc_aee8eb7e424437c7bab67828f4bf78c77}\label{struct_wire_cell_1_1_gen_1_1_gaus_desc_aee8eb7e424437c7bab67828f4bf78c77}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}!center@{center}}
+\index{center@{center}!Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}}
+\subsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc\+::center}
+
+The absolute location of the mean of the Gaussian as measured relative to some externally defined origin. 
+
+Definition at line 25 of file Gaussian\+Diffusion.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_gen_1_1_gaus_desc_aa9d4b50ba1852c92f5e9b8bb7d63c2bd}\label{struct_wire_cell_1_1_gen_1_1_gaus_desc_aa9d4b50ba1852c92f5e9b8bb7d63c2bd}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}!sigma@{sigma}}
+\index{sigma@{sigma}!Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc@{Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc}}
+\subsubsection{\texorpdfstring{sigma}{sigma}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Gaus\+Desc\+::sigma}
+
+
+
+The Gaussian sigma (half) width. 
+
+
+
+Definition at line 27 of file Gaussian\+Diffusion.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_gaussian_diffusion_8h}{Gaussian\+Diffusion.\+h}\item 
+gen/src/\hyperlink{_gaussian_diffusion_8cxx}{Gaussian\+Diffusion.\+cxx}\end{DoxyCompactItemize}

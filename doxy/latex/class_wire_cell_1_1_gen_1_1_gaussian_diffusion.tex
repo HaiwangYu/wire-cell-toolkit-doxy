@@ -1,0 +1,230 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Gaussian\+Diffusion Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion}\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+
+
+{\ttfamily \#include $<$Gaussian\+Diffusion.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion}{Gaussian\+Diffusion} $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac7fce7070c18877fa61abc26ad410ce9}{pointer}
+\item 
+typedef \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a33cd8c39349ac40f3757405be6d8f7b0}{patch\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a1c53023e228cad69ccc12b9133ade785}{Gaussian\+Diffusion} (const \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \&\hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_af47821d09cdf3b3db6e7ffe8e9a70fb9}{depo}, const \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc}{Gaus\+Desc} \&\hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a7c3c7dbfeb34c5cb778c873343772427}{time\+\_\+desc}, const \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc}{Gaus\+Desc} \&\hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a356c64883ec23fcf9c5b2ef056cf4888}{pitch\+\_\+desc})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion}{Gaussian\+Diffusion}. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_aee13d3eff7f4d5b15d2bffd7b982fae4}{set\+\_\+sampling} (const \hyperlink{class_wire_cell_1_1_binning}{Binning} \&tbin, const \hyperlink{class_wire_cell_1_1_binning}{Binning} \&pbin, double nsigma=3.\+0, \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Random\+::pointer} fluctuate=nullptr, unsigned int weightstrat=1)
+\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ad943ff4bdd0f751f983b375b725e4d45}{clear\+\_\+sampling} ()
+\item 
+const \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a33cd8c39349ac40f3757405be6d8f7b0}{patch\+\_\+t} \& \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a0917ea09022f97d0274ee90b6aeb97b8}{patch} () const
+\item 
+const std\+::vector$<$ double $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac69c89a9e8b3947efcd56de6055dfb47}{weights} () const
+\item 
+int \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a665f92ab11b075189936553e8cf5e681}{toffset\+\_\+bin} () const
+\begin{DoxyCompactList}\small\item\em Return the absolute time bin in the binning corresponding to column 0 of the patch. \end{DoxyCompactList}\item 
+int \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ae818d9a49c5d073cad70869dfed232f2}{poffset\+\_\+bin} () const
+\begin{DoxyCompactList}\small\item\em Return the absolute impact bin in the binning corresponding to column 0 of the patch. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_af47821d09cdf3b3db6e7ffe8e9a70fb9}{depo} () const
+\begin{DoxyCompactList}\small\item\em Access deposition. \end{DoxyCompactList}\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a341ca8513406748c83172aac63202b45}{depo\+\_\+time} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a4c5715de0b0b2c0daac3b132ed0fba07}{depo\+\_\+x} () const
+\item 
+const \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc}{Gaus\+Desc} \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a356c64883ec23fcf9c5b2ef056cf4888}{pitch\+\_\+desc} ()
+\item 
+const \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc}{Gaus\+Desc} \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a7c3c7dbfeb34c5cb778c873343772427}{time\+\_\+desc} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 68 of file Gaussian\+Diffusion.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a33cd8c39349ac40f3757405be6d8f7b0}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a33cd8c39349ac40f3757405be6d8f7b0}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!patch\+\_\+t@{patch\+\_\+t}}
+\index{patch\+\_\+t@{patch\+\_\+t}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{patch\+\_\+t}{patch\_t}}
+{\footnotesize\ttfamily typedef \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a33cd8c39349ac40f3757405be6d8f7b0}{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion\+::patch\+\_\+t}}
+
+A patch is a 2D array of diffuse charge in (nimpacts X nticks) bins. patch\mbox{[}0\mbox{]} is drifted/diffused charge waveform at impact position 0 (relative to min pitch for the patch). patch\mbox{[}0\mbox{]}\mbox{[}0\mbox{]} is charge at this impact position at time = 0 (relative to min time for the patch). See {\ttfamily bin()}. 
+
+Definition at line 80 of file Gaussian\+Diffusion.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac7fce7070c18877fa61abc26ad410ce9}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac7fce7070c18877fa61abc26ad410ce9}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion}{Gaussian\+Diffusion}$>$ \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac7fce7070c18877fa61abc26ad410ce9}{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion\+::pointer}}
+
+
+
+Definition at line 71 of file Gaussian\+Diffusion.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a1c53023e228cad69ccc12b9133ade785}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a1c53023e228cad69ccc12b9133ade785}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!Gaussian\+Diffusion@{Gaussian\+Diffusion}}
+\index{Gaussian\+Diffusion@{Gaussian\+Diffusion}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{Gaussian\+Diffusion()}{GaussianDiffusion()}}
+{\footnotesize\ttfamily Gen\+::\+Gaussian\+Diffusion\+::\+Gaussian\+Diffusion (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \&}]{depo,  }\item[{const \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc}{Gaus\+Desc} \&}]{time\+\_\+desc,  }\item[{const \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc}{Gaus\+Desc} \&}]{pitch\+\_\+desc }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion}{Gaussian\+Diffusion}. 
+
+Create a diffused deposition. 
+
+Definition at line 113 of file Gaussian\+Diffusion.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ad943ff4bdd0f751f983b375b725e4d45}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ad943ff4bdd0f751f983b375b725e4d45}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!clear\+\_\+sampling@{clear\+\_\+sampling}}
+\index{clear\+\_\+sampling@{clear\+\_\+sampling}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{clear\+\_\+sampling()}{clear\_sampling()}}
+{\footnotesize\ttfamily void Gen\+::\+Gaussian\+Diffusion\+::clear\+\_\+sampling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 238 of file Gaussian\+Diffusion.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_af47821d09cdf3b3db6e7ffe8e9a70fb9}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_af47821d09cdf3b3db6e7ffe8e9a70fb9}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!depo@{depo}}
+\index{depo@{depo}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{depo()}{depo()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion\+::depo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access deposition. 
+
+
+
+Definition at line 119 of file Gaussian\+Diffusion.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a341ca8513406748c83172aac63202b45}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a341ca8513406748c83172aac63202b45}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!depo\+\_\+time@{depo\+\_\+time}}
+\index{depo\+\_\+time@{depo\+\_\+time}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{depo\+\_\+time()}{depo\_time()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion\+::depo\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 121 of file Gaussian\+Diffusion.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a4c5715de0b0b2c0daac3b132ed0fba07}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a4c5715de0b0b2c0daac3b132ed0fba07}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!depo\+\_\+x@{depo\+\_\+x}}
+\index{depo\+\_\+x@{depo\+\_\+x}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{depo\+\_\+x()}{depo\_x()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion\+::depo\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 122 of file Gaussian\+Diffusion.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a0917ea09022f97d0274ee90b6aeb97b8}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a0917ea09022f97d0274ee90b6aeb97b8}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!patch@{patch}}
+\index{patch@{patch}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{patch()}{patch()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a33cd8c39349ac40f3757405be6d8f7b0}{Gen\+::\+Gaussian\+Diffusion\+::patch\+\_\+t} \& Gen\+::\+Gaussian\+Diffusion\+::patch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the diffusion patch as an array of N\+\_\+pitch rows X N\+\_\+time columns. Index as patch(i\+\_\+pitch, i\+\_\+time). Call \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_aee13d3eff7f4d5b15d2bffd7b982fae4}{set\+\_\+sampling()} first. 
+
+Definition at line 246 of file Gaussian\+Diffusion.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a356c64883ec23fcf9c5b2ef056cf4888}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a356c64883ec23fcf9c5b2ef056cf4888}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!pitch\+\_\+desc@{pitch\+\_\+desc}}
+\index{pitch\+\_\+desc@{pitch\+\_\+desc}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{pitch\+\_\+desc()}{pitch\_desc()}}
+{\footnotesize\ttfamily const \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc}{Gaus\+Desc} Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion\+::pitch\+\_\+desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 124 of file Gaussian\+Diffusion.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ae818d9a49c5d073cad70869dfed232f2}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ae818d9a49c5d073cad70869dfed232f2}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!poffset\+\_\+bin@{poffset\+\_\+bin}}
+\index{poffset\+\_\+bin@{poffset\+\_\+bin}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{poffset\+\_\+bin()}{poffset\_bin()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion\+::poffset\+\_\+bin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the absolute impact bin in the binning corresponding to column 0 of the patch. 
+
+
+
+Definition at line 116 of file Gaussian\+Diffusion.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_aee13d3eff7f4d5b15d2bffd7b982fae4}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_aee13d3eff7f4d5b15d2bffd7b982fae4}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!set\+\_\+sampling@{set\+\_\+sampling}}
+\index{set\+\_\+sampling@{set\+\_\+sampling}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{set\+\_\+sampling()}{set\_sampling()}}
+{\footnotesize\ttfamily void Gen\+::\+Gaussian\+Diffusion\+::set\+\_\+sampling (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_binning}{Binning} \&}]{tbin,  }\item[{const \hyperlink{class_wire_cell_1_1_binning}{Binning} \&}]{pbin,  }\item[{double}]{nsigma = {\ttfamily 3.0},  }\item[{\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Random\+::pointer}}]{fluctuate = {\ttfamily nullptr},  }\item[{unsigned int}]{weightstrat = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+This fills the patch once matching the given time and pitch binning. The patch is limited to the 2D sample points that cover the subdomain determined by the number of sigma. If there should be Poisson fluctuations applied pass in an \hyperlink{class_wire_cell_1_1_i_random}{I\+Random}. Total charge is charge is preserved. Each cell of the patch represents the 2D bin-\/centered sampling of the Gaussian. Sample time dimension
+
+Sample pitch dimension.
+
+fixme\+: for hanyu. 
+
+Definition at line 124 of file Gaussian\+Diffusion.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_aee13d3eff7f4d5b15d2bffd7b982fae4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a7c3c7dbfeb34c5cb778c873343772427}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a7c3c7dbfeb34c5cb778c873343772427}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!time\+\_\+desc@{time\+\_\+desc}}
+\index{time\+\_\+desc@{time\+\_\+desc}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{time\+\_\+desc()}{time\_desc()}}
+{\footnotesize\ttfamily const \hyperlink{struct_wire_cell_1_1_gen_1_1_gaus_desc}{Gaus\+Desc} Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion\+::time\+\_\+desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 125 of file Gaussian\+Diffusion.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a665f92ab11b075189936553e8cf5e681}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_a665f92ab11b075189936553e8cf5e681}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!toffset\+\_\+bin@{toffset\+\_\+bin}}
+\index{toffset\+\_\+bin@{toffset\+\_\+bin}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{toffset\+\_\+bin()}{toffset\_bin()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion\+::toffset\+\_\+bin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the absolute time bin in the binning corresponding to column 0 of the patch. 
+
+
+
+Definition at line 113 of file Gaussian\+Diffusion.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac69c89a9e8b3947efcd56de6055dfb47}\label{class_wire_cell_1_1_gen_1_1_gaussian_diffusion_ac69c89a9e8b3947efcd56de6055dfb47}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}!weights@{weights}}
+\index{weights@{weights}!Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion@{Wire\+Cell\+::\+Gen\+::\+Gaussian\+Diffusion}}
+\subsubsection{\texorpdfstring{weights()}{weights()}}
+{\footnotesize\ttfamily const std\+::vector$<$ double $>$ Gen\+::\+Gaussian\+Diffusion\+::weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 251 of file Gaussian\+Diffusion.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_gaussian_diffusion_8h}{Gaussian\+Diffusion.\+h}\item 
+gen/src/\hyperlink{_gaussian_diffusion_8cxx}{Gaussian\+Diffusion.\+cxx}\end{DoxyCompactItemize}

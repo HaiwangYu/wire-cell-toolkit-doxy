@@ -1,0 +1,162 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Depo\+PlaneX Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_depo_plane_x}\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+
+
+{\ttfamily \#include $<$Depo\+Plane\+X.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::deque$<$ \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_a4f4387d05fb9d3a02c96da6abac2861e}{frozen\+\_\+queue\+\_\+t}
+\item 
+typedef \hyperlink{namespace_wire_cell_ac01bef08345e4a479b147822eef2a405}{Depo\+Tau\+Sorted\+Set} \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_ade1129aabbdd7bc1d4e880169d715a19}{working\+\_\+queue\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_accbd66291fc864d1b5fb10a6d687a50f}{Depo\+PlaneX} (double planex=0.\+0 $\ast$units\+::cm, double speed=1.\+6 $\ast$units\+::millimeter/units\+::microsecond)
+\item 
+\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_aac384ecc32db5e99b6ed308ff45e14de}{add} (const \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \&depo)
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_aa5929aed1786b27d74603a7b92aecb78}{proper\+\_\+time} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} depo) const
+\begin{DoxyCompactList}\small\item\em The time a deposition would have if it drifts to the plane. \end{DoxyCompactList}\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_a3a9d553d5ade20322d03cb7e175babc8}{freezeout\+\_\+time} () const
+\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_a8390619e6c7ddc2c7a60140ea7339336}{freezeout} ()
+\begin{DoxyCompactList}\small\item\em Force any remaining \char`\"{}thawed\char`\"{} depos in the queue to be frozen out. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Depo\+::vector} \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_a1558bc9b6186a753d8b8f73fbd833475}{pop} (double time)
+\item 
+const \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_a4f4387d05fb9d3a02c96da6abac2861e}{frozen\+\_\+queue\+\_\+t} \& \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_a05b5b5aae520941719605f4eba4caa5e}{frozen\+\_\+queue} () const
+\item 
+const \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_ade1129aabbdd7bc1d4e880169d715a19}{working\+\_\+queue\+\_\+t} \& \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_a599119cba4e43cde20f055b64a0139f0}{working\+\_\+queue} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x}{Depo\+PlaneX} collects depositions and drifts them to the given plane assuming a uniform drift velocity which is in the negative X direction.
+
+It is assumed new depositions are added strictly in time order. They will then be drifted and maintained in the order of their time at the plane.
+
+The time of the most recently added depo sets a high water mark in time at the plane such that all newly added depos must (causally) come later. Any depos older than this time are considered \char`\"{}frozen out\char`\"{} as nothing can change their ordering. 
+
+Definition at line 28 of file Depo\+Plane\+X.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x_a4f4387d05fb9d3a02c96da6abac2861e}\label{class_wire_cell_1_1_gen_1_1_depo_plane_x_a4f4387d05fb9d3a02c96da6abac2861e}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}!frozen\+\_\+queue\+\_\+t@{frozen\+\_\+queue\+\_\+t}}
+\index{frozen\+\_\+queue\+\_\+t@{frozen\+\_\+queue\+\_\+t}!Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+\subsubsection{\texorpdfstring{frozen\+\_\+queue\+\_\+t}{frozen\_queue\_t}}
+{\footnotesize\ttfamily typedef std\+::deque$<$\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer}$>$ \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_a4f4387d05fb9d3a02c96da6abac2861e}{Wire\+Cell\+::\+Gen\+::\+Depo\+Plane\+X\+::frozen\+\_\+queue\+\_\+t}}
+
+
+
+Definition at line 30 of file Depo\+Plane\+X.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x_ade1129aabbdd7bc1d4e880169d715a19}\label{class_wire_cell_1_1_gen_1_1_depo_plane_x_ade1129aabbdd7bc1d4e880169d715a19}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}!working\+\_\+queue\+\_\+t@{working\+\_\+queue\+\_\+t}}
+\index{working\+\_\+queue\+\_\+t@{working\+\_\+queue\+\_\+t}!Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+\subsubsection{\texorpdfstring{working\+\_\+queue\+\_\+t}{working\_queue\_t}}
+{\footnotesize\ttfamily typedef \hyperlink{namespace_wire_cell_ac01bef08345e4a479b147822eef2a405}{Depo\+Tau\+Sorted\+Set} \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_ade1129aabbdd7bc1d4e880169d715a19}{Wire\+Cell\+::\+Gen\+::\+Depo\+Plane\+X\+::working\+\_\+queue\+\_\+t}}
+
+
+
+Definition at line 31 of file Depo\+Plane\+X.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x_accbd66291fc864d1b5fb10a6d687a50f}\label{class_wire_cell_1_1_gen_1_1_depo_plane_x_accbd66291fc864d1b5fb10a6d687a50f}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}!Depo\+PlaneX@{Depo\+PlaneX}}
+\index{Depo\+PlaneX@{Depo\+PlaneX}!Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+\subsubsection{\texorpdfstring{Depo\+Plane\+X()}{DepoPlaneX()}}
+{\footnotesize\ttfamily Gen\+::\+Depo\+Plane\+X\+::\+Depo\+PlaneX (\begin{DoxyParamCaption}\item[{double}]{planex = {\ttfamily 0.0$\ast$units\+:\+:cm},  }\item[{double}]{speed = {\ttfamily 1.6$\ast$units\+:\+:millimeter/units\+:\+:microsecond} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file Depo\+Plane\+X.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x_aac384ecc32db5e99b6ed308ff45e14de}\label{class_wire_cell_1_1_gen_1_1_depo_plane_x_aac384ecc32db5e99b6ed308ff45e14de}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}!add@{add}}
+\index{add@{add}!Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} Gen\+::\+Depo\+Plane\+X\+::add (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \&}]{depo }\end{DoxyParamCaption})}
+
+Add a deposition and drift it into the queue at the plane. Depos must be strictly added in (local) time order. The drifted depo is returned (and held). 
+
+Definition at line 14 of file Depo\+Plane\+X.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x_a8390619e6c7ddc2c7a60140ea7339336}\label{class_wire_cell_1_1_gen_1_1_depo_plane_x_a8390619e6c7ddc2c7a60140ea7339336}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}!freezeout@{freezeout}}
+\index{freezeout@{freezeout}!Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+\subsubsection{\texorpdfstring{freezeout()}{freezeout()}}
+{\footnotesize\ttfamily void Gen\+::\+Depo\+Plane\+X\+::freezeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Force any remaining \char`\"{}thawed\char`\"{} depos in the queue to be frozen out. 
+
+
+
+Definition at line 44 of file Depo\+Plane\+X.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x_a3a9d553d5ade20322d03cb7e175babc8}\label{class_wire_cell_1_1_gen_1_1_depo_plane_x_a3a9d553d5ade20322d03cb7e175babc8}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}!freezeout\+\_\+time@{freezeout\+\_\+time}}
+\index{freezeout\+\_\+time@{freezeout\+\_\+time}!Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+\subsubsection{\texorpdfstring{freezeout\+\_\+time()}{freezeout\_time()}}
+{\footnotesize\ttfamily double Gen\+::\+Depo\+Plane\+X\+::freezeout\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return the time at the plane before which the order of collected depositions are guaranteed (causally) to remain unchanged as any new depos are added. 
+
+Definition at line 22 of file Depo\+Plane\+X.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x_a05b5b5aae520941719605f4eba4caa5e}\label{class_wire_cell_1_1_gen_1_1_depo_plane_x_a05b5b5aae520941719605f4eba4caa5e}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}!frozen\+\_\+queue@{frozen\+\_\+queue}}
+\index{frozen\+\_\+queue@{frozen\+\_\+queue}!Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+\subsubsection{\texorpdfstring{frozen\+\_\+queue()}{frozen\_queue()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_a4f4387d05fb9d3a02c96da6abac2861e}{frozen\+\_\+queue\+\_\+t}\& Wire\+Cell\+::\+Gen\+::\+Depo\+Plane\+X\+::frozen\+\_\+queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file Depo\+Plane\+X.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x_a1558bc9b6186a753d8b8f73fbd833475}\label{class_wire_cell_1_1_gen_1_1_depo_plane_x_a1558bc9b6186a753d8b8f73fbd833475}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}!pop@{pop}}
+\index{pop@{pop}!Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Depo\+::vector} Gen\+::\+Depo\+Plane\+X\+::pop (\begin{DoxyParamCaption}\item[{double}]{time }\end{DoxyParamCaption})}
+
+Return ordered vector of all depositions at the plane with times not later than the given time. The given time is typically the freezeout time. If a time later than the freezout time is given it may cause depos to be artificially frozen out. 
+
+Definition at line 57 of file Depo\+Plane\+X.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x_aa5929aed1786b27d74603a7b92aecb78}\label{class_wire_cell_1_1_gen_1_1_depo_plane_x_aa5929aed1786b27d74603a7b92aecb78}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}!proper\+\_\+time@{proper\+\_\+time}}
+\index{proper\+\_\+time@{proper\+\_\+time}!Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+\subsubsection{\texorpdfstring{proper\+\_\+time()}{proper\_time()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Depo\+Plane\+X\+::proper\+\_\+time (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer}}]{depo }\end{DoxyParamCaption}) const}
+
+
+
+The time a deposition would have if it drifts to the plane. 
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_plane_x_a599119cba4e43cde20f055b64a0139f0}\label{class_wire_cell_1_1_gen_1_1_depo_plane_x_a599119cba4e43cde20f055b64a0139f0}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}!working\+\_\+queue@{working\+\_\+queue}}
+\index{working\+\_\+queue@{working\+\_\+queue}!Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX@{Wire\+Cell\+::\+Gen\+::\+Depo\+PlaneX}}
+\subsubsection{\texorpdfstring{working\+\_\+queue()}{working\_queue()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_gen_1_1_depo_plane_x_ade1129aabbdd7bc1d4e880169d715a19}{working\+\_\+queue\+\_\+t}\& Wire\+Cell\+::\+Gen\+::\+Depo\+Plane\+X\+::working\+\_\+queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file Depo\+Plane\+X.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_depo_plane_x_8h}{Depo\+Plane\+X.\+h}\item 
+gen/src/\hyperlink{_depo_plane_x_8cxx}{Depo\+Plane\+X.\+cxx}\end{DoxyCompactItemize}

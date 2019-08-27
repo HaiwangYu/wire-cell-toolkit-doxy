@@ -1,0 +1,12 @@
+<map id="formatter&lt; std::tm, Char &gt;::format" name="formatter&lt; std::tm, Char &gt;::format">
+<area shape="rect" id="node2" href="$classinternal_1_1basic__buffer.html#abc95713c3873c5820f10105fe7c7af93" title="internal::basic_buffer\l::size" alt="" coords="199,5,341,47"/>
+<area shape="rect" id="node3" href="$classinternal_1_1basic__buffer.html#ae88bfc1cb8c896fa0b689ad8158cccae" title="internal::basic_buffer\l::capacity" alt="" coords="199,71,341,112"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a1358037a310a2e6f3d05538df58ff412" title="internal::strftime" alt="" coords="212,137,328,163"/>
+<area shape="rect" id="node6" href="$classinternal_1_1basic__buffer.html#adbd2b147e114f0cc4573f734d4326669" title="internal::basic_buffer\l::resize" alt="" coords="199,188,341,229"/>
+<area shape="rect" id="node7" href="$classinternal_1_1basic__buffer.html#ab4bbc728c01282567eebc165d545772a" title="internal::basic_buffer\l::reserve" alt="" coords="199,253,341,295"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#a03b2086b2426ff3ecfce2d6fd22b66dc" title="internal::copy" alt="" coords="220,319,320,346"/>
+<area shape="rect" id="node10" href="$classinternal_1_1basic__buffer.html#ae9d79a4d8c58625f46dfc48e95091bb4" title="internal::basic_buffer\l::begin" alt="" coords="199,371,341,412"/>
+<area shape="rect" id="node11" href="$classinternal_1_1basic__buffer.html#ab9c6b3ee6d7189a86a6a3734c7597621" title="internal::basic_buffer::end" alt="" coords="184,437,356,463"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#aaa347e326b504b866752fd087f46d2b0" title="internal::strftime" alt="" coords="404,137,520,163"/>
+<area shape="rect" id="node9" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="415,319,509,346"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="spdlog::details::fmt_helper::pad_uint" name="spdlog::details::fmt_helper::pad_uint">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1fmt__helper.html#af739ecce102d47ff08a0f344a96897d9" title="spdlog::details::fmt\l_helper::pad3" alt="" coords="187,71,320,112"/>
+<area shape="rect" id="node5" href="$namespacespdlog_1_1details_1_1fmt__helper.html#aefae60b1ebdae78bc8f11c26b36b2cd6" title="spdlog::details::fmt\l_helper::pad6" alt="" coords="187,136,320,177"/>
+<area shape="rect" id="node8" href="$namespacespdlog_1_1details_1_1fmt__helper.html#aad467c706932b56929dae091b39c23f3" title="spdlog::details::fmt\l_helper::pad9" alt="" coords="187,201,320,243"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1details_1_1e__formatter.html#a931a5482cce50c580dd4e570fd27e976" title="spdlog::details::e\l_formatter::format" alt="" coords="370,5,497,47"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1details_1_1full__formatter.html#a11da1d2ec8378841d228df071915da35" title="spdlog::details::full\l_formatter::format" alt="" coords="368,71,499,112"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1details_1_1f__formatter.html#ab3af92f69f6a1b4a70189f4e2a7ccbba" title="spdlog::details::f\l_formatter::format" alt="" coords="370,136,497,177"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1details_1_1i__formatter.html#aacaecd1c3fd6827287055d2f607f10ed" title="spdlog::details::i\l_formatter::format" alt="" coords="370,201,497,243"/>
+</map>

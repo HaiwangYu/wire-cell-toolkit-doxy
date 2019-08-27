@@ -1,0 +1,8 @@
+<map id="text_style::has_foreground" name="text_style::has_foreground">
+<area shape="rect" id="node2" href="$color_8h.html#a42974a7a26c04b309f65d3fbba3494f8" title="vprint" alt="" coords="229,93,284,119"/>
+<area shape="rect" id="node3" href="$color_8h.html#a63c7b66bfbfbf84f72a2c752cf28ff3e" title="print" alt="" coords="375,42,422,69"/>
+<area shape="rect" id="node6" href="$classbuffered__file.html#a0a34fceffc31cc126a6b731461c88d8d" title="buffered_file::vprint" alt="" coords="332,93,465,119"/>
+<area shape="rect" id="node7" href="$classbuffered__file.html#ad97c4521f94be51a5b30064803e2bef1" title="buffered_file::print" alt="" coords="335,143,462,170"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1logger.html#a3432e21bdc19d74024b57cc3f26a8471" title="spdlog::logger::default\l_err_handler_" alt="" coords="513,5,664,47"/>
+<area shape="rect" id="node5" href="$color_8h.html#abffe8544fd6312a00bc0e2adf99b1586" title="print" alt="" coords="565,71,612,98"/>
+</map>

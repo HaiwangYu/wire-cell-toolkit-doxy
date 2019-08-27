@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classspdlog_1_1sinks_1_1sink.html" title="spdlog::sinks::sink" alt="" coords="5,295,136,322"/>
+<area shape="rect" id="node2" href="$classspdlog_1_1sinks_1_1ansicolor__sink.html" title="spdlog::sinks::ansicolor\l_sink\&lt; TargetStream, ConsoleMutex \&gt;" alt="" coords="184,185,432,227"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1sinks_1_1base__sink.html" title="spdlog::sinks::base\l_sink\&lt; Mutex \&gt;" alt="" coords="241,251,375,292"/>
+<area shape="rect" id="node12" href="$classspdlog_1_1sinks_1_1stdout__sink.html" title="spdlog::sinks::stdout\l_sink\&lt; TargetStream,\l ConsoleMutex \&gt;" alt="" coords="234,317,382,373"/>
+<area shape="rect" id="node13" href="$classspdlog_1_1sinks_1_1wincolor__sink.html" title="spdlog::sinks::wincolor\l_sink\&lt; OutHandle, ConsoleMutex \&gt;" alt="" coords="193,397,423,439"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1sinks_1_1android__sink.html" title="spdlog::sinks::android\l_sink\&lt; Mutex \&gt;" alt="" coords="500,5,649,47"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1sinks_1_1basic__file__sink.html" title="spdlog::sinks::basic\l_file_sink\&lt; Mutex \&gt;" alt="" coords="505,71,644,112"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1sinks_1_1daily__file__sink.html" title="spdlog::sinks::daily\l_file_sink\&lt; Mutex, FileName\lCalc \&gt;" alt="" coords="480,137,669,193"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1sinks_1_1dist__sink.html" title="spdlog::sinks::dist\l_sink\&lt; Mutex \&gt;" alt="" coords="511,217,639,259"/>
+<area shape="rect" id="node8" href="$classspdlog_1_1sinks_1_1null__sink.html" title="spdlog::sinks::null\l_sink\&lt; Mutex \&gt;" alt="" coords="511,283,638,324"/>
+<area shape="rect" id="node9" href="$classspdlog_1_1sinks_1_1ostream__sink.html" title="spdlog::sinks::ostream\l_sink\&lt; Mutex \&gt;" alt="" coords="497,348,652,389"/>
+<area shape="rect" id="node10" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html" title="spdlog::sinks::rotating\l_file_sink\&lt; Mutex \&gt;" alt="" coords="499,413,650,455"/>
+<area shape="rect" id="node11" href="$classspdlog_1_1sinks_1_1syslog__sink.html" title="spdlog::sinks::syslog\l_sink\&lt; Mutex \&gt;" alt="" coords="502,479,647,520"/>
+</map>

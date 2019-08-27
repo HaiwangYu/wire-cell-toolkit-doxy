@@ -1,0 +1,213 @@
+\hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{}\section{Wire\+Cell\+:\+:Response\+:\+:Schema\+:\+:Field\+Response Struct Reference}
+\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+
+
+Hold info about multiple plane responses in the detector.  
+
+
+
+
+{\ttfamily \#include $<$Response.\+h$>$}
+
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Response\+:\+:Schema\+:\+:Field\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response} $\ast$ \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_ae156e1d6bbf8be35451100d1d43d9aaa}{plane} (int ident)
+\item 
+const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response} $\ast$ \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a916403c9c82353c59ba2af38755796e6}{plane} (int ident) const
+\item 
+\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a9f3b786a9adf83b6bf536d6442d53207}{Field\+Response} ()
+\item 
+\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a28ae333c27be1047dcaaf2f059858b9e}{Field\+Response} (const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response} $>$ \&\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a14b540e83977b1913ad00391aa719f49}{planes}, const \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Wire\+Cell\+::\+Vector} \&adir, double o, double t, double p, double s)
+\item 
+\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a1300de135b73edb353b1a0f25d27507f}{$\sim$\+Field\+Response} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response} $>$ \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a14b540e83977b1913ad00391aa719f49}{planes}
+\begin{DoxyCompactList}\small\item\em List of \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response} objects. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Wire\+Cell\+::\+Vector} \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_acae15775cad08bcffe0712dd65d1ff09}{axis}
+\item 
+double \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_aadaa425d6a5c65ed739a3f3b5f53cdbb}{origin}
+\item 
+double \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_ad635ad2311a574c52bf1d4f6375909d5}{tstart}
+\begin{DoxyCompactList}\small\item\em Time at which drift paths begin. \end{DoxyCompactList}\item 
+double \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_aabc2db965f6cb2194dea799fe1cffa9f}{period}
+\begin{DoxyCompactList}\small\item\em The sampling period of the response function. \end{DoxyCompactList}\item 
+double \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_af7e1b2ede3d1a533db44af94a9cb95d0}{speed}
+\begin{DoxyCompactList}\small\item\em The nominal drift speed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hold info about multiple plane responses in the detector. 
+
+Definition at line 75 of file Response.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a9f3b786a9adf83b6bf536d6442d53207}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a9f3b786a9adf83b6bf536d6442d53207}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!Field\+Response@{Field\+Response}}
+\index{Field\+Response@{Field\+Response}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{Field\+Response()}{FieldResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response\+::\+Field\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 114 of file Response.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a9f3b786a9adf83b6bf536d6442d53207_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a28ae333c27be1047dcaaf2f059858b9e}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a28ae333c27be1047dcaaf2f059858b9e}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!Field\+Response@{Field\+Response}}
+\index{Field\+Response@{Field\+Response}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{Field\+Response()}{FieldResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response\+::\+Field\+Response (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response} $>$ \&}]{planes,  }\item[{const \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Wire\+Cell\+::\+Vector} \&}]{adir,  }\item[{double}]{o,  }\item[{double}]{t,  }\item[{double}]{p,  }\item[{double}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 115 of file Response.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a1300de135b73edb353b1a0f25d27507f}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a1300de135b73edb353b1a0f25d27507f}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!````~Field\+Response@{$\sim$\+Field\+Response}}
+\index{````~Field\+Response@{$\sim$\+Field\+Response}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{$\sim$\+Field\+Response()}{~FieldResponse()}}
+{\footnotesize\ttfamily Response\+::\+Schema\+::\+Field\+Response\+::$\sim$\+Field\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 13 of file Response.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_ae156e1d6bbf8be35451100d1d43d9aaa}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_ae156e1d6bbf8be35451100d1d43d9aaa}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!plane@{plane}}
+\index{plane@{plane}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{plane()}{plane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response}$\ast$ Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response\+::plane (\begin{DoxyParamCaption}\item[{int}]{ident }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 97 of file Response.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_ae156e1d6bbf8be35451100d1d43d9aaa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a916403c9c82353c59ba2af38755796e6}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a916403c9c82353c59ba2af38755796e6}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!plane@{plane}}
+\index{plane@{plane}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{plane()}{plane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response}$\ast$ Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response\+::plane (\begin{DoxyParamCaption}\item[{int}]{ident }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file Response.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_acae15775cad08bcffe0712dd65d1ff09}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_acae15775cad08bcffe0712dd65d1ff09}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!axis@{axis}}
+\index{axis@{axis}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{axis}{axis}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Wire\+Cell\+::\+Vector} Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response\+::axis}
+
+A normalized 3-\/vector giving direction of axis (anti)parallel to nominal drift direction. 
+
+Definition at line 82 of file Response.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_aadaa425d6a5c65ed739a3f3b5f53cdbb}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_aadaa425d6a5c65ed739a3f3b5f53cdbb}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!origin@{origin}}
+\index{origin@{origin}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{origin}{origin}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response\+::origin}
+
+The location on the X-\/axis where drift paths begin. See \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response_aacc9dfe4e52b217a966dba448a34cf88}{Plane\+Response\+::location}. 
+
+Definition at line 86 of file Response.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_aabc2db965f6cb2194dea799fe1cffa9f}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_aabc2db965f6cb2194dea799fe1cffa9f}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!period@{period}}
+\index{period@{period}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{period}{period}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response\+::period}
+
+
+
+The sampling period of the response function. 
+
+
+
+Definition at line 92 of file Response.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a14b540e83977b1913ad00391aa719f49}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_a14b540e83977b1913ad00391aa719f49}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!planes@{planes}}
+\index{planes@{planes}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{planes}{planes}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response}$>$ Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response\+::planes}
+
+
+
+List of \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response} objects. 
+
+
+
+Definition at line 78 of file Response.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_af7e1b2ede3d1a533db44af94a9cb95d0}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_af7e1b2ede3d1a533db44af94a9cb95d0}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!speed@{speed}}
+\index{speed@{speed}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response\+::speed}
+
+
+
+The nominal drift speed. 
+
+
+
+Definition at line 95 of file Response.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_ad635ad2311a574c52bf1d4f6375909d5}\label{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response_ad635ad2311a574c52bf1d4f6375909d5}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}!tstart@{tstart}}
+\index{tstart@{tstart}!Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response@{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}}
+\subsubsection{\texorpdfstring{tstart}{tstart}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response\+::tstart}
+
+
+
+Time at which drift paths begin. 
+
+
+
+Definition at line 89 of file Response.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_response_8h}{Response.\+h}\item 
+util/src/\hyperlink{_response_8cxx}{Response.\+cxx}\end{DoxyCompactItemize}

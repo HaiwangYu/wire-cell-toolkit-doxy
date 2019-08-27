@@ -1,0 +1,29 @@
+<map id="img/inc/WireCellImg/ClusterSink.h" name="img/inc/WireCellImg/ClusterSink.h">
+<area shape="rect" id="node2" href="$_i_cluster_sink_8h.html" title="WireCellIface/IClusterSink.h" alt="" coords="727,95,915,121"/>
+<area shape="rect" id="node50" href="$_i_configurable_8h.html" title="WireCellIface/IConfigurable.h" alt="" coords="1769,557,1962,584"/>
+<area shape="rect" id="node3" href="$_i_sink_node_8h.html" title="WireCellIface/ISinkNode.h" alt="" coords="70,483,247,509"/>
+<area shape="rect" id="node10" href="$_i_cluster_8h.html" title="WireCellIface/ICluster.h" alt="" coords="740,169,903,196"/>
+<area shape="rect" id="node4" href="$_i_node_8h.html" title="WireCellIface/INode.h" alt="" coords="133,557,283,584"/>
+<area shape="rect" id="node5" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="1029,632,1208,659"/>
+<area shape="rect" id="node6" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="1049,707,1207,733"/>
+<area shape="rect" id="node11" href="$_i_channel_8h.html" title="WireCellIface/IChannel.h" alt="" coords="680,557,848,584"/>
+<area shape="rect" id="node12" href="$_i_wire_8h.html" title="WireCellIface/IWire.h" alt="" coords="859,632,1005,659"/>
+<area shape="rect" id="node27" href="$_wire_plane_id_8h.html" title="WireCellIface/WirePlaneId.h" alt="" coords="483,707,669,733"/>
+<area shape="rect" id="node31" href="$_i_blob_8h.html" title="WireCellIface/IBlob.h" alt="" coords="692,244,839,271"/>
+<area shape="rect" id="node36" href="$_i_slice_8h.html" title="WireCellIface/ISlice.h" alt="" coords="577,326,727,353"/>
+<area shape="rect" id="node43" href="$_indexed_graph_8h.html" title="WireCellUtil/IndexedGraph.h" alt="" coords="1277,244,1465,271"/>
+<area shape="rect" id="node24" href="$_i_data_8h.html" title="WireCellIface/IData.h" alt="" coords="259,707,407,733"/>
+<area shape="rect" id="node13" href="$_point_8h.html" title="WireCellUtil/Point.h" alt="" coords="1609,707,1746,733"/>
+<area shape="rect" id="node25" href="$_i_sequence_8h.html" title="WireCellIface/ISequence.h" alt="" coords="744,707,923,733"/>
+<area shape="rect" id="node14" href="$_d3_vector_8h.html" title="WireCellUtil/D3Vector.h" alt="" coords="1587,781,1749,808"/>
+<area shape="rect" id="node18" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="1773,781,1957,808"/>
+<area shape="rect" id="node26" href="$_iterator_base_8h.html" title="WireCellUtil/IteratorBase.h" alt="" coords="752,781,931,808"/>
+<area shape="rect" id="node32" href="$_i_anode_face_8h.html" title="WireCellIface/IAnodeFace.h" alt="" coords="1039,408,1225,435"/>
+<area shape="rect" id="node42" href="$_ray_tiling_8h.html" title="WireCellUtil/RayTiling.h" alt="" coords="1449,557,1612,584"/>
+<area shape="rect" id="node33" href="$_bounding_box_8h.html" title="WireCellUtil/BoundingBox.h" alt="" coords="1245,483,1429,509"/>
+<area shape="rect" id="node34" href="$_ray_grid_8h.html" title="WireCellUtil/RayGrid.h" alt="" coords="1565,632,1720,659"/>
+<area shape="rect" id="node35" href="$_i_wire_plane_8h.html" title="WireCellIface/IWirePlane.h" alt="" coords="813,483,993,509"/>
+<area shape="rect" id="node37" href="$_i_frame_8h.html" title="WireCellIface/IFrame.h" alt="" coords="723,408,880,435"/>
+<area shape="rect" id="node38" href="$_i_trace_8h.html" title="WireCellIface/ITrace.h" alt="" coords="630,632,783,659"/>
+<area shape="rect" id="node39" href="$_waveform_8h.html" title="WireCellUtil/Waveform.h" alt="" coords="1157,557,1323,584"/>
+</map>

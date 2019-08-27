@@ -1,0 +1,10 @@
+<map id="WireCell::IJoinNodeBase" name="WireCell::IJoinNodeBase">
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_join_node.html" title="WireCell::IJoinNode\l\&lt; std::tuple\&lt; IFrame,\l IFrame \&gt;, IFrame \&gt;" alt="" coords="781,20,927,76"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_i_join_node.html" title="WireCell::IJoinNode\l\&lt; InputTuple, OutputType \&gt;" alt="" coords="763,101,945,142"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="383,72,497,99"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="184,65,335,106"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,72,136,99"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_frame_joiner.html" title="WireCell::IFrameJoiner" alt="" coords="993,35,1149,61"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_frame_summer.html" title="WireCell::Gen::FrameSummer" alt="" coords="1197,5,1396,32"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_sig_proc_1_1_frame_merger.html" title="WireCell::SigProc::\lFrameMerger" alt="" coords="1229,57,1364,98"/>
+</map>

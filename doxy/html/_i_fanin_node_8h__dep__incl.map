@@ -1,0 +1,12 @@
+<map id="iface/inc/WireCellIface/IFaninNode.h" name="iface/inc/WireCellIface/IFaninNode.h">
+<area shape="rect" id="node2" href="$_i_blob_set_fanin_8h.html" title="iface/inc/WireCellIface\l/IBlobSetFanin.h" alt="" coords="413,95,568,136"/>
+<area shape="rect" id="node3" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="17,191,223,218"/>
+<area shape="rect" id="node6" href="$_i_cluster_fanin_8h.html" title="iface/inc/WireCellIface\l/IClusterFanin.h" alt="" coords="5,95,160,136"/>
+<area shape="rect" id="node7" href="$_i_frame_fanin_8h.html" title="iface/inc/WireCellIface\l/IFrameFanin.h" alt="" coords="235,95,389,136"/>
+<area shape="rect" id="node10" href="$_fanin_cat_8h.html" title="tbb/inc/WireCellTbb\l/FaninCat.h" alt="" coords="601,95,738,136"/>
+<area shape="rect" id="node4" href="$_blob_set_sync_8h.html" title="img/inc/WireCellImg\l/BlobSetSync.h" alt="" coords="421,184,561,225"/>
+<area shape="rect" id="node5" href="$_blob_set_sync_8cxx.html" title="img/src/BlobSetSync.cxx" alt="" coords="415,273,585,300"/>
+<area shape="rect" id="node8" href="$_frame_fanin_8h.html" title="gen/inc/WireCellGen\l/FrameFanin.h" alt="" coords="247,184,390,225"/>
+<area shape="rect" id="node9" href="$_frame_fanin_8cxx.html" title="gen/src/FrameFanin.cxx" alt="" coords="228,273,391,300"/>
+<area shape="rect" id="node11" href="$_wrapper_factory_8cxx.html" title="tbb/src/WrapperFactory.cxx" alt="" coords="585,191,769,218"/>
+</map>

@@ -1,0 +1,151 @@
+\hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping}{}\section{Wire\+Cell\+:\+:Ray\+Grid\+:\+:Grouping Class Reference}
+\label{class_wire_cell_1_1_ray_grid_1_1_grouping}\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+
+
+{\ttfamily \#include $<$Ray\+Solving.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_ray_grid_1_1_grouping_1_1node__t}{node\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef size\+\_\+t \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_aa7b318b7f8e9a48aa15d037bd046a09b}{ident\+\_\+t}
+\item 
+typedef boost\+::adjacency\+\_\+list$<$ boost\+::vecS, boost\+::vecS, boost\+::undirectedS, \hyperlink{struct_wire_cell_1_1_ray_grid_1_1_grouping_1_1node__t}{node\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a9db75b60d59cf5af39e5957af343b5d7}{graph\+\_\+t}
+\item 
+typedef boost\+::graph\+\_\+traits$<$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a9db75b60d59cf5af39e5957af343b5d7}{graph\+\_\+t} $>$\+::vertex\+\_\+descriptor \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a143345784361462296e8357afb885ec0}{vertex\+\_\+t}
+\item 
+typedef std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_ray_grid_1_1_grouping_1_1node__t}{node\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a97df53c020a311ad1fccc395195fcd88}{cluster\+\_\+t}
+\item 
+typedef std\+::unordered\+\_\+map$<$ int, \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a97df53c020a311ad1fccc395195fcd88}{cluster\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a0a4ee47c906176803dd7b3e42803d0ed}{clusterset\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_aea24a0adda0b9e0060bdc3b0681745a0}{Grouping} ()=default
+\item 
+virtual \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_af53fed96735c381bc8725c92e602fa13}{$\sim$\+Grouping} ()=default
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a7aad92465bc7a1126e9e45997388a77b}{add} (char ntype, \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_aa7b318b7f8e9a48aa15d037bd046a09b}{ident\+\_\+t} chid, std\+::vector$<$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_aa7b318b7f8e9a48aa15d037bd046a09b}{ident\+\_\+t} $>$ wids, float value, float weight=1.\+0)
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a0a4ee47c906176803dd7b3e42803d0ed}{clusterset\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a691790f384da883bcfcef022dd075504}{clusters} ()
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a9db75b60d59cf5af39e5957af343b5d7}{graph\+\_\+t} \& \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a7a0a10096795b1a1f6bc67122d0b34b5}{graph} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file Ray\+Solving.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping_a97df53c020a311ad1fccc395195fcd88}\label{class_wire_cell_1_1_ray_grid_1_1_grouping_a97df53c020a311ad1fccc395195fcd88}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}!cluster\+\_\+t@{cluster\+\_\+t}}
+\index{cluster\+\_\+t@{cluster\+\_\+t}!Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+\subsubsection{\texorpdfstring{cluster\+\_\+t}{cluster\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{struct_wire_cell_1_1_ray_grid_1_1_grouping_1_1node__t}{node\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a97df53c020a311ad1fccc395195fcd88}{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping\+::cluster\+\_\+t}}
+
+
+
+Definition at line 40 of file Ray\+Solving.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping_a0a4ee47c906176803dd7b3e42803d0ed}\label{class_wire_cell_1_1_ray_grid_1_1_grouping_a0a4ee47c906176803dd7b3e42803d0ed}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}!clusterset\+\_\+t@{clusterset\+\_\+t}}
+\index{clusterset\+\_\+t@{clusterset\+\_\+t}!Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+\subsubsection{\texorpdfstring{clusterset\+\_\+t}{clusterset\_t}}
+{\footnotesize\ttfamily typedef std\+::unordered\+\_\+map$<$int, \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a97df53c020a311ad1fccc395195fcd88}{cluster\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a0a4ee47c906176803dd7b3e42803d0ed}{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping\+::clusterset\+\_\+t}}
+
+
+
+Definition at line 41 of file Ray\+Solving.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping_a9db75b60d59cf5af39e5957af343b5d7}\label{class_wire_cell_1_1_ray_grid_1_1_grouping_a9db75b60d59cf5af39e5957af343b5d7}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}!graph\+\_\+t@{graph\+\_\+t}}
+\index{graph\+\_\+t@{graph\+\_\+t}!Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+\subsubsection{\texorpdfstring{graph\+\_\+t}{graph\_t}}
+{\footnotesize\ttfamily typedef boost\+::adjacency\+\_\+list$<$boost\+::vecS, boost\+::vecS, boost\+::undirectedS, \hyperlink{struct_wire_cell_1_1_ray_grid_1_1_grouping_1_1node__t}{node\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a9db75b60d59cf5af39e5957af343b5d7}{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping\+::graph\+\_\+t}}
+
+
+
+Definition at line 33 of file Ray\+Solving.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping_aa7b318b7f8e9a48aa15d037bd046a09b}\label{class_wire_cell_1_1_ray_grid_1_1_grouping_aa7b318b7f8e9a48aa15d037bd046a09b}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}!ident\+\_\+t@{ident\+\_\+t}}
+\index{ident\+\_\+t@{ident\+\_\+t}!Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+\subsubsection{\texorpdfstring{ident\+\_\+t}{ident\_t}}
+{\footnotesize\ttfamily typedef size\+\_\+t \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_aa7b318b7f8e9a48aa15d037bd046a09b}{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping\+::ident\+\_\+t}}
+
+
+
+Definition at line 26 of file Ray\+Solving.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping_a143345784361462296e8357afb885ec0}\label{class_wire_cell_1_1_ray_grid_1_1_grouping_a143345784361462296e8357afb885ec0}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}!vertex\+\_\+t@{vertex\+\_\+t}}
+\index{vertex\+\_\+t@{vertex\+\_\+t}!Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+\subsubsection{\texorpdfstring{vertex\+\_\+t}{vertex\_t}}
+{\footnotesize\ttfamily typedef boost\+::graph\+\_\+traits$<$\hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a9db75b60d59cf5af39e5957af343b5d7}{graph\+\_\+t}$>$\+::vertex\+\_\+descriptor \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a143345784361462296e8357afb885ec0}{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping\+::vertex\+\_\+t}}
+
+
+
+Definition at line 34 of file Ray\+Solving.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping_aea24a0adda0b9e0060bdc3b0681745a0}\label{class_wire_cell_1_1_ray_grid_1_1_grouping_aea24a0adda0b9e0060bdc3b0681745a0}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}!Grouping@{Grouping}}
+\index{Grouping@{Grouping}!Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+\subsubsection{\texorpdfstring{Grouping()}{Grouping()}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping\+::\+Grouping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping_af53fed96735c381bc8725c92e602fa13}\label{class_wire_cell_1_1_ray_grid_1_1_grouping_af53fed96735c381bc8725c92e602fa13}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}!````~Grouping@{$\sim$\+Grouping}}
+\index{````~Grouping@{$\sim$\+Grouping}!Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+\subsubsection{\texorpdfstring{$\sim$\+Grouping()}{~Grouping()}}
+{\footnotesize\ttfamily virtual Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping\+::$\sim$\+Grouping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping_a7aad92465bc7a1126e9e45997388a77b}\label{class_wire_cell_1_1_ray_grid_1_1_grouping_a7aad92465bc7a1126e9e45997388a77b}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}!add@{add}}
+\index{add@{add}!Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Ray\+Grid\+::\+Grouping\+::add (\begin{DoxyParamCaption}\item[{char}]{ntype,  }\item[{\hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_aa7b318b7f8e9a48aa15d037bd046a09b}{ident\+\_\+t}}]{chid,  }\item[{std\+::vector$<$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_aa7b318b7f8e9a48aa15d037bd046a09b}{ident\+\_\+t} $>$}]{wids,  }\item[{float}]{value,  }\item[{float}]{weight = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 21 of file Ray\+Solving.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping_a691790f384da883bcfcef022dd075504}\label{class_wire_cell_1_1_ray_grid_1_1_grouping_a691790f384da883bcfcef022dd075504}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}!clusters@{clusters}}
+\index{clusters@{clusters}!Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+\subsubsection{\texorpdfstring{clusters()}{clusters()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a0a4ee47c906176803dd7b3e42803d0ed}{Ray\+Grid\+::\+Grouping\+::clusterset\+\_\+t} Ray\+Grid\+::\+Grouping\+::clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file Ray\+Solving.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_grouping_a7a0a10096795b1a1f6bc67122d0b34b5}\label{class_wire_cell_1_1_ray_grid_1_1_grouping_a7a0a10096795b1a1f6bc67122d0b34b5}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}!graph@{graph}}
+\index{graph@{graph}!Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping@{Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping}}
+\subsubsection{\texorpdfstring{graph()}{graph()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_ray_grid_1_1_grouping_a9db75b60d59cf5af39e5957af343b5d7}{graph\+\_\+t}\& Wire\+Cell\+::\+Ray\+Grid\+::\+Grouping\+::graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 46 of file Ray\+Solving.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_ray_solving_8h}{Ray\+Solving.\+h}\item 
+util/src/\hyperlink{_ray_solving_8cxx}{Ray\+Solving.\+cxx}\end{DoxyCompactItemize}

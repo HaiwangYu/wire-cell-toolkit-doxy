@@ -1,0 +1,114 @@
+\hypertarget{class_wire_cell_1_1_i_channel_filter}{}\section{Wire\+Cell\+:\+:I\+Channel\+Filter Class Reference}
+\label{class_wire_cell_1_1_i_channel_filter}\index{Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}}
+
+
+{\ttfamily \#include $<$I\+Channel\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Channel\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_channel_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Channel\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{class_wire_cell_1_1_i_channel_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t}
+\item 
+typedef std\+::map$<$ int, \hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_filter_a25e462786015d136cb57367c945524cb}{$\sim$\+I\+Channel\+Filter} ()
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_i_channel_filter_a6981186ee38a4b9b66e16c0d9b376b08}{apply} (int channel, \hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&sig) const =0
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_i_channel_filter_a47554d77b1dca5596dc61e2221e0a137}{apply} (\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t} \&chansig) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A channel filter mutates digitized waveforms from channels. 
+
+Definition at line 14 of file I\+Channel\+Filter.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}\label{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}!channel\+\_\+signals\+\_\+t@{channel\+\_\+signals\+\_\+t}}
+\index{channel\+\_\+signals\+\_\+t@{channel\+\_\+signals\+\_\+t}!Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}}
+\subsubsection{\texorpdfstring{channel\+\_\+signals\+\_\+t}{channel\_signals\_t}}
+{\footnotesize\ttfamily typedef std\+::map$<$int, \hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{Wire\+Cell\+::\+I\+Channel\+Filter\+::channel\+\_\+signals\+\_\+t}}
+
+
+
+Definition at line 20 of file I\+Channel\+Filter.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}\label{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}!signal\+\_\+t@{signal\+\_\+t}}
+\index{signal\+\_\+t@{signal\+\_\+t}!Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}}
+\subsubsection{\texorpdfstring{signal\+\_\+t}{signal\_t}}
+{\footnotesize\ttfamily typedef \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{Wire\+Cell\+::\+I\+Channel\+Filter\+::signal\+\_\+t}}
+
+
+
+Definition at line 19 of file I\+Channel\+Filter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_filter_a25e462786015d136cb57367c945524cb}\label{class_wire_cell_1_1_i_channel_filter_a25e462786015d136cb57367c945524cb}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}!````~I\+Channel\+Filter@{$\sim$\+I\+Channel\+Filter}}
+\index{````~I\+Channel\+Filter@{$\sim$\+I\+Channel\+Filter}!Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Channel\+Filter()}{~IChannelFilter()}}
+{\footnotesize\ttfamily I\+Channel\+Filter\+::$\sim$\+I\+Channel\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 101 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_filter_a6981186ee38a4b9b66e16c0d9b376b08}\label{class_wire_cell_1_1_i_channel_filter_a6981186ee38a4b9b66e16c0d9b376b08}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} Wire\+Cell\+::\+I\+Channel\+Filter\+::apply (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&}]{sig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Filter in place the signal {\ttfamily sig} from given {\ttfamily channel}. Return a channel mask map with any tick-\/level masking that may be applied later. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_a_d_c_bit_shift_a78c5feeb9f0ab8a04af03d75a8c83046}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+A\+D\+C\+Bit\+Shift}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_rel_gain_calib_ae841532dd723111810c797fb13e0df3a}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Rel\+Gain\+Calib}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_af75669068bb7e6b9e618c887025c9fa3}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_noise_a4d5cb537b5d9ca736fc1bbd3c463b76f}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Noise}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a7d891c87a8867d57fc4b6ac86d226876}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a039888ecfad21c7a4e5724566661501d}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a158d7c7d804ad6548383fedba2d3f115}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_filter_a47554d77b1dca5596dc61e2221e0a137}\label{class_wire_cell_1_1_i_channel_filter_a47554d77b1dca5596dc61e2221e0a137}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+I\+Channel\+Filter@{Wire\+Cell\+::\+I\+Channel\+Filter}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} Wire\+Cell\+::\+I\+Channel\+Filter\+::apply (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t} \&}]{chansig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Filter in place a group of signals together. Return a channel mask map with any tick-\/level masking that may be applied later. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_a_d_c_bit_shift_a6815b2cc680e5fb222239f2875773352}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+A\+D\+C\+Bit\+Shift}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_rel_gain_calib_afa25d6774f5ea8bf33ba28494ef2a0f4}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Rel\+Gain\+Calib}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a4719e79f3e553512387a4de632451818}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_noise_a89d35e0006bd5a44cdd046e2d9549fa4}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Noise}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_ae4c1803fb4849e5a9e73f65d79fdc909}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a0c98bcbea0288592dfe6603e92b742b5}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig_a59d9c2567caa4f84b0e1a2cba57c0b6d}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_channel_filter_8h}{I\+Channel\+Filter.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

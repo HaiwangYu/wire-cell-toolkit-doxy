@@ -1,0 +1,34 @@
+<map id="gen/src/SilentNoise.cxx" name="gen/src/SilentNoise.cxx">
+<area shape="rect" id="node2" href="$_silent_noise_8h.html" title="WireCellGen/SilentNoise.h" alt="" coords="550,155,729,181"/>
+<area shape="rect" id="node26" href="$_named_factory_8h.html" title="WireCellUtil/NamedFactory.h" alt="" coords="2045,80,2239,107"/>
+<area shape="rect" id="node48" href="$_units_8h.html" title="WireCellUtil/Units.h" alt="" coords="1053,155,1191,181"/>
+<area shape="rect" id="node49" href="$_simple_frame_8h.html" title="WireCellIface/SimpleFrame.h" alt="" coords="1119,80,1312,107"/>
+<area shape="rect" id="node50" href="$_simple_trace_8h.html" title="WireCellIface/SimpleTrace.h" alt="" coords="1233,304,1422,331"/>
+<area shape="rect" id="node3" href="$_i_frame_source_8h.html" title="WireCellIface/IFrameSource.h" alt="" coords="540,229,739,256"/>
+<area shape="rect" id="node25" href="$_i_configurable_8h.html" title="WireCellIface/IConfigurable.h" alt="" coords="5,379,199,405"/>
+<area shape="rect" id="node4" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="631,453,810,480"/>
+<area shape="rect" id="node8" href="$_i_source_node_8h.html" title="WireCellIface/ISourceNode.h" alt="" coords="445,304,637,331"/>
+<area shape="rect" id="node11" href="$_i_frame_8h.html" title="WireCellIface/IFrame.h" alt="" coords="1051,304,1209,331"/>
+<area shape="rect" id="node5" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="647,535,805,562"/>
+<area shape="rect" id="node9" href="$_i_node_8h.html" title="WireCellIface/INode.h" alt="" coords="485,379,636,405"/>
+<area shape="rect" id="node12" href="$_i_trace_8h.html" title="WireCellIface/ITrace.h" alt="" coords="1069,379,1223,405"/>
+<area shape="rect" id="node15" href="$_i_wire_plane_8h.html" title="WireCellIface/IWirePlane.h" alt="" coords="813,379,993,405"/>
+<area shape="rect" id="node16" href="$_wire_plane_id_8h.html" title="WireCellIface/WirePlaneId.h" alt="" coords="274,379,461,405"/>
+<area shape="rect" id="node22" href="$_waveform_8h.html" title="WireCellUtil/Waveform.h" alt="" coords="1400,379,1567,405"/>
+<area shape="rect" id="node13" href="$_i_data_8h.html" title="WireCellIface/IData.h" alt="" coords="1024,453,1172,480"/>
+<area shape="rect" id="node14" href="$_i_sequence_8h.html" title="WireCellIface/ISequence.h" alt="" coords="978,535,1157,562"/>
+<area shape="rect" id="node17" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="194,453,378,480"/>
+<area shape="rect" id="node27" href="$_i_factory_8h.html" title="WireCellUtil/IFactory.h" alt="" coords="1045,229,1199,256"/>
+<area shape="rect" id="node28" href="$_singleton_8h.html" title="WireCellUtil/Singleton.h" alt="" coords="1745,155,1907,181"/>
+<area shape="rect" id="node29" href="$_plugin_manager_8h.html" title="WireCellUtil/PluginManager.h" alt="" coords="2391,155,2584,181"/>
+<area shape="rect" id="node30" href="$_logging_8h.html" title="WireCellUtil/Logging.h" alt="" coords="2546,229,2698,256"/>
+<area shape="rect" id="node38" href="$_type_8h.html" title="WireCellUtil/Type.h" alt="" coords="1585,155,1721,181"/>
+<area shape="rect" id="node40" href="$_string_8h.html" title="WireCellUtil/String.h" alt="" coords="1883,379,2025,405"/>
+<area shape="rect" id="node43" href="$_exceptions_8h.html" title="WireCellUtil/Exceptions.h" alt="" coords="1983,155,2155,181"/>
+<area shape="rect" id="node31" href="$spdlog_8h.html" title="spdlog/spdlog.h" alt="" coords="2423,304,2536,331"/>
+<area shape="rect" id="node37" href="$ostr_8h.html" title="spdlog/fmt/ostr.h" alt="" coords="2562,304,2682,331"/>
+<area shape="rect" id="node32" href="$common_8h.html" title="spdlog/common.h" alt="" coords="2607,535,2733,562"/>
+<area shape="rect" id="node34" href="$registry_8h.html" title="spdlog/details/registry.h" alt="" coords="2562,379,2722,405"/>
+<area shape="rect" id="node35" href="$logger_8h.html" title="spdlog/logger.h" alt="" coords="2371,453,2481,480"/>
+<area shape="rect" id="node36" href="$version_8h.html" title="spdlog/version.h" alt="" coords="2421,379,2538,405"/>
+</map>

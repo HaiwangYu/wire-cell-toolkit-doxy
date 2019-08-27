@@ -1,0 +1,10 @@
+<map id="sigproc/inc/WireCellSigProc/PerChannelResponse.h" name="sigproc/inc/WireCellSigProc/PerChannelResponse.h">
+<area shape="rect" id="node2" href="$_i_channel_response_8h.html" title="WireCellIface/IChannelResponse.h" alt="" coords="373,95,600,121"/>
+<area shape="rect" id="node17" href="$_i_configurable_8h.html" title="WireCellIface/IConfigurable.h" alt="" coords="681,95,874,121"/>
+<area shape="rect" id="node23" href="$_units_8h.html" title="WireCellUtil/Units.h" alt="" coords="899,95,1037,121"/>
+<area shape="rect" id="node3" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="684,169,863,196"/>
+<area shape="rect" id="node7" href="$_binning_8h.html" title="WireCellUtil/Binning.h" alt="" coords="91,169,242,196"/>
+<area shape="rect" id="node11" href="$_waveform_8h.html" title="WireCellUtil/Waveform.h" alt="" coords="399,169,566,196"/>
+<area shape="rect" id="node4" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="790,251,949,278"/>
+<area shape="rect" id="node18" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="1020,169,1204,196"/>
+</map>

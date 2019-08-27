@@ -1,0 +1,7 @@
+<map id="spdlog::source_loc::empty" name="spdlog::source_loc::empty">
+<area shape="rect" id="node2" href="$classspdlog_1_1details_1_1source__location__formatter.html#af0d34490d35c582fdb1553a27f03e147" title="spdlog::details::source\l_location_formatter::format" alt="" coords="190,5,369,47"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1details_1_1source__filename__formatter.html#a9a2e549eda5c8044c76281be33b04b38" title="spdlog::details::source\l_filename_formatter::format" alt="" coords="188,71,371,112"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1details_1_1source__linenum__formatter.html#ac165ced330bd04ea5485e182b9d913a2" title="spdlog::details::source\l_linenum_formatter::format" alt="" coords="190,136,369,177"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1details_1_1source__funcname__formatter.html#a7628b8914c638affa0bf0fc9de62f0e4" title="spdlog::details::source\l_funcname_formatter::format" alt="" coords="184,201,375,243"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1details_1_1full__formatter.html#a11da1d2ec8378841d228df071915da35" title="spdlog::details::full\l_formatter::format" alt="" coords="214,267,345,308"/>
+</map>

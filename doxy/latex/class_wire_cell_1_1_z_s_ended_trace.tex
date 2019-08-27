@@ -1,0 +1,143 @@
+\hypertarget{class_wire_cell_1_1_z_s_ended_trace}{}\section{Wire\+Cell\+:\+:Z\+S\+Ended\+Trace Class Reference}
+\label{class_wire_cell_1_1_z_s_ended_trace}\index{Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}}
+
+
+{\ttfamily \#include $<$Z\+S\+Ended\+Trace.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Z\+S\+Ended\+Trace\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_wire_cell_1_1_z_s_ended_trace__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Z\+S\+Ended\+Trace\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_wire_cell_1_1_z_s_ended_trace__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_z_s_ended_trace_a08a65ba205647c8e2d6305c075f08d3c}{Z\+S\+Ended\+Trace} (int chid, int nbins=0)
+\item 
+void \hyperlink{class_wire_cell_1_1_z_s_ended_trace_ae621cf5fc681fb31197731b313c5093e}{operator()} (int \hyperlink{class_wire_cell_1_1_z_s_ended_trace_ac0ae929485ed907726568f02193e931f}{tbin}, float \hyperlink{class_wire_cell_1_1_z_s_ended_trace_ab2434cf1397e2bc111fd44ffd0afe75e}{charge})
+\begin{DoxyCompactList}\small\item\em used to fill. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_z_s_ended_trace_ac873750a7a0d47c320050561e8608a0a}{channel} () const
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_z_s_ended_trace_ac0ae929485ed907726568f02193e931f}{tbin} () const
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Charge\+Sequence} \& \hyperlink{class_wire_cell_1_1_z_s_ended_trace_ab2434cf1397e2bc111fd44ffd0afe75e}{charge} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This concrete trace is filled by time bin and charge.
+
+It provides the results of the filling such that the Charge\+Sequence is trivially (exactly) zero suppressed but only at the ends. Any zeros bounded by non-\/zero charge are kept. 
+
+Definition at line 17 of file Z\+S\+Ended\+Trace.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_z_s_ended_trace_a08a65ba205647c8e2d6305c075f08d3c}\label{class_wire_cell_1_1_z_s_ended_trace_a08a65ba205647c8e2d6305c075f08d3c}} 
+\index{Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}!Z\+S\+Ended\+Trace@{Z\+S\+Ended\+Trace}}
+\index{Z\+S\+Ended\+Trace@{Z\+S\+Ended\+Trace}!Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}}
+\subsubsection{\texorpdfstring{Z\+S\+Ended\+Trace()}{ZSEndedTrace()}}
+{\footnotesize\ttfamily Z\+S\+Ended\+Trace\+::\+Z\+S\+Ended\+Trace (\begin{DoxyParamCaption}\item[{int}]{chid,  }\item[{int}]{nbins = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file Z\+S\+Ended\+Trace.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_z_s_ended_trace_ac873750a7a0d47c320050561e8608a0a}\label{class_wire_cell_1_1_z_s_ended_trace_ac873750a7a0d47c320050561e8608a0a}} 
+\index{Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}!channel@{channel}}
+\index{channel@{channel}!Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}}
+\subsubsection{\texorpdfstring{channel()}{channel()}}
+{\footnotesize\ttfamily int Z\+S\+Ended\+Trace\+::channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the identifier number for the channel on which this trace was recorded. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_trace_ae5903cdd197baf3b0ea67d80685851cb}{Wire\+Cell\+::\+I\+Trace}.
+
+
+
+Definition at line 19 of file Z\+S\+Ended\+Trace.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_z_s_ended_trace_ab2434cf1397e2bc111fd44ffd0afe75e}\label{class_wire_cell_1_1_z_s_ended_trace_ab2434cf1397e2bc111fd44ffd0afe75e}} 
+\index{Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}!charge@{charge}}
+\index{charge@{charge}!Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}}
+\subsubsection{\texorpdfstring{charge()}{charge()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Z\+S\+Ended\+Trace\+::\+Charge\+Sequence} \& Z\+S\+Ended\+Trace\+::charge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the contiguous adc/charge measurements on the channel starting at tbin. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_trace_a55a746bfec82aa0214f0462ae28476e0}{Wire\+Cell\+::\+I\+Trace}.
+
+
+
+Definition at line 29 of file Z\+S\+Ended\+Trace.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_z_s_ended_trace_ab2434cf1397e2bc111fd44ffd0afe75e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_z_s_ended_trace_ae621cf5fc681fb31197731b313c5093e}\label{class_wire_cell_1_1_z_s_ended_trace_ae621cf5fc681fb31197731b313c5093e}} 
+\index{Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily void Z\+S\+Ended\+Trace\+::operator() (\begin{DoxyParamCaption}\item[{int}]{tbin,  }\item[{float}]{charge }\end{DoxyParamCaption})}
+
+
+
+used to fill. 
+
+
+
+Definition at line 12 of file Z\+S\+Ended\+Trace.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_z_s_ended_trace_ae621cf5fc681fb31197731b313c5093e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_z_s_ended_trace_ac0ae929485ed907726568f02193e931f}\label{class_wire_cell_1_1_z_s_ended_trace_ac0ae929485ed907726568f02193e931f}} 
+\index{Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}!tbin@{tbin}}
+\index{tbin@{tbin}!Wire\+Cell\+::\+Z\+S\+Ended\+Trace@{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}}
+\subsubsection{\texorpdfstring{tbin()}{tbin()}}
+{\footnotesize\ttfamily int Z\+S\+Ended\+Trace\+::tbin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the time bin relative to some absolute time (typically the start of the frame) at which the first A\+D\+C/charge in the trace was digitized (leading bin edge). 
+
+Implements \hyperlink{class_wire_cell_1_1_i_trace_ab8ffd89fdf73ef4b7b55af2f9c4312df}{Wire\+Cell\+::\+I\+Trace}.
+
+
+
+Definition at line 24 of file Z\+S\+Ended\+Trace.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_z_s_ended_trace_8h}{Z\+S\+Ended\+Trace.\+h}\item 
+gen/src/\hyperlink{_z_s_ended_trace_8cxx}{Z\+S\+Ended\+Trace.\+cxx}\end{DoxyCompactItemize}

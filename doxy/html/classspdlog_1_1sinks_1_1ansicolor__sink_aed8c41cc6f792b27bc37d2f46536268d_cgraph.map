@@ -1,0 +1,8 @@
+<map id="spdlog::sinks::ansicolor_sink::ansicolor_sink" name="spdlog::sinks::ansicolor_sink::ansicolor_sink">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1os.html#a2d4716c3ff12a2cc7f3bae7f3f769917" title="spdlog::details::os\l::in_terminal" alt="" coords="227,5,355,47"/>
+<area shape="rect" id="node3" href="$namespacespdlog_1_1details_1_1os.html#a41c3f67d2cbabfcb20e89d0524e5097f" title="spdlog::details::os\l::is_color_terminal" alt="" coords="227,71,355,112"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1sinks_1_1ansicolor__sink.html#abca2e1439a310ff1a4d75044a5c718d1" title="spdlog::sinks::ansicolor\l_sink::~ansicolor_sink" alt="" coords="212,136,371,177"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1sinks_1_1ansicolor__sink.html#a7d2fcd5a2f9a3f02e64648a609a45fb1" title="spdlog::sinks::ansicolor\l_sink::operator=" alt="" coords="212,201,371,243"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a265f36d9dee68d3f44381347ef2fd5cb" title="internal::begin" alt="" coords="419,53,521,79"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="423,103,517,130"/>
+</map>

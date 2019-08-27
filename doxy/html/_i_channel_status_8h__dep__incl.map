@@ -1,0 +1,7 @@
+<map id="iface/inc/WireCellIface/IChannelStatus.h" name="iface/inc/WireCellIface/IChannelStatus.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_empirical_noise_model_8h.html" title="gen/inc/WireCellGen\l/EmpiricalNoiseModel.h" alt="" coords="235,95,395,136"/>
+<area shape="rect" id="node5" href="$_static_channel_status_8h.html" title="gen/inc/WireCellGen\l/StaticChannelStatus.h" alt="" coords="433,95,591,136"/>
+<area shape="rect" id="node4" href="$_empirical_noise_model_8cxx.html" title="gen/src/EmpiricalNoiseModel.cxx" alt="" coords="191,184,409,211"/>
+<area shape="rect" id="node6" href="$_static_channel_status_8cxx.html" title="gen/src/StaticChannelStatus.cxx" alt="" coords="433,184,647,211"/>
+</map>

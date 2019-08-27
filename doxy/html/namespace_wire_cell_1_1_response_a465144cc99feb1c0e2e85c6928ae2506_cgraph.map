@@ -1,0 +1,7 @@
+<map id="WireCell::Response::average_1D" name="WireCell::Response::average_1D">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_response.html#a11620870420942188de46612d3e2022f" title="WireCell::Response\l::wire_region_average" alt="" coords="192,78,341,119"/>
+<area shape="rect" id="node3" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#ae156e1d6bbf8be35451100d1d43d9aaa" title="WireCell::Response\l::Schema::FieldResponse\l::plane" alt="" coords="389,5,563,61"/>
+<area shape="rect" id="node5" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#a9f3b786a9adf83b6bf536d6442d53207" title="WireCell::Response\l::Schema::FieldResponse\l::FieldResponse" alt="" coords="389,136,563,192"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_response.html#a8f1890f06132c13edca92ab1d9ea9263" title="WireCell::Response\l::as_array" alt="" coords="197,195,336,237"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_waveform.html#a4c7b82a4567d6c94227398f9511ffb92" title="Return sum of all entries in sequence. " alt="" coords="389,85,563,112"/>
+</map>

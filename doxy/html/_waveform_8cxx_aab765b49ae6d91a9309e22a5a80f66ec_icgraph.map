@@ -1,0 +1,11 @@
+<map id="c2r" name="c2r">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_waveform.html#a40f3344b248eea24a08d391e8f402bb8" title="Return the real part of the sequence. " alt="" coords="93,5,233,47"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_waveform.html#acc803e535b3e979dc331088b9fba8bc1" title="Return the imaginary part of the sequence. " alt="" coords="93,71,233,112"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_waveform.html#ae8dc1c86082f99f8cbfedb8434d22bc2" title="Return the magnitude or absolute value of the sequence. " alt="" coords="93,201,233,243"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1_waveform.html#abcab023facead1d0eb14e2042ce578bb" title="Return the phase or arg part of the sequence. " alt="" coords="93,136,233,177"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise.html#a2f0a41f11d154f971da95d9127be594d" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="281,26,476,82"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_waveform.html#ad08232b659cba09cf7174b900c557be5" title="WireCell::Waveform\l::resample" alt="" coords="309,107,449,148"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#a9ed3c28256c1c262064c62816b4b225f" title="IChannelSpectrum. " alt="" coords="295,172,462,213"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_response_sys.html#a71ff5f000f152ebfe338a15f0d49f0ef" title="WireCell::Gen::ResponseSys\l::ResponseSys" alt="" coords="281,237,476,279"/>
+<area shape="rect" id="node9" href="$struct_wire_cell_1_1_compare_points.html#ae6ab32afd52b312e3d452e68996fca76" title="WireCell::ComparePoints\l::operator()" alt="" coords="293,303,464,344"/>
+</map>

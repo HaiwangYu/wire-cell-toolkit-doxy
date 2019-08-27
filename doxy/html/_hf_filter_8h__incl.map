@@ -1,0 +1,14 @@
+<map id="sigproc/inc/WireCellSigProc/HfFilter.h" name="sigproc/inc/WireCellSigProc/HfFilter.h">
+<area shape="rect" id="node2" href="$_i_filter_waveform_8h.html" title="WireCellIface/IFilterWaveform.h" alt="" coords="781,95,990,121"/>
+<area shape="rect" id="node14" href="$_i_configurable_8h.html" title="WireCellIface/IConfigurable.h" alt="" coords="514,95,707,121"/>
+<area shape="rect" id="node20" href="$_response_8h.html" title="WireCellUtil/Response.h" alt="" coords="1039,95,1206,121"/>
+<area shape="rect" id="node3" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="521,169,700,196"/>
+<area shape="rect" id="node7" href="$_waveform_8h.html" title="WireCellUtil/Waveform.h" alt="" coords="1405,244,1571,271"/>
+<area shape="rect" id="node4" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="431,244,590,271"/>
+<area shape="rect" id="node15" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="223,244,407,271"/>
+<area shape="rect" id="node21" href="$_binning_8h.html" title="WireCellUtil/Binning.h" alt="" coords="1230,244,1381,271"/>
+<area shape="rect" id="node24" href="$_units_8h.html" title="WireCellUtil/Units.h" alt="" coords="1289,169,1428,196"/>
+<area shape="rect" id="node25" href="$_array_8h.html" title="WireCellUtil/Array.h" alt="" coords="975,169,1113,196"/>
+<area shape="rect" id="node27" href="$_point_8h.html" title="WireCellUtil/Point.h" alt="" coords="725,169,862,196"/>
+<area shape="rect" id="node28" href="$_d3_vector_8h.html" title="WireCellUtil/D3Vector.h" alt="" coords="932,244,1095,271"/>
+</map>

@@ -1,0 +1,163 @@
+\hypertarget{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4}{}\section{fmt\+:\+:formatter$<$ spdlog\+:\+:details\+:\+:bytes\+\_\+range$<$ T $>$ $>$ Struct Template Reference}
+\label{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4}\index{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}}
+
+
+{\ttfamily \#include $<$bin\+\_\+to\+\_\+hex.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Parse\+Context $>$ }\\auto \hyperlink{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_ada366ec2d0f00fa94560551fdbbbb640}{parse} (Parse\+Context \&ctx) -\/$>$ decltype(ctx.\+begin())
+\item 
+{\footnotesize template$<$typename Format\+Context , typename Container $>$ }\\auto \hyperlink{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a23665231993cdeb323a86ecb9a7a63a1}{format} (const \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ Container $>$ \&the\+\_\+range, Format\+Context \&ctx) -\/$>$ decltype(ctx.\+out())
+\item 
+{\footnotesize template$<$typename It $>$ }\\std\+::size\+\_\+t \hyperlink{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_ae001a71b76b4a56f722a7b91c506e9bf}{put\+\_\+newline} (It inserter, std\+::size\+\_\+t pos)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::size\+\_\+t \hyperlink{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_aae6b62746bc315b2927199438ba2f87a}{line\+\_\+size} = 100
+\item 
+const char \hyperlink{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_ae269e1463930629ea37d0d93d0d726c5}{delimiter} = \textquotesingle{} \textquotesingle{}
+\item 
+bool \hyperlink{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a6f28abac88c19077023abaadd2d3315f}{put\+\_\+newlines} = true
+\item 
+bool \hyperlink{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_aec694b471eae3bc7d0a1d4487579721c}{put\+\_\+delimiters} = true
+\item 
+bool \hyperlink{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a0974264e6edcc83c7c191f34d2ce4781}{use\+\_\+uppercase} = false
+\item 
+bool \hyperlink{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a0997eb476f830eb211f3d17777079d7d}{put\+\_\+positions} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+struct fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}
+
+
+
+Definition at line 72 of file bin\+\_\+to\+\_\+hex.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a23665231993cdeb323a86ecb9a7a63a1}\label{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a23665231993cdeb323a86ecb9a7a63a1}} 
+\index{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}!format@{format}}
+\index{format@{format}!fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}}
+\subsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Format\+Context , typename Container $>$ \\
+auto fmt\+::formatter$<$ \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ T $>$ $>$\+::format (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ Container $>$ \&}]{the\+\_\+range,  }\item[{Format\+Context \&}]{ctx }\end{DoxyParamCaption}) -\/$>$ decltype(ctx.\+out())
+    \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 112 of file bin\+\_\+to\+\_\+hex.\+h.
+
+\mbox{\Hypertarget{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_ada366ec2d0f00fa94560551fdbbbb640}\label{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_ada366ec2d0f00fa94560551fdbbbb640}} 
+\index{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}!parse@{parse}}
+\index{parse@{parse}!fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Parse\+Context $>$ \\
+auto fmt\+::formatter$<$ \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ T $>$ $>$\+::parse (\begin{DoxyParamCaption}\item[{Parse\+Context \&}]{ctx }\end{DoxyParamCaption}) -\/$>$ decltype(ctx.\+begin())
+    \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file bin\+\_\+to\+\_\+hex.\+h.
+
+\mbox{\Hypertarget{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_ae001a71b76b4a56f722a7b91c506e9bf}\label{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_ae001a71b76b4a56f722a7b91c506e9bf}} 
+\index{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}!put\+\_\+newline@{put\+\_\+newline}}
+\index{put\+\_\+newline@{put\+\_\+newline}!fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}}
+\subsubsection{\texorpdfstring{put\+\_\+newline()}{put\_newline()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename It $>$ \\
+std\+::size\+\_\+t fmt\+::formatter$<$ \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ T $>$ $>$\+::put\+\_\+newline (\begin{DoxyParamCaption}\item[{It}]{inserter,  }\item[{std\+::size\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 154 of file bin\+\_\+to\+\_\+hex.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_ae001a71b76b4a56f722a7b91c506e9bf_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_ae269e1463930629ea37d0d93d0d726c5}\label{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_ae269e1463930629ea37d0d93d0d726c5}} 
+\index{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}!delimiter@{delimiter}}
+\index{delimiter@{delimiter}!fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}}
+\subsubsection{\texorpdfstring{delimiter}{delimiter}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const char fmt\+::formatter$<$ \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ T $>$ $>$\+::delimiter = \textquotesingle{} \textquotesingle{}}
+
+
+
+Definition at line 75 of file bin\+\_\+to\+\_\+hex.\+h.
+
+\mbox{\Hypertarget{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_aae6b62746bc315b2927199438ba2f87a}\label{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_aae6b62746bc315b2927199438ba2f87a}} 
+\index{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}!line\+\_\+size@{line\+\_\+size}}
+\index{line\+\_\+size@{line\+\_\+size}!fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}}
+\subsubsection{\texorpdfstring{line\+\_\+size}{line\_size}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const std\+::size\+\_\+t fmt\+::formatter$<$ \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ T $>$ $>$\+::line\+\_\+size = 100}
+
+
+
+Definition at line 74 of file bin\+\_\+to\+\_\+hex.\+h.
+
+\mbox{\Hypertarget{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_aec694b471eae3bc7d0a1d4487579721c}\label{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_aec694b471eae3bc7d0a1d4487579721c}} 
+\index{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}!put\+\_\+delimiters@{put\+\_\+delimiters}}
+\index{put\+\_\+delimiters@{put\+\_\+delimiters}!fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}}
+\subsubsection{\texorpdfstring{put\+\_\+delimiters}{put\_delimiters}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool fmt\+::formatter$<$ \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ T $>$ $>$\+::put\+\_\+delimiters = true}
+
+
+
+Definition at line 78 of file bin\+\_\+to\+\_\+hex.\+h.
+
+\mbox{\Hypertarget{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a6f28abac88c19077023abaadd2d3315f}\label{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a6f28abac88c19077023abaadd2d3315f}} 
+\index{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}!put\+\_\+newlines@{put\+\_\+newlines}}
+\index{put\+\_\+newlines@{put\+\_\+newlines}!fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}}
+\subsubsection{\texorpdfstring{put\+\_\+newlines}{put\_newlines}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool fmt\+::formatter$<$ \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ T $>$ $>$\+::put\+\_\+newlines = true}
+
+
+
+Definition at line 77 of file bin\+\_\+to\+\_\+hex.\+h.
+
+\mbox{\Hypertarget{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a0997eb476f830eb211f3d17777079d7d}\label{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a0997eb476f830eb211f3d17777079d7d}} 
+\index{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}!put\+\_\+positions@{put\+\_\+positions}}
+\index{put\+\_\+positions@{put\+\_\+positions}!fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}}
+\subsubsection{\texorpdfstring{put\+\_\+positions}{put\_positions}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool fmt\+::formatter$<$ \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ T $>$ $>$\+::put\+\_\+positions = true}
+
+
+
+Definition at line 80 of file bin\+\_\+to\+\_\+hex.\+h.
+
+\mbox{\Hypertarget{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a0974264e6edcc83c7c191f34d2ce4781}\label{structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4_a0974264e6edcc83c7c191f34d2ce4781}} 
+\index{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}!use\+\_\+uppercase@{use\+\_\+uppercase}}
+\index{use\+\_\+uppercase@{use\+\_\+uppercase}!fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$@{fmt\+::formatter$<$ spdlog\+::details\+::bytes\+\_\+range$<$ T $>$ $>$}}
+\subsubsection{\texorpdfstring{use\+\_\+uppercase}{use\_uppercase}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool fmt\+::formatter$<$ \hyperlink{classspdlog_1_1details_1_1bytes__range}{spdlog\+::details\+::bytes\+\_\+range}$<$ T $>$ $>$\+::use\+\_\+uppercase = false}
+
+
+
+Definition at line 79 of file bin\+\_\+to\+\_\+hex.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/\hyperlink{bin__to__hex_8h}{bin\+\_\+to\+\_\+hex.\+h}\end{DoxyCompactItemize}

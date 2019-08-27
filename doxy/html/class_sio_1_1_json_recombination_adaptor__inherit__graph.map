@@ -1,0 +1,5 @@
+<map id="WireCell::Sio::JsonRecombinationAdaptor" name="WireCell::Sio::JsonRecombinationAdaptor">
+<area shape="rect" id="node2" href="$class_electrons_adapter.html" title="ElectronsAdapter" alt="" coords="5,95,128,121"/>
+<area shape="rect" id="node3" href="$class_point_adapter.html" title="PointAdapter" alt="" coords="153,95,250,121"/>
+<area shape="rect" id="node4" href="$class_step_adapter.html" title="StepAdapter" alt="" coords="274,95,369,121"/>
+</map>

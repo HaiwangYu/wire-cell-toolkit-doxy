@@ -1,0 +1,19 @@
+<map id="WireCell::Binning::min" name="WireCell::Binning::min">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion.html#a9c4c6664c76ad07ad29d71bdb8fb92f1" title="WireCell::Gen::BinnedDiffusion::add" alt="" coords="205,153,439,180"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion__transform.html#a18fd9a41fa313057caf57a8aa9957c86" title="WireCell::Gen::BinnedDiffusion\l_transform::add" alt="" coords="220,276,424,318"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response.html#a897752df4a2a548028aa1051a0b5b372" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="233,342,411,398"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response.html#a3e1d2284621e69ff712cc6a7a373c797" title="Accept a configuration. " alt="" coords="233,422,411,478"/>
+<area shape="rect" id="node18" href="$namespace_wire_cell.html#a7c36c8ada205f970a75ddb4e0841ff43" title="WireCell::operator\&lt;\&lt;" alt="" coords="251,502,393,529"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion.html#add5e00394c16a9fc27be4b7d617fa59b" title="WireCell::Gen::BinnedDiffusion\l::tbins" alt="" coords="487,116,691,158"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_depo_zipper.html#af883a6a654a4a374d17f4db84d268510" title="WireCell::Gen::DepoZipper\l::operator()" alt="" coords="1009,208,1188,250"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_ductor.html#afec4558613941dc3bb752a3811aadd3d" title="WireCell::Gen::Ductor\l::process_face" alt="" coords="1023,47,1174,88"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_gen_1_1_truth_smearer.html#a75e03e4110e01b8ff31ad3aba5e7804d" title="Accept a configuration. " alt="" coords="749,167,939,208"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_gen_1_1_truth_trace_i_d.html#adeed1a28e9ed6d5da7e07378b172bd48" title="Accept a configuration. " alt="" coords="501,51,676,92"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_impact_zipper.html#a542bc19237317cce10742ae097e647ec" title="WireCell::Gen::ImpactZipper\l::waveform" alt="" coords="750,102,938,143"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a1454baebba2e385dea9cd098236dd515" title="WireCell::Gen::Ductor\l::process" alt="" coords="1248,47,1399,88"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a1a103a685f920781c7d312f168b52841" title="WireCell::Gen::Ductor\l::operator()" alt="" coords="1447,47,1597,88"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a331c4314dba8472ab8c49dbc9112ff4b" title="WireCell::Gen::Ductor\l::~Ductor" alt="" coords="1645,47,1796,88"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion__transform.html#a57f26ea414abfae84cf54bdbe7992db5" title="WireCell::Gen::BinnedDiffusion\l_transform::tbins" alt="" coords="487,335,691,376"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_gen_1_1_depo_transform.html#a72bd0b9e256a8e9f4311c61cf6b5692b" title="WireCell::Gen::DepoTransform\l::operator()" alt="" coords="997,295,1200,336"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_gen_1_1_impact_transform.html#ad65b81bab03b2a6f8836782c732556bc" title="WireCell::Gen::ImpactTransform\l::waveform" alt="" coords="739,335,949,376"/>
+</map>

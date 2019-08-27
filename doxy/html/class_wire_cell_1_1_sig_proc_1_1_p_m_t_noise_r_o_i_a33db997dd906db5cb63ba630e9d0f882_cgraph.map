@@ -1,0 +1,8 @@
+<map id="WireCell::SigProc::PMTNoiseROI::get_end_bin" name="WireCell::SigProc::PMTNoiseROI::get_end_bin">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#ab7da8d38dd37b3f81e064a9970e581f8" title="WireCell::SigProc::\lPMTNoiseROI::insert_peak" alt="" coords="240,5,423,47"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a97674ed5490b45c6e8e72292ee4012e7" title="WireCell::SigProc::\lPMTNoiseROI::insert\l_uwires" alt="" coords="257,71,405,127"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a117ae1e99cce01f1c72a55905f7fcf7e" title="WireCell::SigProc::\lPMTNoiseROI::insert\l_vwires" alt="" coords="257,151,405,207"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell.html#aeda39bc129b6bab40d0e35ffb4af55ef" title="Return dictionary in given list if it value at dotpath matches. " alt="" coords="471,86,572,113"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell.html#ade8a8d63c0beb7335d7f969903bfeedc" title="Follow a dot.separated.path and return the branch there. " alt="" coords="620,86,739,113"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_string.html#aef23d7b89dbe21e34a499c9156dd1e60" title="WireCell::String::split" alt="" coords="787,86,933,113"/>
+</map>

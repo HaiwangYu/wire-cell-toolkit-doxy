@@ -1,0 +1,7 @@
+<map id="WireCell::IClustering" name="WireCell::IClustering">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IBlobSet, ICluster \&gt;" alt="" coords="20,319,199,360"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_queuedout_node_base.html" title="WireCell::IQueuedoutNodeBase" alt="" coords="5,244,213,271"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="52,169,167,196"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="34,80,185,121"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="44,5,175,32"/>
+</map>

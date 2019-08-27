@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structinternal_1_1error__handler.html" title="internal::error_handler" alt="" coords="5,115,152,142"/>
+<area shape="rect" id="node2" href="$classbasic__parse__context.html" title="basic_parse_context\l\&lt; Char \&gt;" alt="" coords="229,5,371,47"/>
+<area shape="rect" id="node3" href="$structformat__handler.html" title="format_handler\&lt; ArgFormatter,\l Char, Context \&gt;" alt="" coords="200,71,400,112"/>
+<area shape="rect" id="node4" href="$structinternal_1_1arg__formatter__base_1_1char__spec__handler.html" title="internal::arg_formatter\l_base\&lt; Range \&gt;::char_spec\l_handler" alt="" coords="207,137,393,193"/>
+<area shape="rect" id="node5" href="$structinternal_1_1arg__formatter__base_1_1cstring__spec__handler.html" title="internal::arg_formatter\l_base\&lt; Range \&gt;::cstring\l_spec_handler" alt="" coords="217,217,383,273"/>
+</map>

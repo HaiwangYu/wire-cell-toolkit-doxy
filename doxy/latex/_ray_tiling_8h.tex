@@ -1,0 +1,66 @@
+\hypertarget{_ray_tiling_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Ray\+Tiling.h File Reference}
+\label{_ray_tiling_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Ray\+Tiling.\+h@{util/inc/\+Wire\+Cell\+Util/\+Ray\+Tiling.\+h}}
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Ray\+Grid.\+h\char`\"{}}\newline
+Include dependency graph for Ray\+Tiling.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_ray_tiling_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_ray_tiling_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_ray_grid_1_1_strip}{Wire\+Cell\+::\+Ray\+Grid\+::\+Strip}
+\item 
+class \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity}{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}
+\item 
+class \hyperlink{class_wire_cell_1_1_ray_grid_1_1_blob}{Wire\+Cell\+::\+Ray\+Grid\+::\+Blob}
+\item 
+class \hyperlink{class_wire_cell_1_1_ray_grid_1_1_tiling}{Wire\+Cell\+::\+Ray\+Grid\+::\+Tiling}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_ray_grid}{Wire\+Cell\+::\+Ray\+Grid}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ Strip $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_a06c9ce08c0358d22fae3185aff8a9b7c}{Wire\+Cell\+::\+Ray\+Grid\+::strips\+\_\+t}
+\item 
+typedef std\+::vector$<$ Activity $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_af748d1ae6bed1a329eb9f14dd11e2873}{Wire\+Cell\+::\+Ray\+Grid\+::activities\+\_\+t}
+\item 
+typedef std\+::vector$<$ Blob $>$ \hyperlink{namespace_wire_cell_1_1_ray_grid_aea2069aff62790df3241ee7446e81ade}{Wire\+Cell\+::\+Ray\+Grid\+::blobs\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{namespace_wire_cell_1_1_ray_grid_a11febee1f22df148439d0782ffb754f4}{Wire\+Cell\+::\+Ray\+Grid\+::drop\+\_\+invalid} (\hyperlink{namespace_wire_cell_1_1_ray_grid_aea2069aff62790df3241ee7446e81ade}{blobs\+\_\+t} \&blobs)
+\begin{DoxyCompactList}\small\item\em free functions \end{DoxyCompactList}\item 
+void \hyperlink{namespace_wire_cell_1_1_ray_grid_a7d64051adfd2d6d4b1264d7efd841439}{Wire\+Cell\+::\+Ray\+Grid\+::prune} (const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates}{Coordinates} \&coords, \hyperlink{namespace_wire_cell_1_1_ray_grid_aea2069aff62790df3241ee7446e81ade}{blobs\+\_\+t} \&blobs)
+\item 
+\hyperlink{namespace_wire_cell_1_1_ray_grid_aea2069aff62790df3241ee7446e81ade}{blobs\+\_\+t} \hyperlink{namespace_wire_cell_1_1_ray_grid_a096e166d076b5ecaec0412ebb7f54f9e}{Wire\+Cell\+::\+Ray\+Grid\+::make\+\_\+blobs} (const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates}{Coordinates} \&coords, const \hyperlink{namespace_wire_cell_1_1_ray_grid_af748d1ae6bed1a329eb9f14dd11e2873}{activities\+\_\+t} \&activities)
+\item 
+std\+::ostream \& \hyperlink{namespace_wire_cell_1_1_ray_grid_a48ccf389e7999daf1e79ba27c68b6752}{Wire\+Cell\+::\+Ray\+Grid\+::operator$<$$<$} (std\+::ostream \&os, const \hyperlink{struct_wire_cell_1_1_ray_grid_1_1_strip}{Wire\+Cell\+::\+Ray\+Grid\+::\+Strip} \&s)
+\item 
+std\+::ostream \& \hyperlink{namespace_wire_cell_1_1_ray_grid_ab7bb8eba0ead6662043107193ad27361}{Wire\+Cell\+::\+Ray\+Grid\+::operator$<$$<$} (std\+::ostream \&os, const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity}{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity} \&a)
+\item 
+std\+::ostream \& \hyperlink{namespace_wire_cell_1_1_ray_grid_ae5aa7f167da146b7a3c08802424cdd4a}{Wire\+Cell\+::\+Ray\+Grid\+::operator$<$$<$} (std\+::ostream \&os, const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_blob}{Wire\+Cell\+::\+Ray\+Grid\+::\+Blob} \&b)
+\item 
+std\+::ostream \& \hyperlink{namespace_wire_cell_1_1_ray_grid_aded39a1d915d9ecee3596351f1042d16}{Wire\+Cell\+::\+Ray\+Grid\+::operator$<$$<$} (std\+::ostream \&os, const \hyperlink{namespace_wire_cell_1_1_ray_grid_ad8870c962588c4492b1f7c5ad1552a7e}{Wire\+Cell\+::\+Ray\+Grid\+::crossing\+\_\+t} \&c)
+\end{DoxyCompactItemize}

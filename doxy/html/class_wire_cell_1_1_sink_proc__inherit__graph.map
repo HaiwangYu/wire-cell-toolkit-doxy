@@ -1,0 +1,10 @@
+<map id="WireCell::SinkProc" name="WireCell::SinkProc">
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_drop_sink_proc.html" title="WireCell::DropSinkProc" alt="" coords="343,31,504,57"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_filter_proc.html" title="WireCell::FilterProc" alt="" coords="355,81,491,108"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_sink_node_proc.html" title="WireCell::SinkNodeProc" alt="" coords="341,132,505,159"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_proc.html" title="WireCell::Proc" alt="" coords="5,81,112,108"/>
+<area shape="rect" id="node5" href="$class_noise_adder_proc.html" title="NoiseAdderProc" alt="" coords="589,5,706,32"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_function_node_proc.html" title="WireCell::FunctionNodeProc" alt="" coords="553,56,741,83"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_queued_node_proc.html" title="WireCell::QueuedNodeProc" alt="" coords="556,107,739,133"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_shunt_proc.html" title="WireCell::ShuntProc" alt="" coords="577,157,718,184"/>
+</map>

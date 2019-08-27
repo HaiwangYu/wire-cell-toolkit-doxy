@@ -1,0 +1,21 @@
+<map id="WireCell::SigProc::L1SPFilter::operator()" name="WireCell::SigProc::L1SPFilter::operator()">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ad93828b53fee0709cd9649526b5884e7" title="WireCell::SigProc::\lL1SPFilter::init_resp" alt="" coords="205,283,345,325"/>
+<area shape="rect" id="node14" href="$namespace_wire_cell_1_1_frame_tools.html#ab75409594f96814edb45d39db9d705f6" title="WireCell::FrameTools\l::tagged_traces" alt="" coords="200,437,349,478"/>
+<area shape="rect" id="node17" href="$namespace_wire_cell_1_1_waveform.html#a9116b8ebe848721a04d5100fa672b0aa" title="WireCell::Waveform\l::percentile" alt="" coords="205,502,345,543"/>
+<area shape="rect" id="node18" href="$namespaceinternal.html#a03b2086b2426ff3ecfce2d6fd22b66dc" title="internal::copy" alt="" coords="225,568,325,595"/>
+<area shape="rect" id="node20" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#a9720ba99e84d3cb4df578eb7ee0e436d" title="WireCell::SigProc::\lL1SPFilter::L1_fit" alt="" coords="207,619,342,661"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_response.html#a465144cc99feb1c0e2e85c6928ae2506" title="WireCell::Response\l::average_1D" alt="" coords="409,137,548,178"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1_response.html#a8f1890f06132c13edca92ab1d9ea9263" title="WireCell::Response\l::as_array" alt="" coords="613,195,752,237"/>
+<area shape="rect" id="node9" href="$namespace_wire_cell_1_1_waveform.html#aa8d25ae88346929b5e54cd116f7a4f47" title="Scale (multiply) sequence values by scalar. " alt="" coords="409,254,549,295"/>
+<area shape="rect" id="node12" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="397,320,560,347"/>
+<area shape="rect" id="node13" href="$namespace_wire_cell_1_1_waveform.html#a69255dad704fcb71fa53745e90a2f0e1" title="WireCell::Waveform\l::idft" alt="" coords="409,371,549,413"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_response.html#a11620870420942188de46612d3e2022f" title="WireCell::Response\l::wire_region_average" alt="" coords="608,78,757,119"/>
+<area shape="rect" id="node5" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#ae156e1d6bbf8be35451100d1d43d9aaa" title="WireCell::Response\l::Schema::FieldResponse\l::plane" alt="" coords="805,5,979,61"/>
+<area shape="rect" id="node7" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#a9f3b786a9adf83b6bf536d6442d53207" title="WireCell::Response\l::Schema::FieldResponse\l::FieldResponse" alt="" coords="805,136,979,192"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_waveform.html#a4c7b82a4567d6c94227398f9511ffb92" title="Return sum of all entries in sequence. " alt="" coords="805,85,979,112"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="619,261,746,302"/>
+<area shape="rect" id="node11" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="829,261,955,302"/>
+<area shape="rect" id="node15" href="$namespace_wire_cell_1_1_frame_tools.html#ab39e5b3fae9cf0abda7e6795007ad6df" title="WireCell::FrameTools\l::untagged_traces" alt="" coords="404,437,553,478"/>
+<area shape="rect" id="node16" href="$namespaceinternal.html#a1fb268779155d9e5cb2ee01298cf5541" title="internal::find" alt="" coords="432,503,525,529"/>
+<area shape="rect" id="node19" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="432,568,525,595"/>
+</map>

@@ -1,0 +1,208 @@
+\hypertarget{class_wire_cell_1_1_i_wire_parameters}{}\section{Wire\+Cell\+:\+:I\+Wire\+Parameters Class Reference}
+\label{class_wire_cell_1_1_i_wire_parameters}\index{Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}}
+
+
+{\ttfamily \#include $<$I\+Wire\+Parameters.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Wire\+Parameters\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_wire_cell_1_1_i_wire_parameters__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Wire\+Parameters\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_wire_cell_1_1_i_wire_parameters__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_wire_parameters_a72110335b0bd52beceff2c34b64778d5}{$\sim$\+I\+Wire\+Parameters} ()
+\item 
+virtual const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& \hyperlink{class_wire_cell_1_1_i_wire_parameters_a4cc116cbfff382ec8ba7711df078f845}{bounds} () const =0
+\begin{DoxyCompactList}\small\item\em Defines a box that bounds the set of wires. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& \hyperlink{class_wire_cell_1_1_i_wire_parameters_a37e3bb80331664feb75d00eb957fda78}{pitchU} () const =0
+\item 
+virtual const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& \hyperlink{class_wire_cell_1_1_i_wire_parameters_a696c827d971a57805da41e3f2f14ba35}{pitchV} () const =0
+\item 
+virtual const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& \hyperlink{class_wire_cell_1_1_i_wire_parameters_a4e9d46ba775e642112628b79853b58cb}{pitchW} () const =0
+\item 
+virtual const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& \hyperlink{class_wire_cell_1_1_i_wire_parameters_aafb960715541113e82448f74e0f34e46}{pitch} (\hyperlink{namespace_wire_cell_a761397ff086f0a7e1a1d9ccd251ac618}{Wire\+Cell\+::\+Wire\+Plane\+Layer\+\_\+t} layer) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wire_cell_1_1_interface}{Interface} by which parameters describing wire planes can be accessed.
+
+Assumptions and conventions\+:
+
+
+\begin{DoxyItemize}
+\item Each plane is parallel to the others and are perpendicular to the X-\/axis. In decreasing X value they are labeled\+: U, V and W.
+\item The wires in a plane run parallel to each other, this is called the plane\textquotesingle{}s direction which is also labeled U, V and W.
+\item The angle of the plane is measured from the Y-\/axis and is signed following the right-\/hand-\/rule. (Y x Wire = X).
+\item The perpendicular distances (\char`\"{}pitch\char`\"{}) between adjacent wires is regular. The pitch direction points toward increasing wire index and is take such that (Wire x Pitch) = X
+\end{DoxyItemize}
+
+The above is sufficient to define the wire planes, but further convention helps to conceptualize things.
+
+U wires\+:
+\begin{DoxyItemize}
+\item angle\+: \mbox{[}0, +90\mbox{]}
+\item points\+: (+Y,+Z)
+\item pitch\+: (-\/Y,+Z)
+\item starts\+: (-\/Y,-\/Z)
+\end{DoxyItemize}
+
+V wires\+:
+\begin{DoxyItemize}
+\item angle\+: \mbox{[}-\/90, 0\mbox{]}
+\item points\+: (+Y,-\/Z)
+\item pitch\+: (-\/Y,-\/Z)
+\item starts\+: (+Y,-\/Z)
+\end{DoxyItemize}
+
+W wires\+:
+\begin{DoxyItemize}
+\item angle\+: 0
+\item points\+: +Y
+\item pitch\+: +Z
+\item starts\+: -\/Z
+\end{DoxyItemize}
+
+Given this, the wires planes are fully specified by four rays.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bounds} & is a \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Wire\+Cell\+::\+Ray} with its tail at the negative-\/most corner and its head at the positive-\/most corner of a rectangular bounding box.\\
+\hline
+{\em U} & is a \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Wire\+Cell\+::\+Ray} with direction giving the plane\textquotesingle{}s pitch and with endpoints on wires within the bounding box.\\
+\hline
+{\em V} & is same but same for V wire plane.\\
+\hline
+{\em W} & is same but for for W wire plane. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 71 of file I\+Wire\+Parameters.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_parameters_a72110335b0bd52beceff2c34b64778d5}\label{class_wire_cell_1_1_i_wire_parameters_a72110335b0bd52beceff2c34b64778d5}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}!````~I\+Wire\+Parameters@{$\sim$\+I\+Wire\+Parameters}}
+\index{````~I\+Wire\+Parameters@{$\sim$\+I\+Wire\+Parameters}!Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Wire\+Parameters()}{~IWireParameters()}}
+{\footnotesize\ttfamily I\+Wire\+Parameters\+::$\sim$\+I\+Wire\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 92 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_parameters_a4cc116cbfff382ec8ba7711df078f845}\label{class_wire_cell_1_1_i_wire_parameters_a4cc116cbfff382ec8ba7711df078f845}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}!bounds@{bounds}}
+\index{bounds@{bounds}!Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}}
+\subsubsection{\texorpdfstring{bounds()}{bounds()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}\& Wire\+Cell\+::\+I\+Wire\+Parameters\+::bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Defines a box that bounds the set of wires. 
+
+Provide access to the rays which were used to define the wires. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_wire_params_a20e01f2e7d229f28e0e2d414b36b4e57}{Wire\+Cell\+::\+Wire\+Params}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_parameters_aafb960715541113e82448f74e0f34e46}\label{class_wire_cell_1_1_i_wire_parameters_aafb960715541113e82448f74e0f34e46}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}!pitch@{pitch}}
+\index{pitch@{pitch}!Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}}
+\subsubsection{\texorpdfstring{pitch()}{pitch()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}\& Wire\+Cell\+::\+I\+Wire\+Parameters\+::pitch (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_a761397ff086f0a7e1a1d9ccd251ac618}{Wire\+Cell\+::\+Wire\+Plane\+Layer\+\_\+t}}]{layer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 93 of file I\+Wire\+Parameters.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_wire_parameters_aafb960715541113e82448f74e0f34e46_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_parameters_a37e3bb80331664feb75d00eb957fda78}\label{class_wire_cell_1_1_i_wire_parameters_a37e3bb80331664feb75d00eb957fda78}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}!pitchU@{pitchU}}
+\index{pitchU@{pitchU}!Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}}
+\subsubsection{\texorpdfstring{pitch\+U()}{pitchU()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}\& Wire\+Cell\+::\+I\+Wire\+Parameters\+::pitchU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+A ray going from the center of the first U wire to the second and perpendicular to both. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_wire_params_a8d61eb6c6ef8d3320172840079891322}{Wire\+Cell\+::\+Wire\+Params}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_wire_parameters_a37e3bb80331664feb75d00eb957fda78_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_parameters_a696c827d971a57805da41e3f2f14ba35}\label{class_wire_cell_1_1_i_wire_parameters_a696c827d971a57805da41e3f2f14ba35}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}!pitchV@{pitchV}}
+\index{pitchV@{pitchV}!Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}}
+\subsubsection{\texorpdfstring{pitch\+V()}{pitchV()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}\& Wire\+Cell\+::\+I\+Wire\+Parameters\+::pitchV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+A ray going from the center of the first V wire to the second and perpendicular to both. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_wire_params_a5bcff5a348b5ad2a26e8e0a6a3c63258}{Wire\+Cell\+::\+Wire\+Params}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_wire_parameters_a696c827d971a57805da41e3f2f14ba35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_parameters_a4e9d46ba775e642112628b79853b58cb}\label{class_wire_cell_1_1_i_wire_parameters_a4e9d46ba775e642112628b79853b58cb}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}!pitchW@{pitchW}}
+\index{pitchW@{pitchW}!Wire\+Cell\+::\+I\+Wire\+Parameters@{Wire\+Cell\+::\+I\+Wire\+Parameters}}
+\subsubsection{\texorpdfstring{pitch\+W()}{pitchW()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}\& Wire\+Cell\+::\+I\+Wire\+Parameters\+::pitchW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+A ray going from the center of the first W wire to the second and perpendicular to both. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_wire_params_a8b310b4fe56d7c1eda061473ec86b5d0}{Wire\+Cell\+::\+Wire\+Params}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_wire_parameters_a4e9d46ba775e642112628b79853b58cb_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_wire_parameters_8h}{I\+Wire\+Parameters.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

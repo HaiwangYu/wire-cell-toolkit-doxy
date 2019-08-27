@@ -1,0 +1,8 @@
+<map id="WireCell::SigProc::PMTNoiseROI::get_wwires_peak_heights" name="WireCell::SigProc::PMTNoiseROI::get_wwires_peak_heights">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a3a991d86acfa1be6a8070ac516a624c9" title="WireCell::SigProc::\lPMTNoiseROI::get_average\l_uwires_peak_height" alt="" coords="236,5,423,61"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#aeff495991c25c4ff4091eb839835e230" title="WireCell::SigProc::\lPMTNoiseROI::get_average\l_vwires_peak_height" alt="" coords="236,85,423,141"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a44c13f88197acd2204d17bc2b9b75f3e" title="WireCell::SigProc::\lPMTNoiseROI::get_max\l_uwires_peak_height" alt="" coords="246,165,413,221"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a5c9e02b024551af28776257cfb336f45" title="WireCell::SigProc::\lPMTNoiseROI::get_max\l_vwires_peak_height" alt="" coords="246,245,413,301"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a89da1079a85e1cfa87962daefc2d0266" title="WireCell::SigProc::\lPMTNoiseROI::get_average\l_wwires_peak_height" alt="" coords="236,325,423,381"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a9239f0b7d6fa6d9bb1c12129e7d34352" title="WireCell::SigProc::\lPMTNoiseROI::get_max\l_wwires_peak_height" alt="" coords="246,405,413,461"/>
+</map>

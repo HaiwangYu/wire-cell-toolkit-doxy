@@ -1,0 +1,384 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Signal\+R\+OI Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+
+
+{\ttfamily \#include $<$Signal\+R\+O\+I.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab8d07b50d3925529673ce79238ab0480}{Signal\+R\+OI} (int plane, int chid, int start\+\_\+bin, int end\+\_\+bin, const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \&signal)
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a19b3f1c69aa59c14e928af82302de058}{Signal\+R\+OI} (\hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i}{Signal\+R\+OI} $\ast$roi)
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a1d77c82a9e71b8700acc7df8b0eb5c08}{$\sim$\+Signal\+R\+OI} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_acfe33b6d693694e95f905a34a2940c32}{get\+\_\+start\+\_\+bin} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a826112ffb7fed5ffeff403e4a34c036c}{get\+\_\+end\+\_\+bin} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab7e97b198f41b189dc24556c6c0ccd52}{get\+\_\+ext\+\_\+start\+\_\+bin} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a5d660871a8da8908e8ee1e1ed99a7ce7}{get\+\_\+ext\+\_\+end\+\_\+bin} ()
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ae20c381a6855844b0177f2ab96ac50a6}{set\+\_\+ext\+\_\+start\+\_\+bin} (int a)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a1057a64f15a6093ab46679c4d54524ba}{set\+\_\+ext\+\_\+end\+\_\+bin} (int a)
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a92565abca22adcc336111be6f487f9c9}{get\+\_\+chid} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab3dee5cfbcf601f4ac56bc7968c74fda}{get\+\_\+plane} ()
+\item 
+std\+::vector$<$ float $>$ \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_aa2fee1613b1c49322cf5d738261cf1c9}{get\+\_\+contents} ()
+\item 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ad7adf2e8940e21c808371578e16eeac8}{get\+\_\+above\+\_\+threshold} (float th)
+\item 
+double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_aed20acd4564c60d6ebfc1d0c0b3c27b6}{get\+\_\+average\+\_\+heights} ()
+\item 
+double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a32fab4e24000404a740a19813892e105}{get\+\_\+max\+\_\+height} ()
+\item 
+bool \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a2b79f88f3551f06ccb3f61aaa00da118}{overlap} (\hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i}{Signal\+R\+OI} $\ast$roi)
+\item 
+bool \hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_af714fd2a4bba4597bea27d2ab34f0d8d}{overlap} (\hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i}{Signal\+R\+OI} $\ast$roi1, float th, float th1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Signal\+R\+O\+I.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab8d07b50d3925529673ce79238ab0480}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab8d07b50d3925529673ce79238ab0480}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!Signal\+R\+OI@{Signal\+R\+OI}}
+\index{Signal\+R\+OI@{Signal\+R\+OI}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{Signal\+R\+O\+I()}{SignalROI()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Signal\+R\+O\+I\+::\+Signal\+R\+OI (\begin{DoxyParamCaption}\item[{int}]{plane,  }\item[{int}]{chid,  }\item[{int}]{start\+\_\+bin,  }\item[{int}]{end\+\_\+bin,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \&}]{signal }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Signal\+R\+O\+I.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a19b3f1c69aa59c14e928af82302de058}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a19b3f1c69aa59c14e928af82302de058}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!Signal\+R\+OI@{Signal\+R\+OI}}
+\index{Signal\+R\+OI@{Signal\+R\+OI}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{Signal\+R\+O\+I()}{SignalROI()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Signal\+R\+O\+I\+::\+Signal\+R\+OI (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i}{Signal\+R\+OI} $\ast$}]{roi }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Signal\+R\+O\+I.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a19b3f1c69aa59c14e928af82302de058_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a1d77c82a9e71b8700acc7df8b0eb5c08}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a1d77c82a9e71b8700acc7df8b0eb5c08}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!````~Signal\+R\+OI@{$\sim$\+Signal\+R\+OI}}
+\index{````~Signal\+R\+OI@{$\sim$\+Signal\+R\+OI}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{$\sim$\+Signal\+R\+O\+I()}{~SignalROI()}}
+{\footnotesize\ttfamily Signal\+R\+O\+I\+::$\sim$\+Signal\+R\+OI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 104 of file Signal\+R\+O\+I.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ad7adf2e8940e21c808371578e16eeac8}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ad7adf2e8940e21c808371578e16eeac8}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!get\+\_\+above\+\_\+threshold@{get\+\_\+above\+\_\+threshold}}
+\index{get\+\_\+above\+\_\+threshold@{get\+\_\+above\+\_\+threshold}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+above\+\_\+threshold()}{get\_above\_threshold()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ Signal\+R\+O\+I\+::get\+\_\+above\+\_\+threshold (\begin{DoxyParamCaption}\item[{float}]{th }\end{DoxyParamCaption})}
+
+
+
+Definition at line 109 of file Signal\+R\+O\+I.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ad7adf2e8940e21c808371578e16eeac8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ad7adf2e8940e21c808371578e16eeac8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_aed20acd4564c60d6ebfc1d0c0b3c27b6}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_aed20acd4564c60d6ebfc1d0c0b3c27b6}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!get\+\_\+average\+\_\+heights@{get\+\_\+average\+\_\+heights}}
+\index{get\+\_\+average\+\_\+heights@{get\+\_\+average\+\_\+heights}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+average\+\_\+heights()}{get\_average\_heights()}}
+{\footnotesize\ttfamily double Signal\+R\+O\+I\+::get\+\_\+average\+\_\+heights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file Signal\+R\+O\+I.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_aed20acd4564c60d6ebfc1d0c0b3c27b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_aed20acd4564c60d6ebfc1d0c0b3c27b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a92565abca22adcc336111be6f487f9c9}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a92565abca22adcc336111be6f487f9c9}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!get\+\_\+chid@{get\+\_\+chid}}
+\index{get\+\_\+chid@{get\+\_\+chid}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+chid()}{get\_chid()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+O\+I\+::get\+\_\+chid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 28 of file Signal\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a92565abca22adcc336111be6f487f9c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_aa2fee1613b1c49322cf5d738261cf1c9}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_aa2fee1613b1c49322cf5d738261cf1c9}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!get\+\_\+contents@{get\+\_\+contents}}
+\index{get\+\_\+contents@{get\+\_\+contents}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+contents()}{get\_contents()}}
+{\footnotesize\ttfamily std\+::vector$<$float$>$\& Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+O\+I\+::get\+\_\+contents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 30 of file Signal\+R\+O\+I.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_aa2fee1613b1c49322cf5d738261cf1c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_aa2fee1613b1c49322cf5d738261cf1c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a826112ffb7fed5ffeff403e4a34c036c}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a826112ffb7fed5ffeff403e4a34c036c}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!get\+\_\+end\+\_\+bin@{get\+\_\+end\+\_\+bin}}
+\index{get\+\_\+end\+\_\+bin@{get\+\_\+end\+\_\+bin}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+end\+\_\+bin()}{get\_end\_bin()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+O\+I\+::get\+\_\+end\+\_\+bin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 20 of file Signal\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a826112ffb7fed5ffeff403e4a34c036c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a5d660871a8da8908e8ee1e1ed99a7ce7}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a5d660871a8da8908e8ee1e1ed99a7ce7}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!get\+\_\+ext\+\_\+end\+\_\+bin@{get\+\_\+ext\+\_\+end\+\_\+bin}}
+\index{get\+\_\+ext\+\_\+end\+\_\+bin@{get\+\_\+ext\+\_\+end\+\_\+bin}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+ext\+\_\+end\+\_\+bin()}{get\_ext\_end\_bin()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+O\+I\+::get\+\_\+ext\+\_\+end\+\_\+bin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file Signal\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a5d660871a8da8908e8ee1e1ed99a7ce7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab7e97b198f41b189dc24556c6c0ccd52}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab7e97b198f41b189dc24556c6c0ccd52}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!get\+\_\+ext\+\_\+start\+\_\+bin@{get\+\_\+ext\+\_\+start\+\_\+bin}}
+\index{get\+\_\+ext\+\_\+start\+\_\+bin@{get\+\_\+ext\+\_\+start\+\_\+bin}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+ext\+\_\+start\+\_\+bin()}{get\_ext\_start\_bin()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+O\+I\+::get\+\_\+ext\+\_\+start\+\_\+bin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 22 of file Signal\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab7e97b198f41b189dc24556c6c0ccd52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a32fab4e24000404a740a19813892e105}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a32fab4e24000404a740a19813892e105}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!get\+\_\+max\+\_\+height@{get\+\_\+max\+\_\+height}}
+\index{get\+\_\+max\+\_\+height@{get\+\_\+max\+\_\+height}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+max\+\_\+height()}{get\_max\_height()}}
+{\footnotesize\ttfamily double Signal\+R\+O\+I\+::get\+\_\+max\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 34 of file Signal\+R\+O\+I.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a32fab4e24000404a740a19813892e105_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab3dee5cfbcf601f4ac56bc7968c74fda}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab3dee5cfbcf601f4ac56bc7968c74fda}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!get\+\_\+plane@{get\+\_\+plane}}
+\index{get\+\_\+plane@{get\+\_\+plane}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+plane()}{get\_plane()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+O\+I\+::get\+\_\+plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file Signal\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ab3dee5cfbcf601f4ac56bc7968c74fda_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_acfe33b6d693694e95f905a34a2940c32}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_acfe33b6d693694e95f905a34a2940c32}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!get\+\_\+start\+\_\+bin@{get\+\_\+start\+\_\+bin}}
+\index{get\+\_\+start\+\_\+bin@{get\+\_\+start\+\_\+bin}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{get\+\_\+start\+\_\+bin()}{get\_start\_bin()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+O\+I\+::get\+\_\+start\+\_\+bin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 19 of file Signal\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_acfe33b6d693694e95f905a34a2940c32_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a2b79f88f3551f06ccb3f61aaa00da118}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a2b79f88f3551f06ccb3f61aaa00da118}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!overlap@{overlap}}
+\index{overlap@{overlap}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{overlap()}{overlap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Signal\+R\+O\+I\+::overlap (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i}{Signal\+R\+OI} $\ast$}]{roi }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file Signal\+R\+O\+I.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a2b79f88f3551f06ccb3f61aaa00da118_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a2b79f88f3551f06ccb3f61aaa00da118_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_af714fd2a4bba4597bea27d2ab34f0d8d}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_af714fd2a4bba4597bea27d2ab34f0d8d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!overlap@{overlap}}
+\index{overlap@{overlap}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{overlap()}{overlap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Signal\+R\+O\+I\+::overlap (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i}{Signal\+R\+OI} $\ast$}]{roi1,  }\item[{float}]{th,  }\item[{float}]{th1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file Signal\+R\+O\+I.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_af714fd2a4bba4597bea27d2ab34f0d8d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a1057a64f15a6093ab46679c4d54524ba}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a1057a64f15a6093ab46679c4d54524ba}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!set\+\_\+ext\+\_\+end\+\_\+bin@{set\+\_\+ext\+\_\+end\+\_\+bin}}
+\index{set\+\_\+ext\+\_\+end\+\_\+bin@{set\+\_\+ext\+\_\+end\+\_\+bin}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{set\+\_\+ext\+\_\+end\+\_\+bin()}{set\_ext\_end\_bin()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+O\+I\+::set\+\_\+ext\+\_\+end\+\_\+bin (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 26 of file Signal\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_a1057a64f15a6093ab46679c4d54524ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ae20c381a6855844b0177f2ab96ac50a6}\label{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ae20c381a6855844b0177f2ab96ac50a6}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}!set\+\_\+ext\+\_\+start\+\_\+bin@{set\+\_\+ext\+\_\+start\+\_\+bin}}
+\index{set\+\_\+ext\+\_\+start\+\_\+bin@{set\+\_\+ext\+\_\+start\+\_\+bin}!Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI@{Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+OI}}
+\subsubsection{\texorpdfstring{set\+\_\+ext\+\_\+start\+\_\+bin()}{set\_ext\_start\_bin()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Sig\+Proc\+::\+Signal\+R\+O\+I\+::set\+\_\+ext\+\_\+start\+\_\+bin (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file Signal\+R\+O\+I.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i_ae20c381a6855844b0177f2ab96ac50a6_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/src/\hyperlink{_signal_r_o_i_8h}{Signal\+R\+O\+I.\+h}\item 
+sigproc/src/\hyperlink{_signal_r_o_i_8cxx}{Signal\+R\+O\+I.\+cxx}\end{DoxyCompactItemize}

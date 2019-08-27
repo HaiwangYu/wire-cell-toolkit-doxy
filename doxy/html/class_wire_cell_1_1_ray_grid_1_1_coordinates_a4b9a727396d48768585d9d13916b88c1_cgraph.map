@@ -1,0 +1,7 @@
+<map id="WireCell::RayGrid::Coordinates::Coordinates" name="WireCell::RayGrid::Coordinates::Coordinates">
+<area shape="rect" id="node2" href="$namespace_wire_cell.html#a8e3ed293f3eefafaec9f8cf97f460a9b" title="WireCell::ray_pitch" alt="" coords="224,60,357,87"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell.html#a15976410f167da6dd279a8facf3218df" title="WireCell::ray_unit" alt="" coords="423,35,549,61"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_d3_vector.html#ad116deec8357b27dcad6be127c209490" title="Return the dot product of this vector and the other. " alt="" coords="405,85,567,112"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell.html#a3e825e090f86eed7647960e8e611a144" title="WireCell::ray_vector" alt="" coords="615,5,756,32"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_d3_vector.html#a9cff9bf6015c3f7742d4fae7aac7c4a5" title="Return a normalized vector in the direction of this vector. " alt="" coords="618,57,753,98"/>
+</map>

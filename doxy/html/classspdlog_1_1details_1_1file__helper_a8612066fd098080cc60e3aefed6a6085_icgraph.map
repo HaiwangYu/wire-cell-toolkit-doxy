@@ -1,0 +1,6 @@
+<map id="spdlog::details::file_helper::open" name="spdlog::details::file_helper::open">
+<area shape="rect" id="node2" href="$classspdlog_1_1details_1_1file__helper.html#a21c688da7f241c53871b462c3a5c2c94" title="spdlog::details::file\l_helper::reopen" alt="" coords="210,5,341,47"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1sinks_1_1basic__file__sink.html#a799e95cc46fd69b03f4ef7497aa21436" title="spdlog::sinks::basic\l_file_sink::basic_file_sink" alt="" coords="190,71,361,112"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#a0e754181168b32e8b1b60b82c35179e8" title="spdlog::sinks::rotating\l_file_sink::rotating_file_sink" alt="" coords="184,136,367,177"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#ae93e4792b76f73bb0be8e50b5c5e889b" title="spdlog::sinks::rotating\l_file_sink::flush_" alt="" coords="415,5,565,47"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="WireCell::IndexedGraph::edge" name="WireCell::IndexedGraph::edge">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_img_1_1_blob_clustering.html#a9833b4248ce1a3b6564d42b6d256877b" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="215,5,409,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_img_1_1_cluster_sink.html#aacf43e19e297947a4dd80e54ee8775f6" title="WireCell::Img::ClusterSink\l::operator()" alt="" coords="223,71,401,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_indexed_graph.html#a172ae52877eb8727d2580e199b41cc64" title="WireCell::IndexedGraph\l\&lt; cluster_node_t \&gt;::neighbors" alt="" coords="215,136,409,177"/>
+</map>

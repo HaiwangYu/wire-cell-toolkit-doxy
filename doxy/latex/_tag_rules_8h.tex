@@ -1,0 +1,62 @@
+\hypertarget{_tag_rules_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Tag\+Rules.h File Reference}
+\label{_tag_rules_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Tag\+Rules.\+h@{util/inc/\+Wire\+Cell\+Util/\+Tag\+Rules.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Configuration.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$regex$>$}\newline
+Include dependency graph for Tag\+Rules.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_tag_rules_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_tag_rules_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1tagrules_1_1_context}{Wire\+Cell\+::tagrules\+::\+Context}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1tagrules}{Wire\+Cell\+::tagrules}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \hyperlink{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}{Wire\+Cell\+::tagrules\+::tag\+\_\+t}
+\item 
+typedef std\+::string \hyperlink{namespace_wire_cell_1_1tagrules_ab71a655969745fcd6a4aecf278fa9333}{Wire\+Cell\+::tagrules\+::match\+\_\+t}
+\item 
+typedef std\+::unordered\+\_\+set$<$ tag\+\_\+t $>$ \hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{Wire\+Cell\+::tagrules\+::tagset\+\_\+t}
+\item 
+typedef std\+::pair$<$ std\+::regex, tagset\+\_\+t $>$ \hyperlink{namespace_wire_cell_1_1tagrules_abc013e08147e32e1661654bb3e768151}{Wire\+Cell\+::tagrules\+::rule\+\_\+t}
+\item 
+typedef std\+::vector$<$ rule\+\_\+t $>$ \hyperlink{namespace_wire_cell_1_1tagrules_a93f5672d7c60d5f990b42dd93fd0aee2}{Wire\+Cell\+::tagrules\+::ruleset\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+tagset\+\_\+t \hyperlink{namespace_wire_cell_1_1tagrules_aed120ffc74c8d10ff4498490ec742f87}{Wire\+Cell\+::tagrules\+::match} (const tag\+\_\+t \&tag, const rule\+\_\+t \&rs)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1tagrules_a307c2349fd136058ba33924faff92553}{Wire\+Cell\+::tagrules\+::match} (const tag\+\_\+t \&tag, const ruleset\+\_\+t \&rs, tagset\+\_\+t \&ret, bool all\+\_\+rules=true)
+\item 
+tagset\+\_\+t \hyperlink{namespace_wire_cell_1_1tagrules_a8e7dac6e5d8aa67bbe4c801a1738d170}{Wire\+Cell\+::tagrules\+::transform} (const tagset\+\_\+t \&ts, const ruleset\+\_\+t \&rs, bool all\+\_\+rules=true)
+\item 
+{\footnotesize template$<$$>$ }\\tagrules\+::tagset\+\_\+t \hyperlink{namespace_wire_cell_a02c87570501f0be739835ce24816d926}{Wire\+Cell\+::convert$<$ tagrules\+::tagset\+\_\+t $>$} (const Configuration \&cfg, const tagrules\+::tagset\+\_\+t \&def)
+\item 
+{\footnotesize template$<$$>$ }\\tagrules\+::ruleset\+\_\+t \hyperlink{namespace_wire_cell_a3f34e0b2564286f437cd0a76970f6806}{Wire\+Cell\+::convert$<$ tagrules\+::ruleset\+\_\+t $>$} (const Configuration \&cfg, const tagrules\+::ruleset\+\_\+t \&def)
+\end{DoxyCompactItemize}

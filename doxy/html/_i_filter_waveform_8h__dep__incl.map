@@ -1,0 +1,8 @@
+<map id="iface/inc/WireCellIface/IFilterWaveform.h" name="iface/inc/WireCellIface/IFilterWaveform.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_hf_filter_8h.html" title="sigproc/inc/WireCellSigProc\l/HfFilter.h" alt="" coords="235,95,421,136"/>
+<area shape="rect" id="node5" href="$_lf_filter_8h.html" title="sigproc/inc/WireCellSigProc\l/LfFilter.h" alt="" coords="445,95,630,136"/>
+<area shape="rect" id="node7" href="$_omnibus_sig_proc_8cxx.html" title="sigproc/src/OmnibusSigProc.cxx" alt="" coords="655,102,868,129"/>
+<area shape="rect" id="node4" href="$_hf_filter_8cxx.html" title="sigproc/src/HfFilter.cxx" alt="" coords="249,184,407,211"/>
+<area shape="rect" id="node6" href="$_lf_filter_8cxx.html" title="sigproc/src/LfFilter.cxx" alt="" coords="460,184,615,211"/>
+</map>

@@ -1,0 +1,364 @@
+\hypertarget{class_wire_cell_1_1_wire_schema_1_1_store}{}\section{Wire\+Cell\+:\+:Wire\+Schema\+:\+:Store Class Reference}
+\label{class_wire_cell_1_1_wire_schema_1_1_store}\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+
+
+{\ttfamily \#include $<$Wire\+Schema.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_a5f58eadcb7385d5a5aa6830daef84f7d}{Store} ()
+\item 
+\hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_abedb7f146845049bdd5963be7838d6ec}{Store} (\hyperlink{namespace_wire_cell_1_1_wire_schema_a9b93b8d397f153737ab0ba52066308e2}{Store\+D\+B\+Ptr} \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_aa81035f87804b21da2d018194eed8d85}{db})
+\item 
+\hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_a2db7fe64036c4aeeb1f153eb8e2b9448}{Store} (const \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store}{Store} \&other)
+\item 
+\hyperlink{class_wire_cell_1_1_wire_schema_1_1_store}{Store} \& \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_aaffe7ef01a51fac30565a9d537becba2}{operator=} (const \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store}{Store} \&other)
+\item 
+\hyperlink{namespace_wire_cell_1_1_wire_schema_a9b93b8d397f153737ab0ba52066308e2}{Store\+D\+B\+Ptr} \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_aa81035f87804b21da2d018194eed8d85}{db} () const
+\item 
+const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_detector}{Detector} $>$ \& \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_ae758694bfc0ca7fbdb51982b362c0c8c}{detectors} () const
+\item 
+const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_anode}{Anode} $>$ \& \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_ae6049110bb1bd50009b1f9cf59b25557}{anodes} () const
+\item 
+const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_face}{Face} $>$ \& \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_af499deefaf681bf7cb59cb564250504f}{faces} () const
+\item 
+const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} $>$ \& \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_aaedfc8ae05d2fe0ef02da6e9d8e8eca1}{planes} () const
+\item 
+const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_wire}{Wire} $>$ \& \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_acdd83e45f8004e2ad4ac625d7fce47d3}{wires} () const
+\item 
+const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_anode}{Anode} \& \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_a65a9d9af1b336097f853185cf58f3ea0}{anode} (int ident) const
+\item 
+std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_anode}{Anode} $>$ \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_a26429e24e73daf38691e8f8aa940128e}{anodes} (const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_detector}{Detector} \&detector) const
+\item 
+std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_face}{Face} $>$ \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_adbbe257301b3fb7d9c511569324c56f6}{faces} (const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_anode}{Anode} \&\hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_a65a9d9af1b336097f853185cf58f3ea0}{anode}) const
+\item 
+std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} $>$ \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_aefcc67db968fb4fe44e5cf610704f482}{planes} (const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_face}{Face} \&face) const
+\item 
+std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_wire}{Wire} $>$ \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_a56cd36c90641895a9e3c22406c363061}{wires} (const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} \&plane) const
+\item 
+\hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_acfb80d41d1fe8264ea07c9d63a5202fe}{bounding\+\_\+box} (const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_anode}{Anode} \&\hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_a65a9d9af1b336097f853185cf58f3ea0}{anode}) const
+\item 
+\hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_acf8cba891cf3ac52d76bcb4d3c59027d}{bounding\+\_\+box} (const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_face}{Face} \&face) const
+\item 
+\hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_a518ea3cec1822b41022594933ccd31b2}{bounding\+\_\+box} (const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} \&plane) const
+\item 
+\hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_abc4cbd21498604e65dbb8753a437a2c2}{wire\+\_\+pitch} (const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} \&plane) const
+\item 
+std\+::vector$<$ int $>$ \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store_a70cdc99b1fa1d6e58359e5d0d7c9ad48}{channels} (const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} \&plane) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 62 of file Wire\+Schema.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_a5f58eadcb7385d5a5aa6830daef84f7d}\label{class_wire_cell_1_1_wire_schema_1_1_store_a5f58eadcb7385d5a5aa6830daef84f7d}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!Store@{Store}}
+\index{Store@{Store}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{Store()}{Store()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Store\+::\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 144 of file Wire\+Schema.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_abedb7f146845049bdd5963be7838d6ec}\label{class_wire_cell_1_1_wire_schema_1_1_store_abedb7f146845049bdd5963be7838d6ec}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!Store@{Store}}
+\index{Store@{Store}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{Store()}{Store()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Store\+::\+Store (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_wire_schema_a9b93b8d397f153737ab0ba52066308e2}{Store\+D\+B\+Ptr}}]{db }\end{DoxyParamCaption})}
+
+
+
+Definition at line 146 of file Wire\+Schema.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_a2db7fe64036c4aeeb1f153eb8e2b9448}\label{class_wire_cell_1_1_wire_schema_1_1_store_a2db7fe64036c4aeeb1f153eb8e2b9448}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!Store@{Store}}
+\index{Store@{Store}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{Store()}{Store()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Store\+::\+Store (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store}{Store} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 148 of file Wire\+Schema.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_a65a9d9af1b336097f853185cf58f3ea0}\label{class_wire_cell_1_1_wire_schema_1_1_store_a65a9d9af1b336097f853185cf58f3ea0}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!anode@{anode}}
+\index{anode@{anode}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{anode()}{anode()}}
+{\footnotesize\ttfamily const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_anode}{Anode} \& Store\+::anode (\begin{DoxyParamCaption}\item[{int}]{ident }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 167 of file Wire\+Schema.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_wire_schema_1_1_store_a65a9d9af1b336097f853185cf58f3ea0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_ae6049110bb1bd50009b1f9cf59b25557}\label{class_wire_cell_1_1_wire_schema_1_1_store_ae6049110bb1bd50009b1f9cf59b25557}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!anodes@{anodes}}
+\index{anodes@{anodes}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{anodes()}{anodes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_anode}{Anode} $>$ \& Store\+::anodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 162 of file Wire\+Schema.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_a26429e24e73daf38691e8f8aa940128e}\label{class_wire_cell_1_1_wire_schema_1_1_store_a26429e24e73daf38691e8f8aa940128e}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!anodes@{anodes}}
+\index{anodes@{anodes}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{anodes()}{anodes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_anode}{Anode} $>$ Store\+::anodes (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_detector}{Detector} \&}]{detector }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 176 of file Wire\+Schema.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_acfb80d41d1fe8264ea07c9d63a5202fe}\label{class_wire_cell_1_1_wire_schema_1_1_store_acfb80d41d1fe8264ea07c9d63a5202fe}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!bounding\+\_\+box@{bounding\+\_\+box}}
+\index{bounding\+\_\+box@{bounding\+\_\+box}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{bounding\+\_\+box()}{bounding\_box()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} Store\+::bounding\+\_\+box (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_anode}{Anode} \&}]{anode }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 212 of file Wire\+Schema.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_1_1_wire_schema_1_1_store_acfb80d41d1fe8264ea07c9d63a5202fe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_1_1_wire_schema_1_1_store_acfb80d41d1fe8264ea07c9d63a5202fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_acf8cba891cf3ac52d76bcb4d3c59027d}\label{class_wire_cell_1_1_wire_schema_1_1_store_acf8cba891cf3ac52d76bcb4d3c59027d}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!bounding\+\_\+box@{bounding\+\_\+box}}
+\index{bounding\+\_\+box@{bounding\+\_\+box}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{bounding\+\_\+box()}{bounding\_box()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} Store\+::bounding\+\_\+box (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_face}{Face} \&}]{face }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 220 of file Wire\+Schema.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_wire_schema_1_1_store_acf8cba891cf3ac52d76bcb4d3c59027d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_a518ea3cec1822b41022594933ccd31b2}\label{class_wire_cell_1_1_wire_schema_1_1_store_a518ea3cec1822b41022594933ccd31b2}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!bounding\+\_\+box@{bounding\+\_\+box}}
+\index{bounding\+\_\+box@{bounding\+\_\+box}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{bounding\+\_\+box()}{bounding\_box()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} Store\+::bounding\+\_\+box (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} \&}]{plane }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 228 of file Wire\+Schema.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_1_1_wire_schema_1_1_store_a518ea3cec1822b41022594933ccd31b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_a70cdc99b1fa1d6e58359e5d0d7c9ad48}\label{class_wire_cell_1_1_wire_schema_1_1_store_a70cdc99b1fa1d6e58359e5d0d7c9ad48}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!channels@{channels}}
+\index{channels@{channels}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{channels()}{channels()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Store\+::channels (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} \&}]{plane }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 262 of file Wire\+Schema.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_1_1_wire_schema_1_1_store_a70cdc99b1fa1d6e58359e5d0d7c9ad48_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_aa81035f87804b21da2d018194eed8d85}\label{class_wire_cell_1_1_wire_schema_1_1_store_aa81035f87804b21da2d018194eed8d85}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!db@{db}}
+\index{db@{db}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{db()}{db()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_wire_schema_a9b93b8d397f153737ab0ba52066308e2}{Store\+D\+B\+Ptr} Store\+::db (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 159 of file Wire\+Schema.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_1_1_wire_schema_1_1_store_aa81035f87804b21da2d018194eed8d85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_ae758694bfc0ca7fbdb51982b362c0c8c}\label{class_wire_cell_1_1_wire_schema_1_1_store_ae758694bfc0ca7fbdb51982b362c0c8c}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!detectors@{detectors}}
+\index{detectors@{detectors}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{detectors()}{detectors()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_detector}{Detector} $>$ \& Store\+::detectors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 161 of file Wire\+Schema.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_af499deefaf681bf7cb59cb564250504f}\label{class_wire_cell_1_1_wire_schema_1_1_store_af499deefaf681bf7cb59cb564250504f}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!faces@{faces}}
+\index{faces@{faces}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{faces()}{faces()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_face}{Face} $>$ \& Store\+::faces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 163 of file Wire\+Schema.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_wire_schema_1_1_store_af499deefaf681bf7cb59cb564250504f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_adbbe257301b3fb7d9c511569324c56f6}\label{class_wire_cell_1_1_wire_schema_1_1_store_adbbe257301b3fb7d9c511569324c56f6}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!faces@{faces}}
+\index{faces@{faces}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{faces()}{faces()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_face}{Face} $>$ Store\+::faces (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_anode}{Anode} \&}]{anode }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 185 of file Wire\+Schema.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_aaffe7ef01a51fac30565a9d537becba2}\label{class_wire_cell_1_1_wire_schema_1_1_store_aaffe7ef01a51fac30565a9d537becba2}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!operator=@{operator=}}
+\index{operator=@{operator=}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store}{Store} \& Store\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_wire_schema_1_1_store}{Store} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 152 of file Wire\+Schema.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_1_1_wire_schema_1_1_store_aaffe7ef01a51fac30565a9d537becba2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_aaedfc8ae05d2fe0ef02da6e9d8e8eca1}\label{class_wire_cell_1_1_wire_schema_1_1_store_aaedfc8ae05d2fe0ef02da6e9d8e8eca1}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!planes@{planes}}
+\index{planes@{planes}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{planes()}{planes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} $>$ \& Store\+::planes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 164 of file Wire\+Schema.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_1_1_wire_schema_1_1_store_aaedfc8ae05d2fe0ef02da6e9d8e8eca1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_aefcc67db968fb4fe44e5cf610704f482}\label{class_wire_cell_1_1_wire_schema_1_1_store_aefcc67db968fb4fe44e5cf610704f482}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!planes@{planes}}
+\index{planes@{planes}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{planes()}{planes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} $>$ Store\+::planes (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_face}{Face} \&}]{face }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 194 of file Wire\+Schema.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_abc4cbd21498604e65dbb8753a437a2c2}\label{class_wire_cell_1_1_wire_schema_1_1_store_abc4cbd21498604e65dbb8753a437a2c2}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!wire\+\_\+pitch@{wire\+\_\+pitch}}
+\index{wire\+\_\+pitch@{wire\+\_\+pitch}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{wire\+\_\+pitch()}{wire\_pitch()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} Store\+::wire\+\_\+pitch (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} \&}]{plane }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 239 of file Wire\+Schema.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_1_1_wire_schema_1_1_store_abc4cbd21498604e65dbb8753a437a2c2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_acdd83e45f8004e2ad4ac625d7fce47d3}\label{class_wire_cell_1_1_wire_schema_1_1_store_acdd83e45f8004e2ad4ac625d7fce47d3}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!wires@{wires}}
+\index{wires@{wires}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{wires()}{wires()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_wire}{Wire} $>$ \& Store\+::wires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 165 of file Wire\+Schema.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_1_1_wire_schema_1_1_store_acdd83e45f8004e2ad4ac625d7fce47d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_schema_1_1_store_a56cd36c90641895a9e3c22406c363061}\label{class_wire_cell_1_1_wire_schema_1_1_store_a56cd36c90641895a9e3c22406c363061}} 
+\index{Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}!wires@{wires}}
+\index{wires@{wires}!Wire\+Cell\+::\+Wire\+Schema\+::\+Store@{Wire\+Cell\+::\+Wire\+Schema\+::\+Store}}
+\subsubsection{\texorpdfstring{wires()}{wires()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_wire}{Wire} $>$ Store\+::wires (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_wire_schema_1_1_plane}{Plane} \&}]{plane }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 203 of file Wire\+Schema.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_wire_schema_8h}{Wire\+Schema.\+h}\item 
+util/src/\hyperlink{_wire_schema_8cxx}{Wire\+Schema.\+cxx}\end{DoxyCompactItemize}

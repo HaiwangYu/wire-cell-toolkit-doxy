@@ -1,0 +1,16 @@
+<map id="WireCell::WirePlaneId::layer" name="WireCell::WirePlaneId::layer">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_wire_plane_id.html#a72e32df6a0f0721dba0f1c5c76649c9a" title="Layer as index number (0,1 or 2). &#45;1 if unknown. " alt="" coords="204,334,355,375"/>
+<area shape="rect" id="node13" href="$namespace_wire_cell.html#a470282420df828d72316462cefed8139" title="WireCell::operator\&lt;\&lt;" alt="" coords="661,581,804,608"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a2d1c7a1dded73fe3b51cbcfb8d9e0e04" title="Accept a configuration. " alt="" coords="407,86,589,127"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_digitizer.html#a06ba39eb87a8acb50a3311f290d814a4" title="WireCell::Gen::Digitizer\l::operator()" alt="" coords="653,243,813,285"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_mega_anode_plane.html#a39f210db553e1e981412c2c44861870c" title="Resolve a channel ident number to a WirePlaneId. " alt="" coords="407,151,589,193"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_wire.html#a5656bd4873e5160e01eea7fa923b3859" title="WireCell::GenWire::\lident" alt="" coords="429,334,567,375"/>
+<area shape="rect" id="node9" href="$struct_wire_plane_cache.html#a2cefdea150e8bbd0eb82a2efdca9bbf4" title="WirePlaneCache::WirePlane\lCache" alt="" coords="404,399,592,441"/>
+<area shape="rect" id="node10" href="$struct_wire_summary_1_1_wire_summary_cache.html#a07cff10416e77d84eceeb80622e67d2e" title="WireCell::WireSummary\l::WireSummaryCache::plane" alt="" coords="403,465,593,506"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_wire_plane_id.html#a617a3b37d14485b685db0762be14bec4" title="return true if valid " alt="" coords="423,269,573,310"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_wire_plane_id.html#addc8729f389598caf82777cf5cddb30a" title="WireCell::WirePlaneId\l::operator\&lt;" alt="" coords="657,399,808,441"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a7a1a60aef8d2935c36e27a735117a1cb" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lset_misconfigured" alt="" coords="417,5,579,61"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a41df48506ad084531fa7ac376f454894" title="WireCell::Gen::AnodePlane\l::~AnodePlane" alt="" coords="641,86,824,127"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_mega_anode_plane.html#aa9912010c3155fa7e010faf6fe1f01d7" title="WireCell::Gen::MegaAnode\lPlane::~MegaAnodePlane" alt="" coords="642,151,823,193"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a42c1e7613ec776da66d7f30238128ce7" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lset_bad_channels" alt="" coords="651,5,814,61"/>
+</map>

@@ -1,0 +1,165 @@
+\hypertarget{class_wire_cell_tbb_1_1_data_flow_graph}{}\section{Wire\+Cell\+Tbb\+:\+:Data\+Flow\+Graph Class Reference}
+\label{class_wire_cell_tbb_1_1_data_flow_graph}\index{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}}
+
+
+{\ttfamily \#include $<$Data\+Flow\+Graph.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+Tbb\+:\+:Data\+Flow\+Graph\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_tbb_1_1_data_flow_graph__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+Tbb\+:\+:Data\+Flow\+Graph\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_wire_cell_tbb_1_1_data_flow_graph__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_tbb_1_1_data_flow_graph_adc38880818e49339df3264239348f0b0}{Data\+Flow\+Graph} (int max\+\_\+threads=0)
+\item 
+virtual \hyperlink{class_wire_cell_tbb_1_1_data_flow_graph_ae29f042f9af6c5bfa178c534c004a702}{$\sim$\+Data\+Flow\+Graph} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_tbb_1_1_data_flow_graph_a37432ebdd10107bbcc99205893c2587b}{connect} (\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{Wire\+Cell\+::\+I\+Node\+::pointer} tail, \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{Wire\+Cell\+::\+I\+Node\+::pointer} head, size\+\_\+t tail\+\_\+port=0, size\+\_\+t head\+\_\+port=0)
+\item 
+virtual bool \hyperlink{class_wire_cell_tbb_1_1_data_flow_graph_ae8e14d9ad578b85a9e6faf4db69cc31b}{run} ()
+\begin{DoxyCompactList}\small\item\em Run the graph, return false on error. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_wire_cell_tbb_1_1_data_flow_graph_a2c4fe387fa89d26296925548ee7ff1ab}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_tbb_1_1_data_flow_graph_ae1dd804621d2e8f12456f40852f4db2e}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Data\+Flow\+Graph.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_tbb_1_1_data_flow_graph_adc38880818e49339df3264239348f0b0}\label{class_wire_cell_tbb_1_1_data_flow_graph_adc38880818e49339df3264239348f0b0}} 
+\index{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}!Data\+Flow\+Graph@{Data\+Flow\+Graph}}
+\index{Data\+Flow\+Graph@{Data\+Flow\+Graph}!Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}}
+\subsubsection{\texorpdfstring{Data\+Flow\+Graph()}{DataFlowGraph()}}
+{\footnotesize\ttfamily Data\+Flow\+Graph\+::\+Data\+Flow\+Graph (\begin{DoxyParamCaption}\item[{int}]{max\+\_\+threads = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file Data\+Flow\+Graph.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_tbb_1_1_data_flow_graph_ae29f042f9af6c5bfa178c534c004a702}\label{class_wire_cell_tbb_1_1_data_flow_graph_ae29f042f9af6c5bfa178c534c004a702}} 
+\index{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}!````~Data\+Flow\+Graph@{$\sim$\+Data\+Flow\+Graph}}
+\index{````~Data\+Flow\+Graph@{$\sim$\+Data\+Flow\+Graph}!Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}}
+\subsubsection{\texorpdfstring{$\sim$\+Data\+Flow\+Graph()}{~DataFlowGraph()}}
+{\footnotesize\ttfamily Data\+Flow\+Graph\+::$\sim$\+Data\+Flow\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 26 of file Data\+Flow\+Graph.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_tbb_1_1_data_flow_graph_a2c4fe387fa89d26296925548ee7ff1ab}\label{class_wire_cell_tbb_1_1_data_flow_graph_a2c4fe387fa89d26296925548ee7ff1ab}} 
+\index{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Data\+Flow\+Graph\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 38 of file Data\+Flow\+Graph.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_tbb_1_1_data_flow_graph_a37432ebdd10107bbcc99205893c2587b}\label{class_wire_cell_tbb_1_1_data_flow_graph_a37432ebdd10107bbcc99205893c2587b}} 
+\index{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}!connect@{connect}}
+\index{connect@{connect}!Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily bool Data\+Flow\+Graph\+::connect (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{Wire\+Cell\+::\+I\+Node\+::pointer}}]{tail,  }\item[{\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{Wire\+Cell\+::\+I\+Node\+::pointer}}]{head,  }\item[{size\+\_\+t}]{tail\+\_\+port = {\ttfamily 0},  }\item[{size\+\_\+t}]{head\+\_\+port = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Connect two nodes so that data runs from tail to head. Return false on error. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_data_flow_graph_a6d065b2f080d956a17e7da4356aa31d9}{Wire\+Cell\+::\+I\+Data\+Flow\+Graph}.
+
+
+
+Definition at line 45 of file Data\+Flow\+Graph.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_tbb_1_1_data_flow_graph_a37432ebdd10107bbcc99205893c2587b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_tbb_1_1_data_flow_graph_ae1dd804621d2e8f12456f40852f4db2e}\label{class_wire_cell_tbb_1_1_data_flow_graph_ae1dd804621d2e8f12456f40852f4db2e}} 
+\index{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} Data\+Flow\+Graph\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 30 of file Data\+Flow\+Graph.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_tbb_1_1_data_flow_graph_ae8e14d9ad578b85a9e6faf4db69cc31b}\label{class_wire_cell_tbb_1_1_data_flow_graph_ae8e14d9ad578b85a9e6faf4db69cc31b}} 
+\index{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}!run@{run}}
+\index{run@{run}!Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph@{Wire\+Cell\+Tbb\+::\+Data\+Flow\+Graph}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool Data\+Flow\+Graph\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Run the graph, return false on error. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_data_flow_graph_ab741ef1a0f772cb278dd2f111b54867e}{Wire\+Cell\+::\+I\+Data\+Flow\+Graph}.
+
+
+
+Definition at line 96 of file Data\+Flow\+Graph.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_tbb_1_1_data_flow_graph_ae8e14d9ad578b85a9e6faf4db69cc31b_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+tbb/inc/\+Wire\+Cell\+Tbb/\hyperlink{_data_flow_graph_8h}{Data\+Flow\+Graph.\+h}\item 
+tbb/src/\hyperlink{_data_flow_graph_8cxx}{Data\+Flow\+Graph.\+cxx}\end{DoxyCompactItemize}

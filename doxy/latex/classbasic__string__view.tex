@@ -1,0 +1,317 @@
+\hypertarget{classbasic__string__view}{}\section{basic\+\_\+string\+\_\+view$<$ Char $>$ Class Template Reference}
+\label{classbasic__string__view}\index{basic\+\_\+string\+\_\+view$<$ Char $>$@{basic\+\_\+string\+\_\+view$<$ Char $>$}}
+
+
+{\ttfamily \#include $<$core.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Char \hyperlink{classbasic__string__view_a5c0ddf97eacf1624a31ecbb504e164f8}{char\+\_\+type}
+\item 
+typedef const Char $\ast$ \hyperlink{classbasic__string__view_aac52df0e56cb4b197372306e0da039e0}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view_a3285fa5f62f1de2776c6a3fcc33cfe0a}{basic\+\_\+string\+\_\+view} () \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view_a30be409cd941f8fa06e5e7b27496e3dc}{basic\+\_\+string\+\_\+view} (const Char $\ast$s, size\+\_\+t count) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{classbasic__string__view_a84823e4cf3eadc6bbe4ecd18e7685ffd}{basic\+\_\+string\+\_\+view} (const Char $\ast$s)
+\item 
+{\footnotesize template$<$typename Alloc $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view_a26380481d5c1675f0f56333f764c496b}{basic\+\_\+string\+\_\+view} (const std\+::basic\+\_\+string$<$ Char, Alloc $>$ \&s) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const Char $\ast$ \hyperlink{classbasic__string__view_a48c221f626c53e68f6d63105329f6b08}{data} () const
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} size\+\_\+t \hyperlink{classbasic__string__view_a7fd9f4dcac1782259b0cd217af69d737}{size} () const
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view_aac52df0e56cb4b197372306e0da039e0}{iterator} \hyperlink{classbasic__string__view_a3433da1f079eb7874d97f32245bb08fa}{begin} () const
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view_aac52df0e56cb4b197372306e0da039e0}{iterator} \hyperlink{classbasic__string__view_a7d262051736a662df0f35d6e39ebf773}{end} () const
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} void \hyperlink{classbasic__string__view_a1da7aa04f8f729b4f846e573cecba499}{remove\+\_\+prefix} (size\+\_\+t \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n})
+\item 
+int \hyperlink{classbasic__string__view_af3f5cdfe71a7ada3227d5702ea456128}{compare} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} other) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classbasic__string__view_abbcc283ebd35db4ae2d5365a0861a2e2}{operator==} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} lhs, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} rhs)
+\item 
+bool \hyperlink{classbasic__string__view_a5ceb2a1bfa175c69d7bfda735e901d73}{operator!=} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} lhs, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} rhs)
+\item 
+bool \hyperlink{classbasic__string__view_a0e53f2258bbcde6cc8426b0a0755029b}{operator$<$} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} lhs, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} rhs)
+\item 
+bool \hyperlink{classbasic__string__view_a9b92d9c7a937c6945253fd8adfba7803}{operator$<$=} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} lhs, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} rhs)
+\item 
+bool \hyperlink{classbasic__string__view_a78b8913fe704e33269d9baa6f310b9b8}{operator$>$} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} lhs, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} rhs)
+\item 
+bool \hyperlink{classbasic__string__view_a13611d21d36e30193ebaf50463cbe75e}{operator$>$=} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} lhs, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Char$>$\newline
+class basic\+\_\+string\+\_\+view$<$ Char $>$}
+
+An implementation of {\ttfamily std\+::basic\+\_\+string\+\_\+view} for pre-\/\+C++17. It provides a subset of the A\+PI. {\ttfamily fmt\+::basic\+\_\+string\+\_\+view} is used for format strings even if {\ttfamily std\+::string\+\_\+view} is available to prevent issues when a library is compiled with a different {\ttfamily -\/std} option than the client code (which is not recommended). 
+
+Definition at line 350 of file core.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classbasic__string__view_a5c0ddf97eacf1624a31ecbb504e164f8}\label{classbasic__string__view_a5c0ddf97eacf1624a31ecbb504e164f8}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!char\+\_\+type@{char\+\_\+type}}
+\index{char\+\_\+type@{char\+\_\+type}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{char\+\_\+type}{char\_type}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+typedef Char \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::\hyperlink{classbasic__string__view_a5c0ddf97eacf1624a31ecbb504e164f8}{char\+\_\+type}}
+
+
+
+Definition at line 356 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__string__view_aac52df0e56cb4b197372306e0da039e0}\label{classbasic__string__view_aac52df0e56cb4b197372306e0da039e0}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!iterator@{iterator}}
+\index{iterator@{iterator}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+typedef const Char$\ast$ \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::\hyperlink{classbasic__string__view_aac52df0e56cb4b197372306e0da039e0}{iterator}}
+
+
+
+Definition at line 357 of file core.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbasic__string__view_a3285fa5f62f1de2776c6a3fcc33cfe0a}\label{classbasic__string__view_a3285fa5f62f1de2776c6a3fcc33cfe0a}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{basic\+\_\+string\+\_\+view()}{basic\_string\_view()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 359 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__string__view_a30be409cd941f8fa06e5e7b27496e3dc}\label{classbasic__string__view_a30be409cd941f8fa06e5e7b27496e3dc}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{basic\+\_\+string\+\_\+view()}{basic\_string\_view()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} (\begin{DoxyParamCaption}\item[{const Char $\ast$}]{s,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a string reference object from a C string and a size. 
+
+Definition at line 362 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__string__view_a84823e4cf3eadc6bbe4ecd18e7685ffd}\label{classbasic__string__view_a84823e4cf3eadc6bbe4ecd18e7685ffd}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{basic\+\_\+string\+\_\+view()}{basic\_string\_view()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} (\begin{DoxyParamCaption}\item[{const Char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a string reference object from a C string computing the size with {\ttfamily std\+::char\+\_\+traits$<$Char$>$\+::length}.  
+
+Definition at line 371 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__string__view_a26380481d5c1675f0f56333f764c496b}\label{classbasic__string__view_a26380481d5c1675f0f56333f764c496b}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{basic\+\_\+string\+\_\+view()}{basic\_string\_view()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+template$<$typename Alloc $>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view} (\begin{DoxyParamCaption}\item[{const std\+::basic\+\_\+string$<$ Char, Alloc $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a string reference from a {\ttfamily std\+::basic\+\_\+string} object. 
+
+Definition at line 376 of file core.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbasic__string__view_a3433da1f079eb7874d97f32245bb08fa}\label{classbasic__string__view_a3433da1f079eb7874d97f32245bb08fa}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!begin@{begin}}
+\index{begin@{begin}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view_aac52df0e56cb4b197372306e0da039e0}{iterator} \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 391 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classbasic__string__view_a3433da1f079eb7874d97f32245bb08fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__string__view_af3f5cdfe71a7ada3227d5702ea456128}\label{classbasic__string__view_af3f5cdfe71a7ada3227d5702ea456128}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!compare@{compare}}
+\index{compare@{compare}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+int \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::compare (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 400 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__string__view_a48c221f626c53e68f6d63105329f6b08}\label{classbasic__string__view_a48c221f626c53e68f6d63105329f6b08}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!data@{data}}
+\index{data@{data}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const Char$\ast$ \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a pointer to the string data. 
+
+Definition at line 386 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__string__view_a48c221f626c53e68f6d63105329f6b08_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__string__view_a7d262051736a662df0f35d6e39ebf773}\label{classbasic__string__view_a7d262051736a662df0f35d6e39ebf773}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!end@{end}}
+\index{end@{end}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view_aac52df0e56cb4b197372306e0da039e0}{iterator} \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 392 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__string__view_a7d262051736a662df0f35d6e39ebf773_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__string__view_a1da7aa04f8f729b4f846e573cecba499}\label{classbasic__string__view_a1da7aa04f8f729b4f846e573cecba499}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!remove\+\_\+prefix@{remove\+\_\+prefix}}
+\index{remove\+\_\+prefix@{remove\+\_\+prefix}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{remove\+\_\+prefix()}{remove\_prefix()}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} void \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::remove\+\_\+prefix (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 394 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classbasic__string__view_a1da7aa04f8f729b4f846e573cecba499_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__string__view_a7fd9f4dcac1782259b0cd217af69d737}\label{classbasic__string__view_a7fd9f4dcac1782259b0cd217af69d737}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!size@{size}}
+\index{size@{size}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} size\+\_\+t \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the string size. 
+
+Definition at line 389 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__string__view_a7fd9f4dcac1782259b0cd217af69d737_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classbasic__string__view_a5ceb2a1bfa175c69d7bfda735e901d73}\label{classbasic__string__view_a5ceb2a1bfa175c69d7bfda735e901d73}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{operator"!=}{operator!=}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+bool operator!= (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{lhs,  }\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 411 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__string__view_a0e53f2258bbcde6cc8426b0a0755029b}\label{classbasic__string__view_a0e53f2258bbcde6cc8426b0a0755029b}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+bool operator$<$ (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{lhs,  }\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 414 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__string__view_a9b92d9c7a937c6945253fd8adfba7803}\label{classbasic__string__view_a9b92d9c7a937c6945253fd8adfba7803}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{operator$<$=}{operator<=}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+bool operator$<$= (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{lhs,  }\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 417 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__string__view_abbcc283ebd35db4ae2d5365a0861a2e2}\label{classbasic__string__view_abbcc283ebd35db4ae2d5365a0861a2e2}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!operator==@{operator==}}
+\index{operator==@{operator==}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+bool operator== (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{lhs,  }\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 408 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__string__view_a78b8913fe704e33269d9baa6f310b9b8}\label{classbasic__string__view_a78b8913fe704e33269d9baa6f310b9b8}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{operator$>$}{operator>}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+bool operator$>$ (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{lhs,  }\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 420 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__string__view_a13611d21d36e30193ebaf50463cbe75e}\label{classbasic__string__view_a13611d21d36e30193ebaf50463cbe75e}} 
+\index{basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!basic\+\_\+string\+\_\+view@{basic\+\_\+string\+\_\+view}}
+\subsubsection{\texorpdfstring{operator$>$=}{operator>=}}
+{\footnotesize\ttfamily template$<$typename Char$>$ \\
+bool operator$>$= (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{lhs,  }\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 423 of file core.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{core_8h}{core.\+h}\end{DoxyCompactItemize}

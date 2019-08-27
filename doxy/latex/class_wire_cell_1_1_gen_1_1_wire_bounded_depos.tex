@@ -1,0 +1,135 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_wire_bounded_depos}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Wire\+Bounded\+Depos Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_wire_bounded_depos}\index{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}}
+
+
+{\ttfamily \#include $<$Wire\+Bounded\+Depos.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Wire\+Bounded\+Depos\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_wire_bounded_depos__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Wire\+Bounded\+Depos\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_wire_bounded_depos__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a737d91f9772dc3b8fd4d443664daf40f}{Wire\+Bounded\+Depos} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a8c9ce3b8edf35e3a814501cb83d8051d}{$\sim$\+Wire\+Bounded\+Depos} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a510fe7ba6ae980b5ab232dedac572c7d}{operator()} (const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&depo, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&outq)
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a8a5d8c2f944879a83ae1bd663c615e03}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a310a7a83ec08bbe1efb5543bff582ae7}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wire_cell_1_1_gen_1_1_wire_bounded_depos}{Wire\+Bounded\+Depos} outputs depos based on which wires they \char`\"{}land\char`\"{}. To \char`\"{}land\char`\"{} means to drift antiparallel to the X-\/axis. The set of wire regions on which depos may or may not \char`\"{}land\char`\"{} is configured as an array of objects with three integer attributes\+:
+
+\mbox{[}\{ plane\+: $<$plane-\/number$>$, min\+: $<$min-\/wire-\/number$>$, max\+: $<$max-\/wire-\/number, \},...\mbox{]}
+
+Note the range is inclusive of the max.
+
+Wire numbers must be counted along the positive pitch direction and starting at 0.
+
+The filter can operate in \char`\"{}accept\char`\"{} or \char`\"{}reject\char`\"{} mode. In \char`\"{}accept\char`\"{} mode, a depo which \char`\"{}lands\char`\"{} on any configured wire region will be output. In \char`\"{}reject\char`\"{} mode a depo will not be output if it explicitly lands on any configured wire region. The first wire region landed will determine the fate of the depo.
+
+If users desire to bound depos by the intersection of wires from multiple planes they may pipeline multiple Wire\+Bound\+Depos serially, each configured to accept or reject wire regions defined for a given plane. 
+
+Definition at line 48 of file Wire\+Bounded\+Depos.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a737d91f9772dc3b8fd4d443664daf40f}\label{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a737d91f9772dc3b8fd4d443664daf40f}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}!Wire\+Bounded\+Depos@{Wire\+Bounded\+Depos}}
+\index{Wire\+Bounded\+Depos@{Wire\+Bounded\+Depos}!Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}}
+\subsubsection{\texorpdfstring{Wire\+Bounded\+Depos()}{WireBoundedDepos()}}
+{\footnotesize\ttfamily Gen\+::\+Wire\+Bounded\+Depos\+::\+Wire\+Bounded\+Depos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 129 of file Wire\+Bounded\+Depos.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a8c9ce3b8edf35e3a814501cb83d8051d}\label{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a8c9ce3b8edf35e3a814501cb83d8051d}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}!````~Wire\+Bounded\+Depos@{$\sim$\+Wire\+Bounded\+Depos}}
+\index{````~Wire\+Bounded\+Depos@{$\sim$\+Wire\+Bounded\+Depos}!Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}}
+\subsubsection{\texorpdfstring{$\sim$\+Wire\+Bounded\+Depos()}{~WireBoundedDepos()}}
+{\footnotesize\ttfamily Gen\+::\+Wire\+Bounded\+Depos\+::$\sim$\+Wire\+Bounded\+Depos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 133 of file Wire\+Bounded\+Depos.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a8a5d8c2f944879a83ae1bd663c615e03}\label{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a8a5d8c2f944879a83ae1bd663c615e03}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Wire\+Bounded\+Depos\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 40 of file Wire\+Bounded\+Depos.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a310a7a83ec08bbe1efb5543bff582ae7}\label{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a310a7a83ec08bbe1efb5543bff582ae7}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Wire\+Bounded\+Depos\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 22 of file Wire\+Bounded\+Depos.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a510fe7ba6ae980b5ab232dedac572c7d}\label{class_wire_cell_1_1_gen_1_1_wire_bounded_depos_a510fe7ba6ae980b5ab232dedac572c7d}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos@{Wire\+Cell\+::\+Gen\+::\+Wire\+Bounded\+Depos}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Gen\+::\+Wire\+Bounded\+Depos\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&}]{depo,  }\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&}]{outq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 79 of file Wire\+Bounded\+Depos.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_wire_bounded_depos_8h}{Wire\+Bounded\+Depos.\+h}\item 
+gen/src/\hyperlink{_wire_bounded_depos_8cxx}{Wire\+Bounded\+Depos.\+cxx}\end{DoxyCompactItemize}

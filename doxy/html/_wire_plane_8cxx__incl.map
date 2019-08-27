@@ -1,0 +1,18 @@
+<map id="gen/src/WirePlane.cxx" name="gen/src/WirePlane.cxx">
+<area shape="rect" id="node2" href="$_wire_plane_8h.html" title="WireCellGen/WirePlane.h" alt="" coords="580,80,750,107"/>
+<area shape="rect" id="node3" href="$_i_wire_plane_8h.html" title="WireCellIface/IWirePlane.h" alt="" coords="575,155,755,181"/>
+<area shape="rect" id="node4" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="14,304,193,331"/>
+<area shape="rect" id="node8" href="$_pimpos_8h.html" title="WireCellUtil/Pimpos.h" alt="" coords="1139,304,1290,331"/>
+<area shape="rect" id="node23" href="$_i_wire_8h.html" title="WireCellIface/IWire.h" alt="" coords="653,304,800,331"/>
+<area shape="rect" id="node30" href="$_i_channel_8h.html" title="WireCellIface/IChannel.h" alt="" coords="521,229,689,256"/>
+<area shape="rect" id="node5" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="24,379,183,405"/>
+<area shape="rect" id="node9" href="$_binning_8h.html" title="WireCellUtil/Binning.h" alt="" coords="1339,379,1490,405"/>
+<area shape="rect" id="node13" href="$_point_8h.html" title="WireCellUtil/Point.h" alt="" coords="946,379,1083,405"/>
+<area shape="rect" id="node22" href="$_units_8h.html" title="WireCellUtil/Units.h" alt="" coords="1514,379,1653,405"/>
+<area shape="rect" id="node14" href="$_d3_vector_8h.html" title="WireCellUtil/D3Vector.h" alt="" coords="1204,453,1366,480"/>
+<area shape="rect" id="node16" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="996,453,1180,480"/>
+<area shape="rect" id="node24" href="$_i_data_8h.html" title="WireCellIface/IData.h" alt="" coords="207,379,355,405"/>
+<area shape="rect" id="node25" href="$_i_sequence_8h.html" title="WireCellIface/ISequence.h" alt="" coords="430,379,609,405"/>
+<area shape="rect" id="node27" href="$_wire_plane_id_8h.html" title="WireCellIface/WirePlaneId.h" alt="" coords="633,379,820,405"/>
+<area shape="rect" id="node26" href="$_iterator_base_8h.html" title="WireCellUtil/IteratorBase.h" alt="" coords="430,453,609,480"/>
+</map>

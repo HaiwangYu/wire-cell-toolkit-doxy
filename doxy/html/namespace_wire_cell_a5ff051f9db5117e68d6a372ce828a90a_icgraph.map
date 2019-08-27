@@ -1,0 +1,5 @@
+<map id="WireCell::ray_dist" name="WireCell::ray_dist">
+<area shape="rect" id="node2" href="$struct_wire_plane_cache.html#a01c8f094e36bf466517df1b9b4ee071d" title="WirePlaneCache::pitch\l_distance" alt="" coords="180,39,336,80"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_wire_summary.html#ad5b6996523e8d8a98fd0caec607fd9ad" title="WireCell::WireSummary\l::closest" alt="" coords="384,5,547,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_wire_summary.html#a61c1c383ee6b110a37609a3d892b01d2" title="WireCell::WireSummary\l::pitch_distance" alt="" coords="384,71,547,112"/>
+</map>

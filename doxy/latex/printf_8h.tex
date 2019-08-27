@@ -1,0 +1,383 @@
+\hypertarget{printf_8h}{}\section{util/inc/spdlog/fmt/bundled/printf.h File Reference}
+\label{printf_8h}\index{util/inc/spdlog/fmt/bundled/printf.\+h@{util/inc/spdlog/fmt/bundled/printf.\+h}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include \char`\"{}ostream.\+h\char`\"{}}\newline
+Include dependency graph for printf.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{printf_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classinternal_1_1null__terminating__iterator}{internal\+::null\+\_\+terminating\+\_\+iterator$<$ Char $>$}
+\item 
+struct \hyperlink{structinternal_1_1int__checker}{internal\+::int\+\_\+checker$<$ Is\+Signed $>$}
+\item 
+struct \hyperlink{structinternal_1_1int__checker_3_01true_01_4}{internal\+::int\+\_\+checker$<$ true $>$}
+\item 
+class \hyperlink{classinternal_1_1printf__precision__handler}{internal\+::printf\+\_\+precision\+\_\+handler}
+\item 
+class \hyperlink{classinternal_1_1is__zero__int}{internal\+::is\+\_\+zero\+\_\+int}
+\item 
+struct \hyperlink{structinternal_1_1make__unsigned__or__bool}{internal\+::make\+\_\+unsigned\+\_\+or\+\_\+bool$<$ T $>$}
+\item 
+struct \hyperlink{structinternal_1_1make__unsigned__or__bool_3_01bool_01_4}{internal\+::make\+\_\+unsigned\+\_\+or\+\_\+bool$<$ bool $>$}
+\item 
+class \hyperlink{classinternal_1_1arg__converter}{internal\+::arg\+\_\+converter$<$ T, Context $>$}
+\item 
+class \hyperlink{classinternal_1_1char__converter}{internal\+::char\+\_\+converter$<$ Context $>$}
+\item 
+class \hyperlink{classinternal_1_1printf__width__handler}{internal\+::printf\+\_\+width\+\_\+handler$<$ Char $>$}
+\item 
+class \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter$<$ Range $>$}
+\item 
+class \hyperlink{classbasic__printf__context}{basic\+\_\+printf\+\_\+context$<$ Output\+It, Char, Arg\+Formatter $>$}
+\item 
+class \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter$<$ Range $>$}
+\item 
+struct \hyperlink{structprintf__formatter}{printf\+\_\+formatter$<$ T $>$}
+\item 
+class \hyperlink{classbasic__printf__context}{basic\+\_\+printf\+\_\+context$<$ Output\+It, Char, Arg\+Formatter $>$}
+\item 
+struct \hyperlink{structbasic__printf__context_1_1formatter__type}{basic\+\_\+printf\+\_\+context$<$ Output\+It, Char, Arg\+Formatter $>$\+::formatter\+\_\+type$<$ T $>$}
+\item 
+struct \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t$<$ Buffer $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceinternal}{internal}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{namespaceinternal_a5fcdbc3efad1f390e6c3f0fdafa56122}{internal\+::buffer} $>$\+::type \hyperlink{printf_8h_a18c1fcb1d1bfe320b125df67e9a0e893}{printf\+\_\+context}
+\item 
+typedef \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{namespaceinternal_a6d6bf139e2a200cfb80dfcb8a0da048e}{internal\+::wbuffer} $>$\+::type \hyperlink{printf_8h_aa348f87d76d3b70d6ce5360f7d0e273e}{wprintf\+\_\+context}
+\item 
+typedef \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ \hyperlink{printf_8h_a18c1fcb1d1bfe320b125df67e9a0e893}{printf\+\_\+context} $>$ \hyperlink{printf_8h_a24522aa3e20abc0bc06f7a8a3b67d3fe}{printf\+\_\+args}
+\item 
+typedef \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ \hyperlink{printf_8h_aa348f87d76d3b70d6ce5360f7d0e273e}{wprintf\+\_\+context} $>$ \hyperlink{printf_8h_a2667be8ec16f57d0332500e5e42c5e2c}{wprintf\+\_\+args}
+\item 
+typedef \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$ \hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer}
+\item 
+typedef \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer} $>$\+::type \hyperlink{printf_8h_af5fff57f00afaed1f4cffd60908f0ef5}{context}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const T $\ast$ \hyperlink{namespaceinternal_ad87d0379a03bffd4618909e465a35dfa}{internal\+::pointer\+\_\+from} (const T $\ast$p)
+\item 
+{\footnotesize template$<$typename Char $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const Char $\ast$ \hyperlink{namespaceinternal_af2847d65bcda093de54229cfc396c072}{internal\+::pointer\+\_\+from} (null\+\_\+terminating\+\_\+iterator$<$ Char $>$ it)
+\item 
+{\footnotesize template$<$typename Iterator , typename Error\+Handler $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} unsigned \hyperlink{namespaceinternal_a869c63300bb6636a767d8f3ba6507575}{internal\+::parse\+\_\+nonnegative\+\_\+int} (Iterator \&it, Error\+Handler \&\&eh)
+\item 
+{\footnotesize template$<$typename T , typename Context , typename Char $>$ }\\void \hyperlink{namespaceinternal_a51007b037fc1ae75f525ff89401ec56b}{internal\+::convert\+\_\+arg} (\hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ \&\hyperlink{core_8h_ab87859023d64d26171b1e74a3d0c3b99}{arg}, Char type)
+\item 
+{\footnotesize template$<$typename Char , typename Context $>$ }\\void \hyperlink{namespaceinternal_adb04322abcec003865318281a6952434}{internal\+::printf} (basic\+\_\+buffer$<$ Char $>$ \&buf, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ \hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$ \hyperlink{printf_8h_a18c1fcb1d1bfe320b125df67e9a0e893}{printf\+\_\+context}, Args... $>$ \hyperlink{printf_8h_ac23a7ace53ee8d93c26ccd04d98ed7bd}{make\+\_\+printf\+\_\+args} (const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$ \hyperlink{printf_8h_aa348f87d76d3b70d6ce5360f7d0e273e}{wprintf\+\_\+context}, Args... $>$ \hyperlink{printf_8h_ab9199628cf2f44aecab20484d764ed9b}{make\+\_\+wprintf\+\_\+args} (const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ }\\std\+::basic\+\_\+string$<$ Char $>$ \hyperlink{printf_8h_a44ccbdb3d306d7fa1f99d60b3d262d9e}{vsprintf} (const S \&\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ Char $>$$>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename... Args$>$ }\\\hyperlink{printf_8h_a185a2245cd387f5548816f3f004f8e33}{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T} (\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value, std\+::basic\+\_\+string$<$ \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$) sprintf(const S \&\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format}
+\item 
+return \hyperlink{printf_8h_a668a5610c328f9d182ae6d20984588fd}{vsprintf} (\hyperlink{core_8h_afc5d1a0744f51f8695c8e6b2582a8f8b}{to\+\_\+string\+\_\+view}(\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format}), \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ \hyperlink{format_8h_af1dcf0d1d6738a06a6d7fd63e0bd1859}{context} $>$(\hyperlink{format_8h_a0bf5bd3ff76cba55c74c637d7e5cb118}{as}))
+\item 
+{\footnotesize template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ }\\int \hyperlink{printf_8h_a8e76ca41df7c4f7dc305be2db6dbe298}{vfprintf} (std\+::\+F\+I\+LE $\ast$f, const S \&\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ Char $>$$>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename... Args$>$ }\\\hyperlink{printf_8h_aedcc5ecc2ec86bfe7affa306aae393b6}{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T} (\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value, int) fprintf(std
+\item 
+{\footnotesize template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ }\\int \hyperlink{printf_8h_a990055ea68d22b98d476e6c090d99f58}{vprintf} (const S \&\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ Char $>$$>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename... Args$>$ }\\\hyperlink{printf_8h_a26e43c2f9ce898b7955c5c13dbb22866}{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T} (\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value, int) printf(const S \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}
+\item 
+return \hyperlink{printf_8h_ae6ff9942a0f40f26b3361497bcddcdfd}{vprintf} (\hyperlink{core_8h_afc5d1a0744f51f8695c8e6b2582a8f8b}{to\+\_\+string\+\_\+view}(\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}), \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ \hyperlink{format_8h_af1dcf0d1d6738a06a6d7fd63e0bd1859}{context} $>$(\hyperlink{format_8h_a0bf5bd3ff76cba55c74c637d7e5cb118}{as}))
+\item 
+{\footnotesize template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ }\\int \hyperlink{printf_8h_aee35a45c63a0f61f10fcb3dde7ae07ce}{vfprintf} (std\+::basic\+\_\+ostream$<$ Char $>$ \&os, const S \&\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ Char $>$$>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const Args \& \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args}
+\item 
+\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$ \hyperlink{format_8h_af1dcf0d1d6738a06a6d7fd63e0bd1859}{context}, Args... $>$ \hyperlink{printf_8h_a7ce9e2525b47fde3b88c0dd7f1cab52e}{as} \{ args... \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}\label{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}} 
+\index{printf.\+h@{printf.\+h}!buffer@{buffer}}
+\index{buffer@{buffer}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily typedef \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$ \hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer}}
+
+
+
+Definition at line 757 of file printf.\+h.
+
+\mbox{\Hypertarget{printf_8h_af5fff57f00afaed1f4cffd60908f0ef5}\label{printf_8h_af5fff57f00afaed1f4cffd60908f0ef5}} 
+\index{printf.\+h@{printf.\+h}!context@{context}}
+\index{context@{context}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily typedef \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$\hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer}$>$\+::type \hyperlink{format_8h_af1dcf0d1d6738a06a6d7fd63e0bd1859}{context}}
+
+
+
+Definition at line 758 of file printf.\+h.
+
+\mbox{\Hypertarget{printf_8h_a24522aa3e20abc0bc06f7a8a3b67d3fe}\label{printf_8h_a24522aa3e20abc0bc06f7a8a3b67d3fe}} 
+\index{printf.\+h@{printf.\+h}!printf\+\_\+args@{printf\+\_\+args}}
+\index{printf\+\_\+args@{printf\+\_\+args}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{printf\+\_\+args}{printf\_args}}
+{\footnotesize\ttfamily typedef \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$\hyperlink{printf_8h_a18c1fcb1d1bfe320b125df67e9a0e893}{printf\+\_\+context}$>$ \hyperlink{printf_8h_a24522aa3e20abc0bc06f7a8a3b67d3fe}{printf\+\_\+args}}
+
+
+
+Definition at line 710 of file printf.\+h.
+
+\mbox{\Hypertarget{printf_8h_a18c1fcb1d1bfe320b125df67e9a0e893}\label{printf_8h_a18c1fcb1d1bfe320b125df67e9a0e893}} 
+\index{printf.\+h@{printf.\+h}!printf\+\_\+context@{printf\+\_\+context}}
+\index{printf\+\_\+context@{printf\+\_\+context}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{printf\+\_\+context}{printf\_context}}
+{\footnotesize\ttfamily typedef \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$\hyperlink{namespaceinternal_a5fcdbc3efad1f390e6c3f0fdafa56122}{internal\+::buffer}$>$\+::type \hyperlink{printf_8h_a18c1fcb1d1bfe320b125df67e9a0e893}{printf\+\_\+context}}
+
+
+
+Definition at line 707 of file printf.\+h.
+
+\mbox{\Hypertarget{printf_8h_a2667be8ec16f57d0332500e5e42c5e2c}\label{printf_8h_a2667be8ec16f57d0332500e5e42c5e2c}} 
+\index{printf.\+h@{printf.\+h}!wprintf\+\_\+args@{wprintf\+\_\+args}}
+\index{wprintf\+\_\+args@{wprintf\+\_\+args}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{wprintf\+\_\+args}{wprintf\_args}}
+{\footnotesize\ttfamily typedef \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$\hyperlink{printf_8h_aa348f87d76d3b70d6ce5360f7d0e273e}{wprintf\+\_\+context}$>$ \hyperlink{printf_8h_a2667be8ec16f57d0332500e5e42c5e2c}{wprintf\+\_\+args}}
+
+
+
+Definition at line 711 of file printf.\+h.
+
+\mbox{\Hypertarget{printf_8h_aa348f87d76d3b70d6ce5360f7d0e273e}\label{printf_8h_aa348f87d76d3b70d6ce5360f7d0e273e}} 
+\index{printf.\+h@{printf.\+h}!wprintf\+\_\+context@{wprintf\+\_\+context}}
+\index{wprintf\+\_\+context@{wprintf\+\_\+context}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{wprintf\+\_\+context}{wprintf\_context}}
+{\footnotesize\ttfamily typedef \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$\hyperlink{namespaceinternal_a6d6bf139e2a200cfb80dfcb8a0da048e}{internal\+::wbuffer}$>$\+::type \hyperlink{printf_8h_aa348f87d76d3b70d6ce5360f7d0e273e}{wprintf\+\_\+context}}
+
+
+
+Definition at line 708 of file printf.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{printf_8h_a185a2245cd387f5548816f3f004f8e33}\label{printf_8h_a185a2245cd387f5548816f3f004f8e33}} 
+\index{printf.\+h@{printf.\+h}!F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}}
+\index{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+\+T()}{FMT\_ENABLE\_IF\_T()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename S , typename... Args$>$ \\
+F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T (\begin{DoxyParamCaption}\item[{\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value}]{,  }\item[{std\+::basic\+\_\+string$<$ \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$}]{ }\end{DoxyParamCaption}) const \&\hspace{0.3cm}{\ttfamily [inline]}}
+
+Formats arguments and returns the result as a string.
+
+Example$\ast$$\ast$\+:\+:
+
+std\+::string message = fmt\+::sprintf(\char`\"{}\+The answer is \%d\char`\"{}, 42);  Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{printf_8h_a185a2245cd387f5548816f3f004f8e33_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{printf_8h_aedcc5ecc2ec86bfe7affa306aae393b6}\label{printf_8h_aedcc5ecc2ec86bfe7affa306aae393b6}} 
+\index{printf.\+h@{printf.\+h}!F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}}
+\index{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+\+T()}{FMT\_ENABLE\_IF\_T()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename S , typename... Args$>$ \\
+F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T (\begin{DoxyParamCaption}\item[{\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints formatted data to the file {\itshape f}.
+
+Example$\ast$$\ast$\+:\+:
+
+fmt\+::fprintf(stderr, \char`\"{}\+Don\textquotesingle{}t \%s!\char`\"{}, \char`\"{}panic\char`\"{}); 
+
+Prints formatted data to the stream {\itshape os}.
+
+Example$\ast$$\ast$\+:\+:
+
+fmt\+::fprintf(cerr, \char`\"{}\+Don\textquotesingle{}t \%s!\char`\"{}, \char`\"{}panic\char`\"{});  
+
+Definition at line 785 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{printf_8h_aedcc5ecc2ec86bfe7affa306aae393b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{printf_8h_a26e43c2f9ce898b7955c5c13dbb22866}\label{printf_8h_a26e43c2f9ce898b7955c5c13dbb22866}} 
+\index{printf.\+h@{printf.\+h}!F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}}
+\index{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+\+T()}{FMT\_ENABLE\_IF\_T()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename S , typename... Args$>$ \\
+F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T (\begin{DoxyParamCaption}\item[{\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value}]{,  }\item[{int}]{ }\end{DoxyParamCaption}) const \&\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints formatted data to {\ttfamily stdout}.
+
+Example$\ast$$\ast$\+:\+:
+
+fmt\+::printf(\char`\"{}\+Elapsed time\+: \%.\+2f seconds\char`\"{}, 1.\+23);  \mbox{\Hypertarget{printf_8h_ac23a7ace53ee8d93c26ccd04d98ed7bd}\label{printf_8h_ac23a7ace53ee8d93c26ccd04d98ed7bd}} 
+\index{printf.\+h@{printf.\+h}!make\+\_\+printf\+\_\+args@{make\+\_\+printf\+\_\+args}}
+\index{make\+\_\+printf\+\_\+args@{make\+\_\+printf\+\_\+args}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{make\+\_\+printf\+\_\+args()}{make\_printf\_args()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$\hyperlink{printf_8h_a18c1fcb1d1bfe320b125df67e9a0e893}{printf\+\_\+context}, Args...$>$ make\+\_\+printf\+\_\+args (\begin{DoxyParamCaption}\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs an {\ttfamily $\sim$fmt\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}} object that contains references to arguments and can be implicitly converted to {\ttfamily $\sim$fmt\hyperlink{printf_8h_a24522aa3e20abc0bc06f7a8a3b67d3fe}{printf\+\_\+args}}.  
+
+Definition at line 721 of file printf.\+h.
+
+\mbox{\Hypertarget{printf_8h_ab9199628cf2f44aecab20484d764ed9b}\label{printf_8h_ab9199628cf2f44aecab20484d764ed9b}} 
+\index{printf.\+h@{printf.\+h}!make\+\_\+wprintf\+\_\+args@{make\+\_\+wprintf\+\_\+args}}
+\index{make\+\_\+wprintf\+\_\+args@{make\+\_\+wprintf\+\_\+args}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{make\+\_\+wprintf\+\_\+args()}{make\_wprintf\_args()}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$\hyperlink{printf_8h_aa348f87d76d3b70d6ce5360f7d0e273e}{wprintf\+\_\+context}, Args...$>$ make\+\_\+wprintf\+\_\+args (\begin{DoxyParamCaption}\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs an {\ttfamily $\sim$fmt\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}} object that contains references to arguments and can be implicitly converted to {\ttfamily $\sim$fmt\hyperlink{printf_8h_a2667be8ec16f57d0332500e5e42c5e2c}{wprintf\+\_\+args}}.  
+
+Definition at line 731 of file printf.\+h.
+
+\mbox{\Hypertarget{printf_8h_a8e76ca41df7c4f7dc305be2db6dbe298}\label{printf_8h_a8e76ca41df7c4f7dc305be2db6dbe298}} 
+\index{printf.\+h@{printf.\+h}!vfprintf@{vfprintf}}
+\index{vfprintf@{vfprintf}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{vfprintf()}{vfprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ \\
+int vfprintf (\begin{DoxyParamCaption}\item[{std\+::\+F\+I\+LE $\ast$}]{f,  }\item[{const S \&}]{format,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ Char $>$$>$\+::type $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 765 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{printf_8h_a8e76ca41df7c4f7dc305be2db6dbe298_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{printf_8h_a8e76ca41df7c4f7dc305be2db6dbe298_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{printf_8h_aee35a45c63a0f61f10fcb3dde7ae07ce}\label{printf_8h_aee35a45c63a0f61f10fcb3dde7ae07ce}} 
+\index{printf.\+h@{printf.\+h}!vfprintf@{vfprintf}}
+\index{vfprintf@{vfprintf}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{vfprintf()}{vfprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ \\
+int vfprintf (\begin{DoxyParamCaption}\item[{std\+::basic\+\_\+ostream$<$ Char $>$ \&}]{os,  }\item[{const S \&}]{format,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ Char $>$$>$\+::type $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 823 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{printf_8h_aee35a45c63a0f61f10fcb3dde7ae07ce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{printf_8h_a990055ea68d22b98d476e6c090d99f58}\label{printf_8h_a990055ea68d22b98d476e6c090d99f58}} 
+\index{printf.\+h@{printf.\+h}!vprintf@{vprintf}}
+\index{vprintf@{vprintf}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{vprintf()}{vprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ \\
+int vprintf (\begin{DoxyParamCaption}\item[{const S \&}]{format,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ Char $>$$>$\+::type $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 796 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{printf_8h_a990055ea68d22b98d476e6c090d99f58_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{printf_8h_ae6ff9942a0f40f26b3361497bcddcdfd}\label{printf_8h_ae6ff9942a0f40f26b3361497bcddcdfd}} 
+\index{printf.\+h@{printf.\+h}!vprintf@{vprintf}}
+\index{vprintf@{vprintf}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{vprintf()}{vprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily return vprintf (\begin{DoxyParamCaption}\item[{\hyperlink{core_8h_afc5d1a0744f51f8695c8e6b2582a8f8b}{to\+\_\+string\+\_\+view}(\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str})}]{,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ \hyperlink{format_8h_af1dcf0d1d6738a06a6d7fd63e0bd1859}{context} $>$}]{as }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{printf_8h_a44ccbdb3d306d7fa1f99d60b3d262d9e}\label{printf_8h_a44ccbdb3d306d7fa1f99d60b3d262d9e}} 
+\index{printf.\+h@{printf.\+h}!vsprintf@{vsprintf}}
+\index{vsprintf@{vsprintf}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{vsprintf()}{vsprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ \\
+std\+::basic\+\_\+string$<$Char$>$ vsprintf (\begin{DoxyParamCaption}\item[{const S \&}]{format,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbasic__printf__context__t}{basic\+\_\+printf\+\_\+context\+\_\+t}$<$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ Char $>$$>$\+::type $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 735 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{printf_8h_a44ccbdb3d306d7fa1f99d60b3d262d9e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{printf_8h_a668a5610c328f9d182ae6d20984588fd}\label{printf_8h_a668a5610c328f9d182ae6d20984588fd}} 
+\index{printf.\+h@{printf.\+h}!vsprintf@{vsprintf}}
+\index{vsprintf@{vsprintf}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{vsprintf()}{vsprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily return vsprintf (\begin{DoxyParamCaption}\item[{\hyperlink{core_8h_afc5d1a0744f51f8695c8e6b2582a8f8b}{to\+\_\+string\+\_\+view}(\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format})}]{,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ \hyperlink{format_8h_af1dcf0d1d6738a06a6d7fd63e0bd1859}{context} $>$}]{as }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{printf_8h_a47047b7b28fd1342eef756b79c778580}\label{printf_8h_a47047b7b28fd1342eef756b79c778580}} 
+\index{printf.\+h@{printf.\+h}!args@{args}}
+\index{args@{args}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily const Args\& args}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+  \hyperlink{namespaceinternal_a14d62818b14fe8556fdb1718e12fd1ab}{internal::check\_format\_string}<Args...>(\hyperlink{core_8h_ae4af59c87c10d9a8d3ebd3eb455a25c1}{format})
+\end{DoxyCode}
+
+
+Definition at line 755 of file printf.\+h.
+
+\mbox{\Hypertarget{printf_8h_a7ce9e2525b47fde3b88c0dd7f1cab52e}\label{printf_8h_a7ce9e2525b47fde3b88c0dd7f1cab52e}} 
+\index{printf.\+h@{printf.\+h}!as@{as}}
+\index{as@{as}!printf.\+h@{printf.\+h}}
+\subsubsection{\texorpdfstring{as}{as}}
+{\footnotesize\ttfamily \hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$\hyperlink{format_8h_af1dcf0d1d6738a06a6d7fd63e0bd1859}{context}, Args...$>$ as \{ args... \}}
+
+
+
+Definition at line 759 of file printf.\+h.
+

@@ -1,0 +1,6 @@
+<map id="spdlog::level::from_str" name="spdlog::level::from_str">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_log.html#adbf98ba02ee62812b211ede24464c91c" title="WireCell::Log::add_sink" alt="" coords="204,5,365,32"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_log.html#af453ddce8d810f730dca72024376727e" title="WireCell::Log::set\l_level" alt="" coords="221,57,348,98"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_main.html#a2b649ad950c80a65798687e79b6bf7bd" title="WireCell::Main::set\l_loglevel" alt="" coords="413,57,548,98"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_main.html#a6d6b47f6893cc6474d71d70bf5f8adcb" title="WireCell::Main::cmdline" alt="" coords="596,64,757,91"/>
+</map>

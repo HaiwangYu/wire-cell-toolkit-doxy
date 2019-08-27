@@ -1,0 +1,157 @@
+\hypertarget{class_wire_cell_1_1_i_random}{}\section{Wire\+Cell\+:\+:I\+Random Class Reference}
+\label{class_wire_cell_1_1_i_random}\index{Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}}
+
+
+{\ttfamily \#include $<$I\+Random.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Random\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{class_wire_cell_1_1_i_random__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Random\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_wire_cell_1_1_i_random__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_random_a0423914f3cfd21bc8012a9aab26508ed}{$\sim$\+I\+Random} ()
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_random_a4cb94097ddbd0edda3ad891b6d01b37d}{binomial} (int max, double prob)=0
+\begin{DoxyCompactList}\small\item\em Sample a binomial distribution. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_random_aae935a94e7a72eccaaf9ad7f1a2fd76a}{poisson} (double mean)=0
+\begin{DoxyCompactList}\small\item\em Sample a Poisson distribution. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_random_a6a24d8800300de9f8b735277dc0268d4}{normal} (double mean, double sigma)=0
+\begin{DoxyCompactList}\small\item\em Sample a normal distribution. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_random_ac110a2703fe22175c8c074a55a0218a3}{uniform} (double begin, double end)=0
+\begin{DoxyCompactList}\small\item\em Sample a uniform distribution. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_random_a093f57116384dacdf0bc68ae4373ae49}{exponential} (double mean)=0
+\begin{DoxyCompactList}\small\item\em Sample an exponential distribution. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_random_a936f25425285556c6be01e4e73ea27fd}{range} (int first, int last)=0
+\begin{DoxyCompactList}\small\item\em Sample a uniform integer range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file I\+Random.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_random_a0423914f3cfd21bc8012a9aab26508ed}\label{class_wire_cell_1_1_i_random_a0423914f3cfd21bc8012a9aab26508ed}} 
+\index{Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}!````~I\+Random@{$\sim$\+I\+Random}}
+\index{````~I\+Random@{$\sim$\+I\+Random}!Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Random()}{~IRandom()}}
+{\footnotesize\ttfamily I\+Random\+::$\sim$\+I\+Random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 152 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_random_a4cb94097ddbd0edda3ad891b6d01b37d}\label{class_wire_cell_1_1_i_random_a4cb94097ddbd0edda3ad891b6d01b37d}} 
+\index{Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}!binomial@{binomial}}
+\index{binomial@{binomial}!Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}}
+\subsubsection{\texorpdfstring{binomial()}{binomial()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Random\+::binomial (\begin{DoxyParamCaption}\item[{int}]{max,  }\item[{double}]{prob }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sample a binomial distribution. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_random_afb7a7a30f4f5c70a6388dc47c6464153}{Wire\+Cell\+::\+Gen\+::\+Random}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_random_a093f57116384dacdf0bc68ae4373ae49}\label{class_wire_cell_1_1_i_random_a093f57116384dacdf0bc68ae4373ae49}} 
+\index{Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}!exponential@{exponential}}
+\index{exponential@{exponential}!Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}}
+\subsubsection{\texorpdfstring{exponential()}{exponential()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Random\+::exponential (\begin{DoxyParamCaption}\item[{double}]{mean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sample an exponential distribution. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_random_adc1edd1dadf04f9e78d1c6480f6f4f1a}{Wire\+Cell\+::\+Gen\+::\+Random}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_random_a6a24d8800300de9f8b735277dc0268d4}\label{class_wire_cell_1_1_i_random_a6a24d8800300de9f8b735277dc0268d4}} 
+\index{Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}!normal@{normal}}
+\index{normal@{normal}!Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}}
+\subsubsection{\texorpdfstring{normal()}{normal()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Random\+::normal (\begin{DoxyParamCaption}\item[{double}]{mean,  }\item[{double}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sample a normal distribution. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_random_a0efe5c29dec850c78a0013a30f011320}{Wire\+Cell\+::\+Gen\+::\+Random}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_random_aae935a94e7a72eccaaf9ad7f1a2fd76a}\label{class_wire_cell_1_1_i_random_aae935a94e7a72eccaaf9ad7f1a2fd76a}} 
+\index{Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}!poisson@{poisson}}
+\index{poisson@{poisson}!Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}}
+\subsubsection{\texorpdfstring{poisson()}{poisson()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Random\+::poisson (\begin{DoxyParamCaption}\item[{double}]{mean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sample a Poisson distribution. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_random_abf2ad8cda2e34f349f073a148dd5ac58}{Wire\+Cell\+::\+Gen\+::\+Random}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_random_a936f25425285556c6be01e4e73ea27fd}\label{class_wire_cell_1_1_i_random_a936f25425285556c6be01e4e73ea27fd}} 
+\index{Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}!range@{range}}
+\index{range@{range}!Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}}
+\subsubsection{\texorpdfstring{range()}{range()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Random\+::range (\begin{DoxyParamCaption}\item[{int}]{first,  }\item[{int}]{last }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sample a uniform integer range. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_random_a84b86a3aaa791e75eb3eb80e1efb1d7e}{Wire\+Cell\+::\+Gen\+::\+Random}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_random_ac110a2703fe22175c8c074a55a0218a3}\label{class_wire_cell_1_1_i_random_ac110a2703fe22175c8c074a55a0218a3}} 
+\index{Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}!uniform@{uniform}}
+\index{uniform@{uniform}!Wire\+Cell\+::\+I\+Random@{Wire\+Cell\+::\+I\+Random}}
+\subsubsection{\texorpdfstring{uniform()}{uniform()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Random\+::uniform (\begin{DoxyParamCaption}\item[{double}]{begin,  }\item[{double}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sample a uniform distribution. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_random_aa470ac91289961da741d0d31ccfb83d8}{Wire\+Cell\+::\+Gen\+::\+Random}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_random_8h}{I\+Random.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

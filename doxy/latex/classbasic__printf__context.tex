@@ -1,0 +1,117 @@
+\hypertarget{classbasic__printf__context}{}\section{basic\+\_\+printf\+\_\+context$<$ Output\+It, Char, Arg\+Formatter $>$ Class Template Reference}
+\label{classbasic__printf__context}\index{basic\+\_\+printf\+\_\+context$<$ Output\+It, Char, Arg\+Formatter $>$@{basic\+\_\+printf\+\_\+context$<$ Output\+It, Char, Arg\+Formatter $>$}}
+
+
+{\ttfamily \#include $<$printf.\+h$>$}
+
+
+
+Inheritance diagram for basic\+\_\+printf\+\_\+context$<$ Output\+It, Char, Arg\+Formatter $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__printf__context__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for basic\+\_\+printf\+\_\+context$<$ Output\+It, Char, Arg\+Formatter $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__printf__context__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbasic__printf__context_1_1formatter__type}{formatter\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Char \hyperlink{classbasic__printf__context_a7f19ba5dfbcd66a87281c4b05bcf324e}{char\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbasic__printf__context_ae71967bec500702473ba5b98d4e36aa2}{basic\+\_\+printf\+\_\+context} (Output\+It \hyperlink{classinternal_1_1context__base_ab77c1d5e2cf72ef323e1599be8567fee}{out}, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ \hyperlink{classbasic__printf__context_a7f19ba5dfbcd66a87281c4b05bcf324e}{char\+\_\+type} $>$ \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ \hyperlink{classbasic__printf__context}{basic\+\_\+printf\+\_\+context} $>$ \hyperlink{classinternal_1_1context__base_a2dffc62b4cf30e9a359c1c85827c8c43}{args})
+\item 
+void \hyperlink{classbasic__printf__context_a1740a3a0a6d2748e4f489fb9b4b9e82c}{format} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Output\+It, typename Char, typename Arg\+Formatter$>$\newline
+class basic\+\_\+printf\+\_\+context$<$ Output\+It, Char, Arg\+Formatter $>$}
+
+This template formats data and writes the output to a writer. 
+
+Definition at line 336 of file printf.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classbasic__printf__context_a7f19ba5dfbcd66a87281c4b05bcf324e}\label{classbasic__printf__context_a7f19ba5dfbcd66a87281c4b05bcf324e}} 
+\index{basic\+\_\+printf\+\_\+context@{basic\+\_\+printf\+\_\+context}!char\+\_\+type@{char\+\_\+type}}
+\index{char\+\_\+type@{char\+\_\+type}!basic\+\_\+printf\+\_\+context@{basic\+\_\+printf\+\_\+context}}
+\subsubsection{\texorpdfstring{char\+\_\+type}{char\_type}}
+{\footnotesize\ttfamily template$<$typename Output\+It , typename Char , typename Arg\+Formatter $>$ \\
+typedef Char \hyperlink{classbasic__printf__context}{basic\+\_\+printf\+\_\+context}$<$ Output\+It, Char, Arg\+Formatter $>$\+::\hyperlink{classbasic__printf__context_a7f19ba5dfbcd66a87281c4b05bcf324e}{char\+\_\+type}}
+
+The character type for the output. 
+
+Definition at line 479 of file printf.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbasic__printf__context_ae71967bec500702473ba5b98d4e36aa2}\label{classbasic__printf__context_ae71967bec500702473ba5b98d4e36aa2}} 
+\index{basic\+\_\+printf\+\_\+context@{basic\+\_\+printf\+\_\+context}!basic\+\_\+printf\+\_\+context@{basic\+\_\+printf\+\_\+context}}
+\index{basic\+\_\+printf\+\_\+context@{basic\+\_\+printf\+\_\+context}!basic\+\_\+printf\+\_\+context@{basic\+\_\+printf\+\_\+context}}
+\subsubsection{\texorpdfstring{basic\+\_\+printf\+\_\+context()}{basic\_printf\_context()}}
+{\footnotesize\ttfamily template$<$typename Output\+It , typename Char , typename Arg\+Formatter $>$ \\
+\hyperlink{classbasic__printf__context}{basic\+\_\+printf\+\_\+context}$<$ Output\+It, Char, Arg\+Formatter $>$\+::\hyperlink{classbasic__printf__context}{basic\+\_\+printf\+\_\+context} (\begin{DoxyParamCaption}\item[{Output\+It}]{out,  }\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ \hyperlink{classbasic__printf__context_a7f19ba5dfbcd66a87281c4b05bcf324e}{char\+\_\+type} $>$}]{format\+\_\+str,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ \hyperlink{classbasic__printf__context}{basic\+\_\+printf\+\_\+context}$<$ Output\+It, Char, Arg\+Formatter $>$ $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a {\ttfamily printf\+\_\+context} object. References to the arguments and the writer are stored in the context object so make sure they have appropriate lifetimes.  
+
+Definition at line 509 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__printf__context_ae71967bec500702473ba5b98d4e36aa2_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbasic__printf__context_a1740a3a0a6d2748e4f489fb9b4b9e82c}\label{classbasic__printf__context_a1740a3a0a6d2748e4f489fb9b4b9e82c}} 
+\index{basic\+\_\+printf\+\_\+context@{basic\+\_\+printf\+\_\+context}!format@{format}}
+\index{format@{format}!basic\+\_\+printf\+\_\+context@{basic\+\_\+printf\+\_\+context}}
+\subsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily template$<$typename Output\+It , typename Char , typename AF $>$ \\
+void \hyperlink{classbasic__printf__context}{basic\+\_\+printf\+\_\+context}$<$ Output\+It, Char, AF $>$\+::format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Formats stored arguments and writes the output to the range. 
+
+Definition at line 596 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__printf__context_a1740a3a0a6d2748e4f489fb9b4b9e82c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{printf_8h}{printf.\+h}\end{DoxyCompactItemize}

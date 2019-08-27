@@ -1,0 +1,277 @@
+\hypertarget{spdlog_8h}{}\section{util/inc/spdlog/spdlog.h File Reference}
+\label{spdlog_8h}\index{util/inc/spdlog/spdlog.\+h@{util/inc/spdlog/spdlog.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/registry.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/logger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/version.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for spdlog.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spdlog_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spdlog_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structspdlog_1_1synchronous__factory}{spdlog\+::synchronous\+\_\+factory}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger,  level, ...)
+\item 
+\#define \hyperlink{spdlog_8h_aadd8d6a6bdd11a1c989346d4777d6c03}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+T\+R\+A\+CE}(logger, ...)~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8badd5891a1416461ee9e7d7e19d41af51f}{spdlog\+::level\+::trace}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_aac4c18fd6ad8f9a6d9b9793220ab9e92}{S\+P\+D\+L\+O\+G\+\_\+\+T\+R\+A\+CE}(...)~\hyperlink{spdlog_8h_aadd8d6a6bdd11a1c989346d4777d6c03}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+T\+R\+A\+CE}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_ab508bba15a80b3e7a909ed867d3b9320}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+D\+E\+B\+UG}(logger, ...)~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8baea632f71a316dac4dbaf2d98534c7ca5}{spdlog\+::level\+::debug}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_a10a205c2dfdb91688e85c3f49bc671cd}{S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+B\+UG}(...)~\hyperlink{spdlog_8h_ab508bba15a80b3e7a909ed867d3b9320}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+D\+E\+B\+UG}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_a34ab135d5bc3040c9b60e068c4f33726}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+FO}(logger, ...)~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba7f09db55ad64d87e4124f10582cb016f}{spdlog\+::level\+::info}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_ac123bf94c2532584c1f53a4cde7a27e2}{S\+P\+D\+L\+O\+G\+\_\+\+I\+N\+FO}(...)~\hyperlink{spdlog_8h_a34ab135d5bc3040c9b60e068c4f33726}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+FO}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_a438c8e890e90f85ad3d832496b8a9493}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+W\+A\+RN}(logger, ...)~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba6c371ca09668dd308a1997eab47def05}{spdlog\+::level\+::warn}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_a4bf5ff0686233c37d6bf2233d766d3c8}{S\+P\+D\+L\+O\+G\+\_\+\+W\+A\+RN}(...)~\hyperlink{spdlog_8h_a438c8e890e90f85ad3d832496b8a9493}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+W\+A\+RN}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_a006a17817b05bda3778be8b78348b079}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+E\+R\+R\+OR}(logger, ...)~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba4d723e295b98a75c1263d85fc165045f}{spdlog\+::level\+::err}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_a80b7c8b92e366f68d13143165b6ce271}{S\+P\+D\+L\+O\+G\+\_\+\+E\+R\+R\+OR}(...)~\hyperlink{spdlog_8h_a006a17817b05bda3778be8b78348b079}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+E\+R\+R\+OR}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_a752190d33981bd64c8a7706d3ba1bc29}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL}(logger, ...)~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba309b214a2b8629b6cf0048ce916e8a58}{spdlog\+::level\+::critical}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{spdlog_8h_ae91dad63ce8e0f912ff58cdd62f60981}{S\+P\+D\+L\+O\+G\+\_\+\+C\+R\+I\+T\+I\+C\+AL}(...)~\hyperlink{spdlog_8h_a752190d33981bd64c8a7706d3ba1bc29}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacespdlog_a349fb42bd8e759a32021b46fcdaca6c6}{spdlog\+::default\+\_\+factory} = synchronous\+\_\+factory
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Sink , typename... Sink\+Args$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespacespdlog_a852b420dc3dd5e5193a21f61f8577e62}{spdlog\+::create} (std\+::string logger\+\_\+name, Sink\+Args \&\&... sink\+\_\+args)
+\item 
+std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_a658d68d4ebdb11793b1e78582f108674}{spdlog\+::get} (const std\+::string \&name)
+\item 
+void \hyperlink{namespacespdlog_a83007016a4f374c8efcc738eee5b7290}{spdlog\+::set\+\_\+formatter} (std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$ \hyperlink{structformatter}{formatter})
+\item 
+void \hyperlink{namespacespdlog_a638029f343e8dd2393d62288b1eb095e}{spdlog\+::set\+\_\+pattern} (std\+::string pattern, pattern\+\_\+time\+\_\+type time\+\_\+type=pattern\+\_\+time\+\_\+type\+::local)
+\item 
+void \hyperlink{namespacespdlog_a9f952c6a1e1114b474aff89965261a1b}{spdlog\+::set\+\_\+level} (level\+::level\+\_\+enum log\+\_\+level)
+\item 
+void \hyperlink{namespacespdlog_afac55b239302064cba773add59b635d1}{spdlog\+::flush\+\_\+on} (level\+::level\+\_\+enum log\+\_\+level)
+\item 
+void \hyperlink{namespacespdlog_a70d5763d644df282a67999baf4680dde}{spdlog\+::flush\+\_\+every} (std\+::chrono\+::seconds interval)
+\item 
+void \hyperlink{namespacespdlog_aff4886a7bf8585815d8fd1f819f91be0}{spdlog\+::set\+\_\+error\+\_\+handler} (log\+\_\+err\+\_\+handler handler)
+\item 
+void \hyperlink{namespacespdlog_a306f1c2ef42ba046620bd84266ee5b24}{spdlog\+::register\+\_\+logger} (std\+::shared\+\_\+ptr$<$ logger $>$ logger)
+\item 
+void \hyperlink{namespacespdlog_a33b888a87a0fccc7b7dd5b89413ce6b7}{spdlog\+::apply\+\_\+all} (const std\+::function$<$ void(std\+::shared\+\_\+ptr$<$ logger $>$)$>$ \&fun)
+\item 
+void \hyperlink{namespacespdlog_af2ec5792fb30798cf285da36cb5c9377}{spdlog\+::drop} (const std\+::string \&name)
+\item 
+void \hyperlink{namespacespdlog_ab1211636fc47637f4dc5ee9a18aa1bce}{spdlog\+::drop\+\_\+all} ()
+\item 
+void \hyperlink{namespacespdlog_a38b5c05a859763c5e350e8ec3da9e328}{spdlog\+::shutdown} ()
+\item 
+void \hyperlink{namespacespdlog_a95b9f066c4e8ad65454049bdd7f6b956}{spdlog\+::set\+\_\+automatic\+\_\+registration} (bool automatic\+\_\+registation)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespacespdlog_a9e6a16853c325306188a7f6f642eba94}{spdlog\+::default\+\_\+logger} ()
+\item 
+\hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $\ast$ \hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw} ()
+\item 
+void \hyperlink{namespacespdlog_ab8a13bd805e706298e1e396ee5ac93bb}{spdlog\+::set\+\_\+default\+\_\+logger} (std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ default\+\_\+logger)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_acc4ad5305b408c41a60540b0e2a8aa85}{spdlog\+::log} (source\+\_\+loc source, level\+::level\+\_\+enum lvl, const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a7ad1ad069c196a042cb191b05d27167a}{spdlog\+::log} (level\+::level\+\_\+enum lvl, const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a0ec6777ea7982bcf7cf85b87b0619b56}{spdlog\+::trace} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a29e62b80052a1440e526853d4b2c3c5c}{spdlog\+::debug} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a3ee2e37859d2eee2722afc8ac26319ae}{spdlog\+::info} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a41a6d93dee0e1a8c2e6153c1fc7f59df}{spdlog\+::warn} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a84fc1d0e60ec7d333fd4f299f9c1e6b2}{spdlog\+::error} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a753989ee0011b7d977e04a278b9380a2}{spdlog\+::critical} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_aee9d401c7cb3cd8538a139af836c5ec5}{spdlog\+::log} (level\+::level\+\_\+enum lvl, const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_a99302a3f872e2cba98f81ac1a2f63321}{spdlog\+::trace} (const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_a93c284cebdb3b3dab204f2a87344e4b5}{spdlog\+::debug} (const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_ad68b6f9b65e1e8daab0117d75f0c39b4}{spdlog\+::info} (const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_ab3df0dca3174a057e99fc327e8c25c57}{spdlog\+::warn} (const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_aa274f8a5f4f20ff435d27500ff589234}{spdlog\+::error} (const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_a2c707fb3d3d12a244ebfe3e40b417edc}{spdlog\+::critical} (const T \&msg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{spdlog_8h_ae91dad63ce8e0f912ff58cdd62f60981}\label{spdlog_8h_ae91dad63ce8e0f912ff58cdd62f60981}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+C\+R\+I\+T\+I\+C\+AL@{S\+P\+D\+L\+O\+G\+\_\+\+C\+R\+I\+T\+I\+C\+AL}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+C\+R\+I\+T\+I\+C\+AL@{S\+P\+D\+L\+O\+G\+\_\+\+C\+R\+I\+T\+I\+C\+AL}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+C\+R\+I\+T\+I\+C\+AL}{SPDLOG\_CRITICAL}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+C\+R\+I\+T\+I\+C\+AL(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_a752190d33981bd64c8a7706d3ba1bc29}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 360 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_a10a205c2dfdb91688e85c3f49bc671cd}\label{spdlog_8h_a10a205c2dfdb91688e85c3f49bc671cd}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+B\+UG@{S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+B\+UG}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+B\+UG@{S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+B\+UG}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+B\+UG}{SPDLOG\_DEBUG}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+B\+UG(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_ab508bba15a80b3e7a909ed867d3b9320}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+D\+E\+B\+UG}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 328 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_a80b7c8b92e366f68d13143165b6ce271}\label{spdlog_8h_a80b7c8b92e366f68d13143165b6ce271}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+E\+R\+R\+OR@{S\+P\+D\+L\+O\+G\+\_\+\+E\+R\+R\+OR}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+E\+R\+R\+OR@{S\+P\+D\+L\+O\+G\+\_\+\+E\+R\+R\+OR}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+E\+R\+R\+OR}{SPDLOG\_ERROR}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_a006a17817b05bda3778be8b78348b079}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+E\+R\+R\+OR}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 352 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_ac123bf94c2532584c1f53a4cde7a27e2}\label{spdlog_8h_ac123bf94c2532584c1f53a4cde7a27e2}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+I\+N\+FO@{S\+P\+D\+L\+O\+G\+\_\+\+I\+N\+FO}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+I\+N\+FO@{S\+P\+D\+L\+O\+G\+\_\+\+I\+N\+FO}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+I\+N\+FO}{SPDLOG\_INFO}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+I\+N\+FO(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_a34ab135d5bc3040c9b60e068c4f33726}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+FO}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 336 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}\label{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}{SPDLOG\_LOGGER\_CALL}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{level,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (\hyperlink{namespace_wire_cell_1_1_log_a7675bcc4bf25b2bc66314d5c096cf676}{logger}->should\_log(level))                                                                       
+                                        \(\backslash\)
+    \hyperlink{namespace_wire_cell_1_1_log_a7675bcc4bf25b2bc66314d5c096cf676}{logger}->log(\hyperlink{structspdlog_1_1source__loc}{spdlog::source\_loc}\{SPDLOG\_FILE\_BASENAME(\_\_FILE\_\_), \_\_LINE\_\_, SPDLOG
+      \_FUNCTION\}, level, \_\_VA\_ARGS\_\_)
+\end{DoxyCode}
+
+
+Definition at line 314 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_a752190d33981bd64c8a7706d3ba1bc29}\label{spdlog_8h_a752190d33981bd64c8a7706d3ba1bc29}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL}{SPDLOG\_LOGGER\_CRITICAL}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba309b214a2b8629b6cf0048ce916e8a58}{spdlog\+::level\+::critical}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 359 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_ab508bba15a80b3e7a909ed867d3b9320}\label{spdlog_8h_ab508bba15a80b3e7a909ed867d3b9320}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+D\+E\+B\+UG@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+D\+E\+B\+UG}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+D\+E\+B\+UG@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+D\+E\+B\+UG}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+D\+E\+B\+UG}{SPDLOG\_LOGGER\_DEBUG}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+D\+E\+B\+UG(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8baea632f71a316dac4dbaf2d98534c7ca5}{spdlog\+::level\+::debug}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 327 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_a006a17817b05bda3778be8b78348b079}\label{spdlog_8h_a006a17817b05bda3778be8b78348b079}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+E\+R\+R\+OR@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+E\+R\+R\+OR}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+E\+R\+R\+OR@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+E\+R\+R\+OR}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+E\+R\+R\+OR}{SPDLOG\_LOGGER\_ERROR}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba4d723e295b98a75c1263d85fc165045f}{spdlog\+::level\+::err}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 351 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_a34ab135d5bc3040c9b60e068c4f33726}\label{spdlog_8h_a34ab135d5bc3040c9b60e068c4f33726}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+FO@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+FO}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+FO@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+FO}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+FO}{SPDLOG\_LOGGER\_INFO}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+I\+N\+FO(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba7f09db55ad64d87e4124f10582cb016f}{spdlog\+::level\+::info}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 335 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_aadd8d6a6bdd11a1c989346d4777d6c03}\label{spdlog_8h_aadd8d6a6bdd11a1c989346d4777d6c03}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+T\+R\+A\+CE@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+T\+R\+A\+CE}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+T\+R\+A\+CE@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+T\+R\+A\+CE}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+T\+R\+A\+CE}{SPDLOG\_LOGGER\_TRACE}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+T\+R\+A\+CE(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8badd5891a1416461ee9e7d7e19d41af51f}{spdlog\+::level\+::trace}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 319 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_a438c8e890e90f85ad3d832496b8a9493}\label{spdlog_8h_a438c8e890e90f85ad3d832496b8a9493}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+W\+A\+RN@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+W\+A\+RN}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+W\+A\+RN@{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+W\+A\+RN}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+W\+A\+RN}{SPDLOG\_LOGGER\_WARN}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+W\+A\+RN(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_af73a1f32ac61071d1e792ca26ec83e4b}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+C\+A\+LL}(logger, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba6c371ca09668dd308a1997eab47def05}{spdlog\+::level\+::warn}, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 343 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_aac4c18fd6ad8f9a6d9b9793220ab9e92}\label{spdlog_8h_aac4c18fd6ad8f9a6d9b9793220ab9e92}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+T\+R\+A\+CE@{S\+P\+D\+L\+O\+G\+\_\+\+T\+R\+A\+CE}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+T\+R\+A\+CE@{S\+P\+D\+L\+O\+G\+\_\+\+T\+R\+A\+CE}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+T\+R\+A\+CE}{SPDLOG\_TRACE}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+T\+R\+A\+CE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_aadd8d6a6bdd11a1c989346d4777d6c03}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+T\+R\+A\+CE}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 320 of file spdlog.\+h.
+
+\mbox{\Hypertarget{spdlog_8h_a4bf5ff0686233c37d6bf2233d766d3c8}\label{spdlog_8h_a4bf5ff0686233c37d6bf2233d766d3c8}} 
+\index{spdlog.\+h@{spdlog.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+W\+A\+RN@{S\+P\+D\+L\+O\+G\+\_\+\+W\+A\+RN}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+W\+A\+RN@{S\+P\+D\+L\+O\+G\+\_\+\+W\+A\+RN}!spdlog.\+h@{spdlog.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+W\+A\+RN}{SPDLOG\_WARN}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+W\+A\+RN(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\hyperlink{spdlog_8h_a438c8e890e90f85ad3d832496b8a9493}{S\+P\+D\+L\+O\+G\+\_\+\+L\+O\+G\+G\+E\+R\+\_\+\+W\+A\+RN}(\hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{spdlog\+::default\+\_\+logger\+\_\+raw}(), \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)}
+
+
+
+Definition at line 344 of file spdlog.\+h.
+

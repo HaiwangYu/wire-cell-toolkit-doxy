@@ -1,0 +1,49 @@
+\hypertarget{_frame_tools_8h}{}\section{iface/inc/\+Wire\+Cell\+Iface/\+Frame\+Tools.h File Reference}
+\label{_frame_tools_8h}\index{iface/inc/\+Wire\+Cell\+Iface/\+Frame\+Tools.\+h@{iface/inc/\+Wire\+Cell\+Iface/\+Frame\+Tools.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Frame.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Array.\+h\char`\"{}}\newline
+Include dependency graph for Frame\+Tools.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_frame_tools_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_frame_tools_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_frame_tools}{Wire\+Cell\+::\+Frame\+Tools}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ int $>$ \hyperlink{namespace_wire_cell_1_1_frame_tools_aaf07539dac296588f9004b525f940e67}{Wire\+Cell\+::\+Frame\+Tools\+::channel\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+I\+Trace\+::vector \hyperlink{namespace_wire_cell_1_1_frame_tools_ab39e5b3fae9cf0abda7e6795007ad6df}{Wire\+Cell\+::\+Frame\+Tools\+::untagged\+\_\+traces} (I\+Frame\+::pointer frame)
+\item 
+I\+Trace\+::vector \hyperlink{namespace_wire_cell_1_1_frame_tools_ab75409594f96814edb45d39db9d705f6}{Wire\+Cell\+::\+Frame\+Tools\+::tagged\+\_\+traces} (I\+Frame\+::pointer frame, \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{I\+Frame\+::tag\+\_\+t} tag)
+\item 
+channel\+\_\+list \hyperlink{namespace_wire_cell_1_1_frame_tools_aa68b64d0bc1fd1daa0646a35c26edcbb}{Wire\+Cell\+::\+Frame\+Tools\+::channels} (const I\+Trace\+::vector \&traces)
+\item 
+std\+::pair$<$ int, int $>$ \hyperlink{namespace_wire_cell_1_1_frame_tools_a9031f0d7465146236c47308c347d05a1}{Wire\+Cell\+::\+Frame\+Tools\+::tbin\+\_\+range} (const I\+Trace\+::vector \&traces)
+\item 
+void \hyperlink{namespace_wire_cell_1_1_frame_tools_a09db410acc8cf771ec60faec4eae7eef}{Wire\+Cell\+::\+Frame\+Tools\+::fill} (\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \&array, const I\+Trace\+::vector \&traces, channel\+\_\+list\+::iterator ch\+\_\+begin, channel\+\_\+list\+::iterator ch\+\_\+end, int tbin=0)
+\item 
+int \hyperlink{namespace_wire_cell_1_1_frame_tools_a21c3c601b6103fa7a63d9131b81dc229}{Wire\+Cell\+::\+Frame\+Tools\+::frmtcmp} (I\+Frame\+::pointer frame, double time)
+\item 
+std\+::pair$<$ I\+Frame\+::pointer, I\+Frame\+::pointer $>$ \hyperlink{namespace_wire_cell_1_1_frame_tools_a23aeb7045b99ef40f3c5ca79549e4f8f}{Wire\+Cell\+::\+Frame\+Tools\+::split} (I\+Frame\+::pointer frame, double time)
+\end{DoxyCompactItemize}

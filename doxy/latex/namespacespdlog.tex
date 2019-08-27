@@ -1,0 +1,1336 @@
+\hypertarget{namespacespdlog}{}\section{spdlog Namespace Reference}
+\label{namespacespdlog}\index{spdlog@{spdlog}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog_1_1details}{details}
+\item 
+ \hyperlink{namespacespdlog_1_1level}{level}
+\item 
+ \hyperlink{namespacespdlog_1_1sinks}{sinks}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structspdlog_1_1async__factory__impl}{async\+\_\+factory\+\_\+impl}
+\item 
+class \hyperlink{classspdlog_1_1async__logger}{async\+\_\+logger}
+\item 
+class \hyperlink{classspdlog_1_1formatter}{formatter}
+\item 
+class \hyperlink{classspdlog_1_1logger}{logger}
+\item 
+class \hyperlink{classspdlog_1_1pattern__formatter}{pattern\+\_\+formatter}
+\item 
+struct \hyperlink{structspdlog_1_1source__loc}{source\+\_\+loc}
+\item 
+class \hyperlink{classspdlog_1_1spdlog__ex}{spdlog\+\_\+ex}
+\item 
+struct \hyperlink{structspdlog_1_1synchronous__factory}{synchronous\+\_\+factory}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacespdlog_a962b94a80258f9a202d590888349577c}{async\+\_\+factory} = \hyperlink{structspdlog_1_1async__factory__impl}{async\+\_\+factory\+\_\+impl}$<$ \hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852a14511f2f5564650d129ca7cabc333278}{async\+\_\+overflow\+\_\+policy\+::block} $>$
+\item 
+using \hyperlink{namespacespdlog_a796f2e548cff4f12a5b2a52b07d3128b}{async\+\_\+factory\+\_\+nonblock} = \hyperlink{structspdlog_1_1async__factory__impl}{async\+\_\+factory\+\_\+impl}$<$ \hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852a6d09cc54ae10145444aa2f43fe46d9f2}{async\+\_\+overflow\+\_\+policy\+::overrun\+\_\+oldest} $>$
+\item 
+using \hyperlink{namespacespdlog_a173dd7064323e4807d720eabcc95fc73}{log\+\_\+clock} = std\+::chrono\+::system\+\_\+clock
+\item 
+using \hyperlink{namespacespdlog_a422c57d3088160b517e5a74e5f318253}{sink\+\_\+ptr} = std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1sinks_1_1sink}{sinks\+::sink} $>$
+\item 
+using \hyperlink{namespacespdlog_aa9b5c2298bf713fbe02b7e538d797ecd}{sinks\+\_\+init\+\_\+list} = std\+::initializer\+\_\+list$<$ \hyperlink{namespacespdlog_a422c57d3088160b517e5a74e5f318253}{sink\+\_\+ptr} $>$
+\item 
+using \hyperlink{namespacespdlog_ad3ed787a29f245c833ef66faf48036e2}{log\+\_\+err\+\_\+handler} = std\+::function$<$ void(const std\+::string \&err\+\_\+msg)$>$
+\item 
+using \hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{string\+\_\+view\+\_\+t} = \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{fmt\+::string\+\_\+view}
+\item 
+using \hyperlink{namespacespdlog_a8585bf495310a6ce695191739351709b}{level\+\_\+t} = std\+::atomic$<$ int $>$
+\item 
+using \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} = std\+::string
+\item 
+using \hyperlink{namespacespdlog_a349fb42bd8e759a32021b46fcdaca6c6}{default\+\_\+factory} = \hyperlink{structspdlog_1_1synchronous__factory}{synchronous\+\_\+factory}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852}{async\+\_\+overflow\+\_\+policy} \{ \hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852a14511f2f5564650d129ca7cabc333278}{async\+\_\+overflow\+\_\+policy\+::block}, 
+\hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852a6d09cc54ae10145444aa2f43fe46d9f2}{async\+\_\+overflow\+\_\+policy\+::overrun\+\_\+oldest}
+ \}
+\item 
+enum \hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}{pattern\+\_\+time\+\_\+type} \{ \hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07cedaf5ddaf0ca7929578b408c909429f68f2}{pattern\+\_\+time\+\_\+type\+::local}, 
+\hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ceda52d33cb937bbdab234ab1729a0f8225b}{pattern\+\_\+time\+\_\+type\+::utc}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Sink , typename... Sink\+Args$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespacespdlog_a220f834b057b45ef730c435bcc60b0aa}{create\+\_\+async} (std\+::string logger\+\_\+name, Sink\+Args \&\&... sink\+\_\+args)
+\item 
+{\footnotesize template$<$typename Sink , typename... Sink\+Args$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespacespdlog_ac5db26987120ac7b1ba0fbefe551ee52}{create\+\_\+async\+\_\+nb} (std\+::string logger\+\_\+name, Sink\+Args \&\&... sink\+\_\+args)
+\item 
+void \hyperlink{namespacespdlog_a17a4d95759b4076827905fd8f6b10d36}{init\+\_\+thread\+\_\+pool} (size\+\_\+t q\+\_\+size, size\+\_\+t thread\+\_\+count)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1details_1_1thread__pool}{spdlog\+::details\+::thread\+\_\+pool} $>$ \hyperlink{namespacespdlog_a6676a1ffb5ea174a2392ab0317bbcff2}{thread\+\_\+pool} ()
+\item 
+{\footnotesize template$<$typename Container $>$ }\\\hyperlink{classspdlog_1_1details_1_1bytes__range}{details\+::bytes\+\_\+range}$<$ typename Container\+::const\+\_\+iterator $>$ \hyperlink{namespacespdlog_acd3f4323bb627945b4cecbbbc62770ef}{to\+\_\+hex} (const Container \&container)
+\item 
+{\footnotesize template$<$typename It $>$ }\\\hyperlink{classspdlog_1_1details_1_1bytes__range}{details\+::bytes\+\_\+range}$<$ It $>$ \hyperlink{namespacespdlog_a3730108d5b1a43b30f8ddf32404b9d25}{to\+\_\+hex} (const It range\+\_\+begin, const It range\+\_\+end)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a0811adb1075181f73abc87c624fbff7e}{android\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name, const std\+::string \&tag=\char`\"{}spdlog\char`\"{})
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_aab5b508d51de238919a570cf3ca6d3db}{android\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name, const std\+::string \&tag=\char`\"{}spdlog\char`\"{})
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_abd73a6177edaccb77048bf47e3f8ad23}{basic\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name, const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename, bool truncate=false)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_abc9cd0646191cc0b295b6e50367b22b7}{basic\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name, const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename, bool truncate=false)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_aeab720351e32788bc6cdf8ada42b0f1f}{daily\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name, const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename, int hour=0, int minute=0, bool truncate=false)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a887beb44c55ef32f4bc62fa16451c77e}{daily\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name, const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename, int hour=0, int minute=0, bool truncate=false)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a6d6344c349d1c6d957d5f21f4387c8f8}{null\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_af6a7d6f86b50ab1c5c346949ca5af564}{null\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a42401c73c1dede7000852f7229b7aa9c}{rotating\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name, const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename, size\+\_\+t max\+\_\+file\+\_\+size, size\+\_\+t max\+\_\+files)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_aa94a9f4d699643b6cdecf107ec5340d6}{rotating\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name, const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename, size\+\_\+t max\+\_\+file\+\_\+size, size\+\_\+t max\+\_\+files)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a903467b7174af13d10f2f29ae9bd4a6e}{stdout\+\_\+color\+\_\+mt} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a1d20b70d425e5402b3fa6a1b075d1c6d}{stdout\+\_\+color\+\_\+st} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_ab4647f73157c2a5647097e993eb648f5}{stderr\+\_\+color\+\_\+mt} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a5564a799e789be1856d238b0d91ecadb}{stderr\+\_\+color\+\_\+st} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a9a6a99d3309b166a585fe918bd83a442}{stdout\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a5b0d86b010b11ceb3941265779c7998e}{stdout\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a93e154fd1e2eb0dc5a82fb25ce7f11d1}{stderr\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_ad2b234c875e76840785f02b189c0d514}{stderr\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a49974c7465d12f994929f70c0caeeb7c}{syslog\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name, const std\+::string \&syslog\+\_\+ident=\char`\"{}\char`\"{}, int syslog\+\_\+option=0, int syslog\+\_\+facility=(1$<$$<$ 3))
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a2b5f25193cf4478d74cf9402a120c902}{syslog\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name, const std\+::string \&syslog\+\_\+ident=\char`\"{}\char`\"{}, int syslog\+\_\+option=0, int syslog\+\_\+facility=(1$<$$<$ 3))
+\item 
+{\footnotesize template$<$typename Sink , typename... Sink\+Args$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespacespdlog_a852b420dc3dd5e5193a21f61f8577e62}{create} (std\+::string logger\+\_\+name, Sink\+Args \&\&... sink\+\_\+args)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{namespacespdlog_a658d68d4ebdb11793b1e78582f108674}{get} (const std\+::string \&name)
+\item 
+void \hyperlink{namespacespdlog_a83007016a4f374c8efcc738eee5b7290}{set\+\_\+formatter} (std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$ \hyperlink{classspdlog_1_1formatter}{formatter})
+\item 
+void \hyperlink{namespacespdlog_a638029f343e8dd2393d62288b1eb095e}{set\+\_\+pattern} (std\+::string pattern, \hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}{pattern\+\_\+time\+\_\+type} time\+\_\+type=\hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07cedaf5ddaf0ca7929578b408c909429f68f2}{pattern\+\_\+time\+\_\+type\+::local})
+\item 
+void \hyperlink{namespacespdlog_a9f952c6a1e1114b474aff89965261a1b}{set\+\_\+level} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} log\+\_\+level)
+\item 
+void \hyperlink{namespacespdlog_afac55b239302064cba773add59b635d1}{flush\+\_\+on} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} log\+\_\+level)
+\item 
+void \hyperlink{namespacespdlog_a70d5763d644df282a67999baf4680dde}{flush\+\_\+every} (std\+::chrono\+::seconds interval)
+\item 
+void \hyperlink{namespacespdlog_aff4886a7bf8585815d8fd1f819f91be0}{set\+\_\+error\+\_\+handler} (\hyperlink{namespacespdlog_ad3ed787a29f245c833ef66faf48036e2}{log\+\_\+err\+\_\+handler} handler)
+\item 
+void \hyperlink{namespacespdlog_a306f1c2ef42ba046620bd84266ee5b24}{register\+\_\+logger} (std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{classspdlog_1_1logger}{logger})
+\item 
+void \hyperlink{namespacespdlog_a33b888a87a0fccc7b7dd5b89413ce6b7}{apply\+\_\+all} (const std\+::function$<$ void(std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$)$>$ \&fun)
+\item 
+void \hyperlink{namespacespdlog_af2ec5792fb30798cf285da36cb5c9377}{drop} (const std\+::string \&name)
+\item 
+void \hyperlink{namespacespdlog_ab1211636fc47637f4dc5ee9a18aa1bce}{drop\+\_\+all} ()
+\item 
+void \hyperlink{namespacespdlog_a38b5c05a859763c5e350e8ec3da9e328}{shutdown} ()
+\item 
+void \hyperlink{namespacespdlog_a95b9f066c4e8ad65454049bdd7f6b956}{set\+\_\+automatic\+\_\+registration} (bool automatic\+\_\+registation)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespacespdlog_a9e6a16853c325306188a7f6f642eba94}{default\+\_\+logger} ()
+\item 
+\hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $\ast$ \hyperlink{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}{default\+\_\+logger\+\_\+raw} ()
+\item 
+void \hyperlink{namespacespdlog_ab8a13bd805e706298e1e396ee5ac93bb}{set\+\_\+default\+\_\+logger} (std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespacespdlog_a9e6a16853c325306188a7f6f642eba94}{default\+\_\+logger})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_acc4ad5305b408c41a60540b0e2a8aa85}{log} (\hyperlink{structspdlog_1_1source__loc}{source\+\_\+loc} source, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} lvl, const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a7ad1ad069c196a042cb191b05d27167a}{log} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} lvl, const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a0ec6777ea7982bcf7cf85b87b0619b56}{trace} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a29e62b80052a1440e526853d4b2c3c5c}{debug} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a3ee2e37859d2eee2722afc8ac26319ae}{info} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a41a6d93dee0e1a8c2e6153c1fc7f59df}{warn} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a84fc1d0e60ec7d333fd4f299f9c1e6b2}{error} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \hyperlink{namespacespdlog_a753989ee0011b7d977e04a278b9380a2}{critical} (const char $\ast$fmt, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_aee9d401c7cb3cd8538a139af836c5ec5}{log} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} lvl, const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_a99302a3f872e2cba98f81ac1a2f63321}{trace} (const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_a93c284cebdb3b3dab204f2a87344e4b5}{debug} (const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_ad68b6f9b65e1e8daab0117d75f0c39b4}{info} (const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_ab3df0dca3174a057e99fc327e8c25c57}{warn} (const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_aa274f8a5f4f20ff435d27500ff589234}{error} (const T \&msg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacespdlog_a2c707fb3d3d12a244ebfe3e40b417edc}{critical} (const T \&msg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacespdlog_a962b94a80258f9a202d590888349577c}\label{namespacespdlog_a962b94a80258f9a202d590888349577c}} 
+\index{spdlog@{spdlog}!async\+\_\+factory@{async\+\_\+factory}}
+\index{async\+\_\+factory@{async\+\_\+factory}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{async\+\_\+factory}{async\_factory}}
+{\footnotesize\ttfamily using \hyperlink{namespacespdlog_a962b94a80258f9a202d590888349577c}{spdlog\+::async\+\_\+factory} = typedef \hyperlink{structspdlog_1_1async__factory__impl}{async\+\_\+factory\+\_\+impl}$<$\hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852a14511f2f5564650d129ca7cabc333278}{async\+\_\+overflow\+\_\+policy\+::block}$>$}
+
+
+
+Definition at line 60 of file async.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a796f2e548cff4f12a5b2a52b07d3128b}\label{namespacespdlog_a796f2e548cff4f12a5b2a52b07d3128b}} 
+\index{spdlog@{spdlog}!async\+\_\+factory\+\_\+nonblock@{async\+\_\+factory\+\_\+nonblock}}
+\index{async\+\_\+factory\+\_\+nonblock@{async\+\_\+factory\+\_\+nonblock}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{async\+\_\+factory\+\_\+nonblock}{async\_factory\_nonblock}}
+{\footnotesize\ttfamily using \hyperlink{namespacespdlog_a796f2e548cff4f12a5b2a52b07d3128b}{spdlog\+::async\+\_\+factory\+\_\+nonblock} = typedef \hyperlink{structspdlog_1_1async__factory__impl}{async\+\_\+factory\+\_\+impl}$<$\hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852a6d09cc54ae10145444aa2f43fe46d9f2}{async\+\_\+overflow\+\_\+policy\+::overrun\+\_\+oldest}$>$}
+
+
+
+Definition at line 61 of file async.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a349fb42bd8e759a32021b46fcdaca6c6}\label{namespacespdlog_a349fb42bd8e759a32021b46fcdaca6c6}} 
+\index{spdlog@{spdlog}!default\+\_\+factory@{default\+\_\+factory}}
+\index{default\+\_\+factory@{default\+\_\+factory}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{default\+\_\+factory}{default\_factory}}
+{\footnotesize\ttfamily using \hyperlink{namespacespdlog_a349fb42bd8e759a32021b46fcdaca6c6}{spdlog\+::default\+\_\+factory} = typedef \hyperlink{structspdlog_1_1synchronous__factory}{synchronous\+\_\+factory}}
+
+
+
+Definition at line 37 of file spdlog.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}\label{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}} 
+\index{spdlog@{spdlog}!filename\+\_\+t@{filename\+\_\+t}}
+\index{filename\+\_\+t@{filename\+\_\+t}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{filename\+\_\+t}{filename\_t}}
+{\footnotesize\ttfamily using \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{spdlog\+::filename\+\_\+t} = typedef std\+::string}
+
+
+
+Definition at line 202 of file common.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a8585bf495310a6ce695191739351709b}\label{namespacespdlog_a8585bf495310a6ce695191739351709b}} 
+\index{spdlog@{spdlog}!level\+\_\+t@{level\+\_\+t}}
+\index{level\+\_\+t@{level\+\_\+t}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{level\+\_\+t}{level\_t}}
+{\footnotesize\ttfamily using \hyperlink{namespacespdlog_a8585bf495310a6ce695191739351709b}{spdlog\+::level\+\_\+t} = typedef std\+::atomic$<$int$>$}
+
+
+
+Definition at line 94 of file common.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a173dd7064323e4807d720eabcc95fc73}\label{namespacespdlog_a173dd7064323e4807d720eabcc95fc73}} 
+\index{spdlog@{spdlog}!log\+\_\+clock@{log\+\_\+clock}}
+\index{log\+\_\+clock@{log\+\_\+clock}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{log\+\_\+clock}{log\_clock}}
+{\footnotesize\ttfamily using \hyperlink{namespacespdlog_a173dd7064323e4807d720eabcc95fc73}{spdlog\+::log\+\_\+clock} = typedef std\+::chrono\+::system\+\_\+clock}
+
+
+
+Definition at line 79 of file common.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_ad3ed787a29f245c833ef66faf48036e2}\label{namespacespdlog_ad3ed787a29f245c833ef66faf48036e2}} 
+\index{spdlog@{spdlog}!log\+\_\+err\+\_\+handler@{log\+\_\+err\+\_\+handler}}
+\index{log\+\_\+err\+\_\+handler@{log\+\_\+err\+\_\+handler}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{log\+\_\+err\+\_\+handler}{log\_err\_handler}}
+{\footnotesize\ttfamily using \hyperlink{namespacespdlog_ad3ed787a29f245c833ef66faf48036e2}{spdlog\+::log\+\_\+err\+\_\+handler} = typedef std\+::function$<$void(const std\+::string \&err\+\_\+msg)$>$}
+
+
+
+Definition at line 82 of file common.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a422c57d3088160b517e5a74e5f318253}\label{namespacespdlog_a422c57d3088160b517e5a74e5f318253}} 
+\index{spdlog@{spdlog}!sink\+\_\+ptr@{sink\+\_\+ptr}}
+\index{sink\+\_\+ptr@{sink\+\_\+ptr}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{sink\+\_\+ptr}{sink\_ptr}}
+{\footnotesize\ttfamily using \hyperlink{namespacespdlog_a422c57d3088160b517e5a74e5f318253}{spdlog\+::sink\+\_\+ptr} = typedef std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1sinks_1_1sink}{sinks\+::sink}$>$}
+
+
+
+Definition at line 80 of file common.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_aa9b5c2298bf713fbe02b7e538d797ecd}\label{namespacespdlog_aa9b5c2298bf713fbe02b7e538d797ecd}} 
+\index{spdlog@{spdlog}!sinks\+\_\+init\+\_\+list@{sinks\+\_\+init\+\_\+list}}
+\index{sinks\+\_\+init\+\_\+list@{sinks\+\_\+init\+\_\+list}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{sinks\+\_\+init\+\_\+list}{sinks\_init\_list}}
+{\footnotesize\ttfamily using \hyperlink{namespacespdlog_aa9b5c2298bf713fbe02b7e538d797ecd}{spdlog\+::sinks\+\_\+init\+\_\+list} = typedef std\+::initializer\+\_\+list$<$\hyperlink{namespacespdlog_a422c57d3088160b517e5a74e5f318253}{sink\+\_\+ptr}$>$}
+
+
+
+Definition at line 81 of file common.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}\label{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}} 
+\index{spdlog@{spdlog}!string\+\_\+view\+\_\+t@{string\+\_\+view\+\_\+t}}
+\index{string\+\_\+view\+\_\+t@{string\+\_\+view\+\_\+t}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{string\+\_\+view\+\_\+t}{string\_view\_t}}
+{\footnotesize\ttfamily using \hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{spdlog\+::string\+\_\+view\+\_\+t} = typedef \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{fmt\+::string\+\_\+view}}
+
+
+
+Definition at line 88 of file common.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacespdlog_a42e109759a11c9514d3f6313a7709852}\label{namespacespdlog_a42e109759a11c9514d3f6313a7709852}} 
+\index{spdlog@{spdlog}!async\+\_\+overflow\+\_\+policy@{async\+\_\+overflow\+\_\+policy}}
+\index{async\+\_\+overflow\+\_\+policy@{async\+\_\+overflow\+\_\+policy}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{async\+\_\+overflow\+\_\+policy}{async\_overflow\_policy}}
+{\footnotesize\ttfamily enum \hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852}{spdlog\+::async\+\_\+overflow\+\_\+policy}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{block@{block}!spdlog@{spdlog}}\index{spdlog@{spdlog}!block@{block}}}\mbox{\Hypertarget{namespacespdlog_a42e109759a11c9514d3f6313a7709852a14511f2f5564650d129ca7cabc333278}\label{namespacespdlog_a42e109759a11c9514d3f6313a7709852a14511f2f5564650d129ca7cabc333278}} 
+block&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{overrun\+\_\+oldest@{overrun\+\_\+oldest}!spdlog@{spdlog}}\index{spdlog@{spdlog}!overrun\+\_\+oldest@{overrun\+\_\+oldest}}}\mbox{\Hypertarget{namespacespdlog_a42e109759a11c9514d3f6313a7709852a6d09cc54ae10145444aa2f43fe46d9f2}\label{namespacespdlog_a42e109759a11c9514d3f6313a7709852a6d09cc54ae10145444aa2f43fe46d9f2}} 
+overrun\+\_\+oldest&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 32 of file async\+\_\+logger.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}\label{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}} 
+\index{spdlog@{spdlog}!pattern\+\_\+time\+\_\+type@{pattern\+\_\+time\+\_\+type}}
+\index{pattern\+\_\+time\+\_\+type@{pattern\+\_\+time\+\_\+type}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{pattern\+\_\+time\+\_\+type}{pattern\_time\_type}}
+{\footnotesize\ttfamily enum \hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}{spdlog\+::pattern\+\_\+time\+\_\+type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{local@{local}!spdlog@{spdlog}}\index{spdlog@{spdlog}!local@{local}}}\mbox{\Hypertarget{namespacespdlog_ad598fbd8338772e66ae09e8723a07cedaf5ddaf0ca7929578b408c909429f68f2}\label{namespacespdlog_ad598fbd8338772e66ae09e8723a07cedaf5ddaf0ca7929578b408c909429f68f2}} 
+local&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{utc@{utc}!spdlog@{spdlog}}\index{spdlog@{spdlog}!utc@{utc}}}\mbox{\Hypertarget{namespacespdlog_ad598fbd8338772e66ae09e8723a07ceda52d33cb937bbdab234ab1729a0f8225b}\label{namespacespdlog_ad598fbd8338772e66ae09e8723a07ceda52d33cb937bbdab234ab1729a0f8225b}} 
+utc&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 163 of file common.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacespdlog_a0811adb1075181f73abc87c624fbff7e}\label{namespacespdlog_a0811adb1075181f73abc87c624fbff7e}} 
+\index{spdlog@{spdlog}!android\+\_\+logger\+\_\+mt@{android\+\_\+logger\+\_\+mt}}
+\index{android\+\_\+logger\+\_\+mt@{android\+\_\+logger\+\_\+mt}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{android\+\_\+logger\+\_\+mt()}{android\_logger\_mt()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::android\+\_\+logger\+\_\+mt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name,  }\item[{const std\+::string \&}]{tag = {\ttfamily \char`\"{}spdlog\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 110 of file android\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_aab5b508d51de238919a570cf3ca6d3db}\label{namespacespdlog_aab5b508d51de238919a570cf3ca6d3db}} 
+\index{spdlog@{spdlog}!android\+\_\+logger\+\_\+st@{android\+\_\+logger\+\_\+st}}
+\index{android\+\_\+logger\+\_\+st@{android\+\_\+logger\+\_\+st}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{android\+\_\+logger\+\_\+st()}{android\_logger\_st()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::android\+\_\+logger\+\_\+st (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name,  }\item[{const std\+::string \&}]{tag = {\ttfamily \char`\"{}spdlog\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 116 of file android\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a33b888a87a0fccc7b7dd5b89413ce6b7}\label{namespacespdlog_a33b888a87a0fccc7b7dd5b89413ce6b7}} 
+\index{spdlog@{spdlog}!apply\+\_\+all@{apply\+\_\+all}}
+\index{apply\+\_\+all@{apply\+\_\+all}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{apply\+\_\+all()}{apply\_all()}}
+{\footnotesize\ttfamily void spdlog\+::apply\+\_\+all (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$)$>$ \&}]{fun }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a33b888a87a0fccc7b7dd5b89413ce6b7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_abd73a6177edaccb77048bf47e3f8ad23}\label{namespacespdlog_abd73a6177edaccb77048bf47e3f8ad23}} 
+\index{spdlog@{spdlog}!basic\+\_\+logger\+\_\+mt@{basic\+\_\+logger\+\_\+mt}}
+\index{basic\+\_\+logger\+\_\+mt@{basic\+\_\+logger\+\_\+mt}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{basic\+\_\+logger\+\_\+mt()}{basic\_logger\_mt()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::basic\+\_\+logger\+\_\+mt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name,  }\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename,  }\item[{bool}]{truncate = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file basic\+\_\+file\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_abc9cd0646191cc0b295b6e50367b22b7}\label{namespacespdlog_abc9cd0646191cc0b295b6e50367b22b7}} 
+\index{spdlog@{spdlog}!basic\+\_\+logger\+\_\+st@{basic\+\_\+logger\+\_\+st}}
+\index{basic\+\_\+logger\+\_\+st@{basic\+\_\+logger\+\_\+st}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{basic\+\_\+logger\+\_\+st()}{basic\_logger\_st()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::basic\+\_\+logger\+\_\+st (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name,  }\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename,  }\item[{bool}]{truncate = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file basic\+\_\+file\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a852b420dc3dd5e5193a21f61f8577e62}\label{namespacespdlog_a852b420dc3dd5e5193a21f61f8577e62}} 
+\index{spdlog@{spdlog}!create@{create}}
+\index{create@{create}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily template$<$typename Sink , typename... Sink\+Args$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{spdlog\+::logger}$>$ spdlog\+::create (\begin{DoxyParamCaption}\item[{std\+::string}]{logger\+\_\+name,  }\item[{Sink\+Args \&\&...}]{sink\+\_\+args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file spdlog.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a852b420dc3dd5e5193a21f61f8577e62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a220f834b057b45ef730c435bcc60b0aa}\label{namespacespdlog_a220f834b057b45ef730c435bcc60b0aa}} 
+\index{spdlog@{spdlog}!create\+\_\+async@{create\+\_\+async}}
+\index{create\+\_\+async@{create\+\_\+async}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{create\+\_\+async()}{create\_async()}}
+{\footnotesize\ttfamily template$<$typename Sink , typename... Sink\+Args$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{spdlog\+::logger}$>$ spdlog\+::create\+\_\+async (\begin{DoxyParamCaption}\item[{std\+::string}]{logger\+\_\+name,  }\item[{Sink\+Args \&\&...}]{sink\+\_\+args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 64 of file async.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_ac5db26987120ac7b1ba0fbefe551ee52}\label{namespacespdlog_ac5db26987120ac7b1ba0fbefe551ee52}} 
+\index{spdlog@{spdlog}!create\+\_\+async\+\_\+nb@{create\+\_\+async\+\_\+nb}}
+\index{create\+\_\+async\+\_\+nb@{create\+\_\+async\+\_\+nb}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{create\+\_\+async\+\_\+nb()}{create\_async\_nb()}}
+{\footnotesize\ttfamily template$<$typename Sink , typename... Sink\+Args$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{spdlog\+::logger}$>$ spdlog\+::create\+\_\+async\+\_\+nb (\begin{DoxyParamCaption}\item[{std\+::string}]{logger\+\_\+name,  }\item[{Sink\+Args \&\&...}]{sink\+\_\+args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 70 of file async.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a753989ee0011b7d977e04a278b9380a2}\label{namespacespdlog_a753989ee0011b7d977e04a278b9380a2}} 
+\index{spdlog@{spdlog}!critical@{critical}}
+\index{critical@{critical}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{critical()}{critical()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void spdlog\+::critical (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 207 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a753989ee0011b7d977e04a278b9380a2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a753989ee0011b7d977e04a278b9380a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a2c707fb3d3d12a244ebfe3e40b417edc}\label{namespacespdlog_a2c707fb3d3d12a244ebfe3e40b417edc}} 
+\index{spdlog@{spdlog}!critical@{critical}}
+\index{critical@{critical}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{critical()}{critical()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void spdlog\+::critical (\begin{DoxyParamCaption}\item[{const T \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 249 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a2c707fb3d3d12a244ebfe3e40b417edc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_aeab720351e32788bc6cdf8ada42b0f1f}\label{namespacespdlog_aeab720351e32788bc6cdf8ada42b0f1f}} 
+\index{spdlog@{spdlog}!daily\+\_\+logger\+\_\+mt@{daily\+\_\+logger\+\_\+mt}}
+\index{daily\+\_\+logger\+\_\+mt@{daily\+\_\+logger\+\_\+mt}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{daily\+\_\+logger\+\_\+mt()}{daily\_logger\_mt()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::daily\+\_\+logger\+\_\+mt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name,  }\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename,  }\item[{int}]{hour = {\ttfamily 0},  }\item[{int}]{minute = {\ttfamily 0},  }\item[{bool}]{truncate = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 124 of file daily\+\_\+file\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a887beb44c55ef32f4bc62fa16451c77e}\label{namespacespdlog_a887beb44c55ef32f4bc62fa16451c77e}} 
+\index{spdlog@{spdlog}!daily\+\_\+logger\+\_\+st@{daily\+\_\+logger\+\_\+st}}
+\index{daily\+\_\+logger\+\_\+st@{daily\+\_\+logger\+\_\+st}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{daily\+\_\+logger\+\_\+st()}{daily\_logger\_st()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::daily\+\_\+logger\+\_\+st (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name,  }\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename,  }\item[{int}]{hour = {\ttfamily 0},  }\item[{int}]{minute = {\ttfamily 0},  }\item[{bool}]{truncate = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 131 of file daily\+\_\+file\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a29e62b80052a1440e526853d4b2c3c5c}\label{namespacespdlog_a29e62b80052a1440e526853d4b2c3c5c}} 
+\index{spdlog@{spdlog}!debug@{debug}}
+\index{debug@{debug}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void spdlog\+::debug (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 183 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a29e62b80052a1440e526853d4b2c3c5c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{namespacespdlog_a29e62b80052a1440e526853d4b2c3c5c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a93c284cebdb3b3dab204f2a87344e4b5}\label{namespacespdlog_a93c284cebdb3b3dab204f2a87344e4b5}} 
+\index{spdlog@{spdlog}!debug@{debug}}
+\index{debug@{debug}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void spdlog\+::debug (\begin{DoxyParamCaption}\item[{const T \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 225 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a93c284cebdb3b3dab204f2a87344e4b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a9e6a16853c325306188a7f6f642eba94}\label{namespacespdlog_a9e6a16853c325306188a7f6f642eba94}} 
+\index{spdlog@{spdlog}!default\+\_\+logger@{default\+\_\+logger}}
+\index{default\+\_\+logger@{default\+\_\+logger}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{default\+\_\+logger()}{default\_logger()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{spdlog\+::logger}$>$ spdlog\+::default\+\_\+logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 149 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a9e6a16853c325306188a7f6f642eba94_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}\label{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be}} 
+\index{spdlog@{spdlog}!default\+\_\+logger\+\_\+raw@{default\+\_\+logger\+\_\+raw}}
+\index{default\+\_\+logger\+\_\+raw@{default\+\_\+logger\+\_\+raw}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{default\+\_\+logger\+\_\+raw()}{default\_logger\_raw()}}
+{\footnotesize\ttfamily \hyperlink{classspdlog_1_1logger}{spdlog\+::logger}$\ast$ spdlog\+::default\+\_\+logger\+\_\+raw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 154 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a2c623c9fadba3efc09b48dac8a3990be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_af2ec5792fb30798cf285da36cb5c9377}\label{namespacespdlog_af2ec5792fb30798cf285da36cb5c9377}} 
+\index{spdlog@{spdlog}!drop@{drop}}
+\index{drop@{drop}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{drop()}{drop()}}
+{\footnotesize\ttfamily void spdlog\+::drop (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 111 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_af2ec5792fb30798cf285da36cb5c9377_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_ab1211636fc47637f4dc5ee9a18aa1bce}\label{namespacespdlog_ab1211636fc47637f4dc5ee9a18aa1bce}} 
+\index{spdlog@{spdlog}!drop\+\_\+all@{drop\+\_\+all}}
+\index{drop\+\_\+all@{drop\+\_\+all}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{drop\+\_\+all()}{drop\_all()}}
+{\footnotesize\ttfamily void spdlog\+::drop\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 117 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_ab1211636fc47637f4dc5ee9a18aa1bce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a84fc1d0e60ec7d333fd4f299f9c1e6b2}\label{namespacespdlog_a84fc1d0e60ec7d333fd4f299f9c1e6b2}} 
+\index{spdlog@{spdlog}!error@{error}}
+\index{error@{error}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void spdlog\+::error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 201 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a84fc1d0e60ec7d333fd4f299f9c1e6b2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a84fc1d0e60ec7d333fd4f299f9c1e6b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_aa274f8a5f4f20ff435d27500ff589234}\label{namespacespdlog_aa274f8a5f4f20ff435d27500ff589234}} 
+\index{spdlog@{spdlog}!error@{error}}
+\index{error@{error}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void spdlog\+::error (\begin{DoxyParamCaption}\item[{const T \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 243 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_aa274f8a5f4f20ff435d27500ff589234_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a70d5763d644df282a67999baf4680dde}\label{namespacespdlog_a70d5763d644df282a67999baf4680dde}} 
+\index{spdlog@{spdlog}!flush\+\_\+every@{flush\+\_\+every}}
+\index{flush\+\_\+every@{flush\+\_\+every}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{flush\+\_\+every()}{flush\_every()}}
+{\footnotesize\ttfamily void spdlog\+::flush\+\_\+every (\begin{DoxyParamCaption}\item[{std\+::chrono\+::seconds}]{interval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a70d5763d644df282a67999baf4680dde_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_afac55b239302064cba773add59b635d1}\label{namespacespdlog_afac55b239302064cba773add59b635d1}} 
+\index{spdlog@{spdlog}!flush\+\_\+on@{flush\+\_\+on}}
+\index{flush\+\_\+on@{flush\+\_\+on}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{flush\+\_\+on()}{flush\_on()}}
+{\footnotesize\ttfamily void spdlog\+::flush\+\_\+on (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 78 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_afac55b239302064cba773add59b635d1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a658d68d4ebdb11793b1e78582f108674}\label{namespacespdlog_a658d68d4ebdb11793b1e78582f108674}} 
+\index{spdlog@{spdlog}!get@{get}}
+\index{get@{get}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 53 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a658d68d4ebdb11793b1e78582f108674_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a658d68d4ebdb11793b1e78582f108674_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a3ee2e37859d2eee2722afc8ac26319ae}\label{namespacespdlog_a3ee2e37859d2eee2722afc8ac26319ae}} 
+\index{spdlog@{spdlog}!info@{info}}
+\index{info@{info}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{info()}{info()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void spdlog\+::info (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 189 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a3ee2e37859d2eee2722afc8ac26319ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{namespacespdlog_a3ee2e37859d2eee2722afc8ac26319ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_ad68b6f9b65e1e8daab0117d75f0c39b4}\label{namespacespdlog_ad68b6f9b65e1e8daab0117d75f0c39b4}} 
+\index{spdlog@{spdlog}!info@{info}}
+\index{info@{info}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{info()}{info()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void spdlog\+::info (\begin{DoxyParamCaption}\item[{const T \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 231 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_ad68b6f9b65e1e8daab0117d75f0c39b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a17a4d95759b4076827905fd8f6b10d36}\label{namespacespdlog_a17a4d95759b4076827905fd8f6b10d36}} 
+\index{spdlog@{spdlog}!init\+\_\+thread\+\_\+pool@{init\+\_\+thread\+\_\+pool}}
+\index{init\+\_\+thread\+\_\+pool@{init\+\_\+thread\+\_\+pool}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{init\+\_\+thread\+\_\+pool()}{init\_thread\_pool()}}
+{\footnotesize\ttfamily void spdlog\+::init\+\_\+thread\+\_\+pool (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{q\+\_\+size,  }\item[{size\+\_\+t}]{thread\+\_\+count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 76 of file async.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a17a4d95759b4076827905fd8f6b10d36_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_acc4ad5305b408c41a60540b0e2a8aa85}\label{namespacespdlog_acc4ad5305b408c41a60540b0e2a8aa85}} 
+\index{spdlog@{spdlog}!log@{log}}
+\index{log@{log}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void spdlog\+::log (\begin{DoxyParamCaption}\item[{\hyperlink{structspdlog_1_1source__loc}{source\+\_\+loc}}]{source,  }\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{lvl,  }\item[{const char $\ast$}]{fmt,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 165 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_acc4ad5305b408c41a60540b0e2a8aa85_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{namespacespdlog_acc4ad5305b408c41a60540b0e2a8aa85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a7ad1ad069c196a042cb191b05d27167a}\label{namespacespdlog_a7ad1ad069c196a042cb191b05d27167a}} 
+\index{spdlog@{spdlog}!log@{log}}
+\index{log@{log}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void spdlog\+::log (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{lvl,  }\item[{const char $\ast$}]{fmt,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 171 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a7ad1ad069c196a042cb191b05d27167a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_aee9d401c7cb3cd8538a139af836c5ec5}\label{namespacespdlog_aee9d401c7cb3cd8538a139af836c5ec5}} 
+\index{spdlog@{spdlog}!log@{log}}
+\index{log@{log}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{log()}{log()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void spdlog\+::log (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{lvl,  }\item[{const T \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 213 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_aee9d401c7cb3cd8538a139af836c5ec5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a6d6344c349d1c6d957d5f21f4387c8f8}\label{namespacespdlog_a6d6344c349d1c6d957d5f21f4387c8f8}} 
+\index{spdlog@{spdlog}!null\+\_\+logger\+\_\+mt@{null\+\_\+logger\+\_\+mt}}
+\index{null\+\_\+logger\+\_\+mt@{null\+\_\+logger\+\_\+mt}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{null\+\_\+logger\+\_\+mt()}{null\_logger\_mt()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::null\+\_\+logger\+\_\+mt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file null\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_af6a7d6f86b50ab1c5c346949ca5af564}\label{namespacespdlog_af6a7d6f86b50ab1c5c346949ca5af564}} 
+\index{spdlog@{spdlog}!null\+\_\+logger\+\_\+st@{null\+\_\+logger\+\_\+st}}
+\index{null\+\_\+logger\+\_\+st@{null\+\_\+logger\+\_\+st}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{null\+\_\+logger\+\_\+st()}{null\_logger\_st()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::null\+\_\+logger\+\_\+st (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file null\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a306f1c2ef42ba046620bd84266ee5b24}\label{namespacespdlog_a306f1c2ef42ba046620bd84266ee5b24}} 
+\index{spdlog@{spdlog}!register\+\_\+logger@{register\+\_\+logger}}
+\index{register\+\_\+logger@{register\+\_\+logger}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{register\+\_\+logger()}{register\_logger()}}
+{\footnotesize\ttfamily void spdlog\+::register\+\_\+logger (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$}]{logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 97 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a306f1c2ef42ba046620bd84266ee5b24_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a42401c73c1dede7000852f7229b7aa9c}\label{namespacespdlog_a42401c73c1dede7000852f7229b7aa9c}} 
+\index{spdlog@{spdlog}!rotating\+\_\+logger\+\_\+mt@{rotating\+\_\+logger\+\_\+mt}}
+\index{rotating\+\_\+logger\+\_\+mt@{rotating\+\_\+logger\+\_\+mt}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{rotating\+\_\+logger\+\_\+mt()}{rotating\_logger\_mt()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::rotating\+\_\+logger\+\_\+mt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name,  }\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename,  }\item[{size\+\_\+t}]{max\+\_\+file\+\_\+size,  }\item[{size\+\_\+t}]{max\+\_\+files }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 143 of file rotating\+\_\+file\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_aa94a9f4d699643b6cdecf107ec5340d6}\label{namespacespdlog_aa94a9f4d699643b6cdecf107ec5340d6}} 
+\index{spdlog@{spdlog}!rotating\+\_\+logger\+\_\+st@{rotating\+\_\+logger\+\_\+st}}
+\index{rotating\+\_\+logger\+\_\+st@{rotating\+\_\+logger\+\_\+st}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{rotating\+\_\+logger\+\_\+st()}{rotating\_logger\_st()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::rotating\+\_\+logger\+\_\+st (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name,  }\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename,  }\item[{size\+\_\+t}]{max\+\_\+file\+\_\+size,  }\item[{size\+\_\+t}]{max\+\_\+files }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 150 of file rotating\+\_\+file\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a95b9f066c4e8ad65454049bdd7f6b956}\label{namespacespdlog_a95b9f066c4e8ad65454049bdd7f6b956}} 
+\index{spdlog@{spdlog}!set\+\_\+automatic\+\_\+registration@{set\+\_\+automatic\+\_\+registration}}
+\index{set\+\_\+automatic\+\_\+registration@{set\+\_\+automatic\+\_\+registration}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{set\+\_\+automatic\+\_\+registration()}{set\_automatic\_registration()}}
+{\footnotesize\ttfamily void spdlog\+::set\+\_\+automatic\+\_\+registration (\begin{DoxyParamCaption}\item[{bool}]{automatic\+\_\+registation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 129 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a95b9f066c4e8ad65454049bdd7f6b956_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_ab8a13bd805e706298e1e396ee5ac93bb}\label{namespacespdlog_ab8a13bd805e706298e1e396ee5ac93bb}} 
+\index{spdlog@{spdlog}!set\+\_\+default\+\_\+logger@{set\+\_\+default\+\_\+logger}}
+\index{set\+\_\+default\+\_\+logger@{set\+\_\+default\+\_\+logger}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{set\+\_\+default\+\_\+logger()}{set\_default\_logger()}}
+{\footnotesize\ttfamily void spdlog\+::set\+\_\+default\+\_\+logger (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$}]{default\+\_\+logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 159 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_ab8a13bd805e706298e1e396ee5ac93bb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_aff4886a7bf8585815d8fd1f819f91be0}\label{namespacespdlog_aff4886a7bf8585815d8fd1f819f91be0}} 
+\index{spdlog@{spdlog}!set\+\_\+error\+\_\+handler@{set\+\_\+error\+\_\+handler}}
+\index{set\+\_\+error\+\_\+handler@{set\+\_\+error\+\_\+handler}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{set\+\_\+error\+\_\+handler()}{set\_error\_handler()}}
+{\footnotesize\ttfamily void spdlog\+::set\+\_\+error\+\_\+handler (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_ad3ed787a29f245c833ef66faf48036e2}{log\+\_\+err\+\_\+handler}}]{handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 91 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_aff4886a7bf8585815d8fd1f819f91be0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a83007016a4f374c8efcc738eee5b7290}\label{namespacespdlog_a83007016a4f374c8efcc738eee5b7290}} 
+\index{spdlog@{spdlog}!set\+\_\+formatter@{set\+\_\+formatter}}
+\index{set\+\_\+formatter@{set\+\_\+formatter}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{set\+\_\+formatter()}{set\_formatter()}}
+{\footnotesize\ttfamily void spdlog\+::set\+\_\+formatter (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$}]{formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a83007016a4f374c8efcc738eee5b7290_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a83007016a4f374c8efcc738eee5b7290_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a9f952c6a1e1114b474aff89965261a1b}\label{namespacespdlog_a9f952c6a1e1114b474aff89965261a1b}} 
+\index{spdlog@{spdlog}!set\+\_\+level@{set\+\_\+level}}
+\index{set\+\_\+level@{set\+\_\+level}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{set\+\_\+level()}{set\_level()}}
+{\footnotesize\ttfamily void spdlog\+::set\+\_\+level (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 72 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a9f952c6a1e1114b474aff89965261a1b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a9f952c6a1e1114b474aff89965261a1b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a638029f343e8dd2393d62288b1eb095e}\label{namespacespdlog_a638029f343e8dd2393d62288b1eb095e}} 
+\index{spdlog@{spdlog}!set\+\_\+pattern@{set\+\_\+pattern}}
+\index{set\+\_\+pattern@{set\+\_\+pattern}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{set\+\_\+pattern()}{set\_pattern()}}
+{\footnotesize\ttfamily void spdlog\+::set\+\_\+pattern (\begin{DoxyParamCaption}\item[{std\+::string}]{pattern,  }\item[{\hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}{pattern\+\_\+time\+\_\+type}}]{time\+\_\+type = {\ttfamily \hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07cedaf5ddaf0ca7929578b408c909429f68f2}{pattern\+\_\+time\+\_\+type\+::local}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a638029f343e8dd2393d62288b1eb095e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a638029f343e8dd2393d62288b1eb095e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a38b5c05a859763c5e350e8ec3da9e328}\label{namespacespdlog_a38b5c05a859763c5e350e8ec3da9e328}} 
+\index{spdlog@{spdlog}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void spdlog\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 123 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a38b5c05a859763c5e350e8ec3da9e328_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_ab4647f73157c2a5647097e993eb648f5}\label{namespacespdlog_ab4647f73157c2a5647097e993eb648f5}} 
+\index{spdlog@{spdlog}!stderr\+\_\+color\+\_\+mt@{stderr\+\_\+color\+\_\+mt}}
+\index{stderr\+\_\+color\+\_\+mt@{stderr\+\_\+color\+\_\+mt}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{stderr\+\_\+color\+\_\+mt()}{stderr\_color\_mt()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::stderr\+\_\+color\+\_\+mt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 46 of file stdout\+\_\+color\+\_\+sinks.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a5564a799e789be1856d238b0d91ecadb}\label{namespacespdlog_a5564a799e789be1856d238b0d91ecadb}} 
+\index{spdlog@{spdlog}!stderr\+\_\+color\+\_\+st@{stderr\+\_\+color\+\_\+st}}
+\index{stderr\+\_\+color\+\_\+st@{stderr\+\_\+color\+\_\+st}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{stderr\+\_\+color\+\_\+st()}{stderr\_color\_st()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::stderr\+\_\+color\+\_\+st (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 52 of file stdout\+\_\+color\+\_\+sinks.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a93e154fd1e2eb0dc5a82fb25ce7f11d1}\label{namespacespdlog_a93e154fd1e2eb0dc5a82fb25ce7f11d1}} 
+\index{spdlog@{spdlog}!stderr\+\_\+logger\+\_\+mt@{stderr\+\_\+logger\+\_\+mt}}
+\index{stderr\+\_\+logger\+\_\+mt@{stderr\+\_\+logger\+\_\+mt}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{stderr\+\_\+logger\+\_\+mt()}{stderr\_logger\_mt()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::stderr\+\_\+logger\+\_\+mt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 92 of file stdout\+\_\+sinks.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_ad2b234c875e76840785f02b189c0d514}\label{namespacespdlog_ad2b234c875e76840785f02b189c0d514}} 
+\index{spdlog@{spdlog}!stderr\+\_\+logger\+\_\+st@{stderr\+\_\+logger\+\_\+st}}
+\index{stderr\+\_\+logger\+\_\+st@{stderr\+\_\+logger\+\_\+st}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{stderr\+\_\+logger\+\_\+st()}{stderr\_logger\_st()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::stderr\+\_\+logger\+\_\+st (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 98 of file stdout\+\_\+sinks.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a903467b7174af13d10f2f29ae9bd4a6e}\label{namespacespdlog_a903467b7174af13d10f2f29ae9bd4a6e}} 
+\index{spdlog@{spdlog}!stdout\+\_\+color\+\_\+mt@{stdout\+\_\+color\+\_\+mt}}
+\index{stdout\+\_\+color\+\_\+mt@{stdout\+\_\+color\+\_\+mt}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{stdout\+\_\+color\+\_\+mt()}{stdout\_color\_mt()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::stdout\+\_\+color\+\_\+mt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file stdout\+\_\+color\+\_\+sinks.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a1d20b70d425e5402b3fa6a1b075d1c6d}\label{namespacespdlog_a1d20b70d425e5402b3fa6a1b075d1c6d}} 
+\index{spdlog@{spdlog}!stdout\+\_\+color\+\_\+st@{stdout\+\_\+color\+\_\+st}}
+\index{stdout\+\_\+color\+\_\+st@{stdout\+\_\+color\+\_\+st}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{stdout\+\_\+color\+\_\+st()}{stdout\_color\_st()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::stdout\+\_\+color\+\_\+st (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file stdout\+\_\+color\+\_\+sinks.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a9a6a99d3309b166a585fe918bd83a442}\label{namespacespdlog_a9a6a99d3309b166a585fe918bd83a442}} 
+\index{spdlog@{spdlog}!stdout\+\_\+logger\+\_\+mt@{stdout\+\_\+logger\+\_\+mt}}
+\index{stdout\+\_\+logger\+\_\+mt@{stdout\+\_\+logger\+\_\+mt}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{stdout\+\_\+logger\+\_\+mt()}{stdout\_logger\_mt()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::stdout\+\_\+logger\+\_\+mt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 80 of file stdout\+\_\+sinks.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a5b0d86b010b11ceb3941265779c7998e}\label{namespacespdlog_a5b0d86b010b11ceb3941265779c7998e}} 
+\index{spdlog@{spdlog}!stdout\+\_\+logger\+\_\+st@{stdout\+\_\+logger\+\_\+st}}
+\index{stdout\+\_\+logger\+\_\+st@{stdout\+\_\+logger\+\_\+st}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{stdout\+\_\+logger\+\_\+st()}{stdout\_logger\_st()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::stdout\+\_\+logger\+\_\+st (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file stdout\+\_\+sinks.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a49974c7465d12f994929f70c0caeeb7c}\label{namespacespdlog_a49974c7465d12f994929f70c0caeeb7c}} 
+\index{spdlog@{spdlog}!syslog\+\_\+logger\+\_\+mt@{syslog\+\_\+logger\+\_\+mt}}
+\index{syslog\+\_\+logger\+\_\+mt@{syslog\+\_\+logger\+\_\+mt}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{syslog\+\_\+logger\+\_\+mt()}{syslog\_logger\_mt()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::syslog\+\_\+logger\+\_\+mt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name,  }\item[{const std\+::string \&}]{syslog\+\_\+ident = {\ttfamily \char`\"{}\char`\"{}},  }\item[{int}]{syslog\+\_\+option = {\ttfamily 0},  }\item[{int}]{syslog\+\_\+facility = {\ttfamily (1~$<$$<$~3)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 82 of file syslog\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a2b5f25193cf4478d74cf9402a120c902}\label{namespacespdlog_a2b5f25193cf4478d74cf9402a120c902}} 
+\index{spdlog@{spdlog}!syslog\+\_\+logger\+\_\+st@{syslog\+\_\+logger\+\_\+st}}
+\index{syslog\+\_\+logger\+\_\+st@{syslog\+\_\+logger\+\_\+st}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{syslog\+\_\+logger\+\_\+st()}{syslog\_logger\_st()}}
+{\footnotesize\ttfamily template$<$typename Factory  = default\+\_\+factory$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::syslog\+\_\+logger\+\_\+st (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name,  }\item[{const std\+::string \&}]{syslog\+\_\+ident = {\ttfamily \char`\"{}\char`\"{}},  }\item[{int}]{syslog\+\_\+option = {\ttfamily 0},  }\item[{int}]{syslog\+\_\+facility = {\ttfamily (1~$<$$<$~3)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 89 of file syslog\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a6676a1ffb5ea174a2392ab0317bbcff2}\label{namespacespdlog_a6676a1ffb5ea174a2392ab0317bbcff2}} 
+\index{spdlog@{spdlog}!thread\+\_\+pool@{thread\+\_\+pool}}
+\index{thread\+\_\+pool@{thread\+\_\+pool}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{thread\+\_\+pool()}{thread\_pool()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1details_1_1thread__pool}{spdlog\+::details\+::thread\+\_\+pool}$>$ spdlog\+::thread\+\_\+pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 83 of file async.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a6676a1ffb5ea174a2392ab0317bbcff2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespacespdlog_a6676a1ffb5ea174a2392ab0317bbcff2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_acd3f4323bb627945b4cecbbbc62770ef}\label{namespacespdlog_acd3f4323bb627945b4cecbbbc62770ef}} 
+\index{spdlog@{spdlog}!to\+\_\+hex@{to\+\_\+hex}}
+\index{to\+\_\+hex@{to\+\_\+hex}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{to\+\_\+hex()}{to\_hex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Container $>$ \\
+\hyperlink{classspdlog_1_1details_1_1bytes__range}{details\+::bytes\+\_\+range}$<$typename Container\+::const\+\_\+iterator$>$ spdlog\+::to\+\_\+hex (\begin{DoxyParamCaption}\item[{const Container \&}]{container }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 53 of file bin\+\_\+to\+\_\+hex.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{namespacespdlog_acd3f4323bb627945b4cecbbbc62770ef_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a3730108d5b1a43b30f8ddf32404b9d25}\label{namespacespdlog_a3730108d5b1a43b30f8ddf32404b9d25}} 
+\index{spdlog@{spdlog}!to\+\_\+hex@{to\+\_\+hex}}
+\index{to\+\_\+hex@{to\+\_\+hex}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{to\+\_\+hex()}{to\_hex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename It $>$ \\
+\hyperlink{classspdlog_1_1details_1_1bytes__range}{details\+::bytes\+\_\+range}$<$It$>$ spdlog\+::to\+\_\+hex (\begin{DoxyParamCaption}\item[{const It}]{range\+\_\+begin,  }\item[{const It}]{range\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 62 of file bin\+\_\+to\+\_\+hex.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_a0ec6777ea7982bcf7cf85b87b0619b56}\label{namespacespdlog_a0ec6777ea7982bcf7cf85b87b0619b56}} 
+\index{spdlog@{spdlog}!trace@{trace}}
+\index{trace@{trace}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{trace()}{trace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void spdlog\+::trace (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 177 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a0ec6777ea7982bcf7cf85b87b0619b56_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{namespacespdlog_a0ec6777ea7982bcf7cf85b87b0619b56_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a99302a3f872e2cba98f81ac1a2f63321}\label{namespacespdlog_a99302a3f872e2cba98f81ac1a2f63321}} 
+\index{spdlog@{spdlog}!trace@{trace}}
+\index{trace@{trace}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{trace()}{trace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void spdlog\+::trace (\begin{DoxyParamCaption}\item[{const T \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 219 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a99302a3f872e2cba98f81ac1a2f63321_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_a41a6d93dee0e1a8c2e6153c1fc7f59df}\label{namespacespdlog_a41a6d93dee0e1a8c2e6153c1fc7f59df}} 
+\index{spdlog@{spdlog}!warn@{warn}}
+\index{warn@{warn}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{warn()}{warn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+void spdlog\+::warn (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 195 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_a41a6d93dee0e1a8c2e6153c1fc7f59df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{namespacespdlog_a41a6d93dee0e1a8c2e6153c1fc7f59df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_ab3df0dca3174a057e99fc327e8c25c57}\label{namespacespdlog_ab3df0dca3174a057e99fc327e8c25c57}} 
+\index{spdlog@{spdlog}!warn@{warn}}
+\index{warn@{warn}!spdlog@{spdlog}}
+\subsubsection{\texorpdfstring{warn()}{warn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void spdlog\+::warn (\begin{DoxyParamCaption}\item[{const T \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 237 of file spdlog.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_ab3df0dca3174a057e99fc327e8c25c57_cgraph}
+\end{center}
+\end{figure}

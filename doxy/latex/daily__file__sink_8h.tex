@@ -1,0 +1,48 @@
+\hypertarget{daily__file__sink_8h}{}\section{util/inc/spdlog/sinks/daily\+\_\+file\+\_\+sink.h File Reference}
+\label{daily__file__sink_8h}\index{util/inc/spdlog/sinks/daily\+\_\+file\+\_\+sink.\+h@{util/inc/spdlog/sinks/daily\+\_\+file\+\_\+sink.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/spdlog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/file\+\_\+helper.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/null\+\_\+mutex.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/fmt/fmt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/sinks/base\+\_\+sink.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for daily\+\_\+file\+\_\+sink.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{daily__file__sink_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structspdlog_1_1sinks_1_1daily__filename__calculator}{spdlog\+::sinks\+::daily\+\_\+filename\+\_\+calculator}
+\item 
+class \hyperlink{classspdlog_1_1sinks_1_1daily__file__sink}{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink$<$ Mutex, File\+Name\+Calc $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1sinks}{spdlog\+::sinks}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_a61124c3792c83b90aad230770f627525}{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink\+\_\+mt} = daily\+\_\+file\+\_\+sink$<$ std\+::mutex $>$
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_a1f1c8468d4251073ce96194a5db1fb9e}{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink\+\_\+st} = daily\+\_\+file\+\_\+sink$<$ details\+::null\+\_\+mutex $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_aeab720351e32788bc6cdf8ada42b0f1f}{spdlog\+::daily\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name, const filename\+\_\+t \&filename, int hour=0, int minute=0, bool truncate=false)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_a887beb44c55ef32f4bc62fa16451c77e}{spdlog\+::daily\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name, const filename\+\_\+t \&filename, int hour=0, int minute=0, bool truncate=false)
+\end{DoxyCompactItemize}

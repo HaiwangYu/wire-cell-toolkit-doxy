@@ -1,0 +1,209 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_anode_face}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Anode\+Face Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_anode_face}\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}}
+
+
+{\ttfamily \#include $<$Anode\+Face.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Anode\+Face\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_wire_cell_1_1_gen_1_1_anode_face__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Anode\+Face\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_wire_cell_1_1_gen_1_1_anode_face__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_anode_face_aa01e7fc2f74294dac3babc087c9e790f}{Anode\+Face} (int \hyperlink{class_wire_cell_1_1_gen_1_1_anode_face_a57abc0570f11b050da061e694507b17d}{ident}, \hyperlink{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}{I\+Wire\+Plane\+::vector} \hyperlink{class_wire_cell_1_1_gen_1_1_anode_face_abfc7fb985b42b9f5ba891a8f6986d526}{planes}, const \hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} \&sensvol)
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_gen_1_1_anode_face_a57abc0570f11b050da061e694507b17d}{ident} () const
+\begin{DoxyCompactList}\small\item\em Return the ident number of this face. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_gen_1_1_anode_face_aa4becde47c5ca6e98a08674a61b33b72}{nplanes} () const
+\begin{DoxyCompactList}\small\item\em Return the number of wire planes in the given side. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Wire\+Plane\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_anode_face_a6ed6d7c6614695d5ace93aa10b0d2478}{plane} (int \hyperlink{class_wire_cell_1_1_gen_1_1_anode_face_a57abc0570f11b050da061e694507b17d}{ident}) const
+\begin{DoxyCompactList}\small\item\em Return the wire plane with the given ident or nullptr if unknown. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}{I\+Wire\+Plane\+::vector} \hyperlink{class_wire_cell_1_1_gen_1_1_anode_face_abfc7fb985b42b9f5ba891a8f6986d526}{planes} () const
+\begin{DoxyCompactList}\small\item\em Return all wires planes. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} \hyperlink{class_wire_cell_1_1_gen_1_1_anode_face_a8e9613ee708a9b68c939d135e425e488}{sensitive} () const
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates}{Ray\+Grid\+::\+Coordinates} \& \hyperlink{class_wire_cell_1_1_gen_1_1_anode_face_a1ee64f5c3c63f9d44907fd06d6bb6abe}{raygrid} () const
+\begin{DoxyCompactList}\small\item\em Return a \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates}{Ray\+Grid\+::\+Coordinates} corresponding to this face. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file Anode\+Face.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_face_aa01e7fc2f74294dac3babc087c9e790f}\label{class_wire_cell_1_1_gen_1_1_anode_face_aa01e7fc2f74294dac3babc087c9e790f}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}!Anode\+Face@{Anode\+Face}}
+\index{Anode\+Face@{Anode\+Face}!Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}}
+\subsubsection{\texorpdfstring{Anode\+Face()}{AnodeFace()}}
+{\footnotesize\ttfamily Anode\+Face\+::\+Anode\+Face (\begin{DoxyParamCaption}\item[{int}]{ident,  }\item[{\hyperlink{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}{I\+Wire\+Plane\+::vector}}]{planes,  }\item[{const \hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} \&}]{sensvol }\end{DoxyParamCaption})}
+
+
+
+Definition at line 61 of file Anode\+Face.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_face_a57abc0570f11b050da061e694507b17d}\label{class_wire_cell_1_1_gen_1_1_anode_face_a57abc0570f11b050da061e694507b17d}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}!ident@{ident}}
+\index{ident@{ident}!Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}}
+\subsubsection{\texorpdfstring{ident()}{ident()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+Gen\+::\+Anode\+Face\+::ident (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the ident number of this face. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_face_a2090bdf3aac37747dcc831ce1529bf53}{Wire\+Cell\+::\+I\+Anode\+Face}.
+
+
+
+Definition at line 16 of file Anode\+Face.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_face_a57abc0570f11b050da061e694507b17d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_face_aa4becde47c5ca6e98a08674a61b33b72}\label{class_wire_cell_1_1_gen_1_1_anode_face_aa4becde47c5ca6e98a08674a61b33b72}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}!nplanes@{nplanes}}
+\index{nplanes@{nplanes}!Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}}
+\subsubsection{\texorpdfstring{nplanes()}{nplanes()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+Gen\+::\+Anode\+Face\+::nplanes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the number of wire planes in the given side. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_face_a5423e72fe99935c08c3076bda3a7354f}{Wire\+Cell\+::\+I\+Anode\+Face}.
+
+
+
+Definition at line 19 of file Anode\+Face.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_face_aa4becde47c5ca6e98a08674a61b33b72_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_face_a6ed6d7c6614695d5ace93aa10b0d2478}\label{class_wire_cell_1_1_gen_1_1_anode_face_a6ed6d7c6614695d5ace93aa10b0d2478}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}!plane@{plane}}
+\index{plane@{plane}!Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}}
+\subsubsection{\texorpdfstring{plane()}{plane()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Wire\+Plane\+::pointer} Anode\+Face\+::plane (\begin{DoxyParamCaption}\item[{int}]{ident }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the wire plane with the given ident or nullptr if unknown. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_face_a79559335fb83389b656504e480eb2eb7}{Wire\+Cell\+::\+I\+Anode\+Face}.
+
+
+
+Definition at line 69 of file Anode\+Face.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_face_a6ed6d7c6614695d5ace93aa10b0d2478_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_anode_face_a6ed6d7c6614695d5ace93aa10b0d2478_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_face_abfc7fb985b42b9f5ba891a8f6986d526}\label{class_wire_cell_1_1_gen_1_1_anode_face_abfc7fb985b42b9f5ba891a8f6986d526}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}!planes@{planes}}
+\index{planes@{planes}!Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}}
+\subsubsection{\texorpdfstring{planes()}{planes()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}{I\+Wire\+Plane\+::vector} Wire\+Cell\+::\+Gen\+::\+Anode\+Face\+::planes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return all wires planes. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_face_ae3ff56137d41a1ab6bf0dfa6892bd293}{Wire\+Cell\+::\+I\+Anode\+Face}.
+
+
+
+Definition at line 23 of file Anode\+Face.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_face_a1ee64f5c3c63f9d44907fd06d6bb6abe}\label{class_wire_cell_1_1_gen_1_1_anode_face_a1ee64f5c3c63f9d44907fd06d6bb6abe}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}!raygrid@{raygrid}}
+\index{raygrid@{raygrid}!Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}}
+\subsubsection{\texorpdfstring{raygrid()}{raygrid()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates}{Ray\+Grid\+::\+Coordinates}\& Wire\+Cell\+::\+Gen\+::\+Anode\+Face\+::raygrid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return a \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates}{Ray\+Grid\+::\+Coordinates} corresponding to this face. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_face_a4f7bcaa754c5e72535d65568e9cb6c85}{Wire\+Cell\+::\+I\+Anode\+Face}.
+
+
+
+Definition at line 28 of file Anode\+Face.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_anode_face_a8e9613ee708a9b68c939d135e425e488}\label{class_wire_cell_1_1_gen_1_1_anode_face_a8e9613ee708a9b68c939d135e425e488}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}!sensitive@{sensitive}}
+\index{sensitive@{sensitive}!Wire\+Cell\+::\+Gen\+::\+Anode\+Face@{Wire\+Cell\+::\+Gen\+::\+Anode\+Face}}
+\subsubsection{\texorpdfstring{sensitive()}{sensitive()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} Wire\+Cell\+::\+Gen\+::\+Anode\+Face\+::sensitive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return a bounding box containing the volume to which this face is sensitive. BB may be zero volume. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_face_a74d5eec4031d0c78a17cf80d5ccae2cc}{Wire\+Cell\+::\+I\+Anode\+Face}.
+
+
+
+Definition at line 26 of file Anode\+Face.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_anode_face_8h}{Anode\+Face.\+h}\item 
+gen/src/\hyperlink{_anode_face_8cxx}{Anode\+Face.\+cxx}\end{DoxyCompactItemize}

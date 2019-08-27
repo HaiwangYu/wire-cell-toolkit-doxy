@@ -1,0 +1,14 @@
+<map id="spdlog::details::z_formatter::format" name="spdlog::details::z_formatter::format">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1os.html#a6dce662c3a4ea0b6e95468272ec37047" title="spdlog::details::os\l::utc_minutes_offset" alt="" coords="180,48,321,89"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#ac5822d6a6cf07ba173eae0ab2c53bf8c" title="internal::is_negative" alt="" coords="181,114,320,141"/>
+<area shape="rect" id="node9" href="$namespacespdlog_1_1details_1_1fmt__helper.html#ae8d7b70c5b54338c0903cf494b06404a" title="spdlog::details::fmt\l_helper::pad2" alt="" coords="184,165,317,207"/>
+<area shape="rect" id="node3" href="$namespacespdlog_1_1details_1_1os.html#aef63b92ee93ec66603c0357d0ac75bed" title="spdlog::details::os\l::localtime" alt="" coords="373,5,501,47"/>
+<area shape="rect" id="node5" href="$namespacespdlog_1_1details_1_1os.html#ac993ad051e07cd5bda5328be2a54b0a8" title="spdlog::details::os\l::gmtime" alt="" coords="373,71,501,112"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a990db8ce6eb1702f344b5993587f37af" title="internal::localtime_s" alt="" coords="552,13,691,39"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#a4df52163db0eff7ab6b17cb243a224b7" title="internal::gmtime_s" alt="" coords="557,70,686,97"/>
+<area shape="rect" id="node7" href="$namespaceinternal.html#a6a29b192fce543ff8c18fe7bedf3e321" title="internal::gmtime_r" alt="" coords="558,121,685,147"/>
+<area shape="rect" id="node10" href="$namespacespdlog_1_1details_1_1fmt__helper.html#a0d2621043fa718e54ffcaa2e9812dfa4" title="spdlog::details::fmt\l_helper::append_int" alt="" coords="369,143,504,184"/>
+<area shape="rect" id="node11" href="$core_8h.html#a7f023637311ff6fae516e0da2caf05d3" title="format_to" alt="" coords="398,209,475,235"/>
+<area shape="rect" id="node12" href="$namespaceinternal.html#a9f6f592ec8a979251038265f241e7d48" title="internal::vformat_to" alt="" coords="554,193,689,219"/>
+<area shape="rect" id="node13" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="739,218,895,245"/>
+</map>

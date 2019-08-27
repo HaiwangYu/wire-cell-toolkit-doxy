@@ -1,0 +1,74 @@
+\hypertarget{_response_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Response.h File Reference}
+\label{_response_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Response.\+h@{util/inc/\+Wire\+Cell\+Util/\+Response.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Waveform.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Binning.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Units.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Array.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Point.\+h\char`\"{}}\newline
+Include dependency graph for Response.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_response_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_response_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_path_response}{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Path\+Response}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Plane\+Response}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response}
+\begin{DoxyCompactList}\small\item\em Hold info about multiple plane responses in the detector. \end{DoxyCompactList}\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_generator}{Wire\+Cell\+::\+Response\+::\+Generator}
+\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_cold_elec}{Wire\+Cell\+::\+Response\+::\+Cold\+Elec}
+\begin{DoxyCompactList}\small\item\em A functional object caching gain and shape. \end{DoxyCompactList}\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_simple_r_c}{Wire\+Cell\+::\+Response\+::\+Simple\+RC}
+\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_sys_resp}{Wire\+Cell\+::\+Response\+::\+Sys\+Resp}
+\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_lf_filter}{Wire\+Cell\+::\+Response\+::\+Lf\+Filter}
+\item 
+class \hyperlink{class_wire_cell_1_1_response_1_1_hf_filter}{Wire\+Cell\+::\+Response\+::\+Hf\+Filter}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_response}{Wire\+Cell\+::\+Response}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_response_1_1_schema}{Wire\+Cell\+::\+Response\+::\+Schema}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Field\+Response} \hyperlink{namespace_wire_cell_1_1_response_1_1_schema_a4b86873ce3e615148bc29b75b74bab9c}{Wire\+Cell\+::\+Response\+::\+Schema\+::load} (const char $\ast$filename)
+\item 
+void \hyperlink{namespace_wire_cell_1_1_response_1_1_schema_a2cc7d597fb84460da8289804c7356a46}{Wire\+Cell\+::\+Response\+::\+Schema\+::dump} (const char $\ast$filename, const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Field\+Response} \&fr)
+\item 
+Schema\+::\+Field\+Response \hyperlink{namespace_wire_cell_1_1_response_a11620870420942188de46612d3e2022f}{Wire\+Cell\+::\+Response\+::wire\+\_\+region\+\_\+average} (const Schema\+::\+Field\+Response \&fr)
+\item 
+Schema\+::\+Field\+Response \hyperlink{namespace_wire_cell_1_1_response_a465144cc99feb1c0e2e85c6928ae2506}{Wire\+Cell\+::\+Response\+::average\+\_\+1D} (const Schema\+::\+Field\+Response \&fr)
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \hyperlink{namespace_wire_cell_1_1_response_a8f1890f06132c13edca92ab1d9ea9263}{Wire\+Cell\+::\+Response\+::as\+\_\+array} (const Schema\+::\+Plane\+Response \&pr)
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \hyperlink{namespace_wire_cell_1_1_response_aeb8f98a26e027557baaaafe032d887e7}{Wire\+Cell\+::\+Response\+::as\+\_\+array} (const Schema\+::\+Plane\+Response \&pr, int set\+\_\+nrows, int set\+\_\+ncols)
+\item 
+double \hyperlink{namespace_wire_cell_1_1_response_a4fc0f118f72199a91582863c978b803c}{Wire\+Cell\+::\+Response\+::coldelec} (double time, double gain=7.\+8, double shaping=1.\+0 $\ast$units\+::us)
+\begin{DoxyCompactList}\small\item\em The cold electronics response function. \end{DoxyCompactList}\item 
+double \hyperlink{namespace_wire_cell_1_1_response_a1a0252a5992f6d7cf76f5b1b0adcf544}{Wire\+Cell\+::\+Response\+::hf\+\_\+filter} (double freq, double sigma=1, double power=2, bool zero\+\_\+freq\+\_\+removal=true)
+\item 
+double \hyperlink{namespace_wire_cell_1_1_response_af61a79565c364b71935a42d74ddd3831}{Wire\+Cell\+::\+Response\+::lf\+\_\+filter} (double freq, double tau=0.\+02)
+\end{DoxyCompactItemize}

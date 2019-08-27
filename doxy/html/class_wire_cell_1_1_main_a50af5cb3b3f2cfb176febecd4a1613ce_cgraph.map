@@ -1,0 +1,5 @@
+<map id="WireCell::Main::add_logsink" name="WireCell::Main::add_logsink">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_log.html#a417843ceafbe08958ee4d72acf1732d0" title="WireCell::Log::add\l_stdout" alt="" coords="203,5,333,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_log.html#a01ca295ba785cd50c408dc064404949c" title="WireCell::Log::add\l_stderr" alt="" coords="203,71,333,112"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_log.html#a2b30e7b1375fa3fdb23be092fe116cfb" title="WireCell::Log::add_file" alt="" coords="191,137,345,163"/>
+</map>

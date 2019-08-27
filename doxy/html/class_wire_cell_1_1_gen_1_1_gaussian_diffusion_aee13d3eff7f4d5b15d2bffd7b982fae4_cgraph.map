@@ -1,0 +1,11 @@
+<map id="WireCell::Gen::GaussianDiffusion::set_sampling" name="WireCell::Gen::GaussianDiffusion::set_sampling">
+<area shape="rect" id="node2" href="$struct_wire_cell_1_1_gen_1_1_gaus_desc.html#a5340bfa4adeaccdcac2766ecd1b4a3b0" title="WireCell::Gen::GausDesc\l::sigma_range" alt="" coords="272,71,447,112"/>
+<area shape="rect" id="node4" href="$struct_wire_cell_1_1_gen_1_1_gaus_desc.html#a1b437283fecc3cbfcdb616179381d666" title="WireCell::Gen::GausDesc\l::binint" alt="" coords="495,5,669,47"/>
+<area shape="rect" id="node5" href="$struct_wire_cell_1_1_gen_1_1_gaus_desc.html#aa7099866e931d552fead98c5fcfcefb8" title="WireCell::Gen::GausDesc\l::weight" alt="" coords="495,136,669,177"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_frame_tools.html#a9031f0d7465146236c47308c347d05a1" title="WireCell::FrameTools\l::tbin_range" alt="" coords="285,188,434,229"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_binning.html#a7f4e8459c55ad288fff22553d8ed8cdd" title="WireCell::Binning::\lsample_bin_range" alt="" coords="294,253,425,295"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_binning.html#a0ed21ab262df2a11eac561e53ee3cb77" title="WireCell::Binning::edge" alt="" coords="280,319,439,346"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_binning.html#a55ba6a476ed35f5954fd44214e85dbb9" title="WireCell::Binning::\lbinsize" alt="" coords="294,371,425,412"/>
+<area shape="rect" id="node3" href="$struct_wire_cell_1_1_gen_1_1_gaus_desc.html#a0d636bf5b689646d52f07cac3432824e" title="WireCell::Gen::GausDesc\l::sample" alt="" coords="495,71,669,112"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_binning.html#a826dbaafb7bc50a2c2767cc4deb190f0" title="WireCell::Binning::bin" alt="" coords="508,261,656,287"/>
+</map>

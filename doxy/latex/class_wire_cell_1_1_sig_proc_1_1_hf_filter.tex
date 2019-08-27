@@ -1,0 +1,141 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_hf_filter}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Hf\+Filter Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_hf_filter}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}}
+
+
+{\ttfamily \#include $<$Hf\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Hf\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_wire_cell_1_1_sig_proc_1_1_hf_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Hf\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_wire_cell_1_1_sig_proc_1_1_hf_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_hf_filter_a5a68adda61f36ff2653d418c64a7ae42}{Hf\+Filter} (double max\+\_\+freq=1 $\ast$units\+::megahertz, double sigma=3.\+0 $\ast$units\+::megahertz, double power=2, bool flag=true)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_hf_filter_ab04d5fbb405dd807bd0c03f3fce8b745}{$\sim$\+Hf\+Filter} ()
+\item 
+virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_hf_filter_a4b34ce856b103ea1cfff4d418b1aae6d}{filter\+\_\+waveform} (int nfbins) const
+\begin{DoxyCompactList}\small\item\em Provide the filter waveform with a given number of frequency bins. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_hf_filter_af7320d10ac57a7a3526542a31a393b26}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_hf_filter_a490d55260745515290505cef11ca8ff1}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file Hf\+Filter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_hf_filter_a5a68adda61f36ff2653d418c64a7ae42}\label{class_wire_cell_1_1_sig_proc_1_1_hf_filter_a5a68adda61f36ff2653d418c64a7ae42}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}!Hf\+Filter@{Hf\+Filter}}
+\index{Hf\+Filter@{Hf\+Filter}!Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}}
+\subsubsection{\texorpdfstring{Hf\+Filter()}{HfFilter()}}
+{\footnotesize\ttfamily Sig\+Proc\+::\+Hf\+Filter\+::\+Hf\+Filter (\begin{DoxyParamCaption}\item[{double}]{max\+\_\+freq = {\ttfamily 1~$\ast$~units\+:\+:megahertz},  }\item[{double}]{sigma = {\ttfamily 3.0$\ast$~units\+:\+:megahertz},  }\item[{double}]{power = {\ttfamily 2},  }\item[{bool}]{flag = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file Hf\+Filter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_hf_filter_ab04d5fbb405dd807bd0c03f3fce8b745}\label{class_wire_cell_1_1_sig_proc_1_1_hf_filter_ab04d5fbb405dd807bd0c03f3fce8b745}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}!````~Hf\+Filter@{$\sim$\+Hf\+Filter}}
+\index{````~Hf\+Filter@{$\sim$\+Hf\+Filter}!Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}}
+\subsubsection{\texorpdfstring{$\sim$\+Hf\+Filter()}{~HfFilter()}}
+{\footnotesize\ttfamily Sig\+Proc\+::\+Hf\+Filter\+::$\sim$\+Hf\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 19 of file Hf\+Filter.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_hf_filter_af7320d10ac57a7a3526542a31a393b26}\label{class_wire_cell_1_1_sig_proc_1_1_hf_filter_af7320d10ac57a7a3526542a31a393b26}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Sig\+Proc\+::\+Hf\+Filter\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 33 of file Hf\+Filter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_hf_filter_a490d55260745515290505cef11ca8ff1}\label{class_wire_cell_1_1_sig_proc_1_1_hf_filter_a490d55260745515290505cef11ca8ff1}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Sig\+Proc\+::\+Hf\+Filter\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 23 of file Hf\+Filter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_hf_filter_a4b34ce856b103ea1cfff4d418b1aae6d}\label{class_wire_cell_1_1_sig_proc_1_1_hf_filter_a4b34ce856b103ea1cfff4d418b1aae6d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}!filter\+\_\+waveform@{filter\+\_\+waveform}}
+\index{filter\+\_\+waveform@{filter\+\_\+waveform}!Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Hf\+Filter}}
+\subsubsection{\texorpdfstring{filter\+\_\+waveform()}{filter\_waveform()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} Sig\+Proc\+::\+Hf\+Filter\+::filter\+\_\+waveform (\begin{DoxyParamCaption}\item[{int}]{nfbins }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Provide the filter waveform with a given number of frequency bins. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_filter_waveform_a7757f5772c9974a6c76bebcc856a3069}{Wire\+Cell\+::\+I\+Filter\+Waveform}.
+
+
+
+Definition at line 43 of file Hf\+Filter.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_sig_proc_1_1_hf_filter_a4b34ce856b103ea1cfff4d418b1aae6d_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_hf_filter_8h}{Hf\+Filter.\+h}\item 
+sigproc/src/\hyperlink{_hf_filter_8cxx}{Hf\+Filter.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,307 @@
+\hypertarget{chrono_8h}{}\section{util/inc/spdlog/fmt/bundled/chrono.h File Reference}
+\label{chrono_8h}\index{util/inc/spdlog/fmt/bundled/chrono.\+h@{util/inc/spdlog/fmt/bundled/chrono.\+h}}
+{\ttfamily \#include \char`\"{}format.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}locale.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for chrono.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{chrono_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structinternal_1_1chrono__format__checker}{internal\+::chrono\+\_\+format\+\_\+checker}
+\item 
+struct \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter$<$ Format\+Context, Output\+It $>$}
+\item 
+struct \hyperlink{structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4}{formatter$<$ std\+::chrono\+::duration$<$ Rep, Period $>$, Char $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceinternal}{internal}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{internal\+::numeric\+\_\+system} \{ \hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86bac00f0c4675b91fb8b918e4079a0b1bac}{internal\+::numeric\+\_\+system\+::standard}, 
+\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86baa04fe4e390a7c7d5d4583f85d24e164d}{internal\+::numeric\+\_\+system\+::alternative}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Char , typename Handler $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const Char $\ast$ \hyperlink{namespaceinternal_adb293fc437669ac43eac0ca61734db90}{internal\+::parse\+\_\+chrono\+\_\+format} (const Char $\ast$begin, const Char $\ast$end, Handler \&\&handler)
+\item 
+{\footnotesize template$<$typename Int $>$ }\\int \hyperlink{namespaceinternal_a5f8d44f2e5d158dd370308bbbf35ac1c}{internal\+::to\+\_\+int} (Int value)
+\item 
+{\footnotesize template$<$typename Period $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a3e586ced778402da7b28e39e2de06e55}{get\+\_\+units$<$ std\+::atto $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_ac3e4571f7c548e048921bb4078ce1549}{get\+\_\+units$<$ std\+::femto $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_afc37bea9a47dae4bd8edd9ceffd25f41}{get\+\_\+units$<$ std\+::pico $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a4c2573f405c81bb0d55d49b84a256802}{get\+\_\+units$<$ std\+::nano $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_ab3e4481d58f94ed45d442a5eb0e01c18}{get\+\_\+units$<$ std\+::micro $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_af42f94f4207340c2d1b756904aeed173}{get\+\_\+units$<$ std\+::milli $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_aa65dc75d9c83aec7776c92b6c4423289}{get\+\_\+units$<$ std\+::centi $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a2039c2f216da52fe5726110b70acc0f3}{get\+\_\+units$<$ std\+::deci $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_afebcd7d874e04a6b1a458653b9e7ccaf}{get\+\_\+units$<$ std\+::ratio$<$ 1 $>$ $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_afe9de296ef7c9fc220cf716a80e3e40b}{get\+\_\+units$<$ std\+::deca $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a6f07f33a3b307eb9737caa31cad8683d}{get\+\_\+units$<$ std\+::hecto $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a8313780423f11f25c075dd8cf1cc5957}{get\+\_\+units$<$ std\+::kilo $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_aa9c0d7438e840716556ffe1231a867f5}{get\+\_\+units$<$ std\+::mega $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a3acd52b79f558a5cf5d793a86614f551}{get\+\_\+units$<$ std\+::giga $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a63efed03693ac6541893b64551513ef9}{get\+\_\+units$<$ std\+::tera $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a85b34c25bb615534d22b3b597954e62b}{get\+\_\+units$<$ std\+::peta $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a4c4a11949fd47c6afc9e61c1f2f9780d}{get\+\_\+units$<$ std\+::exa $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a65d3fd78e0b06cb44e43a69193571f04}{get\+\_\+units$<$ std\+::ratio$<$ 60 $>$ $>$} ()
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{chrono_8h_a66328979ca36f742c8412b81fcfd6bad}{get\+\_\+units$<$ std\+::ratio$<$ 3600 $>$ $>$} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{chrono_8h_aadc9cf59a1e28a1259237331532931e6}\label{chrono_8h_aadc9cf59a1e28a1259237331532931e6}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units@{get\+\_\+units}}
+\index{get\+\_\+units@{get\+\_\+units}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units()}{get\_units()}}
+{\footnotesize\ttfamily template$<$typename Period $>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ get\+\_\+units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 344 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a3e586ced778402da7b28e39e2de06e55}\label{chrono_8h_a3e586ced778402da7b28e39e2de06e55}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::atto $>$@{get\+\_\+units$<$ std\+::atto $>$}}
+\index{get\+\_\+units$<$ std\+::atto $>$@{get\+\_\+units$<$ std\+::atto $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::atto $>$()}{get\_units< std::atto >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::atto $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 347 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_aa65dc75d9c83aec7776c92b6c4423289}\label{chrono_8h_aa65dc75d9c83aec7776c92b6c4423289}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::centi $>$@{get\+\_\+units$<$ std\+::centi $>$}}
+\index{get\+\_\+units$<$ std\+::centi $>$@{get\+\_\+units$<$ std\+::centi $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::centi $>$()}{get\_units< std::centi >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::centi $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 353 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_afe9de296ef7c9fc220cf716a80e3e40b}\label{chrono_8h_afe9de296ef7c9fc220cf716a80e3e40b}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::deca $>$@{get\+\_\+units$<$ std\+::deca $>$}}
+\index{get\+\_\+units$<$ std\+::deca $>$@{get\+\_\+units$<$ std\+::deca $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::deca $>$()}{get\_units< std::deca >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::deca $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 356 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a2039c2f216da52fe5726110b70acc0f3}\label{chrono_8h_a2039c2f216da52fe5726110b70acc0f3}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::deci $>$@{get\+\_\+units$<$ std\+::deci $>$}}
+\index{get\+\_\+units$<$ std\+::deci $>$@{get\+\_\+units$<$ std\+::deci $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::deci $>$()}{get\_units< std::deci >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::deci $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 354 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a4c4a11949fd47c6afc9e61c1f2f9780d}\label{chrono_8h_a4c4a11949fd47c6afc9e61c1f2f9780d}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::exa $>$@{get\+\_\+units$<$ std\+::exa $>$}}
+\index{get\+\_\+units$<$ std\+::exa $>$@{get\+\_\+units$<$ std\+::exa $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::exa $>$()}{get\_units< std::exa >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::exa $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 363 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_ac3e4571f7c548e048921bb4078ce1549}\label{chrono_8h_ac3e4571f7c548e048921bb4078ce1549}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::femto $>$@{get\+\_\+units$<$ std\+::femto $>$}}
+\index{get\+\_\+units$<$ std\+::femto $>$@{get\+\_\+units$<$ std\+::femto $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::femto $>$()}{get\_units< std::femto >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::femto $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 348 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a3acd52b79f558a5cf5d793a86614f551}\label{chrono_8h_a3acd52b79f558a5cf5d793a86614f551}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::giga $>$@{get\+\_\+units$<$ std\+::giga $>$}}
+\index{get\+\_\+units$<$ std\+::giga $>$@{get\+\_\+units$<$ std\+::giga $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::giga $>$()}{get\_units< std::giga >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::giga $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 360 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a6f07f33a3b307eb9737caa31cad8683d}\label{chrono_8h_a6f07f33a3b307eb9737caa31cad8683d}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::hecto $>$@{get\+\_\+units$<$ std\+::hecto $>$}}
+\index{get\+\_\+units$<$ std\+::hecto $>$@{get\+\_\+units$<$ std\+::hecto $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::hecto $>$()}{get\_units< std::hecto >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::hecto $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 357 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a8313780423f11f25c075dd8cf1cc5957}\label{chrono_8h_a8313780423f11f25c075dd8cf1cc5957}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::kilo $>$@{get\+\_\+units$<$ std\+::kilo $>$}}
+\index{get\+\_\+units$<$ std\+::kilo $>$@{get\+\_\+units$<$ std\+::kilo $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::kilo $>$()}{get\_units< std::kilo >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::kilo $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 358 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_aa9c0d7438e840716556ffe1231a867f5}\label{chrono_8h_aa9c0d7438e840716556ffe1231a867f5}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::mega $>$@{get\+\_\+units$<$ std\+::mega $>$}}
+\index{get\+\_\+units$<$ std\+::mega $>$@{get\+\_\+units$<$ std\+::mega $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::mega $>$()}{get\_units< std::mega >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::mega $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 359 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_ab3e4481d58f94ed45d442a5eb0e01c18}\label{chrono_8h_ab3e4481d58f94ed45d442a5eb0e01c18}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::micro $>$@{get\+\_\+units$<$ std\+::micro $>$}}
+\index{get\+\_\+units$<$ std\+::micro $>$@{get\+\_\+units$<$ std\+::micro $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::micro $>$()}{get\_units< std::micro >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::micro $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 351 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_af42f94f4207340c2d1b756904aeed173}\label{chrono_8h_af42f94f4207340c2d1b756904aeed173}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::milli $>$@{get\+\_\+units$<$ std\+::milli $>$}}
+\index{get\+\_\+units$<$ std\+::milli $>$@{get\+\_\+units$<$ std\+::milli $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::milli $>$()}{get\_units< std::milli >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::milli $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 352 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a4c2573f405c81bb0d55d49b84a256802}\label{chrono_8h_a4c2573f405c81bb0d55d49b84a256802}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::nano $>$@{get\+\_\+units$<$ std\+::nano $>$}}
+\index{get\+\_\+units$<$ std\+::nano $>$@{get\+\_\+units$<$ std\+::nano $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::nano $>$()}{get\_units< std::nano >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::nano $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 350 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a85b34c25bb615534d22b3b597954e62b}\label{chrono_8h_a85b34c25bb615534d22b3b597954e62b}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::peta $>$@{get\+\_\+units$<$ std\+::peta $>$}}
+\index{get\+\_\+units$<$ std\+::peta $>$@{get\+\_\+units$<$ std\+::peta $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::peta $>$()}{get\_units< std::peta >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::peta $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 362 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_afc37bea9a47dae4bd8edd9ceffd25f41}\label{chrono_8h_afc37bea9a47dae4bd8edd9ceffd25f41}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::pico $>$@{get\+\_\+units$<$ std\+::pico $>$}}
+\index{get\+\_\+units$<$ std\+::pico $>$@{get\+\_\+units$<$ std\+::pico $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::pico $>$()}{get\_units< std::pico >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::pico $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 349 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_afebcd7d874e04a6b1a458653b9e7ccaf}\label{chrono_8h_afebcd7d874e04a6b1a458653b9e7ccaf}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::ratio$<$ 1 $>$ $>$@{get\+\_\+units$<$ std\+::ratio$<$ 1 $>$ $>$}}
+\index{get\+\_\+units$<$ std\+::ratio$<$ 1 $>$ $>$@{get\+\_\+units$<$ std\+::ratio$<$ 1 $>$ $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::ratio$<$ 1 $>$ $>$()}{get\_units< std::ratio< 1 > >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::ratio$<$ 1 $>$ $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 355 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a66328979ca36f742c8412b81fcfd6bad}\label{chrono_8h_a66328979ca36f742c8412b81fcfd6bad}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::ratio$<$ 3600 $>$ $>$@{get\+\_\+units$<$ std\+::ratio$<$ 3600 $>$ $>$}}
+\index{get\+\_\+units$<$ std\+::ratio$<$ 3600 $>$ $>$@{get\+\_\+units$<$ std\+::ratio$<$ 3600 $>$ $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::ratio$<$ 3600 $>$ $>$()}{get\_units< std::ratio< 3600 > >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::ratio$<$ 3600 $>$ $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 367 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a65d3fd78e0b06cb44e43a69193571f04}\label{chrono_8h_a65d3fd78e0b06cb44e43a69193571f04}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::ratio$<$ 60 $>$ $>$@{get\+\_\+units$<$ std\+::ratio$<$ 60 $>$ $>$}}
+\index{get\+\_\+units$<$ std\+::ratio$<$ 60 $>$ $>$@{get\+\_\+units$<$ std\+::ratio$<$ 60 $>$ $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::ratio$<$ 60 $>$ $>$()}{get\_units< std::ratio< 60 > >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::ratio$<$ 60 $>$ $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 364 of file chrono.\+h.
+
+\mbox{\Hypertarget{chrono_8h_a63efed03693ac6541893b64551513ef9}\label{chrono_8h_a63efed03693ac6541893b64551513ef9}} 
+\index{chrono.\+h@{chrono.\+h}!get\+\_\+units$<$ std\+::tera $>$@{get\+\_\+units$<$ std\+::tera $>$}}
+\index{get\+\_\+units$<$ std\+::tera $>$@{get\+\_\+units$<$ std\+::tera $>$}!chrono.\+h@{chrono.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+units$<$ std\+::tera $>$()}{get\_units< std::tera >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char$\ast$ \hyperlink{chrono_8h_aadc9cf59a1e28a1259237331532931e6}{get\+\_\+units}$<$ std\+::tera $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 361 of file chrono.\+h.
+

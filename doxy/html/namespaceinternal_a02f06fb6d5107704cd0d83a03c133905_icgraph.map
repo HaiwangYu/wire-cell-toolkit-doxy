@@ -1,0 +1,4 @@
+<map id="internal::check_pointer_type_spec" name="internal::check_pointer_type_spec">
+<area shape="rect" id="node2" href="$classinternal_1_1arg__formatter__base.html#a77a4267b70ae9bd069e6134a7b2af862" title="internal::arg_formatter\l_base::operator()" alt="" coords="223,5,373,47"/>
+<area shape="rect" id="node3" href="$structformatter_3_01_t_00_01_char_00_01typename_01std_1_1enable__if_3_01internal_1_1format__typeef2b7d59b5441fbead72290e06693dea.html#ae66fc4d23664a9533b055208fa9692bf" title="formatter\&lt; T, Char,\l typename std::enable\l_if\&lt; internal::format\l_type\&lt; typename buffer\l_context\&lt; Char \&gt;::type,\l T \&gt;::value \&gt;::type \&gt;::parse" alt="" coords="207,71,389,171"/>
+</map>

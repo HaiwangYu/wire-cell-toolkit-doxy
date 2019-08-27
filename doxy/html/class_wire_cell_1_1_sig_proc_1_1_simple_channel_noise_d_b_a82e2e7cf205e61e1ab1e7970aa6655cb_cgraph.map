@@ -1,0 +1,9 @@
+<map id="WireCell::SigProc::SimpleChannelNoiseDB::set_gains_shapings" name="WireCell::SigProc::SimpleChannelNoiseDB::set_gains_shapings">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_response_1_1_generator.html#aceed932e0bab5af1cb80981507667e5e" title="FIXME: eradicate Domain in favor of Binning. " alt="" coords="225,5,370,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="216,71,379,98"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_waveform.html#adad443bd3c3ee1a0c2e65c9a39282a53" title="Shrink (divide) seq values by values from the other sequence. " alt="" coords="227,123,367,164"/>
+<area shape="rect" id="node8" href="$_simple_channel_noise_d_b_8cxx.html#aa029422b4b46c8772bf181e84f17f3fb" title="set_one" alt="" coords="263,189,331,215"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="433,91,560,132"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1_waveform.html#ae368e58f014b0d634028afcbb05887cb" title="WireCell::Waveform\l::edge" alt="" coords="427,156,567,197"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="615,91,741,132"/>
+</map>

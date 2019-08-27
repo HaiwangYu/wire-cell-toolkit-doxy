@@ -1,0 +1,28 @@
+<map id="WireCell::Gen::TruthTraceID::configure" name="WireCell::Gen::TruthTraceID::configure">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_response_1_1_generator.html#aceed932e0bab5af1cb80981507667e5e" title="FIXME: eradicate Domain in favor of Binning. " alt="" coords="272,117,417,158"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_binning.html#a55ba6a476ed35f5954fd44214e85dbb9" title="WireCell::Binning::\lbinsize" alt="" coords="989,231,1120,273"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_binning.html#aaac66033ecc76a899c18f8f09404c419" title="WireCell::Binning::\lnbins" alt="" coords="535,467,665,509"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion.html#a9c4c6664c76ad07ad29d71bdb8fb92f1" title="WireCell::Gen::BinnedDiffusion::add" alt="" coords="228,307,461,333"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_pimpos.html#a1b8aef1ec7d1cf9eb9d5d78a6359e2aa" title="WireCell::Pimpos::impact\l_binning" alt="" coords="515,402,685,443"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_binning.html#ac53704b170f6bd834632fdc75f7a70cc" title="WireCell::Binning::\lcenter" alt="" coords="989,523,1120,565"/>
+<area shape="rect" id="node21" href="$class_wire_cell_1_1_pimpos.html#ac2d0a4ce2474237948537f0e4bd358f5" title="WireCell::Pimpos::region\l_binning" alt="" coords="261,585,428,626"/>
+<area shape="rect" id="node22" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion.html#a22377d1afccdee836981ce2979ab49b4" title="WireCell::Gen::BinnedDiffusion\l::impact_data" alt="" coords="243,417,447,458"/>
+<area shape="rect" id="node23" href="$namespace_wire_cell_1_1_waveform.html#af74deccaeb9e2147865029e16840e799" title="Increase (shift) sequence values by scalar. " alt="" coords="275,650,415,691"/>
+<area shape="rect" id="node26" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion.html#a1b261eff7e9581f22bd83d1ea40077ed" title="WireCell::Gen::BinnedDiffusion\l::erase" alt="" coords="243,715,447,757"/>
+<area shape="rect" id="node27" href="$namespace_wire_cell_1_1_waveform.html#a69255dad704fcb71fa53745e90a2f0e1" title="WireCell::Waveform\l::idft" alt="" coords="275,781,415,822"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_pimpos.html#abeadf8b503815d0dbfaf5d94d245b5bd" title="WireCell::Pimpos::distance" alt="" coords="509,56,691,83"/>
+<area shape="rect" id="node11" href="$struct_wire_cell_1_1_gen_1_1_gaus_desc.html#a769c9958842435a1dba72113be6d8f09" title="Return the distance in number of sigma that x is from the center. " alt="" coords="513,234,687,275"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_binning.html#a5c7eadf5a87f443a18b93d18f1707372" title="WireCell::Binning::min" alt="" coords="524,300,676,327"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_binning.html#a91e6fb550bd6cac95e1e61be625583fe" title="WireCell::Binning::max" alt="" coords="522,351,678,377"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_pimpos.html#a0eed2ce13249e92b343e94e0ecaa3953" title="WireCell::Pimpos::axis" alt="" coords="748,56,904,83"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_pimpos.html#a291dda9270d9feb2a0f8afa18e4cf9e2" title="Return the vector from the origin to the given point. " alt="" coords="1196,81,1371,108"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_d3_vector.html#ad116deec8357b27dcad6be127c209490" title="Return the dot product of this vector and the other. " alt="" coords="1203,5,1364,32"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_pimpos.html#a0d2db56d6956aee06d0218ee50400f25" title="WireCell::Pimpos::transform" alt="" coords="961,31,1148,57"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_pimpos.html#ae3a8be480718c7cf1ad0551947591fc3" title="WireCell::Pimpos::closest" alt="" coords="739,471,913,497"/>
+<area shape="rect" id="node18" href="$class_wire_cell_1_1_pimpos.html#ae91d0c7565196dba1fbf9bd83760d25e" title="Return the impact position index coincident with the wire index. " alt="" coords="977,346,1133,387"/>
+<area shape="rect" id="node19" href="$class_wire_cell_1_1_pimpos.html#a185f13fbfd5be1350fe5ba268f7557ca" title="WireCell::Pimpos::wire\l_impacts" alt="" coords="748,405,904,446"/>
+<area shape="rect" id="node20" href="$class_wire_cell_1_1_pimpos.html#a712e8a7789b061dd96f1e21f15ecdc42" title="WireCell::Pimpos::reflect" alt="" coords="742,303,910,329"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_binning.html#a826dbaafb7bc50a2c2767cc4deb190f0" title="WireCell::Binning::bin" alt="" coords="981,471,1129,497"/>
+<area shape="rect" id="node24" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="537,650,663,691"/>
+<area shape="rect" id="node25" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="763,650,889,691"/>
+</map>

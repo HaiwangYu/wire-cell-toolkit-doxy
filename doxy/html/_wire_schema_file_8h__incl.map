@@ -1,0 +1,13 @@
+<map id="gen/inc/WireCellGen/WireSchemaFile.h" name="gen/inc/WireCellGen/WireSchemaFile.h">
+<area shape="rect" id="node2" href="$_i_wire_schema_8h.html" title="WireCellIface/IWireSchema.h" alt="" coords="659,95,853,121"/>
+<area shape="rect" id="node28" href="$_i_configurable_8h.html" title="WireCellIface/IConfigurable.h" alt="" coords="1206,169,1399,196"/>
+<area shape="rect" id="node3" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="1213,244,1392,271"/>
+<area shape="rect" id="node7" href="$_wire_schema_8h.html" title="WireCellUtil/WireSchema.h" alt="" coords="430,169,613,196"/>
+<area shape="rect" id="node4" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="1223,319,1382,345"/>
+<area shape="rect" id="node8" href="$_point_8h.html" title="WireCellUtil/Point.h" alt="" coords="134,319,271,345"/>
+<area shape="rect" id="node19" href="$_exceptions_8h.html" title="WireCellUtil/Exceptions.h" alt="" coords="931,244,1103,271"/>
+<area shape="rect" id="node23" href="$_string_8h.html" title="WireCellUtil/String.h" alt="" coords="641,244,783,271"/>
+<area shape="rect" id="node27" href="$_bounding_box_8h.html" title="WireCellUtil/BoundingBox.h" alt="" coords="111,244,295,271"/>
+<area shape="rect" id="node9" href="$_d3_vector_8h.html" title="WireCellUtil/D3Vector.h" alt="" coords="59,393,221,420"/>
+<area shape="rect" id="node13" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="1379,393,1563,420"/>
+</map>

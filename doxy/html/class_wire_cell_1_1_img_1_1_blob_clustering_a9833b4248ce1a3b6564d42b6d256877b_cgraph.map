@@ -1,0 +1,11 @@
+<map id="WireCell::Img::BlobClustering::default_configuration" name="WireCell::Img::BlobClustering::default_configuration">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_indexed_graph.html#a73e33d19b8b03611097aa02a2e72dd1d" title="WireCell::IndexedGraph\l::graph" alt="" coords="263,5,424,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_indexed_graph.html#adb8836f8e4ccae7a86b062a47dedb0a3" title="WireCell::IndexedGraph\l::clear" alt="" coords="263,71,424,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_indexed_graph.html#a77bec91576cb23b64ea200cd03a5d686" title="WireCell::IndexedGraph::has" alt="" coords="248,137,439,163"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_indexed_graph.html#a03a0f192232d913bfb4171fc7b2e095a" title="WireCell::IndexedGraph\l::edge" alt="" coords="263,188,424,229"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_ray_grid.html#adc5b10091f5718c87dd256f3898a2740" title="WireCell::RayGrid::\lassociate" alt="" coords="275,253,411,295"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1_ray_grid.html#ab1dc12b3013c5cc290ca5f8d945d54e5" title="WireCell::RayGrid::\lprojection" alt="" coords="671,224,807,265"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1_ray_grid.html#a1f3f06c1120d6202ac80459d28c4afa4" title="WireCell::RayGrid::\lreferences" alt="" coords="487,253,623,295"/>
+<area shape="rect" id="node9" href="$namespace_wire_cell_1_1_ray_grid.html#af03e98b7efe2bb929cf7d581897eff83" title="WireCell::RayGrid::\loverlap" alt="" coords="487,319,623,360"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1_ray_grid.html#ab4d35d6d20bc86bbc5403f8a50824ec6" title="WireCell::RayGrid::\lselect" alt="" coords="671,319,807,360"/>
+</map>

@@ -1,0 +1,181 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Microboone\+:\+:One\+Channel\+Status Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}}
+
+
+{\ttfamily \#include $<$Microboone.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Microboone\+:\+:One\+Channel\+Status\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Microboone\+:\+:One\+Channel\+Status\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a9f2dbcbbeacb6d1a14b0be15681040bc}{One\+Channel\+Status} (const std\+::string anode\+\_\+tn=\char`\"{}Anode\+Plane\char`\"{}, double threshold=3.\+5, int window=5, int nbins=250, double cut=14)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_ab71cb91131cf0981713a00161ce1725e}{$\sim$\+One\+Channel\+Status} ()
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_af75669068bb7e6b9e618c887025c9fa3}{apply} (int channel, \hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&sig) const
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a4719e79f3e553512387a4de632451818}{apply} (\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t} \&chansig) const
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_ab1ff00e5fcfd1665621ef0a81b30f463}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a49fa11b8a1e5d6a952c9c797070d69cc}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a3836d07fe79d2efedd72838ac4e13d92}{I\+D\+\_\+lf\+\_\+noisy} (\hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&sig) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 121 of file Microboone.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a9f2dbcbbeacb6d1a14b0be15681040bc}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a9f2dbcbbeacb6d1a14b0be15681040bc}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}!One\+Channel\+Status@{One\+Channel\+Status}}
+\index{One\+Channel\+Status@{One\+Channel\+Status}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}}
+\subsubsection{\texorpdfstring{One\+Channel\+Status()}{OneChannelStatus()}}
+{\footnotesize\ttfamily Microboone\+::\+One\+Channel\+Status\+::\+One\+Channel\+Status (\begin{DoxyParamCaption}\item[{const std\+::string}]{anode\+\_\+tn = {\ttfamily \char`\"{}AnodePlane\char`\"{}},  }\item[{double}]{threshold = {\ttfamily 3.5},  }\item[{int}]{window = {\ttfamily 5},  }\item[{int}]{nbins = {\ttfamily 250},  }\item[{double}]{cut = {\ttfamily 14} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1297 of file Microboone.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_ab71cb91131cf0981713a00161ce1725e}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_ab71cb91131cf0981713a00161ce1725e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}!````~One\+Channel\+Status@{$\sim$\+One\+Channel\+Status}}
+\index{````~One\+Channel\+Status@{$\sim$\+One\+Channel\+Status}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}}
+\subsubsection{\texorpdfstring{$\sim$\+One\+Channel\+Status()}{~OneChannelStatus()}}
+{\footnotesize\ttfamily Microboone\+::\+One\+Channel\+Status\+::$\sim$\+One\+Channel\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 1305 of file Microboone.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_af75669068bb7e6b9e618c887025c9fa3}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_af75669068bb7e6b9e618c887025c9fa3}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} Microboone\+::\+One\+Channel\+Status\+::apply (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&}]{sig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Filter in place the signal {\ttfamily sig} from given {\ttfamily channel}. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_filter_a6981186ee38a4b9b66e16c0d9b376b08}{Wire\+Cell\+::\+I\+Channel\+Filter}.
+
+
+
+Definition at line 1342 of file Microboone.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_af75669068bb7e6b9e618c887025c9fa3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a4719e79f3e553512387a4de632451818}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a4719e79f3e553512387a4de632451818}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} Microboone\+::\+One\+Channel\+Status\+::apply (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t} \&}]{chansig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Filter in place a group of signals together. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_filter_a47554d77b1dca5596dc61e2221e0a137}{Wire\+Cell\+::\+I\+Channel\+Filter}.
+
+
+
+Definition at line 1334 of file Microboone.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_ab1ff00e5fcfd1665621ef0a81b30f463}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_ab1ff00e5fcfd1665621ef0a81b30f463}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Microboone\+::\+One\+Channel\+Status\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 1309 of file Microboone.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a49fa11b8a1e5d6a952c9c797070d69cc}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a49fa11b8a1e5d6a952c9c797070d69cc}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Microboone\+::\+One\+Channel\+Status\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 1323 of file Microboone.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a3836d07fe79d2efedd72838ac4e13d92}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a3836d07fe79d2efedd72838ac4e13d92}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}!I\+D\+\_\+lf\+\_\+noisy@{I\+D\+\_\+lf\+\_\+noisy}}
+\index{I\+D\+\_\+lf\+\_\+noisy@{I\+D\+\_\+lf\+\_\+noisy}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}}
+\subsubsection{\texorpdfstring{I\+D\+\_\+lf\+\_\+noisy()}{ID\_lf\_noisy()}}
+{\footnotesize\ttfamily bool Microboone\+::\+One\+Channel\+Status\+::\+I\+D\+\_\+lf\+\_\+noisy (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&}]{sig }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1361 of file Microboone.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a3836d07fe79d2efedd72838ac4e13d92_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status_a3836d07fe79d2efedd72838ac4e13d92_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_microboone_8h}{Microboone.\+h}\item 
+sigproc/src/\hyperlink{_microboone_8cxx}{Microboone.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,101 @@
+\hypertarget{class_wire_cell_1_1_sig_slot_sink_source_adapter}{}\section{Wire\+Cell\+:\+:Sig\+Slot\+Sink\+Source\+Adapter$<$ Input\+Type, Output\+Type, Processor $>$ Class Template Reference}
+\label{class_wire_cell_1_1_sig_slot_sink_source_adapter}\index{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter$<$ Input\+Type, Output\+Type, Processor $>$@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter$<$ Input\+Type, Output\+Type, Processor $>$}}
+
+
+{\ttfamily \#include $<$S\+S\+S\+S\+Adapter.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::signals2\+::signal$<$ Input\+Type()$>$ \hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter_a40ff5e7ed8db807246a7f1c77ee46a58}{signal\+\_\+type}
+\item 
+typedef signal\+\_\+type\+::slot\+\_\+type \hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter_ab53f4d64b24e8ff5bc0f7ebd3ceca7dc}{input\+\_\+slot\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter_a9a6e0e1a49b753d56dbf1a8417b661c9}{Sig\+Slot\+Sink\+Source\+Adapter} (Processor \&proc)
+\item 
+Output\+Type \hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter_aff6b867ecd4cd3e387b0a4d75a7484d7}{operator()} ()
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter_a7a0f80852f4df14504bf89b56b23ba48}{connect} (const \hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter_ab53f4d64b24e8ff5bc0f7ebd3ceca7dc}{input\+\_\+slot\+\_\+type} \&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Input\+Type, typename Output\+Type, class Processor$>$\newline
+class Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter$<$ Input\+Type, Output\+Type, Processor $>$}
+
+An adapter which drives the push-\/pull sink/process/source paradigm to the pure-\/pull signal/slot execution model. 
+
+Definition at line 10 of file S\+S\+S\+S\+Adapter.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_slot_sink_source_adapter_ab53f4d64b24e8ff5bc0f7ebd3ceca7dc}\label{class_wire_cell_1_1_sig_slot_sink_source_adapter_ab53f4d64b24e8ff5bc0f7ebd3ceca7dc}} 
+\index{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}!input\+\_\+slot\+\_\+type@{input\+\_\+slot\+\_\+type}}
+\index{input\+\_\+slot\+\_\+type@{input\+\_\+slot\+\_\+type}!Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}}
+\subsubsection{\texorpdfstring{input\+\_\+slot\+\_\+type}{input\_slot\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type , typename Output\+Type , class Processor $>$ \\
+typedef signal\+\_\+type\+::slot\+\_\+type \hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter}{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}$<$ Input\+Type, Output\+Type, Processor $>$\+::\hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter_ab53f4d64b24e8ff5bc0f7ebd3ceca7dc}{input\+\_\+slot\+\_\+type}}
+
+
+
+Definition at line 13 of file S\+S\+S\+S\+Adapter.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_slot_sink_source_adapter_a40ff5e7ed8db807246a7f1c77ee46a58}\label{class_wire_cell_1_1_sig_slot_sink_source_adapter_a40ff5e7ed8db807246a7f1c77ee46a58}} 
+\index{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}!signal\+\_\+type@{signal\+\_\+type}}
+\index{signal\+\_\+type@{signal\+\_\+type}!Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}}
+\subsubsection{\texorpdfstring{signal\+\_\+type}{signal\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type , typename Output\+Type , class Processor $>$ \\
+typedef boost\+::signals2\+::signal$<$Input\+Type ()$>$ \hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter}{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}$<$ Input\+Type, Output\+Type, Processor $>$\+::\hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter_a40ff5e7ed8db807246a7f1c77ee46a58}{signal\+\_\+type}}
+
+
+
+Definition at line 12 of file S\+S\+S\+S\+Adapter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_slot_sink_source_adapter_a9a6e0e1a49b753d56dbf1a8417b661c9}\label{class_wire_cell_1_1_sig_slot_sink_source_adapter_a9a6e0e1a49b753d56dbf1a8417b661c9}} 
+\index{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}!Sig\+Slot\+Sink\+Source\+Adapter@{Sig\+Slot\+Sink\+Source\+Adapter}}
+\index{Sig\+Slot\+Sink\+Source\+Adapter@{Sig\+Slot\+Sink\+Source\+Adapter}!Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}}
+\subsubsection{\texorpdfstring{Sig\+Slot\+Sink\+Source\+Adapter()}{SigSlotSinkSourceAdapter()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type , typename Output\+Type , class Processor $>$ \\
+\hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter}{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}$<$ Input\+Type, Output\+Type, Processor $>$\+::\hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter}{Sig\+Slot\+Sink\+Source\+Adapter} (\begin{DoxyParamCaption}\item[{Processor \&}]{proc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 15 of file S\+S\+S\+S\+Adapter.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_slot_sink_source_adapter_a7a0f80852f4df14504bf89b56b23ba48}\label{class_wire_cell_1_1_sig_slot_sink_source_adapter_a7a0f80852f4df14504bf89b56b23ba48}} 
+\index{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}!connect@{connect}}
+\index{connect@{connect}!Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type , typename Output\+Type , class Processor $>$ \\
+void \hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter}{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}$<$ Input\+Type, Output\+Type, Processor $>$\+::connect (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter_ab53f4d64b24e8ff5bc0f7ebd3ceca7dc}{input\+\_\+slot\+\_\+type} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 26 of file S\+S\+S\+S\+Adapter.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_slot_sink_source_adapter_aff6b867ecd4cd3e387b0a4d75a7484d7}\label{class_wire_cell_1_1_sig_slot_sink_source_adapter_aff6b867ecd4cd3e387b0a4d75a7484d7}} 
+\index{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter@{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type , typename Output\+Type , class Processor $>$ \\
+Output\+Type \hyperlink{class_wire_cell_1_1_sig_slot_sink_source_adapter}{Wire\+Cell\+::\+Sig\+Slot\+Sink\+Source\+Adapter}$<$ Input\+Type, Output\+Type, Processor $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 17 of file S\+S\+S\+S\+Adapter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_s_s_s_s_adapter_8h}{S\+S\+S\+S\+Adapter.\+h}\end{DoxyCompactItemize}

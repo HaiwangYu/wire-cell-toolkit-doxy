@@ -1,0 +1,151 @@
+#+TITLE: Wire Cell Toolkit 
+
+This package provides the primary "build aggregation" source package
+for the various Wire Cell Toolkit (WCT) packages.  
+
+See http://wirecell.github.io/ for WCT manual and news "blog".
+
+The home page for the general Wire Cell effort is http://lar.bnl.gov/wire-cell/.
+
+[[https://travis-ci.org/WireCell/wire-cell-build][https://api.travis-ci.org/WireCell/wire-cell-build.svg?branch=master]]
+
+
+* Installation
+
+** Get the source
+
+See below for how to use ~git~ to get the full source history and any
+particular release.  Select releases are archived and available in ~tar~
+file form at:
+
+https://lar.bnl.gov/software/releases/
+
+** External software dependencies
+
+The core of WCT depends on:
+
+- Boost
+- JsonCPP
+- Jsonnet
+- Eigen
+- FFTW
+
+Optional dependencies include
+
+- ROOT
+- TBB
+
+You may provide the necessary external software dependencies as you
+wish.  Some options include:
+
+- [[https://github.com/WireCell/wire-cell-spack][Spack-based install]] automatically builds all (non-OS) externals and WCT itself
+- Some WCT releases are built at FNAL as a UPS product named =wirecell=.
+- Exploit the above with a [[https://github.com/WireCell/wire-cell-singularity][Singularity container and CVMFS]] (currently recommended)
+
+** Developer Source
+
+Developers check out =master= branch via SSH.
+
+#+BEGIN_EXAMPLE
+  $ git clone --recursive git@github.com:WireCell/wire-cell-build.git wct
+#+END_EXAMPLE
+
+** User Source
+
+Users typically should build a release branch, either the tip or a
+tagged release on that branch.  Tagged releases are shown on the [[https://github.com/WireCell/wire-cell-build/releases][this
+GitHub release page]].  To get the source, for example for release 0.5.0
+on branch 0.5.x do:
+
+#+BEGIN_EXAMPLE
+  $ git clone --recursive --branch 0.5.x https://github.com/WireCell/wire-cell-build.git
+  $ git checkout -b 0.5.0 0.5.0
+  $ git submodule init
+  $ git submodule update
+  $ git submodule foreach git checkout -b 0.5.0 0.5.0
+#+END_EXAMPLE
+
+Anonymous users can clone the =master= branch but will need to switch
+the submodule urls to use HTTPS.  A script is provided to make that
+easier:
+
+#+BEGIN_EXAMPLE
+  $ git clone https://github.com/WireCell/wire-cell-build.git
+  $ ./swith-git-urls
+  $ git submodule init
+  $ git submodule update
+#+END_EXAMPLE
+
+Except when mistakes are made, the release branches default to
+anonymous HTTPS URLs.
+
+** Configuring the source
+
+On well-behaved systems you can do:
+
+#+BEGIN_EXAMPLE
+  $ ./wcb configure --prefix=/path/to/install
+#+END_EXAMPLE
+
+If your system is not well-behaved you can exhaustively specify where externals are found.  In this contrived example, they are installed all into one directory named by the =WCT_EXTERNALS= variable (such as when making a Spack "view")
+
+#+BEGIN_EXAMPLE
+  $ ./wcb --help
+  $ ./wcb configure --prefix=/path/to/install \
+     --boost-includes=$WCT_EXTERNALS/include --boost-libs=$WCT_EXTERNALS/lib --boost-mt \
+     --with-eigen=$WCT_EXTERNALS --with-jsoncpp=$WCT_EXTERNALS --with-tbb=$WCT_EXTERNALS \
+     --with-root=$WCT_EXTERNALS --with-fftw=$WCT_EXTERNALS --with-root=$WCT_EXTERNALS
+#+END_EXAMPLE
+
+To force no use of ROOT, even if it is found, use ~--with-root=false~.
+
+** Building
+
+To build the code but not run the tests do
+
+#+BEGIN_EXAMPLE
+  $ ./wcb -p --notests
+#+END_EXAMPLE
+
+** Installing
+
+To install the code but not run the tests do:
+
+#+BEGIN_EXAMPLE
+  $ ./wcb -p --notests install
+#+END_EXAMPLE
+
+** Testing
+
+To run the tests, depending on your installation environment you may
+need to set ~LD_LIBRARY_PATH~ and will need to set ~WIRECELL_PATH~ to find
+both ~data~ and ~cfg~ directories.
+
+#+BEGIN_EXAMPLE
+  $ export LD_LIBRARY_PATH=/path/to/install/lib:$LD_LIBRARY_PATH
+  $ export WIRECELL_PATH=/path/to/data:/path/to/cfg
+#+END_EXAMPLE
+
+Then,
+
+#+BEGIN_EXAMPLE
+  $ ./wcb -p --alltests
+#+END_EXAMPLE
+
+In principle, no tests should fail.
+
+* Release management
+
+To make releases, the above details are baked into two test scripts [[https://github.com/WireCell/waf-tools/blob/master/make-release.sh][make-release.sh]] and [[https://github.com/WireCell/waf-tools/blob/master/test-release.sh][test-release.sh]].  See comments at the top of each for how to run them.  These scripts can be used by others but are meant for developers to make official releases.  
+
+* Meta
+
+A new =wcb= build script is made from [[https://github.com/waf-project/waf][waf source]] via:
+
+#+BEGIN_EXAMPLE
+  $ ./waf-light --tools=compat15,doxygen,boost,bjam
+  $ cp waf /path/to/wire-cell/source/wcb
+#+END_EXAMPLE
+
+
+

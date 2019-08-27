@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classspdlog_1_1spdlog__ex.html" title="spdlog::spdlog_ex" alt="" coords="138,107,265,133"/>
+<area shape="rect" id="node3" href="$struct_wire_cell_1_1_exception.html" title="The base wire cell exception. " alt="" coords="132,157,271,184"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_assertion_error.html" title="Thrown when an assertion fails. " alt="" coords="329,5,491,32"/>
+<area shape="rect" id="node5" href="$struct_wire_cell_1_1_factory_exception.html" title="WireCell::FactoryException" alt="" coords="319,56,501,83"/>
+<area shape="rect" id="node6" href="$struct_wire_cell_1_1_index_error.html" title="Thrown when a wrong index is used. " alt="" coords="340,107,480,133"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_i_o_error.html" title="Thrown when an error involving accessing input or output has occurred. " alt="" coords="349,157,471,184"/>
+<area shape="rect" id="node8" href="$struct_wire_cell_1_1_key_error.html" title="Thrown when a wrong key or has been encountered. " alt="" coords="345,208,475,235"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_runtime_error.html" title="Thrown when an error occurs during the data processing. " alt="" coords="331,259,489,285"/>
+<area shape="rect" id="node10" href="$struct_wire_cell_1_1_value_error.html" title="Thrown when a wrong value has been encountered. " alt="" coords="339,309,481,336"/>
+</map>

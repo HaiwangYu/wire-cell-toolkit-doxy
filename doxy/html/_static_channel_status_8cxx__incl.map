@@ -1,0 +1,28 @@
+<map id="gen/src/StaticChannelStatus.cxx" name="gen/src/StaticChannelStatus.cxx">
+<area shape="rect" id="node2" href="$_static_channel_status_8h.html" title="WireCellGen/StaticChannel\lStatus.h" alt="" coords="256,304,439,345"/>
+<area shape="rect" id="node16" href="$_named_factory_8h.html" title="WireCellUtil/NamedFactory.h" alt="" coords="2375,80,2568,107"/>
+<area shape="rect" id="node3" href="$_i_channel_status_8h.html" title="WireCellIface/IChannelStatus.h" alt="" coords="468,393,675,420"/>
+<area shape="rect" id="node8" href="$_i_configurable_8h.html" title="WireCellIface/IConfigurable.h" alt="" coords="251,393,444,420"/>
+<area shape="rect" id="node14" href="$_units_8h.html" title="WireCellUtil/Units.h" alt="" coords="88,393,226,420"/>
+<area shape="rect" id="node4" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="713,468,892,495"/>
+<area shape="rect" id="node5" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="714,550,872,577"/>
+<area shape="rect" id="node9" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="317,468,501,495"/>
+<area shape="rect" id="node17" href="$_i_factory_8h.html" title="WireCellUtil/IFactory.h" alt="" coords="750,311,905,338"/>
+<area shape="rect" id="node18" href="$_singleton_8h.html" title="WireCellUtil/Singleton.h" alt="" coords="2866,155,3027,181"/>
+<area shape="rect" id="node19" href="$_plugin_manager_8h.html" title="WireCellUtil/PluginManager.h" alt="" coords="2188,155,2382,181"/>
+<area shape="rect" id="node20" href="$_logging_8h.html" title="WireCellUtil/Logging.h" alt="" coords="2340,229,2492,256"/>
+<area shape="rect" id="node41" href="$_type_8h.html" title="WireCellUtil/Type.h" alt="" coords="2457,155,2593,181"/>
+<area shape="rect" id="node43" href="$_string_8h.html" title="WireCellUtil/String.h" alt="" coords="1217,468,1358,495"/>
+<area shape="rect" id="node46" href="$_exceptions_8h.html" title="WireCellUtil/Exceptions.h" alt="" coords="2618,155,2790,181"/>
+<area shape="rect" id="node21" href="$spdlog_8h.html" title="spdlog/spdlog.h" alt="" coords="1942,311,2055,338"/>
+<area shape="rect" id="node38" href="$ostr_8h.html" title="spdlog/fmt/ostr.h" alt="" coords="2356,311,2476,338"/>
+<area shape="rect" id="node22" href="$common_8h.html" title="spdlog/common.h" alt="" coords="1974,550,2100,577"/>
+<area shape="rect" id="node34" href="$registry_8h.html" title="spdlog/details/registry.h" alt="" coords="1681,393,1841,420"/>
+<area shape="rect" id="node36" href="$logger_8h.html" title="spdlog/logger.h" alt="" coords="1850,468,1960,495"/>
+<area shape="rect" id="node37" href="$version_8h.html" title="spdlog/version.h" alt="" coords="2086,393,2204,420"/>
+<area shape="rect" id="node23" href="$tweakme_8h.html" title="spdlog/tweakme.h" alt="" coords="1816,639,1944,666"/>
+<area shape="rect" id="node32" href="$null__mutex_8h.html" title="spdlog/details/null\l_mutex.h" alt="" coords="1968,632,2095,673"/>
+<area shape="rect" id="node33" href="$fmt_8h.html" title="spdlog/fmt/fmt.h" alt="" coords="2481,639,2598,666"/>
+<area shape="rect" id="node35" href="$periodic__worker_8h.html" title="spdlog/details/periodic\l_worker.h" alt="" coords="1698,543,1848,584"/>
+<area shape="rect" id="node39" href="$ostream_8h.html" title="bundled/ostream.h" alt="" coords="2428,393,2558,420"/>
+</map>

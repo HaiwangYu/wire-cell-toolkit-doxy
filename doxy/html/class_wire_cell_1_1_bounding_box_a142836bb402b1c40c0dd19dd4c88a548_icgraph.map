@@ -1,0 +1,8 @@
+<map id="WireCell::BoundingBox::empty" name="WireCell::BoundingBox::empty">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_bounding_box.html#a2f43d9aa9cf70e9515cdad9e43537575" title="Enlarge bounds to hold point. " alt="" coords="211,5,368,47"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_bounding_box.html#a5d0ef4e3335f0aaf0a4a8fa577914539" title="Return true if point is inside bounding box. " alt="" coords="211,71,368,112"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_bounding_box.html#a3a0816d852fb478e057496a0409e0c72" title="Return the ray representing the bounds. " alt="" coords="416,5,573,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a2d1c7a1dded73fe3b51cbcfb8d9e0e04" title="Accept a configuration. " alt="" coords="621,5,804,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a41df48506ad084531fa7ac376f454894" title="WireCell::Gen::AnodePlane\l::~AnodePlane" alt="" coords="852,5,1035,47"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_bounding_box.html#ac84d096b79ddd8ea2b4d73c1d324c739" title="Create a bounding box from an iterator pair. " alt="" coords="416,71,573,112"/>
+</map>

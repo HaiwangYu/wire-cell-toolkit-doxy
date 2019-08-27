@@ -1,0 +1,8 @@
+<map id="WireCell::box_intersection" name="WireCell::box_intersection">
+<area shape="rect" id="node2" href="$namespace_wire_cell.html#afb58116c2d5bbe14b5e798ca39caaa48" title="WireCell::hit_square" alt="" coords="239,13,379,39"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_d3_vector.html#a9cff9bf6015c3f7742d4fae7aac7c4a5" title="Return a normalized vector in the direction of this vector. " alt="" coords="241,64,376,105"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_d3_vector.html#ad116deec8357b27dcad6be127c209490" title="Return the dot product of this vector and the other. " alt="" coords="228,130,389,157"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#aa8d25ae88346929b5e54cd116f7a4f47" title="Scale (multiply) sequence values by scalar. " alt="" coords="437,5,577,47"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="625,5,752,47"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="800,5,927,47"/>
+</map>

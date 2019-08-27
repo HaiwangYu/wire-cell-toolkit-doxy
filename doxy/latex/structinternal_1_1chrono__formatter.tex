@@ -1,0 +1,579 @@
+\hypertarget{structinternal_1_1chrono__formatter}{}\section{internal\+:\+:chrono\+\_\+formatter$<$ Format\+Context, Output\+It $>$ Struct Template Reference}
+\label{structinternal_1_1chrono__formatter}\index{internal\+::chrono\+\_\+formatter$<$ Format\+Context, Output\+It $>$@{internal\+::chrono\+\_\+formatter$<$ Format\+Context, Output\+It $>$}}
+
+
+{\ttfamily \#include $<$chrono.\+h$>$}
+
+
+
+Collaboration diagram for internal\+:\+:chrono\+\_\+formatter$<$ Format\+Context, Output\+It $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{structinternal_1_1chrono__formatter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Format\+Context\+::char\+\_\+type \hyperlink{structinternal_1_1chrono__formatter_a48a141d8bc5a48a0c24e19780ba65512}{char\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structinternal_1_1chrono__formatter_aac86bbd630e23c1b073179ba82d6cdb2}{chrono\+\_\+formatter} (Format\+Context \&ctx, Output\+It o)
+\item 
+int \hyperlink{structinternal_1_1chrono__formatter_a91d13ec0f969481e287c6e813b28bd6d}{hour} () const
+\item 
+int \hyperlink{structinternal_1_1chrono__formatter_a93a043750e6942332112e7210c517804}{hour12} () const
+\item 
+int \hyperlink{structinternal_1_1chrono__formatter_ad177f1fef4a92b6a96957ecd6c9dcf16}{minute} () const
+\item 
+int \hyperlink{structinternal_1_1chrono__formatter_ab026333785c1f7bb169ba5d59ca90e34}{second} () const
+\item 
+std\+::tm \hyperlink{structinternal_1_1chrono__formatter_aa3b7815dd885ba3a84aa304a34f25079}{time} () const
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a868a76a4e13f979b43fba28c249959b5}{write} (int \hyperlink{classinternal_1_1value}{value}, int width)
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a1466a3d30fb07c336e5ba5239482d8ec}{format\+\_\+localized} (const tm \&\hyperlink{structinternal_1_1chrono__formatter_aa3b7815dd885ba3a84aa304a34f25079}{time}, const char $\ast$\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format})
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_aaae159c7a01320f53cf0ce746fc855ea}{on\+\_\+text} (const \hyperlink{structinternal_1_1chrono__formatter_a48a141d8bc5a48a0c24e19780ba65512}{char\+\_\+type} $\ast$\hyperlink{namespaceinternal_a265f36d9dee68d3f44381347ef2fd5cb}{begin}, const \hyperlink{structinternal_1_1chrono__formatter_a48a141d8bc5a48a0c24e19780ba65512}{char\+\_\+type} $\ast$\hyperlink{namespaceinternal_a94820de1710dc8038fa6f188adfe299b}{end})
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_ae4ff1cb66bff2a9bd2b01e8f560cb7d5}{on\+\_\+abbr\+\_\+weekday} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a0cc88bff82e826562f7870c4ef11ab02}{on\+\_\+full\+\_\+weekday} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a904e5619c38a0f3b993092602c243de2}{on\+\_\+dec0\+\_\+weekday} (\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system})
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_aa61ad8285193d7b67f3d7c3130fcd668}{on\+\_\+dec1\+\_\+weekday} (\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system})
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a10d11ac67861dc43c271099981cba98d}{on\+\_\+abbr\+\_\+month} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a37539cac3a3f1241481e146a20780713}{on\+\_\+full\+\_\+month} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_ad1ce1f229948a67141aa320f185f9bf3}{on\+\_\+datetime} (\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system})
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_adf05c0b171fec8af06faf4868bb4fbf0}{on\+\_\+loc\+\_\+date} (\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system})
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a1228ee5fbece50b8b0cc103b2c8af230}{on\+\_\+loc\+\_\+time} (\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system})
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a831055cd8da4eecca5d501d8b14722b1}{on\+\_\+us\+\_\+date} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_ab7067476c026fa0fffedbd6aa7088713}{on\+\_\+iso\+\_\+date} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a3f36832d4407ff9d035d57ab5904bd83}{on\+\_\+utc\+\_\+offset} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a910fce1f44ec83ca85ff6cb5ebbb3771}{on\+\_\+tz\+\_\+name} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a7aca4b4319e557806c9461efd2c4eaf4}{on\+\_\+24\+\_\+hour} (\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system} ns)
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a6b6521428a41d5f6db9c54f6afd993e2}{on\+\_\+12\+\_\+hour} (\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system} ns)
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a3c876205400e32b34a88986f47b0775d}{on\+\_\+minute} (\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system} ns)
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a569d41b43bfdf48aca8ff9429f57dea3}{on\+\_\+second} (\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system} ns)
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a6e42531597b2137916865a2a4ebb557e}{on\+\_\+12\+\_\+hour\+\_\+time} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a5c9271dd72f0802191c6adfaeae8a1dc}{on\+\_\+24\+\_\+hour\+\_\+time} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a578e890af81d7ea6c4c3dcb64ba2e8e2}{on\+\_\+iso\+\_\+time} ()
+\item 
+void \hyperlink{structinternal_1_1chrono__formatter_a4491be3f9b0474c5eeb29f95ed5fa426}{on\+\_\+am\+\_\+pm} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Format\+Context \& \hyperlink{structinternal_1_1chrono__formatter_a4ef7274fcb1343272c95c0e8506fa255}{context}
+\item 
+Output\+It \hyperlink{structinternal_1_1chrono__formatter_a9e01b4a83c26f7a26fbd3b2a66613b60}{out}
+\item 
+std\+::chrono\+::seconds \hyperlink{structinternal_1_1chrono__formatter_af017aee86082dedb1be9218d369213ee}{s}
+\item 
+std\+::chrono\+::milliseconds \hyperlink{structinternal_1_1chrono__formatter_a4bb1878dfded9876eb133b8c19b0e28c}{ms}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Format\+Context, typename Output\+It$>$\newline
+struct internal\+::chrono\+\_\+formatter$<$ Format\+Context, Output\+It $>$}
+
+
+
+Definition at line 221 of file chrono.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a48a141d8bc5a48a0c24e19780ba65512}\label{structinternal_1_1chrono__formatter_a48a141d8bc5a48a0c24e19780ba65512}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!char\+\_\+type@{char\+\_\+type}}
+\index{char\+\_\+type@{char\+\_\+type}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{char\+\_\+type}{char\_type}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+typedef Format\+Context\+::char\+\_\+type \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::\hyperlink{structinternal_1_1chrono__formatter_a48a141d8bc5a48a0c24e19780ba65512}{char\+\_\+type}}
+
+
+
+Definition at line 227 of file chrono.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_aac86bbd630e23c1b073179ba82d6cdb2}\label{structinternal_1_1chrono__formatter_aac86bbd630e23c1b073179ba82d6cdb2}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!chrono\+\_\+formatter@{chrono\+\_\+formatter}}
+\index{chrono\+\_\+formatter@{chrono\+\_\+formatter}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{chrono\+\_\+formatter()}{chrono\_formatter()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+\hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::\hyperlink{structinternal_1_1chrono__formatter}{chrono\+\_\+formatter} (\begin{DoxyParamCaption}\item[{Format\+Context \&}]{ctx,  }\item[{Output\+It}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 229 of file chrono.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a1466a3d30fb07c336e5ba5239482d8ec}\label{structinternal_1_1chrono__formatter_a1466a3d30fb07c336e5ba5239482d8ec}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!format\+\_\+localized@{format\+\_\+localized}}
+\index{format\+\_\+localized@{format\+\_\+localized}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{format\+\_\+localized()}{format\_localized()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::format\+\_\+localized (\begin{DoxyParamCaption}\item[{const tm \&}]{time,  }\item[{const char $\ast$}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 259 of file chrono.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structinternal_1_1chrono__formatter_a1466a3d30fb07c336e5ba5239482d8ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a91d13ec0f969481e287c6e813b28bd6d}\label{structinternal_1_1chrono__formatter_a91d13ec0f969481e287c6e813b28bd6d}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!hour@{hour}}
+\index{hour@{hour}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{hour()}{hour()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+int \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::hour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 232 of file chrono.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{structinternal_1_1chrono__formatter_a91d13ec0f969481e287c6e813b28bd6d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a93a043750e6942332112e7210c517804}\label{structinternal_1_1chrono__formatter_a93a043750e6942332112e7210c517804}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!hour12@{hour12}}
+\index{hour12@{hour12}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{hour12()}{hour12()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+int \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::hour12 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 234 of file chrono.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{structinternal_1_1chrono__formatter_a93a043750e6942332112e7210c517804_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_ad177f1fef4a92b6a96957ecd6c9dcf16}\label{structinternal_1_1chrono__formatter_ad177f1fef4a92b6a96957ecd6c9dcf16}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!minute@{minute}}
+\index{minute@{minute}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{minute()}{minute()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+int \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::minute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 239 of file chrono.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{structinternal_1_1chrono__formatter_ad177f1fef4a92b6a96957ecd6c9dcf16_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a6b6521428a41d5f6db9c54f6afd993e2}\label{structinternal_1_1chrono__formatter_a6b6521428a41d5f6db9c54f6afd993e2}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+12\+\_\+hour@{on\+\_\+12\+\_\+hour}}
+\index{on\+\_\+12\+\_\+hour@{on\+\_\+12\+\_\+hour}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+12\+\_\+hour()}{on\_12\_hour()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+12\+\_\+hour (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system}}]{ns }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 296 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a6e42531597b2137916865a2a4ebb557e}\label{structinternal_1_1chrono__formatter_a6e42531597b2137916865a2a4ebb557e}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+12\+\_\+hour\+\_\+time@{on\+\_\+12\+\_\+hour\+\_\+time}}
+\index{on\+\_\+12\+\_\+hour\+\_\+time@{on\+\_\+12\+\_\+hour\+\_\+time}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+12\+\_\+hour\+\_\+time()}{on\_12\_hour\_time()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+12\+\_\+hour\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 326 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a7aca4b4319e557806c9461efd2c4eaf4}\label{structinternal_1_1chrono__formatter_a7aca4b4319e557806c9461efd2c4eaf4}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+24\+\_\+hour@{on\+\_\+24\+\_\+hour}}
+\index{on\+\_\+24\+\_\+hour@{on\+\_\+24\+\_\+hour}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+24\+\_\+hour()}{on\_24\_hour()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+24\+\_\+hour (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system}}]{ns }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 288 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a5c9271dd72f0802191c6adfaeae8a1dc}\label{structinternal_1_1chrono__formatter_a5c9271dd72f0802191c6adfaeae8a1dc}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+24\+\_\+hour\+\_\+time@{on\+\_\+24\+\_\+hour\+\_\+time}}
+\index{on\+\_\+24\+\_\+hour\+\_\+time@{on\+\_\+24\+\_\+hour\+\_\+time}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+24\+\_\+hour\+\_\+time()}{on\_24\_hour\_time()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+24\+\_\+hour\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 328 of file chrono.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structinternal_1_1chrono__formatter_a5c9271dd72f0802191c6adfaeae8a1dc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a10d11ac67861dc43c271099981cba98d}\label{structinternal_1_1chrono__formatter_a10d11ac67861dc43c271099981cba98d}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+abbr\+\_\+month@{on\+\_\+abbr\+\_\+month}}
+\index{on\+\_\+abbr\+\_\+month@{on\+\_\+abbr\+\_\+month}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+abbr\+\_\+month()}{on\_abbr\_month()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+abbr\+\_\+month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 278 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_ae4ff1cb66bff2a9bd2b01e8f560cb7d5}\label{structinternal_1_1chrono__formatter_ae4ff1cb66bff2a9bd2b01e8f560cb7d5}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+abbr\+\_\+weekday@{on\+\_\+abbr\+\_\+weekday}}
+\index{on\+\_\+abbr\+\_\+weekday@{on\+\_\+abbr\+\_\+weekday}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+abbr\+\_\+weekday()}{on\_abbr\_weekday()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+abbr\+\_\+weekday (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 274 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a4491be3f9b0474c5eeb29f95ed5fa426}\label{structinternal_1_1chrono__formatter_a4491be3f9b0474c5eeb29f95ed5fa426}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+am\+\_\+pm@{on\+\_\+am\+\_\+pm}}
+\index{on\+\_\+am\+\_\+pm@{on\+\_\+am\+\_\+pm}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+am\+\_\+pm()}{on\_am\_pm()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+am\+\_\+pm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 340 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_ad1ce1f229948a67141aa320f185f9bf3}\label{structinternal_1_1chrono__formatter_ad1ce1f229948a67141aa320f185f9bf3}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+datetime@{on\+\_\+datetime}}
+\index{on\+\_\+datetime@{on\+\_\+datetime}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+datetime()}{on\_datetime()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+datetime (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 280 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a904e5619c38a0f3b993092602c243de2}\label{structinternal_1_1chrono__formatter_a904e5619c38a0f3b993092602c243de2}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+dec0\+\_\+weekday@{on\+\_\+dec0\+\_\+weekday}}
+\index{on\+\_\+dec0\+\_\+weekday@{on\+\_\+dec0\+\_\+weekday}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+dec0\+\_\+weekday()}{on\_dec0\_weekday()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+dec0\+\_\+weekday (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 276 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_aa61ad8285193d7b67f3d7c3130fcd668}\label{structinternal_1_1chrono__formatter_aa61ad8285193d7b67f3d7c3130fcd668}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+dec1\+\_\+weekday@{on\+\_\+dec1\+\_\+weekday}}
+\index{on\+\_\+dec1\+\_\+weekday@{on\+\_\+dec1\+\_\+weekday}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+dec1\+\_\+weekday()}{on\_dec1\_weekday()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+dec1\+\_\+weekday (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 277 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a37539cac3a3f1241481e146a20780713}\label{structinternal_1_1chrono__formatter_a37539cac3a3f1241481e146a20780713}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+full\+\_\+month@{on\+\_\+full\+\_\+month}}
+\index{on\+\_\+full\+\_\+month@{on\+\_\+full\+\_\+month}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+full\+\_\+month()}{on\_full\_month()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+full\+\_\+month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 279 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a0cc88bff82e826562f7870c4ef11ab02}\label{structinternal_1_1chrono__formatter_a0cc88bff82e826562f7870c4ef11ab02}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+full\+\_\+weekday@{on\+\_\+full\+\_\+weekday}}
+\index{on\+\_\+full\+\_\+weekday@{on\+\_\+full\+\_\+weekday}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+full\+\_\+weekday()}{on\_full\_weekday()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+full\+\_\+weekday (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 275 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_ab7067476c026fa0fffedbd6aa7088713}\label{structinternal_1_1chrono__formatter_ab7067476c026fa0fffedbd6aa7088713}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+iso\+\_\+date@{on\+\_\+iso\+\_\+date}}
+\index{on\+\_\+iso\+\_\+date@{on\+\_\+iso\+\_\+date}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+iso\+\_\+date()}{on\_iso\_date()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+iso\+\_\+date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 284 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a578e890af81d7ea6c4c3dcb64ba2e8e2}\label{structinternal_1_1chrono__formatter_a578e890af81d7ea6c4c3dcb64ba2e8e2}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+iso\+\_\+time@{on\+\_\+iso\+\_\+time}}
+\index{on\+\_\+iso\+\_\+time@{on\+\_\+iso\+\_\+time}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+iso\+\_\+time()}{on\_iso\_time()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+iso\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 334 of file chrono.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structinternal_1_1chrono__formatter_a578e890af81d7ea6c4c3dcb64ba2e8e2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_adf05c0b171fec8af06faf4868bb4fbf0}\label{structinternal_1_1chrono__formatter_adf05c0b171fec8af06faf4868bb4fbf0}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+loc\+\_\+date@{on\+\_\+loc\+\_\+date}}
+\index{on\+\_\+loc\+\_\+date@{on\+\_\+loc\+\_\+date}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+loc\+\_\+date()}{on\_loc\_date()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+loc\+\_\+date (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 281 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a1228ee5fbece50b8b0cc103b2c8af230}\label{structinternal_1_1chrono__formatter_a1228ee5fbece50b8b0cc103b2c8af230}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+loc\+\_\+time@{on\+\_\+loc\+\_\+time}}
+\index{on\+\_\+loc\+\_\+time@{on\+\_\+loc\+\_\+time}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+loc\+\_\+time()}{on\_loc\_time()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+loc\+\_\+time (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 282 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a3c876205400e32b34a88986f47b0775d}\label{structinternal_1_1chrono__formatter_a3c876205400e32b34a88986f47b0775d}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+minute@{on\+\_\+minute}}
+\index{on\+\_\+minute@{on\+\_\+minute}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+minute()}{on\_minute()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+minute (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system}}]{ns }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 304 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a569d41b43bfdf48aca8ff9429f57dea3}\label{structinternal_1_1chrono__formatter_a569d41b43bfdf48aca8ff9429f57dea3}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+second@{on\+\_\+second}}
+\index{on\+\_\+second@{on\+\_\+second}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+second()}{on\_second()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+second (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceinternal_a16e2a1195ca0f5beab658685f71df86b}{numeric\+\_\+system}}]{ns }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 312 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_aaae159c7a01320f53cf0ce746fc855ea}\label{structinternal_1_1chrono__formatter_aaae159c7a01320f53cf0ce746fc855ea}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+text@{on\+\_\+text}}
+\index{on\+\_\+text@{on\+\_\+text}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+text()}{on\_text()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+text (\begin{DoxyParamCaption}\item[{const \hyperlink{structinternal_1_1chrono__formatter_a48a141d8bc5a48a0c24e19780ba65512}{char\+\_\+type} $\ast$}]{begin,  }\item[{const \hyperlink{structinternal_1_1chrono__formatter_a48a141d8bc5a48a0c24e19780ba65512}{char\+\_\+type} $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 269 of file chrono.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structinternal_1_1chrono__formatter_aaae159c7a01320f53cf0ce746fc855ea_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a910fce1f44ec83ca85ff6cb5ebbb3771}\label{structinternal_1_1chrono__formatter_a910fce1f44ec83ca85ff6cb5ebbb3771}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+tz\+\_\+name@{on\+\_\+tz\+\_\+name}}
+\index{on\+\_\+tz\+\_\+name@{on\+\_\+tz\+\_\+name}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+tz\+\_\+name()}{on\_tz\_name()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+tz\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 286 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a831055cd8da4eecca5d501d8b14722b1}\label{structinternal_1_1chrono__formatter_a831055cd8da4eecca5d501d8b14722b1}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+us\+\_\+date@{on\+\_\+us\+\_\+date}}
+\index{on\+\_\+us\+\_\+date@{on\+\_\+us\+\_\+date}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+us\+\_\+date()}{on\_us\_date()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+us\+\_\+date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 283 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a3f36832d4407ff9d035d57ab5904bd83}\label{structinternal_1_1chrono__formatter_a3f36832d4407ff9d035d57ab5904bd83}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!on\+\_\+utc\+\_\+offset@{on\+\_\+utc\+\_\+offset}}
+\index{on\+\_\+utc\+\_\+offset@{on\+\_\+utc\+\_\+offset}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{on\+\_\+utc\+\_\+offset()}{on\_utc\_offset()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::on\+\_\+utc\+\_\+offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 285 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_ab026333785c1f7bb169ba5d59ca90e34}\label{structinternal_1_1chrono__formatter_ab026333785c1f7bb169ba5d59ca90e34}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!second@{second}}
+\index{second@{second}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{second()}{second()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+int \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 240 of file chrono.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{structinternal_1_1chrono__formatter_ab026333785c1f7bb169ba5d59ca90e34_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_aa3b7815dd885ba3a84aa304a34f25079}\label{structinternal_1_1chrono__formatter_aa3b7815dd885ba3a84aa304a34f25079}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!time@{time}}
+\index{time@{time}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+std\+::tm \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 242 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a868a76a4e13f979b43fba28c249959b5}\label{structinternal_1_1chrono__formatter_a868a76a4e13f979b43fba28c249959b5}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!write@{write}}
+\index{write@{write}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+void \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::write (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 250 of file chrono.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structinternal_1_1chrono__formatter_a868a76a4e13f979b43fba28c249959b5_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a4ef7274fcb1343272c95c0e8506fa255}\label{structinternal_1_1chrono__formatter_a4ef7274fcb1343272c95c0e8506fa255}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!context@{context}}
+\index{context@{context}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+Format\+Context\& \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::\hyperlink{format_8h_af1dcf0d1d6738a06a6d7fd63e0bd1859}{context}}
+
+
+
+Definition at line 222 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a4bb1878dfded9876eb133b8c19b0e28c}\label{structinternal_1_1chrono__formatter_a4bb1878dfded9876eb133b8c19b0e28c}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!ms@{ms}}
+\index{ms@{ms}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{ms}{ms}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+std\+::chrono\+::milliseconds \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::ms}
+
+
+
+Definition at line 225 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_a9e01b4a83c26f7a26fbd3b2a66613b60}\label{structinternal_1_1chrono__formatter_a9e01b4a83c26f7a26fbd3b2a66613b60}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!out@{out}}
+\index{out@{out}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{out}{out}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+Output\+It \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::out}
+
+
+
+Definition at line 223 of file chrono.\+h.
+
+\mbox{\Hypertarget{structinternal_1_1chrono__formatter_af017aee86082dedb1be9218d369213ee}\label{structinternal_1_1chrono__formatter_af017aee86082dedb1be9218d369213ee}} 
+\index{internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}!s@{s}}
+\index{s@{s}!internal\+::chrono\+\_\+formatter@{internal\+::chrono\+\_\+formatter}}
+\subsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily template$<$typename Format\+Context, typename Output\+It$>$ \\
+std\+::chrono\+::seconds \hyperlink{structinternal_1_1chrono__formatter}{internal\+::chrono\+\_\+formatter}$<$ Format\+Context, Output\+It $>$\+::s}
+
+
+
+Definition at line 224 of file chrono.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{chrono_8h}{chrono.\+h}\end{DoxyCompactItemize}

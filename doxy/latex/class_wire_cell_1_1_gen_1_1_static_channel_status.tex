@@ -1,0 +1,167 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_static_channel_status}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Static\+Channel\+Status Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_static_channel_status}\index{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}}
+
+
+{\ttfamily \#include $<$Static\+Channel\+Status.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Static\+Channel\+Status\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_wire_cell_1_1_gen_1_1_static_channel_status__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Static\+Channel\+Status\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_wire_cell_1_1_gen_1_1_static_channel_status__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_gen_1_1_static_channel_status_1_1_channel_status}{Channel\+Status}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::unordered\+\_\+map$<$ int, \hyperlink{struct_wire_cell_1_1_gen_1_1_static_channel_status_1_1_channel_status}{Channel\+Status} $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_af2f193308d13e8a6c5815d8021499803}{channel\+\_\+status\+\_\+map\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_a94d1d6619949026ab36f0f7a641512ec}{Static\+Channel\+Status} (double nominal\+\_\+gain=14.\+0 $\ast$units\+::mV/units\+::fC, double nominal\+\_\+shaping=2.\+0 $\ast$units\+::us, \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_af2f193308d13e8a6c5815d8021499803}{channel\+\_\+status\+\_\+map\+\_\+t} deviants=\hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_af2f193308d13e8a6c5815d8021499803}{channel\+\_\+status\+\_\+map\+\_\+t}())
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_a815f8be21bd561e2c3baf50eb7d056f9}{$\sim$\+Static\+Channel\+Status} ()
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_a7a43a5c1f263a985a705b24669b8cda1}{preamp\+\_\+gain} (int chid) const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_a8275297c1a7d034e3050827eaa8d6fb1}{preamp\+\_\+shaping} (int chid) const
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_a38b20d71c1ac913ae7fc278e2a20928b}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_a87b0418767237ba9a5bb40f71e9b82d2}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Static\+Channel\+Status.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_static_channel_status_af2f193308d13e8a6c5815d8021499803}\label{class_wire_cell_1_1_gen_1_1_static_channel_status_af2f193308d13e8a6c5815d8021499803}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}!channel\+\_\+status\+\_\+map\+\_\+t@{channel\+\_\+status\+\_\+map\+\_\+t}}
+\index{channel\+\_\+status\+\_\+map\+\_\+t@{channel\+\_\+status\+\_\+map\+\_\+t}!Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}}
+\subsubsection{\texorpdfstring{channel\+\_\+status\+\_\+map\+\_\+t}{channel\_status\_map\_t}}
+{\footnotesize\ttfamily typedef std\+::unordered\+\_\+map$<$int, \hyperlink{struct_wire_cell_1_1_gen_1_1_static_channel_status_1_1_channel_status}{Channel\+Status}$>$ \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_af2f193308d13e8a6c5815d8021499803}{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status\+::channel\+\_\+status\+\_\+map\+\_\+t}}
+
+
+
+Definition at line 26 of file Static\+Channel\+Status.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_static_channel_status_a94d1d6619949026ab36f0f7a641512ec}\label{class_wire_cell_1_1_gen_1_1_static_channel_status_a94d1d6619949026ab36f0f7a641512ec}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}!Static\+Channel\+Status@{Static\+Channel\+Status}}
+\index{Static\+Channel\+Status@{Static\+Channel\+Status}!Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}}
+\subsubsection{\texorpdfstring{Static\+Channel\+Status()}{StaticChannelStatus()}}
+{\footnotesize\ttfamily Gen\+::\+Static\+Channel\+Status\+::\+Static\+Channel\+Status (\begin{DoxyParamCaption}\item[{double}]{nominal\+\_\+gain = {\ttfamily 14.0$\ast$units\+:\+:mV/units\+:\+:fC},  }\item[{double}]{nominal\+\_\+shaping = {\ttfamily 2.0$\ast$units\+:\+:us},  }\item[{\hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_af2f193308d13e8a6c5815d8021499803}{channel\+\_\+status\+\_\+map\+\_\+t}}]{deviants = {\ttfamily \hyperlink{class_wire_cell_1_1_gen_1_1_static_channel_status_af2f193308d13e8a6c5815d8021499803}{channel\+\_\+status\+\_\+map\+\_\+t}()} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file Static\+Channel\+Status.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_static_channel_status_a815f8be21bd561e2c3baf50eb7d056f9}\label{class_wire_cell_1_1_gen_1_1_static_channel_status_a815f8be21bd561e2c3baf50eb7d056f9}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}!````~Static\+Channel\+Status@{$\sim$\+Static\+Channel\+Status}}
+\index{````~Static\+Channel\+Status@{$\sim$\+Static\+Channel\+Status}!Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}}
+\subsubsection{\texorpdfstring{$\sim$\+Static\+Channel\+Status()}{~StaticChannelStatus()}}
+{\footnotesize\ttfamily Gen\+::\+Static\+Channel\+Status\+::$\sim$\+Static\+Channel\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 20 of file Static\+Channel\+Status.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_static_channel_status_a38b20d71c1ac913ae7fc278e2a20928b}\label{class_wire_cell_1_1_gen_1_1_static_channel_status_a38b20d71c1ac913ae7fc278e2a20928b}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Static\+Channel\+Status\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 42 of file Static\+Channel\+Status.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_static_channel_status_a87b0418767237ba9a5bb40f71e9b82d2}\label{class_wire_cell_1_1_gen_1_1_static_channel_status_a87b0418767237ba9a5bb40f71e9b82d2}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Static\+Channel\+Status\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 25 of file Static\+Channel\+Status.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_static_channel_status_a7a43a5c1f263a985a705b24669b8cda1}\label{class_wire_cell_1_1_gen_1_1_static_channel_status_a7a43a5c1f263a985a705b24669b8cda1}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}!preamp\+\_\+gain@{preamp\+\_\+gain}}
+\index{preamp\+\_\+gain@{preamp\+\_\+gain}!Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}}
+\subsubsection{\texorpdfstring{preamp\+\_\+gain()}{preamp\_gain()}}
+{\footnotesize\ttfamily double Gen\+::\+Static\+Channel\+Status\+::preamp\+\_\+gain (\begin{DoxyParamCaption}\item[{int}]{chid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the current gain for the preamplifier in units of \mbox{[}voltage\mbox{]}/\mbox{[}charge\mbox{]}. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_status_ab9df0f4008fbdc708b7feea486da5c36}{Wire\+Cell\+::\+I\+Channel\+Status}.
+
+
+
+Definition at line 62 of file Static\+Channel\+Status.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_static_channel_status_a8275297c1a7d034e3050827eaa8d6fb1}\label{class_wire_cell_1_1_gen_1_1_static_channel_status_a8275297c1a7d034e3050827eaa8d6fb1}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}!preamp\+\_\+shaping@{preamp\+\_\+shaping}}
+\index{preamp\+\_\+shaping@{preamp\+\_\+shaping}!Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status@{Wire\+Cell\+::\+Gen\+::\+Static\+Channel\+Status}}
+\subsubsection{\texorpdfstring{preamp\+\_\+shaping()}{preamp\_shaping()}}
+{\footnotesize\ttfamily double Gen\+::\+Static\+Channel\+Status\+::preamp\+\_\+shaping (\begin{DoxyParamCaption}\item[{int}]{chid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the current shaping time of the preamplifier for the given channel in units of \mbox{[}time\mbox{]}. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_status_a330bd0e9627def4736eb1caed6a2fdba}{Wire\+Cell\+::\+I\+Channel\+Status}.
+
+
+
+Definition at line 70 of file Static\+Channel\+Status.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_static_channel_status_8h}{Static\+Channel\+Status.\+h}\item 
+gen/src/\hyperlink{_static_channel_status_8cxx}{Static\+Channel\+Status.\+cxx}\end{DoxyCompactItemize}

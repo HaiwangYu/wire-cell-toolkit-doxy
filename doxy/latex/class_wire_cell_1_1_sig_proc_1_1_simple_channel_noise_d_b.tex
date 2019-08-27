@@ -1,0 +1,1226 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Simple\+Channel\+Noise\+DB Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+
+
+{\ttfamily \#include $<$Simple\+Channel\+Noise\+D\+B.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Simple\+Channel\+Noise\+DB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Simple\+Channel\+Noise\+DB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::tuple$<$ double, int, int $>$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4b7e8bae65910a6667ee80bfde4cc77d}{mask\+\_\+t}
+\item 
+typedef std\+::vector$<$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4b7e8bae65910a6667ee80bfde4cc77d}{mask\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac88af8d617681e36c68c5f1899452d01}{multimask\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_af86bbcf1a79a98850b9ca24a0e9bd2e3}{Simple\+Channel\+Noise\+DB} (double tick=0.\+5 $\ast$units\+::us, int nsamples=9600)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae81f9ee2d711c72b272fadcb5d702979}{$\sim$\+Simple\+Channel\+Noise\+DB} ()
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac4ef81b15ca1bf55585bd89a092b8693}{sample\+\_\+time} () const
+\begin{DoxyCompactList}\small\item\em F\+I\+X\+ME\+: how to handle state changes? \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae5b0390412d61c8fab8514ddd8358fa1}{nominal\+\_\+baseline} (int channel) const
+\begin{DoxyCompactList}\small\item\em Return a nominal baseline correction (additive offset) \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a7b4f5283401aa1668adda46ba52b06c6}{gain\+\_\+correction} (int channel) const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a089731ed6979ee7a3d5029dc6c104902}{response\+\_\+offset} (int channel) const
+\begin{DoxyCompactList}\small\item\em Return a time offset associated with the \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac86433de014502928205161b6ea93ba0}{response()}. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5c1e58cf0586ac32c1e6d3810606a992}{pad\+\_\+window\+\_\+front} (int channel) const
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4643919d65336ba0090213d772bb6bf9}{pad\+\_\+window\+\_\+back} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a602938fd9dbdd7fe8093231a1d5c5d5a}{coherent\+\_\+nf\+\_\+decon\+\_\+limit} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a52def69ce297e7fc097b91a4472cbc25}{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a570a71f729172f7b19659f21d44b2e81}{coherent\+\_\+nf\+\_\+decon\+\_\+limit1} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5c9dfedd62780fe11dafaa0739876803}{coherent\+\_\+nf\+\_\+adc\+\_\+limit} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aa17316b608537c3cf2c30ab600092bac}{coherent\+\_\+nf\+\_\+protection\+\_\+factor} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab501b262245b5c052abd49fd0d67c803}{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a31eba95e77c824eb351f3ed4e5e58eac}{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio} (int channel) const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a8e8aa023834a47f96b0bdb69bc76e7a8}{min\+\_\+rms\+\_\+cut} (int channel) const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a22eaf2783321cb45cd904f97de2ba7d3}{max\+\_\+rms\+\_\+cut} (int channel) const
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a9a4481bf485a0aaa4903094463f4e2b3}{rcrc} (int channel) const
+\begin{DoxyCompactList}\small\item\em Return the filter for the R\+C+\+RC coupling response function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a3eabaf3d48c127aaa6c594c682e6a77a}{config} (int channel) const
+\begin{DoxyCompactList}\small\item\em Return the filter to correct any wrongly configured channels. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab0b17e111bc6617ac4702610b262ed2f}{noise} (int channel) const
+\begin{DoxyCompactList}\small\item\em Return the filter to attenuate noise. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac86433de014502928205161b6ea93ba0}{response} (int channel) const
+\begin{DoxyCompactList}\small\item\em A nominal detector response spectrum for a given channel. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a157979de597ebfcf99238544ffd82c0e}{coherent\+\_\+channels} () const
+\begin{DoxyCompactList}\small\item\em Return channel grouping for coherent noise subtraction. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_abc31faca2ae9ee69ebfd01b9edd36289}{bad\+\_\+channels} () const
+\begin{DoxyCompactList}\small\item\em Return channels which are considered a\textquotesingle{}priori \char`\"{}bad\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a9ede3bdc966580756f9fff4070e8348b}{set\+\_\+sampling} (double tick=0.\+5 $\ast$units\+::us, int nsamples=9600)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a566b36743c0a1cb0bd831a0086dad3b7}{set\+\_\+nominal\+\_\+baseline} (const std\+::vector$<$ int $>$ \&channels, double baseline)
+\begin{DoxyCompactList}\small\item\em Set nominal baseline in units of A\+DC (eg uB is -\/2048 for U/V, -\/400 for W) \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a82e2e7cf205e61e1ab1e7970aa6655cb}{set\+\_\+gains\+\_\+shapings} (const std\+::vector$<$ int $>$ \&channels, double from\+\_\+gain\+\_\+m\+VfC=7.\+8, double to\+\_\+gain\+\_\+m\+VfC=14.\+0, double from\+\_\+shaping=1.\+0 $\ast$units\+::us, double to\+\_\+shaping=2.\+0 $\ast$units\+::us)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_adce8a777da71112d25e077a610de2a94}{set\+\_\+response\+\_\+offset} (const std\+::vector$<$ int $>$ \&channels, double offset)
+\begin{DoxyCompactList}\small\item\em Set a response offset for the given set of channels. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aeb80b3766efb4756055bbe016cd58e2c}{set\+\_\+pad\+\_\+window\+\_\+front} (const std\+::vector$<$ int $>$ \&channels, int pad\+\_\+f)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a08eb429fdab1899edfe52bf8593ba56e}{set\+\_\+pad\+\_\+window\+\_\+back} (const std\+::vector$<$ int $>$ \&channels, int pad\+\_\+b)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a44e68d8302a63ca34e82c9f6dfb5b209}{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit} (const std\+::vector$<$ int $>$ \&channels, float decon\+\_\+limit)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aa8e97e9e59e9a91d23b572acd6eec29b}{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff} (const std\+::vector$<$ int $>$ \&channels, float decon\+\_\+lf\+\_\+cutoff)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab58c3af3127913b121bb9bee04cc56d9}{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit1} (const std\+::vector$<$ int $>$ \&channels, float decon\+\_\+limit)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a33d9cbe6648bda8c2a0d05fca376f461}{set\+\_\+coherent\+\_\+nf\+\_\+adc\+\_\+limit} (const std\+::vector$<$ int $>$ \&channels, float adc\+\_\+limit)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1a1ea9a4e47ddfe6c88f9eec682776bf}{set\+\_\+coherent\+\_\+nf\+\_\+protection\+\_\+factor} (const std\+::vector$<$ int $>$ \&channels, float protection\+\_\+factor)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a045c735c118842078036c1619a637525}{set\+\_\+coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit} (const std\+::vector$<$ int $>$ \&channels, float min\+\_\+adc\+\_\+limit)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a92f9ca90518ecd1833bb3e4dfcbf9488}{set\+\_\+coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio} (const std\+::vector$<$ int $>$ \&channels, float roi\+\_\+min\+\_\+max\+\_\+ratio)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5113500df9dcd76defe1493534c4c9bc}{set\+\_\+min\+\_\+rms\+\_\+cut} (const std\+::vector$<$ int $>$ \&channels, double min\+\_\+rms)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a110d73be2690691e60d916bf8cbb4ea9}{set\+\_\+min\+\_\+rms\+\_\+cut\+\_\+one} (int channel, double min\+\_\+rms)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1a5c77d29d9f65e62ce9a811c80ebaca}{set\+\_\+max\+\_\+rms\+\_\+cut} (const std\+::vector$<$ int $>$ \&channels, double max\+\_\+rms)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab82464e57bc12304c2d90e9eb075a930}{set\+\_\+max\+\_\+rms\+\_\+cut\+\_\+one} (int channel, double max\+\_\+rms)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1c4c378e91ff2ead5aff08bc3615b1d2}{set\+\_\+rcrc\+\_\+constant} (const std\+::vector$<$ int $>$ \&channels, double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a9a4481bf485a0aaa4903094463f4e2b3}{rcrc}=2000.\+0)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae5a4c212b9589940124fcce6075f8996}{set\+\_\+response} (const std\+::vector$<$ int $>$ \&channels, const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \&spectrum)
+\begin{DoxyCompactList}\small\item\em Set a detector response spectrum for the set of channels. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a6c9fc361d1a4b92415cb41ff2ee33ae4}{set\+\_\+filter} (const std\+::vector$<$ int $>$ \&channels, const \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac88af8d617681e36c68c5f1899452d01}{multimask\+\_\+t} \&mask)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a01fd459a5a0234366f78b5eeee61c599}{set\+\_\+channel\+\_\+groups} (const std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} $>$ \&channel\+\_\+groups)
+\begin{DoxyCompactList}\small\item\em Set the channel groups. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ad6dc8bcaab51091165b9c1a43e47f8eb}{set\+\_\+bad\+\_\+channels} (const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} \&bc)
+\begin{DoxyCompactList}\small\item\em Set \char`\"{}bad\char`\"{} channels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Simple\+Channel\+Noise\+D\+B.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4b7e8bae65910a6667ee80bfde4cc77d}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4b7e8bae65910a6667ee80bfde4cc77d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!mask\+\_\+t@{mask\+\_\+t}}
+\index{mask\+\_\+t@{mask\+\_\+t}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{mask\+\_\+t}{mask\_t}}
+{\footnotesize\ttfamily typedef std\+::tuple$<$double, int, int$>$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4b7e8bae65910a6667ee80bfde4cc77d}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+D\+B\+::mask\+\_\+t}}
+
+Set a constant scaling to a band covering the given frequency bins (inclusively) for the given channels. Frequency bin \char`\"{}i\char`\"{} is from i$\ast$f to (i+1)$\ast$f where f is 1.\+0/(nsamples$\ast$tick). The largest meaningful frequency bin is nsamples/2. The frequency band is {\itshape inclusive} of both min and max frequency bins. Note, it\textquotesingle{}s up to caller to appropriately segment multiple masks across multiple channels. For any given channel, last call to this method wins. 
+
+Definition at line 119 of file Simple\+Channel\+Noise\+D\+B.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac88af8d617681e36c68c5f1899452d01}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac88af8d617681e36c68c5f1899452d01}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!multimask\+\_\+t@{multimask\+\_\+t}}
+\index{multimask\+\_\+t@{multimask\+\_\+t}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{multimask\+\_\+t}{multimask\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4b7e8bae65910a6667ee80bfde4cc77d}{mask\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac88af8d617681e36c68c5f1899452d01}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+D\+B\+::multimask\+\_\+t}}
+
+
+
+Definition at line 120 of file Simple\+Channel\+Noise\+D\+B.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_af86bbcf1a79a98850b9ca24a0e9bd2e3}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_af86bbcf1a79a98850b9ca24a0e9bd2e3}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!Simple\+Channel\+Noise\+DB@{Simple\+Channel\+Noise\+DB}}
+\index{Simple\+Channel\+Noise\+DB@{Simple\+Channel\+Noise\+DB}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{Simple\+Channel\+Noise\+D\+B()}{SimpleChannelNoiseDB()}}
+{\footnotesize\ttfamily Simple\+Channel\+Noise\+D\+B\+::\+Simple\+Channel\+Noise\+DB (\begin{DoxyParamCaption}\item[{double}]{tick = {\ttfamily 0.5$\ast$units\+:\+:us},  }\item[{int}]{nsamples = {\ttfamily 9600} }\end{DoxyParamCaption})}
+
+Create a simple channel noise DB for digitized waveforms with the given size and number of samples. Default is for microboone. 
+
+Definition at line 15 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_af86bbcf1a79a98850b9ca24a0e9bd2e3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae81f9ee2d711c72b272fadcb5d702979}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae81f9ee2d711c72b272fadcb5d702979}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!````~Simple\+Channel\+Noise\+DB@{$\sim$\+Simple\+Channel\+Noise\+DB}}
+\index{````~Simple\+Channel\+Noise\+DB@{$\sim$\+Simple\+Channel\+Noise\+DB}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{$\sim$\+Simple\+Channel\+Noise\+D\+B()}{~SimpleChannelNoiseDB()}}
+{\footnotesize\ttfamily Simple\+Channel\+Noise\+D\+B\+::$\sim$\+Simple\+Channel\+Noise\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 35 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_abc31faca2ae9ee69ebfd01b9edd36289}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_abc31faca2ae9ee69ebfd01b9edd36289}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!bad\+\_\+channels@{bad\+\_\+channels}}
+\index{bad\+\_\+channels@{bad\+\_\+channels}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{bad\+\_\+channels()}{bad\_channels()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+D\+B\+::bad\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return channels which are considered a\textquotesingle{}priori \char`\"{}bad\char`\"{}. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a70f4c0a24525f6a7c8ef84245fd6d01e}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 55 of file Simple\+Channel\+Noise\+D\+B.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_abc31faca2ae9ee69ebfd01b9edd36289_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a157979de597ebfcf99238544ffd82c0e}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a157979de597ebfcf99238544ffd82c0e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!coherent\+\_\+channels@{coherent\+\_\+channels}}
+\index{coherent\+\_\+channels@{coherent\+\_\+channels}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+channels()}{coherent\_channels()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t}$>$ Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+D\+B\+::coherent\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return channel grouping for coherent noise subtraction. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0f220478d9d7ed3c913b925e84b39138}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 52 of file Simple\+Channel\+Noise\+D\+B.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5c9dfedd62780fe11dafaa0739876803}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5c9dfedd62780fe11dafaa0739876803}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+adc\+\_\+limit}}
+\index{coherent\+\_\+nf\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+adc\+\_\+limit}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+adc\+\_\+limit()}{coherent\_nf\_adc\_limit()}}
+{\footnotesize\ttfamily float Simple\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+adc\+\_\+limit (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ac75b3b6b0c7368c0c87d907012abaf9d}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 136 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5c9dfedd62780fe11dafaa0739876803_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a52def69ce297e7fc097b91a4472cbc25}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a52def69ce297e7fc097b91a4472cbc25}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff@{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff}}
+\index{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff@{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff()}{coherent\_nf\_decon\_lf\_cutoff()}}
+{\footnotesize\ttfamily float Simple\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4104509a65ce9fe5a77fac6ddd39ec56}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 118 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a52def69ce297e7fc097b91a4472cbc25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a602938fd9dbdd7fe8093231a1d5c5d5a}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a602938fd9dbdd7fe8093231a1d5c5d5a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+decon\+\_\+limit@{coherent\+\_\+nf\+\_\+decon\+\_\+limit}}
+\index{coherent\+\_\+nf\+\_\+decon\+\_\+limit@{coherent\+\_\+nf\+\_\+decon\+\_\+limit}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+decon\+\_\+limit()}{coherent\_nf\_decon\_limit()}}
+{\footnotesize\ttfamily float Simple\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+decon\+\_\+limit (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_af1b0da30d4aa280deca52a84a9a6326d}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 109 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a602938fd9dbdd7fe8093231a1d5c5d5a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a570a71f729172f7b19659f21d44b2e81}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a570a71f729172f7b19659f21d44b2e81}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+decon\+\_\+limit1@{coherent\+\_\+nf\+\_\+decon\+\_\+limit1}}
+\index{coherent\+\_\+nf\+\_\+decon\+\_\+limit1@{coherent\+\_\+nf\+\_\+decon\+\_\+limit1}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+decon\+\_\+limit1()}{coherent\_nf\_decon\_limit1()}}
+{\footnotesize\ttfamily float Simple\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+decon\+\_\+limit1 (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4b2033312603fd90885efdfe14eb71cc}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 127 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a570a71f729172f7b19659f21d44b2e81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab501b262245b5c052abd49fd0d67c803}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab501b262245b5c052abd49fd0d67c803}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit}}
+\index{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit()}{coherent\_nf\_min\_adc\_limit()}}
+{\footnotesize\ttfamily float Simple\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a1668979331fd999d36d5cb5bb1ed00d6}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 154 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab501b262245b5c052abd49fd0d67c803_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aa17316b608537c3cf2c30ab600092bac}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aa17316b608537c3cf2c30ab600092bac}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+protection\+\_\+factor@{coherent\+\_\+nf\+\_\+protection\+\_\+factor}}
+\index{coherent\+\_\+nf\+\_\+protection\+\_\+factor@{coherent\+\_\+nf\+\_\+protection\+\_\+factor}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+protection\+\_\+factor()}{coherent\_nf\_protection\_factor()}}
+{\footnotesize\ttfamily float Simple\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+protection\+\_\+factor (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4572de7acbdd4427cc4c409193abaae8}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 145 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aa17316b608537c3cf2c30ab600092bac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a31eba95e77c824eb351f3ed4e5e58eac}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a31eba95e77c824eb351f3ed4e5e58eac}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio@{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio}}
+\index{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio@{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio()}{coherent\_nf\_roi\_min\_max\_ratio()}}
+{\footnotesize\ttfamily float Simple\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a3fab0404aa8a10ad7ed2ac7afd2fe9a7}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 164 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a31eba95e77c824eb351f3ed4e5e58eac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a3eabaf3d48c127aaa6c594c682e6a77a}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a3eabaf3d48c127aaa6c594c682e6a77a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!config@{config}}
+\index{config@{config}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{I\+Channel\+Noise\+Database\+::filter\+\_\+t} \& Simple\+Channel\+Noise\+D\+B\+::config (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the filter to correct any wrongly configured channels. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_af6887aa00ed134c7fcb1ee85bd950311}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 197 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a3eabaf3d48c127aaa6c594c682e6a77a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a7b4f5283401aa1668adda46ba52b06c6}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a7b4f5283401aa1668adda46ba52b06c6}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!gain\+\_\+correction@{gain\+\_\+correction}}
+\index{gain\+\_\+correction@{gain\+\_\+correction}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{gain\+\_\+correction()}{gain\_correction()}}
+{\footnotesize\ttfamily double Simple\+Channel\+Noise\+D\+B\+::gain\+\_\+correction (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return simple gain correction (a multiplicative, unitless scaling) to apply to a given channel. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad2cdf46aea4ac11f8b7d097bd19c2e80}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 50 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a7b4f5283401aa1668adda46ba52b06c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a22eaf2783321cb45cd904f97de2ba7d3}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a22eaf2783321cb45cd904f97de2ba7d3}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!max\+\_\+rms\+\_\+cut@{max\+\_\+rms\+\_\+cut}}
+\index{max\+\_\+rms\+\_\+cut@{max\+\_\+rms\+\_\+cut}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{max\+\_\+rms\+\_\+cut()}{max\_rms\_cut()}}
+{\footnotesize\ttfamily double Simple\+Channel\+Noise\+D\+B\+::max\+\_\+rms\+\_\+cut (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad5e4a49ff6b257e2ef290eeeaba95da7}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 78 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a22eaf2783321cb45cd904f97de2ba7d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a8e8aa023834a47f96b0bdb69bc76e7a8}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a8e8aa023834a47f96b0bdb69bc76e7a8}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!min\+\_\+rms\+\_\+cut@{min\+\_\+rms\+\_\+cut}}
+\index{min\+\_\+rms\+\_\+cut@{min\+\_\+rms\+\_\+cut}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{min\+\_\+rms\+\_\+cut()}{min\_rms\_cut()}}
+{\footnotesize\ttfamily double Simple\+Channel\+Noise\+D\+B\+::min\+\_\+rms\+\_\+cut (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad0e7e7c3424260af2bd426e578ad83f6}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 69 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a8e8aa023834a47f96b0bdb69bc76e7a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab0b17e111bc6617ac4702610b262ed2f}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab0b17e111bc6617ac4702610b262ed2f}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!noise@{noise}}
+\index{noise@{noise}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{noise()}{noise()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{I\+Channel\+Noise\+Database\+::filter\+\_\+t} \& Simple\+Channel\+Noise\+D\+B\+::noise (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the filter to attenuate noise. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a1197551d9dcfd6dc8f656a8aecd5b962}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 202 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab0b17e111bc6617ac4702610b262ed2f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae5b0390412d61c8fab8514ddd8358fa1}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae5b0390412d61c8fab8514ddd8358fa1}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!nominal\+\_\+baseline@{nominal\+\_\+baseline}}
+\index{nominal\+\_\+baseline@{nominal\+\_\+baseline}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{nominal\+\_\+baseline()}{nominal\_baseline()}}
+{\footnotesize\ttfamily double Simple\+Channel\+Noise\+D\+B\+::nominal\+\_\+baseline (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a nominal baseline correction (additive offset) 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a253f602c70bddb7986e63dc14b8d8e6e}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 41 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae5b0390412d61c8fab8514ddd8358fa1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4643919d65336ba0090213d772bb6bf9}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4643919d65336ba0090213d772bb6bf9}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!pad\+\_\+window\+\_\+back@{pad\+\_\+window\+\_\+back}}
+\index{pad\+\_\+window\+\_\+back@{pad\+\_\+window\+\_\+back}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{pad\+\_\+window\+\_\+back()}{pad\_window\_back()}}
+{\footnotesize\ttfamily int Simple\+Channel\+Noise\+D\+B\+::pad\+\_\+window\+\_\+back (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4d772c3ba5f7071a2d869264f37dfecc}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 99 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4643919d65336ba0090213d772bb6bf9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5c1e58cf0586ac32c1e6d3810606a992}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5c1e58cf0586ac32c1e6d3810606a992}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!pad\+\_\+window\+\_\+front@{pad\+\_\+window\+\_\+front}}
+\index{pad\+\_\+window\+\_\+front@{pad\+\_\+window\+\_\+front}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{pad\+\_\+window\+\_\+front()}{pad\_window\_front()}}
+{\footnotesize\ttfamily int Simple\+Channel\+Noise\+D\+B\+::pad\+\_\+window\+\_\+front (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a77f82280942595e1a2506f49a6f76f56}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 89 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5c1e58cf0586ac32c1e6d3810606a992_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a9a4481bf485a0aaa4903094463f4e2b3}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a9a4481bf485a0aaa4903094463f4e2b3}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!rcrc@{rcrc}}
+\index{rcrc@{rcrc}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{rcrc()}{rcrc()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{I\+Channel\+Noise\+Database\+::filter\+\_\+t} \& Simple\+Channel\+Noise\+D\+B\+::rcrc (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the filter for the R\+C+\+RC coupling response function. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a8f9fa5547062c23f689fde9bb810361b}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 192 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a9a4481bf485a0aaa4903094463f4e2b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac86433de014502928205161b6ea93ba0}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac86433de014502928205161b6ea93ba0}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!response@{response}}
+\index{response@{response}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{response()}{response()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{I\+Channel\+Noise\+Database\+::filter\+\_\+t} \& Simple\+Channel\+Noise\+D\+B\+::response (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A nominal detector response spectrum for a given channel. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad3c42f59a26e8a8e115199a894d881da}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 207 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac86433de014502928205161b6ea93ba0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a089731ed6979ee7a3d5029dc6c104902}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a089731ed6979ee7a3d5029dc6c104902}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!response\+\_\+offset@{response\+\_\+offset}}
+\index{response\+\_\+offset@{response\+\_\+offset}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{response\+\_\+offset()}{response\_offset()}}
+{\footnotesize\ttfamily double Simple\+Channel\+Noise\+D\+B\+::response\+\_\+offset (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a time offset associated with the \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac86433de014502928205161b6ea93ba0}{response()}. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a5a1d081b5cd6d32ac7209b99eb2c61dc}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 59 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a089731ed6979ee7a3d5029dc6c104902_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac4ef81b15ca1bf55585bd89a092b8693}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac4ef81b15ca1bf55585bd89a092b8693}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!sample\+\_\+time@{sample\+\_\+time}}
+\index{sample\+\_\+time@{sample\+\_\+time}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{sample\+\_\+time()}{sample\_time()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+D\+B\+::sample\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+F\+I\+X\+ME\+: how to handle state changes? 
+
+Return the time-\/domain sample period (time in system of units) which is was used in producing the filter response spectral functions (filter\+\_\+t).
+
+Warning\+: take care that the number of frequency samples (filter\+\_\+t\+::size()) is fixed and may not match the number of ticks in your waveform. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a82406ba30d65412db34e038e789be95c}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 27 of file Simple\+Channel\+Noise\+D\+B.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac4ef81b15ca1bf55585bd89a092b8693_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ad6dc8bcaab51091165b9c1a43e47f8eb}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ad6dc8bcaab51091165b9c1a43e47f8eb}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+bad\+\_\+channels@{set\+\_\+bad\+\_\+channels}}
+\index{set\+\_\+bad\+\_\+channels@{set\+\_\+bad\+\_\+channels}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+bad\+\_\+channels()}{set\_bad\_channels()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+bad\+\_\+channels (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} \&}]{bc }\end{DoxyParamCaption})}
+
+
+
+Set \char`\"{}bad\char`\"{} channels. 
+
+
+
+Definition at line 500 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a01fd459a5a0234366f78b5eeee61c599}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a01fd459a5a0234366f78b5eeee61c599}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+channel\+\_\+groups@{set\+\_\+channel\+\_\+groups}}
+\index{set\+\_\+channel\+\_\+groups@{set\+\_\+channel\+\_\+groups}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+channel\+\_\+groups()}{set\_channel\_groups()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+channel\+\_\+groups (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} $>$ \&}]{channel\+\_\+groups }\end{DoxyParamCaption})}
+
+
+
+Set the channel groups. 
+
+
+
+Definition at line 493 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a33d9cbe6648bda8c2a0d05fca376f461}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a33d9cbe6648bda8c2a0d05fca376f461}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+coherent\+\_\+nf\+\_\+adc\+\_\+limit@{set\+\_\+coherent\+\_\+nf\+\_\+adc\+\_\+limit}}
+\index{set\+\_\+coherent\+\_\+nf\+\_\+adc\+\_\+limit@{set\+\_\+coherent\+\_\+nf\+\_\+adc\+\_\+limit}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+coherent\+\_\+nf\+\_\+adc\+\_\+limit()}{set\_coherent\_nf\_adc\_limit()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+coherent\+\_\+nf\+\_\+adc\+\_\+limit (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{float}]{adc\+\_\+limit }\end{DoxyParamCaption})}
+
+
+
+Definition at line 433 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a33d9cbe6648bda8c2a0d05fca376f461_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a33d9cbe6648bda8c2a0d05fca376f461_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aa8e97e9e59e9a91d23b572acd6eec29b}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aa8e97e9e59e9a91d23b572acd6eec29b}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff@{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff}}
+\index{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff@{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff()}{set\_coherent\_nf\_decon\_lf\_cutoff()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{float}]{decon\+\_\+lf\+\_\+cutoff }\end{DoxyParamCaption})}
+
+
+
+Definition at line 414 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aa8e97e9e59e9a91d23b572acd6eec29b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aa8e97e9e59e9a91d23b572acd6eec29b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a44e68d8302a63ca34e82c9f6dfb5b209}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a44e68d8302a63ca34e82c9f6dfb5b209}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit@{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit}}
+\index{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit@{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit()}{set\_coherent\_nf\_decon\_limit()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{float}]{decon\+\_\+limit }\end{DoxyParamCaption})}
+
+
+
+Definition at line 405 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a44e68d8302a63ca34e82c9f6dfb5b209_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a44e68d8302a63ca34e82c9f6dfb5b209_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab58c3af3127913b121bb9bee04cc56d9}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab58c3af3127913b121bb9bee04cc56d9}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit1@{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit1}}
+\index{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit1@{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit1}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit1()}{set\_coherent\_nf\_decon\_limit1()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+coherent\+\_\+nf\+\_\+decon\+\_\+limit1 (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{float}]{decon\+\_\+limit }\end{DoxyParamCaption})}
+
+
+
+Definition at line 424 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab58c3af3127913b121bb9bee04cc56d9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab58c3af3127913b121bb9bee04cc56d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a045c735c118842078036c1619a637525}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a045c735c118842078036c1619a637525}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit@{set\+\_\+coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit}}
+\index{set\+\_\+coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit@{set\+\_\+coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit()}{set\_coherent\_nf\_min\_adc\_limit()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{float}]{min\+\_\+adc\+\_\+limit }\end{DoxyParamCaption})}
+
+
+
+Definition at line 451 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a045c735c118842078036c1619a637525_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a045c735c118842078036c1619a637525_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1a1ea9a4e47ddfe6c88f9eec682776bf}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1a1ea9a4e47ddfe6c88f9eec682776bf}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+coherent\+\_\+nf\+\_\+protection\+\_\+factor@{set\+\_\+coherent\+\_\+nf\+\_\+protection\+\_\+factor}}
+\index{set\+\_\+coherent\+\_\+nf\+\_\+protection\+\_\+factor@{set\+\_\+coherent\+\_\+nf\+\_\+protection\+\_\+factor}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+coherent\+\_\+nf\+\_\+protection\+\_\+factor()}{set\_coherent\_nf\_protection\_factor()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+coherent\+\_\+nf\+\_\+protection\+\_\+factor (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{float}]{protection\+\_\+factor }\end{DoxyParamCaption})}
+
+
+
+Definition at line 442 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1a1ea9a4e47ddfe6c88f9eec682776bf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1a1ea9a4e47ddfe6c88f9eec682776bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a92f9ca90518ecd1833bb3e4dfcbf9488}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a92f9ca90518ecd1833bb3e4dfcbf9488}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio@{set\+\_\+coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio}}
+\index{set\+\_\+coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio@{set\+\_\+coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio()}{set\_coherent\_nf\_roi\_min\_max\_ratio()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{float}]{roi\+\_\+min\+\_\+max\+\_\+ratio }\end{DoxyParamCaption})}
+
+
+
+Definition at line 460 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a92f9ca90518ecd1833bb3e4dfcbf9488_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a92f9ca90518ecd1833bb3e4dfcbf9488_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a6c9fc361d1a4b92415cb41ff2ee33ae4}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a6c9fc361d1a4b92415cb41ff2ee33ae4}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+filter@{set\+\_\+filter}}
+\index{set\+\_\+filter@{set\+\_\+filter}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+filter()}{set\_filter()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+filter (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{const \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac88af8d617681e36c68c5f1899452d01}{multimask\+\_\+t} \&}]{mask }\end{DoxyParamCaption})}
+
+
+
+Definition at line 469 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a82e2e7cf205e61e1ab1e7970aa6655cb}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a82e2e7cf205e61e1ab1e7970aa6655cb}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+gains\+\_\+shapings@{set\+\_\+gains\+\_\+shapings}}
+\index{set\+\_\+gains\+\_\+shapings@{set\+\_\+gains\+\_\+shapings}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+gains\+\_\+shapings()}{set\_gains\_shapings()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+gains\+\_\+shapings (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{double}]{from\+\_\+gain\+\_\+m\+VfC = {\ttfamily 7.8},  }\item[{double}]{to\+\_\+gain\+\_\+m\+VfC = {\ttfamily 14.0},  }\item[{double}]{from\+\_\+shaping = {\ttfamily 1.0$\ast$units\+:\+:us},  }\item[{double}]{to\+\_\+shaping = {\ttfamily 2.0$\ast$units\+:\+:us} }\end{DoxyParamCaption})}
+
+Set gain/shaping corrections for cnofig\+\_\+correction. Gains are assumed to be in m\+V/fC. Shaping times should be in the system of units. Defaults are microboone (but you need to give channels). 
+
+Definition at line 295 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a82e2e7cf205e61e1ab1e7970aa6655cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a82e2e7cf205e61e1ab1e7970aa6655cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1a5c77d29d9f65e62ce9a811c80ebaca}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1a5c77d29d9f65e62ce9a811c80ebaca}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+max\+\_\+rms\+\_\+cut@{set\+\_\+max\+\_\+rms\+\_\+cut}}
+\index{set\+\_\+max\+\_\+rms\+\_\+cut@{set\+\_\+max\+\_\+rms\+\_\+cut}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+max\+\_\+rms\+\_\+cut()}{set\_max\_rms\_cut()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+max\+\_\+rms\+\_\+cut (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{double}]{max\+\_\+rms }\end{DoxyParamCaption})}
+
+
+
+Definition at line 370 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1a5c77d29d9f65e62ce9a811c80ebaca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1a5c77d29d9f65e62ce9a811c80ebaca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab82464e57bc12304c2d90e9eb075a930}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab82464e57bc12304c2d90e9eb075a930}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+max\+\_\+rms\+\_\+cut\+\_\+one@{set\+\_\+max\+\_\+rms\+\_\+cut\+\_\+one}}
+\index{set\+\_\+max\+\_\+rms\+\_\+cut\+\_\+one@{set\+\_\+max\+\_\+rms\+\_\+cut\+\_\+one}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+max\+\_\+rms\+\_\+cut\+\_\+one()}{set\_max\_rms\_cut\_one()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+max\+\_\+rms\+\_\+cut\+\_\+one (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{double}]{max\+\_\+rms }\end{DoxyParamCaption})}
+
+
+
+Definition at line 379 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab82464e57bc12304c2d90e9eb075a930_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab82464e57bc12304c2d90e9eb075a930_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5113500df9dcd76defe1493534c4c9bc}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5113500df9dcd76defe1493534c4c9bc}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+min\+\_\+rms\+\_\+cut@{set\+\_\+min\+\_\+rms\+\_\+cut}}
+\index{set\+\_\+min\+\_\+rms\+\_\+cut@{set\+\_\+min\+\_\+rms\+\_\+cut}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+min\+\_\+rms\+\_\+cut()}{set\_min\_rms\_cut()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+min\+\_\+rms\+\_\+cut (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{double}]{min\+\_\+rms }\end{DoxyParamCaption})}
+
+
+
+Definition at line 352 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5113500df9dcd76defe1493534c4c9bc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5113500df9dcd76defe1493534c4c9bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a110d73be2690691e60d916bf8cbb4ea9}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a110d73be2690691e60d916bf8cbb4ea9}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+min\+\_\+rms\+\_\+cut\+\_\+one@{set\+\_\+min\+\_\+rms\+\_\+cut\+\_\+one}}
+\index{set\+\_\+min\+\_\+rms\+\_\+cut\+\_\+one@{set\+\_\+min\+\_\+rms\+\_\+cut\+\_\+one}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+min\+\_\+rms\+\_\+cut\+\_\+one()}{set\_min\_rms\_cut\_one()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+min\+\_\+rms\+\_\+cut\+\_\+one (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{double}]{min\+\_\+rms }\end{DoxyParamCaption})}
+
+
+
+Definition at line 361 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a110d73be2690691e60d916bf8cbb4ea9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a110d73be2690691e60d916bf8cbb4ea9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a566b36743c0a1cb0bd831a0086dad3b7}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a566b36743c0a1cb0bd831a0086dad3b7}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+nominal\+\_\+baseline@{set\+\_\+nominal\+\_\+baseline}}
+\index{set\+\_\+nominal\+\_\+baseline@{set\+\_\+nominal\+\_\+baseline}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+nominal\+\_\+baseline()}{set\_nominal\_baseline()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+nominal\+\_\+baseline (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{double}]{baseline }\end{DoxyParamCaption})}
+
+
+
+Set nominal baseline in units of A\+DC (eg uB is -\/2048 for U/V, -\/400 for W) 
+
+
+
+Definition at line 245 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a566b36743c0a1cb0bd831a0086dad3b7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a566b36743c0a1cb0bd831a0086dad3b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a08eb429fdab1899edfe52bf8593ba56e}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a08eb429fdab1899edfe52bf8593ba56e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+pad\+\_\+window\+\_\+back@{set\+\_\+pad\+\_\+window\+\_\+back}}
+\index{set\+\_\+pad\+\_\+window\+\_\+back@{set\+\_\+pad\+\_\+window\+\_\+back}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+pad\+\_\+window\+\_\+back()}{set\_pad\_window\_back()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+pad\+\_\+window\+\_\+back (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{int}]{pad\+\_\+b }\end{DoxyParamCaption})}
+
+
+
+Definition at line 396 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a08eb429fdab1899edfe52bf8593ba56e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a08eb429fdab1899edfe52bf8593ba56e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aeb80b3766efb4756055bbe016cd58e2c}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aeb80b3766efb4756055bbe016cd58e2c}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+pad\+\_\+window\+\_\+front@{set\+\_\+pad\+\_\+window\+\_\+front}}
+\index{set\+\_\+pad\+\_\+window\+\_\+front@{set\+\_\+pad\+\_\+window\+\_\+front}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+pad\+\_\+window\+\_\+front()}{set\_pad\_window\_front()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+pad\+\_\+window\+\_\+front (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{int}]{pad\+\_\+f }\end{DoxyParamCaption})}
+
+
+
+Definition at line 387 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aeb80b3766efb4756055bbe016cd58e2c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aeb80b3766efb4756055bbe016cd58e2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1c4c378e91ff2ead5aff08bc3615b1d2}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1c4c378e91ff2ead5aff08bc3615b1d2}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+rcrc\+\_\+constant@{set\+\_\+rcrc\+\_\+constant}}
+\index{set\+\_\+rcrc\+\_\+constant@{set\+\_\+rcrc\+\_\+constant}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+rcrc\+\_\+constant()}{set\_rcrc\_constant()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+rcrc\+\_\+constant (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{double}]{rcrc = {\ttfamily 2000.0} }\end{DoxyParamCaption})}
+
+Set the R\+C+\+RC time constant in the system of units for the digitization sample time (\char`\"{}tick\char`\"{}). Default is for microboone. 
+
+Definition at line 252 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1c4c378e91ff2ead5aff08bc3615b1d2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a1c4c378e91ff2ead5aff08bc3615b1d2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae5a4c212b9589940124fcce6075f8996}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae5a4c212b9589940124fcce6075f8996}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+response@{set\+\_\+response}}
+\index{set\+\_\+response@{set\+\_\+response}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+response()}{set\_response()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+response (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \&}]{spectrum }\end{DoxyParamCaption})}
+
+
+
+Set a detector response spectrum for the set of channels. 
+
+
+
+Definition at line 284 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae5a4c212b9589940124fcce6075f8996_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae5a4c212b9589940124fcce6075f8996_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_adce8a777da71112d25e077a610de2a94}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_adce8a777da71112d25e077a610de2a94}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+response\+\_\+offset@{set\+\_\+response\+\_\+offset}}
+\index{set\+\_\+response\+\_\+offset@{set\+\_\+response\+\_\+offset}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+response\+\_\+offset()}{set\_response\_offset()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+response\+\_\+offset (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{double}]{offset }\end{DoxyParamCaption})}
+
+
+
+Set a response offset for the given set of channels. 
+
+
+
+Definition at line 341 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_adce8a777da71112d25e077a610de2a94_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_adce8a777da71112d25e077a610de2a94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a9ede3bdc966580756f9fff4070e8348b}\label{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a9ede3bdc966580756f9fff4070e8348b}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}!set\+\_\+sampling@{set\+\_\+sampling}}
+\index{set\+\_\+sampling@{set\+\_\+sampling}!Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+sampling()}{set\_sampling()}}
+{\footnotesize\ttfamily void Simple\+Channel\+Noise\+D\+B\+::set\+\_\+sampling (\begin{DoxyParamCaption}\item[{double}]{tick = {\ttfamily 0.5$\ast$units\+:\+:us},  }\item[{int}]{nsamples = {\ttfamily 9600} }\end{DoxyParamCaption})}
+
+Set the size and number of samples of a channel\textquotesingle{}s waveform, default is for microboone.
+
+Warning\+: calling this will reset any settings for gains+shaping and rcrc as they depend on knowing the sampling. 
+
+Definition at line 213 of file Simple\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a9ede3bdc966580756f9fff4070e8348b_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_simple_channel_noise_d_b_8h}{Simple\+Channel\+Noise\+D\+B.\+h}\item 
+sigproc/src/\hyperlink{_simple_channel_noise_d_b_8cxx}{Simple\+Channel\+Noise\+D\+B.\+cxx}\end{DoxyCompactItemize}

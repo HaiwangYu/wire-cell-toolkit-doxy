@@ -1,0 +1,12 @@
+<map id="WireCell::SigProc::ROI_refinement::refine_data_debug_mode" name="WireCell::SigProc::ROI_refinement::refine_data_debug_mode">
+<area shape="rect" id="node2" href="$namespaceinternal.html#a265f36d9dee68d3f44381347ef2fd5cb" title="internal::begin" alt="" coords="252,5,355,32"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell.html#aeda39bc129b6bab40d0e35ffb4af55ef" title="Return dictionary in given list if it value at dotpath matches. " alt="" coords="253,56,354,83"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#ae20c381a6855844b0177f2ab96ac50a6" title="WireCell::SigProc::\lSignalROI::set_ext_start_bin" alt="" coords="208,107,399,149"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#acfe33b6d693694e95f905a34a2940c32" title="WireCell::SigProc::\lSignalROI::get_start_bin" alt="" coords="221,173,386,214"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a1057a64f15a6093ab46679c4d54524ba" title="WireCell::SigProc::\lSignalROI::set_ext_end_bin" alt="" coords="211,238,396,279"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a826112ffb7fed5ffeff403e4a34c036c" title="WireCell::SigProc::\lSignalROI::get_end_bin" alt="" coords="223,303,383,345"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#ab7e97b198f41b189dc24556c6c0ccd52" title="WireCell::SigProc::\lSignalROI::get_ext_start_bin" alt="" coords="208,369,399,410"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a5d660871a8da8908e8ee1e1ed99a7ce7" title="WireCell::SigProc::\lSignalROI::get_ext_end_bin" alt="" coords="211,434,396,475"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell.html#ade8a8d63c0beb7335d7f969903bfeedc" title="Follow a dot.separated.path and return the branch there. " alt="" coords="447,56,565,83"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_string.html#aef23d7b89dbe21e34a499c9156dd1e60" title="WireCell::String::split" alt="" coords="613,56,760,83"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="spdlog::sinks::rotating_file_sink::calc_filename" name="spdlog::sinks::rotating_file_sink::calc_filename">
+<area shape="rect" id="node2" href="$classspdlog_1_1details_1_1file__helper.html#a28d87e3f42c52a12c95af0558aca66f2" title="spdlog::details::file\l_helper::split_by_extension" alt="" coords="219,5,399,47"/>
+<area shape="rect" id="node3" href="$core_8h.html#a7f023637311ff6fae516e0da2caf05d3" title="format_to" alt="" coords="270,71,347,98"/>
+<area shape="rect" id="node6" href="$format_8h.html#afe05b087244838ced775fa3f28134c34" title="to_string" alt="" coords="273,122,345,149"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a9f6f592ec8a979251038265f241e7d48" title="internal::vformat_to" alt="" coords="447,46,581,73"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="629,71,785,98"/>
+</map>

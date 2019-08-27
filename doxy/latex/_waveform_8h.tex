@@ -1,0 +1,126 @@
+\hypertarget{_waveform_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Waveform.h File Reference}
+\label{_waveform_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Waveform.\+h@{util/inc/\+Wire\+Cell\+Util/\+Waveform.\+h}}
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$complex$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Waveform.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_waveform_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_waveform_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_waveform}{Wire\+Cell\+::\+Waveform}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{Wire\+Cell\+::\+Waveform\+::real\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The type for the signal in each bin. \end{DoxyCompactList}\item 
+typedef std\+::complex$<$ float $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a4a69305e16ea32b03030a13a52478c38}{Wire\+Cell\+::\+Waveform\+::complex\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The type for the spectrum in each bin. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\using \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Wire\+Cell\+::\+Waveform\+::\+Sequence} = std\+::vector$<$ Val $>$
+\item 
+typedef Sequence$<$ real\+\_\+t $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t}
+\item 
+typedef Sequence$<$ complex\+\_\+t $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Wire\+Cell\+::\+Waveform\+::compseq\+\_\+t}
+\begin{DoxyCompactList}\small\item\em A complex-\/valued sequence, eg for discrete spectrum powers. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ int, int $>$ \hyperlink{namespace_wire_cell_1_1_waveform_accc2021da53792e30eb4f0335b630811}{Wire\+Cell\+::\+Waveform\+::\+Bin\+Range}
+\begin{DoxyCompactList}\small\item\em A half-\/open range of bins (from first bin to one past last bin) \end{DoxyCompactList}\item 
+typedef std\+::vector$<$ Bin\+Range $>$ \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Wire\+Cell\+::\+Waveform\+::\+Bin\+Range\+List}
+\begin{DoxyCompactList}\small\item\em A list of bin ranges. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ int, Bin\+Range\+List $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Masks}
+\begin{DoxyCompactList}\small\item\em Map channel number to a vector of Bin\+Ranges. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ std\+::string, Channel\+Masks $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map}
+\begin{DoxyCompactList}\small\item\em Collect channel masks by some label. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ double, double $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a3f830cc3d44a8f05e0a3fd5f23947467}{Wire\+Cell\+::\+Waveform\+::\+Period}
+\begin{DoxyCompactList}\small\item\em A range of time. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ double, double $>$ \hyperlink{namespace_wire_cell_1_1_waveform_ab27ab5a1dc3d0ee2fb297a094e725662}{Wire\+Cell\+::\+Waveform\+::\+Band}
+\begin{DoxyCompactList}\small\item\em A range of frequency. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ double, double $>$ \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Wire\+Cell\+::\+Waveform\+::\+Domain}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Bin\+Range\+List \hyperlink{namespace_wire_cell_1_1_waveform_a992189c16e04b7302539d42c94f9e296}{Wire\+Cell\+::\+Waveform\+::merge} (const Bin\+Range\+List \&br)
+\begin{DoxyCompactList}\small\item\em Return a new list with any overlaps formed into unions. \end{DoxyCompactList}\item 
+Bin\+Range\+List \hyperlink{namespace_wire_cell_1_1_waveform_af5a11c1c84f74aa42aedcc16029cb1c7}{Wire\+Cell\+::\+Waveform\+::merge} (const Bin\+Range\+List \&br1, const Bin\+Range\+List \&br2)
+\begin{DoxyCompactList}\small\item\em Merge two bin range lists, forming a union from any overlapping ranges. \end{DoxyCompactList}\item 
+Channel\+Masks \hyperlink{namespace_wire_cell_1_1_waveform_a49c3b64d64db947f08b1eedcf4c47772}{Wire\+Cell\+::\+Waveform\+::merge} (const Channel\+Masks \&one, const Channel\+Masks \&two)
+\begin{DoxyCompactList}\small\item\em Return a new mapping which is the union of all same channel masks. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_wire_cell_1_1_waveform_aaa9e0dfb1762dd280646e4b3c123d3ef}{Wire\+Cell\+::\+Waveform\+::merge} (Channel\+Mask\+Map \&one, Channel\+Mask\+Map \&two, std\+::map$<$ std\+::string, std\+::string $>$ \&name\+\_\+map)
+\item 
+int \hyperlink{namespace_wire_cell_1_1_waveform_a5f342071d33324064758877fb128e062}{Wire\+Cell\+::\+Waveform\+::sample\+\_\+count} (const Domain \&domain, double width)
+\begin{DoxyCompactList}\small\item\em Return the number of samples needed to cover the domain with sample size width. \end{DoxyCompactList}\item 
+double \hyperlink{namespace_wire_cell_1_1_waveform_a76b0099d7c51a9e0a915bbee0fe48069}{Wire\+Cell\+::\+Waveform\+::sample\+\_\+width} (const Domain \&domain, int count)
+\begin{DoxyCompactList}\small\item\em Return the sample size if domain is equally sampled with given number of samples. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a841c4668962007ef512b7a7df6ecfece}{Wire\+Cell\+::\+Waveform\+::sub\+\_\+sample} (const Domain \&domain, int nsamples, const Domain \&subdomain)
+\begin{DoxyCompactList}\small\item\em Return the begin/end sample numbers inside the a subdomain of a domain with nsamples total. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\Sequence$<$ Val $>$ \hyperlink{namespace_wire_cell_1_1_waveform_ad08232b659cba09cf7174b900c557be5}{Wire\+Cell\+::\+Waveform\+::resample} (const Sequence$<$ Val $>$ \&wave, const Domain \&domain, int nsamples, const Domain \&newdomain)
+\item 
+realseq\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_a40f3344b248eea24a08d391e8f402bb8}{Wire\+Cell\+::\+Waveform\+::real} (const compseq\+\_\+t \&seq)
+\begin{DoxyCompactList}\small\item\em Return the real part of the sequence. \end{DoxyCompactList}\item 
+realseq\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_acc803e535b3e979dc331088b9fba8bc1}{Wire\+Cell\+::\+Waveform\+::imag} (const compseq\+\_\+t \&seq)
+\begin{DoxyCompactList}\small\item\em Return the imaginary part of the sequence. \end{DoxyCompactList}\item 
+realseq\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_ae8dc1c86082f99f8cbfedb8434d22bc2}{Wire\+Cell\+::\+Waveform\+::magnitude} (const compseq\+\_\+t \&seq)
+\begin{DoxyCompactList}\small\item\em Return the magnitude or absolute value of the sequence. \end{DoxyCompactList}\item 
+realseq\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_abcab023facead1d0eb14e2042ce578bb}{Wire\+Cell\+::\+Waveform\+::phase} (const compseq\+\_\+t \&seq)
+\begin{DoxyCompactList}\small\item\em Return the phase or arg part of the sequence. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\void \hyperlink{namespace_wire_cell_1_1_waveform_af74deccaeb9e2147865029e16840e799}{Wire\+Cell\+::\+Waveform\+::increase} (Sequence$<$ Val $>$ \&seq, Val scalar)
+\begin{DoxyCompactList}\small\item\em Increase (shift) sequence values by scalar. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_wire_cell_1_1_waveform_a3e92e2c63b937617bf8870412e7a6da7}{Wire\+Cell\+::\+Waveform\+::increase} (Sequence$<$ float $>$ \&seq, double scalar)
+\item 
+{\footnotesize template$<$typename Val $>$ }\\void \hyperlink{namespace_wire_cell_1_1_waveform_a5f2540f66c9584343f87cbe624c76943}{Wire\+Cell\+::\+Waveform\+::increase} (Sequence$<$ Val $>$ \&seq, const Sequence$<$ Val $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Increase (shift) sequence values by values in another sequence. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\void \hyperlink{namespace_wire_cell_1_1_waveform_aa8d25ae88346929b5e54cd116f7a4f47}{Wire\+Cell\+::\+Waveform\+::scale} (Sequence$<$ Val $>$ \&seq, Val scalar)
+\begin{DoxyCompactList}\small\item\em Scale (multiply) sequence values by scalar. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_wire_cell_1_1_waveform_a3278b47bbecdbb8a663286d9cdec0d75}{Wire\+Cell\+::\+Waveform\+::scale} (Sequence$<$ float $>$ \&seq, double scalar)
+\item 
+{\footnotesize template$<$typename Val $>$ }\\void \hyperlink{namespace_wire_cell_1_1_waveform_a6eea0e61cd0999be1219fd0d504e3b13}{Wire\+Cell\+::\+Waveform\+::scale} (Sequence$<$ Val $>$ \&seq, const Sequence$<$ Val $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Scale (multiply) seq values by values from the other sequence. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\void \hyperlink{namespace_wire_cell_1_1_waveform_adad443bd3c3ee1a0c2e65c9a39282a53}{Wire\+Cell\+::\+Waveform\+::shrink} (Sequence$<$ Val $>$ \&seq, const Sequence$<$ Val $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Shrink (divide) seq values by values from the other sequence. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \hyperlink{namespace_wire_cell_1_1_waveform_ae368e58f014b0d634028afcbb05887cb}{Wire\+Cell\+::\+Waveform\+::edge} (const realseq\+\_\+t \&wave)
+\item 
+{\footnotesize template$<$typename Val $>$ }\\Val \hyperlink{namespace_wire_cell_1_1_waveform_a4c7b82a4567d6c94227398f9511ffb92}{Wire\+Cell\+::\+Waveform\+::sum} (const Sequence$<$ Val $>$ \&seq)
+\begin{DoxyCompactList}\small\item\em Return sum of all entries in sequence. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\Val \hyperlink{namespace_wire_cell_1_1_waveform_a6aa0cf31fb8548b1f74ffb3f77350668}{Wire\+Cell\+::\+Waveform\+::sum2} (const Sequence$<$ Val $>$ \&seq)
+\begin{DoxyCompactList}\small\item\em Return sum of square of all entries in sequence. \end{DoxyCompactList}\item 
+std\+::pair$<$ double, double $>$ \hyperlink{namespace_wire_cell_1_1_waveform_af0395e9b0e5e9e86a26579badb834092}{Wire\+Cell\+::\+Waveform\+::mean\+\_\+rms} (const realseq\+\_\+t \&wave)
+\item 
+real\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_af5e9352cbf35ddaf2f95e924d241a2aa}{Wire\+Cell\+::\+Waveform\+::median} (realseq\+\_\+t \&wave)
+\item 
+real\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_a9a72f0b40ec9e5b44713c59f338f6fd3}{Wire\+Cell\+::\+Waveform\+::median\+\_\+binned} (realseq\+\_\+t \&wave)
+\item 
+real\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_a9116b8ebe848721a04d5100fa672b0aa}{Wire\+Cell\+::\+Waveform\+::percentile} (realseq\+\_\+t \&wave, real\+\_\+t percentage)
+\item 
+real\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_ae080d239c8b4426a6d74f9fd8ce85f1a}{Wire\+Cell\+::\+Waveform\+::percentile\+\_\+binned} (realseq\+\_\+t \&wave, real\+\_\+t percentage)
+\item 
+compseq\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_a6cfae9f74c1bf06f69d6991f3f82cef5}{Wire\+Cell\+::\+Waveform\+::dft} (realseq\+\_\+t seq)
+\item 
+realseq\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_aafc9307577968266045319c91ce3ab66}{Wire\+Cell\+::\+Waveform\+::linear\+\_\+convolve} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} in1, \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} in2, bool truncate=true)
+\item 
+realseq\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_abd675d86a770025f3ace47b277bf0e0e}{Wire\+Cell\+::\+Waveform\+::replace\+\_\+convolve} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} wave, \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} newres, \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} oldres, bool truncate=true)
+\item 
+realseq\+\_\+t \hyperlink{namespace_wire_cell_1_1_waveform_a69255dad704fcb71fa53745e90a2f0e1}{Wire\+Cell\+::\+Waveform\+::idft} (compseq\+\_\+t spec)
+\item 
+short \hyperlink{namespace_wire_cell_1_1_waveform_a86192f53532ba1e28516c2f8f3a9fa44}{Wire\+Cell\+::\+Waveform\+::most\+\_\+frequent} (const std\+::vector$<$ short $>$ \&vals)
+\begin{DoxyCompactList}\small\item\em Return the smallest, most frequent value to appear in vector. \end{DoxyCompactList}\end{DoxyCompactItemize}

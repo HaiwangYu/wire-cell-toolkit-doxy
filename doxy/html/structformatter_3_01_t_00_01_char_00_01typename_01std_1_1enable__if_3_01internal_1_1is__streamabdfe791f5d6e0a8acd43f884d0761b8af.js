@@ -1,0 +1,4 @@
+var structformatter_3_01_t_00_01_char_00_01typename_01std_1_1enable__if_3_01internal_1_1is__streamabdfe791f5d6e0a8acd43f884d0761b8af =
+[
+    [ "format", "structformatter_3_01_t_00_01_char_00_01typename_01std_1_1enable__if_3_01internal_1_1is__streamabdfe791f5d6e0a8acd43f884d0761b8af.html#ae9b195822bae194b4006b061c16eaa0a", null ]
+];

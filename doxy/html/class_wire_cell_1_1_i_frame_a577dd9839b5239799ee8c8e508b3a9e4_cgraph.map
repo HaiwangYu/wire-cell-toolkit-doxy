@@ -1,0 +1,5 @@
+<map id="WireCell::IFrame::masks" name="WireCell::IFrame::masks">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_frame.html#adbd5a27db1364bd8f5d89e1e7ca3c938" title="Return an identifying number of this frame. " alt="" coords="221,5,379,32"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_frame.html#ae65ceeb2ebe5ef5371793a21a835b0df" title="WireCell::IFrame::time" alt="" coords="223,56,377,83"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_frame.html#a5003631e8cb3f013c6ab84f26e09b852" title="Return the digitization sample period. " alt="" coords="225,107,375,133"/>
+</map>

@@ -1,0 +1,152 @@
+\hypertarget{posix_8h}{}\section{util/inc/spdlog/fmt/bundled/posix.h File Reference}
+\label{posix_8h}\index{util/inc/spdlog/fmt/bundled/posix.\+h@{util/inc/spdlog/fmt/bundled/posix.\+h}}
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$locale.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include \char`\"{}format.\+h\char`\"{}}\newline
+Include dependency graph for posix.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{posix_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbasic__cstring__view}{basic\+\_\+cstring\+\_\+view$<$ Char $>$}
+\item 
+class \hyperlink{classerror__code}{error\+\_\+code}
+\item 
+class \hyperlink{classbuffered__file}{buffered\+\_\+file}
+\item 
+class \hyperlink{classfile}{file}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{posix_8h_a6fa0773ef89920062fe6ab8b6e3cf337}{F\+M\+T\+\_\+\+P\+O\+S\+IX}(call)~call
+\item 
+\#define \hyperlink{posix_8h_acca658935a0993e7cf549b4a5be255a3}{F\+M\+T\+\_\+\+S\+Y\+S\+T\+EM}(call)~call
+\item 
+\#define \hyperlink{posix_8h_aa693a9f0c55e9b081f1ea5bf04968dd7}{F\+M\+T\+\_\+\+P\+O\+S\+I\+X\+\_\+\+C\+A\+LL}(call)~\+::call
+\item 
+\#define \hyperlink{posix_8h_a54f7e73fc1fc6ded8358c6339b51bde7}{F\+M\+T\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+V\+AL}(result,  expression,  error\+\_\+result)
+\item 
+\#define \hyperlink{posix_8h_a9d6790ac79298b8abd2472500422e138}{F\+M\+T\+\_\+\+R\+E\+T\+RY}(result,  expression)~\hyperlink{posix_8h_a54f7e73fc1fc6ded8358c6339b51bde7}{F\+M\+T\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+V\+AL}(result, expression, -\/1)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classbasic__cstring__view}{basic\+\_\+cstring\+\_\+view}$<$ char $>$ \hyperlink{posix_8h_ae8eb4eb4ba15f0c8755e1d5c8e7c07d9}{cstring\+\_\+view}
+\item 
+typedef \hyperlink{classbasic__cstring__view}{basic\+\_\+cstring\+\_\+view}$<$ wchar\+\_\+t $>$ \hyperlink{posix_8h_a1330363cbd2a58c6b01dfeb17b1ee56b}{wcstring\+\_\+view}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{posix_8h_a08bdd9860a550c328c95dfbfb9760f76}{getpagesize} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{posix_8h_a6fa0773ef89920062fe6ab8b6e3cf337}\label{posix_8h_a6fa0773ef89920062fe6ab8b6e3cf337}} 
+\index{posix.\+h@{posix.\+h}!F\+M\+T\+\_\+\+P\+O\+S\+IX@{F\+M\+T\+\_\+\+P\+O\+S\+IX}}
+\index{F\+M\+T\+\_\+\+P\+O\+S\+IX@{F\+M\+T\+\_\+\+P\+O\+S\+IX}!posix.\+h@{posix.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+P\+O\+S\+IX}{FMT\_POSIX}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+P\+O\+S\+IX(\begin{DoxyParamCaption}\item[{}]{call }\end{DoxyParamCaption})~call}
+
+
+
+Definition at line 35 of file posix.\+h.
+
+\mbox{\Hypertarget{posix_8h_aa693a9f0c55e9b081f1ea5bf04968dd7}\label{posix_8h_aa693a9f0c55e9b081f1ea5bf04968dd7}} 
+\index{posix.\+h@{posix.\+h}!F\+M\+T\+\_\+\+P\+O\+S\+I\+X\+\_\+\+C\+A\+LL@{F\+M\+T\+\_\+\+P\+O\+S\+I\+X\+\_\+\+C\+A\+LL}}
+\index{F\+M\+T\+\_\+\+P\+O\+S\+I\+X\+\_\+\+C\+A\+LL@{F\+M\+T\+\_\+\+P\+O\+S\+I\+X\+\_\+\+C\+A\+LL}!posix.\+h@{posix.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+P\+O\+S\+I\+X\+\_\+\+C\+A\+LL}{FMT\_POSIX\_CALL}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+P\+O\+S\+I\+X\+\_\+\+C\+A\+LL(\begin{DoxyParamCaption}\item[{}]{call }\end{DoxyParamCaption})~\+::call}
+
+
+
+Definition at line 48 of file posix.\+h.
+
+\mbox{\Hypertarget{posix_8h_a9d6790ac79298b8abd2472500422e138}\label{posix_8h_a9d6790ac79298b8abd2472500422e138}} 
+\index{posix.\+h@{posix.\+h}!F\+M\+T\+\_\+\+R\+E\+T\+RY@{F\+M\+T\+\_\+\+R\+E\+T\+RY}}
+\index{F\+M\+T\+\_\+\+R\+E\+T\+RY@{F\+M\+T\+\_\+\+R\+E\+T\+RY}!posix.\+h@{posix.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+R\+E\+T\+RY}{FMT\_RETRY}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+R\+E\+T\+RY(\begin{DoxyParamCaption}\item[{}]{result,  }\item[{}]{expression }\end{DoxyParamCaption})~\hyperlink{posix_8h_a54f7e73fc1fc6ded8358c6339b51bde7}{F\+M\+T\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+V\+AL}(result, expression, -\/1)}
+
+
+
+Definition at line 63 of file posix.\+h.
+
+\mbox{\Hypertarget{posix_8h_a54f7e73fc1fc6ded8358c6339b51bde7}\label{posix_8h_a54f7e73fc1fc6ded8358c6339b51bde7}} 
+\index{posix.\+h@{posix.\+h}!F\+M\+T\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+V\+AL@{F\+M\+T\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+V\+AL}}
+\index{F\+M\+T\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+V\+AL@{F\+M\+T\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+V\+AL}!posix.\+h@{posix.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+V\+AL}{FMT\_RETRY\_VAL}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+R\+E\+T\+R\+Y\+\_\+\+V\+AL(\begin{DoxyParamCaption}\item[{}]{result,  }\item[{}]{expression,  }\item[{}]{error\+\_\+result }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    result = (expression); \(\backslash\)
+  \} \textcolor{keywordflow}{while} (result == error\_result && errno == EINTR)
+\end{DoxyCode}
+
+
+Definition at line 55 of file posix.\+h.
+
+\mbox{\Hypertarget{posix_8h_acca658935a0993e7cf549b4a5be255a3}\label{posix_8h_acca658935a0993e7cf549b4a5be255a3}} 
+\index{posix.\+h@{posix.\+h}!F\+M\+T\+\_\+\+S\+Y\+S\+T\+EM@{F\+M\+T\+\_\+\+S\+Y\+S\+T\+EM}}
+\index{F\+M\+T\+\_\+\+S\+Y\+S\+T\+EM@{F\+M\+T\+\_\+\+S\+Y\+S\+T\+EM}!posix.\+h@{posix.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+S\+Y\+S\+T\+EM}{FMT\_SYSTEM}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+S\+Y\+S\+T\+EM(\begin{DoxyParamCaption}\item[{}]{call }\end{DoxyParamCaption})~call}
+
+
+
+Definition at line 43 of file posix.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{posix_8h_ae8eb4eb4ba15f0c8755e1d5c8e7c07d9}\label{posix_8h_ae8eb4eb4ba15f0c8755e1d5c8e7c07d9}} 
+\index{posix.\+h@{posix.\+h}!cstring\+\_\+view@{cstring\+\_\+view}}
+\index{cstring\+\_\+view@{cstring\+\_\+view}!posix.\+h@{posix.\+h}}
+\subsubsection{\texorpdfstring{cstring\+\_\+view}{cstring\_view}}
+{\footnotesize\ttfamily typedef \hyperlink{classbasic__cstring__view}{basic\+\_\+cstring\+\_\+view}$<$char$>$ \hyperlink{posix_8h_ae8eb4eb4ba15f0c8755e1d5c8e7c07d9}{cstring\+\_\+view}}
+
+
+
+Definition at line 112 of file posix.\+h.
+
+\mbox{\Hypertarget{posix_8h_a1330363cbd2a58c6b01dfeb17b1ee56b}\label{posix_8h_a1330363cbd2a58c6b01dfeb17b1ee56b}} 
+\index{posix.\+h@{posix.\+h}!wcstring\+\_\+view@{wcstring\+\_\+view}}
+\index{wcstring\+\_\+view@{wcstring\+\_\+view}!posix.\+h@{posix.\+h}}
+\subsubsection{\texorpdfstring{wcstring\+\_\+view}{wcstring\_view}}
+{\footnotesize\ttfamily typedef \hyperlink{classbasic__cstring__view}{basic\+\_\+cstring\+\_\+view}$<$wchar\+\_\+t$>$ \hyperlink{posix_8h_a1330363cbd2a58c6b01dfeb17b1ee56b}{wcstring\+\_\+view}}
+
+
+
+Definition at line 113 of file posix.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{posix_8h_a08bdd9860a550c328c95dfbfb9760f76}\label{posix_8h_a08bdd9860a550c328c95dfbfb9760f76}} 
+\index{posix.\+h@{posix.\+h}!getpagesize@{getpagesize}}
+\index{getpagesize@{getpagesize}!posix.\+h@{posix.\+h}}
+\subsubsection{\texorpdfstring{getpagesize()}{getpagesize()}}
+{\footnotesize\ttfamily long getpagesize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{posix_8h_a08bdd9860a550c328c95dfbfb9760f76_icgraph}
+\end{center}
+\end{figure}

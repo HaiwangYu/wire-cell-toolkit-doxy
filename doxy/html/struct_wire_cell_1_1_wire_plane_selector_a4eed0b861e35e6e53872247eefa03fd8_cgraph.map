@@ -1,0 +1,5 @@
+<map id="WireCell::WirePlaneSelector::operator()" name="WireCell::WirePlaneSelector::operator()">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_wire_plane_id.html#a33a565cfc76f84e9bc103b1ca33d0974" title="Layer as integer (not index!) " alt="" coords="256,5,407,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_wire_plane_id.html#a868dff2296e2531a30732a0528054be2" title="APA number. " alt="" coords="241,71,421,98"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_wire_plane_id.html#a18de55bd3637c1586db6ab9e5f39da18" title="APA face number. " alt="" coords="256,123,407,164"/>
+</map>

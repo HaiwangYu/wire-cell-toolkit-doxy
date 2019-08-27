@@ -1,0 +1,7 @@
+<map id="WireCell::FrameTools::tbin_range" name="WireCell::FrameTools::tbin_range">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_digitizer.html#a06ba39eb87a8acb50a3311f290d814a4" title="WireCell::Gen::Digitizer\l::operator()" alt="" coords="232,5,392,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_gaussian_diffusion.html#aee13d3eff7f4d5b15d2bffd7b982fae4" title="WireCell::Gen::GaussianDiffusion\l::set_sampling" alt="" coords="203,71,421,112"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_frame_tools.html#a21c3c601b6103fa7a63d9131b81dc229" title="WireCell::FrameTools\l::frmtcmp" alt="" coords="237,136,387,177"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sio_1_1_numpy_frame_saver.html#aa4e56c63747bea244fd47f07b0d59303" title="IFrameFilter. " alt="" coords="219,201,405,243"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_frame_tools.html#a23aeb7045b99ef40f3c5ca79549e4f8f" title="WireCell::FrameTools\l::split" alt="" coords="469,136,619,177"/>
+</map>

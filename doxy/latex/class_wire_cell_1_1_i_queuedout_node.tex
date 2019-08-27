@@ -1,0 +1,215 @@
+\hypertarget{class_wire_cell_1_1_i_queuedout_node}{}\section{Wire\+Cell\+:\+:I\+Queuedout\+Node$<$ Input\+Type, Output\+Type $>$ Class Template Reference}
+\label{class_wire_cell_1_1_i_queuedout_node}\index{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ Input\+Type, Output\+Type $>$@{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ Input\+Type, Output\+Type $>$}}
+
+
+{\ttfamily \#include $<$I\+Queuedout\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Queuedout\+Node$<$ Input\+Type, Output\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_wire_cell_1_1_i_queuedout_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Queuedout\+Node$<$ Input\+Type, Output\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_wire_cell_1_1_i_queuedout_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_base}{I\+Queuedout\+Node\+Base} $>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_aa286ccabc249c4b3c41be71862bbe024}{pointer}
+\item 
+typedef Input\+Type \hyperlink{class_wire_cell_1_1_i_queuedout_node_aa0501633b9a10015ab9f84852e045e30}{input\+\_\+type}
+\item 
+typedef Output\+Type \hyperlink{class_wire_cell_1_1_i_queuedout_node_a73c4920dd90460bd4f0ef9beb61d6091}{output\+\_\+type}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ const Input\+Type $>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ const Output\+Type $>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae0907b2315773a3aba69764795d9811a}{output\+\_\+pointer}
+\item 
+typedef std\+::deque$<$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae0907b2315773a3aba69764795d9811a}{output\+\_\+pointer} $>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_queuedout_node_a108a312ac858f484c69a614974fbd70a}{$\sim$\+I\+Queuedout\+Node} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}{operator()} (const boost\+::any \&anyin, \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_a9c144f13ef75e051847fe22888977a11}{queuedany} \&outanyq)
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_queuedout_node_a0c00d8011d718b474984287133d5841a}{operator()} (const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&in, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&outq)=0
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}{input\+\_\+types} ()
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}{output\+\_\+types} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Input\+Type, typename Output\+Type$>$\newline
+class Wire\+Cell\+::\+I\+Queuedout\+Node$<$ Input\+Type, Output\+Type $>$}
+
+
+
+Definition at line 37 of file I\+Queuedout\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}\label{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!input\+\_\+pointer@{input\+\_\+pointer}}
+\index{input\+\_\+pointer@{input\+\_\+pointer}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+pointer}{input\_pointer}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+typedef std\+::shared\+\_\+ptr$<$const Input\+Type$>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer}}
+
+
+
+Definition at line 44 of file I\+Queuedout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_aa0501633b9a10015ab9f84852e045e30}\label{class_wire_cell_1_1_i_queuedout_node_aa0501633b9a10015ab9f84852e045e30}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!input\+\_\+type@{input\+\_\+type}}
+\index{input\+\_\+type@{input\+\_\+type}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+type}{input\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+typedef Input\+Type \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_queuedout_node_aa0501633b9a10015ab9f84852e045e30}{input\+\_\+type}}
+
+
+
+Definition at line 42 of file I\+Queuedout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_ae0907b2315773a3aba69764795d9811a}\label{class_wire_cell_1_1_i_queuedout_node_ae0907b2315773a3aba69764795d9811a}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!output\+\_\+pointer@{output\+\_\+pointer}}
+\index{output\+\_\+pointer@{output\+\_\+pointer}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+pointer}{output\_pointer}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+typedef std\+::shared\+\_\+ptr$<$const Output\+Type$>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_queuedout_node_ae0907b2315773a3aba69764795d9811a}{output\+\_\+pointer}}
+
+
+
+Definition at line 45 of file I\+Queuedout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}\label{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!output\+\_\+queue@{output\+\_\+queue}}
+\index{output\+\_\+queue@{output\+\_\+queue}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+queue}{output\_queue}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+typedef std\+::deque$<$\hyperlink{class_wire_cell_1_1_i_queuedout_node_ae0907b2315773a3aba69764795d9811a}{output\+\_\+pointer}$>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue}}
+
+
+
+Definition at line 46 of file I\+Queuedout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_a73c4920dd90460bd4f0ef9beb61d6091}\label{class_wire_cell_1_1_i_queuedout_node_a73c4920dd90460bd4f0ef9beb61d6091}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!output\+\_\+type@{output\+\_\+type}}
+\index{output\+\_\+type@{output\+\_\+type}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+type}{output\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+typedef Output\+Type \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_queuedout_node_a73c4920dd90460bd4f0ef9beb61d6091}{output\+\_\+type}}
+
+
+
+Definition at line 43 of file I\+Queuedout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_aa286ccabc249c4b3c41be71862bbe024}\label{class_wire_cell_1_1_i_queuedout_node_aa286ccabc249c4b3c41be71862bbe024}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_queuedout_node_base}{I\+Queuedout\+Node\+Base}$>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{pointer}}
+
+
+
+Definition at line 40 of file I\+Queuedout\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_a108a312ac858f484c69a614974fbd70a}\label{class_wire_cell_1_1_i_queuedout_node_a108a312ac858f484c69a614974fbd70a}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!````~I\+Queuedout\+Node@{$\sim$\+I\+Queuedout\+Node}}
+\index{````~I\+Queuedout\+Node@{$\sim$\+I\+Queuedout\+Node}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Queuedout\+Node()}{~IQueuedoutNode()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_i_queuedout_node}{I\+Queuedout\+Node} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 48 of file I\+Queuedout\+Node.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}\label{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!input\+\_\+types@{input\+\_\+types}}
+\index{input\+\_\+types@{input\+\_\+types}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+types()}{input\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::input\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_ae13fc140c8e815fac9327dfa5b43f853}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 66 of file I\+Queuedout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}\label{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::any \&}]{anyin,  }\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_base_a9c144f13ef75e051847fe22888977a11}{queuedany} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The calling signature\+: 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_ad3723d92a4594fc9e3d6718fc0de9b1c}{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}.
+
+
+
+Definition at line 51 of file I\+Queuedout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_a0c00d8011d718b474984287133d5841a}\label{class_wire_cell_1_1_i_queuedout_node_a0c00d8011d718b474984287133d5841a}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&}]{in,  }\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&}]{outq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The calling signature\+: 
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}\label{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}!output\+\_\+types@{output\+\_\+types}}
+\index{output\+\_\+types@{output\+\_\+types}!Wire\+Cell\+::\+I\+Queuedout\+Node@{Wire\+Cell\+::\+I\+Queuedout\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+types()}{output\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node}{Wire\+Cell\+::\+I\+Queuedout\+Node}$<$ Input\+Type, Output\+Type $>$\+::output\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 70 of file I\+Queuedout\+Node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_queuedout_node_8h}{I\+Queuedout\+Node.\+h}\end{DoxyCompactItemize}

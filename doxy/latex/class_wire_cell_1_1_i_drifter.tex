@@ -1,0 +1,94 @@
+\hypertarget{class_wire_cell_1_1_i_drifter}{}\section{Wire\+Cell\+:\+:I\+Drifter Class Reference}
+\label{class_wire_cell_1_1_i_drifter}\index{Wire\+Cell\+::\+I\+Drifter@{Wire\+Cell\+::\+I\+Drifter}}
+
+
+{\ttfamily \#include $<$I\+Drifter.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Drifter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_drifter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Drifter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_wire_cell_1_1_i_drifter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_drifter}{I\+Drifter} $>$ \hyperlink{class_wire_cell_1_1_i_drifter_a2ba4a7cb70359edbc455f7fa711e58d6}{pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_drifter_a3f1d99bfce8eb3b203617690dcae04d8}{$\sim$\+I\+Drifter} ()
+\item 
+virtual std\+::string \hyperlink{class_wire_cell_1_1_i_drifter_af7f5abc751d9bd227d5bed94aa416a13}{signature} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A drifter takes in depositions at one location and drifts them to another location subject to a drift velocity. Drifters may assume their input is time ordered and must assure the output remains time-\/ordered (regardless of what time/space mixing may occur). In general, it means the drifter must buffer some number of depositions to assure it\textquotesingle{}s seen \char`\"{}enough\char`\"{} to determine that its earliest drifted deposition will not superseded by any subsequent ones. 
+
+Definition at line 18 of file I\+Drifter.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_drifter_a2ba4a7cb70359edbc455f7fa711e58d6}\label{class_wire_cell_1_1_i_drifter_a2ba4a7cb70359edbc455f7fa711e58d6}} 
+\index{Wire\+Cell\+::\+I\+Drifter@{Wire\+Cell\+::\+I\+Drifter}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Drifter@{Wire\+Cell\+::\+I\+Drifter}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_drifter}{I\+Drifter}$>$ \hyperlink{class_wire_cell_1_1_i_drifter_a2ba4a7cb70359edbc455f7fa711e58d6}{Wire\+Cell\+::\+I\+Drifter\+::pointer}}
+
+
+
+Definition at line 21 of file I\+Drifter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_drifter_a3f1d99bfce8eb3b203617690dcae04d8}\label{class_wire_cell_1_1_i_drifter_a3f1d99bfce8eb3b203617690dcae04d8}} 
+\index{Wire\+Cell\+::\+I\+Drifter@{Wire\+Cell\+::\+I\+Drifter}!````~I\+Drifter@{$\sim$\+I\+Drifter}}
+\index{````~I\+Drifter@{$\sim$\+I\+Drifter}!Wire\+Cell\+::\+I\+Drifter@{Wire\+Cell\+::\+I\+Drifter}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Drifter()}{~IDrifter()}}
+{\footnotesize\ttfamily I\+Drifter\+::$\sim$\+I\+Drifter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 127 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_drifter_af7f5abc751d9bd227d5bed94aa416a13}\label{class_wire_cell_1_1_i_drifter_af7f5abc751d9bd227d5bed94aa416a13}} 
+\index{Wire\+Cell\+::\+I\+Drifter@{Wire\+Cell\+::\+I\+Drifter}!signature@{signature}}
+\index{signature@{signature}!Wire\+Cell\+::\+I\+Drifter@{Wire\+Cell\+::\+I\+Drifter}}
+\subsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily virtual std\+::string Wire\+Cell\+::\+I\+Drifter\+::signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The signature is string unique to all classes that implement a particular calling signature. These should be defined in lower level interfaces such as a mythical I\+My\+Foo\+To\+Bar\+Converter. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_node_a0b0763465adf5ba7febe8e378162b584}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 25 of file I\+Drifter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_drifter_8h}{I\+Drifter.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

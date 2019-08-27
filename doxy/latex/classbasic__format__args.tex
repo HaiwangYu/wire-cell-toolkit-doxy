@@ -1,0 +1,198 @@
+\hypertarget{classbasic__format__args}{}\section{basic\+\_\+format\+\_\+args$<$ Context $>$ Class Template Reference}
+\label{classbasic__format__args}\index{basic\+\_\+format\+\_\+args$<$ Context $>$@{basic\+\_\+format\+\_\+args$<$ Context $>$}}
+
+
+{\ttfamily \#include $<$core.\+h$>$}
+
+
+
+Collaboration diagram for basic\+\_\+format\+\_\+args$<$ Context $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classbasic__format__args__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned \hyperlink{classbasic__format__args_abced2890cde3213027d493494d89c611}{size\+\_\+type}
+\item 
+typedef \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ \hyperlink{classbasic__format__args_aa8e7659bf8a41ef7cf889bd3edcbc129}{format\+\_\+arg}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbasic__format__args_a1a0b07912511030ffbe01a71e7baee22}{basic\+\_\+format\+\_\+args} ()
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classbasic__format__args_aff6e7b681609f33b18afb00281259ce2}{basic\+\_\+format\+\_\+args} (const \hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$ Context, Args... $>$ \&store)
+\item 
+\hyperlink{classbasic__format__args_a1ee5ccabb966711853a85daf1ac77689}{basic\+\_\+format\+\_\+args} (const \hyperlink{classbasic__format__args_aa8e7659bf8a41ef7cf889bd3edcbc129}{format\+\_\+arg} $\ast$\hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args}, \hyperlink{classbasic__format__args_abced2890cde3213027d493494d89c611}{size\+\_\+type} count)
+\item 
+\hyperlink{classbasic__format__args_aa8e7659bf8a41ef7cf889bd3edcbc129}{format\+\_\+arg} \hyperlink{classbasic__format__args_ad381a683779a65c09c258faa2a0dbbea}{get} (\hyperlink{classbasic__format__args_abced2890cde3213027d493494d89c611}{size\+\_\+type} index) const
+\item 
+\hyperlink{classbasic__format__args_abced2890cde3213027d493494d89c611}{size\+\_\+type} \hyperlink{classbasic__format__args_a6deab6159b5377124f3a9d6ad5b0bfa2}{max\+\_\+size} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbasic__format__args_a7974100f026be256213827458684be38}{internal\+::arg\+\_\+map$<$ Context $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Context$>$\newline
+class basic\+\_\+format\+\_\+args$<$ Context $>$}
+
+Formatting arguments. 
+
+Definition at line 487 of file core.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classbasic__format__args_aa8e7659bf8a41ef7cf889bd3edcbc129}\label{classbasic__format__args_aa8e7659bf8a41ef7cf889bd3edcbc129}} 
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!format\+\_\+arg@{format\+\_\+arg}}
+\index{format\+\_\+arg@{format\+\_\+arg}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\subsubsection{\texorpdfstring{format\+\_\+arg}{format\_arg}}
+{\footnotesize\ttfamily template$<$typename Context$>$ \\
+typedef \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$Context$>$ \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$\+::\hyperlink{classbasic__format__args_aa8e7659bf8a41ef7cf889bd3edcbc129}{format\+\_\+arg}}
+
+
+
+Definition at line 1206 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__format__args_abced2890cde3213027d493494d89c611}\label{classbasic__format__args_abced2890cde3213027d493494d89c611}} 
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily template$<$typename Context$>$ \\
+typedef unsigned \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$\+::\hyperlink{classbasic__format__args_abced2890cde3213027d493494d89c611}{size\+\_\+type}}
+
+
+
+Definition at line 1205 of file core.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbasic__format__args_a1a0b07912511030ffbe01a71e7baee22}\label{classbasic__format__args_a1a0b07912511030ffbe01a71e7baee22}} 
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\subsubsection{\texorpdfstring{basic\+\_\+format\+\_\+args()}{basic\_format\_args()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Context$>$ \\
+\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$\+::\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1254 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__format__args_aff6e7b681609f33b18afb00281259ce2}\label{classbasic__format__args_aff6e7b681609f33b18afb00281259ce2}} 
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\subsubsection{\texorpdfstring{basic\+\_\+format\+\_\+args()}{basic\_format\_args()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Context$>$ \\
+template$<$typename... Args$>$ \\
+\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$\+::\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args} (\begin{DoxyParamCaption}\item[{const \hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$ Context, Args... $>$ \&}]{store }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a {\ttfamily \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}} object from {\ttfamily $\sim$fmt\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}}.  
+
+Definition at line 1262 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__format__args_a1ee5ccabb966711853a85daf1ac77689}\label{classbasic__format__args_a1ee5ccabb966711853a85daf1ac77689}} 
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\subsubsection{\texorpdfstring{basic\+\_\+format\+\_\+args()}{basic\_format\_args()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Context$>$ \\
+\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$\+::\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args} (\begin{DoxyParamCaption}\item[{const \hyperlink{classbasic__format__args_aa8e7659bf8a41ef7cf889bd3edcbc129}{format\+\_\+arg} $\ast$}]{args,  }\item[{\hyperlink{classbasic__format__args_abced2890cde3213027d493494d89c611}{size\+\_\+type}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a {\ttfamily \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}} object from a dynamic set of arguments.  
+
+Definition at line 1272 of file core.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbasic__format__args_ad381a683779a65c09c258faa2a0dbbea}\label{classbasic__format__args_ad381a683779a65c09c258faa2a0dbbea}} 
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!get@{get}}
+\index{get@{get}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename Context$>$ \\
+\hyperlink{classbasic__format__args_aa8e7659bf8a41ef7cf889bd3edcbc129}{format\+\_\+arg} \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$\+::get (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__format__args_abced2890cde3213027d493494d89c611}{size\+\_\+type}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the argument at specified index. 
+
+Definition at line 1278 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic__format__args_ad381a683779a65c09c258faa2a0dbbea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__format__args_a6deab6159b5377124f3a9d6ad5b0bfa2}\label{classbasic__format__args_a6deab6159b5377124f3a9d6ad5b0bfa2}} 
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\subsubsection{\texorpdfstring{max\+\_\+size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$typename Context$>$ \\
+\hyperlink{classbasic__format__args_abced2890cde3213027d493494d89c611}{size\+\_\+type} \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1285 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classbasic__format__args_a6deab6159b5377124f3a9d6ad5b0bfa2_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classbasic__format__args_a7974100f026be256213827458684be38}\label{classbasic__format__args_a7974100f026be256213827458684be38}} 
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!internal\+::arg\+\_\+map$<$ Context $>$@{internal\+::arg\+\_\+map$<$ Context $>$}}
+\index{internal\+::arg\+\_\+map$<$ Context $>$@{internal\+::arg\+\_\+map$<$ Context $>$}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\subsubsection{\texorpdfstring{internal\+::arg\+\_\+map$<$ Context $>$}{internal::arg\_map< Context >}}
+{\footnotesize\ttfamily template$<$typename Context$>$ \\
+friend class \hyperlink{classinternal_1_1arg__map}{internal\+::arg\+\_\+map}$<$ Context $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 1230 of file core.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classbasic__format__args_a10f1ae5ac5a30339225e090f0bef62c1}\label{classbasic__format__args_a10f1ae5ac5a30339225e090f0bef62c1}} 
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!args\+\_\+@{args\+\_\+}}
+\index{args\+\_\+@{args\+\_\+}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\subsubsection{\texorpdfstring{args\+\_\+}{args\_}}
+{\footnotesize\ttfamily template$<$typename Context$>$ \\
+const \hyperlink{classbasic__format__args_aa8e7659bf8a41ef7cf889bd3edcbc129}{format\+\_\+arg}$\ast$ \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$\+::args\+\_\+}
+
+
+
+Definition at line 1219 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__format__args_a5150e3a6c8ef4f2646c64f589f6bfae9}\label{classbasic__format__args_a5150e3a6c8ef4f2646c64f589f6bfae9}} 
+\index{basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}!values\+\_\+@{values\+\_\+}}
+\index{values\+\_\+@{values\+\_\+}!basic\+\_\+format\+\_\+args@{basic\+\_\+format\+\_\+args}}
+\subsubsection{\texorpdfstring{values\+\_\+}{values\_}}
+{\footnotesize\ttfamily template$<$typename Context$>$ \\
+const \hyperlink{classinternal_1_1value}{internal\+::value}$<$Context$>$$\ast$ \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$\+::values\+\_\+}
+
+
+
+Definition at line 1218 of file core.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{core_8h}{core.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="WirePlaneCache::wire_by_index" name="WirePlaneCache::wire_by_index">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_wire_summary.html#ad5b6996523e8d8a98fd0caec607fd9ad" title="WireCell::WireSummary\l::closest" alt="" coords="205,5,368,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_wire_summary.html#a0dd41ce408d6cf49e923a1bd0a893038" title="WireCell::WireSummary\l::bounding_wires" alt="" coords="205,71,368,112"/>
+</map>

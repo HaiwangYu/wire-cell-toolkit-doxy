@@ -1,0 +1,23 @@
+<map id="WireCell::Binning::nbins" name="WireCell::Binning::nbins">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion.html#a22377d1afccdee836981ce2979ab49b4" title="WireCell::Gen::BinnedDiffusion\l::impact_data" alt="" coords="187,258,391,299"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_impact_zipper.html#a542bc19237317cce10742ae097e647ec" title="WireCell::Gen::ImpactZipper\l::waveform" alt="" coords="696,316,884,358"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_depo_zipper.html#af883a6a654a4a374d17f4db84d268510" title="WireCell::Gen::DepoZipper\l::operator()" alt="" coords="933,275,1112,316"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_ductor.html#afec4558613941dc3bb752a3811aadd3d" title="WireCell::Gen::Ductor\l::process_face" alt="" coords="947,358,1098,399"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_gen_1_1_truth_smearer.html#a75e03e4110e01b8ff31ad3aba5e7804d" title="Accept a configuration. " alt="" coords="695,199,885,240"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_gen_1_1_truth_trace_i_d.html#adeed1a28e9ed6d5da7e07378b172bd48" title="Accept a configuration. " alt="" coords="457,140,632,182"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_gen_1_1_depo_transform.html#a72bd0b9e256a8e9f4311c61cf6b5692b" title="WireCell::Gen::DepoTransform\l::operator()" alt="" coords="443,502,646,543"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_gen_1_1_impact_transform.html#ad65b81bab03b2a6f8836782c732556bc" title="WireCell::Gen::ImpactTransform\l::waveform" alt="" coords="184,527,395,568"/>
+<area shape="rect" id="node14" href="$namespacewct_1_1sigproc.html#ad081c59d5eae16e2375425a9e1a65679" title="wct::sigproc::raster" alt="" coords="222,593,357,620"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response.html#a897752df4a2a548028aa1051a0b5b372" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="201,644,378,700"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response.html#a3e1d2284621e69ff712cc6a7a373c797" title="Accept a configuration. " alt="" coords="201,724,378,780"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_sig_proc_1_1_per_channel_response.html#aeab6cfaae5ca5e6697a025d957083047" title="Accept a configuration. " alt="" coords="211,804,368,860"/>
+<area shape="rect" id="node18" href="$class_wire_cell_1_1_binning.html#a76d15fa7ac7d60e63f7d77c28f2acac8" title="WireCell::Binning::\lBinning" alt="" coords="224,884,355,926"/>
+<area shape="rect" id="node19" href="$class_wire_cell_1_1_binning.html#a6bbcf5f258e115803cbd83cb25f839d4" title="WireCell::Binning::set" alt="" coords="215,950,364,977"/>
+<area shape="rect" id="node21" href="$namespace_wire_cell.html#a7c36c8ada205f970a75ddb4e0841ff43" title="WireCell::operator\&lt;\&lt;" alt="" coords="218,1001,361,1028"/>
+<area shape="rect" id="node22" href="$class_wire_cell_1_1_response_1_1_generator.html#a571c13c36686dc25f987b0c189a6ce92" title="Lay down the function into a binned waveform. " alt="" coords="217,1052,362,1094"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion.html#add5e00394c16a9fc27be4b7d617fa59b" title="WireCell::Gen::BinnedDiffusion\l::tbins" alt="" coords="443,258,647,299"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a1454baebba2e385dea9cd098236dd515" title="WireCell::Gen::Ductor\l::process" alt="" coords="1160,358,1311,399"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a1a103a685f920781c7d312f168b52841" title="WireCell::Gen::Ductor\l::operator()" alt="" coords="1359,358,1509,399"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a331c4314dba8472ab8c49dbc9112ff4b" title="WireCell::Gen::Ductor\l::~Ductor" alt="" coords="1557,358,1708,399"/>
+<area shape="rect" id="node20" href="$class_wire_cell_1_1_pimpos.html#a3cced28a957f1b3f9610166e29441934" title="WireCell::Pimpos::Pimpos" alt="" coords="457,950,633,977"/>
+</map>

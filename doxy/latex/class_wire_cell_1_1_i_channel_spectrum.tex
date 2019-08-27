@@ -1,0 +1,90 @@
+\hypertarget{class_wire_cell_1_1_i_channel_spectrum}{}\section{Wire\+Cell\+:\+:I\+Channel\+Spectrum Class Reference}
+\label{class_wire_cell_1_1_i_channel_spectrum}\index{Wire\+Cell\+::\+I\+Channel\+Spectrum@{Wire\+Cell\+::\+I\+Channel\+Spectrum}}
+
+
+{\ttfamily \#include $<$I\+Channel\+Spectrum.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Channel\+Spectrum\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_wire_cell_1_1_i_channel_spectrum__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Channel\+Spectrum\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_wire_cell_1_1_i_channel_spectrum__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ float $>$ \hyperlink{class_wire_cell_1_1_i_channel_spectrum_a9af7bfed961f49dc8a532fd5d0bf3e6e}{amplitude\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_spectrum_ad751811a830ad115e233604435209844}{$\sim$\+I\+Channel\+Spectrum} ()
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_spectrum_a9af7bfed961f49dc8a532fd5d0bf3e6e}{amplitude\+\_\+t} \& \hyperlink{class_wire_cell_1_1_i_channel_spectrum_a587c11bd2e39e3136b1b60268d22bf9f}{operator()} (int chid) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file I\+Channel\+Spectrum.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_spectrum_a9af7bfed961f49dc8a532fd5d0bf3e6e}\label{class_wire_cell_1_1_i_channel_spectrum_a9af7bfed961f49dc8a532fd5d0bf3e6e}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Spectrum@{Wire\+Cell\+::\+I\+Channel\+Spectrum}!amplitude\+\_\+t@{amplitude\+\_\+t}}
+\index{amplitude\+\_\+t@{amplitude\+\_\+t}!Wire\+Cell\+::\+I\+Channel\+Spectrum@{Wire\+Cell\+::\+I\+Channel\+Spectrum}}
+\subsubsection{\texorpdfstring{amplitude\+\_\+t}{amplitude\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$float$>$ \hyperlink{class_wire_cell_1_1_i_channel_spectrum_a9af7bfed961f49dc8a532fd5d0bf3e6e}{Wire\+Cell\+::\+I\+Channel\+Spectrum\+::amplitude\+\_\+t}}
+
+The data type for frequency space amplitude (not power). It should be in units of \mbox{[}X\mbox{]}/\mbox{[}frequency\mbox{]} (equivalently \mbox{[}X\mbox{]}$\ast$\mbox{[}time\mbox{]}) where \mbox{[}X\mbox{]} is the unit of the equivalent waveform expressed in the time domain. For a noise model \mbox{[}X\mbox{]} is likely \mbox{[}voltage\mbox{]}. 
+
+Definition at line 27 of file I\+Channel\+Spectrum.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_spectrum_ad751811a830ad115e233604435209844}\label{class_wire_cell_1_1_i_channel_spectrum_ad751811a830ad115e233604435209844}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Spectrum@{Wire\+Cell\+::\+I\+Channel\+Spectrum}!````~I\+Channel\+Spectrum@{$\sim$\+I\+Channel\+Spectrum}}
+\index{````~I\+Channel\+Spectrum@{$\sim$\+I\+Channel\+Spectrum}!Wire\+Cell\+::\+I\+Channel\+Spectrum@{Wire\+Cell\+::\+I\+Channel\+Spectrum}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Channel\+Spectrum()}{~IChannelSpectrum()}}
+{\footnotesize\ttfamily I\+Channel\+Spectrum\+::$\sim$\+I\+Channel\+Spectrum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 104 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_spectrum_a587c11bd2e39e3136b1b60268d22bf9f}\label{class_wire_cell_1_1_i_channel_spectrum_a587c11bd2e39e3136b1b60268d22bf9f}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Spectrum@{Wire\+Cell\+::\+I\+Channel\+Spectrum}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Channel\+Spectrum@{Wire\+Cell\+::\+I\+Channel\+Spectrum}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_i_channel_spectrum_a9af7bfed961f49dc8a532fd5d0bf3e6e}{amplitude\+\_\+t}\& Wire\+Cell\+::\+I\+Channel\+Spectrum\+::operator() (\begin{DoxyParamCaption}\item[{int}]{chid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the spectrum associated with the given channel ID in suitable binning. In the implementing component, the \hyperlink{class_wire_cell_1_1_binning}{Binning} should likely be coordinated with the rest of the application via the configuration. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a9ed3c28256c1c262064c62816b4b225f}{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_channel_spectrum_8h}{I\+Channel\+Spectrum.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

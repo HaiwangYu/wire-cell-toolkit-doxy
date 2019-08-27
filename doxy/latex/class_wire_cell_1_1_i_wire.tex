@@ -1,0 +1,178 @@
+\hypertarget{class_wire_cell_1_1_i_wire}{}\section{Wire\+Cell\+:\+:I\+Wire Class Reference}
+\label{class_wire_cell_1_1_i_wire}\index{Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}}
+
+
+\hyperlink{class_wire_cell_1_1_interface}{Interface} to information about a physical wire segment.  
+
+
+
+
+{\ttfamily \#include $<$I\+Wire.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Wire\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_wire_cell_1_1_i_wire__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Wire\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_wire_cell_1_1_i_wire__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_wire_a99180a0590802eabb706eead70d3cd65}{$\sim$\+I\+Wire} ()
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_wire_a0e188a183e202dfb6dce25f6b16fc390}{ident} () const =0
+\item 
+virtual \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} \hyperlink{class_wire_cell_1_1_i_wire_ac1be702dac05d5298f7cf20a5fda910b}{planeid} () const =0
+\begin{DoxyCompactList}\small\item\em The ID of the plane this wire is in. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_wire_abe81fe1d38c3d0a73e812e765f2081cd}{index} () const =0
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_wire_a24de34af80ad78b15137adb196ed1189}{channel} () const =0
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_wire_a8628e5620e63e66790635b59ed8076ce}{segment} () const =0
+\item 
+virtual \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Wire\+Cell\+::\+Ray} \hyperlink{class_wire_cell_1_1_i_wire_aded43e813ce82b02e7fc0316d11cfa43}{ray} () const =0
+\begin{DoxyCompactList}\small\item\em Return the ray representing the wire segment. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Wire\+Cell\+::\+Point} \hyperlink{class_wire_cell_1_1_i_wire_aec6abd930c2209a7bd809b30a871d1b6}{center} () const
+\begin{DoxyCompactList}\small\item\em Return the center point of the wire. Convenience method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wire_cell_1_1_interface}{Interface} to information about a physical wire segment. 
+
+Definition at line 18 of file I\+Wire.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_a99180a0590802eabb706eead70d3cd65}\label{class_wire_cell_1_1_i_wire_a99180a0590802eabb706eead70d3cd65}} 
+\index{Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}!````~I\+Wire@{$\sim$\+I\+Wire}}
+\index{````~I\+Wire@{$\sim$\+I\+Wire}!Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Wire()}{~IWire()}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+I\+Wire\+::$\sim$\+I\+Wire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 4 of file I\+Wire.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_aec6abd930c2209a7bd809b30a871d1b6}\label{class_wire_cell_1_1_i_wire_aec6abd930c2209a7bd809b30a871d1b6}} 
+\index{Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}!center@{center}}
+\index{center@{center}!Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}}
+\subsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Wire\+Cell\+::\+Point} Wire\+Cell\+::\+I\+Wire\+::center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the center point of the wire. Convenience method. 
+
+
+
+Definition at line 9 of file I\+Wire.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_wire_cell_1_1_i_wire_aec6abd930c2209a7bd809b30a871d1b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_a24de34af80ad78b15137adb196ed1189}\label{class_wire_cell_1_1_i_wire_a24de34af80ad78b15137adb196ed1189}} 
+\index{Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}!channel@{channel}}
+\index{channel@{channel}!Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}}
+\subsubsection{\texorpdfstring{channel()}{channel()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Wire\+::channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Detector-\/dependent electronics channel number, negative is illegal. All wires with a common channel number are considered electrically connected. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_wire_a98e2ccfbe7f784cdcddbb49e8097be6f}{Wire\+Cell\+::\+Gen\+Wire}, and \hyperlink{class_wire_cell_1_1_simple_wire_afc85442561cf9421725bde79eb55b611}{Wire\+Cell\+::\+Simple\+Wire}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_a0e188a183e202dfb6dce25f6b16fc390}\label{class_wire_cell_1_1_i_wire_a0e188a183e202dfb6dce25f6b16fc390}} 
+\index{Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}!ident@{ident}}
+\index{ident@{ident}!Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}}
+\subsubsection{\texorpdfstring{ident()}{ident()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Wire\+::ident (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Detector-\/dependent, globally unique ID number. Negative is illegal, not guaranteed consecutive. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_wire_a5656bd4873e5160e01eea7fa923b3859}{Wire\+Cell\+::\+Gen\+Wire}, and \hyperlink{class_wire_cell_1_1_simple_wire_a7e7a70124200787e3b325351ab34ec8e}{Wire\+Cell\+::\+Simple\+Wire}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_abe81fe1d38c3d0a73e812e765f2081cd}\label{class_wire_cell_1_1_i_wire_abe81fe1d38c3d0a73e812e765f2081cd}} 
+\index{Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}!index@{index}}
+\index{index@{index}!Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}}
+\subsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Wire\+::index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Consecutive, zero-\/based index into an ordered sequence of wires in their plane 
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_wire_a9d9189545db2c32b2c2e532cea2aa82e}{Wire\+Cell\+::\+Gen\+Wire}, and \hyperlink{class_wire_cell_1_1_simple_wire_a30b573d4e30069df22532b79b72d084f}{Wire\+Cell\+::\+Simple\+Wire}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_ac1be702dac05d5298f7cf20a5fda910b}\label{class_wire_cell_1_1_i_wire_ac1be702dac05d5298f7cf20a5fda910b}} 
+\index{Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}!planeid@{planeid}}
+\index{planeid@{planeid}!Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}}
+\subsubsection{\texorpdfstring{planeid()}{planeid()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} Wire\+Cell\+::\+I\+Wire\+::planeid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The ID of the plane this wire is in. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_wire_a3c2544d86575773427983718795ad6b5}{Wire\+Cell\+::\+Gen\+Wire}, and \hyperlink{class_wire_cell_1_1_simple_wire_a73c7459a542146db971644530f8f8d0d}{Wire\+Cell\+::\+Simple\+Wire}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_aded43e813ce82b02e7fc0316d11cfa43}\label{class_wire_cell_1_1_i_wire_aded43e813ce82b02e7fc0316d11cfa43}} 
+\index{Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}!ray@{ray}}
+\index{ray@{ray}!Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}}
+\subsubsection{\texorpdfstring{ray()}{ray()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Wire\+Cell\+::\+Ray} Wire\+Cell\+::\+I\+Wire\+::ray (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the ray representing the wire segment. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_wire_a8938590c1c476c57de50ff087f67b8f0}{Wire\+Cell\+::\+Gen\+Wire}, and \hyperlink{class_wire_cell_1_1_simple_wire_a428dfadc5733bf94b4a422762e55b7f7}{Wire\+Cell\+::\+Simple\+Wire}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_wire_cell_1_1_i_wire_aded43e813ce82b02e7fc0316d11cfa43_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_a8628e5620e63e66790635b59ed8076ce}\label{class_wire_cell_1_1_i_wire_a8628e5620e63e66790635b59ed8076ce}} 
+\index{Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}!segment@{segment}}
+\index{segment@{segment}!Wire\+Cell\+::\+I\+Wire@{Wire\+Cell\+::\+I\+Wire}}
+\subsubsection{\texorpdfstring{segment()}{segment()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Wire\+::segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the number of wire segments between the channel input and this wire. Wire directly attached to channel input is segment==0. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_wire_a27ade571103d3591a7addd4ff9dd757f}{Wire\+Cell\+::\+Gen\+Wire}, and \hyperlink{class_wire_cell_1_1_simple_wire_a965be3ecc234084376422ef89af0958c}{Wire\+Cell\+::\+Simple\+Wire}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_wire_8h}{I\+Wire.\+h}\item 
+iface/src/\hyperlink{_i_wire_8cxx}{I\+Wire.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="WireCell::Main::set_loglevel" name="WireCell::Main::set_loglevel">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_log.html#af453ddce8d810f730dca72024376727e" title="WireCell::Log::set\l_level" alt="" coords="188,49,315,90"/>
+<area shape="rect" id="node3" href="$namespacespdlog_1_1level.html#aad88aa14232ac8b65ee62f8e5ad3df5a" title="spdlog::level::from_str" alt="" coords="363,5,513,32"/>
+<area shape="rect" id="node4" href="$namespacespdlog.html#a9f952c6a1e1114b474aff89965261a1b" title="spdlog::set_level" alt="" coords="378,56,498,83"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1_log.html#a7675bcc4bf25b2bc66314d5c096cf676" title="WireCell::Log::logger" alt="" coords="366,107,510,133"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1details_1_1registry.html#a58a1bbb352f751f6b729bc57bfadd6be" title="spdlog::details::registry\l::instance" alt="" coords="561,17,719,58"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1details_1_1registry.html#a4b8494e781ed3151586b307cca63edb7" title="spdlog::details::registry\l::set_level" alt="" coords="561,82,719,123"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1logger.html#a0d0307a6501a9f56689c386a006991fe" title="spdlog::logger::default\l_level" alt="" coords="767,17,917,58"/>
+</map>

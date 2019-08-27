@@ -1,0 +1,4 @@
+<map id="WireCell::Response::hf_filter" name="WireCell::Response::hf_filter">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_hf_filter.html#a4b34ce856b103ea1cfff4d418b1aae6d" title="Provide the filter waveform with a given number of frequency bins. " alt="" coords="192,5,355,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_response_1_1_hf_filter.html#afef6eabeb4c0632352c574f6f263405b" title="WireCell::Response\l::HfFilter::operator()" alt="" coords="204,71,343,112"/>
+</map>

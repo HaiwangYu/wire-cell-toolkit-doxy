@@ -1,0 +1,260 @@
+\hypertarget{class_wire_cell_1_1_buffered_histogram2_d}{}\section{Wire\+Cell\+:\+:Buffered\+Histogram2D Class Reference}
+\label{class_wire_cell_1_1_buffered_histogram2_d}\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+
+
+{\ttfamily \#include $<$Buffered\+Histogram2\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_buffered_histogram2_d_a152ca655ff3547703ea3c41849af83aa}{Buffered\+Histogram2D} (double \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_a3c2df0d26df3d418fe85d01ac21bf868}{xbinsize}=1.\+0, double \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_abb36fbf4ad399b56d7c72556e596a7c4}{ybinsize}=1.\+0, double \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_a282c0f0144e547a7893760993461d4d7}{xmin}=0.\+0, double \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_a772cc0d25c6cf84beb629960d5e3e440}{ymin}=0.\+0)
+\item 
+bool \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_aad0ca16181ede3b04c11f8e192a3a58e}{fill} (double x, double y, double v=1.\+0)
+\begin{DoxyCompactList}\small\item\em Add v to the bin holding x,y. Return false if point is out of bounds. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_afc75d4003198ed485a4677eeac52a420}{popx} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_a137d22d7e24ae8f1cd8a99608601bceb}{size} () const
+\begin{DoxyCompactList}\small\item\em popy is not yet implemented. \end{DoxyCompactList}\item 
+int \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_a2ce3d1a3085fe45c039d65b00907d4a6}{xsize} () const
+\item 
+int \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_adbf757c3cdbfd1c6f09474bc8a9c2a8f}{ysize} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_a282c0f0144e547a7893760993461d4d7}{xmin} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_a772cc0d25c6cf84beb629960d5e3e440}{ymin} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_ae993317d293e8e80541958c481e90977}{xmax} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_af0286addd8f7124fa4def025db6038d4}{ymax} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_a3c2df0d26df3d418fe85d01ac21bf868}{xbinsize} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_buffered_histogram2_d_abb36fbf4ad399b56d7c72556e596a7c4}{ybinsize} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 2D histogram which can expand its range based on filling and have its edge sliced off. 
+
+Definition at line 12 of file Buffered\+Histogram2\+D.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_a152ca655ff3547703ea3c41849af83aa}\label{class_wire_cell_1_1_buffered_histogram2_d_a152ca655ff3547703ea3c41849af83aa}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!Buffered\+Histogram2D@{Buffered\+Histogram2D}}
+\index{Buffered\+Histogram2D@{Buffered\+Histogram2D}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{Buffered\+Histogram2\+D()}{BufferedHistogram2D()}}
+{\footnotesize\ttfamily Buffered\+Histogram2\+D\+::\+Buffered\+Histogram2D (\begin{DoxyParamCaption}\item[{double}]{xbinsize = {\ttfamily 1.0},  }\item[{double}]{ybinsize = {\ttfamily 1.0},  }\item[{double}]{xmin = {\ttfamily 0.0},  }\item[{double}]{ymin = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Create a buffered 2d histogram with lower corner at xmin, ymin and with bins of given sizes. 
+
+Definition at line 7 of file Buffered\+Histogram2\+D.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_aad0ca16181ede3b04c11f8e192a3a58e}\label{class_wire_cell_1_1_buffered_histogram2_d_aad0ca16181ede3b04c11f8e192a3a58e}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!fill@{fill}}
+\index{fill@{fill}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily bool Buffered\+Histogram2\+D\+::fill (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{v = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+
+
+Add v to the bin holding x,y. Return false if point is out of bounds. 
+
+
+
+Definition at line 31 of file Buffered\+Histogram2\+D.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_afc75d4003198ed485a4677eeac52a420}\label{class_wire_cell_1_1_buffered_histogram2_d_afc75d4003198ed485a4677eeac52a420}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!popx@{popx}}
+\index{popx@{popx}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{popx()}{popx()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Buffered\+Histogram2\+D\+::popx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Slice off the lowest X bin and return it as a vector. Note, the zeroth element of the vector corresponds to the bin starting at ymin but the length of vector may not represent the global ymax. 
+
+Definition at line 54 of file Buffered\+Histogram2\+D.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_a137d22d7e24ae8f1cd8a99608601bceb}\label{class_wire_cell_1_1_buffered_histogram2_d_a137d22d7e24ae8f1cd8a99608601bceb}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!size@{size}}
+\index{size@{size}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Buffered\+Histogram2\+D\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+popy is not yet implemented. 
+
+
+
+Definition at line 39 of file Buffered\+Histogram2\+D.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_buffered_histogram2_d_a137d22d7e24ae8f1cd8a99608601bceb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_a3c2df0d26df3d418fe85d01ac21bf868}\label{class_wire_cell_1_1_buffered_histogram2_d_a3c2df0d26df3d418fe85d01ac21bf868}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!xbinsize@{xbinsize}}
+\index{xbinsize@{xbinsize}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{xbinsize()}{xbinsize()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Buffered\+Histogram2\+D\+::xbinsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 48 of file Buffered\+Histogram2\+D.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_ae993317d293e8e80541958c481e90977}\label{class_wire_cell_1_1_buffered_histogram2_d_ae993317d293e8e80541958c481e90977}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!xmax@{xmax}}
+\index{xmax@{xmax}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{xmax()}{xmax()}}
+{\footnotesize\ttfamily double Buffered\+Histogram2\+D\+::xmax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 13 of file Buffered\+Histogram2\+D.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_buffered_histogram2_d_ae993317d293e8e80541958c481e90977_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_buffered_histogram2_d_ae993317d293e8e80541958c481e90977_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_a282c0f0144e547a7893760993461d4d7}\label{class_wire_cell_1_1_buffered_histogram2_d_a282c0f0144e547a7893760993461d4d7}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!xmin@{xmin}}
+\index{xmin@{xmin}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{xmin()}{xmin()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Buffered\+Histogram2\+D\+::xmin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 44 of file Buffered\+Histogram2\+D.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_buffered_histogram2_d_a282c0f0144e547a7893760993461d4d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_a2ce3d1a3085fe45c039d65b00907d4a6}\label{class_wire_cell_1_1_buffered_histogram2_d_a2ce3d1a3085fe45c039d65b00907d4a6}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!xsize@{xsize}}
+\index{xsize@{xsize}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{xsize()}{xsize()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Buffered\+Histogram2\+D\+::xsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file Buffered\+Histogram2\+D.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_buffered_histogram2_d_a2ce3d1a3085fe45c039d65b00907d4a6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_abb36fbf4ad399b56d7c72556e596a7c4}\label{class_wire_cell_1_1_buffered_histogram2_d_abb36fbf4ad399b56d7c72556e596a7c4}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!ybinsize@{ybinsize}}
+\index{ybinsize@{ybinsize}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{ybinsize()}{ybinsize()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Buffered\+Histogram2\+D\+::ybinsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 49 of file Buffered\+Histogram2\+D.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_af0286addd8f7124fa4def025db6038d4}\label{class_wire_cell_1_1_buffered_histogram2_d_af0286addd8f7124fa4def025db6038d4}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!ymax@{ymax}}
+\index{ymax@{ymax}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{ymax()}{ymax()}}
+{\footnotesize\ttfamily double Buffered\+Histogram2\+D\+::ymax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 17 of file Buffered\+Histogram2\+D.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_buffered_histogram2_d_af0286addd8f7124fa4def025db6038d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_buffered_histogram2_d_af0286addd8f7124fa4def025db6038d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_a772cc0d25c6cf84beb629960d5e3e440}\label{class_wire_cell_1_1_buffered_histogram2_d_a772cc0d25c6cf84beb629960d5e3e440}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!ymin@{ymin}}
+\index{ymin@{ymin}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{ymin()}{ymin()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Buffered\+Histogram2\+D\+::ymin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file Buffered\+Histogram2\+D.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_buffered_histogram2_d_a772cc0d25c6cf84beb629960d5e3e440_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_buffered_histogram2_d_a772cc0d25c6cf84beb629960d5e3e440_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_buffered_histogram2_d_adbf757c3cdbfd1c6f09474bc8a9c2a8f}\label{class_wire_cell_1_1_buffered_histogram2_d_adbf757c3cdbfd1c6f09474bc8a9c2a8f}} 
+\index{Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}!ysize@{ysize}}
+\index{ysize@{ysize}!Wire\+Cell\+::\+Buffered\+Histogram2D@{Wire\+Cell\+::\+Buffered\+Histogram2D}}
+\subsubsection{\texorpdfstring{ysize()}{ysize()}}
+{\footnotesize\ttfamily int Buffered\+Histogram2\+D\+::ysize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 21 of file Buffered\+Histogram2\+D.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_buffered_histogram2_d_adbf757c3cdbfd1c6f09474bc8a9c2a8f_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_buffered_histogram2_d_8h}{Buffered\+Histogram2\+D.\+h}\item 
+util/src/\hyperlink{_buffered_histogram2_d_8cxx}{Buffered\+Histogram2\+D.\+cxx}\end{DoxyCompactItemize}

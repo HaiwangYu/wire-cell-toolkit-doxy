@@ -1,0 +1,66 @@
+\hypertarget{_configuration_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Configuration.h File Reference}
+\label{_configuration_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Configuration.\+h@{util/inc/\+Wire\+Cell\+Util/\+Configuration.\+h}}
+{\ttfamily \#include $<$json/json.\+h$>$}\newline
+{\ttfamily \#include $<$boost/algorithm/string/split.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/algorithm/string/classification.\+hpp$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for Configuration.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_configuration_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_configuration_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Json\+::\+Value \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespace_wire_cell_a5f6648d6ae801b20a17b8a35fd3306e5}{Wire\+Cell\+::convert} (const Configuration \&cfg, const T \&def=T())
+\begin{DoxyCompactList}\small\item\em Convert a configuration value to a particular type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$$>$ }\\bool \hyperlink{namespace_wire_cell_ac37e45ffe2bff57d04d3a4b63880f56e}{Wire\+Cell\+::convert$<$ bool $>$} (const Configuration \&cfg, const bool \&def)
+\item 
+{\footnotesize template$<$$>$ }\\int \hyperlink{namespace_wire_cell_aaf4b353f8d18d8e510569614e22b8bab}{Wire\+Cell\+::convert$<$ int $>$} (const Configuration \&cfg, const int \&def)
+\item 
+{\footnotesize template$<$$>$ }\\float \hyperlink{namespace_wire_cell_af4f0d30f38b85de317c7766d8edb3e5b}{Wire\+Cell\+::convert$<$ float $>$} (const Configuration \&cfg, const float \&def)
+\item 
+{\footnotesize template$<$$>$ }\\double \hyperlink{namespace_wire_cell_a09f4e09c04881f2ae1c38305dca95d3e}{Wire\+Cell\+::convert$<$ double $>$} (const Configuration \&cfg, const double \&def)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::string \hyperlink{namespace_wire_cell_ab3c7d840d10160c3ba263190198fed68}{Wire\+Cell\+::convert$<$ std\+::string $>$} (const Configuration \&cfg, const std\+::string \&def)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::vector$<$ std\+::string $>$ \hyperlink{namespace_wire_cell_a0d9a7424eee11d76d9a8ead48e8b3642}{Wire\+Cell\+::convert$<$ std\+::vector$<$ std\+::string $>$ $>$} (const Configuration \&cfg, const std\+::vector$<$ std\+::string $>$ \&def)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::vector$<$ int $>$ \hyperlink{namespace_wire_cell_a26f264ab9870372316e8c325576e097b}{Wire\+Cell\+::convert$<$ std\+::vector$<$ int $>$ $>$} (const Configuration \&cfg, const std\+::vector$<$ int $>$ \&def)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::vector$<$ double $>$ \hyperlink{namespace_wire_cell_abb75ebf5f2ee143cd568e7d8db4f4db4}{Wire\+Cell\+::convert$<$ std\+::vector$<$ double $>$ $>$} (const Configuration \&cfg, const std\+::vector$<$ double $>$ \&def)
+\item 
+\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \hyperlink{namespace_wire_cell_ade8a8d63c0beb7335d7f969903bfeedc}{Wire\+Cell\+::branch} (\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} cfg, const std\+::string \&dotpath)
+\begin{DoxyCompactList}\small\item\em Follow a dot.\+separated.\+path and return the branch there. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \hyperlink{namespace_wire_cell_a5d4ad22423a3c77cc4f57d3a7aa95f49}{Wire\+Cell\+::update} (\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \&a, \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \&b)
+\begin{DoxyCompactList}\small\item\em Merge dictionary b into a, return a. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \hyperlink{namespace_wire_cell_acbed381be380ba3a92f80dc5bbcac91f}{Wire\+Cell\+::append} (\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \&a, \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \&b)
+\begin{DoxyCompactList}\small\item\em Return an array which is composed of the array b appended to the array a. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\Configuration \hyperlink{namespace_wire_cell_aeda39bc129b6bab40d0e35ffb4af55ef}{Wire\+Cell\+::find} (Configuration \&lst, const std\+::string \&dotpath, const T \&val)
+\begin{DoxyCompactList}\small\item\em Return dictionary in given list if it value at dotpath matches. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespace_wire_cell_addd60cc21dab98058698afa8222239bc}{Wire\+Cell\+::get} (Configuration cfg, const std\+::string \&dotpath, const T \&def=T())
+\begin{DoxyCompactList}\small\item\em Get value in configuration at the dotted path from or return default. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespace_wire_cell_a86bf5b387104e6d8db8e9b8fa2d09e9c}{Wire\+Cell\+::put} (Configuration \&cfg, const std\+::string \&dotpath, const T \&val)
+\begin{DoxyCompactList}\small\item\em Put value in configuration at the dotted path. \end{DoxyCompactList}\end{DoxyCompactItemize}

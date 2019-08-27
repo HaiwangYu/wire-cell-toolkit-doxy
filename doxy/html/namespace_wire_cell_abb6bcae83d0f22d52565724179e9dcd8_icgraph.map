@@ -1,0 +1,8 @@
+<map id="WireCell::fft_best_length" name="WireCell::fft_best_length">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#a3478b5daf202fbb7f923664ac21fdeb5" title="WireCell::Gen::Empirical\lNoiseModel::EmpiricalNoiseModel" alt="" coords="177,5,400,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#aa38f65fc1f32c8017f8205b32850074e" title="IConfigurable. " alt="" coords="205,71,372,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_impact_transform.html#ad467b6b26b2e740a1c170cb8a5223e6e" title="WireCell::Gen::ImpactTransform\l::ImpactTransform" alt="" coords="183,136,394,177"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_impact_transform.html#ad65b81bab03b2a6f8836782c732556bc" title="WireCell::Gen::ImpactTransform\l::waveform" alt="" coords="183,201,394,243"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_plane_impact_response.html#a5ab969666fea20210311a3751db47db0" title="Accept a configuration. " alt="" coords="196,267,381,308"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_depo_transform.html#a72bd0b9e256a8e9f4311c61cf6b5692b" title="WireCell::Gen::DepoTransform\l::operator()" alt="" coords="448,201,651,243"/>
+</map>

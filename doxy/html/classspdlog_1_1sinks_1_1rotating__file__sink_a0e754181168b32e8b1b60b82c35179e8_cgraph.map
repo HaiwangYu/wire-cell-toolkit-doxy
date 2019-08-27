@@ -1,0 +1,16 @@
+<map id="spdlog::sinks::rotating_file_sink::rotating_file_sink" name="spdlog::sinks::rotating_file_sink::rotating_file_sink">
+<area shape="rect" id="node2" href="$classspdlog_1_1details_1_1file__helper.html#a8612066fd098080cc60e3aefed6a6085" title="spdlog::details::file\l_helper::open" alt="" coords="253,136,384,177"/>
+<area shape="rect" id="node8" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#a05d77d7013bc54f55cac702c122ac1c9" title="spdlog::sinks::rotating\l_file_sink::calc_filename" alt="" coords="236,384,401,425"/>
+<area shape="rect" id="node14" href="$classspdlog_1_1details_1_1file__helper.html#ae945d9701134218c2d0558958e9d1cf2" title="spdlog::details::file\l_helper::size" alt="" coords="253,289,384,331"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1details_1_1file__helper.html#a6a6d7a75014ae880857b4fe4fd01dc7a" title="spdlog::details::file\l_helper::close" alt="" coords="474,71,605,112"/>
+<area shape="rect" id="node4" href="$namespacespdlog_1_1details_1_1os.html#af2d11a0b892e2f0cb3c6beba4c659a47" title="spdlog::details::os\l::fopen_s" alt="" coords="475,5,603,47"/>
+<area shape="rect" id="node6" href="$namespacespdlog_1_1details_1_1os.html#a49ccbc872aa679db9d1187a48897804e" title="spdlog::details::os\l::sleep_for_millis" alt="" coords="475,136,603,177"/>
+<area shape="rect" id="node7" href="$namespacespdlog_1_1details_1_1os.html#ac7c0d6af1f3f652f23e57f057217b9a7" title="spdlog::details::os\l::filename_to_str" alt="" coords="681,195,809,236"/>
+<area shape="rect" id="node5" href="$namespacespdlog_1_1details_1_1os.html#a58e68538bb3667c56f3623bf047093d6" title="spdlog::details::os\l::prevent_child_fd" alt="" coords="681,5,809,47"/>
+<area shape="rect" id="node9" href="$classspdlog_1_1details_1_1file__helper.html#a28d87e3f42c52a12c95af0558aca66f2" title="spdlog::details::file\l_helper::split_by_extension" alt="" coords="449,369,629,411"/>
+<area shape="rect" id="node10" href="$core_8h.html#a7f023637311ff6fae516e0da2caf05d3" title="format_to" alt="" coords="501,486,578,513"/>
+<area shape="rect" id="node13" href="$format_8h.html#afe05b087244838ced775fa3f28134c34" title="to_string" alt="" coords="503,435,575,462"/>
+<area shape="rect" id="node11" href="$namespaceinternal.html#a9f6f592ec8a979251038265f241e7d48" title="internal::vformat_to" alt="" coords="677,461,812,487"/>
+<area shape="rect" id="node12" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="860,486,1016,513"/>
+<area shape="rect" id="node15" href="$namespacespdlog_1_1details_1_1os.html#a6d2fb5a293e8515f651288992d5443cc" title="spdlog::details::os\l::filesize" alt="" coords="475,304,603,345"/>
+</map>

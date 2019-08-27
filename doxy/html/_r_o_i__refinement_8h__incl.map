@@ -1,0 +1,28 @@
+<map id="sigproc/src/ROI_refinement.h" name="sigproc/src/ROI_refinement.h">
+<area shape="rect" id="node2" href="$_signal_r_o_i_8h.html" title="SignalROI.h" alt="" coords="136,393,229,420"/>
+<area shape="rect" id="node3" href="$_waveform_8h.html" title="WireCellUtil/Waveform.h" alt="" coords="305,475,471,502"/>
+<area shape="rect" id="node13" href="$_r_o_i__formation_8h.html" title="ROI_formation.h" alt="" coords="475,311,594,338"/>
+<area shape="rect" id="node14" href="$_array_8h.html" title="WireCellUtil/Array.h" alt="" coords="597,393,736,420"/>
+<area shape="rect" id="node17" href="$_logging_8h.html" title="WireCellUtil/Logging.h" alt="" coords="855,80,1007,107"/>
+<area shape="rect" id="node18" href="$spdlog_8h.html" title="spdlog/spdlog.h" alt="" coords="1785,155,1898,181"/>
+<area shape="rect" id="node48" href="$ostr_8h.html" title="spdlog/fmt/ostr.h" alt="" coords="1312,796,1432,823"/>
+<area shape="rect" id="node19" href="$common_8h.html" title="spdlog/common.h" alt="" coords="2104,796,2229,823"/>
+<area shape="rect" id="node33" href="$registry_8h.html" title="spdlog/details/registry.h" alt="" coords="1865,229,2025,256"/>
+<area shape="rect" id="node38" href="$logger_8h.html" title="spdlog/logger.h" alt="" coords="1203,311,1314,338"/>
+<area shape="rect" id="node47" href="$version_8h.html" title="spdlog/version.h" alt="" coords="3100,229,3217,256"/>
+<area shape="rect" id="node20" href="$tweakme_8h.html" title="spdlog/tweakme.h" alt="" coords="2008,878,2136,905"/>
+<area shape="rect" id="node29" href="$null__mutex_8h.html" title="spdlog/details/null\l_mutex.h" alt="" coords="2859,871,2986,912"/>
+<area shape="rect" id="node30" href="$fmt_8h.html" title="spdlog/fmt/fmt.h" alt="" coords="1664,878,1781,905"/>
+<area shape="rect" id="node31" href="$core_8h.html" title="bundled/core.h" alt="" coords="1813,1035,1920,1061"/>
+<area shape="rect" id="node32" href="$format_8h.html" title="bundled/format.h" alt="" coords="1715,960,1834,987"/>
+<area shape="rect" id="node34" href="$periodic__worker_8h.html" title="spdlog/details/periodic\l_worker.h" alt="" coords="2767,468,2918,509"/>
+<area shape="rect" id="node45" href="$ansicolor__sink_8h.html" title="spdlog/sinks/ansicolor\l_sink.h" alt="" coords="2405,304,2555,345"/>
+<area shape="rect" id="node39" href="$formatter_8h.html" title="spdlog/formatter.h" alt="" coords="1898,557,2025,584"/>
+<area shape="rect" id="node42" href="$sink_8h.html" title="spdlog/sinks/sink.h" alt="" coords="1995,393,2130,420"/>
+<area shape="rect" id="node44" href="$logger__impl_8h.html" title="details/logger_impl.h" alt="" coords="888,960,1029,987"/>
+<area shape="rect" id="node40" href="$log__msg_8h.html" title="spdlog/details/log\l_msg.h" alt="" coords="2003,632,2125,673"/>
+<area shape="rect" id="node41" href="$os_8h.html" title="spdlog/details/os.h" alt="" coords="2252,721,2383,748"/>
+<area shape="rect" id="node43" href="$pattern__formatter_8h.html" title="spdlog/details/pattern\l_formatter.h" alt="" coords="2100,468,2247,509"/>
+<area shape="rect" id="node46" href="$console__globals_8h.html" title="spdlog/details/console\l_globals.h" alt="" coords="2593,468,2743,509"/>
+<area shape="rect" id="node49" href="$ostream_8h.html" title="bundled/ostream.h" alt="" coords="1307,878,1437,905"/>
+</map>

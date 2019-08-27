@@ -1,0 +1,13 @@
+<map id="WireCell::SigProc::OmniChannelNoiseDB::set_misconfigured" name="WireCell::SigProc::OmniChannelNoiseDB::set_misconfigured">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_wire_plane_id.html#adff770cfb3d3ddfa42ff55dbbb5cf0b9" title="Unit ID as integer. " alt="" coords="222,59,373,101"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_response.html#a11620870420942188de46612d3e2022f" title="WireCell::Response\l::wire_region_average" alt="" coords="223,125,372,166"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_wire_plane_id.html#a72e32df6a0f0721dba0f1c5c76649c9a" title="Layer as index number (0,1 or 2). &#45;1 if unknown. " alt="" coords="222,190,373,231"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="216,256,379,283"/>
+<area shape="rect" id="node11" href="$namespace_wire_cell_1_1_string.html#ade706f4cfc3f6e8a946d95f1b06dbb56" title="WireCell::String::format" alt="" coords="218,307,377,333"/>
+<area shape="rect" id="node4" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#ae156e1d6bbf8be35451100d1d43d9aaa" title="WireCell::Response\l::Schema::FieldResponse\l::plane" alt="" coords="427,5,600,61"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_waveform.html#a4c7b82a4567d6c94227398f9511ffb92" title="Return sum of all entries in sequence. " alt="" coords="427,85,600,112"/>
+<area shape="rect" id="node6" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#a9f3b786a9adf83b6bf536d6442d53207" title="WireCell::Response\l::Schema::FieldResponse\l::FieldResponse" alt="" coords="427,136,600,192"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_wire_plane_id.html#a203ede27a759b00518be11b8d23776fd" title="Layer as enum. " alt="" coords="438,217,589,258"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_wire_plane_id.html#a33a565cfc76f84e9bc103b1ca33d0974" title="Layer as integer (not index!) " alt="" coords="648,217,799,258"/>
+<area shape="rect" id="node12" href="$namespace_wire_cell_1_1_string.html#a483dc976ea784d91bef184a893e9bba8" title="WireCell::String::format\l_flatten" alt="" coords="434,299,593,341"/>
+</map>

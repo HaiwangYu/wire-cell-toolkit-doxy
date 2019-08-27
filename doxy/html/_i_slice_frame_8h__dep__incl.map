@@ -1,0 +1,12 @@
+<map id="iface/inc/WireCellIface/ISliceFrame.h" name="iface/inc/WireCellIface/ISliceFrame.h">
+<area shape="rect" id="node2" href="$_i_frame_slicer_8h.html" title="iface/inc/WireCellIface\l/IFrameSlicer.h" alt="" coords="327,95,482,136"/>
+<area shape="rect" id="node3" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="178,191,383,218"/>
+<area shape="rect" id="node6" href="$_i_slice_frame_sink_8h.html" title="iface/inc/WireCellIface\l/ISliceFrameSink.h" alt="" coords="98,95,253,136"/>
+<area shape="rect" id="node9" href="$_img_data_8h.html" title="img/inc/WireCellImg\l/ImgData.h" alt="" coords="571,95,711,136"/>
+<area shape="rect" id="node4" href="$_sum_slice_8h.html" title="img/inc/WireCellImg\l/SumSlice.h" alt="" coords="408,184,548,225"/>
+<area shape="rect" id="node5" href="$_sum_slice_8cxx.html" title="img/src/SumSlice.cxx" alt="" coords="456,273,607,300"/>
+<area shape="rect" id="node7" href="$_slices_sink_8h.html" title="img/inc/WireCellImg\l/SlicesSink.h" alt="" coords="13,184,153,225"/>
+<area shape="rect" id="node8" href="$_slices_sink_8cxx.html" title="img/src/SlicesSink.cxx" alt="" coords="5,273,161,300"/>
+<area shape="rect" id="node10" href="$_img_data_8cxx.html" title="img/src/ImgData.cxx" alt="" coords="623,191,767,218"/>
+<area shape="rect" id="node11" href="$_naive_striper_8cxx.html" title="img/src/NaiveStriper.cxx" alt="" coords="792,191,959,218"/>
+</map>

@@ -1,0 +1,38 @@
+<map id="WireCell::SigProc::OmnibusPMTNoiseFilter::operator()" name="WireCell::SigProc::OmnibusPMTNoiseFilter::operator()">
+<area shape="rect" id="node2" href="$namespacewct_1_1sigproc.html#a7be8644ccb0052eb5c68551b924b9b6f" title="wct::sigproc::tagged\l_traces" alt="" coords="232,857,372,899"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_sig_proc_1_1_derivations.html#a3119f257567050bd02427bbcd2cd3a7b" title="WireCell::SigProc::\lDerivations::CalcRMS" alt="" coords="225,923,379,964"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_p_m_t_noise_filter.html#a404245bd0dfdbd9447aecb5a19226df4" title="Explicitly inject required services. " alt="" coords="219,989,385,1045"/>
+<area shape="rect" id="node35" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_p_m_t_noise_filter.html#af007f96c1c669926b51dce67928fbf60" title="WireCell::SigProc::\lOmnibusPMTNoiseFilter\l::IDPMTSignalInduction" alt="" coords="442,1171,607,1227"/>
+<area shape="rect" id="node36" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_p_m_t_noise_filter.html#a5d53fbe0bbc137cfc1e432b957fbb696" title="WireCell::SigProc::\lOmnibusPMTNoiseFilter\l::RemovePMTSignal" alt="" coords="219,1119,385,1175"/>
+<area shape="rect" id="node37" href="$class_wire_cell_1_1_simple_frame.html#a106f413268020b6ea2a87364089bd65c" title="WireCell::SimpleFrame\l::tag_traces" alt="" coords="223,1200,381,1241"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_waveform.html#af0395e9b0e5e9e86a26579badb834092" title="WireCell::Waveform\l::mean_rms" alt="" coords="455,289,595,331"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_waveform.html#a4c7b82a4567d6c94227398f9511ffb92" title="Return sum of all entries in sequence. " alt="" coords="673,238,846,265"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_waveform.html#a6aa0cf31fb8548b1f74ffb3f77350668" title="Return sum of square of all entries in sequence. " alt="" coords="689,289,829,331"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1_waveform.html#af5e9352cbf35ddaf2f95e924d241a2aa" title="WireCell::Waveform\l::median" alt="" coords="926,201,1066,243"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1_waveform.html#a9116b8ebe848721a04d5100fa672b0aa" title="WireCell::Waveform\l::percentile" alt="" coords="1137,231,1277,272"/>
+<area shape="rect" id="node9" href="$namespace_wire_cell_1_1_waveform.html#a9a72f0b40ec9e5b44713c59f338f6fd3" title="WireCell::Waveform\l::median_binned" alt="" coords="926,319,1066,360"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1_waveform.html#ae080d239c8b4426a6d74f9fd8ce85f1a" title="WireCell::Waveform\l::percentile_binned" alt="" coords="1137,348,1277,389"/>
+<area shape="rect" id="node11" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="915,435,1077,462"/>
+<area shape="rect" id="node12" href="$namespace_wire_cell_1_1_waveform.html#aafc9307577968266045319c91ce3ab66" title="WireCell::Waveform\l::linear_convolve" alt="" coords="926,487,1066,528"/>
+<area shape="rect" id="node13" href="$namespace_wire_cell_1_1_waveform.html#abd675d86a770025f3ace47b277bf0e0e" title="WireCell::Waveform\l::replace_convolve" alt="" coords="926,5,1066,47"/>
+<area shape="rect" id="node14" href="$namespace_wire_cell_1_1_waveform.html#a69255dad704fcb71fa53745e90a2f0e1" title="WireCell::Waveform\l::idft" alt="" coords="926,71,1066,112"/>
+<area shape="rect" id="node15" href="$namespace_wire_cell_1_1_waveform.html#a86192f53532ba1e28516c2f8f3a9fa44" title="Return the smallest, most frequent value to appear in vector. " alt="" coords="926,136,1066,177"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a4b2640ed0856098cada1ba918b1e53d6" title="WireCell::SigProc::\lPMTNoiseROI::merge_ROI" alt="" coords="433,996,616,1037"/>
+<area shape="rect" id="node18" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a4122e466578dee161bee0219bceec33e" title="WireCell::SigProc::\lPMTNoiseROI::get_start_bin" alt="" coords="664,767,855,808"/>
+<area shape="rect" id="node19" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a33db997dd906db5cb63ba630e9d0f882" title="WireCell::SigProc::\lPMTNoiseROI::get_end_bin" alt="" coords="666,1084,853,1125"/>
+<area shape="rect" id="node21" href="$namespace_wire_cell.html#aeda39bc129b6bab40d0e35ffb4af55ef" title="Return dictionary in given list if it value at dotpath matches. " alt="" coords="1157,1127,1258,1154"/>
+<area shape="rect" id="node26" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a55cdf5dad6e7476bbb73226876feb55f" title="WireCell::SigProc::\lPMTNoiseROI::get_peaks" alt="" coords="671,1149,847,1191"/>
+<area shape="rect" id="node27" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a37bf42499b39970780687fe960df6006" title="WireCell::SigProc::\lPMTNoiseROI::get_wwires" alt="" coords="668,967,851,1008"/>
+<area shape="rect" id="node28" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#ac801578d1580a4d8eb0ba98b20f2191a" title="WireCell::SigProc::\lPMTNoiseROI::get_wwires\l_peak_heights" alt="" coords="668,833,851,889"/>
+<area shape="rect" id="node20" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#ab7da8d38dd37b3f81e064a9970e581f8" title="WireCell::SigProc::\lPMTNoiseROI::insert_peak" alt="" coords="905,1084,1087,1125"/>
+<area shape="rect" id="node24" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a97674ed5490b45c6e8e72292ee4012e7" title="WireCell::SigProc::\lPMTNoiseROI::insert\l_uwires" alt="" coords="922,1150,1070,1206"/>
+<area shape="rect" id="node25" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a117ae1e99cce01f1c72a55905f7fcf7e" title="WireCell::SigProc::\lPMTNoiseROI::insert\l_vwires" alt="" coords="922,1230,1070,1286"/>
+<area shape="rect" id="node22" href="$namespace_wire_cell.html#ade8a8d63c0beb7335d7f969903bfeedc" title="Follow a dot.separated.path and return the branch there. " alt="" coords="1325,1127,1444,1154"/>
+<area shape="rect" id="node23" href="$namespace_wire_cell_1_1_string.html#aef23d7b89dbe21e34a499c9156dd1e60" title="WireCell::String::split" alt="" coords="1492,1127,1639,1154"/>
+<area shape="rect" id="node29" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a3a991d86acfa1be6a8070ac516a624c9" title="WireCell::SigProc::\lPMTNoiseROI::get_average\l_uwires_peak_height" alt="" coords="903,633,1089,689"/>
+<area shape="rect" id="node30" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#aeff495991c25c4ff4091eb839835e230" title="WireCell::SigProc::\lPMTNoiseROI::get_average\l_vwires_peak_height" alt="" coords="903,713,1089,769"/>
+<area shape="rect" id="node31" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a44c13f88197acd2204d17bc2b9b75f3e" title="WireCell::SigProc::\lPMTNoiseROI::get_max\l_uwires_peak_height" alt="" coords="913,793,1079,849"/>
+<area shape="rect" id="node32" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a5c9e02b024551af28776257cfb336f45" title="WireCell::SigProc::\lPMTNoiseROI::get_max\l_vwires_peak_height" alt="" coords="913,873,1079,929"/>
+<area shape="rect" id="node33" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a89da1079a85e1cfa87962daefc2d0266" title="WireCell::SigProc::\lPMTNoiseROI::get_average\l_wwires_peak_height" alt="" coords="903,953,1089,1009"/>
+<area shape="rect" id="node34" href="$class_wire_cell_1_1_sig_proc_1_1_p_m_t_noise_r_o_i.html#a9239f0b7d6fa6d9bb1c12129e7d34352" title="WireCell::SigProc::\lPMTNoiseROI::get_max\l_wwires_peak_height" alt="" coords="913,553,1079,609"/>
+</map>

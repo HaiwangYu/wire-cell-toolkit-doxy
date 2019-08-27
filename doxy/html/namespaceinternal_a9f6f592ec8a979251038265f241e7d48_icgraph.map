@@ -1,0 +1,47 @@
+<map id="internal::vformat_to" name="internal::vformat_to">
+<area shape="rect" id="node2" href="$structinternal_1_1checked__args.html#a972845a4996b1931df4ae50dbfb9f4cf" title="internal::checked_args\l::operator*" alt="" coords="361,1019,514,1060"/>
+<area shape="rect" id="node3" href="$core_8h.html#a105a06f1d9c1a86545ec0760b81b13da" title="vformat_to" alt="" coords="204,1273,288,1299"/>
+<area shape="rect" id="node4" href="$core_8h.html#a7f023637311ff6fae516e0da2caf05d3" title="format_to" alt="" coords="207,503,285,530"/>
+<area shape="rect" id="node29" href="$format-inl_8h.html#a9d834f6ef5c0553b6c434f8d9ac105bf" title="vprint" alt="" coords="219,1222,273,1249"/>
+<area shape="rect" id="node43" href="$format_8h.html#a3d03b0b75b59e7abc46fe3a2dfa029a4" title="vformat_to_n" alt="" coords="197,1323,295,1350"/>
+<area shape="rect" id="node44" href="$namespaceinternal.html#a581988072e193a0fb0f54827f1b42cfd" title="internal::vformat" alt="" coords="188,1167,304,1194"/>
+<area shape="rect" id="node5" href="$namespacespdlog_1_1details_1_1fmt__helper.html#ae8d7b70c5b54338c0903cf494b06404a" title="spdlog::details::fmt\l_helper::pad2" alt="" coords="371,561,504,603"/>
+<area shape="rect" id="node20" href="$classspdlog_1_1logger.html#a50417cea5f81704cd4800aaafa944bc5" title="spdlog::logger::log" alt="" coords="373,678,501,705"/>
+<area shape="rect" id="node21" href="$classspdlog_1_1logger.html#a3c5140393ec153b2b8478361aac80eb6" title="spdlog::logger::critical" alt="" coords="608,1051,757,1078"/>
+<area shape="rect" id="node22" href="$structfmt_1_1formatter_3_01spdlog_1_1details_1_1bytes__range_3_01_t_01_4_01_4.html#ae001a71b76b4a56f722a7b91c506e9bf" title="fmt::formatter\&lt; spdlog\l::details::bytes_range\l\&lt; T \&gt; \&gt;::put_newline" alt="" coords="362,146,513,202"/>
+<area shape="rect" id="node23" href="$structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a8e85fb782f4dddcd3cb1fa207f2dd48c" title="formatter\&lt; std::chrono\l::duration\&lt; Rep, Period\l \&gt;, Char \&gt;::format" alt="" coords="359,226,516,282"/>
+<area shape="rect" id="node24" href="$structformatter_3_01_range_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__range_338ef07b6d6c7537efaa2c888f2ea4c8d.html#a3fa03f9297c176ec30214531355f9ff3" title="formatter\&lt; RangeT,\l Char, typename std\l::enable_if\&lt; fmt::is\l_range\&lt; RangeT \&gt;::value\l \&gt;::type \&gt;::format" alt="" coords="352,306,523,391"/>
+<area shape="rect" id="node25" href="$structspdlog_1_1sinks_1_1daily__filename__calculator.html#ae8461e586d3426987a3b11a00b158db2" title="spdlog::sinks::daily\l_filename_calculator\l::calc_filename" alt="" coords="367,415,508,471"/>
+<area shape="rect" id="node26" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#a05d77d7013bc54f55cac702c122ac1c9" title="spdlog::sinks::rotating\l_file_sink::calc_filename" alt="" coords="355,496,520,537"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1details_1_1c__formatter.html#a1b09d9e9e1d84b29fc2fb8d37fa07d57" title="spdlog::details::c\l_formatter::format" alt="" coords="619,659,746,700"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1details_1_1_c__formatter.html#a241d6298edc054937cf40c0d7ed90ae2" title="spdlog::details::C\l_formatter::format" alt="" coords="619,724,746,765"/>
+<area shape="rect" id="node8" href="$classspdlog_1_1details_1_1_d__formatter.html#a065cf427de180dfee0b6abb642a78cb0" title="spdlog::details::D\l_formatter::format" alt="" coords="619,789,746,831"/>
+<area shape="rect" id="node9" href="$classspdlog_1_1details_1_1m__formatter.html#a507ce5bc00de736d28d93e5d7307589b" title="spdlog::details::m\l_formatter::format" alt="" coords="619,855,746,896"/>
+<area shape="rect" id="node10" href="$classspdlog_1_1details_1_1d__formatter.html#ad1c7decfd7bfa7ecd6fd105e2d74bed4" title="spdlog::details::d\l_formatter::format" alt="" coords="619,920,746,961"/>
+<area shape="rect" id="node11" href="$classspdlog_1_1details_1_1_h__formatter.html#a46e166ed26e90bfe5bbc6b5f83040bef" title="spdlog::details::H\l_formatter::format" alt="" coords="619,985,746,1027"/>
+<area shape="rect" id="node12" href="$classspdlog_1_1details_1_1_i__formatter.html#ab9d6511acc53b2296ecce30f715779c7" title="spdlog::details::I\l_formatter::format" alt="" coords="619,136,746,177"/>
+<area shape="rect" id="node13" href="$classspdlog_1_1details_1_1_m__formatter.html#ab6c0f013ea2c54cceb4561033d59ca0c" title="spdlog::details::M\l_formatter::format" alt="" coords="619,201,746,243"/>
+<area shape="rect" id="node14" href="$classspdlog_1_1details_1_1_s__formatter.html#aec1945b20074132e9ebe7d94357081fa" title="spdlog::details::S\l_formatter::format" alt="" coords="619,267,746,308"/>
+<area shape="rect" id="node15" href="$classspdlog_1_1details_1_1r__formatter.html#a5d4a5d4f5f1285c4a4af104a775e9859" title="spdlog::details::r\l_formatter::format" alt="" coords="619,332,746,373"/>
+<area shape="rect" id="node16" href="$classspdlog_1_1details_1_1_r__formatter.html#a1fe66a7fbf57ef47faa59e82132e9051" title="spdlog::details::R\l_formatter::format" alt="" coords="619,397,746,439"/>
+<area shape="rect" id="node17" href="$classspdlog_1_1details_1_1_t__formatter.html#a338d37f02f3a9a4376acc3d4b655eda3" title="spdlog::details::T\l_formatter::format" alt="" coords="619,463,746,504"/>
+<area shape="rect" id="node18" href="$classspdlog_1_1details_1_1z__formatter.html#ada7a5e9a3c30039cbfb684b7743b8945" title="spdlog::details::z\l_formatter::format" alt="" coords="619,528,746,569"/>
+<area shape="rect" id="node19" href="$classspdlog_1_1details_1_1full__formatter.html#a11da1d2ec8378841d228df071915da35" title="spdlog::details::full\l_formatter::format" alt="" coords="617,593,748,635"/>
+<area shape="rect" id="node27" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#a0e754181168b32e8b1b60b82c35179e8" title="spdlog::sinks::rotating\l_file_sink::rotating_file_sink" alt="" coords="591,5,774,47"/>
+<area shape="rect" id="node28" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#ae93e4792b76f73bb0be8e50b5c5e889b" title="spdlog::sinks::rotating\l_file_sink::flush_" alt="" coords="607,71,758,112"/>
+<area shape="rect" id="node30" href="$core_8h.html#ae4af59c87c10d9a8d3ebd3eb455a25c1" title="format" alt="" coords="408,1226,467,1253"/>
+<area shape="rect" id="node41" href="$core_8h.html#a2f34cff9937acb3ac6a983ba6108b5b9" title="FMT_ENABLE_IF_T" alt="" coords="366,1277,509,1303"/>
+<area shape="rect" id="node42" href="$format-inl_8h.html#a77fcf4959d4c69c3800b759696f37248" title="vprint" alt="" coords="410,1327,465,1354"/>
+<area shape="rect" id="node31" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a2d1c7a1dded73fe3b51cbcfb8d9e0e04" title="Accept a configuration. " alt="" coords="591,1153,774,1195"/>
+<area shape="rect" id="node33" href="$classspdlog_1_1details_1_1flag__formatter.html#a7f775ab8ad4027546c3490f2f299bf43" title="spdlog::details::flag\l_formatter::flag_formatter" alt="" coords="598,1219,767,1260"/>
+<area shape="rect" id="node34" href="$namespaceinternal.html#a13d861df4fe01615dc7cb28d77e839e4" title="internal::sprintf_format" alt="" coords="607,1285,759,1311"/>
+<area shape="rect" id="node37" href="$structformatter_3_01arg__join_3_01_it_00_01_char_01_4_00_01_char_01_4.html#ae0c4a217ef67f0a573d1c4fd9bfe0472" title="formatter\&lt; arg_join\l\&lt; It, Char \&gt;, Char \&gt;\l::format" alt="" coords="613,1335,752,1391"/>
+<area shape="rect" id="node38" href="$structformatter_3_01_t_00_01_char_00_01typename_01std_1_1enable__if_3_01internal_1_1is__streamabdfe791f5d6e0a8acd43f884d0761b8af.html#ae9b195822bae194b4006b061c16eaa0a" title="formatter\&lt; T, Char,\l typename std::enable\l_if\&lt; internal::is_streamable\l\&lt; T, Char \&gt;::value &amp;&amp;!internal\l::format_type\&lt; typename buffer\l_context\&lt; Char \&gt;::type, T \&gt;::value\l \&gt;::type \&gt;::format" alt="" coords="571,1415,795,1530"/>
+<area shape="rect" id="node39" href="$classbasic__printf__context.html#ae71967bec500702473ba5b98d4e36aa2" title="basic_printf_context\l::basic_printf_context" alt="" coords="609,1555,756,1596"/>
+<area shape="rect" id="node40" href="$printf_8h.html#aedcc5ecc2ec86bfe7affa306aae393b6" title="FMT_ENABLE_IF_T" alt="" coords="611,1102,754,1129"/>
+<area shape="rect" id="node32" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a41df48506ad084531fa7ac376f454894" title="WireCell::Gen::AnodePlane\l::~AnodePlane" alt="" coords="843,1153,1025,1195"/>
+<area shape="rect" id="node35" href="$namespaceinternal.html#aa6ca58c625a66aa96f3839eb3bfe2f6e" title="internal::grisu2_format" alt="" coords="859,1314,1009,1341"/>
+<area shape="rect" id="node36" href="$structfloat__spec__handler.html#ae7ee9d59f1624b0cc52fe767a5ef96bf" title="float_spec_handler\l::on_error" alt="" coords="869,1248,999,1289"/>
+<area shape="rect" id="node45" href="$core_8h.html#af8b0aefa8ea9f8e6bc0e381e4d16a3e6" title="vformat" alt="" coords="404,1085,471,1111"/>
+<area shape="rect" id="node46" href="$namespaceinternal.html#a0eb92e21789faf5174aa9bb86bb78539" title="internal::thousands\l_sep_impl" alt="" coords="371,1160,503,1201"/>
+</map>

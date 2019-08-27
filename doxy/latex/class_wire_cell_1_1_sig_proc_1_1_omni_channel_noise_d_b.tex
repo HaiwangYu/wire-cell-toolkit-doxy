@@ -1,0 +1,694 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Omni\+Channel\+Noise\+DB Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+
+
+{\ttfamily \#include $<$Omni\+Channel\+Noise\+D\+B.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Omni\+Channel\+Noise\+DB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Omni\+Channel\+Noise\+DB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_aa1e78fefc94fd11765fa17fbccf2d786}{Omni\+Channel\+Noise\+DB} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a64273a955c13ca79dc40939d2684b1ff}{$\sim$\+Omni\+Channel\+Noise\+DB} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ac3cd4bc917fb51f767908130f507defd}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&\hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_acc904d0a6472acede55bd40ef8b6cd01}{config})
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_af33aa262d6af04f4252abef453156799}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a33769e729aab08e5320647cd4c04304c}{sample\+\_\+time} () const
+\begin{DoxyCompactList}\small\item\em F\+I\+X\+ME\+: how to handle state changes? \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7d762e341143dea15eb2d8f57aac9c86}{nominal\+\_\+baseline} (int channel) const
+\begin{DoxyCompactList}\small\item\em Return a nominal baseline correction (additive offset) \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a60802eabcf081d7b82ed7b270dcefe00}{gain\+\_\+correction} (int channel) const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0b6fa7b4d342adf1313b86684b811023}{response\+\_\+offset} (int channel) const
+\begin{DoxyCompactList}\small\item\em Return a time offset associated with the \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae269e377629b9a96c8e0cdb0f30353a4}{response()}. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a37f1dda111792a36315f977c2ade5783}{min\+\_\+rms\+\_\+cut} (int channel) const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a494d0e48066357d8e86ea7ce4d462bdb}{max\+\_\+rms\+\_\+cut} (int channel) const
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_afc69ca596a5ff6f8a63fc64234c8062e}{pad\+\_\+window\+\_\+front} (int channel) const
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ac765001725b5a181ccfd605d0221e0ef}{pad\+\_\+window\+\_\+back} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae062cbbc8743dd33840d92589b04821b}{coherent\+\_\+nf\+\_\+decon\+\_\+limit} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a43dbea0d5db7c2217f35f7df45dd8b4f}{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7c98e373e09268af35e18121d2a173f2}{coherent\+\_\+nf\+\_\+decon\+\_\+limit1} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_abc80cb5a10e48500824f710c3846900d}{coherent\+\_\+nf\+\_\+adc\+\_\+limit} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_aa4d6c9f3a30c788683caacf735510ceb}{coherent\+\_\+nf\+\_\+protection\+\_\+factor} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a346695c1e101b6cbcfac60ae4c9f0ea3}{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit} (int channel) const
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae92b71da5d91c1069ba78d9658d97f8b}{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio} (int channel) const
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0155aba843a5a04966ffcfe556b207f8}{rcrc} (int channel) const
+\begin{DoxyCompactList}\small\item\em Return the filter for the R\+C+\+RC coupling response function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_acc904d0a6472acede55bd40ef8b6cd01}{config} (int channel) const
+\begin{DoxyCompactList}\small\item\em Return the filter to correct any wrongly configured channels. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a125b09b4d7d5cb973ae418936343bf4a}{noise} (int channel) const
+\begin{DoxyCompactList}\small\item\em Return the filter to attenuate noise. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae269e377629b9a96c8e0cdb0f30353a4}{response} (int channel) const
+\begin{DoxyCompactList}\small\item\em A nominal detector response spectrum for a given channel. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a8cdff2a7435fc85ff77b234a88aaaece}{coherent\+\_\+channels} () const
+\begin{DoxyCompactList}\small\item\em Return channel grouping for coherent noise subtraction. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a04ee13cfae6285a0c0ac160a259fb2b5}{bad\+\_\+channels} () const
+\begin{DoxyCompactList}\small\item\em Return channels which are considered a\textquotesingle{}priori \char`\"{}bad\char`\"{}. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a32b0db5811fe2d33ec566c31283800fa}{miscfg\+\_\+channels} () const
+\begin{DoxyCompactList}\small\item\em Return channels which are considered a\textquotesingle{}priori \char`\"{}misconfigured\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a42c1e7613ec776da66d7f30238128ce7}{set\+\_\+bad\+\_\+channels} (const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} \&bad)
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7a1a60aef8d2935c36e27a735117a1cb}{set\+\_\+misconfigured} (const std\+::vector$<$ int $>$ \&channels, double from\+\_\+gain, double from\+\_\+shaping, double to\+\_\+gain, double to\+\_\+shaping, bool reset=false)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file Omni\+Channel\+Noise\+D\+B.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_aa1e78fefc94fd11765fa17fbccf2d786}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_aa1e78fefc94fd11765fa17fbccf2d786}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!Omni\+Channel\+Noise\+DB@{Omni\+Channel\+Noise\+DB}}
+\index{Omni\+Channel\+Noise\+DB@{Omni\+Channel\+Noise\+DB}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{Omni\+Channel\+Noise\+D\+B()}{OmniChannelNoiseDB()}}
+{\footnotesize\ttfamily Omni\+Channel\+Noise\+D\+B\+::\+Omni\+Channel\+Noise\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a configurable channel noise DB for digitized waveforms with the given size and number of samples. Default is for microphone. 
+
+Definition at line 14 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a64273a955c13ca79dc40939d2684b1ff}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a64273a955c13ca79dc40939d2684b1ff}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!````~Omni\+Channel\+Noise\+DB@{$\sim$\+Omni\+Channel\+Noise\+DB}}
+\index{````~Omni\+Channel\+Noise\+DB@{$\sim$\+Omni\+Channel\+Noise\+DB}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{$\sim$\+Omni\+Channel\+Noise\+D\+B()}{~OmniChannelNoiseDB()}}
+{\footnotesize\ttfamily Omni\+Channel\+Noise\+D\+B\+::$\sim$\+Omni\+Channel\+Noise\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 21 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a64273a955c13ca79dc40939d2684b1ff_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a04ee13cfae6285a0c0ac160a259fb2b5}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a04ee13cfae6285a0c0ac160a259fb2b5}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!bad\+\_\+channels@{bad\+\_\+channels}}
+\index{bad\+\_\+channels@{bad\+\_\+channels}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{bad\+\_\+channels()}{bad\_channels()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+D\+B\+::bad\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return channels which are considered a\textquotesingle{}priori \char`\"{}bad\char`\"{}. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a70f4c0a24525f6a7c8ef84245fd6d01e}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 68 of file Omni\+Channel\+Noise\+D\+B.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a8cdff2a7435fc85ff77b234a88aaaece}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a8cdff2a7435fc85ff77b234a88aaaece}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!coherent\+\_\+channels@{coherent\+\_\+channels}}
+\index{coherent\+\_\+channels@{coherent\+\_\+channels}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+channels()}{coherent\_channels()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t}$>$ Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+D\+B\+::coherent\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return channel grouping for coherent noise subtraction. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0f220478d9d7ed3c913b925e84b39138}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 65 of file Omni\+Channel\+Noise\+D\+B.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_abc80cb5a10e48500824f710c3846900d}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_abc80cb5a10e48500824f710c3846900d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+adc\+\_\+limit}}
+\index{coherent\+\_\+nf\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+adc\+\_\+limit}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+adc\+\_\+limit()}{coherent\_nf\_adc\_limit()}}
+{\footnotesize\ttfamily float Omni\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+adc\+\_\+limit (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ac75b3b6b0c7368c0c87d907012abaf9d}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 701 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a43dbea0d5db7c2217f35f7df45dd8b4f}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a43dbea0d5db7c2217f35f7df45dd8b4f}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff@{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff}}
+\index{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff@{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff()}{coherent\_nf\_decon\_lf\_cutoff()}}
+{\footnotesize\ttfamily float Omni\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4104509a65ce9fe5a77fac6ddd39ec56}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 691 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae062cbbc8743dd33840d92589b04821b}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae062cbbc8743dd33840d92589b04821b}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+decon\+\_\+limit@{coherent\+\_\+nf\+\_\+decon\+\_\+limit}}
+\index{coherent\+\_\+nf\+\_\+decon\+\_\+limit@{coherent\+\_\+nf\+\_\+decon\+\_\+limit}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+decon\+\_\+limit()}{coherent\_nf\_decon\_limit()}}
+{\footnotesize\ttfamily float Omni\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+decon\+\_\+limit (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_af1b0da30d4aa280deca52a84a9a6326d}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 686 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7c98e373e09268af35e18121d2a173f2}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7c98e373e09268af35e18121d2a173f2}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+decon\+\_\+limit1@{coherent\+\_\+nf\+\_\+decon\+\_\+limit1}}
+\index{coherent\+\_\+nf\+\_\+decon\+\_\+limit1@{coherent\+\_\+nf\+\_\+decon\+\_\+limit1}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+decon\+\_\+limit1()}{coherent\_nf\_decon\_limit1()}}
+{\footnotesize\ttfamily float Omni\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+decon\+\_\+limit1 (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4b2033312603fd90885efdfe14eb71cc}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 696 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a346695c1e101b6cbcfac60ae4c9f0ea3}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a346695c1e101b6cbcfac60ae4c9f0ea3}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit}}
+\index{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit()}{coherent\_nf\_min\_adc\_limit()}}
+{\footnotesize\ttfamily float Omni\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a1668979331fd999d36d5cb5bb1ed00d6}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 711 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_aa4d6c9f3a30c788683caacf735510ceb}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_aa4d6c9f3a30c788683caacf735510ceb}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+protection\+\_\+factor@{coherent\+\_\+nf\+\_\+protection\+\_\+factor}}
+\index{coherent\+\_\+nf\+\_\+protection\+\_\+factor@{coherent\+\_\+nf\+\_\+protection\+\_\+factor}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+protection\+\_\+factor()}{coherent\_nf\_protection\_factor()}}
+{\footnotesize\ttfamily float Omni\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+protection\+\_\+factor (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4572de7acbdd4427cc4c409193abaae8}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 706 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae92b71da5d91c1069ba78d9658d97f8b}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae92b71da5d91c1069ba78d9658d97f8b}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio@{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio}}
+\index{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio@{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio()}{coherent\_nf\_roi\_min\_max\_ratio()}}
+{\footnotesize\ttfamily float Omni\+Channel\+Noise\+D\+B\+::coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a3fab0404aa8a10ad7ed2ac7afd2fe9a7}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 716 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_acc904d0a6472acede55bd40ef8b6cd01}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_acc904d0a6472acede55bd40ef8b6cd01}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!config@{config}}
+\index{config@{config}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{I\+Channel\+Noise\+Database\+::filter\+\_\+t} \& Omni\+Channel\+Noise\+D\+B\+::config (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the filter to correct any wrongly configured channels. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_af6887aa00ed134c7fcb1ee85bd950311}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 731 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_acc904d0a6472acede55bd40ef8b6cd01_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_acc904d0a6472acede55bd40ef8b6cd01_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ac3cd4bc917fb51f767908130f507defd}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ac3cd4bc917fb51f767908130f507defd}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Omni\+Channel\+Noise\+D\+B\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 590 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_af33aa262d6af04f4252abef453156799}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_af33aa262d6af04f4252abef453156799}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Omni\+Channel\+Noise\+D\+B\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+These must be provided 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 55 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_af33aa262d6af04f4252abef453156799_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a60802eabcf081d7b82ed7b270dcefe00}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a60802eabcf081d7b82ed7b270dcefe00}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!gain\+\_\+correction@{gain\+\_\+correction}}
+\index{gain\+\_\+correction@{gain\+\_\+correction}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{gain\+\_\+correction()}{gain\_correction()}}
+{\footnotesize\ttfamily double Omni\+Channel\+Noise\+D\+B\+::gain\+\_\+correction (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return simple gain correction (a multiplicative, unitless scaling) to apply to a given channel. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad2cdf46aea4ac11f8b7d097bd19c2e80}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 656 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a60802eabcf081d7b82ed7b270dcefe00_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a494d0e48066357d8e86ea7ce4d462bdb}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a494d0e48066357d8e86ea7ce4d462bdb}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!max\+\_\+rms\+\_\+cut@{max\+\_\+rms\+\_\+cut}}
+\index{max\+\_\+rms\+\_\+cut@{max\+\_\+rms\+\_\+cut}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{max\+\_\+rms\+\_\+cut()}{max\_rms\_cut()}}
+{\footnotesize\ttfamily double Omni\+Channel\+Noise\+D\+B\+::max\+\_\+rms\+\_\+cut (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad5e4a49ff6b257e2ef290eeeaba95da7}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 671 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a494d0e48066357d8e86ea7ce4d462bdb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a37f1dda111792a36315f977c2ade5783}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a37f1dda111792a36315f977c2ade5783}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!min\+\_\+rms\+\_\+cut@{min\+\_\+rms\+\_\+cut}}
+\index{min\+\_\+rms\+\_\+cut@{min\+\_\+rms\+\_\+cut}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{min\+\_\+rms\+\_\+cut()}{min\_rms\_cut()}}
+{\footnotesize\ttfamily double Omni\+Channel\+Noise\+D\+B\+::min\+\_\+rms\+\_\+cut (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad0e7e7c3424260af2bd426e578ad83f6}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 666 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a37f1dda111792a36315f977c2ade5783_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a32b0db5811fe2d33ec566c31283800fa}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a32b0db5811fe2d33ec566c31283800fa}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!miscfg\+\_\+channels@{miscfg\+\_\+channels}}
+\index{miscfg\+\_\+channels@{miscfg\+\_\+channels}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{miscfg\+\_\+channels()}{miscfg\_channels()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+D\+B\+::miscfg\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return channels which are considered a\textquotesingle{}priori \char`\"{}misconfigured\char`\"{}. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad653c3c17b0524eca95fa4ce8574ffe9}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 71 of file Omni\+Channel\+Noise\+D\+B.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a125b09b4d7d5cb973ae418936343bf4a}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a125b09b4d7d5cb973ae418936343bf4a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!noise@{noise}}
+\index{noise@{noise}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{noise()}{noise()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{I\+Channel\+Noise\+Database\+::filter\+\_\+t} \& Omni\+Channel\+Noise\+D\+B\+::noise (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the filter to attenuate noise. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a1197551d9dcfd6dc8f656a8aecd5b962}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 741 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a125b09b4d7d5cb973ae418936343bf4a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a125b09b4d7d5cb973ae418936343bf4a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7d762e341143dea15eb2d8f57aac9c86}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7d762e341143dea15eb2d8f57aac9c86}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!nominal\+\_\+baseline@{nominal\+\_\+baseline}}
+\index{nominal\+\_\+baseline@{nominal\+\_\+baseline}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{nominal\+\_\+baseline()}{nominal\_baseline()}}
+{\footnotesize\ttfamily double Omni\+Channel\+Noise\+D\+B\+::nominal\+\_\+baseline (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a nominal baseline correction (additive offset) 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a253f602c70bddb7986e63dc14b8d8e6e}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 651 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7d762e341143dea15eb2d8f57aac9c86_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ac765001725b5a181ccfd605d0221e0ef}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ac765001725b5a181ccfd605d0221e0ef}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!pad\+\_\+window\+\_\+back@{pad\+\_\+window\+\_\+back}}
+\index{pad\+\_\+window\+\_\+back@{pad\+\_\+window\+\_\+back}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{pad\+\_\+window\+\_\+back()}{pad\_window\_back()}}
+{\footnotesize\ttfamily int Omni\+Channel\+Noise\+D\+B\+::pad\+\_\+window\+\_\+back (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4d772c3ba5f7071a2d869264f37dfecc}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 681 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ac765001725b5a181ccfd605d0221e0ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_afc69ca596a5ff6f8a63fc64234c8062e}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_afc69ca596a5ff6f8a63fc64234c8062e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!pad\+\_\+window\+\_\+front@{pad\+\_\+window\+\_\+front}}
+\index{pad\+\_\+window\+\_\+front@{pad\+\_\+window\+\_\+front}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{pad\+\_\+window\+\_\+front()}{pad\_window\_front()}}
+{\footnotesize\ttfamily int Omni\+Channel\+Noise\+D\+B\+::pad\+\_\+window\+\_\+front (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a77f82280942595e1a2506f49a6f76f56}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 676 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_afc69ca596a5ff6f8a63fc64234c8062e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0155aba843a5a04966ffcfe556b207f8}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0155aba843a5a04966ffcfe556b207f8}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!rcrc@{rcrc}}
+\index{rcrc@{rcrc}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{rcrc()}{rcrc()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{I\+Channel\+Noise\+Database\+::filter\+\_\+t} \& Omni\+Channel\+Noise\+D\+B\+::rcrc (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the filter for the R\+C+\+RC coupling response function. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a8f9fa5547062c23f689fde9bb810361b}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 721 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0155aba843a5a04966ffcfe556b207f8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0155aba843a5a04966ffcfe556b207f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae269e377629b9a96c8e0cdb0f30353a4}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae269e377629b9a96c8e0cdb0f30353a4}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!response@{response}}
+\index{response@{response}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{response()}{response()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{I\+Channel\+Noise\+Database\+::filter\+\_\+t} \& Omni\+Channel\+Noise\+D\+B\+::response (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A nominal detector response spectrum for a given channel. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad3c42f59a26e8a8e115199a894d881da}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 751 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae269e377629b9a96c8e0cdb0f30353a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae269e377629b9a96c8e0cdb0f30353a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0b6fa7b4d342adf1313b86684b811023}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0b6fa7b4d342adf1313b86684b811023}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!response\+\_\+offset@{response\+\_\+offset}}
+\index{response\+\_\+offset@{response\+\_\+offset}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{response\+\_\+offset()}{response\_offset()}}
+{\footnotesize\ttfamily double Omni\+Channel\+Noise\+D\+B\+::response\+\_\+offset (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a time offset associated with the \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae269e377629b9a96c8e0cdb0f30353a4}{response()}. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a5a1d081b5cd6d32ac7209b99eb2c61dc}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 661 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0b6fa7b4d342adf1313b86684b811023_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a33769e729aab08e5320647cd4c04304c}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a33769e729aab08e5320647cd4c04304c}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!sample\+\_\+time@{sample\+\_\+time}}
+\index{sample\+\_\+time@{sample\+\_\+time}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{sample\+\_\+time()}{sample\_time()}}
+{\footnotesize\ttfamily double Omni\+Channel\+Noise\+D\+B\+::sample\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+F\+I\+X\+ME\+: how to handle state changes? 
+
+Return the time-\/domain sample period (time in system of units) which is was used in producing the filter response spectral functions (filter\+\_\+t).
+
+Warning\+: take care that the number of frequency samples (filter\+\_\+t\+::size()) is fixed and may not match the number of ticks in your waveform. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a82406ba30d65412db34e038e789be95c}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}.
+
+
+
+Definition at line 644 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a42c1e7613ec776da66d7f30238128ce7}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a42c1e7613ec776da66d7f30238128ce7}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!set\+\_\+bad\+\_\+channels@{set\+\_\+bad\+\_\+channels}}
+\index{set\+\_\+bad\+\_\+channels@{set\+\_\+bad\+\_\+channels}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+bad\+\_\+channels()}{set\_bad\_channels()}}
+{\footnotesize\ttfamily virtual void Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+D\+B\+::set\+\_\+bad\+\_\+channels (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} \&}]{bad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 85 of file Omni\+Channel\+Noise\+D\+B.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a42c1e7613ec776da66d7f30238128ce7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7a1a60aef8d2935c36e27a735117a1cb}\label{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7a1a60aef8d2935c36e27a735117a1cb}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}!set\+\_\+misconfigured@{set\+\_\+misconfigured}}
+\index{set\+\_\+misconfigured@{set\+\_\+misconfigured}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}}
+\subsubsection{\texorpdfstring{set\+\_\+misconfigured()}{set\_misconfigured()}}
+{\footnotesize\ttfamily void Omni\+Channel\+Noise\+D\+B\+::set\+\_\+misconfigured (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels,  }\item[{double}]{from\+\_\+gain,  }\item[{double}]{from\+\_\+shaping,  }\item[{double}]{to\+\_\+gain,  }\item[{double}]{to\+\_\+shaping,  }\item[{bool}]{reset = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 292 of file Omni\+Channel\+Noise\+D\+B.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7a1a60aef8d2935c36e27a735117a1cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7a1a60aef8d2935c36e27a735117a1cb_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_omni_channel_noise_d_b_8h}{Omni\+Channel\+Noise\+D\+B.\+h}\item 
+sigproc/src/\hyperlink{_omni_channel_noise_d_b_8cxx}{Omni\+Channel\+Noise\+D\+B.\+cxx}\end{DoxyCompactItemize}

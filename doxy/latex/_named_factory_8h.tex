@@ -1,0 +1,116 @@
+\hypertarget{_named_factory_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Named\+Factory.h File Reference}
+\label{_named_factory_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Named\+Factory.\+h@{util/inc/\+Wire\+Cell\+Util/\+Named\+Factory.\+h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+I\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Singleton.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Plugin\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Type.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+String.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Exceptions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Logging.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$exception$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+Include dependency graph for Named\+Factory.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_named_factory_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_factory_exception}{Wire\+Cell\+::\+Factory\+Exception}
+\item 
+class \hyperlink{class_wire_cell_1_1_named_factory}{Wire\+Cell\+::\+Named\+Factory$<$ Type $>$}
+\item 
+class \hyperlink{class_wire_cell_1_1_named_factory_registry}{Wire\+Cell\+::\+Named\+Factory\+Registry$<$ I\+Type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_factory}{Wire\+Cell\+::\+Factory}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_singleton}{Singleton} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_named_factory_8h_ab4f04b9d9f83474657edd6d317696b9a}{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}(N\+A\+ME,  C\+O\+N\+C\+R\+E\+TE, ...)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class I\+Type $>$ }\\bool \hyperlink{namespace_wire_cell_1_1_factory_ae6f78981e3c42c6df31f8face901e982}{Wire\+Cell\+::\+Factory\+::associate} (const std\+::string \&classname, \hyperlink{class_wire_cell_1_1_i_named_factory}{Wire\+Cell\+::\+I\+Named\+Factory} $\ast$factory)
+\begin{DoxyCompactList}\small\item\em Associate a factory with the type it makes. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\\hyperlink{class_wire_cell_1_1_i_named_factory}{Wire\+Cell\+::\+I\+Named\+Factory} $\ast$ \hyperlink{namespace_wire_cell_1_1_factory_a33318e89ff05184cf57267d20bdc076c}{Wire\+Cell\+::\+Factory\+::lookup\+\_\+factory} (const std\+::string \&classname)
+\begin{DoxyCompactList}\small\item\em Lookup up a factory for the given type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_a17712091b6e64cd7936ec21901b32b39}{Wire\+Cell\+::\+Factory\+::lookup} (const std\+::string \&classname, const std\+::string \&instname=\char`\"{}\char`\"{}, bool create=true, bool nullok=false)
+\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_abfb60a87055b2837f69e65cd27d9cb26}{Wire\+Cell\+::\+Factory\+::find} (const std\+::string \&classname, const std\+::string \&instname=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_adf719a75b0700dc095df9b9d27c32ede}{Wire\+Cell\+::\+Factory\+::find\+\_\+maybe} (const std\+::string \&classname, const std\+::string \&instname=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em As above but quietly returns nullptr on failure. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_acde6688421b73bf10a0d26e77c9330c2}{Wire\+Cell\+::\+Factory\+::lookup\+\_\+tn} (const std\+::string \&tn, bool create=true, bool nullok=false)
+\begin{DoxyCompactList}\small\item\em Lookup an interface by a type\+:name pair. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_a19e5e02dfbb9f332865af3b41b3c302a}{Wire\+Cell\+::\+Factory\+::find\+\_\+tn} (const std\+::string \&tn)
+\begin{DoxyCompactList}\small\item\em Like lookup\+\_\+tn but with create false. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_a3ddc9d93fb9d5c5b32eeef3e996e52bd}{Wire\+Cell\+::\+Factory\+::find\+\_\+maybe\+\_\+tn} (const std\+::string \&tn)
+\begin{DoxyCompactList}\small\item\em Like find\+\_\+tn but with nullok true. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::vector$<$ std\+::string $>$ \hyperlink{namespace_wire_cell_1_1_factory_abfc39deedef2d6c44f0c9af364bcdd2d}{Wire\+Cell\+::\+Factory\+::known\+\_\+classes} ()
+\begin{DoxyCompactList}\small\item\em Return a vector of all known classes of given interface. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::vector$<$ std\+::string $>$ \hyperlink{namespace_wire_cell_1_1_factory_aedc58cf1d2d6c0e60586e95fd415f96e}{Wire\+Cell\+::\+Factory\+::known\+\_\+types} ()
+\item 
+{\footnotesize template$<$class Concrete , class... Interface$>$ }\\void $\ast$ \hyperlink{_named_factory_8h_a17d5c5ff95cc548796a982891b790cb9}{make\+\_\+named\+\_\+factory\+\_\+factory} (std\+::string name)
+\item 
+{\footnotesize template$<$class Concrete , class... Interface$>$ }\\size\+\_\+t \hyperlink{_named_factory_8h_a599f8803be055f5dccc5ce6e8b849dbb}{namedfactory\+\_\+hello} (std\+::string name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_named_factory_8h_ab4f04b9d9f83474657edd6d317696b9a}\label{_named_factory_8h_ab4f04b9d9f83474657edd6d317696b9a}} 
+\index{Named\+Factory.\+h@{Named\+Factory.\+h}!W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}}
+\index{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}!Named\+Factory.\+h@{Named\+Factory.\+h}}
+\subsubsection{\texorpdfstring{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}{WIRECELL\_FACTORY}}
+{\footnotesize\ttfamily \#define W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY(\begin{DoxyParamCaption}\item[{}]{N\+A\+ME,  }\item[{}]{C\+O\+N\+C\+R\+E\+TE,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} \textcolor{keywordtype}{size\_t} hello\_##NAME##\_me = namedfactory\_hello< CONCRETE , \_\_VA\_ARGS\_\_ >(#NAME); \(\backslash\)
+    extern \textcolor{stringliteral}{"C"} \{ \textcolor{keywordtype}{void}* make\_##NAME##\_factory() \{            \(\backslash\)
+    return make\_named\_factory\_factory< CONCRETE , \_\_VA\_ARGS\_\_ >(#NAME); \(\backslash\)
+    \}\}
+\end{DoxyCode}
+
+
+Definition at line 332 of file Named\+Factory.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_named_factory_8h_a17d5c5ff95cc548796a982891b790cb9}\label{_named_factory_8h_a17d5c5ff95cc548796a982891b790cb9}} 
+\index{Named\+Factory.\+h@{Named\+Factory.\+h}!make\+\_\+named\+\_\+factory\+\_\+factory@{make\+\_\+named\+\_\+factory\+\_\+factory}}
+\index{make\+\_\+named\+\_\+factory\+\_\+factory@{make\+\_\+named\+\_\+factory\+\_\+factory}!Named\+Factory.\+h@{Named\+Factory.\+h}}
+\subsubsection{\texorpdfstring{make\+\_\+named\+\_\+factory\+\_\+factory()}{make\_named\_factory\_factory()}}
+{\footnotesize\ttfamily template$<$class Concrete , class... Interface$>$ \\
+void$\ast$ make\+\_\+named\+\_\+factory\+\_\+factory (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 311 of file Named\+Factory.\+h.
+
+\mbox{\Hypertarget{_named_factory_8h_a599f8803be055f5dccc5ce6e8b849dbb}\label{_named_factory_8h_a599f8803be055f5dccc5ce6e8b849dbb}} 
+\index{Named\+Factory.\+h@{Named\+Factory.\+h}!namedfactory\+\_\+hello@{namedfactory\+\_\+hello}}
+\index{namedfactory\+\_\+hello@{namedfactory\+\_\+hello}!Named\+Factory.\+h@{Named\+Factory.\+h}}
+\subsubsection{\texorpdfstring{namedfactory\+\_\+hello()}{namedfactory\_hello()}}
+{\footnotesize\ttfamily template$<$class Concrete , class... Interface$>$ \\
+size\+\_\+t namedfactory\+\_\+hello (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 324 of file Named\+Factory.\+h.
+

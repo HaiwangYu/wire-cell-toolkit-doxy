@@ -1,0 +1,325 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Mega\+Anode\+Plane Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane}\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+
+
+{\ttfamily \#include $<$Mega\+Anode\+Plane.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Mega\+Anode\+Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_wire_cell_1_1_gen_1_1_mega_anode_plane__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Mega\+Anode\+Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_wire_cell_1_1_gen_1_1_mega_anode_plane__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_aa9912010c3155fa7e010faf6fe1f01d7}{$\sim$\+Mega\+Anode\+Plane} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a68669a57b1f5baa35fdbcc259e230fb4}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a46b1dc962d2894307fa820da9ea5f663}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a39f210db553e1e981412c2c44861870c}{resolve} (int \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a3cc2a292c89472524f21379c0eff1111}{channel}) const
+\begin{DoxyCompactList}\small\item\em Resolve a channel ident number to a \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id}. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ int $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a1106718600e8a867efd62a7c9dedafd2}{channels} () const
+\begin{DoxyCompactList}\small\item\em Return a collection of all channels. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Channel\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a3cc2a292c89472524f21379c0eff1111}{channel} (int chident) const
+\begin{DoxyCompactList}\small\item\em Return an \hyperlink{class_wire_cell_1_1_i_channel}{I\+Channel} with the associated channel ID. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Wire\+::vector} \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a1d4b6dd24d9b2d805120eed53e153bc3}{wires} (int \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a3cc2a292c89472524f21379c0eff1111}{channel}) const
+\begin{DoxyCompactList}\small\item\em Return all wires connected into the given channel ident number. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a4ccf1f789e1f62b35993d95b659b92c3}{nfaces} () const
+\begin{DoxyCompactList}\small\item\em Return number of faces (eg, Micro\+Boo\+NE=1, D\+U\+NE=2) \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a4f464401cebc46073d4fef4cafe67d97}{ident} () const
+\begin{DoxyCompactList}\small\item\em Return the ident number of this plane. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Anode\+Face\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_ad9c13939093664e740ade87c8d89ba94}{face} (int \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a4f464401cebc46073d4fef4cafe67d97}{ident}) const
+\begin{DoxyCompactList}\small\item\em Return a anode face by its ident number. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}{I\+Anode\+Face\+::vector} \hyperlink{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a8f1eacc7a7ec70f52befcaa2c9321591}{faces} () const
+\begin{DoxyCompactList}\small\item\em Return all faces. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Mega\+Anode\+Plane.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_aa9912010c3155fa7e010faf6fe1f01d7}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_aa9912010c3155fa7e010faf6fe1f01d7}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!````~Mega\+Anode\+Plane@{$\sim$\+Mega\+Anode\+Plane}}
+\index{````~Mega\+Anode\+Plane@{$\sim$\+Mega\+Anode\+Plane}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{$\sim$\+Mega\+Anode\+Plane()}{~MegaAnodePlane()}}
+{\footnotesize\ttfamily virtual Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane\+::$\sim$\+Mega\+Anode\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 20 of file Mega\+Anode\+Plane.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_mega_anode_plane_aa9912010c3155fa7e010faf6fe1f01d7_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a3cc2a292c89472524f21379c0eff1111}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a3cc2a292c89472524f21379c0eff1111}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!channel@{channel}}
+\index{channel@{channel}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{channel()}{channel()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Channel\+::pointer} Gen\+::\+Mega\+Anode\+Plane\+::channel (\begin{DoxyParamCaption}\item[{int}]{chident }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return an \hyperlink{class_wire_cell_1_1_i_channel}{I\+Channel} with the associated channel ID. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_ab9cab29e958c7cc4aa7dd9cb600c33cd}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 61 of file Mega\+Anode\+Plane.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a3cc2a292c89472524f21379c0eff1111_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a1106718600e8a867efd62a7c9dedafd2}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a1106718600e8a867efd62a7c9dedafd2}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!channels@{channels}}
+\index{channels@{channels}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{channels()}{channels()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Gen\+::\+Mega\+Anode\+Plane\+::channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a collection of all channels. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_a8de1ff56146e343b9ad266eaa011065a}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 51 of file Mega\+Anode\+Plane.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a1106718600e8a867efd62a7c9dedafd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a68669a57b1f5baa35fdbcc259e230fb4}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a68669a57b1f5baa35fdbcc259e230fb4}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Mega\+Anode\+Plane\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 21 of file Mega\+Anode\+Plane.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a68669a57b1f5baa35fdbcc259e230fb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a46b1dc962d2894307fa820da9ea5f663}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a46b1dc962d2894307fa820da9ea5f663}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Mega\+Anode\+Plane\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+These must be provided 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 12 of file Mega\+Anode\+Plane.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a46b1dc962d2894307fa820da9ea5f663_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_ad9c13939093664e740ade87c8d89ba94}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_ad9c13939093664e740ade87c8d89ba94}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!face@{face}}
+\index{face@{face}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{face()}{face()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Anode\+Face\+::pointer} Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane\+::face (\begin{DoxyParamCaption}\item[{int}]{ident }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return a anode face by its ident number. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_ad420395805cd4a1c07253b535768fd5a}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 44 of file Mega\+Anode\+Plane.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a8f1eacc7a7ec70f52befcaa2c9321591}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a8f1eacc7a7ec70f52befcaa2c9321591}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!faces@{faces}}
+\index{faces@{faces}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{faces()}{faces()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}{I\+Anode\+Face\+::vector} Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane\+::faces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return all faces. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_a22ebdffd5613bf8007e0ae314984c36a}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 47 of file Mega\+Anode\+Plane.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a4f464401cebc46073d4fef4cafe67d97}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a4f464401cebc46073d4fef4cafe67d97}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!ident@{ident}}
+\index{ident@{ident}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{ident()}{ident()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane\+::ident (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the ident number of this plane. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_a18dfeccffc41a8fca3631a4e98967c57}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 41 of file Mega\+Anode\+Plane.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a4ccf1f789e1f62b35993d95b659b92c3}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a4ccf1f789e1f62b35993d95b659b92c3}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!nfaces@{nfaces}}
+\index{nfaces@{nfaces}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{nfaces()}{nfaces()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane\+::nfaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return number of faces (eg, Micro\+Boo\+NE=1, D\+U\+NE=2) 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_ace24697d669e5b25613db8ad110611f0}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 36 of file Mega\+Anode\+Plane.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a39f210db553e1e981412c2c44861870c}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a39f210db553e1e981412c2c44861870c}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!resolve@{resolve}}
+\index{resolve@{resolve}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} Gen\+::\+Mega\+Anode\+Plane\+::resolve (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Resolve a channel ident number to a \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id}. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_a566ba20aec7e85b99a9f4304f073afa0}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 35 of file Mega\+Anode\+Plane.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a39f210db553e1e981412c2c44861870c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a39f210db553e1e981412c2c44861870c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a1d4b6dd24d9b2d805120eed53e153bc3}\label{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a1d4b6dd24d9b2d805120eed53e153bc3}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}!wires@{wires}}
+\index{wires@{wires}!Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane@{Wire\+Cell\+::\+Gen\+::\+Mega\+Anode\+Plane}}
+\subsubsection{\texorpdfstring{wires()}{wires()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Wire\+::vector} Gen\+::\+Mega\+Anode\+Plane\+::wires (\begin{DoxyParamCaption}\item[{int}]{chident }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return all wires connected into the given channel ident number. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_anode_plane_a58f3e7e47cfe10a141e0275f80dcc789}{Wire\+Cell\+::\+I\+Anode\+Plane}.
+
+
+
+Definition at line 71 of file Mega\+Anode\+Plane.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_mega_anode_plane_a1d4b6dd24d9b2d805120eed53e153bc3_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_mega_anode_plane_8h}{Mega\+Anode\+Plane.\+h}\item 
+gen/src/\hyperlink{_mega_anode_plane_8cxx}{Mega\+Anode\+Plane.\+cxx}\end{DoxyCompactItemize}

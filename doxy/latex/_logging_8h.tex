@@ -1,0 +1,70 @@
+\hypertarget{_logging_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Logging.h File Reference}
+\label{_logging_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Logging.\+h@{util/inc/\+Wire\+Cell\+Util/\+Logging.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/spdlog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/fmt/ostr.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Logging.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_logging_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_logging_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_log}{Wire\+Cell\+::\+Log}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_logging_8h_ae4fda6f71f35120e2ff48157fca961b5}{S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL}~\hyperlink{common_8h_a57ad66f77dc01b41a51f7e884dd460dd}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespace_wire_cell_1_1_log_a5147137d4bcdf4d35c235c5c1ec1495f}{Wire\+Cell\+::\+Log\+::logptr\+\_\+t}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1sinks_1_1sink}{spdlog\+::sinks\+::sink} $>$ \hyperlink{namespace_wire_cell_1_1_log_abee3220a6c332928df3d1583550c6e22}{Wire\+Cell\+::\+Log\+::sinkptr\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_adbf98ba02ee62812b211ede24464c91c}{Wire\+Cell\+::\+Log\+::add\+\_\+sink} (sinkptr\+\_\+t sink, std\+::string level=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_a2b30e7b1375fa3fdb23be092fe116cfb}{Wire\+Cell\+::\+Log\+::add\+\_\+file} (std\+::string filename, std\+::string level=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_a417843ceafbe08958ee4d72acf1732d0}{Wire\+Cell\+::\+Log\+::add\+\_\+stdout} (bool \hyperlink{color_8h_a80d1dc5f416b97f92939a4166d41203c}{color}=true, std\+::string level=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_a01ca295ba785cd50c408dc064404949c}{Wire\+Cell\+::\+Log\+::add\+\_\+stderr} (bool \hyperlink{color_8h_a80d1dc5f416b97f92939a4166d41203c}{color}=true, std\+::string level=\char`\"{}\char`\"{})
+\item 
+logptr\+\_\+t \hyperlink{namespace_wire_cell_1_1_log_a7675bcc4bf25b2bc66314d5c096cf676}{Wire\+Cell\+::\+Log\+::logger} (std\+::string name)
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_af453ddce8d810f730dca72024376727e}{Wire\+Cell\+::\+Log\+::set\+\_\+level} (std\+::string level, std\+::string which=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_accaf0fe0149777811d7c5a648fe3f5e4}{Wire\+Cell\+::\+Log\+::set\+\_\+pattern} (std\+::string pattern, std\+::string which=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_logging_8h_ae4fda6f71f35120e2ff48157fca961b5}\label{_logging_8h_ae4fda6f71f35120e2ff48157fca961b5}} 
+\index{Logging.\+h@{Logging.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL@{S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL@{S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL}!Logging.\+h@{Logging.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL}{SPDLOG\_ACTIVE\_LEVEL}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL~\hyperlink{common_8h_a57ad66f77dc01b41a51f7e884dd460dd}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE}}
+
+
+
+Definition at line 13 of file Logging.\+h.
+

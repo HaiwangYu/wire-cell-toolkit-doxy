@@ -1,0 +1,48 @@
+\hypertarget{_i_depo_8h}{}\section{iface/inc/\+Wire\+Cell\+Iface/\+I\+Depo.h File Reference}
+\label{_i_depo_8h}\index{iface/inc/\+Wire\+Cell\+Iface/\+I\+Depo.\+h@{iface/inc/\+Wire\+Cell\+Iface/\+I\+Depo.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Units.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$set$>$}\newline
+Include dependency graph for I\+Depo.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_i_depo_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_i_depo_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1_i_depo}{Wire\+Cell\+::\+I\+Depo}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_i_depo_drift_compare}{Wire\+Cell\+::\+I\+Depo\+Drift\+Compare}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::set$<$ I\+Depo\+::pointer, I\+Depo\+Drift\+Compare $>$ \hyperlink{namespace_wire_cell_ac01bef08345e4a479b147822eef2a405}{Wire\+Cell\+::\+Depo\+Tau\+Sorted\+Set}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+I\+Depo\+::vector \hyperlink{namespace_wire_cell_a78bd389d29c322c5a6822bee8581ee73}{Wire\+Cell\+::depo\+\_\+chain} (I\+Depo\+::pointer recent)
+\item 
+bool \hyperlink{namespace_wire_cell_a294987a743cfdf49097f1215ac70ab66}{Wire\+Cell\+::ascending\+\_\+time} (const \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{Wire\+Cell\+::\+I\+Depo\+::pointer} \&lhs, const \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{Wire\+Cell\+::\+I\+Depo\+::pointer} \&rhs)
+\begin{DoxyCompactList}\small\item\em Compare two \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} by time (ascending). x is used to break tie. \end{DoxyCompactList}\item 
+bool \hyperlink{namespace_wire_cell_a8cd3697f742b73810ac49feb370e4a04}{Wire\+Cell\+::descending\+\_\+time} (const \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{Wire\+Cell\+::\+I\+Depo\+::pointer} \&lhs, const \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{Wire\+Cell\+::\+I\+Depo\+::pointer} \&rhs)
+\begin{DoxyCompactList}\small\item\em Compare two I\+Depo\+::pointers for by time, descending. x is used to break tie. \end{DoxyCompactList}\end{DoxyCompactItemize}

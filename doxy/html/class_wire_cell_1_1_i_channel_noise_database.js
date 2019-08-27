@@ -1,0 +1,28 @@
+var class_wire_cell_1_1_i_channel_noise_database =
+[
+    [ "channel_group_t", "class_wire_cell_1_1_i_channel_noise_database.html#a7fedd6ab67ba4e7eeb8cf182cc9dc6b1", null ],
+    [ "filter_t", "class_wire_cell_1_1_i_channel_noise_database.html#a0acbae29743542eb1c652f7a56e692f5", null ],
+    [ "~IChannelNoiseDatabase", "class_wire_cell_1_1_i_channel_noise_database.html#a997b922519e63f2c7e98ea6a2ee3c858", null ],
+    [ "bad_channels", "class_wire_cell_1_1_i_channel_noise_database.html#a70f4c0a24525f6a7c8ef84245fd6d01e", null ],
+    [ "coherent_channels", "class_wire_cell_1_1_i_channel_noise_database.html#a0f220478d9d7ed3c913b925e84b39138", null ],
+    [ "coherent_nf_adc_limit", "class_wire_cell_1_1_i_channel_noise_database.html#ac75b3b6b0c7368c0c87d907012abaf9d", null ],
+    [ "coherent_nf_decon_lf_cutoff", "class_wire_cell_1_1_i_channel_noise_database.html#a4104509a65ce9fe5a77fac6ddd39ec56", null ],
+    [ "coherent_nf_decon_limit", "class_wire_cell_1_1_i_channel_noise_database.html#af1b0da30d4aa280deca52a84a9a6326d", null ],
+    [ "coherent_nf_decon_limit1", "class_wire_cell_1_1_i_channel_noise_database.html#a4b2033312603fd90885efdfe14eb71cc", null ],
+    [ "coherent_nf_min_adc_limit", "class_wire_cell_1_1_i_channel_noise_database.html#a1668979331fd999d36d5cb5bb1ed00d6", null ],
+    [ "coherent_nf_protection_factor", "class_wire_cell_1_1_i_channel_noise_database.html#a4572de7acbdd4427cc4c409193abaae8", null ],
+    [ "coherent_nf_roi_min_max_ratio", "class_wire_cell_1_1_i_channel_noise_database.html#a3fab0404aa8a10ad7ed2ac7afd2fe9a7", null ],
+    [ "config", "class_wire_cell_1_1_i_channel_noise_database.html#af6887aa00ed134c7fcb1ee85bd950311", null ],
+    [ "gain_correction", "class_wire_cell_1_1_i_channel_noise_database.html#ad2cdf46aea4ac11f8b7d097bd19c2e80", null ],
+    [ "max_rms_cut", "class_wire_cell_1_1_i_channel_noise_database.html#ad5e4a49ff6b257e2ef290eeeaba95da7", null ],
+    [ "min_rms_cut", "class_wire_cell_1_1_i_channel_noise_database.html#ad0e7e7c3424260af2bd426e578ad83f6", null ],
+    [ "miscfg_channels", "class_wire_cell_1_1_i_channel_noise_database.html#ad653c3c17b0524eca95fa4ce8574ffe9", null ],
+    [ "noise", "class_wire_cell_1_1_i_channel_noise_database.html#a1197551d9dcfd6dc8f656a8aecd5b962", null ],
+    [ "nominal_baseline", "class_wire_cell_1_1_i_channel_noise_database.html#a253f602c70bddb7986e63dc14b8d8e6e", null ],
+    [ "pad_window_back", "class_wire_cell_1_1_i_channel_noise_database.html#a4d772c3ba5f7071a2d869264f37dfecc", null ],
+    [ "pad_window_front", "class_wire_cell_1_1_i_channel_noise_database.html#a77f82280942595e1a2506f49a6f76f56", null ],
+    [ "rcrc", "class_wire_cell_1_1_i_channel_noise_database.html#a8f9fa5547062c23f689fde9bb810361b", null ],
+    [ "response", "class_wire_cell_1_1_i_channel_noise_database.html#ad3c42f59a26e8a8e115199a894d881da", null ],
+    [ "response_offset", "class_wire_cell_1_1_i_channel_noise_database.html#a5a1d081b5cd6d32ac7209b99eb2c61dc", null ],
+    [ "sample_time", "class_wire_cell_1_1_i_channel_noise_database.html#a82406ba30d65412db34e038e789be95c", null ]
+];

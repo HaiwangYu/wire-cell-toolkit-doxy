@@ -1,0 +1,5 @@
+<map id="WireCell::WireSchema::Store::bounding_box" name="WireCell::WireSchema::Store::bounding_box">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_wire_schema_1_1_store.html#aaedfc8ae05d2fe0ef02da6e9d8e8eca1" title="WireCell::WireSchema\l::Store::planes" alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_wire_schema_1_1_store.html#acfb80d41d1fe8264ea07c9d63a5202fe" title="WireCell::WireSchema\l::Store::bounding_box" alt="" coords="208,71,363,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_wire_schema_1_1_store.html#af499deefaf681bf7cb59cb564250504f" title="WireCell::WireSchema\l::Store::faces" alt="" coords="411,71,565,112"/>
+</map>

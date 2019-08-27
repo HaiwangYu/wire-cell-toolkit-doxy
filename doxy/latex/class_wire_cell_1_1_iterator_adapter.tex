@@ -1,0 +1,213 @@
+\hypertarget{class_wire_cell_1_1_iterator_adapter}{}\section{Wire\+Cell\+:\+:Iterator\+Adapter$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$ Class Template Reference}
+\label{class_wire_cell_1_1_iterator_adapter}\index{Wire\+Cell\+::\+Iterator\+Adapter$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$@{Wire\+Cell\+::\+Iterator\+Adapter$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$}}
+
+
+{\ttfamily \#include $<$Iterator\+Base.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Iterator\+Adapter$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_wire_cell_1_1_iterator_adapter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Iterator\+Adapter$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_wire_cell_1_1_iterator_adapter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef base\+\_\+iterator\+::value\+\_\+type \hyperlink{class_wire_cell_1_1_iterator_adapter_a8f7594d66b0d00566f61976bcf4ab13e}{value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_iterator_adapter_af12e12abf4b3fb3745d53283313da519}{Iterator\+Adapter} (adapted\+\_\+iterator it)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_iterator_adapter_adeab5caf488dab6b0cdb1dc48ccccb53}{$\sim$\+Iterator\+Adapter} ()
+\item 
+const \hyperlink{class_wire_cell_1_1_iterator_adapter}{Iterator\+Adapter} \& \hyperlink{class_wire_cell_1_1_iterator_adapter_a1a14d011a73fdf78031443584d3e86e0}{dc} (const base\+\_\+iterator \&other) const
+\item 
+bool \hyperlink{class_wire_cell_1_1_iterator_adapter_a3f4f894ddaeed9584b3994089e77383b}{operator==} (const base\+\_\+iterator \&rhs) const
+\item 
+bool \hyperlink{class_wire_cell_1_1_iterator_adapter_a8c609990561562aeae2069a949db4932}{operator!=} (const base\+\_\+iterator \&rhs) const
+\item 
+base\+\_\+iterator \& \hyperlink{class_wire_cell_1_1_iterator_adapter_a66731e2bbad5dcdcb37d78cb10865bea}{operator=} (const base\+\_\+iterator \&rhs)
+\item 
+base\+\_\+iterator \& \hyperlink{class_wire_cell_1_1_iterator_adapter_a6c8b893a3c7f600fcb2cc567f4ceb8e6}{operator++} ()
+\item 
+\hyperlink{class_wire_cell_1_1_iterator_adapter_a8f7594d66b0d00566f61976bcf4ab13e}{value\+\_\+type} \hyperlink{class_wire_cell_1_1_iterator_adapter_a50675ee1e3bbf5f351414fbede73520f}{operator$\ast$} () const
+\item 
+base\+\_\+iterator $\ast$ \hyperlink{class_wire_cell_1_1_iterator_adapter_a8716b6af5943b38471e58faaea8cc2c3}{clone} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename adapted\+\_\+iterator, typename base\+\_\+iterator$>$\newline
+class Wire\+Cell\+::\+Iterator\+Adapter$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$}
+
+Handy adapter from an iterator to an abstract base iterator.
+
+Eg\+:
+
+class My\+Data \+: virtual public \hyperlink{class_wire_cell_1_1_i_data}{I\+Data} \{...\}; typedef Iterator\+Base$<$ const I\+Data$\ast$ $>$ my\+\_\+base\+\_\+iterator; typedef std\+::vector$<$\+My\+Data$\ast$$>$ My\+Store; typedef \hyperlink{class_wire_cell_1_1_iterator_adapter_af12e12abf4b3fb3745d53283313da519}{Iterator\+Adapter$<$ My\+Store\+::iterator, my\+\_\+base\+\_\+iterator $>$} my\+\_\+iterator;
+
+typedef std\+::\+Iterator$<$const I\+My\+Data$\ast$$>$ data\+\_\+iterator; typedef std\+::pair$<$data\+\_\+iterator, data\+\_\+iterator$>$ data\+\_\+range;
+
+In interface class\+:
+
+data\+\_\+range get\+\_\+data() const = 0;
+
+In implementation with
+
+My\+Store m\+\_\+store;
+
+data\+\_\+range My\+Imp\+::get\+\_\+data() \{ return data\+\_\+range(my\+\_\+iterator(\hyperlink{namespaceinternal_a265f36d9dee68d3f44381347ef2fd5cb}{m\+\_\+store.\+begin()}, my\+\_\+iterator(\hyperlink{namespaceinternal_a94820de1710dc8038fa6f188adfe299b}{m\+\_\+store.\+end()})); \}
+
+Reasons not to use this adapter and go to the trouble to write your own iterator class\+:
+
+
+\begin{DoxyItemize}
+\item want to not use up memory making all objects up front
+\item can generate them on the fly fast enough.
+\item want lazy data access or otherwise, have the iterator \char`\"{}phone
+home\char`\"{} to some other container or source of data.
+\item simply not using a S\+TL container or something that already has std\+::iterators to access the underlying collection. 
+\end{DoxyItemize}
+
+Definition at line 72 of file Iterator\+Base.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_adapter_a8f7594d66b0d00566f61976bcf4ab13e}\label{class_wire_cell_1_1_iterator_adapter_a8f7594d66b0d00566f61976bcf4ab13e}} 
+\index{Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename adapted\+\_\+iterator , typename base\+\_\+iterator $>$ \\
+typedef base\+\_\+iterator\+::value\+\_\+type \hyperlink{class_wire_cell_1_1_iterator_adapter}{Wire\+Cell\+::\+Iterator\+Adapter}$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+::\hyperlink{class_wire_cell_1_1_iterator_adapter_a8f7594d66b0d00566f61976bcf4ab13e}{value\+\_\+type}}
+
+
+
+Definition at line 76 of file Iterator\+Base.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_adapter_af12e12abf4b3fb3745d53283313da519}\label{class_wire_cell_1_1_iterator_adapter_af12e12abf4b3fb3745d53283313da519}} 
+\index{Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}!Iterator\+Adapter@{Iterator\+Adapter}}
+\index{Iterator\+Adapter@{Iterator\+Adapter}!Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}}
+\subsubsection{\texorpdfstring{Iterator\+Adapter()}{IteratorAdapter()}}
+{\footnotesize\ttfamily template$<$typename adapted\+\_\+iterator , typename base\+\_\+iterator $>$ \\
+\hyperlink{class_wire_cell_1_1_iterator_adapter}{Wire\+Cell\+::\+Iterator\+Adapter}$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+::\hyperlink{class_wire_cell_1_1_iterator_adapter}{Iterator\+Adapter} (\begin{DoxyParamCaption}\item[{adapted\+\_\+iterator}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 78 of file Iterator\+Base.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_adapter_adeab5caf488dab6b0cdb1dc48ccccb53}\label{class_wire_cell_1_1_iterator_adapter_adeab5caf488dab6b0cdb1dc48ccccb53}} 
+\index{Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}!````~Iterator\+Adapter@{$\sim$\+Iterator\+Adapter}}
+\index{````~Iterator\+Adapter@{$\sim$\+Iterator\+Adapter}!Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}}
+\subsubsection{\texorpdfstring{$\sim$\+Iterator\+Adapter()}{~IteratorAdapter()}}
+{\footnotesize\ttfamily template$<$typename adapted\+\_\+iterator , typename base\+\_\+iterator $>$ \\
+virtual \hyperlink{class_wire_cell_1_1_iterator_adapter}{Wire\+Cell\+::\+Iterator\+Adapter}$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_iterator_adapter}{Iterator\+Adapter} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 79 of file Iterator\+Base.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_adapter_a8716b6af5943b38471e58faaea8cc2c3}\label{class_wire_cell_1_1_iterator_adapter_a8716b6af5943b38471e58faaea8cc2c3}} 
+\index{Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}!clone@{clone}}
+\index{clone@{clone}!Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$typename adapted\+\_\+iterator , typename base\+\_\+iterator $>$ \\
+base\+\_\+iterator$\ast$ \hyperlink{class_wire_cell_1_1_iterator_adapter}{Wire\+Cell\+::\+Iterator\+Adapter}$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 102 of file Iterator\+Base.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_adapter_a1a14d011a73fdf78031443584d3e86e0}\label{class_wire_cell_1_1_iterator_adapter_a1a14d011a73fdf78031443584d3e86e0}} 
+\index{Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}!dc@{dc}}
+\index{dc@{dc}!Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}}
+\subsubsection{\texorpdfstring{dc()}{dc()}}
+{\footnotesize\ttfamily template$<$typename adapted\+\_\+iterator , typename base\+\_\+iterator $>$ \\
+const \hyperlink{class_wire_cell_1_1_iterator_adapter}{Iterator\+Adapter}\& \hyperlink{class_wire_cell_1_1_iterator_adapter}{Wire\+Cell\+::\+Iterator\+Adapter}$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+::dc (\begin{DoxyParamCaption}\item[{const base\+\_\+iterator \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 81 of file Iterator\+Base.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_adapter_a8c609990561562aeae2069a949db4932}\label{class_wire_cell_1_1_iterator_adapter_a8c609990561562aeae2069a949db4932}} 
+\index{Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename adapted\+\_\+iterator , typename base\+\_\+iterator $>$ \\
+bool \hyperlink{class_wire_cell_1_1_iterator_adapter}{Wire\+Cell\+::\+Iterator\+Adapter}$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const base\+\_\+iterator \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 87 of file Iterator\+Base.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_adapter_a50675ee1e3bbf5f351414fbede73520f}\label{class_wire_cell_1_1_iterator_adapter_a50675ee1e3bbf5f351414fbede73520f}} 
+\index{Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename adapted\+\_\+iterator , typename base\+\_\+iterator $>$ \\
+\hyperlink{class_wire_cell_1_1_iterator_adapter_a8f7594d66b0d00566f61976bcf4ab13e}{value\+\_\+type} \hyperlink{class_wire_cell_1_1_iterator_adapter}{Wire\+Cell\+::\+Iterator\+Adapter}$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 98 of file Iterator\+Base.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_adapter_a6c8b893a3c7f600fcb2cc567f4ceb8e6}\label{class_wire_cell_1_1_iterator_adapter_a6c8b893a3c7f600fcb2cc567f4ceb8e6}} 
+\index{Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}!operator++@{operator++}}
+\index{operator++@{operator++}!Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily template$<$typename adapted\+\_\+iterator , typename base\+\_\+iterator $>$ \\
+base\+\_\+iterator\& \hyperlink{class_wire_cell_1_1_iterator_adapter}{Wire\+Cell\+::\+Iterator\+Adapter}$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 94 of file Iterator\+Base.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_adapter_a66731e2bbad5dcdcb37d78cb10865bea}\label{class_wire_cell_1_1_iterator_adapter_a66731e2bbad5dcdcb37d78cb10865bea}} 
+\index{Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}!operator=@{operator=}}
+\index{operator=@{operator=}!Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename adapted\+\_\+iterator , typename base\+\_\+iterator $>$ \\
+base\+\_\+iterator\& \hyperlink{class_wire_cell_1_1_iterator_adapter}{Wire\+Cell\+::\+Iterator\+Adapter}$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+::operator= (\begin{DoxyParamCaption}\item[{const base\+\_\+iterator \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 90 of file Iterator\+Base.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_iterator_adapter_a3f4f894ddaeed9584b3994089e77383b}\label{class_wire_cell_1_1_iterator_adapter_a3f4f894ddaeed9584b3994089e77383b}} 
+\index{Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}!operator==@{operator==}}
+\index{operator==@{operator==}!Wire\+Cell\+::\+Iterator\+Adapter@{Wire\+Cell\+::\+Iterator\+Adapter}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename adapted\+\_\+iterator , typename base\+\_\+iterator $>$ \\
+bool \hyperlink{class_wire_cell_1_1_iterator_adapter}{Wire\+Cell\+::\+Iterator\+Adapter}$<$ adapted\+\_\+iterator, base\+\_\+iterator $>$\+::operator== (\begin{DoxyParamCaption}\item[{const base\+\_\+iterator \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file Iterator\+Base.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_iterator_base_8h}{Iterator\+Base.\+h}\end{DoxyCompactItemize}

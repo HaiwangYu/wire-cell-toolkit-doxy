@@ -1,0 +1,8 @@
+<map id="WireCell::SigProc::ROI_refinement::get_w_rois" name="WireCell::SigProc::ROI_refinement::get_w_rois">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement.html#afd5ab2626265ce9d6efd309bfeec3639" title="WireCell::SigProc::\lROI_refinement::get\l_rois_by_plane" alt="" coords="193,85,333,141"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement.html#a9b1debf14ee8bae2c9a558da5308cfb3" title="WireCell::SigProc::\lROI_refinement::get\l_u_rois" alt="" coords="381,5,521,61"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement.html#abd0825bd27e31785fd255c90fab25df6" title="WireCell::SigProc::\lROI_refinement::get\l_v_rois" alt="" coords="381,85,521,141"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell.html#aeda39bc129b6bab40d0e35ffb4af55ef" title="Return dictionary in given list if it value at dotpath matches. " alt="" coords="401,165,502,192"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell.html#ade8a8d63c0beb7335d7f969903bfeedc" title="Follow a dot.separated.path and return the branch there. " alt="" coords="569,165,688,192"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1_string.html#aef23d7b89dbe21e34a499c9156dd1e60" title="WireCell::String::split" alt="" coords="736,165,883,192"/>
+</map>

@@ -1,0 +1,100 @@
+\hypertarget{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d}{}\section{formatter$<$ TupleT, Char, typename std\+:\+:enable\+\_\+if$<$ fmt\+:\+:is\+\_\+tuple\+\_\+like$<$ TupleT $>$\+:\+:value $>$\+:\+:type $>$ Struct Template Reference}
+\label{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d}\index{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$@{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$}}
+
+
+{\ttfamily \#include $<$ranges.\+h$>$}
+
+
+
+Collaboration diagram for formatter$<$ TupleT, Char, typename std\+:\+:enable\+\_\+if$<$ fmt\+:\+:is\+\_\+tuple\+\_\+like$<$ TupleT $>$\+:\+:value $>$\+:\+:type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__1a7792b53e9328c92b267316a2a8aed3}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Parse\+Context $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} auto \hyperlink{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a7b66a353e2b9bf7e2806058857e03d90}{parse} (Parse\+Context \&ctx) -\/$>$ decltype(ctx.\+begin())
+\item 
+{\footnotesize template$<$typename Format\+Context  = format\+\_\+context$>$ }\\auto \hyperlink{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a7d5dc29d45fc8f500059ce69020b2ea6}{format} (const TupleT \&values, Format\+Context \&ctx) -\/$>$ decltype(ctx.\+out())
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structformatting__tuple}{formatting\+\_\+tuple}$<$ Char $>$ \hyperlink{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a25cee26a4ffe9ca5631076f4eb6cf865}{formatting}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename TupleT, typename Char$>$\newline
+struct formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$}
+
+
+
+Definition at line 208 of file ranges.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a7d5dc29d45fc8f500059ce69020b2ea6}\label{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a7d5dc29d45fc8f500059ce69020b2ea6}} 
+\index{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$@{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$}!format@{format}}
+\index{format@{format}!formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$@{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$}}
+\subsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily template$<$typename TupleT , typename Char $>$ \\
+template$<$typename Format\+Context  = format\+\_\+context$>$ \\
+auto \hyperlink{structformatter}{formatter}$<$ TupleT, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ TupleT $>$\+::value $>$\+::type $>$\+::format (\begin{DoxyParamCaption}\item[{const TupleT \&}]{values,  }\item[{Format\+Context \&}]{ctx }\end{DoxyParamCaption}) -\/$>$ decltype(ctx.\+out()) \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 243 of file ranges.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a7d5dc29d45fc8f500059ce69020b2ea6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a7b66a353e2b9bf7e2806058857e03d90}\label{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a7b66a353e2b9bf7e2806058857e03d90}} 
+\index{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$@{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$}!parse@{parse}}
+\index{parse@{parse}!formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$@{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily template$<$typename TupleT , typename Char $>$ \\
+template$<$typename Parse\+Context $>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} auto \hyperlink{structformatter}{formatter}$<$ TupleT, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ TupleT $>$\+::value $>$\+::type $>$\+::parse (\begin{DoxyParamCaption}\item[{Parse\+Context \&}]{ctx }\end{DoxyParamCaption}) -\/$>$ decltype(ctx.\+begin()) \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 238 of file ranges.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a7b66a353e2b9bf7e2806058857e03d90_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a25cee26a4ffe9ca5631076f4eb6cf865}\label{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d_a25cee26a4ffe9ca5631076f4eb6cf865}} 
+\index{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$@{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$}!formatting@{formatting}}
+\index{formatting@{formatting}!formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$@{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$}}
+\subsubsection{\texorpdfstring{formatting}{formatting}}
+{\footnotesize\ttfamily template$<$typename TupleT , typename Char $>$ \\
+\hyperlink{structformatting__tuple}{formatting\+\_\+tuple}$<$Char$>$ \hyperlink{structformatter}{formatter}$<$ TupleT, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ TupleT $>$\+::value $>$\+::type $>$\+::formatting}
+
+
+
+Definition at line 235 of file ranges.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{ranges_8h}{ranges.\+h}\end{DoxyCompactItemize}

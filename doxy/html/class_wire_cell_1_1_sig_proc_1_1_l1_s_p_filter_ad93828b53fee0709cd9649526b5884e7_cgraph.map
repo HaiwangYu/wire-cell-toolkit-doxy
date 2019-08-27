@@ -1,0 +1,13 @@
+<map id="WireCell::SigProc::L1SPFilter::init_resp" name="WireCell::SigProc::L1SPFilter::init_resp">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_response.html#a465144cc99feb1c0e2e85c6928ae2506" title="WireCell::Response\l::average_1D" alt="" coords="205,137,344,178"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1_response.html#a8f1890f06132c13edca92ab1d9ea9263" title="WireCell::Response\l::as_array" alt="" coords="409,195,548,237"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1_waveform.html#aa8d25ae88346929b5e54cd116f7a4f47" title="Scale (multiply) sequence values by scalar. " alt="" coords="205,254,345,295"/>
+<area shape="rect" id="node11" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="193,320,356,347"/>
+<area shape="rect" id="node12" href="$namespace_wire_cell_1_1_waveform.html#a69255dad704fcb71fa53745e90a2f0e1" title="WireCell::Waveform\l::idft" alt="" coords="205,371,345,413"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_response.html#a11620870420942188de46612d3e2022f" title="WireCell::Response\l::wire_region_average" alt="" coords="404,78,553,119"/>
+<area shape="rect" id="node4" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#ae156e1d6bbf8be35451100d1d43d9aaa" title="WireCell::Response\l::Schema::FieldResponse\l::plane" alt="" coords="601,5,775,61"/>
+<area shape="rect" id="node6" href="$struct_wire_cell_1_1_response_1_1_schema_1_1_field_response.html#a9f3b786a9adf83b6bf536d6442d53207" title="WireCell::Response\l::Schema::FieldResponse\l::FieldResponse" alt="" coords="601,136,775,192"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_waveform.html#a4c7b82a4567d6c94227398f9511ffb92" title="Return sum of all entries in sequence. " alt="" coords="601,85,775,112"/>
+<area shape="rect" id="node9" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="415,261,542,302"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="625,261,751,302"/>
+</map>

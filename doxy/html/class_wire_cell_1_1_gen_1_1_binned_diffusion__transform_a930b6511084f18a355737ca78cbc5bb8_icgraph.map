@@ -1,0 +1,5 @@
+<map id="WireCell::Gen::BinnedDiffusion_transform::pitch_range" name="WireCell::Gen::BinnedDiffusion_transform::pitch_range">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion__transform.html#a57f26ea414abfae84cf54bdbe7992db5" title="WireCell::Gen::BinnedDiffusion\l_transform::tbins" alt="" coords="257,5,461,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_impact_transform.html#ad65b81bab03b2a6f8836782c732556bc" title="WireCell::Gen::ImpactTransform\l::waveform" alt="" coords="509,5,720,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_depo_transform.html#a72bd0b9e256a8e9f4311c61cf6b5692b" title="WireCell::Gen::DepoTransform\l::operator()" alt="" coords="768,5,971,47"/>
+</map>

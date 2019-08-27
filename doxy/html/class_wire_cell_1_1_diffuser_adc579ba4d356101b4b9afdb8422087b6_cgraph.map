@@ -1,0 +1,5 @@
+<map id="WireCell::Diffuser::diffuse" name="WireCell::Diffuser::diffuse">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_diffuser.html#a2b37e9c8a8e88697620fda6acb8ef3b1" title="WireCell::Diffuser\l::bounds" alt="" coords="196,5,323,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_diffuser.html#a19e1586fdca351c264970065699e9c39" title="WireCell::Diffuser\l::oned" alt="" coords="196,71,323,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_diffusion.html#a18df718cd15d36f105c5eb2f4039b320" title="WireCell::Diffusion::set" alt="" coords="180,137,339,163"/>
+</map>

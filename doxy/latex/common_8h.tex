@@ -1,0 +1,291 @@
+\hypertarget{common_8h}{}\section{util/inc/spdlog/common.h File Reference}
+\label{common_8h}\index{util/inc/spdlog/common.\+h@{util/inc/spdlog/common.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/tweakme.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$initializer\+\_\+list$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/null\+\_\+mutex.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/fmt/fmt.\+h\char`\"{}}\newline
+Include dependency graph for common.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classspdlog_1_1spdlog__ex}{spdlog\+::spdlog\+\_\+ex}
+\item 
+struct \hyperlink{structspdlog_1_1source__loc}{spdlog\+::source\+\_\+loc}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1sinks}{spdlog\+::sinks}
+\item 
+ \hyperlink{namespacespdlog_1_1level}{spdlog\+::level}
+\item 
+ \hyperlink{namespacespdlog_1_1details}{spdlog\+::details}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}~noexcept
+\item 
+\#define \hyperlink{common_8h_a8747e6feba8bf2d3f204cb76bfd4607a}{S\+P\+D\+L\+O\+G\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}~constexpr
+\item 
+\#define \hyperlink{common_8h_a9ad12194a0d42daffd44df91f9854f29}{S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}
+\item 
+\#define \hyperlink{common_8h_a30f621e51aba2dfe9f905fd9e2dee918}{S\+P\+D\+L\+O\+G\+\_\+\+S\+T\+R\+R\+C\+HR}(str,  sep)~strrchr(str, sep)
+\item 
+\#define \hyperlink{common_8h_a2cf36a7836e979b59b20edea26135766}{S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+B\+A\+S\+E\+N\+A\+ME}(\hyperlink{classfile}{file})~\hyperlink{common_8h_a30f621e51aba2dfe9f905fd9e2dee918}{S\+P\+D\+L\+O\+G\+\_\+\+S\+T\+R\+R\+C\+HR}(\char`\"{}/\char`\"{} \hyperlink{classfile}{file}, \textquotesingle{}/\textquotesingle{}) + 1
+\item 
+\#define \hyperlink{common_8h_a1f0ef27d8fc022078352c93ef310cdb4}{S\+P\+D\+L\+O\+G\+\_\+\+F\+U\+N\+C\+T\+I\+ON}~\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+
+\item 
+\#define \hyperlink{common_8h_a57ad66f77dc01b41a51f7e884dd460dd}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE}~0
+\item 
+\#define \hyperlink{common_8h_a3966e2839945ed2b8adf9373b7bdd56e}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG}~1
+\item 
+\#define \hyperlink{common_8h_a33c73f3639c48dd378b33fabbfd27b7f}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}~2
+\item 
+\#define \hyperlink{common_8h_acff159db380f787b46d9d51d7f9cc69c}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN}~3
+\item 
+\#define \hyperlink{common_8h_a6ffd317d15c017cf593212e5441ad70a}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR}~4
+\item 
+\#define \hyperlink{common_8h_ac7313aeac75b2d8521f04ba9508b9695}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+R\+I\+T\+I\+C\+AL}~5
+\item 
+\#define \hyperlink{common_8h_a8f7ec3c49f83b525b8c15d459b1136d0}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+FF}~6
+\item 
+\#define \hyperlink{common_8h_ae4fda6f71f35120e2ff48157fca961b5}{S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL}~\hyperlink{common_8h_a33c73f3639c48dd378b33fabbfd27b7f}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}
+\item 
+\#define \hyperlink{common_8h_afe938b48c2a5e8816892fbc1841f9694}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+A\+M\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacespdlog_a173dd7064323e4807d720eabcc95fc73}{spdlog\+::log\+\_\+clock} = std\+::chrono\+::system\+\_\+clock
+\item 
+using \hyperlink{namespacespdlog_a422c57d3088160b517e5a74e5f318253}{spdlog\+::sink\+\_\+ptr} = std\+::shared\+\_\+ptr$<$ sinks\+::sink $>$
+\item 
+using \hyperlink{namespacespdlog_aa9b5c2298bf713fbe02b7e538d797ecd}{spdlog\+::sinks\+\_\+init\+\_\+list} = std\+::initializer\+\_\+list$<$ sink\+\_\+ptr $>$
+\item 
+using \hyperlink{namespacespdlog_ad3ed787a29f245c833ef66faf48036e2}{spdlog\+::log\+\_\+err\+\_\+handler} = std\+::function$<$ void(const std\+::string \&err\+\_\+msg)$>$
+\item 
+using \hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{spdlog\+::string\+\_\+view\+\_\+t} = \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{fmt\+::string\+\_\+view}
+\item 
+using \hyperlink{namespacespdlog_a8585bf495310a6ce695191739351709b}{spdlog\+::level\+\_\+t} = std\+::atomic$<$ int $>$
+\item 
+using \hyperlink{namespacespdlog_1_1level_add7f1cc7c1914c6f6a6773cfbd1bb997}{spdlog\+::level\+::level\+\_\+hasher} = std\+::hash$<$ int $>$
+\item 
+using \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{spdlog\+::filename\+\_\+t} = std\+::string
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{spdlog\+::level\+::level\+\_\+enum} \{ \newline
+\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8badd5891a1416461ee9e7d7e19d41af51f}{spdlog\+::level\+::trace} = S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE, 
+\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8baea632f71a316dac4dbaf2d98534c7ca5}{spdlog\+::level\+::debug} = S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG, 
+\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba7f09db55ad64d87e4124f10582cb016f}{spdlog\+::level\+::info} = S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO, 
+\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba6c371ca09668dd308a1997eab47def05}{spdlog\+::level\+::warn} = S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN, 
+\newline
+\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba4d723e295b98a75c1263d85fc165045f}{spdlog\+::level\+::err} = S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR, 
+\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba309b214a2b8629b6cf0048ce916e8a58}{spdlog\+::level\+::critical} = S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+R\+I\+T\+I\+C\+AL, 
+\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba917591d8c0e89f6e6247c95c67809a1a}{spdlog\+::level\+::off} = S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+FF
+ \}
+\item 
+enum \hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ced}{spdlog\+::pattern\+\_\+time\+\_\+type} \{ \hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07cedaf5ddaf0ca7929578b408c909429f68f2}{spdlog\+::pattern\+\_\+time\+\_\+type\+::local}, 
+\hyperlink{namespacespdlog_ad598fbd8338772e66ae09e8723a07ceda52d33cb937bbdab234ab1729a0f8225b}{spdlog\+::pattern\+\_\+time\+\_\+type\+::utc}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string\+\_\+view\+\_\+t \& \hyperlink{namespacespdlog_1_1level_a95af114ec4b98530113f98b5c7bc5ec7}{spdlog\+::level\+::to\+\_\+string\+\_\+view} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{spdlog\+::level\+::level\+\_\+enum} l) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+const char $\ast$ \hyperlink{namespacespdlog_1_1level_ac33524043deb648efa6d0a83bdcaeabc}{spdlog\+::level\+::to\+\_\+short\+\_\+c\+\_\+str} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{spdlog\+::level\+::level\+\_\+enum} l) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{spdlog\+::level\+::level\+\_\+enum} \hyperlink{namespacespdlog_1_1level_aad88aa14232ac8b65ee62f8e5ad3df5a}{spdlog\+::level\+::from\+\_\+str} (const std\+::string \&name) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\std\+::unique\+\_\+ptr$<$ T $>$ \hyperlink{namespacespdlog_1_1details_a2d61216ea1cb33ba27ddc6a78cc98ecd}{spdlog\+::details\+::make\+\_\+unique} (Args \&\&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{common_8h_ae4fda6f71f35120e2ff48157fca961b5}\label{common_8h_ae4fda6f71f35120e2ff48157fca961b5}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL@{S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL@{S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL}{SPDLOG\_ACTIVE\_LEVEL}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+E\+V\+EL~\hyperlink{common_8h_a33c73f3639c48dd378b33fabbfd27b7f}{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}}
+
+
+
+Definition at line 106 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a8747e6feba8bf2d3f204cb76bfd4607a}\label{common_8h_a8747e6feba8bf2d3f204cb76bfd4607a}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR@{S\+P\+D\+L\+O\+G\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR@{S\+P\+D\+L\+O\+G\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}{SPDLOG\_CONSTEXPR}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR~constexpr}
+
+
+
+Definition at line 36 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a9ad12194a0d42daffd44df91f9854f29}\label{common_8h_a9ad12194a0d42daffd44df91f9854f29}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}{SPDLOG\_DEPRECATED}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}
+
+
+
+Definition at line 44 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a2cf36a7836e979b59b20edea26135766}\label{common_8h_a2cf36a7836e979b59b20edea26135766}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+B\+A\+S\+E\+N\+A\+ME@{S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+B\+A\+S\+E\+N\+A\+ME}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+B\+A\+S\+E\+N\+A\+ME@{S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+B\+A\+S\+E\+N\+A\+ME}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+B\+A\+S\+E\+N\+A\+ME}{SPDLOG\_FILE\_BASENAME}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+F\+I\+L\+E\+\_\+\+B\+A\+S\+E\+N\+A\+ME(\begin{DoxyParamCaption}\item[{}]{\hyperlink{classfile}{file} }\end{DoxyParamCaption})~\hyperlink{common_8h_a30f621e51aba2dfe9f905fd9e2dee918}{S\+P\+D\+L\+O\+G\+\_\+\+S\+T\+R\+R\+C\+HR}(\char`\"{}/\char`\"{} \hyperlink{classfile}{file}, \textquotesingle{}/\textquotesingle{}) + 1}
+
+
+
+Definition at line 64 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a1f0ef27d8fc022078352c93ef310cdb4}\label{common_8h_a1f0ef27d8fc022078352c93ef310cdb4}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+F\+U\+N\+C\+T\+I\+ON@{S\+P\+D\+L\+O\+G\+\_\+\+F\+U\+N\+C\+T\+I\+ON}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+F\+U\+N\+C\+T\+I\+ON@{S\+P\+D\+L\+O\+G\+\_\+\+F\+U\+N\+C\+T\+I\+ON}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+F\+U\+N\+C\+T\+I\+ON}{SPDLOG\_FUNCTION}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+F\+U\+N\+C\+T\+I\+ON~\+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+}
+
+
+
+Definition at line 68 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_ac7313aeac75b2d8521f04ba9508b9695}\label{common_8h_ac7313aeac75b2d8521f04ba9508b9695}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+R\+I\+T\+I\+C\+AL@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+R\+I\+T\+I\+C\+AL}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+R\+I\+T\+I\+C\+AL@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+R\+I\+T\+I\+C\+AL}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+R\+I\+T\+I\+C\+AL}{SPDLOG\_LEVEL\_CRITICAL}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+R\+I\+T\+I\+C\+AL~5}
+
+
+
+Definition at line 102 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a3966e2839945ed2b8adf9373b7bdd56e}\label{common_8h_a3966e2839945ed2b8adf9373b7bdd56e}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG}{SPDLOG\_LEVEL\_DEBUG}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG~1}
+
+
+
+Definition at line 98 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a6ffd317d15c017cf593212e5441ad70a}\label{common_8h_a6ffd317d15c017cf593212e5441ad70a}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR}{SPDLOG\_LEVEL\_ERROR}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR~4}
+
+
+
+Definition at line 101 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a33c73f3639c48dd378b33fabbfd27b7f}\label{common_8h_a33c73f3639c48dd378b33fabbfd27b7f}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}{SPDLOG\_LEVEL\_INFO}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO~2}
+
+
+
+Definition at line 99 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_afe938b48c2a5e8816892fbc1841f9694}\label{common_8h_afe938b48c2a5e8816892fbc1841f9694}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+A\+M\+ES@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+A\+M\+ES}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+A\+M\+ES@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+A\+M\+ES}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+A\+M\+ES}{SPDLOG\_LEVEL\_NAMES}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+N\+A\+M\+ES}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                                                                                                          
+                                  \(\backslash\)
+        \textcolor{stringliteral}{"trace"}, \textcolor{stringliteral}{"debug"}, \textcolor{stringliteral}{"info"}, \textcolor{stringliteral}{"warning"}, \textcolor{stringliteral}{"error"}, \textcolor{stringliteral}{"critical"}, \textcolor{stringliteral}{"off"}                                    
+                                      \(\backslash\)
+    \}
+\end{DoxyCode}
+
+
+Definition at line 123 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a8f7ec3c49f83b525b8c15d459b1136d0}\label{common_8h_a8f7ec3c49f83b525b8c15d459b1136d0}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+FF@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+FF}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+FF@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+FF}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+FF}{SPDLOG\_LEVEL\_OFF}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+O\+FF~6}
+
+
+
+Definition at line 103 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a57ad66f77dc01b41a51f7e884dd460dd}\label{common_8h_a57ad66f77dc01b41a51f7e884dd460dd}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE}{SPDLOG\_LEVEL\_TRACE}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE~0}
+
+
+
+Definition at line 97 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_acff159db380f787b46d9d51d7f9cc69c}\label{common_8h_acff159db380f787b46d9d51d7f9cc69c}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN@{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN}{SPDLOG\_LEVEL\_WARN}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\+W\+A\+RN~3}
+
+
+
+Definition at line 100 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}\label{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT@{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT@{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}{SPDLOG\_NOEXCEPT}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT~noexcept}
+
+
+
+Definition at line 35 of file common.\+h.
+
+\mbox{\Hypertarget{common_8h_a30f621e51aba2dfe9f905fd9e2dee918}\label{common_8h_a30f621e51aba2dfe9f905fd9e2dee918}} 
+\index{common.\+h@{common.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+S\+T\+R\+R\+C\+HR@{S\+P\+D\+L\+O\+G\+\_\+\+S\+T\+R\+R\+C\+HR}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+S\+T\+R\+R\+C\+HR@{S\+P\+D\+L\+O\+G\+\_\+\+S\+T\+R\+R\+C\+HR}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+S\+T\+R\+R\+C\+HR}{SPDLOG\_STRRCHR}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+S\+T\+R\+R\+C\+HR(\begin{DoxyParamCaption}\item[{}]{str,  }\item[{}]{sep }\end{DoxyParamCaption})~strrchr(str, sep)}
+
+
+
+Definition at line 58 of file common.\+h.
+

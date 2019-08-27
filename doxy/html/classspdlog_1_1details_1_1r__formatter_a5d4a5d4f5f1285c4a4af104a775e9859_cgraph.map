@@ -1,0 +1,8 @@
+<map id="spdlog::details::r_formatter::format" name="spdlog::details::r_formatter::format">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1fmt__helper.html#ae8d7b70c5b54338c0903cf494b06404a" title="spdlog::details::fmt\l_helper::pad2" alt="" coords="207,35,340,76"/>
+<area shape="rect" id="node7" href="$namespacespdlog_1_1details_1_1fmt__helper.html#a603f4d0d8853a61610a0042d5d62fe94" title="spdlog::details::fmt\l_helper::append_string_view" alt="" coords="180,100,367,141"/>
+<area shape="rect" id="node3" href="$namespacespdlog_1_1details_1_1fmt__helper.html#a0d2621043fa718e54ffcaa2e9812dfa4" title="spdlog::details::fmt\l_helper::append_int" alt="" coords="415,5,549,47"/>
+<area shape="rect" id="node4" href="$core_8h.html#a7f023637311ff6fae516e0da2caf05d3" title="format_to" alt="" coords="443,71,521,98"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a9f6f592ec8a979251038265f241e7d48" title="internal::vformat_to" alt="" coords="597,46,732,73"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="780,71,936,98"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="iface/inc/WireCellIface/IChannelFilter.h" name="iface/inc/WireCellIface/IChannelFilter.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_derivations_8h.html" title="sigproc/inc/WireCellSigProc\l/Derivations.h" alt="" coords="235,95,421,136"/>
+<area shape="rect" id="node8" href="$_microboone_8h.html" title="sigproc/inc/WireCellSigProc\l/Microboone.h" alt="" coords="445,95,630,136"/>
+<area shape="rect" id="node9" href="$_omnibus_noise_filter_8h.html" title="sigproc/inc/WireCellSigProc\l/OmnibusNoiseFilter.h" alt="" coords="863,95,1049,136"/>
+<area shape="rect" id="node11" href="$_protodune_8h.html" title="sigproc/inc/WireCellSigProc\l/Protodune.h" alt="" coords="654,95,839,136"/>
+<area shape="rect" id="node4" href="$_derivations_8cxx.html" title="sigproc/src/Derivations.cxx" alt="" coords="237,191,419,218"/>
+<area shape="rect" id="node5" href="$_microboone_8cxx.html" title="sigproc/src/Microboone.cxx" alt="" coords="443,191,626,218"/>
+<area shape="rect" id="node6" href="$_omnibus_p_m_t_noise_filter_8cxx.html" title="sigproc/src/OmnibusPMTNoise\lFilter.cxx" alt="" coords="9,184,213,225"/>
+<area shape="rect" id="node7" href="$_protodune_8cxx.html" title="sigproc/src/Protodune.cxx" alt="" coords="650,191,825,218"/>
+<area shape="rect" id="node10" href="$_omnibus_noise_filter_8cxx.html" title="sigproc/src/OmnibusNoise\lFilter.cxx" alt="" coords="868,184,1044,225"/>
+</map>

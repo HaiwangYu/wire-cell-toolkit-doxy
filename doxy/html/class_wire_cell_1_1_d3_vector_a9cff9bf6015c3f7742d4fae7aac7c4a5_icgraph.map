@@ -1,0 +1,15 @@
+<map id="WireCell::D3Vector::norm" name="WireCell::D3Vector::norm">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_wire_params.html#a8d20db605558e5fa6afaa7c5cf53ae4f" title="WireCell::WireParams\l::configure" alt="" coords="200,5,352,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell.html#a2e8924bbcd70754adeb72b8e14f1d987" title="WireCell::box_intersection" alt="" coords="189,71,363,98"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_pimpos.html#a3cced28a957f1b3f9610166e29441934" title="WireCell::Pimpos::Pimpos" alt="" coords="188,122,364,149"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell.html#a15976410f167da6dd279a8facf3218df" title="WireCell::ray_unit" alt="" coords="213,173,339,199"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_wire_schema_1_1_store.html#abc4cbd21498604e65dbb8753a437a2c2" title="WireCell::WireSchema\l::Store::wire_pitch" alt="" coords="199,224,353,265"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_track_depos.html#adae13601f092202fbdc66c3d0be8be8a" title="WireCell::Gen::TrackDepos\l::add_track" alt="" coords="412,104,595,145"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell.html#a8e3ed293f3eefafaec9f8cf97f460a9b" title="WireCell::ray_pitch" alt="" coords="437,173,570,199"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell.html#a5ff051f9db5117e68d6a372ce828a90a" title="WireCell::ray_dist" alt="" coords="440,230,567,257"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_track_depos.html#a0a3e984c40fe60a0b8fbd451091a008b" title="Accept a configuration. " alt="" coords="643,100,825,141"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_ray_grid_1_1_coordinates.html#a4b9a727396d48768585d9d13916b88c1" title="WireCell::RayGrid::\lCoordinates::Coordinates" alt="" coords="649,165,819,207"/>
+<area shape="rect" id="node11" href="$struct_wire_plane_cache.html#a01c8f094e36bf466517df1b9b4ee071d" title="WirePlaneCache::pitch\l_distance" alt="" coords="656,231,812,272"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_wire_summary.html#ad5b6996523e8d8a98fd0caec607fd9ad" title="WireCell::WireSummary\l::closest" alt="" coords="873,197,1036,239"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_wire_summary.html#a61c1c383ee6b110a37609a3d892b01d2" title="WireCell::WireSummary\l::pitch_distance" alt="" coords="873,263,1036,304"/>
+</map>

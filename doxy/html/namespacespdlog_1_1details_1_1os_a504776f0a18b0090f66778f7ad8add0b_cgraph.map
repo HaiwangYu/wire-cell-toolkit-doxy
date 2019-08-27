@@ -1,0 +1,5 @@
+<map id="spdlog::details::os::gmtime" name="spdlog::details::os::gmtime">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1os.html#ac993ad051e07cd5bda5328be2a54b0a8" title="spdlog::details::os\l::gmtime" alt="" coords="181,23,309,65"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a4df52163db0eff7ab6b17cb243a224b7" title="internal::gmtime_s" alt="" coords="357,5,487,32"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a6a29b192fce543ff8c18fe7bedf3e321" title="internal::gmtime_r" alt="" coords="359,56,485,83"/>
+</map>

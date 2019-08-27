@@ -1,0 +1,1159 @@
+\hypertarget{core_8h}{}\section{util/inc/spdlog/fmt/bundled/core.h File Reference}
+\label{core_8h}\index{util/inc/spdlog/fmt/bundled/core.\+h@{util/inc/spdlog/fmt/bundled/core.\+h}}
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+Include dependency graph for core.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structinternal_1_1result__of}{internal\+::result\+\_\+of$<$ typename $>$}
+\item 
+struct \hyperlink{structinternal_1_1result__of_3_01_f_07_args_8_8_8_08_4}{internal\+::result\+\_\+of$<$ F(\+Args...)$>$}
+\item 
+class \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer$<$ T $>$}
+\item 
+class \hyperlink{classinternal_1_1container__buffer}{internal\+::container\+\_\+buffer$<$ Container $>$}
+\item 
+struct \hyperlink{structinternal_1_1error__handler}{internal\+::error\+\_\+handler}
+\item 
+struct \hyperlink{structinternal_1_1no__formatter__error}{internal\+::no\+\_\+formatter\+\_\+error$<$ T $>$}
+\item 
+struct \hyperlink{structis__constructible}{is\+\_\+constructible$<$ T $>$}
+\item 
+class \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view$<$ Char $>$}
+\item 
+struct \hyperlink{structcompile__string}{compile\+\_\+string}
+\item 
+struct \hyperlink{structis__compile__string}{is\+\_\+compile\+\_\+string$<$ S $>$}
+\item 
+class \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg$<$ Context $>$}
+\item 
+class \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args$<$ Context $>$}
+\item 
+struct \hyperlink{structformatter}{formatter$<$ T, Char, Enable $>$}
+\item 
+struct \hyperlink{structconvert__to__int}{convert\+\_\+to\+\_\+int$<$ T, Char, Enable $>$}
+\item 
+struct \hyperlink{structinternal_1_1dummy__string__view}{internal\+::dummy\+\_\+string\+\_\+view}
+\item 
+struct \hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string$<$ S $>$}
+\item 
+struct \hyperlink{structinternal_1_1char__t}{internal\+::char\+\_\+t$<$ S $>$}
+\item 
+struct \hyperlink{structinternal_1_1named__arg__base}{internal\+::named\+\_\+arg\+\_\+base$<$ Char $>$}
+\item 
+struct \hyperlink{structinternal_1_1named__arg}{internal\+::named\+\_\+arg$<$ T, Char $>$}
+\item 
+struct \hyperlink{structinternal_1_1string__value}{internal\+::string\+\_\+value$<$ Char $>$}
+\item 
+struct \hyperlink{structinternal_1_1custom__value}{internal\+::custom\+\_\+value$<$ Context $>$}
+\item 
+class \hyperlink{classinternal_1_1value}{internal\+::value$<$ Context $>$}
+\item 
+struct \hyperlink{structinternal_1_1init}{internal\+::init$<$ Context, T, T\+Y\+P\+E $>$}
+\item 
+class \hyperlink{classinternal_1_1arg__map}{internal\+::arg\+\_\+map$<$ Context $>$}
+\item 
+class \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg$<$ Context $>$}
+\item 
+class \hyperlink{classbasic__format__arg_1_1handle}{basic\+\_\+format\+\_\+arg$<$ Context $>$\+::handle}
+\item 
+struct \hyperlink{structmonostate}{monostate}
+\item 
+class \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context$<$ Char, Error\+Handler $>$}
+\item 
+class \hyperlink{classinternal_1_1arg__map}{internal\+::arg\+\_\+map$<$ Context $>$}
+\item 
+class \hyperlink{classinternal_1_1locale__ref}{internal\+::locale\+\_\+ref}
+\item 
+class \hyperlink{classinternal_1_1context__base}{internal\+::context\+\_\+base$<$ Output\+It, Context, Char $>$}
+\item 
+struct \hyperlink{structinternal_1_1get__type}{internal\+::get\+\_\+type$<$ Context, T $>$}
+\item 
+class \hyperlink{classbasic__format__context}{basic\+\_\+format\+\_\+context$<$ Output\+It, Char $>$}
+\item 
+struct \hyperlink{structbasic__format__context_1_1formatter__type}{basic\+\_\+format\+\_\+context$<$ Output\+It, Char $>$\+::formatter\+\_\+type$<$ T $>$}
+\item 
+struct \hyperlink{structbuffer__context}{buffer\+\_\+context$<$ Char $>$}
+\item 
+class \hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store$<$ Context, Args $>$}
+\item 
+class \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args$<$ Context $>$}
+\item 
+struct \hyperlink{structformat__args}{format\+\_\+args}
+\item 
+struct \hyperlink{structwformat__args}{wformat\+\_\+args}
+\item 
+struct \hyperlink{structchar__t}{char\+\_\+t$<$ S $>$}
+\item 
+struct \hyperlink{structinternal_1_1named__arg__base}{internal\+::named\+\_\+arg\+\_\+base$<$ Char $>$}
+\item 
+struct \hyperlink{structinternal_1_1named__arg}{internal\+::named\+\_\+arg$<$ T, Char $>$}
+\item 
+struct \hyperlink{structinternal_1_1checked__args}{internal\+::checked\+\_\+args$<$ S, Args $>$}
+\item 
+struct \hyperlink{structis__contiguous}{is\+\_\+contiguous$<$ Container $>$}
+\item 
+struct \hyperlink{structis__contiguous_3_01std_1_1basic__string_3_01_char_01_4_01_4}{is\+\_\+contiguous$<$ std\+::basic\+\_\+string$<$ Char $>$ $>$}
+\item 
+struct \hyperlink{structis__contiguous_3_01internal_1_1basic__buffer_3_01_char_01_4_01_4}{is\+\_\+contiguous$<$ internal\+::basic\+\_\+buffer$<$ Char $>$ $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceinternal}{internal}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{core_8h_a1a322107307b020b6eac933958da94f6}{F\+M\+T\+\_\+\+V\+E\+R\+S\+I\+ON}~50300
+\item 
+\#define \hyperlink{core_8h_a749169f277bb21ccf12b1c665e68e88a}{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+F\+E\+A\+T\+U\+RE}(x)~0
+\item 
+\#define \hyperlink{core_8h_afa144e698f8df527d6e51688eb9abbd1}{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+I\+N\+C\+L\+U\+DE}(x)~0
+\item 
+\#define \hyperlink{core_8h_a55d7b78b0300ddda018f77208e80f3e9}{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+P\+P\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}(x)~0
+\item 
+\#define \hyperlink{core_8h_a4f5db4f97e31a127b1236d1ff412bb0c}{F\+M\+T\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON}~0
+\item 
+\#define \hyperlink{core_8h_a1e3ffe834c427bc295b6880efcd17976}{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+G\+X\+X\+\_\+\+C\+X\+X11}~0
+\item 
+\#define \hyperlink{core_8h_a363cb0623e6975ff2b357a52a03e4728}{F\+M\+T\+\_\+\+M\+S\+C\+\_\+\+V\+ER}~0
+\item 
+\#define \hyperlink{core_8h_a739a7ff96b6dfd65a4de8fe003f5b233}{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}
+\item 
+\#define \hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}~inline
+\item 
+\#define \hyperlink{core_8h_af4388801466a5994a363d6005616371a}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R\+\_\+\+D\+E\+CL}
+\item 
+\#define \hyperlink{core_8h_a33c15cec4035f1a3dc6fe5d4ae05c746}{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11}~(\hyperlink{core_8h_a739a7ff96b6dfd65a4de8fe003f5b233}{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} $\vert$$\vert$ \hyperlink{core_8h_a4f5db4f97e31a127b1236d1ff412bb0c}{F\+M\+T\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON} $>$= 406 $\vert$$\vert$ \hyperlink{core_8h_a363cb0623e6975ff2b357a52a03e4728}{F\+M\+T\+\_\+\+M\+S\+C\+\_\+\+V\+ER} $>$= 1900)
+\item 
+\#define \hyperlink{core_8h_a056f29fbe3ea234ac0cc417fb866a189}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11}
+\item 
+\#define \hyperlink{core_8h_a023c6c178e254d81d578b90921804b1c}{F\+M\+T\+\_\+\+O\+V\+E\+R\+R\+I\+DE}
+\item 
+\#define \hyperlink{core_8h_a25c22ca313078429a88938f673059ae8}{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+E\+X\+P\+L\+I\+C\+IT}~0
+\item 
+\#define \hyperlink{core_8h_ac5e450936052d8a4292d6e609e73e2bd}{F\+M\+T\+\_\+\+E\+X\+P\+L\+I\+C\+IT}
+\item 
+\#define \hyperlink{core_8h_af7f827e50dd7667484c279ac1d38f30b}{F\+M\+T\+\_\+\+N\+U\+LL}~N\+U\+LL
+\item 
+\#define \hyperlink{core_8h_a0b05bc8192a59d32f57c7644ef0d610b}{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+U\+L\+L\+P\+TR}~0
+\item 
+\#define \hyperlink{core_8h_a5d3b416a99857b69e3b7de8e88c71ff3}{F\+M\+T\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+NS}~1
+\item 
+\#define \hyperlink{core_8h_a65490b89e8bd22fd0b8ae4491643d60c}{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+O\+E\+X\+C\+E\+PT}~0
+\item 
+\#define \hyperlink{core_8h_a809ce36bdf78b55c536fbca340bfec9c}{F\+M\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D\+\_\+\+N\+O\+E\+X\+C\+E\+PT}~throw()
+\item 
+\#define \hyperlink{core_8h_a8e7a33185c7fc32dd026773a8ece00b8}{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+X\+X11\+\_\+\+N\+O\+E\+X\+C\+E\+PT}~0
+\item 
+\#define \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}~\hyperlink{core_8h_a809ce36bdf78b55c536fbca340bfec9c}{F\+M\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\#define \hyperlink{core_8h_a750d1276ba35fb73b8f2998389a5f8c6}{F\+M\+T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}~namespace
+\item 
+\#define \hyperlink{core_8h_ae0d2fbdf031547a949fc7e1c0b3c97f1}{F\+M\+T\+\_\+\+E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}~\} using namespace v5; \}
+\item 
+\#define \hyperlink{core_8h_a887c191adf8cfaf06ed40b5c4d487343}{F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}~namespace fmt \{ \hyperlink{core_8h_a750d1276ba35fb73b8f2998389a5f8c6}{F\+M\+T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} v5 \{
+\item 
+\#define \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI}
+\item 
+\#define \hyperlink{core_8h_a03e7ee720f43adc7d83c652a6a5dd5f8}{F\+M\+T\+\_\+\+A\+S\+S\+E\+RT}(condition,  message)~assert((condition) \&\& message)
+\item 
+\#define \hyperlink{core_8h_a0af13074db7b689a71bd9ae94f8745a1}{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE}(T\+AG,  Arg\+Type,  Value\+Type)
+\item 
+\#define \hyperlink{core_8h_ad0cd7007be07fae4a096c1a646c50c30}{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+S\+A\+ME}(T\+AG,  Type)
+\item 
+\#define \hyperlink{core_8h_a515a4ead7f137e2c96a61e2aa87ae862}{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}(B,  T)~typename std\+::enable\+\_\+if$<$B, T$>$\+::type
+\item 
+\#define \hyperlink{core_8h_a7cc44a51931bcec486a5eaa08598082b}{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+A\+L\+I\+A\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+ES}~\hyperlink{core_8h_a749169f277bb21ccf12b1c665e68e88a}{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+F\+E\+A\+T\+U\+RE}(cxx\+\_\+alias\+\_\+templates)
+\item 
+\#define \hyperlink{core_8h_a30260f394fa5dca5ec3c6db9a0acb02e}{F\+M\+T\+\_\+\+C\+H\+AR}(S)~typename \hyperlink{structchar__t}{char\+\_\+t}$<$S$>$\+::type
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef basic\+\_\+buffer$<$ char $>$ \hyperlink{namespaceinternal_a5fcdbc3efad1f390e6c3f0fdafa56122}{internal\+::buffer}
+\item 
+typedef basic\+\_\+buffer$<$ wchar\+\_\+t $>$ \hyperlink{namespaceinternal_a6d6bf139e2a200cfb80dfcb8a0da048e}{internal\+::wbuffer}
+\item 
+typedef \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ char $>$ \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view}
+\item 
+typedef \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ wchar\+\_\+t $>$ \hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view}
+\item 
+typedef std\+::conditional$<$ sizeof(long)==sizeof(int), int, long long $>$\+::type \hyperlink{namespaceinternal_a0e92ff50bf0626d16bd3c814946ecd3d}{internal\+::long\+\_\+type}
+\item 
+typedef \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ char $>$ \hyperlink{core_8h_a70d80f293facb7dd21d48f876f96d718}{format\+\_\+parse\+\_\+context}
+\item 
+typedef \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ wchar\+\_\+t $>$ \hyperlink{core_8h_ad8acf13542e2c19387abd2405f6f2347}{wformat\+\_\+parse\+\_\+context}
+\item 
+typedef \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ char $>$ \hyperlink{core_8h_a2707bfb24ad4e3cf64af9a8f9eb733e0}{parse\+\_\+context}
+\item 
+typedef \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ wchar\+\_\+t $>$ \hyperlink{core_8h_a2ff44b00d5569d415b36a6a87f6770b9}{wparse\+\_\+context}
+\item 
+typedef \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ char $>$\+::type \hyperlink{core_8h_a5b346095624eed16e5bbf78461c6700a}{format\+\_\+context}
+\item 
+typedef \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ wchar\+\_\+t $>$\+::type \hyperlink{core_8h_a9f2187b30243d7070676009293c5568c}{wformat\+\_\+context}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038}{internal\+::type} \{ \newline
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038ab3e314d458399dddff8672eaa9b920ec}{internal\+::none\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a13dabc37bdc511ad896d2524ef1779d4}{internal\+::named\+\_\+arg\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a8be38ea7253d1a414964476f31d00064}{internal\+::int\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038aa2a554d9072770a945ebf5363650f7a1}{internal\+::uint\+\_\+type}, 
+\newline
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038af498903f5d22c64c0160c962cbf210e1}{internal\+::long\+\_\+long\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038af31bdba5c2a6e81482fa2a1e8b8195f6}{internal\+::ulong\+\_\+long\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a8aee42d750393d50a88822c1ff81f70a}{internal\+::bool\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a57b8984c55996e4117342a9cd2dc313e}{internal\+::char\+\_\+type}, 
+\newline
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a7a4ec489b290eb30bb635f47b956f723}{internal\+::last\+\_\+integer\+\_\+type} = char\+\_\+type, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038aadf72ef6dc8f57be31762e780b2db50e}{internal\+::double\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a5a961d06cd001c7fd7af37583e717a68}{internal\+::long\+\_\+double\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a10ed54e9afbf4f36995eab8711e22968}{internal\+::last\+\_\+numeric\+\_\+type} = long\+\_\+double\+\_\+type, 
+\newline
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a97e784de660e3e6971e031779c070b62}{internal\+::cstring\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a8a104d760e6ea540da0d654ca8728d55}{internal\+::string\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a4ac7f97a77c6b76b4205e30c86980275}{internal\+::pointer\+\_\+type}, 
+\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038a7f81f24620187ebe99e60e9e42ab9b15}{internal\+::custom\+\_\+type}
+ \}
+\item 
+enum \{ \hyperlink{namespaceinternal_a7f3ac89c89503ec2e08800b69e0e6934a1868fd9ce8f55804389e2ef50fa5901c}{internal\+::max\+\_\+packed\+\_\+args} = 15
+ \}
+\item 
+enum \+: unsigned long long \{ \hyperlink{namespaceinternal_aa0ebf6bf81922f0239a461c5b2fd9bc7aa369fe459d2605e7f4d98f40111d23aa}{internal\+::is\+\_\+unpacked\+\_\+bit} = 1ull $<$$<$ 63
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::add\+\_\+rvalue\+\_\+reference$<$ T $>$\+::type \hyperlink{namespaceinternal_a5f61aadb1d6afc8b79ef7ea57c39eafc}{internal\+::declval} () \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+{\footnotesize template$<$typename Int $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} std\+::make\+\_\+unsigned$<$ Int $>$\+::type \hyperlink{namespaceinternal_acc608c40c33952a5382db8aaaddfc854}{internal\+::to\+\_\+unsigned} (Int value)
+\item 
+{\footnotesize template$<$typename Container $>$ }\\Container \& \hyperlink{namespaceinternal_a8cf1f0f18fd01743349131744dc7c1c3}{internal\+::get\+\_\+container} (std\+::back\+\_\+insert\+\_\+iterator$<$ Container $>$ it)
+\item 
+{\footnotesize template$<$typename Char $>$ }\\\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ \hyperlink{core_8h_a7398d2d94b617a6b15101ba73a34504b}{to\+\_\+string\+\_\+view} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ s)
+\item 
+{\footnotesize template$<$typename Char $>$ }\\\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ \hyperlink{core_8h_a73f9c209f5d8ae32cc0a7de92030a797}{to\+\_\+string\+\_\+view} (const std\+::basic\+\_\+string$<$ Char $>$ \&s)
+\item 
+{\footnotesize template$<$typename Char $>$ }\\\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ \hyperlink{core_8h_aa14ee56131155bfbee6f5eb13d921896}{to\+\_\+string\+\_\+view} (const Char $\ast$s)
+\item 
+{\footnotesize template$<$typename S , typename Enable  = typename std\+::enable\+\_\+if$<$is\+\_\+compile\+\_\+string$<$\+S$>$\+::value$>$\+::type$>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ typename S\+::char\+\_\+type $>$ \hyperlink{core_8h_afc5d1a0744f51f8695c8e6b2582a8f8b}{to\+\_\+string\+\_\+view} (const S \&s)
+\item 
+dummy\+\_\+string\+\_\+view \hyperlink{namespaceinternal_a153fda3826e43649ab74f70396f9d5bc}{internal\+::to\+\_\+string\+\_\+view} (...)
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} bool \hyperlink{namespaceinternal_a09faa33ade86f8ff4b7eae46cfe148ee}{internal\+::is\+\_\+integral} (type t)
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} bool \hyperlink{namespaceinternal_af9461f1217b7ca9b9b78c05e4f998105}{internal\+::is\+\_\+arithmetic} (type t)
+\item 
+{\footnotesize template$<$typename Context , typename T $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ \hyperlink{namespaceinternal_ac3d17a309d86929584064104267b6de4}{internal\+::make\+\_\+arg} (const T \&value)
+\item 
+F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE((sizeof(long)==sizeof(int) ? int\+\_\+type \+:long\+\_\+long\+\_\+type), long, long\+\_\+type) typedef std \hyperlink{namespaceinternal_abc2b5d27eb4b4952f43ef2c96fa08146}{internal\+::\+F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE} ((sizeof(unsigned long)==sizeof(unsigned) ? uint\+\_\+type \+:ulong\+\_\+long\+\_\+type), unsigned long, ulong\+\_\+type) template$<$ typename C
+\item 
+\hyperlink{core_8h_a0af13074db7b689a71bd9ae94f8745a1}{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE}((sizeof(long)==sizeof(int) ? int\+\_\+type \+:long\+\_\+long\+\_\+type), long, long\+\_\+type) typedef std Char \hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} std\+::enable\+\_\+if$<$ std\+::is\+\_\+same$<$ typename C\+::char\+\_\+type, Char $>$\+::value, init$<$ C, int, char\+\_\+type $>$ $>$\+::type \hyperlink{namespaceinternal_a8db45bc77a419c9cb588d3418671c6fd}{internal\+::make\+\_\+value} (Char val)
+\item 
+{\footnotesize template$<$typename C $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} std\+::enable\+\_\+if$<$ !std\+::is\+\_\+same$<$ typename C\+::char\+\_\+type, char $>$\+::value, init$<$ C, int, char\+\_\+type $>$ $>$\+::type \hyperlink{namespaceinternal_ad8fe07e2220b7ad5d8d264cdf5a533ad}{internal\+::make\+\_\+value} (char val)
+\item 
+\hyperlink{namespaceinternal_a9a3696389145c4bf6099748c4a2e9380}{internal\+::\+F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE} (cstring\+\_\+type, typename C\+::char\+\_\+type $\ast$, const typename C\+::char\+\_\+type $\ast$) F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE(cstring\+\_\+type
+\item 
+const C\+::char\+\_\+type const C\+::char\+\_\+type $\ast$ \hyperlink{namespaceinternal_ab35f0ca6e0be6907eea60addbc5428b8}{internal\+::\+F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE} (string\+\_\+type, typename \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ typename C\+::char\+\_\+type $>$\+::type, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ typename C\+::char\+\_\+type $>$) F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE(string\+\_\+type
+\item 
+{\footnotesize template$<$typename C , typename T $>$ }\\const C\+::char\+\_\+type const C\+::char\+\_\+type const std\+::basic\+\_\+string$<$ typename C\+::char\+\_\+type $>$ \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ typename C\+::char\+\_\+type $>$ std\+::enable\+\_\+if$<$!std\+::is\+\_\+same$<$ T, typename C\+::char\+\_\+type $>$\+::value $>$\+::type \hyperlink{namespaceinternal_aa551b02f947d056cac41aa5a530a0176}{internal\+::make\+\_\+value} (const T $\ast$)
+\item 
+{\footnotesize template$<$typename C , typename T $>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+enum$<$ T $>$\+::value \&\&\hyperlink{structconvert__to__int}{convert\+\_\+to\+\_\+int}$<$ T, typename C\+::char\+\_\+type $>$\+::value, init$<$ C, int, int\+\_\+type $>$ $>$\+::type \hyperlink{namespaceinternal_a3d03eb7eebca822d2083354e5a7ec60a}{internal\+::make\+\_\+value} (const T \&val)
+\item 
+{\footnotesize template$<$typename C , typename T , typename Char  = typename C\+::char\+\_\+type$>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{structis__constructible}{is\+\_\+constructible}$<$ \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$, T $>$\+::value \&\&!\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ T $>$\+::value, init$<$ C, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$, string\+\_\+type $>$ $>$\+::type \hyperlink{namespaceinternal_a9e2275f74beb9eaeea39e65d24311802}{internal\+::make\+\_\+value} (const T \&val)
+\item 
+{\footnotesize template$<$typename C , typename T , typename Char  = typename C\+::char\+\_\+type$>$ }\\std\+::enable\+\_\+if$<$ !\hyperlink{structconvert__to__int}{convert\+\_\+to\+\_\+int}$<$ T, Char $>$\+::value \&\&!std\+::is\+\_\+same$<$ T, Char $>$\+::value \&\&!std\+::is\+\_\+convertible$<$ T, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ $>$\+::value \&\&!\hyperlink{structis__constructible}{is\+\_\+constructible}$<$ \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$, T $>$\+::value \&\&!\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ T $>$\+::value, init$<$ C, const T \&, custom\+\_\+type $>$ $>$\+::type \hyperlink{namespaceinternal_a61c7dd9f9c0883dd5a487ca563e632f4}{internal\+::make\+\_\+value} (const T \&val)
+\item 
+{\footnotesize template$<$typename C , typename T $>$ }\\init$<$ C, const void $\ast$, named\+\_\+arg\+\_\+type $>$ \hyperlink{namespaceinternal_a79837815bee11b56f801442c7e5b2742}{internal\+::make\+\_\+value} (const named\+\_\+arg$<$ T, typename C\+::char\+\_\+type $>$ \&val)
+\item 
+{\footnotesize template$<$typename C , typename S $>$ }\\\hyperlink{core_8h_a056f29fbe3ea234ac0cc417fb866a189}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11} std\+::enable\+\_\+if$<$ \hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value, init$<$ C, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ typename C\+::char\+\_\+type $>$, string\+\_\+type $>$ $>$\+::type \hyperlink{namespaceinternal_a3762125b750d86d353134984d7049419}{internal\+::make\+\_\+value} (const S \&val)
+\item 
+{\footnotesize template$<$typename Visitor , typename Context $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{structinternal_1_1result__of}{internal\+::result\+\_\+of}$<$ Visitor(int)$>$\+::type \hyperlink{core_8h_a04d5c537255241647da5155a4d4c8b3b}{visit\+\_\+format\+\_\+arg} (Visitor \&\&vis, const \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ \&\hyperlink{core_8h_ab87859023d64d26171b1e74a3d0c3b99}{arg})
+\item 
+{\footnotesize template$<$typename Visitor , typename Context $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{structinternal_1_1result__of}{internal\+::result\+\_\+of}$<$ Visitor(int)$>$\+::type \hyperlink{core_8h_af5f4405970c52a2ede8b225b58e1f613}{visit} (Visitor \&\&vis, const \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ \&\hyperlink{core_8h_ab87859023d64d26171b1e74a3d0c3b99}{arg})
+\item 
+{\footnotesize template$<$typename Context $>$ }\\\hyperlink{core_8h_a056f29fbe3ea234ac0cc417fb866a189}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11} unsigned long long \hyperlink{namespaceinternal_aaa50494fe4b84c4924ef9506709813e8}{internal\+::get\+\_\+types} ()
+\item 
+{\footnotesize template$<$typename Context , typename Arg , typename... Args$>$ }\\\hyperlink{core_8h_a056f29fbe3ea234ac0cc417fb866a189}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11} unsigned long long \hyperlink{namespaceinternal_ac95af6018795359d47a7063b508fbd7b}{internal\+::get\+\_\+types} ()
+\item 
+{\footnotesize template$<$bool I\+S\+\_\+\+P\+A\+C\+K\+ED, typename Context , typename T $>$ }\\std\+::enable\+\_\+if$<$ I\+S\+\_\+\+P\+A\+C\+K\+ED, value$<$ Context $>$ $>$\+::type \hyperlink{namespaceinternal_a04e85a8af8b4bd733c9e585ad3183aa5}{internal\+::make\+\_\+arg} (const T \&value)
+\item 
+{\footnotesize template$<$bool I\+S\+\_\+\+P\+A\+C\+K\+ED, typename Context , typename T $>$ }\\std\+::enable\+\_\+if$<$!I\+S\+\_\+\+P\+A\+C\+K\+ED, \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ $>$\+::type \hyperlink{namespaceinternal_a588cd6ff21216b089465cc97c74e0df5}{internal\+::make\+\_\+arg} (const T \&value)
+\item 
+{\footnotesize template$<$typename Context  = format\+\_\+context, typename ... Args$>$ }\\\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$ Context, Args... $>$ \hyperlink{core_8h_a0983d26695aca5689c498c766187223d}{make\+\_\+format\+\_\+args} (const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename... Args, typename S $>$ }\\std\+::enable\+\_\+if$<$!\hyperlink{structis__compile__string}{is\+\_\+compile\+\_\+string}$<$ S $>$\+::value $>$\+::type \hyperlink{namespaceinternal_a14d62818b14fe8556fdb1718e12fd1ab}{internal\+::check\+\_\+format\+\_\+string} (const S \&)
+\item 
+{\footnotesize template$<$typename... Args, typename S $>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{structis__compile__string}{is\+\_\+compile\+\_\+string}$<$ S $>$\+::value $>$\+::type \hyperlink{namespaceinternal_a6184fcc754b94046ef76495b8b105024}{internal\+::check\+\_\+format\+\_\+string} (S)
+\item 
+{\footnotesize template$<$typename Char $>$ }\\std\+::basic\+\_\+string$<$ Char $>$ \hyperlink{namespaceinternal_a581988072e193a0fb0f54827f1b42cfd}{internal\+::vformat} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename Char $>$ }\\\hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type\+::iterator \hyperlink{namespaceinternal_a9f6f592ec8a979251038265f241e7d48}{internal\+::vformat\+\_\+to} (\hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ Char $>$ \&buf, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structinternal_1_1named__arg}{internal\+::named\+\_\+arg}$<$ T, char $>$ \hyperlink{core_8h_a8704ec63f8ea1c3cf1fcbea83432fd3f}{arg} (\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view} name, const T \&arg)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structinternal_1_1named__arg}{internal\+::named\+\_\+arg}$<$ T, wchar\+\_\+t $>$ \hyperlink{core_8h_ab937b7f69bac52906dfc2587b50a8dd2}{arg} (\hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view} name, const T \&arg)
+\item 
+{\footnotesize template$<$typename S , typename T , typename Char $>$ }\\void \hyperlink{core_8h_ab87859023d64d26171b1e74a3d0c3b99}{arg} (S, \hyperlink{structinternal_1_1named__arg}{internal\+::named\+\_\+arg}$<$ T, Char $>$)=delete
+\item 
+{\footnotesize template$<$typename Container , typename S $>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{structis__contiguous}{is\+\_\+contiguous}$<$ Container $>$\+::value, std\+::back\+\_\+insert\+\_\+iterator$<$ Container $>$ $>$\+::type \hyperlink{core_8h_a105a06f1d9c1a86545ec0760b81b13da}{vformat\+\_\+to} (std\+::back\+\_\+insert\+\_\+iterator$<$ Container $>$ out, const S \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename Container , typename S , typename... Args$>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{structis__contiguous}{is\+\_\+contiguous}$<$ Container $>$\+::value \&\&\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value, std\+::back\+\_\+insert\+\_\+iterator$<$ Container $>$ $>$\+::type \hyperlink{core_8h_a7f023637311ff6fae516e0da2caf05d3}{format\+\_\+to} (std\+::back\+\_\+insert\+\_\+iterator$<$ Container $>$ out, const S \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ }\\std\+::basic\+\_\+string$<$ Char $>$ \hyperlink{core_8h_af8b0aefa8ea9f8e6bc0e381e4d16a3e6}{vformat} (const S \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename... Args$>$ }\\std\+::basic\+\_\+string$<$ \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$ \hyperlink{core_8h_ae4af59c87c10d9a8d3ebd3eb455a25c1}{format} (const S \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void \hyperlink{core_8h_a7122c6820a7e6319d6fc2f30d1292faa}{vprint} (std\+::\+F\+I\+LE $\ast$f, \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view} \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{structformat__args}{format\+\_\+args} \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void \hyperlink{core_8h_ad4c050fdc80b967afe1188cab9a9aab0}{vprint} (std\+::\+F\+I\+LE $\ast$f, \hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view} \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{structwformat__args}{wformat\+\_\+args} \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename... Args$>$ }\\\hyperlink{core_8h_a2f34cff9937acb3ac6a983ba6108b5b9}{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T} (\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value, void) \hyperlink{ostream_8h_ac1dc30880e72d663127488352238aac0}{print}(std
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void \hyperlink{core_8h_a2cbd4b88c3ef10056484f939ddaa5b3e}{vprint} (\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view} \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{structformat__args}{format\+\_\+args} \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void \hyperlink{core_8h_a259693cf8aed49b4768150a631e94f5f}{vprint} (\hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view} \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{structwformat__args}{wformat\+\_\+args} \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename... Args$>$ }\\\hyperlink{core_8h_abbc301fea62e68b436a9b5f05ae7eef8}{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T} (\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value, void) \hyperlink{ostream_8h_ac1dc30880e72d663127488352238aac0}{print}(const S \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const Args \& \hyperlink{core_8h_a488b1f7dd7501faec583a71fab0bd7dc}{args}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{core_8h_a9a4960b70582ed2620911a0b75dce0b5}\label{core_8h_a9a4960b70582ed2620911a0b75dce0b5}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+A\+PI@{F\+M\+T\+\_\+\+A\+PI}}
+\index{F\+M\+T\+\_\+\+A\+PI@{F\+M\+T\+\_\+\+A\+PI}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+A\+PI}{FMT\_API}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+A\+PI}
+
+
+
+Definition at line 166 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a03e7ee720f43adc7d83c652a6a5dd5f8}\label{core_8h_a03e7ee720f43adc7d83c652a6a5dd5f8}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+A\+S\+S\+E\+RT@{F\+M\+T\+\_\+\+A\+S\+S\+E\+RT}}
+\index{F\+M\+T\+\_\+\+A\+S\+S\+E\+RT@{F\+M\+T\+\_\+\+A\+S\+S\+E\+RT}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+A\+S\+S\+E\+RT}{FMT\_ASSERT}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{condition,  }\item[{}]{message }\end{DoxyParamCaption})~assert((condition) \&\& message)}
+
+
+
+Definition at line 170 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a887c191adf8cfaf06ed40b5c4d487343}\label{core_8h_a887c191adf8cfaf06ed40b5c4d487343}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}}
+\index{F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}{FMT\_BEGIN\_NAMESPACE}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE~namespace fmt \{ \hyperlink{core_8h_a750d1276ba35fb73b8f2998389a5f8c6}{F\+M\+T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} v5 \{}
+
+
+
+Definition at line 155 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a30260f394fa5dca5ec3c6db9a0acb02e}\label{core_8h_a30260f394fa5dca5ec3c6db9a0acb02e}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+C\+H\+AR@{F\+M\+T\+\_\+\+C\+H\+AR}}
+\index{F\+M\+T\+\_\+\+C\+H\+AR@{F\+M\+T\+\_\+\+C\+H\+AR}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+C\+H\+AR}{FMT\_CHAR}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+C\+H\+AR(\begin{DoxyParamCaption}\item[{}]{S }\end{DoxyParamCaption})~typename \hyperlink{structchar__t}{char\+\_\+t}$<$S$>$\+::type}
+
+
+
+Definition at line 1320 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a69201cb276383873487bf68b4ef8b4cd}\label{core_8h_a69201cb276383873487bf68b4ef8b4cd}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR@{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}}
+\index{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR@{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}{FMT\_CONSTEXPR}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR~inline}
+
+
+
+Definition at line 69 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a056f29fbe3ea234ac0cc417fb866a189}\label{core_8h_a056f29fbe3ea234ac0cc417fb866a189}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11@{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11}}
+\index{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11@{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11}{FMT\_CONSTEXPR11}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11}
+
+
+
+Definition at line 80 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_af4388801466a5994a363d6005616371a}\label{core_8h_af4388801466a5994a363d6005616371a}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R\+\_\+\+D\+E\+CL@{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R\+\_\+\+D\+E\+CL}}
+\index{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R\+\_\+\+D\+E\+CL@{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R\+\_\+\+D\+E\+CL}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R\+\_\+\+D\+E\+CL}{FMT\_CONSTEXPR\_DECL}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R\+\_\+\+D\+E\+CL}
+
+
+
+Definition at line 70 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a809ce36bdf78b55c536fbca340bfec9c}\label{core_8h_a809ce36bdf78b55c536fbca340bfec9c}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D\+\_\+\+N\+O\+E\+X\+C\+E\+PT@{F\+M\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D\+\_\+\+N\+O\+E\+X\+C\+E\+PT}}
+\index{F\+M\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D\+\_\+\+N\+O\+E\+X\+C\+E\+PT@{F\+M\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D\+\_\+\+N\+O\+E\+X\+C\+E\+PT}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D\+\_\+\+N\+O\+E\+X\+C\+E\+PT}{FMT\_DETECTED\_NOEXCEPT}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D\+\_\+\+N\+O\+E\+X\+C\+E\+PT~throw()}
+
+
+
+Definition at line 134 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a515a4ead7f137e2c96a61e2aa87ae862}\label{core_8h_a515a4ead7f137e2c96a61e2aa87ae862}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}}
+\index{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}{FMT\_ENABLE\_IF\_T}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T(\begin{DoxyParamCaption}\item[{}]{B,  }\item[{}]{T }\end{DoxyParamCaption})~typename std\+::enable\+\_\+if$<$B, T$>$\+::type}
+
+
+
+Definition at line 1305 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_ae0d2fbdf031547a949fc7e1c0b3c97f1}\label{core_8h_ae0d2fbdf031547a949fc7e1c0b3c97f1}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{F\+M\+T\+\_\+\+E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}}
+\index{F\+M\+T\+\_\+\+E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{F\+M\+T\+\_\+\+E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}{FMT\_END\_NAMESPACE}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE~\} using namespace v5; \}}
+
+
+
+Definition at line 153 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a5d3b416a99857b69e3b7de8e88c71ff3}\label{core_8h_a5d3b416a99857b69e3b7de8e88c71ff3}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+NS@{F\+M\+T\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+NS}}
+\index{F\+M\+T\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+NS@{F\+M\+T\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+NS}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+NS}{FMT\_EXCEPTIONS}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+NS~1}
+
+
+
+Definition at line 120 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_ac5e450936052d8a4292d6e609e73e2bd}\label{core_8h_ac5e450936052d8a4292d6e609e73e2bd}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+E\+X\+P\+L\+I\+C\+IT@{F\+M\+T\+\_\+\+E\+X\+P\+L\+I\+C\+IT}}
+\index{F\+M\+T\+\_\+\+E\+X\+P\+L\+I\+C\+IT@{F\+M\+T\+\_\+\+E\+X\+P\+L\+I\+C\+IT}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+E\+X\+P\+L\+I\+C\+IT}{FMT\_EXPLICIT}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+E\+X\+P\+L\+I\+C\+IT}
+
+
+
+Definition at line 98 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a4f5db4f97e31a127b1236d1ff412bb0c}\label{core_8h_a4f5db4f97e31a127b1236d1ff412bb0c}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+M\+T\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+M\+T\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+M\+T\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON}{FMT\_GCC\_VERSION}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON~0}
+
+
+
+Definition at line 43 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a55d7b78b0300ddda018f77208e80f3e9}\label{core_8h_a55d7b78b0300ddda018f77208e80f3e9}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+P\+P\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+P\+P\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}
+\index{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+P\+P\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+P\+P\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+P\+P\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}{FMT\_HAS\_CPP\_ATTRIBUTE}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+P\+P\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~0}
+
+
+
+Definition at line 37 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a8e7a33185c7fc32dd026773a8ece00b8}\label{core_8h_a8e7a33185c7fc32dd026773a8ece00b8}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+X\+X11\+\_\+\+N\+O\+E\+X\+C\+E\+PT@{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+X\+X11\+\_\+\+N\+O\+E\+X\+C\+E\+PT}}
+\index{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+X\+X11\+\_\+\+N\+O\+E\+X\+C\+E\+PT@{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+X\+X11\+\_\+\+N\+O\+E\+X\+C\+E\+PT}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+X\+X11\+\_\+\+N\+O\+E\+X\+C\+E\+PT}{FMT\_HAS\_CXX11\_NOEXCEPT}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+C\+X\+X11\+\_\+\+N\+O\+E\+X\+C\+E\+PT~0}
+
+
+
+Definition at line 135 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a749169f277bb21ccf12b1c665e68e88a}\label{core_8h_a749169f277bb21ccf12b1c665e68e88a}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+F\+E\+A\+T\+U\+RE@{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+F\+E\+A\+T\+U\+RE}}
+\index{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+F\+E\+A\+T\+U\+RE@{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+F\+E\+A\+T\+U\+RE}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+F\+E\+A\+T\+U\+RE}{FMT\_HAS\_FEATURE}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+F\+E\+A\+T\+U\+RE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~0}
+
+
+
+Definition at line 24 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a1e3ffe834c427bc295b6880efcd17976}\label{core_8h_a1e3ffe834c427bc295b6880efcd17976}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+G\+X\+X\+\_\+\+C\+X\+X11@{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+G\+X\+X\+\_\+\+C\+X\+X11}}
+\index{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+G\+X\+X\+\_\+\+C\+X\+X11@{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+G\+X\+X\+\_\+\+C\+X\+X11}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+G\+X\+X\+\_\+\+C\+X\+X11}{FMT\_HAS\_GXX\_CXX11}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+G\+X\+X\+\_\+\+C\+X\+X11~0}
+
+
+
+Definition at line 49 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_afa144e698f8df527d6e51688eb9abbd1}\label{core_8h_afa144e698f8df527d6e51688eb9abbd1}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+I\+N\+C\+L\+U\+DE@{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+I\+N\+C\+L\+U\+DE}}
+\index{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+I\+N\+C\+L\+U\+DE@{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+I\+N\+C\+L\+U\+DE}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+I\+N\+C\+L\+U\+DE}{FMT\_HAS\_INCLUDE}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+I\+N\+C\+L\+U\+DE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~0}
+
+
+
+Definition at line 31 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a750d1276ba35fb73b8f2998389a5f8c6}\label{core_8h_a750d1276ba35fb73b8f2998389a5f8c6}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{F\+M\+T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}}
+\index{F\+M\+T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{F\+M\+T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}{FMT\_INLINE\_NAMESPACE}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+I\+N\+L\+I\+N\+E\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE~namespace}
+
+
+
+Definition at line 152 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a0af13074db7b689a71bd9ae94f8745a1}\label{core_8h_a0af13074db7b689a71bd9ae94f8745a1}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE@{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE}}
+\index{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE@{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE}{FMT\_MAKE\_VALUE}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{T\+AG,  }\item[{}]{Arg\+Type,  }\item[{}]{Value\+Type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template} <\textcolor{keyword}{typename} C> \(\backslash\)
+  FMT\_CONSTEXPR init<C, ValueType, TAG> \hyperlink{namespaceinternal_a3762125b750d86d353134984d7049419}{make\_value}(ArgType val) \{ \(\backslash\)
+    return \textcolor{keyword}{static\_cast<}ValueType\textcolor{keyword}{>}(val); \(\backslash\)
+  \}
+\end{DoxyCode}
+
+
+Definition at line 642 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_ad0cd7007be07fae4a096c1a646c50c30}\label{core_8h_ad0cd7007be07fae4a096c1a646c50c30}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+S\+A\+ME@{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+S\+A\+ME}}
+\index{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+S\+A\+ME@{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+S\+A\+ME}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+S\+A\+ME}{FMT\_MAKE\_VALUE\_SAME}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+M\+A\+K\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+\+S\+A\+ME(\begin{DoxyParamCaption}\item[{}]{T\+AG,  }\item[{}]{Type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template} <\textcolor{keyword}{typename} C> \(\backslash\)
+  FMT\_CONSTEXPR init<C, Type, TAG> \hyperlink{namespaceinternal_a3762125b750d86d353134984d7049419}{make\_value}(Type val) \{ \textcolor{keywordflow}{return} val; \}
+\end{DoxyCode}
+
+
+Definition at line 648 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a363cb0623e6975ff2b357a52a03e4728}\label{core_8h_a363cb0623e6975ff2b357a52a03e4728}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+M\+S\+C\+\_\+\+V\+ER@{F\+M\+T\+\_\+\+M\+S\+C\+\_\+\+V\+ER}}
+\index{F\+M\+T\+\_\+\+M\+S\+C\+\_\+\+V\+ER@{F\+M\+T\+\_\+\+M\+S\+C\+\_\+\+V\+ER}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+M\+S\+C\+\_\+\+V\+ER}{FMT\_MSC\_VER}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+M\+S\+C\+\_\+\+V\+ER~0}
+
+
+
+Definition at line 55 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_aef128913e8400683b1cbd1a3a2e11df3}\label{core_8h_aef128913e8400683b1cbd1a3a2e11df3}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT@{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}}
+\index{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT@{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}{FMT\_NOEXCEPT}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT~\hyperlink{core_8h_a809ce36bdf78b55c536fbca340bfec9c}{F\+M\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D\+\_\+\+N\+O\+E\+X\+C\+E\+PT}}
+
+
+
+Definition at line 140 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_af7f827e50dd7667484c279ac1d38f30b}\label{core_8h_af7f827e50dd7667484c279ac1d38f30b}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+N\+U\+LL@{F\+M\+T\+\_\+\+N\+U\+LL}}
+\index{F\+M\+T\+\_\+\+N\+U\+LL@{F\+M\+T\+\_\+\+N\+U\+LL}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+N\+U\+LL}{FMT\_NULL}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+N\+U\+LL~N\+U\+LL}
+
+
+
+Definition at line 107 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a023c6c178e254d81d578b90921804b1c}\label{core_8h_a023c6c178e254d81d578b90921804b1c}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+O\+V\+E\+R\+R\+I\+DE@{F\+M\+T\+\_\+\+O\+V\+E\+R\+R\+I\+DE}}
+\index{F\+M\+T\+\_\+\+O\+V\+E\+R\+R\+I\+DE@{F\+M\+T\+\_\+\+O\+V\+E\+R\+R\+I\+DE}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+O\+V\+E\+R\+R\+I\+DE}{FMT\_OVERRIDE}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+O\+V\+E\+R\+R\+I\+DE}
+
+
+
+Definition at line 88 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a7cc44a51931bcec486a5eaa08598082b}\label{core_8h_a7cc44a51931bcec486a5eaa08598082b}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+A\+L\+I\+A\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+ES@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+A\+L\+I\+A\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+ES}}
+\index{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+A\+L\+I\+A\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+ES@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+A\+L\+I\+A\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+ES}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+A\+L\+I\+A\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+ES}{FMT\_USE\_ALIAS\_TEMPLATES}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+A\+L\+I\+A\+S\+\_\+\+T\+E\+M\+P\+L\+A\+T\+ES~\hyperlink{core_8h_a749169f277bb21ccf12b1c665e68e88a}{F\+M\+T\+\_\+\+H\+A\+S\+\_\+\+F\+E\+A\+T\+U\+RE}(cxx\+\_\+alias\+\_\+templates)}
+
+
+
+Definition at line 1308 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a739a7ff96b6dfd65a4de8fe003f5b233}\label{core_8h_a739a7ff96b6dfd65a4de8fe003f5b233}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}}
+\index{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}{FMT\_USE\_CONSTEXPR}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\hyperlink{core_8h_a749169f277bb21ccf12b1c665e68e88a}{FMT\_HAS\_FEATURE}(cxx\_relaxed\_constexpr) || \hyperlink{core_8h_a363cb0623e6975ff2b357a52a03e4728}{FMT\_MSC\_VER} >= 1910 || \(\backslash\)
+   (\hyperlink{core_8h_a4f5db4f97e31a127b1236d1ff412bb0c}{FMT\_GCC\_VERSION} >= 600 && \_\_cplusplus >= 201402L))
+\end{DoxyCode}
+
+
+Definition at line 61 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a33c15cec4035f1a3dc6fe5d4ae05c746}\label{core_8h_a33c15cec4035f1a3dc6fe5d4ae05c746}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11}}
+\index{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11}{FMT\_USE\_CONSTEXPR11}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+P\+R11~(\hyperlink{core_8h_a739a7ff96b6dfd65a4de8fe003f5b233}{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} $\vert$$\vert$ \hyperlink{core_8h_a4f5db4f97e31a127b1236d1ff412bb0c}{F\+M\+T\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON} $>$= 406 $\vert$$\vert$ \hyperlink{core_8h_a363cb0623e6975ff2b357a52a03e4728}{F\+M\+T\+\_\+\+M\+S\+C\+\_\+\+V\+ER} $>$= 1900)}
+
+
+
+Definition at line 74 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a25c22ca313078429a88938f673059ae8}\label{core_8h_a25c22ca313078429a88938f673059ae8}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+E\+X\+P\+L\+I\+C\+IT@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+E\+X\+P\+L\+I\+C\+IT}}
+\index{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+E\+X\+P\+L\+I\+C\+IT@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+E\+X\+P\+L\+I\+C\+IT}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+E\+X\+P\+L\+I\+C\+IT}{FMT\_USE\_EXPLICIT}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+E\+X\+P\+L\+I\+C\+IT~0}
+
+
+
+Definition at line 97 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a65490b89e8bd22fd0b8ae4491643d60c}\label{core_8h_a65490b89e8bd22fd0b8ae4491643d60c}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+O\+E\+X\+C\+E\+PT@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+O\+E\+X\+C\+E\+PT}}
+\index{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+O\+E\+X\+C\+E\+PT@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+O\+E\+X\+C\+E\+PT}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+O\+E\+X\+C\+E\+PT}{FMT\_USE\_NOEXCEPT}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+O\+E\+X\+C\+E\+PT~0}
+
+
+
+Definition at line 126 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a0b05bc8192a59d32f57c7644ef0d610b}\label{core_8h_a0b05bc8192a59d32f57c7644ef0d610b}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+U\+L\+L\+P\+TR@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+U\+L\+L\+P\+TR}}
+\index{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+U\+L\+L\+P\+TR@{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+U\+L\+L\+P\+TR}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+U\+L\+L\+P\+TR}{FMT\_USE\_NULLPTR}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+U\+S\+E\+\_\+\+N\+U\+L\+L\+P\+TR~0}
+
+
+
+Definition at line 111 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a1a322107307b020b6eac933958da94f6}\label{core_8h_a1a322107307b020b6eac933958da94f6}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+M\+T\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+M\+T\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+M\+T\+\_\+\+V\+E\+R\+S\+I\+ON}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+V\+E\+R\+S\+I\+ON}{FMT\_VERSION}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+V\+E\+R\+S\+I\+ON~50300}
+
+
+
+Definition at line 19 of file core.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{core_8h_a5b346095624eed16e5bbf78461c6700a}\label{core_8h_a5b346095624eed16e5bbf78461c6700a}} 
+\index{core.\+h@{core.\+h}!format\+\_\+context@{format\+\_\+context}}
+\index{format\+\_\+context@{format\+\_\+context}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{format\+\_\+context}{format\_context}}
+{\footnotesize\ttfamily typedef \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$char$>$\+::type \hyperlink{core_8h_a5b346095624eed16e5bbf78461c6700a}{format\+\_\+context}}
+
+
+
+Definition at line 1129 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a70d80f293facb7dd21d48f876f96d718}\label{core_8h_a70d80f293facb7dd21d48f876f96d718}} 
+\index{core.\+h@{core.\+h}!format\+\_\+parse\+\_\+context@{format\+\_\+parse\+\_\+context}}
+\index{format\+\_\+parse\+\_\+context@{format\+\_\+parse\+\_\+context}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{format\+\_\+parse\+\_\+context}{format\_parse\_context}}
+{\footnotesize\ttfamily typedef \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$char$>$ \hyperlink{core_8h_a70d80f293facb7dd21d48f876f96d718}{format\+\_\+parse\+\_\+context}}
+
+
+
+Definition at line 925 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a2707bfb24ad4e3cf64af9a8f9eb733e0}\label{core_8h_a2707bfb24ad4e3cf64af9a8f9eb733e0}} 
+\index{core.\+h@{core.\+h}!parse\+\_\+context@{parse\+\_\+context}}
+\index{parse\+\_\+context@{parse\+\_\+context}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{parse\+\_\+context}{parse\_context}}
+{\footnotesize\ttfamily typedef \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$char$>$ \hyperlink{core_8h_a2707bfb24ad4e3cf64af9a8f9eb733e0}{parse\+\_\+context}}
+
+
+
+Definition at line 929 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a17e3ff7f9ac2b8f068f719b829890036}\label{core_8h_a17e3ff7f9ac2b8f068f719b829890036}} 
+\index{core.\+h@{core.\+h}!string\+\_\+view@{string\+\_\+view}}
+\index{string\+\_\+view@{string\+\_\+view}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{string\+\_\+view}{string\_view}}
+{\footnotesize\ttfamily typedef \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$char$>$ \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view}}
+
+
+
+Definition at line 428 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a9f2187b30243d7070676009293c5568c}\label{core_8h_a9f2187b30243d7070676009293c5568c}} 
+\index{core.\+h@{core.\+h}!wformat\+\_\+context@{wformat\+\_\+context}}
+\index{wformat\+\_\+context@{wformat\+\_\+context}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{wformat\+\_\+context}{wformat\_context}}
+{\footnotesize\ttfamily typedef \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$wchar\+\_\+t$>$\+::type \hyperlink{core_8h_a9f2187b30243d7070676009293c5568c}{wformat\+\_\+context}}
+
+
+
+Definition at line 1130 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_ad8acf13542e2c19387abd2405f6f2347}\label{core_8h_ad8acf13542e2c19387abd2405f6f2347}} 
+\index{core.\+h@{core.\+h}!wformat\+\_\+parse\+\_\+context@{wformat\+\_\+parse\+\_\+context}}
+\index{wformat\+\_\+parse\+\_\+context@{wformat\+\_\+parse\+\_\+context}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{wformat\+\_\+parse\+\_\+context}{wformat\_parse\_context}}
+{\footnotesize\ttfamily typedef \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$wchar\+\_\+t$>$ \hyperlink{core_8h_ad8acf13542e2c19387abd2405f6f2347}{wformat\+\_\+parse\+\_\+context}}
+
+
+
+Definition at line 926 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a2ff44b00d5569d415b36a6a87f6770b9}\label{core_8h_a2ff44b00d5569d415b36a6a87f6770b9}} 
+\index{core.\+h@{core.\+h}!wparse\+\_\+context@{wparse\+\_\+context}}
+\index{wparse\+\_\+context@{wparse\+\_\+context}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{wparse\+\_\+context}{wparse\_context}}
+{\footnotesize\ttfamily typedef \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$wchar\+\_\+t$>$ \hyperlink{core_8h_a2ff44b00d5569d415b36a6a87f6770b9}{wparse\+\_\+context}}
+
+
+
+Definition at line 930 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_ad7c259380697a46ef799332f3ded429e}\label{core_8h_ad7c259380697a46ef799332f3ded429e}} 
+\index{core.\+h@{core.\+h}!wstring\+\_\+view@{wstring\+\_\+view}}
+\index{wstring\+\_\+view@{wstring\+\_\+view}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{wstring\+\_\+view}{wstring\_view}}
+{\footnotesize\ttfamily typedef \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$wchar\+\_\+t$>$ \hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view}}
+
+
+
+Definition at line 429 of file core.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{core_8h_a8704ec63f8ea1c3cf1fcbea83432fd3f}\label{core_8h_a8704ec63f8ea1c3cf1fcbea83432fd3f}} 
+\index{core.\+h@{core.\+h}!arg@{arg}}
+\index{arg@{arg}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{structinternal_1_1named__arg}{internal\+::named\+\_\+arg}$<$T, char$>$ arg (\begin{DoxyParamCaption}\item[{\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view}}]{name,  }\item[{const T \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a named argument to be used in a formatting function.
+
+Example$\ast$$\ast$\+:\+:
+
+fmt\+::print(\char`\"{}\+Elapsed time\+: \{s\+:.\+2f\} seconds\char`\"{}, fmt\+::arg(\char`\"{}s\char`\"{}, 1.\+23));  
+
+Definition at line 1391 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{core_8h_a8704ec63f8ea1c3cf1fcbea83432fd3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_ab937b7f69bac52906dfc2587b50a8dd2}\label{core_8h_ab937b7f69bac52906dfc2587b50a8dd2}} 
+\index{core.\+h@{core.\+h}!arg@{arg}}
+\index{arg@{arg}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{structinternal_1_1named__arg}{internal\+::named\+\_\+arg}$<$T, wchar\+\_\+t$>$ arg (\begin{DoxyParamCaption}\item[{\hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view}}]{name,  }\item[{const T \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1396 of file core.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{core_8h_ab937b7f69bac52906dfc2587b50a8dd2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_ab87859023d64d26171b1e74a3d0c3b99}\label{core_8h_ab87859023d64d26171b1e74a3d0c3b99}} 
+\index{core.\+h@{core.\+h}!arg@{arg}}
+\index{arg@{arg}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{arg()}{arg()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename S , typename T , typename Char $>$ \\
+void arg (\begin{DoxyParamCaption}\item[{S}]{,  }\item[{\hyperlink{structinternal_1_1named__arg}{internal\+::named\+\_\+arg}$<$ T, Char $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{core_8h_a2f34cff9937acb3ac6a983ba6108b5b9}\label{core_8h_a2f34cff9937acb3ac6a983ba6108b5b9}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}}
+\index{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+\+T()}{FMT\_ENABLE\_IF\_T()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename S , typename... Args$>$ \\
+F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T (\begin{DoxyParamCaption}\item[{\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value}]{,  }\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints formatted data to the file {\itshape f}. For wide format strings, f$\ast$ should be in wide-\/oriented mode set via {\ttfamily fwide(f, 1)} or {\ttfamily \+\_\+setmode(\+\_\+fileno(f), \+\_\+\+O\+\_\+\+U8\+T\+E\+X\+T)} on Windows.
+
+Example$\ast$$\ast$\+:\+:
+
+fmt\+::print(stderr, \char`\"{}\+Don\textquotesingle{}t \{\}!\char`\"{}, \char`\"{}panic\char`\"{});  
+
+Definition at line 1476 of file core.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_a2f34cff9937acb3ac6a983ba6108b5b9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_abbc301fea62e68b436a9b5f05ae7eef8}\label{core_8h_abbc301fea62e68b436a9b5f05ae7eef8}} 
+\index{core.\+h@{core.\+h}!F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}}
+\index{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T@{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+\+T()}{FMT\_ENABLE\_IF\_T()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename S , typename... Args$>$ \\
+F\+M\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+F\+\_\+T (\begin{DoxyParamCaption}\item[{\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value}]{,  }\item[{void}]{ }\end{DoxyParamCaption}) const \&\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints formatted data to {\ttfamily stdout}.
+
+Example$\ast$$\ast$\+:\+:
+
+fmt\+::print(\char`\"{}\+Elapsed time\+: \{0\+:.\+2f\} seconds\char`\"{}, 1.\+23);  \mbox{\Hypertarget{core_8h_ae4af59c87c10d9a8d3ebd3eb455a25c1}\label{core_8h_ae4af59c87c10d9a8d3ebd3eb455a25c1}} 
+\index{core.\+h@{core.\+h}!format@{format}}
+\index{format@{format}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily template$<$typename S , typename... Args$>$ \\
+std\+::basic\+\_\+string$<$\hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$ format (\begin{DoxyParamCaption}\item[{const S \&}]{format\+\_\+str,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Formats arguments and returns the result as a string.
+
+Example$\ast$$\ast$\+:\+:
+
+\#include $<$fmt/core.\+h$>$ std\+::string message = fmt\+::format(\char`\"{}\+The answer is \{\}\char`\"{}, 42);  
+
+Definition at line 1454 of file core.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_ae4af59c87c10d9a8d3ebd3eb455a25c1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_ae4af59c87c10d9a8d3ebd3eb455a25c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_a7f023637311ff6fae516e0da2caf05d3}\label{core_8h_a7f023637311ff6fae516e0da2caf05d3}} 
+\index{core.\+h@{core.\+h}!format\+\_\+to@{format\+\_\+to}}
+\index{format\+\_\+to@{format\+\_\+to}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{format\+\_\+to()}{format\_to()}}
+{\footnotesize\ttfamily template$<$typename Container , typename S , typename... Args$>$ \\
+std\+::enable\+\_\+if$<$ \hyperlink{structis__contiguous}{is\+\_\+contiguous}$<$Container$>$\+::value \&\& \hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$S$>$\+::value, std\+::back\+\_\+insert\+\_\+iterator$<$Container$>$ $>$\+::type format\+\_\+to (\begin{DoxyParamCaption}\item[{std\+::back\+\_\+insert\+\_\+iterator$<$ Container $>$}]{out,  }\item[{const S \&}]{format\+\_\+str,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1430 of file core.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_a7f023637311ff6fae516e0da2caf05d3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{core_8h_a7f023637311ff6fae516e0da2caf05d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_a0983d26695aca5689c498c766187223d}\label{core_8h_a0983d26695aca5689c498c766187223d}} 
+\index{core.\+h@{core.\+h}!make\+\_\+format\+\_\+args@{make\+\_\+format\+\_\+args}}
+\index{make\+\_\+format\+\_\+args@{make\+\_\+format\+\_\+args}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{make\+\_\+format\+\_\+args()}{make\_format\_args()}}
+{\footnotesize\ttfamily template$<$typename Context  = format\+\_\+context, typename ... Args$>$ \\
+\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$Context, Args...$>$ make\+\_\+format\+\_\+args (\begin{DoxyParamCaption}\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs an {\ttfamily $\sim$fmt\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}} object that contains references to arguments and can be implicitly converted to {\ttfamily $\sim$fmt\hyperlink{structformat__args}{format\+\_\+args}}. {\ttfamily Context} can be omitted in which case it defaults to {\ttfamily $\sim$fmt\hyperlink{printf_8h_af5fff57f00afaed1f4cffd60908f0ef5}{context}}.  
+
+Definition at line 1199 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{core_8h_a0983d26695aca5689c498c766187223d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_a7398d2d94b617a6b15101ba73a34504b}\label{core_8h_a7398d2d94b617a6b15101ba73a34504b}} 
+\index{core.\+h@{core.\+h}!to\+\_\+string\+\_\+view@{to\+\_\+string\+\_\+view}}
+\index{to\+\_\+string\+\_\+view@{to\+\_\+string\+\_\+view}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{to\+\_\+string\+\_\+view()}{to\_string\_view()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$Char$>$ to\+\_\+string\+\_\+view (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The function {\ttfamily to\+\_\+string\+\_\+view} adapts non-\/intrusively any kind of string or string-\/like type if the user provides a (possibly templated) overload of {\ttfamily to\+\_\+string\+\_\+view} which takes an instance of the string class {\ttfamily String\+Type$<$Char$>$} and returns a {\ttfamily fmt\+::basic\+\_\+string\+\_\+view$<$Char$>$}. The conversion function must live in the very same namespace as {\ttfamily String\+Type$<$Char$>$} to be picked up by A\+DL. Non-\/templated string types like f.\+e. Q\+String must return a {\ttfamily \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}} with a fixed matching char type.
+
+Example$\ast$$\ast$\+:\+:
+
+namespace my\+\_\+ns \{ inline string\+\_\+view to\+\_\+string\+\_\+view(const my\+\_\+string \&s) \{ return \{\hyperlink{namespaceinternal_adc3036f1841136e36e29e5fd339de1a1}{s.\+data()}, s.\+length()\}; \} \}
+
+std\+::string message = fmt\+::format(my\+\_\+string(\char`\"{}\+The answer is \{\}\char`\"{}), 42);  
+
+Definition at line 455 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_a73f9c209f5d8ae32cc0a7de92030a797}\label{core_8h_a73f9c209f5d8ae32cc0a7de92030a797}} 
+\index{core.\+h@{core.\+h}!to\+\_\+string\+\_\+view@{to\+\_\+string\+\_\+view}}
+\index{to\+\_\+string\+\_\+view@{to\+\_\+string\+\_\+view}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{to\+\_\+string\+\_\+view()}{to\_string\_view()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$Char$>$ to\+\_\+string\+\_\+view (\begin{DoxyParamCaption}\item[{const std\+::basic\+\_\+string$<$ Char $>$ \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 459 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_aa14ee56131155bfbee6f5eb13d921896}\label{core_8h_aa14ee56131155bfbee6f5eb13d921896}} 
+\index{core.\+h@{core.\+h}!to\+\_\+string\+\_\+view@{to\+\_\+string\+\_\+view}}
+\index{to\+\_\+string\+\_\+view@{to\+\_\+string\+\_\+view}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{to\+\_\+string\+\_\+view()}{to\_string\_view()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$Char$>$ to\+\_\+string\+\_\+view (\begin{DoxyParamCaption}\item[{const Char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 462 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_afc5d1a0744f51f8695c8e6b2582a8f8b}\label{core_8h_afc5d1a0744f51f8695c8e6b2582a8f8b}} 
+\index{core.\+h@{core.\+h}!to\+\_\+string\+\_\+view@{to\+\_\+string\+\_\+view}}
+\index{to\+\_\+string\+\_\+view@{to\+\_\+string\+\_\+view}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{to\+\_\+string\+\_\+view()}{to\_string\_view()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename S , typename Enable  = typename std\+::enable\+\_\+if$<$is\+\_\+compile\+\_\+string$<$\+S$>$\+::value$>$\+::type$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$typename S\+::char\+\_\+type$>$ to\+\_\+string\+\_\+view (\begin{DoxyParamCaption}\item[{const S \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 481 of file core.\+h.
+
+\mbox{\Hypertarget{core_8h_af8b0aefa8ea9f8e6bc0e381e4d16a3e6}\label{core_8h_af8b0aefa8ea9f8e6bc0e381e4d16a3e6}} 
+\index{core.\+h@{core.\+h}!vformat@{vformat}}
+\index{vformat@{vformat}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{vformat()}{vformat()}}
+{\footnotesize\ttfamily template$<$typename S , typename Char  = F\+M\+T\+\_\+\+C\+H\+A\+R(\+S)$>$ \\
+std\+::basic\+\_\+string$<$Char$>$ vformat (\begin{DoxyParamCaption}\item[{const S \&}]{format\+\_\+str,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1437 of file core.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_af8b0aefa8ea9f8e6bc0e381e4d16a3e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_a105a06f1d9c1a86545ec0760b81b13da}\label{core_8h_a105a06f1d9c1a86545ec0760b81b13da}} 
+\index{core.\+h@{core.\+h}!vformat\+\_\+to@{vformat\+\_\+to}}
+\index{vformat\+\_\+to@{vformat\+\_\+to}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{vformat\+\_\+to()}{vformat\_to()}}
+{\footnotesize\ttfamily template$<$typename Container , typename S $>$ \\
+std\+::enable\+\_\+if$<$ \hyperlink{structis__contiguous}{is\+\_\+contiguous}$<$Container$>$\+::value, std\+::back\+\_\+insert\+\_\+iterator$<$Container$>$ $>$\+::type vformat\+\_\+to (\begin{DoxyParamCaption}\item[{std\+::back\+\_\+insert\+\_\+iterator$<$ Container $>$}]{out,  }\item[{const S \&}]{format\+\_\+str,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$\+::type $>$}]{args }\end{DoxyParamCaption})}
+
+Formats a string and writes the output to {\ttfamily out}. 
+
+Definition at line 1417 of file core.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_a105a06f1d9c1a86545ec0760b81b13da_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_af5f4405970c52a2ede8b225b58e1f613}\label{core_8h_af5f4405970c52a2ede8b225b58e1f613}} 
+\index{core.\+h@{core.\+h}!visit@{visit}}
+\index{visit@{visit}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily template$<$typename Visitor , typename Context $>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{structinternal_1_1result__of}{internal\+::result\+\_\+of}$<$Visitor(int)$>$\+::type visit (\begin{DoxyParamCaption}\item[{Visitor \&\&}]{vis,  }\item[{const \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ \&}]{arg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 871 of file core.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{core_8h_af5f4405970c52a2ede8b225b58e1f613_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_a04d5c537255241647da5155a4d4c8b3b}\label{core_8h_a04d5c537255241647da5155a4d4c8b3b}} 
+\index{core.\+h@{core.\+h}!visit\+\_\+format\+\_\+arg@{visit\+\_\+format\+\_\+arg}}
+\index{visit\+\_\+format\+\_\+arg@{visit\+\_\+format\+\_\+arg}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{visit\+\_\+format\+\_\+arg()}{visit\_format\_arg()}}
+{\footnotesize\ttfamily template$<$typename Visitor , typename Context $>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{structinternal_1_1result__of}{internal\+::result\+\_\+of}$<$Visitor(int)$>$\+::type visit\+\_\+format\+\_\+arg (\begin{DoxyParamCaption}\item[{Visitor \&\&}]{vis,  }\item[{const \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ \&}]{arg }\end{DoxyParamCaption})}
+
+Visits an argument dispatching to the appropriate visit method based on the argument type. For example, if the argument type is {\ttfamily double} then {\ttfamily vis(value)} will be called with the value of type {\ttfamily double}.  
+
+Definition at line 831 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_a04d5c537255241647da5155a4d4c8b3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_a7122c6820a7e6319d6fc2f30d1292faa}\label{core_8h_a7122c6820a7e6319d6fc2f30d1292faa}} 
+\index{core.\+h@{core.\+h}!vprint@{vprint}}
+\index{vprint@{vprint}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{vprint()}{vprint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void vprint (\begin{DoxyParamCaption}\item[{std\+::\+F\+I\+LE $\ast$}]{f,  }\item[{\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view}}]{format\+\_\+str,  }\item[{\hyperlink{structformat__args}{format\+\_\+args}}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 945 of file format-\/inl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_a7122c6820a7e6319d6fc2f30d1292faa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_a7122c6820a7e6319d6fc2f30d1292faa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_ad4c050fdc80b967afe1188cab9a9aab0}\label{core_8h_ad4c050fdc80b967afe1188cab9a9aab0}} 
+\index{core.\+h@{core.\+h}!vprint@{vprint}}
+\index{vprint@{vprint}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{vprint()}{vprint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void vprint (\begin{DoxyParamCaption}\item[{std\+::\+F\+I\+LE $\ast$}]{f,  }\item[{\hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view}}]{format\+\_\+str,  }\item[{\hyperlink{structwformat__args}{wformat\+\_\+args}}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 952 of file format-\/inl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_ad4c050fdc80b967afe1188cab9a9aab0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_a2cbd4b88c3ef10056484f939ddaa5b3e}\label{core_8h_a2cbd4b88c3ef10056484f939ddaa5b3e}} 
+\index{core.\+h@{core.\+h}!vprint@{vprint}}
+\index{vprint@{vprint}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{vprint()}{vprint()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void vprint (\begin{DoxyParamCaption}\item[{\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view}}]{format\+\_\+str,  }\item[{\hyperlink{structformat__args}{format\+\_\+args}}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 958 of file format-\/inl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_a2cbd4b88c3ef10056484f939ddaa5b3e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{core_8h_a259693cf8aed49b4768150a631e94f5f}\label{core_8h_a259693cf8aed49b4768150a631e94f5f}} 
+\index{core.\+h@{core.\+h}!vprint@{vprint}}
+\index{vprint@{vprint}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{vprint()}{vprint()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void vprint (\begin{DoxyParamCaption}\item[{\hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view}}]{format\+\_\+str,  }\item[{\hyperlink{structwformat__args}{wformat\+\_\+args}}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 962 of file format-\/inl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core_8h_a259693cf8aed49b4768150a631e94f5f_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{core_8h_a488b1f7dd7501faec583a71fab0bd7dc}\label{core_8h_a488b1f7dd7501faec583a71fab0bd7dc}} 
+\index{core.\+h@{core.\+h}!args@{args}}
+\index{args@{args}!core.\+h@{core.\+h}}
+\subsubsection{\texorpdfstring{args}{args}}
+{\footnotesize\ttfamily const Args \& args}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+  \hyperlink{core_8h_a7122c6820a7e6319d6fc2f30d1292faa}{vprint}(\hyperlink{core_8h_a7398d2d94b617a6b15101ba73a34504b}{to\_string\_view}(\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\_str}),
+         \hyperlink{structinternal_1_1checked__args}{internal::checked\_args<S, Args...>}(
+      \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\_str}, \hyperlink{core_8h_a488b1f7dd7501faec583a71fab0bd7dc}{args}...))
+\end{DoxyCode}
+
+
+Definition at line 1496 of file core.\+h.
+

@@ -1,0 +1,7 @@
+<map id="iface/inc/WireCellIface/IFrameFanout.h" name="iface/inc/WireCellIface/IFrameFanout.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_frame_fanout_8h.html" title="gen/inc/WireCellGen\l/FrameFanout.h" alt="" coords="235,95,378,136"/>
+<area shape="rect" id="node5" href="$_channel_splitter_8h.html" title="sigproc/inc/WireCellSigProc\l/ChannelSplitter.h" alt="" coords="414,95,599,136"/>
+<area shape="rect" id="node4" href="$_frame_fanout_8cxx.html" title="gen/src/FrameFanout.cxx" alt="" coords="215,184,385,211"/>
+<area shape="rect" id="node6" href="$_channel_splitter_8cxx.html" title="sigproc/src/ChannelSplitter.cxx" alt="" coords="410,184,614,211"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="WireCell::Response::wire_region_average" name="WireCell::Response::wire_region_average">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a7a1a60aef8d2935c36e27a735117a1cb" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lset_misconfigured" alt="" coords="203,5,365,61"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_response.html#a465144cc99feb1c0e2e85c6928ae2506" title="WireCell::Response\l::average_1D" alt="" coords="215,86,353,127"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a42c1e7613ec776da66d7f30238128ce7" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lset_bad_channels" alt="" coords="413,5,576,61"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ad93828b53fee0709cd9649526b5884e7" title="WireCell::SigProc::\lL1SPFilter::init_resp" alt="" coords="425,86,565,127"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ac58397721b0a7b485d46ac63522ebe87" title="IFrameFilter interface. " alt="" coords="624,86,771,127"/>
+</map>

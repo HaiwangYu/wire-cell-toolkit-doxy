@@ -1,0 +1,9 @@
+<map id="WireCell::Gen::EmpiricalNoiseModel::configure" name="WireCell::Gen::EmpiricalNoiseModel::configure">
+<area shape="rect" id="node2" href="$namespace_wire_cell.html#abb6bcae83d0f22d52565724179e9dcd8" title="WireCell::fft_best\l_length" alt="" coords="249,5,373,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_persist.html#ab922ff3e9c80bcbc9d4e8342f7d3223d" title="WireCell::Persist::load" alt="" coords="235,71,388,98"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#abf5f2823eb9522997306417ddd1d9ca4" title="WireCell::Gen::Empirical\lNoiseModel::gen_elec_resp\l_default" alt="" coords="220,122,403,178"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#a35db0e36d1426041740535fc2da0b07d" title="WireCell::Gen::Empirical\lNoiseModel::resample" alt="" coords="228,203,395,244"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_waveform.html#aa8d25ae88346929b5e54cd116f7a4f47" title="Scale (multiply) sequence values by scalar. " alt="" coords="451,203,591,244"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="639,203,765,244"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="813,203,940,244"/>
+</map>

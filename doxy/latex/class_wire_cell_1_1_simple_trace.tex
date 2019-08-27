@@ -1,0 +1,167 @@
+\hypertarget{class_wire_cell_1_1_simple_trace}{}\section{Wire\+Cell\+:\+:Simple\+Trace Class Reference}
+\label{class_wire_cell_1_1_simple_trace}\index{Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}}
+
+
+{\ttfamily \#include $<$Simple\+Trace.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Simple\+Trace\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_wire_cell_1_1_simple_trace__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Simple\+Trace\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_wire_cell_1_1_simple_trace__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_simple_trace_aabf3ae415f8952a19073c58de4702018}{Simple\+Trace} (int chid, int \hyperlink{class_wire_cell_1_1_simple_trace_a0a345e3606f66b64b2dbb00df7664210}{tbin}, const \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Charge\+Sequence} \&\hyperlink{class_wire_cell_1_1_simple_trace_a2f7bafeb7ae30fa16c72d3c8ae0b64a6}{charge})
+\item 
+\hyperlink{class_wire_cell_1_1_simple_trace_a8c96686d2523f393352355abce319642}{Simple\+Trace} (int chid, int \hyperlink{class_wire_cell_1_1_simple_trace_a0a345e3606f66b64b2dbb00df7664210}{tbin}, size\+\_\+t ncharges)
+\item 
+\hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Charge\+Sequence} \& \hyperlink{class_wire_cell_1_1_simple_trace_a2f7bafeb7ae30fa16c72d3c8ae0b64a6}{charge} ()
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_simple_trace_ab88d78ce49eb45b395fb5411905ae010}{channel} () const
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_simple_trace_a0a345e3606f66b64b2dbb00df7664210}{tbin} () const
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Charge\+Sequence} \& \hyperlink{class_wire_cell_1_1_simple_trace_a961cf4538022571bfcc24895c2c45cb4}{charge} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This concrete trace is filled by time bin and charge.
+
+It provides the results of the filling such that the Charge\+Sequence is trivially (exactly) zero suppressed but only at the ends. Any zeros bounded by non-\/zero charge are kept. 
+
+Definition at line 17 of file Simple\+Trace.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_trace_aabf3ae415f8952a19073c58de4702018}\label{class_wire_cell_1_1_simple_trace_aabf3ae415f8952a19073c58de4702018}} 
+\index{Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}!Simple\+Trace@{Simple\+Trace}}
+\index{Simple\+Trace@{Simple\+Trace}!Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}}
+\subsubsection{\texorpdfstring{Simple\+Trace()}{SimpleTrace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Simple\+Trace\+::\+Simple\+Trace (\begin{DoxyParamCaption}\item[{int}]{chid,  }\item[{int}]{tbin,  }\item[{const \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Charge\+Sequence} \&}]{charge }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file Simple\+Trace.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_trace_a8c96686d2523f393352355abce319642}\label{class_wire_cell_1_1_simple_trace_a8c96686d2523f393352355abce319642}} 
+\index{Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}!Simple\+Trace@{Simple\+Trace}}
+\index{Simple\+Trace@{Simple\+Trace}!Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}}
+\subsubsection{\texorpdfstring{Simple\+Trace()}{SimpleTrace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Simple\+Trace\+::\+Simple\+Trace (\begin{DoxyParamCaption}\item[{int}]{chid,  }\item[{int}]{tbin,  }\item[{size\+\_\+t}]{ncharges }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Simple\+Trace.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_trace_ab88d78ce49eb45b395fb5411905ae010}\label{class_wire_cell_1_1_simple_trace_ab88d78ce49eb45b395fb5411905ae010}} 
+\index{Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}!channel@{channel}}
+\index{channel@{channel}!Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}}
+\subsubsection{\texorpdfstring{channel()}{channel()}}
+{\footnotesize\ttfamily int Simple\+Trace\+::channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the identifier number for the channel on which this trace was recorded. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_trace_ae5903cdd197baf3b0ea67d80685851cb}{Wire\+Cell\+::\+I\+Trace}.
+
+
+
+Definition at line 14 of file Simple\+Trace.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_simple_trace_ab88d78ce49eb45b395fb5411905ae010_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_trace_a2f7bafeb7ae30fa16c72d3c8ae0b64a6}\label{class_wire_cell_1_1_simple_trace_a2f7bafeb7ae30fa16c72d3c8ae0b64a6}} 
+\index{Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}!charge@{charge}}
+\index{charge@{charge}!Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}}
+\subsubsection{\texorpdfstring{charge()}{charge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Charge\+Sequence}\& Wire\+Cell\+::\+Simple\+Trace\+::charge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 26 of file Simple\+Trace.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_wire_cell_1_1_simple_trace_a2f7bafeb7ae30fa16c72d3c8ae0b64a6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_wire_cell_1_1_simple_trace_a2f7bafeb7ae30fa16c72d3c8ae0b64a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_trace_a961cf4538022571bfcc24895c2c45cb4}\label{class_wire_cell_1_1_simple_trace_a961cf4538022571bfcc24895c2c45cb4}} 
+\index{Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}!charge@{charge}}
+\index{charge@{charge}!Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}}
+\subsubsection{\texorpdfstring{charge()}{charge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{I\+Trace\+::\+Charge\+Sequence} \& Simple\+Trace\+::charge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the contiguous adc/charge measurements on the channel starting at tbin. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_trace_a55a746bfec82aa0214f0462ae28476e0}{Wire\+Cell\+::\+I\+Trace}.
+
+
+
+Definition at line 24 of file Simple\+Trace.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_trace_a0a345e3606f66b64b2dbb00df7664210}\label{class_wire_cell_1_1_simple_trace_a0a345e3606f66b64b2dbb00df7664210}} 
+\index{Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}!tbin@{tbin}}
+\index{tbin@{tbin}!Wire\+Cell\+::\+Simple\+Trace@{Wire\+Cell\+::\+Simple\+Trace}}
+\subsubsection{\texorpdfstring{tbin()}{tbin()}}
+{\footnotesize\ttfamily int Simple\+Trace\+::tbin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the time bin relative to some absolute time (typically the start of the frame) at which the first A\+D\+C/charge in the trace was digitized (leading bin edge). 
+
+Implements \hyperlink{class_wire_cell_1_1_i_trace_ab8ffd89fdf73ef4b7b55af2f9c4312df}{Wire\+Cell\+::\+I\+Trace}.
+
+
+
+Definition at line 19 of file Simple\+Trace.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_simple_trace_a0a345e3606f66b64b2dbb00df7664210_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_simple_trace_8h}{Simple\+Trace.\+h}\item 
+iface/src/\hyperlink{_simple_trace_8cxx}{Simple\+Trace.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+<map id="iface/inc/WireCellIface/IChannelNoiseDatabase.h" name="iface/inc/WireCellIface/IChannelNoiseDatabase.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_d_b_channel_selector_8h.html" title="sigproc/inc/WireCellSigProc\l/DBChannelSelector.h" alt="" coords="235,95,421,136"/>
+<area shape="rect" id="node4" href="$_d_b_channel_selector_8cxx.html" title="sigproc/src/DBChannelSelector.cxx" alt="" coords="229,191,459,218"/>
+<area shape="rect" id="node5" href="$_microboone_8h.html" title="sigproc/inc/WireCellSigProc\l/Microboone.h" alt="" coords="497,95,682,136"/>
+<area shape="rect" id="node8" href="$_omnibus_noise_filter_8h.html" title="sigproc/inc/WireCellSigProc\l/OmnibusNoiseFilter.h" alt="" coords="915,95,1101,136"/>
+<area shape="rect" id="node10" href="$_omni_channel_noise_d_b_8h.html" title="sigproc/inc/WireCellSigProc\l/OmniChannelNoiseDB.h" alt="" coords="1125,95,1310,136"/>
+<area shape="rect" id="node12" href="$_protodune_8h.html" title="sigproc/inc/WireCellSigProc\l/Protodune.h" alt="" coords="706,95,891,136"/>
+<area shape="rect" id="node13" href="$_simple_channel_noise_d_b_8h.html" title="sigproc/inc/WireCellSigProc\l/SimpleChannelNoiseDB.h" alt="" coords="1337,95,1522,136"/>
+<area shape="rect" id="node6" href="$_microboone_8cxx.html" title="sigproc/src/Microboone.cxx" alt="" coords="498,191,681,218"/>
+<area shape="rect" id="node7" href="$_protodune_8cxx.html" title="sigproc/src/Protodune.cxx" alt="" coords="709,191,883,218"/>
+<area shape="rect" id="node9" href="$_omnibus_noise_filter_8cxx.html" title="sigproc/src/OmnibusNoise\lFilter.cxx" alt="" coords="916,184,1092,225"/>
+<area shape="rect" id="node11" href="$_omni_channel_noise_d_b_8cxx.html" title="sigproc/src/OmniChannelNoise\lDB.cxx" alt="" coords="1116,184,1319,225"/>
+<area shape="rect" id="node14" href="$_simple_channel_noise_d_b_8cxx.html" title="sigproc/src/SimpleChannel\lNoiseDB.cxx" alt="" coords="1343,184,1521,225"/>
+</map>

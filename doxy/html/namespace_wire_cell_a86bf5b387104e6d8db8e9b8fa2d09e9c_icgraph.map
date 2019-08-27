@@ -1,0 +1,13 @@
+<map id="WireCell::put" name="WireCell::put">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#acc2e184daee40976feb1b2a1b6171905" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="162,5,345,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_depo_framer.html#adee1889f1ab532a31f8ae66e149ee8a4" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="161,71,345,112"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_depo_transform.html#aa3f2c3fcf0aae6b353296fd5d784cb8d" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="152,136,355,177"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_depo_zipper.html#aaecdc02da3fb1362266b4606cfe9e03f" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="164,201,343,243"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_digitizer.html#a6f8c0cf139021b7b54162e1dc42d9668" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="173,267,333,308"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_ductor.html#ab9486eb33932f6f7c0ff321675829178" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="178,332,329,373"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_gen_1_1_fourdee.html#a36c5e467b00f1598b8063f30aa33d981" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="174,397,333,439"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_gen_1_1_truth_smearer.html#a9ba841f3a493bb16e41d87e69448843c" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="158,463,349,504"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_gen_1_1_truth_trace_i_d.html#a315b5e6491134d84248cfc2ed8f8e0b1" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="166,528,341,569"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a41df48506ad084531fa7ac376f454894" title="WireCell::Gen::AnodePlane\l::~AnodePlane" alt="" coords="403,5,585,47"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a331c4314dba8472ab8c49dbc9112ff4b" title="WireCell::Gen::Ductor\l::~Ductor" alt="" coords="419,332,569,373"/>
+</map>

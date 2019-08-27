@@ -1,0 +1,8 @@
+<map id="spdlog::trace" name="spdlog::trace">
+<area shape="rect" id="node2" href="$namespacespdlog.html#a2c623c9fadba3efc09b48dac8a3990be" title="spdlog::default_logger_raw" alt="" coords="151,78,328,105"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1logger.html#a59a8516fe055c6b78c9b1822148f78ec" title="spdlog::logger::trace" alt="" coords="169,133,309,159"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1details_1_1registry.html#a58a1bbb352f751f6b729bc57bfadd6be" title="spdlog::details::registry\l::instance" alt="" coords="376,5,533,47"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1details_1_1registry.html#a1fd3bc96c2a7be1af1841f5980cd5f4c" title="spdlog::details::registry\l::get_default_raw" alt="" coords="376,71,533,112"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1logger.html#a0d0307a6501a9f56689c386a006991fe" title="spdlog::logger::default\l_level" alt="" coords="581,5,732,47"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1logger.html#a1e4b2c515490efb5456665a9a64382d9" title="spdlog::logger::log" alt="" coords="391,137,519,163"/>
+</map>

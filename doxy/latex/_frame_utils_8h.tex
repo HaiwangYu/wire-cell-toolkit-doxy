@@ -1,0 +1,41 @@
+\hypertarget{_frame_utils_8h}{}\section{sigproc/src/\+Frame\+Utils.h File Reference}
+\label{_frame_utils_8h}\index{sigproc/src/\+Frame\+Utils.\+h@{sigproc/src/\+Frame\+Utils.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Frame.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Trace.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Binning.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Array.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for Frame\+Utils.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_frame_utils_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_frame_utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacewct}{wct}
+\item 
+ \hyperlink{namespacewct_1_1sigproc}{wct\+::sigproc}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespacewct_1_1sigproc_ad945dd464ab9a75f638922e67891daf3}{wct\+::sigproc\+::dump\+\_\+frame} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{Wire\+Cell\+::\+I\+Frame\+::pointer} frame)
+\item 
+void \hyperlink{namespacewct_1_1sigproc_ad081c59d5eae16e2375425a9e1a65679}{wct\+::sigproc\+::raster} (\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Wire\+Cell\+::\+Array\+::array\+\_\+xxf} \&block, \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{Wire\+Cell\+::\+I\+Trace\+::vector} traces, const std\+::vector$<$ int $>$ \&channels)
+\item 
+int \hyperlink{namespacewct_1_1sigproc_a51e6bea6697a8859f4ed81e2254412ab}{wct\+::sigproc\+::maxcount\+\_\+baseline} (const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{Wire\+Cell\+::\+I\+Trace\+::vector} \&traces, const \hyperlink{class_wire_cell_1_1_binning}{Wire\+Cell\+::\+Binning} \&binning=\hyperlink{class_wire_cell_1_1_binning}{Wire\+Cell\+::\+Binning}(4096, 0, 4096))
+\item 
+\hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{Wire\+Cell\+::\+I\+Trace\+::vector} \hyperlink{namespacewct_1_1sigproc_a7be8644ccb0052eb5c68551b924b9b6f}{wct\+::sigproc\+::tagged\+\_\+traces} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{Wire\+Cell\+::\+I\+Frame\+::pointer} frame, \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{Wire\+Cell\+::\+I\+Frame\+::tag\+\_\+t} tag)
+\end{DoxyCompactItemize}

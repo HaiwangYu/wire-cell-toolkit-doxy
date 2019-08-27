@@ -1,0 +1,4 @@
+<map id="spdlog::sinks::rotating_file_sink::sink_it_" name="spdlog::sinks::rotating_file_sink::sink_it_">
+<area shape="rect" id="node2" href="$classspdlog_1_1details_1_1file__helper.html#a51eb58a2d46f1896f3ab7b9d323d97ae" title="spdlog::details::file\l_helper::write" alt="" coords="204,5,335,47"/>
+<area shape="rect" id="node3" href="$namespacespdlog_1_1details_1_1os.html#ac7c0d6af1f3f652f23e57f057217b9a7" title="spdlog::details::os\l::filename_to_str" alt="" coords="383,5,511,47"/>
+</map>

@@ -1,0 +1,65 @@
+\hypertarget{_persist_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Persist.h File Reference}
+\label{_persist_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Persist.\+h@{util/inc/\+Wire\+Cell\+Util/\+Persist.\+h}}
+{\ttfamily \#include $<$json/json.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}libjsonnet++.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/filesystem.\+hpp$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Persist.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_persist_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_persist_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1_persist_1_1_parser}{Wire\+Cell\+::\+Persist\+::\+Parser}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_persist}{Wire\+Cell\+::\+Persist}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, std\+::string $>$ \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{Wire\+Cell\+::\+Persist\+::externalvars\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_persist_a3b9a35a2580c04da89629682d43eae40}{Wire\+Cell\+::\+Persist\+::exists} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Return true file exists (no file resolution performed). \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespace_wire_cell_1_1_persist_a222a8187746d148cdc44b0b43b109e53}{Wire\+Cell\+::\+Persist\+::resolve} (const std\+::string \&filename)
+\item 
+std\+::string \hyperlink{namespace_wire_cell_1_1_persist_a65787a912677f1990c010e7ee4610a9f}{Wire\+Cell\+::\+Persist\+::slurp} (const std\+::string \&filename)
+\item 
+void \hyperlink{namespace_wire_cell_1_1_persist_a2acf48c85b54dfa84e3a42b610cdf780}{Wire\+Cell\+::\+Persist\+::dump} (const std\+::string \&filename, const Json\+::\+Value \&top, bool pretty=false)
+\item 
+std\+::string \hyperlink{namespace_wire_cell_1_1_persist_aaaf7c0173c5331a2c4f675e8d077abf9}{Wire\+Cell\+::\+Persist\+::dumps} (const Json\+::\+Value \&top, bool pretty=false)
+\begin{DoxyCompactList}\small\item\em As above but dump to a J\+S\+ON text string. \end{DoxyCompactList}\item 
+Json\+::\+Value \hyperlink{namespace_wire_cell_1_1_persist_ab922ff3e9c80bcbc9d4e8342f7d3223d}{Wire\+Cell\+::\+Persist\+::load} (const std\+::string \&filename, const externalvars\+\_\+t \&extvar=externalvars\+\_\+t(), const externalvars\+\_\+t \&extcode=externalvars\+\_\+t())
+\item 
+Json\+::\+Value \hyperlink{namespace_wire_cell_1_1_persist_adce7b2acfe82eb122ed5d06f261e155e}{Wire\+Cell\+::\+Persist\+::loads} (const std\+::string \&text, const externalvars\+\_\+t \&extvar=externalvars\+\_\+t(), const externalvars\+\_\+t \&extcode=externalvars\+\_\+t())
+\item 
+std\+::string \hyperlink{namespace_wire_cell_1_1_persist_ab70e06414625bf66f10b20dd41112697}{Wire\+Cell\+::\+Persist\+::evaluate\+\_\+jsonnet\+\_\+file} (const std\+::string \&filename, const externalvars\+\_\+t \&extvar=externalvars\+\_\+t(), const externalvars\+\_\+t \&extcode=externalvars\+\_\+t())
+\item 
+std\+::string \hyperlink{namespace_wire_cell_1_1_persist_ab593a212dbed0b2185fe5fe70b29fc68}{Wire\+Cell\+::\+Persist\+::evaluate\+\_\+jsonnet\+\_\+text} (const std\+::string \&text, const externalvars\+\_\+t \&extvar=externalvars\+\_\+t(), const externalvars\+\_\+t \&extcode=externalvars\+\_\+t())
+\item 
+Json\+::\+Value \hyperlink{namespace_wire_cell_1_1_persist_a25359fd9189802ba07dce1de7e450315}{Wire\+Cell\+::\+Persist\+::json2object} (const std\+::string \&text)
+\item 
+{\footnotesize template$<$typename Iterable $>$ }\\Json\+::\+Value \hyperlink{namespace_wire_cell_1_1_persist_a5a19d242eec54e2353002379147473ad}{Wire\+Cell\+::\+Persist\+::iterable2json} (Iterable const \&cont)
+\end{DoxyCompactItemize}

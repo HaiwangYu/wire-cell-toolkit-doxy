@@ -1,0 +1,149 @@
+\hypertarget{classspdlog_1_1details_1_1thread__pool}{}\section{spdlog\+:\+:details\+:\+:thread\+\_\+pool Class Reference}
+\label{classspdlog_1_1details_1_1thread__pool}\index{spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}}
+
+
+{\ttfamily \#include $<$thread\+\_\+pool.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classspdlog_1_1details_1_1thread__pool_a997d954a51e8fa8aa92071d1a9c08536}{item\+\_\+type} = \hyperlink{structspdlog_1_1details_1_1async__msg}{async\+\_\+msg}
+\item 
+using \hyperlink{classspdlog_1_1details_1_1thread__pool_a77d633d56b0b5e1fe37965faa4642df5}{q\+\_\+type} = \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue}{details\+::mpmc\+\_\+blocking\+\_\+queue}$<$ \hyperlink{classspdlog_1_1details_1_1thread__pool_a997d954a51e8fa8aa92071d1a9c08536}{item\+\_\+type} $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1details_1_1thread__pool_a2ac821eb936f7373cc51949fb05e841c}{thread\+\_\+pool} (size\+\_\+t q\+\_\+max\+\_\+items, size\+\_\+t threads\+\_\+n)
+\item 
+\hyperlink{classspdlog_1_1details_1_1thread__pool_a27e41d821a8aa8137bc0e64df031ccd4}{$\sim$thread\+\_\+pool} ()
+\item 
+\hyperlink{classspdlog_1_1details_1_1thread__pool_a5e8f86d40f81af1d22a21ee0368287b2}{thread\+\_\+pool} (const \hyperlink{classspdlog_1_1details_1_1thread__pool}{thread\+\_\+pool} \&)=delete
+\item 
+\hyperlink{classspdlog_1_1details_1_1thread__pool}{thread\+\_\+pool} \& \hyperlink{classspdlog_1_1details_1_1thread__pool_a1a62f3ab1474d69cd1e25143664e856d}{operator=} (\hyperlink{classspdlog_1_1details_1_1thread__pool}{thread\+\_\+pool} \&\&)=delete
+\item 
+void \hyperlink{classspdlog_1_1details_1_1thread__pool_a70cc09729d82174d84640eaface150e0}{post\+\_\+log} (\hyperlink{namespacespdlog_1_1details_a9b6989c16b6150f7e4658ea2aee01bc2}{async\+\_\+logger\+\_\+ptr} \&\&worker\+\_\+ptr, \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&msg, \hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852}{async\+\_\+overflow\+\_\+policy} overflow\+\_\+policy)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1thread__pool_aa851092603e816f78dd81bb980232048}{post\+\_\+flush} (\hyperlink{namespacespdlog_1_1details_a9b6989c16b6150f7e4658ea2aee01bc2}{async\+\_\+logger\+\_\+ptr} \&\&worker\+\_\+ptr, \hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852}{async\+\_\+overflow\+\_\+policy} overflow\+\_\+policy)
+\item 
+size\+\_\+t \hyperlink{classspdlog_1_1details_1_1thread__pool_adc34920f65797d8f54986dc1894a8804}{overrun\+\_\+counter} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 118 of file thread\+\_\+pool.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1thread__pool_a997d954a51e8fa8aa92071d1a9c08536}\label{classspdlog_1_1details_1_1thread__pool_a997d954a51e8fa8aa92071d1a9c08536}} 
+\index{spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}!item\+\_\+type@{item\+\_\+type}}
+\index{item\+\_\+type@{item\+\_\+type}!spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}}
+\subsubsection{\texorpdfstring{item\+\_\+type}{item\_type}}
+{\footnotesize\ttfamily using \hyperlink{classspdlog_1_1details_1_1thread__pool_a997d954a51e8fa8aa92071d1a9c08536}{spdlog\+::details\+::thread\+\_\+pool\+::item\+\_\+type} =  \hyperlink{structspdlog_1_1details_1_1async__msg}{async\+\_\+msg}}
+
+
+
+Definition at line 121 of file thread\+\_\+pool.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1details_1_1thread__pool_a77d633d56b0b5e1fe37965faa4642df5}\label{classspdlog_1_1details_1_1thread__pool_a77d633d56b0b5e1fe37965faa4642df5}} 
+\index{spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}!q\+\_\+type@{q\+\_\+type}}
+\index{q\+\_\+type@{q\+\_\+type}!spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}}
+\subsubsection{\texorpdfstring{q\+\_\+type}{q\_type}}
+{\footnotesize\ttfamily using \hyperlink{classspdlog_1_1details_1_1thread__pool_a77d633d56b0b5e1fe37965faa4642df5}{spdlog\+::details\+::thread\+\_\+pool\+::q\+\_\+type} =  \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue}{details\+::mpmc\+\_\+blocking\+\_\+queue}$<$\hyperlink{classspdlog_1_1details_1_1thread__pool_a997d954a51e8fa8aa92071d1a9c08536}{item\+\_\+type}$>$}
+
+
+
+Definition at line 122 of file thread\+\_\+pool.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1thread__pool_a2ac821eb936f7373cc51949fb05e841c}\label{classspdlog_1_1details_1_1thread__pool_a2ac821eb936f7373cc51949fb05e841c}} 
+\index{spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}!thread\+\_\+pool@{thread\+\_\+pool}}
+\index{thread\+\_\+pool@{thread\+\_\+pool}!spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}}
+\subsubsection{\texorpdfstring{thread\+\_\+pool()}{thread\_pool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily spdlog\+::details\+::thread\+\_\+pool\+::thread\+\_\+pool (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{q\+\_\+max\+\_\+items,  }\item[{size\+\_\+t}]{threads\+\_\+n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 124 of file thread\+\_\+pool.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1details_1_1thread__pool_a27e41d821a8aa8137bc0e64df031ccd4}\label{classspdlog_1_1details_1_1thread__pool_a27e41d821a8aa8137bc0e64df031ccd4}} 
+\index{spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}!````~thread\+\_\+pool@{$\sim$thread\+\_\+pool}}
+\index{````~thread\+\_\+pool@{$\sim$thread\+\_\+pool}!spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}}
+\subsubsection{\texorpdfstring{$\sim$thread\+\_\+pool()}{~thread\_pool()}}
+{\footnotesize\ttfamily spdlog\+::details\+::thread\+\_\+pool\+::$\sim$thread\+\_\+pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 141 of file thread\+\_\+pool.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1thread__pool_a27e41d821a8aa8137bc0e64df031ccd4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1thread__pool_a5e8f86d40f81af1d22a21ee0368287b2}\label{classspdlog_1_1details_1_1thread__pool_a5e8f86d40f81af1d22a21ee0368287b2}} 
+\index{spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}!thread\+\_\+pool@{thread\+\_\+pool}}
+\index{thread\+\_\+pool@{thread\+\_\+pool}!spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}}
+\subsubsection{\texorpdfstring{thread\+\_\+pool()}{thread\_pool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily spdlog\+::details\+::thread\+\_\+pool\+::thread\+\_\+pool (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1details_1_1thread__pool}{thread\+\_\+pool} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1thread__pool_a1a62f3ab1474d69cd1e25143664e856d}\label{classspdlog_1_1details_1_1thread__pool_a1a62f3ab1474d69cd1e25143664e856d}} 
+\index{spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}!operator=@{operator=}}
+\index{operator=@{operator=}!spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classspdlog_1_1details_1_1thread__pool}{thread\+\_\+pool}\& spdlog\+::details\+::thread\+\_\+pool\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classspdlog_1_1details_1_1thread__pool}{thread\+\_\+pool} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classspdlog_1_1details_1_1thread__pool_adc34920f65797d8f54986dc1894a8804}\label{classspdlog_1_1details_1_1thread__pool_adc34920f65797d8f54986dc1894a8804}} 
+\index{spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}!overrun\+\_\+counter@{overrun\+\_\+counter}}
+\index{overrun\+\_\+counter@{overrun\+\_\+counter}!spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}}
+\subsubsection{\texorpdfstring{overrun\+\_\+counter()}{overrun\_counter()}}
+{\footnotesize\ttfamily size\+\_\+t spdlog\+::details\+::thread\+\_\+pool\+::overrun\+\_\+counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 174 of file thread\+\_\+pool.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1thread__pool_adc34920f65797d8f54986dc1894a8804_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1thread__pool_aa851092603e816f78dd81bb980232048}\label{classspdlog_1_1details_1_1thread__pool_aa851092603e816f78dd81bb980232048}} 
+\index{spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}!post\+\_\+flush@{post\+\_\+flush}}
+\index{post\+\_\+flush@{post\+\_\+flush}!spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}}
+\subsubsection{\texorpdfstring{post\+\_\+flush()}{post\_flush()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::thread\+\_\+pool\+::post\+\_\+flush (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1details_a9b6989c16b6150f7e4658ea2aee01bc2}{async\+\_\+logger\+\_\+ptr} \&\&}]{worker\+\_\+ptr,  }\item[{\hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852}{async\+\_\+overflow\+\_\+policy}}]{overflow\+\_\+policy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 169 of file thread\+\_\+pool.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1details_1_1thread__pool_a70cc09729d82174d84640eaface150e0}\label{classspdlog_1_1details_1_1thread__pool_a70cc09729d82174d84640eaface150e0}} 
+\index{spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}!post\+\_\+log@{post\+\_\+log}}
+\index{post\+\_\+log@{post\+\_\+log}!spdlog\+::details\+::thread\+\_\+pool@{spdlog\+::details\+::thread\+\_\+pool}}
+\subsubsection{\texorpdfstring{post\+\_\+log()}{post\_log()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::thread\+\_\+pool\+::post\+\_\+log (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1details_a9b6989c16b6150f7e4658ea2aee01bc2}{async\+\_\+logger\+\_\+ptr} \&\&}]{worker\+\_\+ptr,  }\item[{\hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&}]{msg,  }\item[{\hyperlink{namespacespdlog_a42e109759a11c9514d3f6313a7709852}{async\+\_\+overflow\+\_\+policy}}]{overflow\+\_\+policy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 163 of file thread\+\_\+pool.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/details/\hyperlink{thread__pool_8h}{thread\+\_\+pool.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+\hypertarget{_string_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+String.h File Reference}
+\label{_string_8h}\index{util/inc/\+Wire\+Cell\+Util/\+String.\+h@{util/inc/\+Wire\+Cell\+Util/\+String.\+h}}
+{\ttfamily \#include $<$boost/algorithm/string.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/format.\+hpp$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for String.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_string_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_string_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_string}{Wire\+Cell\+::\+String}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{namespace_wire_cell_1_1_string_aef23d7b89dbe21e34a499c9156dd1e60}{Wire\+Cell\+::\+String\+::split} (const std\+::string \&in, const std\+::string \&delim=\char`\"{}\+:\char`\"{})
+\item 
+std\+::pair$<$ std\+::string, std\+::string $>$ \hyperlink{namespace_wire_cell_1_1_string_aa275a51c718c16893c21d2a915cab1e6}{Wire\+Cell\+::\+String\+::parse\+\_\+pair} (const std\+::string \&in, const std\+::string \&delim=\char`\"{}\+:\char`\"{})
+\item 
+{\footnotesize template$<$typename T\+Y\+PE $>$ }\\\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} \hyperlink{namespace_wire_cell_1_1_string_a483dc976ea784d91bef184a893e9bba8}{Wire\+Cell\+::\+String\+::format\+\_\+flatten} (\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} f, T\+Y\+PE obj)
+\item 
+{\footnotesize template$<$typename T\+Y\+PE , typename... M\+O\+RE$>$ }\\\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} \hyperlink{namespace_wire_cell_1_1_string_acaae0ff0fab063552147e1e59cec4e00}{Wire\+Cell\+::\+String\+::format\+\_\+flatten} (\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} start, T\+Y\+PE o, M\+O\+R\+E... objs)
+\item 
+\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} \hyperlink{namespace_wire_cell_1_1_string_ad79965a560a4a4f94405ebee6d2ee256}{Wire\+Cell\+::\+String\+::format\+\_\+flatten} (\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} f)
+\item 
+{\footnotesize template$<$typename... T\+Y\+P\+ES$>$ }\\std\+::string \hyperlink{namespace_wire_cell_1_1_string_ade706f4cfc3f6e8a946d95f1b06dbb56}{Wire\+Cell\+::\+String\+::format} (const std\+::string \&form, T\+Y\+P\+E\+S... objs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{namespace_wire_cell_1_1_string_a7aac9b5f4bf607e959ff98125287ab2a}{Wire\+Cell\+::\+String\+::stringify} (T obj)
+\end{DoxyCompactItemize}

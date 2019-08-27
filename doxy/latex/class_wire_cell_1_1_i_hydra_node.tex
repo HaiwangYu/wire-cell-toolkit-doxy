@@ -1,0 +1,215 @@
+\hypertarget{class_wire_cell_1_1_i_hydra_node}{}\section{Wire\+Cell\+:\+:I\+Hydra\+Node$<$ Input\+Tuple, Output\+Tuple $>$ Class Template Reference}
+\label{class_wire_cell_1_1_i_hydra_node}\index{Wire\+Cell\+::\+I\+Hydra\+Node$<$ Input\+Tuple, Output\+Tuple $>$@{Wire\+Cell\+::\+I\+Hydra\+Node$<$ Input\+Tuple, Output\+Tuple $>$}}
+
+
+{\ttfamily \#include $<$I\+Hydra\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Hydra\+Node$<$ Input\+Tuple, Output\+Tuple $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_wire_cell_1_1_i_hydra_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Hydra\+Node$<$ Input\+Tuple, Output\+Tuple $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_wire_cell_1_1_i_hydra_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Input\+Tuple \hyperlink{class_wire_cell_1_1_i_hydra_node_a7dfb6628c7437769153669f61733b2a6}{input\+\_\+tuple\+\_\+type}
+\item 
+typedef Output\+Tuple \hyperlink{class_wire_cell_1_1_i_hydra_node_a7f47cf3a305447014381fed36e71a26c}{output\+\_\+tuple\+\_\+type}
+\item 
+typedef \hyperlink{struct_wire_cell_1_1shared__queued}{shared\+\_\+queued}$<$ Input\+Tuple $>$ \hyperlink{class_wire_cell_1_1_i_hydra_node_a04628fe3ce00c28c1c9f27aca26e20c9}{input\+\_\+shqed}
+\item 
+typedef \hyperlink{struct_wire_cell_1_1shared__queued}{shared\+\_\+queued}$<$ Output\+Tuple $>$ \hyperlink{class_wire_cell_1_1_i_hydra_node_abc72640e56a315146c504610302b1d8d}{output\+\_\+shqed}
+\item 
+typedef input\+\_\+shqed\+::shared\+\_\+queued\+\_\+tuple\+\_\+type \hyperlink{class_wire_cell_1_1_i_hydra_node_ada2ba4a3ba2716c9838ae039e475d683}{input\+\_\+queues\+\_\+type}
+\item 
+typedef output\+\_\+shqed\+::shared\+\_\+queued\+\_\+tuple\+\_\+type \hyperlink{class_wire_cell_1_1_i_hydra_node_aeb800228236a385497609533fc0fe256}{output\+\_\+queues\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_hydra_node_a94d501d7811fe97af9408cb539ef967b}{$\sim$\+I\+Hydra\+Node} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_hydra_node_a2178e400b1539cfb77616bfb6e842fbf}{operator()} (\hyperlink{class_wire_cell_1_1_i_hydra_node_base_aab191670a86f2835da2aa07ab5e6372d}{any\+\_\+queue\+\_\+vector} \&anyinq, \hyperlink{class_wire_cell_1_1_i_hydra_node_base_aab191670a86f2835da2aa07ab5e6372d}{any\+\_\+queue\+\_\+vector} \&anyoutq)
+\begin{DoxyCompactList}\small\item\em Translate call from any to types and back. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_hydra_node_a394933c1f99619e38d65282374dedd7a}{operator()} (\hyperlink{class_wire_cell_1_1_i_hydra_node_ada2ba4a3ba2716c9838ae039e475d683}{input\+\_\+queues\+\_\+type} \&inqs, \hyperlink{class_wire_cell_1_1_i_hydra_node_aeb800228236a385497609533fc0fe256}{output\+\_\+queues\+\_\+type} \&outqs)=0
+\begin{DoxyCompactList}\small\item\em Typed interface for subclass to implement. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_hydra_node_af02cf39a567f4a64d34c527b6c09febf}{input\+\_\+types} ()
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_hydra_node_af668f59ced5931ba78e63df17b25670d}{output\+\_\+types} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Input\+Tuple, typename Output\+Tuple$>$\newline
+class Wire\+Cell\+::\+I\+Hydra\+Node$<$ Input\+Tuple, Output\+Tuple $>$}
+
+A hydra with input and output fixed at compile-\/time with tuples. 
+
+Definition at line 50 of file I\+Hydra\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_ada2ba4a3ba2716c9838ae039e475d683}\label{class_wire_cell_1_1_i_hydra_node_ada2ba4a3ba2716c9838ae039e475d683}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!input\+\_\+queues\+\_\+type@{input\+\_\+queues\+\_\+type}}
+\index{input\+\_\+queues\+\_\+type@{input\+\_\+queues\+\_\+type}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+queues\+\_\+type}{input\_queues\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+typedef input\+\_\+shqed\+::shared\+\_\+queued\+\_\+tuple\+\_\+type \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_hydra_node_ada2ba4a3ba2716c9838ae039e475d683}{input\+\_\+queues\+\_\+type}}
+
+
+
+Definition at line 59 of file I\+Hydra\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_a04628fe3ce00c28c1c9f27aca26e20c9}\label{class_wire_cell_1_1_i_hydra_node_a04628fe3ce00c28c1c9f27aca26e20c9}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!input\+\_\+shqed@{input\+\_\+shqed}}
+\index{input\+\_\+shqed@{input\+\_\+shqed}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+shqed}{input\_shqed}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+typedef \hyperlink{struct_wire_cell_1_1shared__queued}{shared\+\_\+queued}$<$Input\+Tuple$>$ \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_hydra_node_a04628fe3ce00c28c1c9f27aca26e20c9}{input\+\_\+shqed}}
+
+
+
+Definition at line 56 of file I\+Hydra\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_a7dfb6628c7437769153669f61733b2a6}\label{class_wire_cell_1_1_i_hydra_node_a7dfb6628c7437769153669f61733b2a6}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!input\+\_\+tuple\+\_\+type@{input\+\_\+tuple\+\_\+type}}
+\index{input\+\_\+tuple\+\_\+type@{input\+\_\+tuple\+\_\+type}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+tuple\+\_\+type}{input\_tuple\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+typedef Input\+Tuple \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_hydra_node_a7dfb6628c7437769153669f61733b2a6}{input\+\_\+tuple\+\_\+type}}
+
+
+
+Definition at line 53 of file I\+Hydra\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_aeb800228236a385497609533fc0fe256}\label{class_wire_cell_1_1_i_hydra_node_aeb800228236a385497609533fc0fe256}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!output\+\_\+queues\+\_\+type@{output\+\_\+queues\+\_\+type}}
+\index{output\+\_\+queues\+\_\+type@{output\+\_\+queues\+\_\+type}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+queues\+\_\+type}{output\_queues\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+typedef output\+\_\+shqed\+::shared\+\_\+queued\+\_\+tuple\+\_\+type \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_hydra_node_aeb800228236a385497609533fc0fe256}{output\+\_\+queues\+\_\+type}}
+
+
+
+Definition at line 60 of file I\+Hydra\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_abc72640e56a315146c504610302b1d8d}\label{class_wire_cell_1_1_i_hydra_node_abc72640e56a315146c504610302b1d8d}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!output\+\_\+shqed@{output\+\_\+shqed}}
+\index{output\+\_\+shqed@{output\+\_\+shqed}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+shqed}{output\_shqed}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+typedef \hyperlink{struct_wire_cell_1_1shared__queued}{shared\+\_\+queued}$<$Output\+Tuple$>$ \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_hydra_node_abc72640e56a315146c504610302b1d8d}{output\+\_\+shqed}}
+
+
+
+Definition at line 57 of file I\+Hydra\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_a7f47cf3a305447014381fed36e71a26c}\label{class_wire_cell_1_1_i_hydra_node_a7f47cf3a305447014381fed36e71a26c}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!output\+\_\+tuple\+\_\+type@{output\+\_\+tuple\+\_\+type}}
+\index{output\+\_\+tuple\+\_\+type@{output\+\_\+tuple\+\_\+type}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+tuple\+\_\+type}{output\_tuple\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+typedef Output\+Tuple \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_hydra_node_a7f47cf3a305447014381fed36e71a26c}{output\+\_\+tuple\+\_\+type}}
+
+
+
+Definition at line 54 of file I\+Hydra\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_a94d501d7811fe97af9408cb539ef967b}\label{class_wire_cell_1_1_i_hydra_node_a94d501d7811fe97af9408cb539ef967b}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!````~I\+Hydra\+Node@{$\sim$\+I\+Hydra\+Node}}
+\index{````~I\+Hydra\+Node@{$\sim$\+I\+Hydra\+Node}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Hydra\+Node()}{~IHydraNode()}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_i_hydra_node}{I\+Hydra\+Node} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 62 of file I\+Hydra\+Node.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_af02cf39a567f4a64d34c527b6c09febf}\label{class_wire_cell_1_1_i_hydra_node_af02cf39a567f4a64d34c527b6c09febf}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!input\+\_\+types@{input\+\_\+types}}
+\index{input\+\_\+types@{input\+\_\+types}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+types()}{input\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::input\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_ae13fc140c8e815fac9327dfa5b43f853}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 88 of file I\+Hydra\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_a2178e400b1539cfb77616bfb6e842fbf}\label{class_wire_cell_1_1_i_hydra_node_a2178e400b1539cfb77616bfb6e842fbf}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_hydra_node_base_aab191670a86f2835da2aa07ab5e6372d}{any\+\_\+queue\+\_\+vector} \&}]{anyinq,  }\item[{\hyperlink{class_wire_cell_1_1_i_hydra_node_base_aab191670a86f2835da2aa07ab5e6372d}{any\+\_\+queue\+\_\+vector} \&}]{anyoutq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Translate call from any to types and back. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_hydra_node_base_a7840530686daf7ba07beaf74c68b3d02}{Wire\+Cell\+::\+I\+Hydra\+Node\+Base}.
+
+
+
+Definition at line 65 of file I\+Hydra\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_a394933c1f99619e38d65282374dedd7a}\label{class_wire_cell_1_1_i_hydra_node_a394933c1f99619e38d65282374dedd7a}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_hydra_node_ada2ba4a3ba2716c9838ae039e475d683}{input\+\_\+queues\+\_\+type} \&}]{inqs,  }\item[{\hyperlink{class_wire_cell_1_1_i_hydra_node_aeb800228236a385497609533fc0fe256}{output\+\_\+queues\+\_\+type} \&}]{outqs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Typed interface for subclass to implement. 
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_hydra_node_af668f59ced5931ba78e63df17b25670d}\label{class_wire_cell_1_1_i_hydra_node_af668f59ced5931ba78e63df17b25670d}} 
+\index{Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}!output\+\_\+types@{output\+\_\+types}}
+\index{output\+\_\+types@{output\+\_\+types}!Wire\+Cell\+::\+I\+Hydra\+Node@{Wire\+Cell\+::\+I\+Hydra\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+types()}{output\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Tuple, typename Output\+Tuple$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_hydra_node}{Wire\+Cell\+::\+I\+Hydra\+Node}$<$ Input\+Tuple, Output\+Tuple $>$\+::output\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 93 of file I\+Hydra\+Node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_hydra_node_8h}{I\+Hydra\+Node.\+h}\end{DoxyCompactItemize}

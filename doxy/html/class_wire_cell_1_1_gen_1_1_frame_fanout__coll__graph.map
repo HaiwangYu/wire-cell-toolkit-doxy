@@ -1,0 +1,10 @@
+<map id="WireCell::Gen::FrameFanout" name="WireCell::Gen::FrameFanout">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_frame_fanout.html" title="WireCell::IFrameFanout" alt="" coords="75,408,236,435"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; IFrame, IFrame, 0 \&gt;" alt="" coords="39,319,194,360"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_fanout_node_base.html" title="WireCell::IFanoutNodeBase" alt="" coords="5,244,191,271"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="51,169,166,196"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="39,80,189,121"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="135,5,266,32"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="216,80,367,121"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="215,244,373,271"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="WireCell::Plugin::raw" name="WireCell::Plugin::raw">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_plugin.html#ac2e03f3242aed84a08647cd2d2e5f960" title="WireCell::Plugin::symbol" alt="" coords="202,5,369,32"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_plugin.html#ab8f49d4beba0924fa53ba45ec54ad649" title="WireCell::Plugin::contains" alt="" coords="199,56,372,83"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_plugin_manager.html#ad83fad032405351bde15ad4abeeef819" title="WireCell::PluginManager\l::find" alt="" coords="420,49,587,90"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_named_factory_registry.html#a355e9be03e1950d63a14ae9bb2989918" title="Look up an existing factory by the name of the &quot;class&quot; it can create. " alt="" coords="635,49,849,90"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_factory.html#a33318e89ff05184cf57267d20bdc076c" title="Lookup up a factory for the given type. " alt="" coords="897,49,1029,90"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_named_factory_registry.html#a81b540cbf24b04c728ad24a7e0af6c2e" title="WireCell::NamedFactoryRegistry\l::instance" alt="" coords="1077,49,1292,90"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1_factory.html#a17712091b6e64cd7936ec21901b32b39" title="WireCell::Factory::\llookup" alt="" coords="1340,49,1472,90"/>
+</map>

@@ -1,0 +1,196 @@
+\hypertarget{structspdlog_1_1details_1_1log__msg}{}\section{spdlog\+:\+:details\+:\+:log\+\_\+msg Struct Reference}
+\label{structspdlog_1_1details_1_1log__msg}\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+
+
+{\ttfamily \#include $<$log\+\_\+msg.\+h$>$}
+
+
+
+Collaboration diagram for spdlog\+:\+:details\+:\+:log\+\_\+msg\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{structspdlog_1_1details_1_1log__msg__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structspdlog_1_1details_1_1log__msg_af08273268386a97a4e4a02505f830318}{log\+\_\+msg} (\hyperlink{structspdlog_1_1source__loc}{source\+\_\+loc} loc, const std\+::string $\ast$loggers\+\_\+name, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} lvl, \hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{string\+\_\+view\+\_\+t} view)
+\item 
+\hyperlink{structspdlog_1_1details_1_1log__msg_aed741a89e884b8f51db4fd6364402e7a}{log\+\_\+msg} (const std\+::string $\ast$loggers\+\_\+name, \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} lvl, \hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{string\+\_\+view\+\_\+t} view)
+\item 
+\hyperlink{structspdlog_1_1details_1_1log__msg_ad3ff125f04a5854bf78f6c359af5183a}{log\+\_\+msg} (const \hyperlink{structspdlog_1_1details_1_1log__msg}{log\+\_\+msg} \&other)=default
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string $\ast$ \hyperlink{structspdlog_1_1details_1_1log__msg_a0aacbf01e2a67660d328fa2080d55def}{logger\+\_\+name} \{nullptr\}
+\item 
+\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} \hyperlink{structspdlog_1_1details_1_1log__msg_a4142f4d66140a1ea24053311ebea5706}{level} \{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba917591d8c0e89f6e6247c95c67809a1a}{level\+::off}\}
+\item 
+log\+\_\+clock\+::time\+\_\+point \hyperlink{structspdlog_1_1details_1_1log__msg_a25fadb26e6ce94657af5475d4a581313}{time}
+\item 
+size\+\_\+t \hyperlink{structspdlog_1_1details_1_1log__msg_ab8474cd689276f61021bca37e1993eef}{thread\+\_\+id} \{0\}
+\item 
+size\+\_\+t \hyperlink{structspdlog_1_1details_1_1log__msg_a8cbec91cdecd3cb4efe9cfa39d5d1d84}{msg\+\_\+id} \{0\}
+\item 
+size\+\_\+t \hyperlink{structspdlog_1_1details_1_1log__msg_a87cb1c5f1ecd7415412722123e35d491}{color\+\_\+range\+\_\+start} \{0\}
+\item 
+size\+\_\+t \hyperlink{structspdlog_1_1details_1_1log__msg_a0dfc2763f8e6b73ca34e4cb7c5a9950a}{color\+\_\+range\+\_\+end} \{0\}
+\item 
+\hyperlink{structspdlog_1_1source__loc}{source\+\_\+loc} \hyperlink{structspdlog_1_1details_1_1log__msg_a607e0014c79c1d39e28b515662ca2ca1}{source}
+\item 
+const \hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{string\+\_\+view\+\_\+t} \hyperlink{structspdlog_1_1details_1_1log__msg_a33fd07702d73245581fccd8d0d04b82a}{payload}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file log\+\_\+msg.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_af08273268386a97a4e4a02505f830318}\label{structspdlog_1_1details_1_1log__msg_af08273268386a97a4e4a02505f830318}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!log\+\_\+msg@{log\+\_\+msg}}
+\index{log\+\_\+msg@{log\+\_\+msg}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{log\+\_\+msg()}{log\_msg()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily spdlog\+::details\+::log\+\_\+msg\+::log\+\_\+msg (\begin{DoxyParamCaption}\item[{\hyperlink{structspdlog_1_1source__loc}{source\+\_\+loc}}]{loc,  }\item[{const std\+::string $\ast$}]{loggers\+\_\+name,  }\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{lvl,  }\item[{\hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{string\+\_\+view\+\_\+t}}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 19 of file log\+\_\+msg.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{structspdlog_1_1details_1_1log__msg_af08273268386a97a4e4a02505f830318_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_aed741a89e884b8f51db4fd6364402e7a}\label{structspdlog_1_1details_1_1log__msg_aed741a89e884b8f51db4fd6364402e7a}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!log\+\_\+msg@{log\+\_\+msg}}
+\index{log\+\_\+msg@{log\+\_\+msg}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{log\+\_\+msg()}{log\_msg()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily spdlog\+::details\+::log\+\_\+msg\+::log\+\_\+msg (\begin{DoxyParamCaption}\item[{const std\+::string $\ast$}]{loggers\+\_\+name,  }\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{lvl,  }\item[{\hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{string\+\_\+view\+\_\+t}}]{view }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file log\+\_\+msg.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{structspdlog_1_1details_1_1log__msg_aed741a89e884b8f51db4fd6364402e7a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_ad3ff125f04a5854bf78f6c359af5183a}\label{structspdlog_1_1details_1_1log__msg_ad3ff125f04a5854bf78f6c359af5183a}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!log\+\_\+msg@{log\+\_\+msg}}
+\index{log\+\_\+msg@{log\+\_\+msg}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{log\+\_\+msg()}{log\_msg()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily spdlog\+::details\+::log\+\_\+msg\+::log\+\_\+msg (\begin{DoxyParamCaption}\item[{const \hyperlink{structspdlog_1_1details_1_1log__msg}{log\+\_\+msg} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_a0dfc2763f8e6b73ca34e4cb7c5a9950a}\label{structspdlog_1_1details_1_1log__msg_a0dfc2763f8e6b73ca34e4cb7c5a9950a}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!color\+\_\+range\+\_\+end@{color\+\_\+range\+\_\+end}}
+\index{color\+\_\+range\+\_\+end@{color\+\_\+range\+\_\+end}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{color\+\_\+range\+\_\+end}{color\_range\_end}}
+{\footnotesize\ttfamily size\+\_\+t spdlog\+::details\+::log\+\_\+msg\+::color\+\_\+range\+\_\+end \{0\}\hspace{0.3cm}{\ttfamily [mutable]}}
+
+
+
+Definition at line 49 of file log\+\_\+msg.\+h.
+
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_a87cb1c5f1ecd7415412722123e35d491}\label{structspdlog_1_1details_1_1log__msg_a87cb1c5f1ecd7415412722123e35d491}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!color\+\_\+range\+\_\+start@{color\+\_\+range\+\_\+start}}
+\index{color\+\_\+range\+\_\+start@{color\+\_\+range\+\_\+start}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{color\+\_\+range\+\_\+start}{color\_range\_start}}
+{\footnotesize\ttfamily size\+\_\+t spdlog\+::details\+::log\+\_\+msg\+::color\+\_\+range\+\_\+start \{0\}\hspace{0.3cm}{\ttfamily [mutable]}}
+
+
+
+Definition at line 48 of file log\+\_\+msg.\+h.
+
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_a4142f4d66140a1ea24053311ebea5706}\label{structspdlog_1_1details_1_1log__msg_a4142f4d66140a1ea24053311ebea5706}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!level@{level}}
+\index{level@{level}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} spdlog\+::details\+::log\+\_\+msg\+::level \{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8ba917591d8c0e89f6e6247c95c67809a1a}{level\+::off}\}}
+
+
+
+Definition at line 42 of file log\+\_\+msg.\+h.
+
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_a0aacbf01e2a67660d328fa2080d55def}\label{structspdlog_1_1details_1_1log__msg_a0aacbf01e2a67660d328fa2080d55def}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!logger\+\_\+name@{logger\+\_\+name}}
+\index{logger\+\_\+name@{logger\+\_\+name}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{logger\+\_\+name}{logger\_name}}
+{\footnotesize\ttfamily const std\+::string$\ast$ spdlog\+::details\+::log\+\_\+msg\+::logger\+\_\+name \{nullptr\}}
+
+
+
+Definition at line 41 of file log\+\_\+msg.\+h.
+
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_a8cbec91cdecd3cb4efe9cfa39d5d1d84}\label{structspdlog_1_1details_1_1log__msg_a8cbec91cdecd3cb4efe9cfa39d5d1d84}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!msg\+\_\+id@{msg\+\_\+id}}
+\index{msg\+\_\+id@{msg\+\_\+id}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{msg\+\_\+id}{msg\_id}}
+{\footnotesize\ttfamily size\+\_\+t spdlog\+::details\+::log\+\_\+msg\+::msg\+\_\+id \{0\}}
+
+
+
+Definition at line 45 of file log\+\_\+msg.\+h.
+
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_a33fd07702d73245581fccd8d0d04b82a}\label{structspdlog_1_1details_1_1log__msg_a33fd07702d73245581fccd8d0d04b82a}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!payload@{payload}}
+\index{payload@{payload}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{payload}{payload}}
+{\footnotesize\ttfamily const \hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{string\+\_\+view\+\_\+t} spdlog\+::details\+::log\+\_\+msg\+::payload}
+
+
+
+Definition at line 52 of file log\+\_\+msg.\+h.
+
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_a607e0014c79c1d39e28b515662ca2ca1}\label{structspdlog_1_1details_1_1log__msg_a607e0014c79c1d39e28b515662ca2ca1}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!source@{source}}
+\index{source@{source}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \hyperlink{structspdlog_1_1source__loc}{source\+\_\+loc} spdlog\+::details\+::log\+\_\+msg\+::source}
+
+
+
+Definition at line 51 of file log\+\_\+msg.\+h.
+
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_ab8474cd689276f61021bca37e1993eef}\label{structspdlog_1_1details_1_1log__msg_ab8474cd689276f61021bca37e1993eef}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!thread\+\_\+id@{thread\+\_\+id}}
+\index{thread\+\_\+id@{thread\+\_\+id}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{thread\+\_\+id}{thread\_id}}
+{\footnotesize\ttfamily size\+\_\+t spdlog\+::details\+::log\+\_\+msg\+::thread\+\_\+id \{0\}}
+
+
+
+Definition at line 44 of file log\+\_\+msg.\+h.
+
+\mbox{\Hypertarget{structspdlog_1_1details_1_1log__msg_a25fadb26e6ce94657af5475d4a581313}\label{structspdlog_1_1details_1_1log__msg_a25fadb26e6ce94657af5475d4a581313}} 
+\index{spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}!time@{time}}
+\index{time@{time}!spdlog\+::details\+::log\+\_\+msg@{spdlog\+::details\+::log\+\_\+msg}}
+\subsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily log\+\_\+clock\+::time\+\_\+point spdlog\+::details\+::log\+\_\+msg\+::time}
+
+
+
+Definition at line 43 of file log\+\_\+msg.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/details/\hyperlink{log__msg_8h}{log\+\_\+msg.\+h}\end{DoxyCompactItemize}

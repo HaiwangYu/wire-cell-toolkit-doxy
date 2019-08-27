@@ -1,0 +1,8 @@
+<map id="align_spec" name="align_spec">
+<area shape="rect" id="node2" href="$structbasic__format__specs.html" title="basic_format_specs\l\&lt; Char \&gt;" alt="" coords="147,5,285,47"/>
+<area shape="rect" id="node4" href="$structbasic__format__specs.html" title="basic_format_specs\l\&lt; char_type \&gt;" alt="" coords="147,71,285,112"/>
+<area shape="rect" id="node6" href="$structbasic__format__specs.html" title="basic_format_specs\l\&lt; Context::char_type \&gt;" alt="" coords="137,136,295,177"/>
+<area shape="rect" id="node7" href="$structbasic__format__specs.html" title="basic_format_specs\l\&lt; ParseContext::char\l_type \&gt;" alt="" coords="143,202,289,258"/>
+<area shape="rect" id="node3" href="$structinternal_1_1dynamic__format__specs.html" title="internal::dynamic_format\l_specs\&lt; Char \&gt;" alt="" coords="343,5,508,47"/>
+<area shape="rect" id="node5" href="$structinternal_1_1dynamic__format__specs.html" title="internal::dynamic_format\l_specs\&lt; char_type \&gt;" alt="" coords="343,71,508,112"/>
+</map>

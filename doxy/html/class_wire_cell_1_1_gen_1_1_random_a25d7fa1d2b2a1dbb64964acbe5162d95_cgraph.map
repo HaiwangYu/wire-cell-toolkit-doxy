@@ -1,0 +1,12 @@
+<map id="WireCell::Gen::Random::~Random" name="WireCell::Gen::Random::~Random">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_random.html#ae62de2bc5ed1078fb4f24a7dd0e9bae9" title="Accept a configuration. " alt="" coords="215,5,376,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_random.html#a52d481cf1def8ba466faa65fc20529ef" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="215,71,376,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_random.html#afb7a7a30f4f5c70a6388dc47c6464153" title="Sample a binomial distribution. " alt="" coords="215,136,376,177"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_random.html#abf2ad8cda2e34f349f073a148dd5ac58" title="Sample a Poisson distribution. " alt="" coords="215,201,376,243"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_random.html#a0efe5c29dec850c78a0013a30f011320" title="Sample a normal distribution. " alt="" coords="215,267,376,308"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_random.html#aa470ac91289961da741d0d31ccfb83d8" title="Sample a uniform distribution. " alt="" coords="215,332,376,373"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#a265f36d9dee68d3f44381347ef2fd5cb" title="internal::begin" alt="" coords="244,398,347,425"/>
+<area shape="rect" id="node9" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="249,449,342,475"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_gen_1_1_random.html#adc1edd1dadf04f9e78d1c6480f6f4f1a" title="Sample an exponential distribution. " alt="" coords="215,500,376,541"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_gen_1_1_random.html#a84b86a3aaa791e75eb3eb80e1efb1d7e" title="Sample a uniform integer range. " alt="" coords="215,565,376,607"/>
+</map>

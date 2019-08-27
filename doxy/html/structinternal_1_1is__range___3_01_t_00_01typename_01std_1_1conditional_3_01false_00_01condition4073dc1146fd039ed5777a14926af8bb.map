@@ -1,0 +1,2 @@
+<map id="internal::is_range_&lt; T, typename std::conditional&lt; false, conditional_helper&lt; decltype(internal::declval&lt; T &gt;().begin()), decltype(internal::declval&lt; T &gt;().end())&gt;, void &gt;::type &gt;" name="internal::is_range_&lt; T, typename std::conditional&lt; false, conditional_helper&lt; decltype(internal::declval&lt; T &gt;().begin()), decltype(internal::declval&lt; T &gt;().end())&gt;, void &gt;::type &gt;">
+</map>

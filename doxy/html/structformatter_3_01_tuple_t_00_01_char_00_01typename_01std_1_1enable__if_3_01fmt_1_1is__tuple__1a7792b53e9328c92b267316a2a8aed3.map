@@ -1,0 +1,4 @@
+<map id="formatter&lt; TupleT, Char, typename std::enable_if&lt; fmt::is_tuple_like&lt; TupleT &gt;::value &gt;::type &gt;" name="formatter&lt; TupleT, Char, typename std::enable_if&lt; fmt::is_tuple_like&lt; TupleT &gt;::value &gt;::type &gt;">
+<area shape="rect" id="node2" href="$structformatting__tuple.html" title="formatting_tuple\&lt; Char \&gt;" alt="" coords="72,124,239,151"/>
+<area shape="rect" id="node3" href="$structformatting__base.html" title="formatting_base\&lt; Char \&gt;" alt="" coords="5,5,172,32"/>
+</map>

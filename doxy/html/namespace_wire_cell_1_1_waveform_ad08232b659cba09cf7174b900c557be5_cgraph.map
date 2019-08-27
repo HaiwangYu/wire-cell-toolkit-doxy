@@ -1,0 +1,13 @@
+<map id="WireCell::Waveform::resample" name="WireCell::Waveform::resample">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_waveform.html#a76b0099d7c51a9e0a915bbee0fe48069" title="Return the sample size if domain is equally sampled with given number of samples. ..." alt="" coords="193,5,333,47"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_waveform.html#a40f3344b248eea24a08d391e8f402bb8" title="Return the real part of the sequence. " alt="" coords="193,71,333,112"/>
+<area shape="rect" id="node9" href="$namespace_wire_cell_1_1_waveform.html#acc803e535b3e979dc331088b9fba8bc1" title="Return the imaginary part of the sequence. " alt="" coords="193,136,333,177"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1_waveform.html#ae8dc1c86082f99f8cbfedb8434d22bc2" title="Return the magnitude or absolute value of the sequence. " alt="" coords="193,201,333,243"/>
+<area shape="rect" id="node11" href="$namespace_wire_cell_1_1_waveform.html#abcab023facead1d0eb14e2042ce578bb" title="Return the phase or arg part of the sequence. " alt="" coords="193,267,333,308"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#a841c4668962007ef512b7a7df6ecfece" title="Return the begin/end sample numbers inside the a subdomain of a domain with nsamples total..." alt="" coords="381,5,521,47"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="586,13,679,39"/>
+<area shape="rect" id="node6" href="$_waveform_8cxx.html#aab765b49ae6d91a9309e22a5a80f66ec" title="c2r" alt="" coords="431,177,471,203"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="569,169,696,211"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="744,169,871,211"/>
+<area shape="rect" id="node12" href="$core_8h.html#a8704ec63f8ea1c3cf1fcbea83432fd3f" title="arg" alt="" coords="431,274,471,301"/>
+</map>

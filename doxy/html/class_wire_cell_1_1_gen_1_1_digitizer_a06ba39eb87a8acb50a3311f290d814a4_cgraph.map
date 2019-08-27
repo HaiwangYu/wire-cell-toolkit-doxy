@@ -1,0 +1,11 @@
+<map id="WireCell::Gen::Digitizer::operator()" name="WireCell::Gen::Digitizer::operator()">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_frame_tools.html#ab39e5b3fae9cf0abda7e6795007ad6df" title="WireCell::FrameTools\l::untagged_traces" alt="" coords="219,5,368,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_frame_tools.html#aa68b64d0bc1fd1daa0646a35c26edcbb" title="WireCell::FrameTools\l::channels" alt="" coords="219,71,368,112"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_frame_tools.html#a9031f0d7465146236c47308c347d05a1" title="WireCell::FrameTools\l::tbin_range" alt="" coords="219,136,368,177"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_frame_tools.html#a09db410acc8cf771ec60faec4eae7eef" title="WireCell::FrameTools\l::fill" alt="" coords="219,201,368,243"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_wire_plane_id.html#a617a3b37d14485b685db0762be14bec4" title="return true if valid " alt="" coords="218,267,369,308"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_wire_plane_id.html#a72e32df6a0f0721dba0f1c5c76649c9a" title="Layer as index number (0,1 or 2). &#45;1 if unknown. " alt="" coords="421,296,572,337"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_gen_1_1_digitizer.html#a0280442eb3c74a29e73899d976aa83f6" title="WireCell::Gen::Digitizer\l::digitize" alt="" coords="213,384,373,425"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_wire_plane_id.html#a203ede27a759b00518be11b8d23776fd" title="Layer as enum. " alt="" coords="620,296,771,337"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_wire_plane_id.html#a33a565cfc76f84e9bc103b1ca33d0974" title="Layer as integer (not index!) " alt="" coords="819,296,969,337"/>
+</map>

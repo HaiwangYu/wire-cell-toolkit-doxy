@@ -1,0 +1,346 @@
+\hypertarget{class_wire_cell_1_1_binning}{}\section{Wire\+Cell\+:\+:Binning Class Reference}
+\label{class_wire_cell_1_1_binning}\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+
+
+{\ttfamily \#include $<$Binning.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_binning_a76d15fa7ac7d60e63f7d77c28f2acac8}{Binning} (int \hyperlink{class_wire_cell_1_1_binning_aaac66033ecc76a899c18f8f09404c419}{nbins}, double minval, double maxval)
+\item 
+\hyperlink{class_wire_cell_1_1_binning_add55162797f4c84f66397821289dbc0e}{Binning} ()
+\item 
+void \hyperlink{class_wire_cell_1_1_binning_a6bbcf5f258e115803cbd83cb25f839d4}{set} (int \hyperlink{class_wire_cell_1_1_binning_aaac66033ecc76a899c18f8f09404c419}{nbins}, double minval, double maxval)
+\item 
+int \hyperlink{class_wire_cell_1_1_binning_aaac66033ecc76a899c18f8f09404c419}{nbins} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_binning_a5c7eadf5a87f443a18b93d18f1707372}{min} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_binning_a91e6fb550bd6cac95e1e61be625583fe}{max} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_binning_ad89e1175b26214dc7fda52ee7e47db3e}{span} () const
+\begin{DoxyCompactList}\small\item\em Return the max-\/min. \end{DoxyCompactList}\item 
+std\+::pair$<$ double, double $>$ \hyperlink{class_wire_cell_1_1_binning_a978a1bd9f17264316b5419f5ea5e3253}{range} () const
+\item 
+std\+::pair$<$ int, int $>$ \hyperlink{class_wire_cell_1_1_binning_ac3c24a2ebbe3c1db7f109b8cf1a69446}{irange} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_binning_a55ba6a476ed35f5954fd44214e85dbb9}{binsize} () const
+\item 
+int \hyperlink{class_wire_cell_1_1_binning_a826dbaafb7bc50a2c2767cc4deb190f0}{bin} (double val) const
+\item 
+double \hyperlink{class_wire_cell_1_1_binning_ac53704b170f6bd834632fdc75f7a70cc}{center} (int ind) const
+\item 
+int \hyperlink{class_wire_cell_1_1_binning_afb7e010178a3e28729f67d5397b9d3d6}{edge\+\_\+index} (double val) const
+\item 
+double \hyperlink{class_wire_cell_1_1_binning_a0ed21ab262df2a11eac561e53ee3cb77}{edge} (int ind) const
+\item 
+bool \hyperlink{class_wire_cell_1_1_binning_a251f5ec35ccc3ddb07326ad6f512a0bd}{inside} (double val) const
+\item 
+bool \hyperlink{class_wire_cell_1_1_binning_aa3696d13f4a4dc658d47c430663dc78e}{inbounds} (int \hyperlink{class_wire_cell_1_1_binning_a826dbaafb7bc50a2c2767cc4deb190f0}{bin}) const
+\begin{DoxyCompactList}\small\item\em Return true if bin is in bounds. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \hyperlink{class_wire_cell_1_1_binning_a7f4e8459c55ad288fff22553d8ed8cdd}{sample\+\_\+bin\+\_\+range} (double minval, double maxval) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A binning is a uniform discretization of a linear space.
+
+This class largely provides methods that give semantic labels to various calculations related to a binned region. 
+
+Definition at line 15 of file Binning.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_a76d15fa7ac7d60e63f7d77c28f2acac8}\label{class_wire_cell_1_1_binning_a76d15fa7ac7d60e63f7d77c28f2acac8}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!Binning@{Binning}}
+\index{Binning@{Binning}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{Binning()}{Binning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Binning\+::\+Binning (\begin{DoxyParamCaption}\item[{int}]{nbins,  }\item[{double}]{minval,  }\item[{double}]{maxval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a binning 
+\begin{DoxyParams}{Parameters}
+{\em nbins} & gives the number of uniform, discrete separation between bounds. \\
+\hline
+{\em minval} & gives the lower bound of the linear space (low edge of bin 0) \\
+\hline
+{\em maxval} & gives the upper bound of the linear space (high edge of bin nbins-\/1) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file Binning.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_wire_cell_1_1_binning_a76d15fa7ac7d60e63f7d77c28f2acac8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_add55162797f4c84f66397821289dbc0e}\label{class_wire_cell_1_1_binning_add55162797f4c84f66397821289dbc0e}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!Binning@{Binning}}
+\index{Binning@{Binning}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{Binning()}{Binning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Binning\+::\+Binning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file Binning.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_a826dbaafb7bc50a2c2767cc4deb190f0}\label{class_wire_cell_1_1_binning_a826dbaafb7bc50a2c2767cc4deb190f0}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!bin@{bin}}
+\index{bin@{bin}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{bin()}{bin()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Binning\+::bin (\begin{DoxyParamCaption}\item[{double}]{val }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the bin containing value. If val is in range, return value is \mbox{[}0,nbins-\/1\mbox{]} but no range checking is performed. 
+
+Definition at line 80 of file Binning.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_binning_a826dbaafb7bc50a2c2767cc4deb190f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_a55ba6a476ed35f5954fd44214e85dbb9}\label{class_wire_cell_1_1_binning_a55ba6a476ed35f5954fd44214e85dbb9}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!binsize@{binsize}}
+\index{binsize@{binsize}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{binsize()}{binsize()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Binning\+::binsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 73 of file Binning.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_binning_a55ba6a476ed35f5954fd44214e85dbb9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_ac53704b170f6bd834632fdc75f7a70cc}\label{class_wire_cell_1_1_binning_ac53704b170f6bd834632fdc75f7a70cc}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!center@{center}}
+\index{center@{center}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Binning\+::center (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the center value of given bin. Range checking is not done. 
+
+Definition at line 86 of file Binning.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_binning_ac53704b170f6bd834632fdc75f7a70cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_a0ed21ab262df2a11eac561e53ee3cb77}\label{class_wire_cell_1_1_binning_a0ed21ab262df2a11eac561e53ee3cb77}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!edge@{edge}}
+\index{edge@{edge}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{edge()}{edge()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Binning\+::edge (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the position of the given bin edge. Range checking is not done. 
+
+Definition at line 99 of file Binning.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_binning_a0ed21ab262df2a11eac561e53ee3cb77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_afb7e010178a3e28729f67d5397b9d3d6}\label{class_wire_cell_1_1_binning_afb7e010178a3e28729f67d5397b9d3d6}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!edge\+\_\+index@{edge\+\_\+index}}
+\index{edge\+\_\+index@{edge\+\_\+index}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{edge\+\_\+index()}{edge\_index()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Binning\+::edge\+\_\+index (\begin{DoxyParamCaption}\item[{double}]{val }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the edge, nominally in \mbox{[}0,nbins\mbox{]} closest to the given value. Range checking is not done so returned edge may be outside of range. 
+
+Definition at line 93 of file Binning.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_aa3696d13f4a4dc658d47c430663dc78e}\label{class_wire_cell_1_1_binning_aa3696d13f4a4dc658d47c430663dc78e}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!inbounds@{inbounds}}
+\index{inbounds@{inbounds}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{inbounds()}{inbounds()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Binning\+::inbounds (\begin{DoxyParamCaption}\item[{int}]{bin }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return true if bin is in bounds. 
+
+
+
+Definition at line 110 of file Binning.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_a251f5ec35ccc3ddb07326ad6f512a0bd}\label{class_wire_cell_1_1_binning_a251f5ec35ccc3ddb07326ad6f512a0bd}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!inside@{inside}}
+\index{inside@{inside}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{inside()}{inside()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Binning\+::inside (\begin{DoxyParamCaption}\item[{double}]{val }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return true value is in range. Range is considered half open. Ig, edge(nbins) is not inside range. 
+
+Definition at line 105 of file Binning.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_ac3c24a2ebbe3c1db7f109b8cf1a69446}\label{class_wire_cell_1_1_binning_ac3c24a2ebbe3c1db7f109b8cf1a69446}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!irange@{irange}}
+\index{irange@{irange}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{irange()}{irange()}}
+{\footnotesize\ttfamily std\+::pair$<$int, int$>$ Wire\+Cell\+::\+Binning\+::irange (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 68 of file Binning.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_a91e6fb550bd6cac95e1e61be625583fe}\label{class_wire_cell_1_1_binning_a91e6fb550bd6cac95e1e61be625583fe}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!max@{max}}
+\index{max@{max}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Binning\+::max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 52 of file Binning.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_binning_a91e6fb550bd6cac95e1e61be625583fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_a5c7eadf5a87f443a18b93d18f1707372}\label{class_wire_cell_1_1_binning_a5c7eadf5a87f443a18b93d18f1707372}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!min@{min}}
+\index{min@{min}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Binning\+::min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 47 of file Binning.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_binning_a5c7eadf5a87f443a18b93d18f1707372_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_aaac66033ecc76a899c18f8f09404c419}\label{class_wire_cell_1_1_binning_aaac66033ecc76a899c18f8f09404c419}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!nbins@{nbins}}
+\index{nbins@{nbins}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{nbins()}{nbins()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Binning\+::nbins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file Binning.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_binning_aaac66033ecc76a899c18f8f09404c419_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_a978a1bd9f17264316b5419f5ea5e3253}\label{class_wire_cell_1_1_binning_a978a1bd9f17264316b5419f5ea5e3253}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!range@{range}}
+\index{range@{range}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{range()}{range()}}
+{\footnotesize\ttfamily std\+::pair$<$double, double$>$ Wire\+Cell\+::\+Binning\+::range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 62 of file Binning.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_a7f4e8459c55ad288fff22553d8ed8cdd}\label{class_wire_cell_1_1_binning_a7f4e8459c55ad288fff22553d8ed8cdd}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!sample\+\_\+bin\+\_\+range@{sample\+\_\+bin\+\_\+range}}
+\index{sample\+\_\+bin\+\_\+range@{sample\+\_\+bin\+\_\+range}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{sample\+\_\+bin\+\_\+range()}{sample\_bin\_range()}}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ Wire\+Cell\+::\+Binning\+::sample\+\_\+bin\+\_\+range (\begin{DoxyParamCaption}\item[{double}]{minval,  }\item[{double}]{maxval }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return half-\/open bin range which covers the range of values. Bounds are forced to return values in \mbox{[}0,nbins\mbox{]}. 
+
+Definition at line 116 of file Binning.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_wire_cell_1_1_binning_a7f4e8459c55ad288fff22553d8ed8cdd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_binning_a7f4e8459c55ad288fff22553d8ed8cdd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_a6bbcf5f258e115803cbd83cb25f839d4}\label{class_wire_cell_1_1_binning_a6bbcf5f258e115803cbd83cb25f839d4}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!set@{set}}
+\index{set@{set}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Binning\+::set (\begin{DoxyParamCaption}\item[{int}]{nbins,  }\item[{double}]{minval,  }\item[{double}]{maxval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file Binning.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_wire_cell_1_1_binning_a6bbcf5f258e115803cbd83cb25f839d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_binning_a6bbcf5f258e115803cbd83cb25f839d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_binning_ad89e1175b26214dc7fda52ee7e47db3e}\label{class_wire_cell_1_1_binning_ad89e1175b26214dc7fda52ee7e47db3e}} 
+\index{Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}!span@{span}}
+\index{span@{span}!Wire\+Cell\+::\+Binning@{Wire\+Cell\+::\+Binning}}
+\subsubsection{\texorpdfstring{span()}{span()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Binning\+::span (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the max-\/min. 
+
+
+
+Definition at line 57 of file Binning.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_binning_8h}{Binning.\+h}\end{DoxyCompactItemize}

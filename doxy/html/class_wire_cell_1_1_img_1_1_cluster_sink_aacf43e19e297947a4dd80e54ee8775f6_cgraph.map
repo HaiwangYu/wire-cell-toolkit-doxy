@@ -1,0 +1,15 @@
+<map id="WireCell::Img::ClusterSink::operator()" name="WireCell::Img::ClusterSink::operator()">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_string.html#ade706f4cfc3f6e8a946d95f1b06dbb56" title="WireCell::String::format" alt="" coords="233,23,392,50"/>
+<area shape="rect" id="node4" href="$namespacespdlog.html#a3ee2e37859d2eee2722afc8ac26319ae" title="spdlog::info" alt="" coords="268,78,357,105"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_indexed_graph.html#a80546c5d1dee591fae4c845de560f806" title="WireCell::IndexedGraph\l::vertex" alt="" coords="232,129,393,171"/>
+<area shape="rect" id="node12" href="$namespace_wire_cell_1_1_waveform.html#ae368e58f014b0d634028afcbb05887cb" title="WireCell::Waveform\l::edge" alt="" coords="243,195,383,236"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_indexed_graph.html#a03a0f192232d913bfb4171fc7b2e095a" title="WireCell::IndexedGraph\l::edge" alt="" coords="232,260,393,301"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_indexed_graph.html#a73e33d19b8b03611097aa02a2e72dd1d" title="WireCell::IndexedGraph\l::graph" alt="" coords="232,325,393,367"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_string.html#a483dc976ea784d91bef184a893e9bba8" title="WireCell::String::format\l_flatten" alt="" coords="451,12,609,53"/>
+<area shape="rect" id="node5" href="$namespacespdlog.html#a2c623c9fadba3efc09b48dac8a3990be" title="spdlog::default_logger_raw" alt="" coords="441,78,619,105"/>
+<area shape="rect" id="node9" href="$classspdlog_1_1logger.html#a72f80c2e379df565c628adab1efdab34" title="spdlog::logger::info" alt="" coords="464,133,596,159"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1details_1_1registry.html#a58a1bbb352f751f6b729bc57bfadd6be" title="spdlog::details::registry\l::instance" alt="" coords="667,5,824,47"/>
+<area shape="rect" id="node8" href="$classspdlog_1_1details_1_1registry.html#a1fd3bc96c2a7be1af1841f5980cd5f4c" title="spdlog::details::registry\l::get_default_raw" alt="" coords="667,71,824,112"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1logger.html#a0d0307a6501a9f56689c386a006991fe" title="spdlog::logger::default\l_level" alt="" coords="872,5,1023,47"/>
+<area shape="rect" id="node10" href="$classspdlog_1_1logger.html#a1e4b2c515490efb5456665a9a64382d9" title="spdlog::logger::log" alt="" coords="681,137,809,163"/>
+</map>

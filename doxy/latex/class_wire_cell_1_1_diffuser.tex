@@ -1,0 +1,288 @@
+\hypertarget{class_wire_cell_1_1_diffuser}{}\section{Wire\+Cell\+:\+:Diffuser Class Reference}
+\label{class_wire_cell_1_1_diffuser}\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+
+
+{\ttfamily \#include $<$Diffuser.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Diffuser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_diffuser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Diffuser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_diffuser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ double, double $>$ \hyperlink{class_wire_cell_1_1_diffuser_a5ec949c1c222b25d1db6542dacc6d983}{bounds\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_diffuser_ae3799af3be7fe101ddeaacea1c1b4903}{Diffuser} (const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&pitch=\hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}(\hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point}(0.\+0, 0.\+0, 0.\+0), \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point}(0.\+0, 0.\+0, 5 $\ast$units\+::millimeter)), double binsize\+\_\+l=2.\+0 $\ast$units\+::millimeter, double time\+\_\+offset=0.\+0 $\ast$units\+::microsecond, double origin\+\_\+l=0.\+0 $\ast$units\+::microsecond, double DL=5.\+3 $\ast$units\+::centimeter2/units\+::second, double DT=12.\+8 $\ast$units\+::centimeter2/units\+::second, double drift\+\_\+velocity=1.\+6 $\ast$units\+::millimeter/units\+::microsecond, double max\+\_\+sigma\+\_\+l=5 $\ast$units\+::microsecond, double nsigma=3.\+0)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_diffuser_a17f86117d655968d3d46bf25aa92f5eb}{$\sim$\+Diffuser} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_diffuser_a494d8aa964610d4b129f4305630491f6}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_diffuser_a9f2f7a5bae385df91a7a9c1ef035f3a6}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_wire_cell_1_1_diffuser_abeacee310fe7c9ec3067c679319c33bd}{reset} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_diffuser_a05506f9621f1221253d4d4f6701ca180}{operator()} (const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&depo, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&outq)
+\item 
+\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Diffusion\+::pointer} \hyperlink{class_wire_cell_1_1_diffuser_adc579ba4d356101b4b9afdb8422087b6}{diffuse} (double mean\+\_\+l, double mean\+\_\+t, double sigma\+\_\+l, double sigma\+\_\+t, double weight=1.\+0, \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} depo=nullptr)
+\item 
+\hyperlink{class_wire_cell_1_1_diffuser_a5ec949c1c222b25d1db6542dacc6d983}{bounds\+\_\+type} \hyperlink{class_wire_cell_1_1_diffuser_a2b37e9c8a8e88697620fda6acb8ef3b1}{bounds} (double mean, double sigma, double binsize, double origin=0.\+0)
+\item 
+std\+::vector$<$ double $>$ \hyperlink{class_wire_cell_1_1_diffuser_a19e1586fdca351c264970065699e9c39}{oned} (double mean, double sigma, double binsize, const \hyperlink{class_wire_cell_1_1_diffuser_a5ec949c1c222b25d1db6542dacc6d983}{Diffuser\+::bounds\+\_\+type} \&\hyperlink{class_wire_cell_1_1_diffuser_a2b37e9c8a8e88697620fda6acb8ef3b1}{bounds})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Model longitudinal and transverse diffusion of drifted charge.
+
+\hyperlink{class_wire_cell_1_1_i_depo}{Wire\+Cell\+::\+I\+Depo} objects are inserted and \hyperlink{class_wire_cell_1_1_i_diffusion}{Wire\+Cell\+::\+I\+Diffusion} objects are extracted. An internal buffer is kept in order to assure the output is time ordered by the leading edge of the diffusion \char`\"{}patch\char`\"{}. Depositions are diffused in place so are assumed to be drifted to whatever location they are wanted. The \hyperlink{class_wire_cell_1_1_i_depo_a440532d005a463cc9df5731ddb96f601}{I\+Depo\+::prior()} method is used to find the total drift distance.
+
+F\+I\+X\+ME\+: this action is really a compound as it does three things\+:
+
+1) Projects a deposition position onto wire pitch. 2) Applies arbitrary time offset. 3) Diffuses the deposition. 
+
+Definition at line 31 of file Diffuser.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffuser_a5ec949c1c222b25d1db6542dacc6d983}\label{class_wire_cell_1_1_diffuser_a5ec949c1c222b25d1db6542dacc6d983}} 
+\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}!bounds\+\_\+type@{bounds\+\_\+type}}
+\index{bounds\+\_\+type@{bounds\+\_\+type}!Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+\subsubsection{\texorpdfstring{bounds\+\_\+type}{bounds\_type}}
+{\footnotesize\ttfamily typedef std\+::pair$<$double,double$>$ \hyperlink{class_wire_cell_1_1_diffuser_a5ec949c1c222b25d1db6542dacc6d983}{Wire\+Cell\+::\+Diffuser\+::bounds\+\_\+type}}
+
+
+
+Definition at line 34 of file Diffuser.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffuser_ae3799af3be7fe101ddeaacea1c1b4903}\label{class_wire_cell_1_1_diffuser_ae3799af3be7fe101ddeaacea1c1b4903}} 
+\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}!Diffuser@{Diffuser}}
+\index{Diffuser@{Diffuser}!Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+\subsubsection{\texorpdfstring{Diffuser()}{Diffuser()}}
+{\footnotesize\ttfamily Diffuser\+::\+Diffuser (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&}]{pitch = {\ttfamily \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}(\hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point}(0.0,0.0,0.0),\hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point}(0.0,0.0,5$\ast$units\+:\+:millimeter))},  }\item[{double}]{binsize\+\_\+l = {\ttfamily 2.0$\ast$units\+:\+:millimeter},  }\item[{double}]{time\+\_\+offset = {\ttfamily 0.0$\ast$units\+:\+:microsecond},  }\item[{double}]{origin\+\_\+l = {\ttfamily 0.0$\ast$units\+:\+:microsecond},  }\item[{double}]{DL = {\ttfamily 5.3$\ast$units\+:\+:centimeter2/units\+:\+:second},  }\item[{double}]{DT = {\ttfamily 12.8$\ast$units\+:\+:centimeter2/units\+:\+:second},  }\item[{double}]{drift\+\_\+velocity = {\ttfamily 1.6$\ast$units\+:\+:millimeter/units\+:\+:microsecond},  }\item[{double}]{max\+\_\+sigma\+\_\+l = {\ttfamily 5$\ast$units\+:\+:microsecond},  }\item[{double}]{nsigma = {\ttfamily 3.0} }\end{DoxyParamCaption})}
+
+Create a diffuser.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pitch} & gives the wire coordinate system. \\
+\hline
+{\em lbinsize} & defines the grid spacing in the longitudinal direction. \\
+\hline
+{\em tbinsize} & defines the grid spacing in the transverse direction. \\
+\hline
+{\em lorigin} & defines a grid line in the longitudinal direction. \\
+\hline
+{\em torigin} & defines a grid line in the transverse direction. \\
+\hline
+{\em DL} & is the longitudinal diffusion coefficient. \\
+\hline
+{\em DT} & is the transverse diffusion coefficient. \\
+\hline
+{\em drift\+\_\+velocity} & is what it sounds like. \\
+\hline
+{\em max\+\_\+sigma\+\_\+l} & is the largest possible longitudinal diffusion. \\
+\hline
+{\em nsigma} & defines the number of sigma at which to truncate the Gaussian. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file Diffuser.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_diffuser_a17f86117d655968d3d46bf25aa92f5eb}\label{class_wire_cell_1_1_diffuser_a17f86117d655968d3d46bf25aa92f5eb}} 
+\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}!````~Diffuser@{$\sim$\+Diffuser}}
+\index{````~Diffuser@{$\sim$\+Diffuser}!Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+\subsubsection{\texorpdfstring{$\sim$\+Diffuser()}{~Diffuser()}}
+{\footnotesize\ttfamily Diffuser\+::$\sim$\+Diffuser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 46 of file Diffuser.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffuser_a2b37e9c8a8e88697620fda6acb8ef3b1}\label{class_wire_cell_1_1_diffuser_a2b37e9c8a8e88697620fda6acb8ef3b1}} 
+\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}!bounds@{bounds}}
+\index{bounds@{bounds}!Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+\subsubsection{\texorpdfstring{bounds()}{bounds()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_diffuser_a5ec949c1c222b25d1db6542dacc6d983}{Diffuser\+::bounds\+\_\+type} Diffuser\+::bounds (\begin{DoxyParamCaption}\item[{double}]{mean,  }\item[{double}]{sigma,  }\item[{double}]{binsize,  }\item[{double}]{origin = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file Diffuser.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_diffuser_a2b37e9c8a8e88697620fda6acb8ef3b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffuser_a494d8aa964610d4b129f4305630491f6}\label{class_wire_cell_1_1_diffuser_a494d8aa964610d4b129f4305630491f6}} 
+\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Diffuser\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 70 of file Diffuser.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_diffuser_a9f2f7a5bae385df91a7a9c1ef035f3a6}\label{class_wire_cell_1_1_diffuser_a9f2f7a5bae385df91a7a9c1ef035f3a6}} 
+\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} Diffuser\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 50 of file Diffuser.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_diffuser_a9f2f7a5bae385df91a7a9c1ef035f3a6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffuser_adc579ba4d356101b4b9afdb8422087b6}\label{class_wire_cell_1_1_diffuser_adc579ba4d356101b4b9afdb8422087b6}} 
+\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}!diffuse@{diffuse}}
+\index{diffuse@{diffuse}!Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+\subsubsection{\texorpdfstring{diffuse()}{diffuse()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Diffusion\+::pointer} Diffuser\+::diffuse (\begin{DoxyParamCaption}\item[{double}]{mean\+\_\+l,  }\item[{double}]{mean\+\_\+t,  }\item[{double}]{sigma\+\_\+l,  }\item[{double}]{sigma\+\_\+t,  }\item[{double}]{weight = {\ttfamily 1.0},  }\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer}}]{depo = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Diffuse a point charge.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mean\+\_\+l} & is the position in the longitudinal direction. \\
+\hline
+{\em mean\+\_\+t} & is the position in the transverse direction. \\
+\hline
+{\em sigma\+\_\+l} & is the Gaussian sigma in the longitudinal direction. \\
+\hline
+{\em sigma\+\_\+t} & is the Gaussian sigma in the transverse direction. \\
+\hline
+{\em weight} & is the normalization (eg, amount of charge)\\
+\hline
+\end{DoxyParams}
+This is a mostly internal method. It does not directly fill or drain any internal buffers so can be used to test diffusion directly. 
+
+Definition at line 204 of file Diffuser.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_wire_cell_1_1_diffuser_adc579ba4d356101b4b9afdb8422087b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_wire_cell_1_1_diffuser_adc579ba4d356101b4b9afdb8422087b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffuser_a19e1586fdca351c264970065699e9c39}\label{class_wire_cell_1_1_diffuser_a19e1586fdca351c264970065699e9c39}} 
+\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}!oned@{oned}}
+\index{oned@{oned}!Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+\subsubsection{\texorpdfstring{oned()}{oned()}}
+{\footnotesize\ttfamily std\+::vector$<$ double $>$ Diffuser\+::oned (\begin{DoxyParamCaption}\item[{double}]{mean,  }\item[{double}]{sigma,  }\item[{double}]{binsize,  }\item[{const \hyperlink{class_wire_cell_1_1_diffuser_a5ec949c1c222b25d1db6542dacc6d983}{Diffuser\+::bounds\+\_\+type} \&}]{bounds }\end{DoxyParamCaption})}
+
+fragment between bin\+\_\+edge\+\_\+\{low,high\} 
+
+Definition at line 173 of file Diffuser.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_diffuser_a19e1586fdca351c264970065699e9c39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffuser_a05506f9621f1221253d4d4f6701ca180}\label{class_wire_cell_1_1_diffuser_a05506f9621f1221253d4d4f6701ca180}} 
+\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Diffuser\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&}]{depo,  }\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&}]{outq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 117 of file Diffuser.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_diffuser_a05506f9621f1221253d4d4f6701ca180_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffuser_abeacee310fe7c9ec3067c679319c33bd}\label{class_wire_cell_1_1_diffuser_abeacee310fe7c9ec3067c679319c33bd}} 
+\index{Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}!reset@{reset}}
+\index{reset@{reset}!Wire\+Cell\+::\+Diffuser@{Wire\+Cell\+::\+Diffuser}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Diffuser\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Optional hook to be implemented in order to reset after an end of stream is encountered. Fixme\+: this should be removed. 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_a7bf4dfff146b72f866ab25f7662c56a0}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 93 of file Diffuser.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_diffuser_8h}{Diffuser.\+h}\item 
+gen/src/\hyperlink{_diffuser_8cxx}{Diffuser.\+cxx}\end{DoxyCompactItemize}

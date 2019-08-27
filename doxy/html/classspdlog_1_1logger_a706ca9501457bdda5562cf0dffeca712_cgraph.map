@@ -1,0 +1,14 @@
+<map id="spdlog::logger::log" name="spdlog::logger::log">
+<area shape="rect" id="node2" href="$classspdlog_1_1logger.html#a1e4b2c515490efb5456665a9a64382d9" title="spdlog::logger::log" alt="" coords="211,5,339,32"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1logger.html#a94c77395570c462953ded4188aaaf655" title="spdlog::logger::should_log" alt="" coords="188,56,361,83"/>
+<area shape="rect" id="node4" href="$namespacespdlog_1_1details_1_1fmt__helper.html#aa2b4191cb8c40474fb61787ad67face5" title="spdlog::details::fmt\l_helper::to_string_view" alt="" coords="197,107,353,149"/>
+<area shape="rect" id="node5" href="$core_8h.html#a7f023637311ff6fae516e0da2caf05d3" title="format_to" alt="" coords="236,173,313,200"/>
+<area shape="rect" id="node8" href="$namespacespdlog_1_1level.html#a95af114ec4b98530113f98b5c7bc5ec7" title="spdlog::level::to_string_view" alt="" coords="181,224,368,251"/>
+<area shape="rect" id="node9" href="$classspdlog_1_1logger.html#a43ac8d73671a109cba253eadb0b049e2" title="spdlog::logger::sink_it_" alt="" coords="197,285,353,312"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#a9f6f592ec8a979251038265f241e7d48" title="internal::vformat_to" alt="" coords="423,123,558,149"/>
+<area shape="rect" id="node7" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="613,148,769,175"/>
+<area shape="rect" id="node10" href="$classspdlog_1_1logger.html#a55bf9c5c960391a56399b5f1ea601b4b" title="spdlog::logger::incr\l_msg_counter_" alt="" coords="425,225,557,266"/>
+<area shape="rect" id="node11" href="$classspdlog_1_1logger.html#aa1bbe703cdeed2aef722a97a2bc1a800" title="spdlog::logger::should\l_flush_" alt="" coords="416,290,565,331"/>
+<area shape="rect" id="node13" href="$classspdlog_1_1logger.html#a98981b19089a6000fdfa8765af52ef0e" title="spdlog::logger::flush_" alt="" coords="417,356,564,383"/>
+<area shape="rect" id="node12" href="$classspdlog_1_1logger.html#a1b9b7304f017163d181692e41101b648" title="spdlog::logger::flush\l_level" alt="" coords="622,290,761,331"/>
+</map>

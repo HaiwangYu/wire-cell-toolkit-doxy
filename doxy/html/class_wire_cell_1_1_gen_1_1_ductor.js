@@ -1,0 +1,27 @@
+var class_wire_cell_1_1_gen_1_1_ductor =
+[
+    [ "Ductor", "class_wire_cell_1_1_gen_1_1_ductor.html#aae745226fc466f6cab4b02e95c3338fb", null ],
+    [ "~Ductor", "class_wire_cell_1_1_gen_1_1_ductor.html#a331c4314dba8472ab8c49dbc9112ff4b", null ],
+    [ "configure", "class_wire_cell_1_1_gen_1_1_ductor.html#a2e5f7a0246fe8918d7b241a8be8e1917", null ],
+    [ "default_configuration", "class_wire_cell_1_1_gen_1_1_ductor.html#ab9486eb33932f6f7c0ff321675829178", null ],
+    [ "operator()", "class_wire_cell_1_1_gen_1_1_ductor.html#a1a103a685f920781c7d312f168b52841", null ],
+    [ "process", "class_wire_cell_1_1_gen_1_1_ductor.html#a1454baebba2e385dea9cd098236dd515", null ],
+    [ "process_face", "class_wire_cell_1_1_gen_1_1_ductor.html#afec4558613941dc3bb752a3811aadd3d", null ],
+    [ "start_processing", "class_wire_cell_1_1_gen_1_1_ductor.html#acf493c7246a3fb10a52edf8f9cba9e97", null ],
+    [ "l", "class_wire_cell_1_1_gen_1_1_ductor.html#a7c7a41733999959445c78c4f72b17687", null ],
+    [ "m_anode", "class_wire_cell_1_1_gen_1_1_ductor.html#a140f8f60e705ed486c631d8a90b606e3", null ],
+    [ "m_anode_tn", "class_wire_cell_1_1_gen_1_1_ductor.html#a7382e604218bec981a02f471cc2507f6", null ],
+    [ "m_depos", "class_wire_cell_1_1_gen_1_1_ductor.html#a0df2cd8150ece869d3712c2ffbab1e9d", null ],
+    [ "m_drift_speed", "class_wire_cell_1_1_gen_1_1_ductor.html#af049caba394e694e67221904a9964f91", null ],
+    [ "m_fluctuate", "class_wire_cell_1_1_gen_1_1_ductor.html#a767147f07f2e7a9525baed82237999af", null ],
+    [ "m_frame_count", "class_wire_cell_1_1_gen_1_1_ductor.html#ac8577d4c920065ece727d1fc170a4067", null ],
+    [ "m_mode", "class_wire_cell_1_1_gen_1_1_ductor.html#a0ab7ec58f476694f4af3a6f6c7a84ed2", null ],
+    [ "m_nsigma", "class_wire_cell_1_1_gen_1_1_ductor.html#a2003fb40fb5472e939225e994006bd2f", null ],
+    [ "m_pir_tns", "class_wire_cell_1_1_gen_1_1_ductor.html#a37e02625a1dd89ab5e34ebd7adcfa0f7", null ],
+    [ "m_pirs", "class_wire_cell_1_1_gen_1_1_ductor.html#a44d3cb27486f1a6dd7915dfdd66e9589", null ],
+    [ "m_readout_time", "class_wire_cell_1_1_gen_1_1_ductor.html#a7a08d05c0cd47649959a9f85734654bf", null ],
+    [ "m_rng", "class_wire_cell_1_1_gen_1_1_ductor.html#a901669d8280fa96379c769f8e2ff19c8", null ],
+    [ "m_rng_tn", "class_wire_cell_1_1_gen_1_1_ductor.html#ab2718e86088d614e00b83f2755512ffb", null ],
+    [ "m_start_time", "class_wire_cell_1_1_gen_1_1_ductor.html#a66ab44d72d625317020972b051d5530a", null ],
+    [ "m_tick", "class_wire_cell_1_1_gen_1_1_ductor.html#ab9a9d3d44a95f4a152afa44a78674c96", null ]
+];

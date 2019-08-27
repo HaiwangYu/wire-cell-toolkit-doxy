@@ -1,0 +1,399 @@
+\hypertarget{classinternal_1_1basic__buffer}{}\section{internal\+:\+:basic\+\_\+buffer$<$ T $>$ Class Template Reference}
+\label{classinternal_1_1basic__buffer}\index{internal\+::basic\+\_\+buffer$<$ T $>$@{internal\+::basic\+\_\+buffer$<$ T $>$}}
+
+
+{\ttfamily \#include $<$core.\+h$>$}
+
+
+
+Inheritance diagram for internal\+:\+:basic\+\_\+buffer$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classinternal_1_1basic__buffer__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T \hyperlink{classinternal_1_1basic__buffer_aae8a0f184091f512efbde04b2ba1ddd7}{value\+\_\+type}
+\item 
+typedef const T \& \hyperlink{classinternal_1_1basic__buffer_adf277d724f8082f015258414ab206743}{const\+\_\+reference}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classinternal_1_1basic__buffer_a3d5daba6aeecf79aeecdd4b7a8aee8ae}{$\sim$basic\+\_\+buffer} ()
+\item 
+T $\ast$ \hyperlink{classinternal_1_1basic__buffer_ae9d79a4d8c58625f46dfc48e95091bb4}{begin} () \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+T $\ast$ \hyperlink{classinternal_1_1basic__buffer_ab9c6b3ee6d7189a86a6a3734c7597621}{end} () \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::size\+\_\+t \hyperlink{classinternal_1_1basic__buffer_abc95713c3873c5820f10105fe7c7af93}{size} () const \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::size\+\_\+t \hyperlink{classinternal_1_1basic__buffer_ae88bfc1cb8c896fa0b689ad8158cccae}{capacity} () const \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+T $\ast$ \hyperlink{classinternal_1_1basic__buffer_ab4a96d7d4394f469568d290fde5a75a7}{data} () \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+const T $\ast$ \hyperlink{classinternal_1_1basic__buffer_affc95a67bf8b10b2dba4bfd976c9901c}{data} () const \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+void \hyperlink{classinternal_1_1basic__buffer_adbd2b147e114f0cc4573f734d4326669}{resize} (std\+::size\+\_\+t new\+\_\+size)
+\item 
+void \hyperlink{classinternal_1_1basic__buffer_a9a18325765c5245d1861874512355b72}{clear} ()
+\item 
+void \hyperlink{classinternal_1_1basic__buffer_ab4bbc728c01282567eebc165d545772a}{reserve} (std\+::size\+\_\+t new\+\_\+capacity)
+\item 
+void \hyperlink{classinternal_1_1basic__buffer_a8dd9de72728ab902c31f22bdba9a7a55}{push\+\_\+back} (const T \&\hyperlink{classinternal_1_1value}{value})
+\item 
+{\footnotesize template$<$typename U $>$ }\\void \hyperlink{classinternal_1_1basic__buffer_aba7ea1a95a28bc123712f2fd24cf7414}{append} (const U $\ast$\hyperlink{classinternal_1_1basic__buffer_ae9d79a4d8c58625f46dfc48e95091bb4}{begin}, const U $\ast$\hyperlink{classinternal_1_1basic__buffer_ab9c6b3ee6d7189a86a6a3734c7597621}{end})
+\item 
+T \& \hyperlink{classinternal_1_1basic__buffer_a26cd6fa0b2b4a74f95e4e56acd2715b5}{operator\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t index)
+\item 
+const T \& \hyperlink{classinternal_1_1basic__buffer_ad9101379d17c83684570cbbdb635b5c3}{operator\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t index) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinternal_1_1basic__buffer_a3d47c3be3d6f4c06e53f0b5b213057a8}{basic\+\_\+buffer} (std\+::size\+\_\+t sz) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{classinternal_1_1basic__buffer_ac3cc34ee5942d68ea7b02ea4c2c07176}{basic\+\_\+buffer} (T $\ast$p=\hyperlink{core_8h_af7f827e50dd7667484c279ac1d38f30b}{F\+M\+T\+\_\+\+N\+U\+LL}, std\+::size\+\_\+t sz=0, std\+::size\+\_\+t cap=0) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+void \hyperlink{classinternal_1_1basic__buffer_a0b603108f1aa614e64efaac6e081086d}{set} (T $\ast$buf\+\_\+data, std\+::size\+\_\+t buf\+\_\+capacity) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+virtual void \hyperlink{classinternal_1_1basic__buffer_a01fbeed379e2af2c79baf5c9b5dc92e8}{grow} (std\+::size\+\_\+t \hyperlink{classinternal_1_1basic__buffer_ae88bfc1cb8c896fa0b689ad8158cccae}{capacity})=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class internal\+::basic\+\_\+buffer$<$ T $>$}
+
+A contiguous memory buffer with an optional growing ability. 
+
+Definition at line 215 of file core.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_adf277d724f8082f015258414ab206743}\label{classinternal_1_1basic__buffer_adf277d724f8082f015258414ab206743}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!const\+\_\+reference@{const\+\_\+reference}}
+\index{const\+\_\+reference@{const\+\_\+reference}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{const\+\_\+reference}{const\_reference}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+typedef const T\& \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::\hyperlink{classinternal_1_1basic__buffer_adf277d724f8082f015258414ab206743}{const\+\_\+reference}}
+
+
+
+Definition at line 242 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_aae8a0f184091f512efbde04b2ba1ddd7}\label{classinternal_1_1basic__buffer_aae8a0f184091f512efbde04b2ba1ddd7}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+typedef T \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::\hyperlink{classinternal_1_1basic__buffer_aae8a0f184091f512efbde04b2ba1ddd7}{value\+\_\+type}}
+
+
+
+Definition at line 241 of file core.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_a3d47c3be3d6f4c06e53f0b5b213057a8}\label{classinternal_1_1basic__buffer_a3d47c3be3d6f4c06e53f0b5b213057a8}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!basic\+\_\+buffer@{basic\+\_\+buffer}}
+\index{basic\+\_\+buffer@{basic\+\_\+buffer}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{basic\+\_\+buffer()}{basic\_buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::\hyperlink{classinternal_1_1basic__buffer}{basic\+\_\+buffer} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 226 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_ac3cc34ee5942d68ea7b02ea4c2c07176}\label{classinternal_1_1basic__buffer_ac3cc34ee5942d68ea7b02ea4c2c07176}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!basic\+\_\+buffer@{basic\+\_\+buffer}}
+\index{basic\+\_\+buffer@{basic\+\_\+buffer}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{basic\+\_\+buffer()}{basic\_buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::\hyperlink{classinternal_1_1basic__buffer}{basic\+\_\+buffer} (\begin{DoxyParamCaption}\item[{T $\ast$}]{p = {\ttfamily \hyperlink{core_8h_af7f827e50dd7667484c279ac1d38f30b}{F\+M\+T\+\_\+\+N\+U\+LL}},  }\item[{std\+::size\+\_\+t}]{sz = {\ttfamily 0},  }\item[{std\+::size\+\_\+t}]{cap = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 228 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_a3d5daba6aeecf79aeecdd4b7a8aee8ae}\label{classinternal_1_1basic__buffer_a3d5daba6aeecf79aeecdd4b7a8aee8ae}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!````~basic\+\_\+buffer@{$\sim$basic\+\_\+buffer}}
+\index{````~basic\+\_\+buffer@{$\sim$basic\+\_\+buffer}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{$\sim$basic\+\_\+buffer()}{~basic\_buffer()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::$\sim$\hyperlink{classinternal_1_1basic__buffer}{basic\+\_\+buffer} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 244 of file core.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_aba7ea1a95a28bc123712f2fd24cf7414}\label{classinternal_1_1basic__buffer_aba7ea1a95a28bc123712f2fd24cf7414}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!append@{append}}
+\index{append@{append}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+void \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::append (\begin{DoxyParamCaption}\item[{const U $\ast$}]{begin,  }\item[{const U $\ast$}]{end }\end{DoxyParamCaption})}
+
+Appends data to the end of the buffer. 
+
+Definition at line 394 of file format.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classinternal_1_1basic__buffer_aba7ea1a95a28bc123712f2fd24cf7414_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_ae9d79a4d8c58625f46dfc48e95091bb4}\label{classinternal_1_1basic__buffer_ae9d79a4d8c58625f46dfc48e95091bb4}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!begin@{begin}}
+\index{begin@{begin}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 246 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classinternal_1_1basic__buffer_ae9d79a4d8c58625f46dfc48e95091bb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_ae88bfc1cb8c896fa0b689ad8158cccae}\label{classinternal_1_1basic__buffer_ae88bfc1cb8c896fa0b689ad8158cccae}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!capacity@{capacity}}
+\index{capacity@{capacity}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{capacity()}{capacity()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::size\+\_\+t \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the capacity of this buffer. 
+
+Definition at line 253 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1basic__buffer_ae88bfc1cb8c896fa0b689ad8158cccae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_a9a18325765c5245d1861874512355b72}\label{classinternal_1_1basic__buffer_a9a18325765c5245d1861874512355b72}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!clear@{clear}}
+\index{clear@{clear}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clears this buffer. 
+
+Definition at line 270 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1basic__buffer_a9a18325765c5245d1861874512355b72_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_ab4a96d7d4394f469568d290fde5a75a7}\label{classinternal_1_1basic__buffer_ab4a96d7d4394f469568d290fde5a75a7}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!data@{data}}
+\index{data@{data}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::\hyperlink{namespaceinternal_adc3036f1841136e36e29e5fd339de1a1}{data} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a pointer to the buffer data. 
+
+Definition at line 256 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1basic__buffer_ab4a96d7d4394f469568d290fde5a75a7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_affc95a67bf8b10b2dba4bfd976c9901c}\label{classinternal_1_1basic__buffer_affc95a67bf8b10b2dba4bfd976c9901c}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!data@{data}}
+\index{data@{data}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const T$\ast$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::\hyperlink{namespaceinternal_adc3036f1841136e36e29e5fd339de1a1}{data} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a pointer to the buffer data. 
+
+Definition at line 259 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_ab9c6b3ee6d7189a86a6a3734c7597621}\label{classinternal_1_1basic__buffer_ab9c6b3ee6d7189a86a6a3734c7597621}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!end@{end}}
+\index{end@{end}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T$\ast$ \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 247 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classinternal_1_1basic__buffer_ab9c6b3ee6d7189a86a6a3734c7597621_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_a01fbeed379e2af2c79baf5c9b5dc92e8}\label{classinternal_1_1basic__buffer_a01fbeed379e2af2c79baf5c9b5dc92e8}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!grow@{grow}}
+\index{grow@{grow}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{grow()}{grow()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual void \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::grow (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Increases the buffer capacity to hold at least {\itshape capacity} elements. 
+
+Implemented in \hyperlink{classbasic__memory__buffer_a2f01489b9805a99cdc93ab0aee6730eb}{basic\+\_\+memory\+\_\+buffer$<$ T, S\+I\+Z\+E, Allocator $>$}, \hyperlink{classbasic__memory__buffer_a2f01489b9805a99cdc93ab0aee6730eb}{basic\+\_\+memory\+\_\+buffer$<$ Char $>$}, and \hyperlink{classinternal_1_1container__buffer_a9dc9c633e12053ddf07af13b30b378b3}{internal\+::container\+\_\+buffer$<$ Container $>$}.
+
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_a26cd6fa0b2b4a74f95e4e56acd2715b5}\label{classinternal_1_1basic__buffer_a26cd6fa0b2b4a74f95e4e56acd2715b5}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+T\& \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 287 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_ad9101379d17c83684570cbbdb635b5c3}\label{classinternal_1_1basic__buffer_ad9101379d17c83684570cbbdb635b5c3}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+const T\& \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 288 of file core.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_a8dd9de72728ab902c31f22bdba9a7a55}\label{classinternal_1_1basic__buffer_a8dd9de72728ab902c31f22bdba9a7a55}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 278 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classinternal_1_1basic__buffer_a8dd9de72728ab902c31f22bdba9a7a55_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_ab4bbc728c01282567eebc165d545772a}\label{classinternal_1_1basic__buffer_ab4bbc728c01282567eebc165d545772a}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!reserve@{reserve}}
+\index{reserve@{reserve}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::reserve (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{new\+\_\+capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reserves space to store at least {\itshape capacity} elements. 
+
+Definition at line 273 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1basic__buffer_ab4bbc728c01282567eebc165d545772a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_adbd2b147e114f0cc4573f734d4326669}\label{classinternal_1_1basic__buffer_adbd2b147e114f0cc4573f734d4326669}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!resize@{resize}}
+\index{resize@{resize}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{new\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Resizes the buffer. If T is a P\+OD type new elements may not be initialized. 
+
+Definition at line 264 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1basic__buffer_adbd2b147e114f0cc4573f734d4326669_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_a0b603108f1aa614e64efaac6e081086d}\label{classinternal_1_1basic__buffer_a0b603108f1aa614e64efaac6e081086d}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!set@{set}}
+\index{set@{set}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::set (\begin{DoxyParamCaption}\item[{T $\ast$}]{buf\+\_\+data,  }\item[{std\+::size\+\_\+t}]{buf\+\_\+capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets the buffer data and capacity. 
+
+Definition at line 232 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1basic__buffer_a0b603108f1aa614e64efaac6e081086d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1basic__buffer_abc95713c3873c5820f10105fe7c7af93}\label{classinternal_1_1basic__buffer_abc95713c3873c5820f10105fe7c7af93}} 
+\index{internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}!size@{size}}
+\index{size@{size}!internal\+::basic\+\_\+buffer@{internal\+::basic\+\_\+buffer}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+std\+::size\+\_\+t \hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the size of this buffer. 
+
+Definition at line 250 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1basic__buffer_abc95713c3873c5820f10105fe7c7af93_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{core_8h}{core.\+h}\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{format_8h}{format.\+h}\end{DoxyCompactItemize}

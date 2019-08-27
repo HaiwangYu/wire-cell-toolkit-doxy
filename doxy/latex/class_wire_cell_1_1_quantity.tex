@@ -1,0 +1,309 @@
+\hypertarget{class_wire_cell_1_1_quantity}{}\section{Wire\+Cell\+:\+:Quantity Class Reference}
+\label{class_wire_cell_1_1_quantity}\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+
+
+{\ttfamily \#include $<$Quantity.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_quantity_afac627efec0b3e5085d7ad37d9edc45c}{Quantity} ()
+\item 
+\hyperlink{class_wire_cell_1_1_quantity_a4de6e58367552cea905f558399ea9292}{Quantity} (const double \&\hyperlink{class_wire_cell_1_1_quantity_a03e883ed20833962578c23ca9e51cd0f}{mean}, const double \&\hyperlink{class_wire_cell_1_1_quantity_a0971c6bc040bd7b9a48ae556cdcf3c85}{sigma})
+\item 
+\hyperlink{class_wire_cell_1_1_quantity_a86228d6e5fa925636722e8f960b7a7d5}{Quantity} (const double \&\hyperlink{class_wire_cell_1_1_quantity_a03e883ed20833962578c23ca9e51cd0f}{mean})
+\item 
+\hyperlink{class_wire_cell_1_1_quantity_a128ed8961290f7f615ac62c40886b837}{Quantity} (const int \&imean)
+\item 
+\hyperlink{class_wire_cell_1_1_quantity_ac5ae8f6f8db2543010d5cfceca391dd6}{Quantity} (const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&other)
+\item 
+\hyperlink{class_wire_cell_1_1_quantity_a79c2ff3a42cc435ce0dfe93a4100ad4c}{$\sim$\+Quantity} ()
+\item 
+\hyperlink{class_wire_cell_1_1_quantity}{Quantity} \& \hyperlink{class_wire_cell_1_1_quantity_a68dc322e300bfe367131389755ae631f}{operator=} (const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&other)
+\item 
+\hyperlink{class_wire_cell_1_1_quantity_a808d00967fddeaa0a5aaeff938edc41d}{operator double} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_quantity_a03e883ed20833962578c23ca9e51cd0f}{mean} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_quantity_a0971c6bc040bd7b9a48ae556cdcf3c85}{sigma} () const
+\item 
+\hyperlink{class_wire_cell_1_1_quantity}{Quantity} \& \hyperlink{class_wire_cell_1_1_quantity_a4b85966e763f3981267103c4f60bd836}{operator+=} (const double \&exact)
+\item 
+\hyperlink{class_wire_cell_1_1_quantity}{Quantity} \& \hyperlink{class_wire_cell_1_1_quantity_acd354b2f1b322acf0d338ac4f9185239}{operator-\/=} (const double \&exact)
+\item 
+\hyperlink{class_wire_cell_1_1_quantity}{Quantity} \& \hyperlink{class_wire_cell_1_1_quantity_aded6da84658f13dcbffd9906bd86af8f}{operator$\ast$=} (const double \&exact)
+\item 
+\hyperlink{class_wire_cell_1_1_quantity}{Quantity} \& \hyperlink{class_wire_cell_1_1_quantity_ade18f30c0a2554d567f6c9ae07fc4e74}{operator/=} (const double \&exact)
+\item 
+\hyperlink{class_wire_cell_1_1_quantity}{Quantity} \& \hyperlink{class_wire_cell_1_1_quantity_ad2fea0539b7dc40f3d6264baf63059d5}{operator$\ast$=} (const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&other)
+\item 
+\hyperlink{class_wire_cell_1_1_quantity}{Quantity} \& \hyperlink{class_wire_cell_1_1_quantity_a1aea96e52f639a40217983f77492e105}{operator/=} (const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&other)
+\item 
+\hyperlink{class_wire_cell_1_1_quantity}{Quantity} \& \hyperlink{class_wire_cell_1_1_quantity_abcb48a4701de9b80bbfa4509639f306d}{operator-\/=} (const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&other)
+\item 
+\hyperlink{class_wire_cell_1_1_quantity}{Quantity} \& \hyperlink{class_wire_cell_1_1_quantity_af74f26160ad96854498529767e9453e6}{operator+=} (const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&other)
+\item 
+bool \hyperlink{class_wire_cell_1_1_quantity_ac8f33a267d1a7f1af9283bdc18e23c8d}{operator$<$} (const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&other) const
+\item 
+bool \hyperlink{class_wire_cell_1_1_quantity_a9b0b6526e30994779e66e602d27ceb28}{operator$>$} (const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&other) const
+\item 
+bool \hyperlink{class_wire_cell_1_1_quantity_a9d01b13091aac93b2cd94ec407ed7eca}{operator==} (const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&other) const
+\item 
+bool \hyperlink{class_wire_cell_1_1_quantity_a730b08268aeacd7587795dfc449ba61b}{operator!=} (const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&other) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provide a quantity with a value and an uncertainty and all the little math operators.
+
+Beware this assumes all quantities are uncorrelated! 
+
+Definition at line 16 of file Quantity.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_afac627efec0b3e5085d7ad37d9edc45c}\label{class_wire_cell_1_1_quantity_afac627efec0b3e5085d7ad37d9edc45c}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!Quantity@{Quantity}}
+\index{Quantity@{Quantity}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{Quantity()}{Quantity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Quantity\+::\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 18 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a4de6e58367552cea905f558399ea9292}\label{class_wire_cell_1_1_quantity_a4de6e58367552cea905f558399ea9292}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!Quantity@{Quantity}}
+\index{Quantity@{Quantity}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{Quantity()}{Quantity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Quantity\+::\+Quantity (\begin{DoxyParamCaption}\item[{const double \&}]{mean,  }\item[{const double \&}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 21 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a86228d6e5fa925636722e8f960b7a7d5}\label{class_wire_cell_1_1_quantity_a86228d6e5fa925636722e8f960b7a7d5}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!Quantity@{Quantity}}
+\index{Quantity@{Quantity}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{Quantity()}{Quantity()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Quantity\+::\+Quantity (\begin{DoxyParamCaption}\item[{const double \&}]{mean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 24 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a128ed8961290f7f615ac62c40886b837}\label{class_wire_cell_1_1_quantity_a128ed8961290f7f615ac62c40886b837}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!Quantity@{Quantity}}
+\index{Quantity@{Quantity}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{Quantity()}{Quantity()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Quantity\+::\+Quantity (\begin{DoxyParamCaption}\item[{const int \&}]{imean }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 27 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_ac5ae8f6f8db2543010d5cfceca391dd6}\label{class_wire_cell_1_1_quantity_ac5ae8f6f8db2543010d5cfceca391dd6}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!Quantity@{Quantity}}
+\index{Quantity@{Quantity}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{Quantity()}{Quantity()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Quantity\+::\+Quantity (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 30 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a79c2ff3a42cc435ce0dfe93a4100ad4c}\label{class_wire_cell_1_1_quantity_a79c2ff3a42cc435ce0dfe93a4100ad4c}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!````~Quantity@{$\sim$\+Quantity}}
+\index{````~Quantity@{$\sim$\+Quantity}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{$\sim$\+Quantity()}{~Quantity()}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Quantity\+::$\sim$\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 35 of file Quantity.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a03e883ed20833962578c23ca9e51cd0f}\label{class_wire_cell_1_1_quantity_a03e883ed20833962578c23ca9e51cd0f}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!mean@{mean}}
+\index{mean@{mean}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{mean()}{mean()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Quantity\+::mean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 47 of file Quantity.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_wire_cell_1_1_quantity_a03e883ed20833962578c23ca9e51cd0f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a808d00967fddeaa0a5aaeff938edc41d}\label{class_wire_cell_1_1_quantity_a808d00967fddeaa0a5aaeff938edc41d}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator double@{operator double}}
+\index{operator double@{operator double}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator double()}{operator double()}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Quantity\+::operator double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a730b08268aeacd7587795dfc449ba61b}\label{class_wire_cell_1_1_quantity_a730b08268aeacd7587795dfc449ba61b}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Quantity\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 121 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_aded6da84658f13dcbffd9906bd86af8f}\label{class_wire_cell_1_1_quantity_aded6da84658f13dcbffd9906bd86af8f}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_quantity}{Quantity}\& Wire\+Cell\+::\+Quantity\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const double \&}]{exact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 63 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_ad2fea0539b7dc40f3d6264baf63059d5}\label{class_wire_cell_1_1_quantity_ad2fea0539b7dc40f3d6264baf63059d5}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_quantity}{Quantity}\& Wire\+Cell\+::\+Quantity\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 78 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a4b85966e763f3981267103c4f60bd836}\label{class_wire_cell_1_1_quantity_a4b85966e763f3981267103c4f60bd836}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_quantity}{Quantity}\& Wire\+Cell\+::\+Quantity\+::operator+= (\begin{DoxyParamCaption}\item[{const double \&}]{exact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 51 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_af74f26160ad96854498529767e9453e6}\label{class_wire_cell_1_1_quantity_af74f26160ad96854498529767e9453e6}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_quantity}{Quantity}\& Wire\+Cell\+::\+Quantity\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_acd354b2f1b322acf0d338ac4f9185239}\label{class_wire_cell_1_1_quantity_acd354b2f1b322acf0d338ac4f9185239}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_quantity}{Quantity}\& Wire\+Cell\+::\+Quantity\+::operator-\/= (\begin{DoxyParamCaption}\item[{const double \&}]{exact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_abcb48a4701de9b80bbfa4509639f306d}\label{class_wire_cell_1_1_quantity_abcb48a4701de9b80bbfa4509639f306d}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_quantity}{Quantity}\& Wire\+Cell\+::\+Quantity\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_ade18f30c0a2554d567f6c9ae07fc4e74}\label{class_wire_cell_1_1_quantity_ade18f30c0a2554d567f6c9ae07fc4e74}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_quantity}{Quantity}\& Wire\+Cell\+::\+Quantity\+::operator/= (\begin{DoxyParamCaption}\item[{const double \&}]{exact }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 70 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a1aea96e52f639a40217983f77492e105}\label{class_wire_cell_1_1_quantity_a1aea96e52f639a40217983f77492e105}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_quantity}{Quantity}\& Wire\+Cell\+::\+Quantity\+::operator/= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 89 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_ac8f33a267d1a7f1af9283bdc18e23c8d}\label{class_wire_cell_1_1_quantity_ac8f33a267d1a7f1af9283bdc18e23c8d}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Quantity\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 112 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a68dc322e300bfe367131389755ae631f}\label{class_wire_cell_1_1_quantity_a68dc322e300bfe367131389755ae631f}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator=@{operator=}}
+\index{operator=@{operator=}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_quantity}{Quantity}\& Wire\+Cell\+::\+Quantity\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a9d01b13091aac93b2cd94ec407ed7eca}\label{class_wire_cell_1_1_quantity_a9d01b13091aac93b2cd94ec407ed7eca}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator==@{operator==}}
+\index{operator==@{operator==}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Quantity\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 118 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a9b0b6526e30994779e66e602d27ceb28}\label{class_wire_cell_1_1_quantity_a9b0b6526e30994779e66e602d27ceb28}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Quantity\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_quantity}{Quantity} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 115 of file Quantity.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_quantity_a0971c6bc040bd7b9a48ae556cdcf3c85}\label{class_wire_cell_1_1_quantity_a0971c6bc040bd7b9a48ae556cdcf3c85}} 
+\index{Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}!sigma@{sigma}}
+\index{sigma@{sigma}!Wire\+Cell\+::\+Quantity@{Wire\+Cell\+::\+Quantity}}
+\subsubsection{\texorpdfstring{sigma()}{sigma()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Quantity\+::sigma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 48 of file Quantity.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_wire_cell_1_1_quantity_a0971c6bc040bd7b9a48ae556cdcf3c85_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_quantity_8h}{Quantity.\+h}\end{DoxyCompactItemize}

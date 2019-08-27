@@ -1,0 +1,11 @@
+<map id="WireCell::SigProc::OmnibusNoiseFilter::operator()" name="WireCell::SigProc::OmnibusNoiseFilter::operator()">
+<area shape="rect" id="node2" href="$namespacewct_1_1sigproc.html#a7be8644ccb0052eb5c68551b924b9b6f" title="wct::sigproc::tagged\l_traces" alt="" coords="207,5,347,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#a992189c16e04b7302539d42c94f9e296" title="Return a new list with any overlaps formed into unions. " alt="" coords="207,71,347,112"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell.html#aeda39bc129b6bab40d0e35ffb4af55ef" title="Return dictionary in given list if it value at dotpath matches. " alt="" coords="227,137,328,163"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_simple_trace.html#a2f7bafeb7ae30fa16c72d3c8ae0b64a6" title="WireCell::SimpleTrace\l::charge" alt="" coords="201,188,354,229"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_simple_frame.html#a106f413268020b6ea2a87364089bd65c" title="WireCell::SimpleFrame\l::tag_traces" alt="" coords="199,253,356,295"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell.html#ade8a8d63c0beb7335d7f969903bfeedc" title="Follow a dot.separated.path and return the branch there. " alt="" coords="421,137,540,163"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_string.html#aef23d7b89dbe21e34a499c9156dd1e60" title="WireCell::String::split" alt="" coords="605,137,752,163"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_simple_trace.html#ab88d78ce49eb45b395fb5411905ae010" title="WireCell::SimpleTrace\l::channel" alt="" coords="404,188,557,229"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_simple_trace.html#a0a345e3606f66b64b2dbb00df7664210" title="WireCell::SimpleTrace\l::tbin" alt="" coords="404,253,557,295"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="WireCell::Gen::Retagger::operator()" name="WireCell::Gen::Retagger::operator()">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_simple_frame.html#ac52a4eab51683ef1b5bf746da3dcaec5" title="WireCell::SimpleFrame\l::frame_tags" alt="" coords="219,5,376,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1tagrules_1_1_context.html#aad708e6ea6a1bf0b9e050559fea62ae1" title="WireCell::tagrules\l::Context::transform" alt="" coords="228,71,367,112"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="424,71,551,112"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="599,71,725,112"/>
+</map>

@@ -1,0 +1,194 @@
+\hypertarget{namespace_wire_cell_1_1_frame_tools}{}\section{Wire\+Cell\+:\+:Frame\+Tools Namespace Reference}
+\label{namespace_wire_cell_1_1_frame_tools}\index{Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ int $>$ \hyperlink{namespace_wire_cell_1_1_frame_tools_aaf07539dac296588f9004b525f940e67}{channel\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \hyperlink{namespace_wire_cell_1_1_frame_tools_ab39e5b3fae9cf0abda7e6795007ad6df}{untagged\+\_\+traces} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer} frame)
+\item 
+\hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \hyperlink{namespace_wire_cell_1_1_frame_tools_ab75409594f96814edb45d39db9d705f6}{tagged\+\_\+traces} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer} frame, \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{I\+Frame\+::tag\+\_\+t} tag)
+\item 
+\hyperlink{namespace_wire_cell_1_1_frame_tools_aaf07539dac296588f9004b525f940e67}{channel\+\_\+list} \hyperlink{namespace_wire_cell_1_1_frame_tools_aa68b64d0bc1fd1daa0646a35c26edcbb}{channels} (const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \&traces)
+\item 
+std\+::pair$<$ int, int $>$ \hyperlink{namespace_wire_cell_1_1_frame_tools_a9031f0d7465146236c47308c347d05a1}{tbin\+\_\+range} (const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \&traces)
+\item 
+void \hyperlink{namespace_wire_cell_1_1_frame_tools_a09db410acc8cf771ec60faec4eae7eef}{fill} (\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \&array, const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \&traces, channel\+\_\+list\+::iterator ch\+\_\+begin, channel\+\_\+list\+::iterator ch\+\_\+end, int tbin=0)
+\item 
+int \hyperlink{namespace_wire_cell_1_1_frame_tools_a21c3c601b6103fa7a63d9131b81dc229}{frmtcmp} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer} frame, double time)
+\item 
+std\+::pair$<$ \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer}, \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer} $>$ \hyperlink{namespace_wire_cell_1_1_frame_tools_a23aeb7045b99ef40f3c5ca79549e4f8f}{split} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer} frame, double time)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_frame_tools_aaf07539dac296588f9004b525f940e67}\label{namespace_wire_cell_1_1_frame_tools_aaf07539dac296588f9004b525f940e67}} 
+\index{Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}!channel\+\_\+list@{channel\+\_\+list}}
+\index{channel\+\_\+list@{channel\+\_\+list}!Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}}
+\subsubsection{\texorpdfstring{channel\+\_\+list}{channel\_list}}
+{\footnotesize\ttfamily typedef std\+::vector$<$int$>$ \hyperlink{namespace_wire_cell_1_1_frame_tools_aaf07539dac296588f9004b525f940e67}{Wire\+Cell\+::\+Frame\+Tools\+::channel\+\_\+list}}
+
+Return a one-\/to-\/one vector of channels from a vector of traces.
+
+Note, you probably want to get a sorted/unique version of this vector for later use. Do so something like\+:
+
+auto ch = channels(traces); std\+::sort(\hyperlink{namespaceinternal_a265f36d9dee68d3f44381347ef2fd5cb}{ch.\+begin()}, \hyperlink{namespaceinternal_a94820de1710dc8038fa6f188adfe299b}{ch.\+end()}); auto end = std\+::unique(\hyperlink{namespaceinternal_a265f36d9dee68d3f44381347ef2fd5cb}{ch.\+begin()}, \hyperlink{namespaceinternal_a94820de1710dc8038fa6f188adfe299b}{ch.\+end()}); ch.\+resize(std\+::distance(\hyperlink{namespaceinternal_a265f36d9dee68d3f44381347ef2fd5cb}{ch.\+begin()}, end)); 
+
+Definition at line 41 of file Frame\+Tools.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_frame_tools_aa68b64d0bc1fd1daa0646a35c26edcbb}\label{namespace_wire_cell_1_1_frame_tools_aa68b64d0bc1fd1daa0646a35c26edcbb}} 
+\index{Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}!channels@{channels}}
+\index{channels@{channels}!Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}}
+\subsubsection{\texorpdfstring{channels()}{channels()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_frame_tools_aaf07539dac296588f9004b525f940e67}{Frame\+Tools\+::channel\+\_\+list} Wire\+Cell\+::\+Frame\+Tools\+::channels (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \&}]{traces }\end{DoxyParamCaption})}
+
+
+
+Definition at line 132 of file Frame\+Tools.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_frame_tools_aa68b64d0bc1fd1daa0646a35c26edcbb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_frame_tools_a09db410acc8cf771ec60faec4eae7eef}\label{namespace_wire_cell_1_1_frame_tools_a09db410acc8cf771ec60faec4eae7eef}} 
+\index{Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}!fill@{fill}}
+\index{fill@{fill}!Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}}
+\subsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Frame\+Tools\+::fill (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \&}]{array,  }\item[{const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \&}]{traces,  }\item[{channel\+\_\+list\+::iterator}]{ch\+\_\+begin,  }\item[{channel\+\_\+list\+::iterator}]{ch\+\_\+end,  }\item[{int}]{tbin = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Fill a 2D \mbox{[}nchannels/nrows X nticks/ncolumns\mbox{]} array by adding the charge information in the given traces. The channel\+\_\+list range is an ordered sequence of channels used to associate traces to rows in the array. Ie, any trace with the same channel number as pointed to ch\+\_\+begin will be in row 0 of the array. The \char`\"{}tbin\char`\"{} gives the time bin of column 0 of the array and is compared to the tbin value of the individual traces. Note, traces which are not refered to in the channel list or which are outside the array are ignored and not all channels need to have associated traces. 
+
+Definition at line 158 of file Frame\+Tools.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_frame_tools_a09db410acc8cf771ec60faec4eae7eef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_frame_tools_a21c3c601b6103fa7a63d9131b81dc229}\label{namespace_wire_cell_1_1_frame_tools_a21c3c601b6103fa7a63d9131b81dc229}} 
+\index{Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}!frmtcmp@{frmtcmp}}
+\index{frmtcmp@{frmtcmp}!Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}}
+\subsubsection{\texorpdfstring{frmtcmp()}{frmtcmp()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Frame\+Tools\+::frmtcmp (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer}}]{frame,  }\item[{double}]{time }\end{DoxyParamCaption})}
+
+Compare the time span of a frame to a time.
+
+Return 0 if the frame time span covers the target time. Return -\/1 if the frame is wholly before the target time. Return +1 if the frame is wholly after the target time.
+
+Note, the frame pointer must be valid and the frame must have traces.
+
+Note, if the low-\/edge of the minimum tick or the high-\/edge of the maximum tick is exactly at the target time then the frame span is not considered to cover the target time. 
+
+Definition at line 14 of file Frame\+Tools.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespace_wire_cell_1_1_frame_tools_a21c3c601b6103fa7a63d9131b81dc229_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespace_wire_cell_1_1_frame_tools_a21c3c601b6103fa7a63d9131b81dc229_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_frame_tools_a23aeb7045b99ef40f3c5ca79549e4f8f}\label{namespace_wire_cell_1_1_frame_tools_a23aeb7045b99ef40f3c5ca79549e4f8f}} 
+\index{Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}!split@{split}}
+\index{split@{split}!Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily std\+::pair$<$ \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer}, \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer} $>$ Wire\+Cell\+::\+Frame\+Tools\+::split (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer}}]{frame,  }\item[{double}]{time }\end{DoxyParamCaption})}
+
+Split one frame into two. A new .first frame will contain traces with all samples taken before the given time and a new .second frame with traces containing samples all taken on or after the given time. If the original frame time span does not cover the target time then the original frame is returned in the associated half of the pair and the other half will hold the nullptr.
+
+Note, the frame pointer must be valid and the frame must have traces. 
+
+Definition at line 32 of file Frame\+Tools.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_frame_tools_a23aeb7045b99ef40f3c5ca79549e4f8f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_frame_tools_ab75409594f96814edb45d39db9d705f6}\label{namespace_wire_cell_1_1_frame_tools_ab75409594f96814edb45d39db9d705f6}} 
+\index{Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}!tagged\+\_\+traces@{tagged\+\_\+traces}}
+\index{tagged\+\_\+traces@{tagged\+\_\+traces}!Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}}
+\subsubsection{\texorpdfstring{tagged\+\_\+traces()}{tagged\_traces()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} Wire\+Cell\+::\+Frame\+Tools\+::tagged\+\_\+traces (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer}}]{frame,  }\item[{\hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{I\+Frame\+::tag\+\_\+t}}]{tag }\end{DoxyParamCaption})}
+
+Return a vector of traces for the matching tag. First, if there is a matching trace tag, all its traces are returned. Else, if the frame as a whole is tagged, the entire frame of traces is returned. Else, the returned vector is empty. If the tag consisting of the empty string then \hyperlink{namespace_wire_cell_1_1_frame_tools_ab39e5b3fae9cf0abda7e6795007ad6df}{untagged\+\_\+traces()} is called. Returned vector of traces has undefined order. 
+
+Definition at line 111 of file Frame\+Tools.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{namespace_wire_cell_1_1_frame_tools_ab75409594f96814edb45d39db9d705f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_frame_tools_ab75409594f96814edb45d39db9d705f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_frame_tools_a9031f0d7465146236c47308c347d05a1}\label{namespace_wire_cell_1_1_frame_tools_a9031f0d7465146236c47308c347d05a1}} 
+\index{Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}!tbin\+\_\+range@{tbin\+\_\+range}}
+\index{tbin\+\_\+range@{tbin\+\_\+range}!Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}}
+\subsubsection{\texorpdfstring{tbin\+\_\+range()}{tbin\_range()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Wire\+Cell\+::\+Frame\+Tools\+::tbin\+\_\+range (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \&}]{traces }\end{DoxyParamCaption})}
+
+Return the tbin range of the traces. The first value is minimum of all tbins and the second is maximum of all tbin+size where size is number of elements in the charge array. 
+
+Definition at line 143 of file Frame\+Tools.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_frame_tools_a9031f0d7465146236c47308c347d05a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_frame_tools_ab39e5b3fae9cf0abda7e6795007ad6df}\label{namespace_wire_cell_1_1_frame_tools_ab39e5b3fae9cf0abda7e6795007ad6df}} 
+\index{Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}!untagged\+\_\+traces@{untagged\+\_\+traces}}
+\index{untagged\+\_\+traces@{untagged\+\_\+traces}!Wire\+Cell\+::\+Frame\+Tools@{Wire\+Cell\+::\+Frame\+Tools}}
+\subsubsection{\texorpdfstring{untagged\+\_\+traces()}{untagged\_traces()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} Wire\+Cell\+::\+Frame\+Tools\+::untagged\+\_\+traces (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer}}]{frame }\end{DoxyParamCaption})}
+
+Return a vector of traces which have no trace tags. Here, any frame tags are ignored. Returned vector of traces has undefined order. 
+
+Definition at line 90 of file Frame\+Tools.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_frame_tools_ab39e5b3fae9cf0abda7e6795007ad6df_icgraph}
+\end{center}
+\end{figure}

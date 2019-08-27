@@ -1,0 +1,68 @@
+\hypertarget{class_wire_cell_1_1_detsim}{}\section{Wire\+Cell\+:\+:Detsim Class Reference}
+\label{class_wire_cell_1_1_detsim}\index{Wire\+Cell\+::\+Detsim@{Wire\+Cell\+::\+Detsim}}
+
+
+{\ttfamily \#include $<$Detsim.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Detsim\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_wire_cell_1_1_detsim__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Detsim\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_wire_cell_1_1_detsim__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_detsim_aaf2db8b6e371a75a2541e9378b14c989}{Detsim} (std\+::string wire\+\_\+params, std\+::string field\+\_\+response\+\_\+filename, double time\+\_\+origin=0.\+0 $\ast$units\+::seconds, double tick=0.\+5 $\ast$units\+::microseconds, double min\+\_\+readout\+\_\+time=5 $\ast$units\+::milliseconds, double binsize\+\_\+l=2.\+0 $\ast$units\+::millimeter, double time\+\_\+offset=0.\+0 $\ast$units\+::microsecond, double origin\+\_\+l=0.\+0 $\ast$units\+::microsecond, double DL=5.\+3 $\ast$units\+::centimeter2/units\+::second, double DT=12.\+8 $\ast$units\+::centimeter2/units\+::second, double drift\+\_\+velocity=1.\+6 $\ast$units\+::millimeter/units\+::microsecond, double max\+\_\+sigma\+\_\+l=5 $\ast$units\+::microsecond, double nsigma=3.\+0)
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_detsim_a95dee7e3679dbd59ea5de486d0c31d28}{operator()} (const input\+\_\+pointer \&depo, output\+\_\+queue \&outq\+\_\+frames)
+\begin{DoxyCompactList}\small\item\em A frame will be returned once sufficient depos are collected (or E\+OS). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Detsim.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_detsim_aaf2db8b6e371a75a2541e9378b14c989}\label{class_wire_cell_1_1_detsim_aaf2db8b6e371a75a2541e9378b14c989}} 
+\index{Wire\+Cell\+::\+Detsim@{Wire\+Cell\+::\+Detsim}!Detsim@{Detsim}}
+\index{Detsim@{Detsim}!Wire\+Cell\+::\+Detsim@{Wire\+Cell\+::\+Detsim}}
+\subsubsection{\texorpdfstring{Detsim()}{Detsim()}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+Detsim\+::\+Detsim (\begin{DoxyParamCaption}\item[{std\+::string}]{wire\+\_\+params,  }\item[{std\+::string}]{field\+\_\+response\+\_\+filename,  }\item[{double}]{time\+\_\+origin = {\ttfamily 0.0~$\ast$units\+:\+:seconds},  }\item[{double}]{tick = {\ttfamily 0.5~$\ast$units\+:\+:microseconds},  }\item[{double}]{min\+\_\+readout\+\_\+time = {\ttfamily 5~$\ast$units\+:\+:milliseconds},  }\item[{double}]{binsize\+\_\+l = {\ttfamily 2.0~$\ast$units\+:\+:millimeter},  }\item[{double}]{time\+\_\+offset = {\ttfamily 0.0~$\ast$units\+:\+:microsecond},  }\item[{double}]{origin\+\_\+l = {\ttfamily 0.0~$\ast$units\+:\+:microsecond},  }\item[{double}]{DL = {\ttfamily 5.3~$\ast$units\+:\+:centimeter2/units\+:\+:second},  }\item[{double}]{DT = {\ttfamily 12.8~$\ast$units\+:\+:centimeter2/units\+:\+:second},  }\item[{double}]{drift\+\_\+velocity = {\ttfamily 1.6~$\ast$units\+:\+:millimeter/units\+:\+:microsecond},  }\item[{double}]{max\+\_\+sigma\+\_\+l = {\ttfamily 5~$\ast$units\+:\+:microsecond},  }\item[{double}]{nsigma = {\ttfamily 3.0} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_detsim_a95dee7e3679dbd59ea5de486d0c31d28}\label{class_wire_cell_1_1_detsim_a95dee7e3679dbd59ea5de486d0c31d28}} 
+\index{Wire\+Cell\+::\+Detsim@{Wire\+Cell\+::\+Detsim}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Detsim@{Wire\+Cell\+::\+Detsim}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual bool Wire\+Cell\+::\+Detsim\+::operator() (\begin{DoxyParamCaption}\item[{const input\+\_\+pointer \&}]{depo,  }\item[{output\+\_\+queue \&}]{outq\+\_\+frames }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A frame will be returned once sufficient depos are collected (or E\+OS). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_detsim_8h}{Detsim.\+h}\end{DoxyCompactItemize}

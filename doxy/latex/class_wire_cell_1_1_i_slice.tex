@@ -1,0 +1,162 @@
+\hypertarget{class_wire_cell_1_1_i_slice}{}\section{Wire\+Cell\+:\+:I\+Slice Class Reference}
+\label{class_wire_cell_1_1_i_slice}\index{Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}}
+
+
+{\ttfamily \#include $<$I\+Slice.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Slice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{class_wire_cell_1_1_i_slice__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Slice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{class_wire_cell_1_1_i_slice__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \hyperlink{class_wire_cell_1_1_i_slice_a9d6f136d407740183a2c4d2078745a59}{value\+\_\+t}
+\item 
+typedef std\+::pair$<$ \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Channel\+::pointer}, \hyperlink{class_wire_cell_1_1_i_slice_a9d6f136d407740183a2c4d2078745a59}{value\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_i_slice_a24ec24749afee0e5a3c4fd8e3e878789}{pair\+\_\+t}
+\item 
+typedef std\+::unordered\+\_\+map$<$ \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Channel\+::pointer}, \hyperlink{class_wire_cell_1_1_i_slice_a9d6f136d407740183a2c4d2078745a59}{value\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_i_slice_ac953094751a404827468ca9887736415}{map\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_slice_a404b8cc429d0527953db8a5697e22673}{$\sim$\+I\+Slice} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer} \hyperlink{class_wire_cell_1_1_i_slice_abc8484df4c8c4624b4a6e0819e5916e1}{frame} () const =0
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_slice_ab5c8c4d99b373a92cdd54ef5dafde4ec}{ident} () const =0
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_slice_a46a59a60460e2915f80b9647b3b3a82d}{start} () const =0
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_slice_a9c461c84b7b71199ea521bd274df42c6}{span} () const =0
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_slice_ac953094751a404827468ca9887736415}{map\+\_\+t} \hyperlink{class_wire_cell_1_1_i_slice_ab1bf2647aa2a184fc851d765612bd0a6}{activity} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file I\+Slice.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_slice_ac953094751a404827468ca9887736415}\label{class_wire_cell_1_1_i_slice_ac953094751a404827468ca9887736415}} 
+\index{Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}!map\+\_\+t@{map\+\_\+t}}
+\index{map\+\_\+t@{map\+\_\+t}!Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}}
+\subsubsection{\texorpdfstring{map\+\_\+t}{map\_t}}
+{\footnotesize\ttfamily typedef std\+::unordered\+\_\+map$<$\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Channel\+::pointer}, \hyperlink{class_wire_cell_1_1_i_slice_a9d6f136d407740183a2c4d2078745a59}{value\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_i_slice_ac953094751a404827468ca9887736415}{Wire\+Cell\+::\+I\+Slice\+::map\+\_\+t}}
+
+
+
+Definition at line 33 of file I\+Slice.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_slice_a24ec24749afee0e5a3c4fd8e3e878789}\label{class_wire_cell_1_1_i_slice_a24ec24749afee0e5a3c4fd8e3e878789}} 
+\index{Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}!pair\+\_\+t@{pair\+\_\+t}}
+\index{pair\+\_\+t@{pair\+\_\+t}!Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}}
+\subsubsection{\texorpdfstring{pair\+\_\+t}{pair\_t}}
+{\footnotesize\ttfamily typedef std\+::pair$<$\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Channel\+::pointer}, \hyperlink{class_wire_cell_1_1_i_slice_a9d6f136d407740183a2c4d2078745a59}{value\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_i_slice_a24ec24749afee0e5a3c4fd8e3e878789}{Wire\+Cell\+::\+I\+Slice\+::pair\+\_\+t}}
+
+
+
+Definition at line 32 of file I\+Slice.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_slice_a9d6f136d407740183a2c4d2078745a59}\label{class_wire_cell_1_1_i_slice_a9d6f136d407740183a2c4d2078745a59}} 
+\index{Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}!value\+\_\+t@{value\+\_\+t}}
+\index{value\+\_\+t@{value\+\_\+t}!Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}}
+\subsubsection{\texorpdfstring{value\+\_\+t}{value\_t}}
+{\footnotesize\ttfamily typedef float \hyperlink{class_wire_cell_1_1_i_slice_a9d6f136d407740183a2c4d2078745a59}{Wire\+Cell\+::\+I\+Slice\+::value\+\_\+t}}
+
+
+
+Definition at line 29 of file I\+Slice.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_slice_a404b8cc429d0527953db8a5697e22673}\label{class_wire_cell_1_1_i_slice_a404b8cc429d0527953db8a5697e22673}} 
+\index{Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}!````~I\+Slice@{$\sim$\+I\+Slice}}
+\index{````~I\+Slice@{$\sim$\+I\+Slice}!Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Slice()}{~ISlice()}}
+{\footnotesize\ttfamily I\+Slice\+::$\sim$\+I\+Slice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 156 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_slice_ab1bf2647aa2a184fc851d765612bd0a6}\label{class_wire_cell_1_1_i_slice_ab1bf2647aa2a184fc851d765612bd0a6}} 
+\index{Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}!activity@{activity}}
+\index{activity@{activity}!Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}}
+\subsubsection{\texorpdfstring{activity()}{activity()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_slice_ac953094751a404827468ca9887736415}{map\+\_\+t} Wire\+Cell\+::\+I\+Slice\+::activity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_img_1_1_data_1_1_slice_a7f321316b726582a7d476ecebbdc2dc5}{Wire\+Cell\+::\+Img\+::\+Data\+::\+Slice}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_slice_abc8484df4c8c4624b4a6e0819e5916e1}\label{class_wire_cell_1_1_i_slice_abc8484df4c8c4624b4a6e0819e5916e1}} 
+\index{Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}!frame@{frame}}
+\index{frame@{frame}!Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}}
+\subsubsection{\texorpdfstring{frame()}{frame()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Frame\+::pointer} Wire\+Cell\+::\+I\+Slice\+::frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_img_1_1_data_1_1_slice_acff7cfb312929c31f3e457dfa96d37e6}{Wire\+Cell\+::\+Img\+::\+Data\+::\+Slice}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_slice_ab5c8c4d99b373a92cdd54ef5dafde4ec}\label{class_wire_cell_1_1_i_slice_ab5c8c4d99b373a92cdd54ef5dafde4ec}} 
+\index{Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}!ident@{ident}}
+\index{ident@{ident}!Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}}
+\subsubsection{\texorpdfstring{ident()}{ident()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Slice\+::ident (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_img_1_1_data_1_1_slice_af4448bb9ab0b80b591763623ac23850a}{Wire\+Cell\+::\+Img\+::\+Data\+::\+Slice}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_slice_a9c461c84b7b71199ea521bd274df42c6}\label{class_wire_cell_1_1_i_slice_a9c461c84b7b71199ea521bd274df42c6}} 
+\index{Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}!span@{span}}
+\index{span@{span}!Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}}
+\subsubsection{\texorpdfstring{span()}{span()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Slice\+::span (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_img_1_1_data_1_1_slice_a35e3999928c41c60b3f0e3eb738c29ca}{Wire\+Cell\+::\+Img\+::\+Data\+::\+Slice}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_slice_a46a59a60460e2915f80b9647b3b3a82d}\label{class_wire_cell_1_1_i_slice_a46a59a60460e2915f80b9647b3b3a82d}} 
+\index{Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}!start@{start}}
+\index{start@{start}!Wire\+Cell\+::\+I\+Slice@{Wire\+Cell\+::\+I\+Slice}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Slice\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_img_1_1_data_1_1_slice_acf8f4a84cbee31e3940c387708348f88}{Wire\+Cell\+::\+Img\+::\+Data\+::\+Slice}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_slice_8h}{I\+Slice.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

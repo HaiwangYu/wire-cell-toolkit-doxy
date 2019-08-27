@@ -1,0 +1,9 @@
+<map id="iface/inc/WireCellIface/IFrameSink.h" name="iface/inc/WireCellIface/IFrameSink.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_dump_frames_8h.html" title="gen/inc/WireCellGen\l/DumpFrames.h" alt="" coords="235,95,378,136"/>
+<area shape="rect" id="node5" href="$_fourdee_8h.html" title="gen/inc/WireCellGen\l/Fourdee.h" alt="" coords="402,95,545,136"/>
+<area shape="rect" id="node7" href="$_omnibus_8h.html" title="sigproc/inc/WireCellSigProc\l/Omnibus.h" alt="" coords="569,95,754,136"/>
+<area shape="rect" id="node4" href="$_dump_frames_8cxx.html" title="gen/src/DumpFrames.cxx" alt="" coords="211,184,384,211"/>
+<area shape="rect" id="node6" href="$_fourdee_8cxx.html" title="gen/src/Fourdee.cxx" alt="" coords="408,184,549,211"/>
+<area shape="rect" id="node8" href="$_omnibus_8cxx.html" title="sigproc/src/Omnibus.cxx" alt="" coords="578,184,745,211"/>
+</map>

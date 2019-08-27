@@ -1,0 +1,10 @@
+<map id="WireCell::String::format" name="WireCell::String::format">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_img_1_1_cluster_sink.html#aacf43e19e297947a4dd80e54ee8775f6" title="WireCell::Img::ClusterSink\l::operator()" alt="" coords="216,5,395,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_img_1_1_json_blob_set_sink.html#ac7d31369d8d48559e66d5fe582a88271" title="WireCell::Img::JsonBlobSet\lSink::operator()" alt="" coords="213,71,397,112"/>
+<area shape="rect" id="node4" href="$_json_cluster_tap_8cxx.html#aa2eb7d090ad49b6f6ef384dfe2c7d4b5" title="slice_jsoner" alt="" coords="260,137,351,163"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a42c1e7613ec776da66d7f30238128ce7" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lset_bad_channels" alt="" coords="447,206,609,262"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#a7a1a60aef8d2935c36e27a735117a1cb" title="WireCell::SigProc::\lOmniChannelNoiseDB::\lset_misconfigured" alt="" coords="224,238,387,294"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_per_channel_response.html#a9112d33075a8ac432b5e32bed5c65f5b" title="WireCell::SigProc::\lPerChannelResponse::\lchannel_response" alt="" coords="227,318,384,374"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_sio_1_1_numpy_frame_saver.html#aa4e56c63747bea244fd47f07b0d59303" title="IFrameFilter. " alt="" coords="212,399,399,440"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_wire_schema_1_1_store.html#a65a9d9af1b336097f853185cf58f3ea0" title="WireCell::WireSchema\l::Store::anode" alt="" coords="228,464,383,505"/>
+</map>

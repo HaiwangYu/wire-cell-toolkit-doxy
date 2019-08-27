@@ -1,0 +1,83 @@
+\hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_protodune}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Protodune Namespace Reference}
+\label{namespace_wire_cell_1_1_sig_proc_1_1_protodune}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base}{Config\+Filter\+Base}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise}{One\+Channel\+Noise}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_rel_gain_calib}{Rel\+Gain\+Calib}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig}{Sticky\+Code\+Mitig}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_protodune_afc41e8e05bb63814539ac2f89360c0de}{Linear\+Interp\+Sticky} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&signal, std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&st\+\_\+ranges, float stky\+\_\+sig\+\_\+like\+\_\+val, float stky\+\_\+sig\+\_\+like\+\_\+rms)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a7bc8b6b7f87df0120589d4a2a0a77c4e}{Fft\+Interp\+Sticky} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&signal, std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&st\+\_\+ranges)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a4a864612af01dc605e073a79fc261940}{Fft\+Shift\+Sticky} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&signal, double toffset, std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&st\+\_\+ranges)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a70a419137440aaee4a7afd4366c10404}{Fft\+Scaling} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&signal, int nsamples)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a7bc8b6b7f87df0120589d4a2a0a77c4e}\label{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a7bc8b6b7f87df0120589d4a2a0a77c4e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune}!Fft\+Interp\+Sticky@{Fft\+Interp\+Sticky}}
+\index{Fft\+Interp\+Sticky@{Fft\+Interp\+Sticky}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune}}
+\subsubsection{\texorpdfstring{Fft\+Interp\+Sticky()}{FftInterpSticky()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Fft\+Interp\+Sticky (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{signal,  }\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&}]{st\+\_\+ranges }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a7bc8b6b7f87df0120589d4a2a0a77c4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a70a419137440aaee4a7afd4366c10404}\label{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a70a419137440aaee4a7afd4366c10404}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune}!Fft\+Scaling@{Fft\+Scaling}}
+\index{Fft\+Scaling@{Fft\+Scaling}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune}}
+\subsubsection{\texorpdfstring{Fft\+Scaling()}{FftScaling()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Fft\+Scaling (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{signal,  }\item[{int}]{nsamples }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a70a419137440aaee4a7afd4366c10404_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a4a864612af01dc605e073a79fc261940}\label{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a4a864612af01dc605e073a79fc261940}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune}!Fft\+Shift\+Sticky@{Fft\+Shift\+Sticky}}
+\index{Fft\+Shift\+Sticky@{Fft\+Shift\+Sticky}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune}}
+\subsubsection{\texorpdfstring{Fft\+Shift\+Sticky()}{FftShiftSticky()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Fft\+Shift\+Sticky (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{signal,  }\item[{double}]{toffset,  }\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&}]{st\+\_\+ranges }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a4a864612af01dc605e073a79fc261940_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_protodune_afc41e8e05bb63814539ac2f89360c0de}\label{namespace_wire_cell_1_1_sig_proc_1_1_protodune_afc41e8e05bb63814539ac2f89360c0de}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune}!Linear\+Interp\+Sticky@{Linear\+Interp\+Sticky}}
+\index{Linear\+Interp\+Sticky@{Linear\+Interp\+Sticky}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune}}
+\subsubsection{\texorpdfstring{Linear\+Interp\+Sticky()}{LinearInterpSticky()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Linear\+Interp\+Sticky (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{signal,  }\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&}]{st\+\_\+ranges,  }\item[{float}]{stky\+\_\+sig\+\_\+like\+\_\+val,  }\item[{float}]{stky\+\_\+sig\+\_\+like\+\_\+rms }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_protodune_afc41e8e05bb63814539ac2f89360c0de_icgraph}
+\end{center}
+\end{figure}

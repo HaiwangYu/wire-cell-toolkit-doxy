@@ -1,0 +1,202 @@
+\hypertarget{class_wire_cell_1_1_i_fanout_node}{}\section{Wire\+Cell\+:\+:I\+Fanout\+Node$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$ Class Template Reference}
+\label{class_wire_cell_1_1_i_fanout_node}\index{Wire\+Cell\+::\+I\+Fanout\+Node$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$@{Wire\+Cell\+::\+I\+Fanout\+Node$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$}}
+
+
+{\ttfamily \#include $<$I\+Fanout\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Fanout\+Node$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{class_wire_cell_1_1_i_fanout_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Fanout\+Node$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{class_wire_cell_1_1_i_fanout_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Input\+Type \hyperlink{class_wire_cell_1_1_i_fanout_node_a4d7d57d210a8918c1495df2c700e61e8}{input\+\_\+type}
+\item 
+typedef Output\+Type \hyperlink{class_wire_cell_1_1_i_fanout_node_ac0d2826bcbce6d163d2dbab937f41828}{output\+\_\+type}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ const Input\+Type $>$ \hyperlink{class_wire_cell_1_1_i_fanout_node_aefd36d56a531edf1990fe6e263d9c266}{input\+\_\+pointer}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ const Output\+Type $>$ \hyperlink{class_wire_cell_1_1_i_fanout_node_a35939afef5c102eaee685b52c4beaf04}{output\+\_\+pointer}
+\item 
+typedef std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_fanout_node_a35939afef5c102eaee685b52c4beaf04}{output\+\_\+pointer} $>$ \hyperlink{class_wire_cell_1_1_i_fanout_node_a650cda83709781daac2d67af7c3706df}{output\+\_\+vector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_fanout_node_a01b90f003e19845b9c4bf3d1c85b75e7}{$\sim$\+I\+Fanout\+Node} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_fanout_node_a813e5346a910147df1d57d955c303129}{operator()} (const boost\+::any \&anyin, \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a855b32ed7f2d37d84aaf21e94edeacc4}{any\+\_\+vector} \&anyv)
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_fanout_node_abcb60d2f89bd18018883d55c9119952f}{operator()} (const \hyperlink{class_wire_cell_1_1_i_fanout_node_aefd36d56a531edf1990fe6e263d9c266}{input\+\_\+pointer} \&in, \hyperlink{class_wire_cell_1_1_i_fanout_node_a650cda83709781daac2d67af7c3706df}{output\+\_\+vector} \&outv)=0
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_fanout_node_a61d7f915d2c0b6275827e7d63b9a03b2}{input\+\_\+types} ()
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_fanout_node_a2191dc9d44b35d6ff4bda5d5356c6ac5}{output\+\_\+types} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$\newline
+class Wire\+Cell\+::\+I\+Fanout\+Node$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$}
+
+
+
+Definition at line 38 of file I\+Fanout\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_aefd36d56a531edf1990fe6e263d9c266}\label{class_wire_cell_1_1_i_fanout_node_aefd36d56a531edf1990fe6e263d9c266}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}!input\+\_\+pointer@{input\+\_\+pointer}}
+\index{input\+\_\+pointer@{input\+\_\+pointer}!Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+pointer}{input\_pointer}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$ \\
+typedef std\+::shared\+\_\+ptr$<$const Input\+Type$>$ \hyperlink{class_wire_cell_1_1_i_fanout_node}{Wire\+Cell\+::\+I\+Fanout\+Node}$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+::\hyperlink{class_wire_cell_1_1_i_fanout_node_aefd36d56a531edf1990fe6e263d9c266}{input\+\_\+pointer}}
+
+
+
+Definition at line 43 of file I\+Fanout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_a4d7d57d210a8918c1495df2c700e61e8}\label{class_wire_cell_1_1_i_fanout_node_a4d7d57d210a8918c1495df2c700e61e8}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}!input\+\_\+type@{input\+\_\+type}}
+\index{input\+\_\+type@{input\+\_\+type}!Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+type}{input\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$ \\
+typedef Input\+Type \hyperlink{class_wire_cell_1_1_i_fanout_node}{Wire\+Cell\+::\+I\+Fanout\+Node}$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+::\hyperlink{class_wire_cell_1_1_i_fanout_node_a4d7d57d210a8918c1495df2c700e61e8}{input\+\_\+type}}
+
+
+
+Definition at line 41 of file I\+Fanout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_a35939afef5c102eaee685b52c4beaf04}\label{class_wire_cell_1_1_i_fanout_node_a35939afef5c102eaee685b52c4beaf04}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}!output\+\_\+pointer@{output\+\_\+pointer}}
+\index{output\+\_\+pointer@{output\+\_\+pointer}!Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+pointer}{output\_pointer}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$ \\
+typedef std\+::shared\+\_\+ptr$<$const Output\+Type$>$ \hyperlink{class_wire_cell_1_1_i_fanout_node}{Wire\+Cell\+::\+I\+Fanout\+Node}$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+::\hyperlink{class_wire_cell_1_1_i_fanout_node_a35939afef5c102eaee685b52c4beaf04}{output\+\_\+pointer}}
+
+
+
+Definition at line 44 of file I\+Fanout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_ac0d2826bcbce6d163d2dbab937f41828}\label{class_wire_cell_1_1_i_fanout_node_ac0d2826bcbce6d163d2dbab937f41828}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}!output\+\_\+type@{output\+\_\+type}}
+\index{output\+\_\+type@{output\+\_\+type}!Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+type}{output\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$ \\
+typedef Output\+Type \hyperlink{class_wire_cell_1_1_i_fanout_node}{Wire\+Cell\+::\+I\+Fanout\+Node}$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+::\hyperlink{class_wire_cell_1_1_i_fanout_node_ac0d2826bcbce6d163d2dbab937f41828}{output\+\_\+type}}
+
+
+
+Definition at line 42 of file I\+Fanout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_a650cda83709781daac2d67af7c3706df}\label{class_wire_cell_1_1_i_fanout_node_a650cda83709781daac2d67af7c3706df}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}!output\+\_\+vector@{output\+\_\+vector}}
+\index{output\+\_\+vector@{output\+\_\+vector}!Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+vector}{output\_vector}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$ \\
+typedef std\+::vector$<$\hyperlink{class_wire_cell_1_1_i_fanout_node_a35939afef5c102eaee685b52c4beaf04}{output\+\_\+pointer}$>$ \hyperlink{class_wire_cell_1_1_i_fanout_node}{Wire\+Cell\+::\+I\+Fanout\+Node}$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+::\hyperlink{class_wire_cell_1_1_i_fanout_node_a650cda83709781daac2d67af7c3706df}{output\+\_\+vector}}
+
+
+
+Definition at line 45 of file I\+Fanout\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_a01b90f003e19845b9c4bf3d1c85b75e7}\label{class_wire_cell_1_1_i_fanout_node_a01b90f003e19845b9c4bf3d1c85b75e7}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}!````~I\+Fanout\+Node@{$\sim$\+I\+Fanout\+Node}}
+\index{````~I\+Fanout\+Node@{$\sim$\+I\+Fanout\+Node}!Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Fanout\+Node()}{~IFanoutNode()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_fanout_node}{Wire\+Cell\+::\+I\+Fanout\+Node}$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_i_fanout_node}{I\+Fanout\+Node} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 47 of file I\+Fanout\+Node.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_a61d7f915d2c0b6275827e7d63b9a03b2}\label{class_wire_cell_1_1_i_fanout_node_a61d7f915d2c0b6275827e7d63b9a03b2}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}!input\+\_\+types@{input\+\_\+types}}
+\index{input\+\_\+types@{input\+\_\+types}!Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+types()}{input\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_fanout_node}{Wire\+Cell\+::\+I\+Fanout\+Node}$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+::input\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_ae13fc140c8e815fac9327dfa5b43f853}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 66 of file I\+Fanout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_a813e5346a910147df1d57d955c303129}\label{class_wire_cell_1_1_i_fanout_node_a813e5346a910147df1d57d955c303129}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_fanout_node}{Wire\+Cell\+::\+I\+Fanout\+Node}$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::any \&}]{anyin,  }\item[{\hyperlink{class_wire_cell_1_1_i_fanout_node_base_a855b32ed7f2d37d84aaf21e94edeacc4}{any\+\_\+vector} \&}]{anyout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The calling signature\+: 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a2d8314d252381eaeb96c43f312eda8b7}{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}.
+
+
+
+Definition at line 49 of file I\+Fanout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_abcb60d2f89bd18018883d55c9119952f}\label{class_wire_cell_1_1_i_fanout_node_abcb60d2f89bd18018883d55c9119952f}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_fanout_node}{Wire\+Cell\+::\+I\+Fanout\+Node}$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_fanout_node_aefd36d56a531edf1990fe6e263d9c266}{input\+\_\+pointer} \&}]{in,  }\item[{\hyperlink{class_wire_cell_1_1_i_fanout_node_a650cda83709781daac2d67af7c3706df}{output\+\_\+vector} \&}]{outv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanout_node_a2191dc9d44b35d6ff4bda5d5356c6ac5}\label{class_wire_cell_1_1_i_fanout_node_a2191dc9d44b35d6ff4bda5d5356c6ac5}} 
+\index{Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}!output\+\_\+types@{output\+\_\+types}}
+\index{output\+\_\+types@{output\+\_\+types}!Wire\+Cell\+::\+I\+Fanout\+Node@{Wire\+Cell\+::\+I\+Fanout\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+types()}{output\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Type, int Fanout\+Multiplicity = 3$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_fanout_node}{Wire\+Cell\+::\+I\+Fanout\+Node}$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$\+::output\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_channel_splitter_aae5dd9627d127e38fd31d88a4b61b584}{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Splitter}, \hyperlink{class_wire_cell_1_1_i_frame_fanout_aa54a33e4454b6d2cced872b903641d4a}{Wire\+Cell\+::\+I\+Frame\+Fanout}, \hyperlink{class_wire_cell_1_1_i_slice_fanout_abde53bdfe0cef64ba3b05edcf111db65}{Wire\+Cell\+::\+I\+Slice\+Fanout}, \hyperlink{class_wire_cell_1_1_i_blob_set_fanout_ad70f90237cc742ff5bdac87c661ed644}{Wire\+Cell\+::\+I\+Blob\+Set\+Fanout}, \hyperlink{class_wire_cell_1_1_i_depo_fanout_ade8cfbdf790d316516ab8f7a97818f8e}{Wire\+Cell\+::\+I\+Depo\+Fanout}, \hyperlink{class_wire_cell_1_1_i_depo_set_fanout_a90833e933801d4152272189dc6ba1e38}{Wire\+Cell\+::\+I\+Depo\+Set\+Fanout}, \hyperlink{class_wire_cell_1_1_gen_1_1_frame_fanout_a71041fd4bf1a0e030e78a7565f7f1671}{Wire\+Cell\+::\+Gen\+::\+Frame\+Fanout}, \hyperlink{class_wire_cell_1_1_gen_1_1_depo_set_fanout_a11637470dcf8dc0ea0cbf6691a6984c0}{Wire\+Cell\+::\+Gen\+::\+Depo\+Set\+Fanout}, \hyperlink{class_wire_cell_1_1_img_1_1_slice_fanout_a98fe441e7e47306ff0352f547e9b9066}{Wire\+Cell\+::\+Img\+::\+Slice\+Fanout}, and \hyperlink{class_wire_cell_1_1_gen_1_1_depo_fanout_acb986929b5cd38a5ea197985b103102f}{Wire\+Cell\+::\+Gen\+::\+Depo\+Fanout}.
+
+
+
+Definition at line 72 of file I\+Fanout\+Node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_fanout_node_8h}{I\+Fanout\+Node.\+h}\end{DoxyCompactItemize}

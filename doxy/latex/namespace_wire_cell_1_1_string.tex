@@ -1,0 +1,154 @@
+\hypertarget{namespace_wire_cell_1_1_string}{}\section{Wire\+Cell\+:\+:String Namespace Reference}
+\label{namespace_wire_cell_1_1_string}\index{Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{namespace_wire_cell_1_1_string_aef23d7b89dbe21e34a499c9156dd1e60}{split} (const std\+::string \&in, const std\+::string \&delim=\char`\"{}\+:\char`\"{})
+\item 
+std\+::pair$<$ std\+::string, std\+::string $>$ \hyperlink{namespace_wire_cell_1_1_string_aa275a51c718c16893c21d2a915cab1e6}{parse\+\_\+pair} (const std\+::string \&in, const std\+::string \&delim=\char`\"{}\+:\char`\"{})
+\item 
+{\footnotesize template$<$typename T\+Y\+PE $>$ }\\\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} \hyperlink{namespace_wire_cell_1_1_string_a483dc976ea784d91bef184a893e9bba8}{format\+\_\+flatten} (\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} f, T\+Y\+PE obj)
+\item 
+{\footnotesize template$<$typename T\+Y\+PE , typename... M\+O\+RE$>$ }\\\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} \hyperlink{namespace_wire_cell_1_1_string_acaae0ff0fab063552147e1e59cec4e00}{format\+\_\+flatten} (\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} start, T\+Y\+PE o, M\+O\+R\+E... objs)
+\item 
+\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} \hyperlink{namespace_wire_cell_1_1_string_ad79965a560a4a4f94405ebee6d2ee256}{format\+\_\+flatten} (\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} f)
+\item 
+{\footnotesize template$<$typename... T\+Y\+P\+ES$>$ }\\std\+::string \hyperlink{namespace_wire_cell_1_1_string_ade706f4cfc3f6e8a946d95f1b06dbb56}{format} (const std\+::string \&form, T\+Y\+P\+E\+S... objs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{namespace_wire_cell_1_1_string_a7aac9b5f4bf607e959ff98125287ab2a}{stringify} (T obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_string_ade706f4cfc3f6e8a946d95f1b06dbb56}\label{namespace_wire_cell_1_1_string_ade706f4cfc3f6e8a946d95f1b06dbb56}} 
+\index{Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}!format@{format}}
+\index{format@{format}!Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}}
+\subsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily template$<$typename... T\+Y\+P\+ES$>$ \\
+std\+::string Wire\+Cell\+::\+String\+::format (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{form,  }\item[{T\+Y\+P\+E\+S...}]{objs }\end{DoxyParamCaption})}
+
+The \hyperlink{namespace_wire_cell_1_1_string_ade706f4cfc3f6e8a946d95f1b06dbb56}{format()} function provides an sprintf() like function. It\textquotesingle{}s a wrapper on \hyperlink{namespace_wire_cell_1_1_string_ade706f4cfc3f6e8a946d95f1b06dbb56}{boost\+::format()} but returns a string instead of a stream and has function calling semantics instead of the \char`\"{}\%\char`\"{} list. Use like\+:
+
+int a=42; std\+::string foo = \char`\"{}bar\char`\"{}; std\+::string msg = format(\char`\"{}the answer to \%s is \%d\char`\"{}, foo, a); 
+
+Definition at line 45 of file String.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_string_ade706f4cfc3f6e8a946d95f1b06dbb56_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_string_ade706f4cfc3f6e8a946d95f1b06dbb56_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_string_a483dc976ea784d91bef184a893e9bba8}\label{namespace_wire_cell_1_1_string_a483dc976ea784d91bef184a893e9bba8}} 
+\index{Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}!format\+\_\+flatten@{format\+\_\+flatten}}
+\index{format\+\_\+flatten@{format\+\_\+flatten}!Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}}
+\subsubsection{\texorpdfstring{format\+\_\+flatten()}{format\_flatten()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T\+Y\+PE $>$ \\
+\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} Wire\+Cell\+::\+String\+::format\+\_\+flatten (\begin{DoxyParamCaption}\item[{\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format}}]{f,  }\item[{T\+Y\+PE}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file String.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_string_a483dc976ea784d91bef184a893e9bba8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_string_acaae0ff0fab063552147e1e59cec4e00}\label{namespace_wire_cell_1_1_string_acaae0ff0fab063552147e1e59cec4e00}} 
+\index{Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}!format\+\_\+flatten@{format\+\_\+flatten}}
+\index{format\+\_\+flatten@{format\+\_\+flatten}!Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}}
+\subsubsection{\texorpdfstring{format\+\_\+flatten()}{format\_flatten()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T\+Y\+PE , typename... M\+O\+RE$>$ \\
+\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} Wire\+Cell\+::\+String\+::format\+\_\+flatten (\begin{DoxyParamCaption}\item[{\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format}}]{start,  }\item[{T\+Y\+PE}]{o,  }\item[{M\+O\+R\+E...}]{objs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file String.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_string_acaae0ff0fab063552147e1e59cec4e00_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_string_ad79965a560a4a4f94405ebee6d2ee256}\label{namespace_wire_cell_1_1_string_ad79965a560a4a4f94405ebee6d2ee256}} 
+\index{Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}!format\+\_\+flatten@{format\+\_\+flatten}}
+\index{format\+\_\+flatten@{format\+\_\+flatten}!Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}}
+\subsubsection{\texorpdfstring{format\+\_\+flatten()}{format\_flatten()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format} Wire\+Cell\+::\+String\+::format\+\_\+flatten (\begin{DoxyParamCaption}\item[{\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{boost\+::format}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 30 of file String.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_string_aa275a51c718c16893c21d2a915cab1e6}\label{namespace_wire_cell_1_1_string_aa275a51c718c16893c21d2a915cab1e6}} 
+\index{Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}!parse\+\_\+pair@{parse\+\_\+pair}}
+\index{parse\+\_\+pair@{parse\+\_\+pair}!Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}}
+\subsubsection{\texorpdfstring{parse\+\_\+pair()}{parse\_pair()}}
+{\footnotesize\ttfamily std\+::pair$<$ std\+::string, std\+::string $>$ Wire\+Cell\+::\+String\+::parse\+\_\+pair (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{in,  }\item[{const std\+::string \&}]{delim = {\ttfamily \char`\"{}\+:\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file String.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_string_aa275a51c718c16893c21d2a915cab1e6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_string_aa275a51c718c16893c21d2a915cab1e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_string_aef23d7b89dbe21e34a499c9156dd1e60}\label{namespace_wire_cell_1_1_string_aef23d7b89dbe21e34a499c9156dd1e60}} 
+\index{Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}!split@{split}}
+\index{split@{split}!Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Wire\+Cell\+::\+String\+::split (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{in,  }\item[{const std\+::string \&}]{delim = {\ttfamily \char`\"{}\+:\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file String.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_string_aef23d7b89dbe21e34a499c9156dd1e60_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_string_a7aac9b5f4bf607e959ff98125287ab2a}\label{namespace_wire_cell_1_1_string_a7aac9b5f4bf607e959ff98125287ab2a}} 
+\index{Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}!stringify@{stringify}}
+\index{stringify@{stringify}!Wire\+Cell\+::\+String@{Wire\+Cell\+::\+String}}
+\subsubsection{\texorpdfstring{stringify()}{stringify()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::string Wire\+Cell\+::\+String\+::stringify (\begin{DoxyParamCaption}\item[{T}]{obj }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file String.\+h.
+

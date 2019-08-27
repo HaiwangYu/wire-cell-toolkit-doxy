@@ -1,0 +1,63 @@
+\hypertarget{namespace_wire_cell_1_1_response_1_1_schema}{}\section{Wire\+Cell\+:\+:Response\+:\+:Schema Namespace Reference}
+\label{namespace_wire_cell_1_1_response_1_1_schema}\index{Wire\+Cell\+::\+Response\+::\+Schema@{Wire\+Cell\+::\+Response\+::\+Schema}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Field\+Response}
+\begin{DoxyCompactList}\small\item\em Hold info about multiple plane responses in the detector. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_path_response}{Path\+Response}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Field\+Response} \hyperlink{namespace_wire_cell_1_1_response_1_1_schema_a4b86873ce3e615148bc29b75b74bab9c}{load} (const char $\ast$filename)
+\item 
+void \hyperlink{namespace_wire_cell_1_1_response_1_1_schema_a2cc7d597fb84460da8289804c7356a46}{dump} (const char $\ast$filename, const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Field\+Response} \&fr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_response_1_1_schema_a2cc7d597fb84460da8289804c7356a46}\label{namespace_wire_cell_1_1_response_1_1_schema_a2cc7d597fb84460da8289804c7356a46}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema@{Wire\+Cell\+::\+Response\+::\+Schema}!dump@{dump}}
+\index{dump@{dump}!Wire\+Cell\+::\+Response\+::\+Schema@{Wire\+Cell\+::\+Response\+::\+Schema}}
+\subsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Response\+::\+Schema\+::dump (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{const \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Field\+Response} \&}]{fr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file Response.\+cxx.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_response_1_1_schema_a4b86873ce3e615148bc29b75b74bab9c}\label{namespace_wire_cell_1_1_response_1_1_schema_a4b86873ce3e615148bc29b75b74bab9c}} 
+\index{Wire\+Cell\+::\+Response\+::\+Schema@{Wire\+Cell\+::\+Response\+::\+Schema}!load@{load}}
+\index{load@{load}!Wire\+Cell\+::\+Response\+::\+Schema@{Wire\+Cell\+::\+Response\+::\+Schema}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Wire\+Cell\+::\+Response\+::\+Schema\+::\+Field\+Response} Wire\+Cell\+::\+Response\+::\+Schema\+::load (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+frdict\mbox{[}\textquotesingle{}\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Field\+Response}\textquotesingle{}\mbox{]}.keys() \mbox{[}\textquotesingle{}origin\textquotesingle{}, \textquotesingle{}axis\textquotesingle{}, \textquotesingle{}period\textquotesingle{}, \textquotesingle{}tstart\textquotesingle{}, \textquotesingle{}planes\textquotesingle{}\mbox{]}
+
+frdict\mbox{[}\textquotesingle{}\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Field\+Response}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}planes\textquotesingle{}\mbox{]}\mbox{[}0\mbox{]}\mbox{[}\textquotesingle{}\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response}\textquotesingle{}\mbox{]}.keys() \mbox{[}\textquotesingle{}paths\textquotesingle{}, \textquotesingle{}planeid\textquotesingle{}, \textquotesingle{}pitch\textquotesingle{}\mbox{]}
+
+frdict\mbox{[}\textquotesingle{}\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Field\+Response}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}planes\textquotesingle{}\mbox{]}\mbox{[}0\mbox{]}\mbox{[}\textquotesingle{}\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}paths\textquotesingle{}\mbox{]}\mbox{[}0\mbox{]}\mbox{[}\textquotesingle{}\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_path_response}{Path\+Response}\textquotesingle{}\mbox{]}.keys() \mbox{[}\textquotesingle{}current\textquotesingle{}, \textquotesingle{}wirepos\textquotesingle{}, \textquotesingle{}pitchpos\textquotesingle{}\mbox{]}
+
+frdict\mbox{[}\textquotesingle{}\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_field_response}{Field\+Response}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}planes\textquotesingle{}\mbox{]}\mbox{[}0\mbox{]}\mbox{[}\textquotesingle{}\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_plane_response}{Plane\+Response}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}paths\textquotesingle{}\mbox{]}\mbox{[}0\mbox{]}\mbox{[}\textquotesingle{}\hyperlink{struct_wire_cell_1_1_response_1_1_schema_1_1_path_response}{Path\+Response}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}current\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}array\textquotesingle{}\mbox{]}.keys() \mbox{[}\textquotesingle{}shape\textquotesingle{}, \textquotesingle{}elements\textquotesingle{}\mbox{]} 
+
+Definition at line 39 of file Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_response_1_1_schema_a4b86873ce3e615148bc29b75b74bab9c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{namespace_wire_cell_1_1_response_1_1_schema_a4b86873ce3e615148bc29b75b74bab9c_icgraph}
+\end{center}
+\end{figure}

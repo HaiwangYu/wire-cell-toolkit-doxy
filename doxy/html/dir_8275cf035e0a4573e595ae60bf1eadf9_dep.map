@@ -1,0 +1,10 @@
+<map id="util/inc/spdlog/details" name="util/inc/spdlog/details">
+<area shape="rect" id="node1" href="dir_8275cf035e0a4573e595ae60bf1eadf9.html" title="details" alt="" coords="27,52,99,100"/>
+<area shape="rect" id="node2" href="dir_9465af9717fa8f97acdefc4d64b81e37.html" title="fmt" alt="" coords="75,148,147,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000032_000033.html" title="2" alt="" coords="94,120,102,135"/>
+<area shape="rect" id="node3" href="dir_a07fbdc41687b5a0cb03216f76f4c71d.html" title="sinks" alt="" coords="123,52,195,100"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000032_000035.html" title="1" alt="" coords="100,60,108,75"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000035_000032.html" title="23" alt="" coords="110,77,125,92"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000035_000033.html" title="2" alt="" coords="135,128,143,142"/>
+<area shape="rect" id="clust1" href="dir_c9133dd91b06bcd4d4b6b415d8d9b0a0.html" title="spdlog" alt="" coords="16,16,109,111"/>
+</map>

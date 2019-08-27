@@ -1,0 +1,11 @@
+<map id="iface/inc/WireCellIface/IFrameSource.h" name="iface/inc/WireCellIface/IFrameSource.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_fourdee_8h.html" title="gen/inc/WireCellGen\l/Fourdee.h" alt="" coords="235,95,378,136"/>
+<area shape="rect" id="node5" href="$_noise_source_8h.html" title="gen/inc/WireCellGen\l/NoiseSource.h" alt="" coords="402,95,545,136"/>
+<area shape="rect" id="node7" href="$_silent_noise_8h.html" title="gen/inc/WireCellGen\l/SilentNoise.h" alt="" coords="579,95,722,136"/>
+<area shape="rect" id="node9" href="$_omnibus_8h.html" title="sigproc/inc/WireCellSigProc\l/Omnibus.h" alt="" coords="751,95,937,136"/>
+<area shape="rect" id="node4" href="$_fourdee_8cxx.html" title="gen/src/Fourdee.cxx" alt="" coords="219,184,360,211"/>
+<area shape="rect" id="node6" href="$_noise_source_8cxx.html" title="gen/src/NoiseSource.cxx" alt="" coords="385,184,554,211"/>
+<area shape="rect" id="node8" href="$_silent_noise_8cxx.html" title="gen/src/SilentNoise.cxx" alt="" coords="578,184,739,211"/>
+<area shape="rect" id="node10" href="$_omnibus_8cxx.html" title="sigproc/src/Omnibus.cxx" alt="" coords="763,184,930,211"/>
+</map>

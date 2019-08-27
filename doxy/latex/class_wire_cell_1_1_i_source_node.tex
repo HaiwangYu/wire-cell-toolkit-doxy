@@ -1,0 +1,214 @@
+\hypertarget{class_wire_cell_1_1_i_source_node}{}\section{Wire\+Cell\+:\+:I\+Source\+Node$<$ Output\+Type $>$ Class Template Reference}
+\label{class_wire_cell_1_1_i_source_node}\index{Wire\+Cell\+::\+I\+Source\+Node$<$ Output\+Type $>$@{Wire\+Cell\+::\+I\+Source\+Node$<$ Output\+Type $>$}}
+
+
+{\ttfamily \#include $<$I\+Source\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Source\+Node$<$ Output\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_wire_cell_1_1_i_source_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Source\+Node$<$ Output\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_wire_cell_1_1_i_source_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Output\+Type \hyperlink{class_wire_cell_1_1_i_source_node_a8db14c0eec2d0faac21bb1801d71600a}{output\+\_\+type}
+\item 
+typedef \hyperlink{class_wire_cell_1_1_i_source_node}{I\+Source\+Node}$<$ Output\+Type $>$ \hyperlink{class_wire_cell_1_1_i_source_node_ae80709587615faffda92fc12d7052bdc}{signature\+\_\+type}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_source_node_ae80709587615faffda92fc12d7052bdc}{signature\+\_\+type} $>$ \hyperlink{class_wire_cell_1_1_i_source_node_a960422a6c4fca9db6057f73704c2c6c3}{pointer}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ const Output\+Type $>$ \hyperlink{class_wire_cell_1_1_i_source_node_ae2743237513016d7f69d68aac1104951}{output\+\_\+pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_source_node_ad7061b2d026afe5e8ba14c85e5607b19}{$\sim$\+I\+Source\+Node} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} \hyperlink{class_wire_cell_1_1_i_source_node_a1742b49fa591d01cd209ed027a7d29ba}{category} ()
+\begin{DoxyCompactList}\small\item\em Return the behavior category type. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{class_wire_cell_1_1_i_source_node_a9361f7cad35e087800c5e59f27939977}{signature} ()
+\begin{DoxyCompactList}\small\item\em Set the signature for all subclasses. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_source_node_a4d3f01222148f2787b6097cf8c8e1905}{operator()} (boost\+::any \&anyout)
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_source_node_a945b2cc60a731bee93a7c2a1dfa0d7c3}{operator()} (\hyperlink{class_wire_cell_1_1_i_source_node_ae2743237513016d7f69d68aac1104951}{output\+\_\+pointer} \&out)=0
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_source_node_a37037cdba0b75cf5fa50751000a4f436}{output\+\_\+types} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Output\+Type$>$\newline
+class Wire\+Cell\+::\+I\+Source\+Node$<$ Output\+Type $>$}
+
+
+
+Definition at line 30 of file I\+Source\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_source_node_ae2743237513016d7f69d68aac1104951}\label{class_wire_cell_1_1_i_source_node_ae2743237513016d7f69d68aac1104951}} 
+\index{Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}!output\+\_\+pointer@{output\+\_\+pointer}}
+\index{output\+\_\+pointer@{output\+\_\+pointer}!Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+pointer}{output\_pointer}}
+{\footnotesize\ttfamily template$<$typename Output\+Type$>$ \\
+typedef std\+::shared\+\_\+ptr$<$const Output\+Type$>$ \hyperlink{class_wire_cell_1_1_i_source_node}{Wire\+Cell\+::\+I\+Source\+Node}$<$ Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_source_node_ae2743237513016d7f69d68aac1104951}{output\+\_\+pointer}}
+
+
+
+Definition at line 38 of file I\+Source\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_source_node_a8db14c0eec2d0faac21bb1801d71600a}\label{class_wire_cell_1_1_i_source_node_a8db14c0eec2d0faac21bb1801d71600a}} 
+\index{Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}!output\+\_\+type@{output\+\_\+type}}
+\index{output\+\_\+type@{output\+\_\+type}!Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+type}{output\_type}}
+{\footnotesize\ttfamily template$<$typename Output\+Type$>$ \\
+typedef Output\+Type \hyperlink{class_wire_cell_1_1_i_source_node}{Wire\+Cell\+::\+I\+Source\+Node}$<$ Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_source_node_a8db14c0eec2d0faac21bb1801d71600a}{output\+\_\+type}}
+
+
+
+Definition at line 33 of file I\+Source\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_source_node_a960422a6c4fca9db6057f73704c2c6c3}\label{class_wire_cell_1_1_i_source_node_a960422a6c4fca9db6057f73704c2c6c3}} 
+\index{Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$typename Output\+Type$>$ \\
+typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_source_node_ae80709587615faffda92fc12d7052bdc}{signature\+\_\+type}$>$ \hyperlink{class_wire_cell_1_1_i_source_node}{Wire\+Cell\+::\+I\+Source\+Node}$<$ Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{pointer}}
+
+
+
+Definition at line 36 of file I\+Source\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_source_node_ae80709587615faffda92fc12d7052bdc}\label{class_wire_cell_1_1_i_source_node_ae80709587615faffda92fc12d7052bdc}} 
+\index{Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}!signature\+\_\+type@{signature\+\_\+type}}
+\index{signature\+\_\+type@{signature\+\_\+type}!Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}}
+\subsubsection{\texorpdfstring{signature\+\_\+type}{signature\_type}}
+{\footnotesize\ttfamily template$<$typename Output\+Type$>$ \\
+typedef \hyperlink{class_wire_cell_1_1_i_source_node}{I\+Source\+Node}$<$Output\+Type$>$ \hyperlink{class_wire_cell_1_1_i_source_node}{Wire\+Cell\+::\+I\+Source\+Node}$<$ Output\+Type $>$\+::\hyperlink{class_wire_cell_1_1_i_source_node_ae80709587615faffda92fc12d7052bdc}{signature\+\_\+type}}
+
+
+
+Definition at line 35 of file I\+Source\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_source_node_ad7061b2d026afe5e8ba14c85e5607b19}\label{class_wire_cell_1_1_i_source_node_ad7061b2d026afe5e8ba14c85e5607b19}} 
+\index{Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}!````~I\+Source\+Node@{$\sim$\+I\+Source\+Node}}
+\index{````~I\+Source\+Node@{$\sim$\+I\+Source\+Node}!Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Source\+Node()}{~ISourceNode()}}
+{\footnotesize\ttfamily template$<$typename Output\+Type$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_source_node}{Wire\+Cell\+::\+I\+Source\+Node}$<$ Output\+Type $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_i_source_node}{I\+Source\+Node} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 40 of file I\+Source\+Node.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_source_node_a1742b49fa591d01cd209ed027a7d29ba}\label{class_wire_cell_1_1_i_source_node_a1742b49fa591d01cd209ed027a7d29ba}} 
+\index{Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}!category@{category}}
+\index{category@{category}!Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}}
+\subsubsection{\texorpdfstring{category()}{category()}}
+{\footnotesize\ttfamily template$<$typename Output\+Type$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} \hyperlink{class_wire_cell_1_1_i_source_node}{Wire\+Cell\+::\+I\+Source\+Node}$<$ Output\+Type $>$\+::category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the behavior category type. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_source_node_base_adc531c3da5aa3192940e60390e683736}{Wire\+Cell\+::\+I\+Source\+Node\+Base}.
+
+
+
+Definition at line 42 of file I\+Source\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_source_node_a4d3f01222148f2787b6097cf8c8e1905}\label{class_wire_cell_1_1_i_source_node_a4d3f01222148f2787b6097cf8c8e1905}} 
+\index{Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Output\+Type$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_source_node}{Wire\+Cell\+::\+I\+Source\+Node}$<$ Output\+Type $>$\+::operator() (\begin{DoxyParamCaption}\item[{boost\+::any \&}]{anyout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_source_node_base_a6d29d551ab4e4b8479a062dfaa38f42f}{Wire\+Cell\+::\+I\+Source\+Node\+Base}.
+
+
+
+Definition at line 51 of file I\+Source\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_source_node_a945b2cc60a731bee93a7c2a1dfa0d7c3}\label{class_wire_cell_1_1_i_source_node_a945b2cc60a731bee93a7c2a1dfa0d7c3}} 
+\index{Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Output\+Type$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_source_node}{Wire\+Cell\+::\+I\+Source\+Node}$<$ Output\+Type $>$\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_source_node_ae2743237513016d7f69d68aac1104951}{output\+\_\+pointer} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The calling signature\+: 
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_source_node_a37037cdba0b75cf5fa50751000a4f436}\label{class_wire_cell_1_1_i_source_node_a37037cdba0b75cf5fa50751000a4f436}} 
+\index{Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}!output\+\_\+types@{output\+\_\+types}}
+\index{output\+\_\+types@{output\+\_\+types}!Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+types()}{output\_types()}}
+{\footnotesize\ttfamily template$<$typename Output\+Type$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_source_node}{Wire\+Cell\+::\+I\+Source\+Node}$<$ Output\+Type $>$\+::output\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 64 of file I\+Source\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_source_node_a9361f7cad35e087800c5e59f27939977}\label{class_wire_cell_1_1_i_source_node_a9361f7cad35e087800c5e59f27939977}} 
+\index{Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}!signature@{signature}}
+\index{signature@{signature}!Wire\+Cell\+::\+I\+Source\+Node@{Wire\+Cell\+::\+I\+Source\+Node}}
+\subsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily template$<$typename Output\+Type$>$ \\
+virtual std\+::string \hyperlink{class_wire_cell_1_1_i_source_node}{Wire\+Cell\+::\+I\+Source\+Node}$<$ Output\+Type $>$\+::signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the signature for all subclasses. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_node_a0b0763465adf5ba7febe8e378162b584}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_i_depo_source_a2d49f81dff56ffe7fefed50219395c3b}{Wire\+Cell\+::\+I\+Depo\+Source}, and \hyperlink{class_wire_cell_1_1_i_wire_source_ad72fdd8f8e747a7ea5707fb5b0eef594}{Wire\+Cell\+::\+I\+Wire\+Source}.
+
+
+
+Definition at line 47 of file I\+Source\+Node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_source_node_8h}{I\+Source\+Node.\+h}\end{DoxyCompactItemize}

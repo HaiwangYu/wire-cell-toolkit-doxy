@@ -1,0 +1,330 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_drifter}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Drifter Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_drifter}\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+
+
+{\ttfamily \#include $<$Drifter.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Drifter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_drifter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Drifter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_drifter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_drifter_a26733fe40e2ed9bb562833312b466cc0}{Drifter} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_a8477d8f958696ba241c94708a8393cdf}{$\sim$\+Drifter} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_a50935de34f9dd1171d76201b6081e9d7}{reset} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_aaac2664d52bd3ea47308e2760b256dab}{operator()} (const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&depo, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&outq)
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_a3a4689030cd1223426682fefc0e85b35}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable} interface. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_ac0a59fbb4c7da9c2f7711dc8a0b4ae48}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_a15c92059fc878922af5bbede346ff04f}{transport} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} depo)
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_a28657b21ffae9ef73622c60216fc2f59}{proper\+\_\+time} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} depo)
+\item 
+bool \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_a29fcb959e2873e8887595566a12dba7c}{insert} (const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&depo)
+\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_aaff6334fd86eabe10bad0d0efd28dcb2}{flush} (\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&outq)
+\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_adae5b8dde52b076da7ad8a9d3e3c2f29}{flush\+\_\+ripe} (\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&outq, double now)
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_a6ddb93888f24726d2e261a328c1b4164}{set\+\_\+lifetime} (double lifetime\+\_\+to\+\_\+set)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This component drifts depos bounded by planes perpendicular to the X-\/axis. The boundary planes are specified with the \char`\"{}xregions\char`\"{} list. Each list is an object fully specified with a \char`\"{}cathode\char`\"{} an \char`\"{}anode\char`\"{} and a \char`\"{}response\char`\"{} attribute giving X locations in the same coordinate system as depos of three planes.
+
+
+\begin{DoxyItemize}
+\item cathode \+:\+: a plane which bounds the maximum possible drift.
+\item anode \+:\+: a plane which bounds the minimum possible drift.
+\item response \+:\+: a plane to which all depositions are drifted.
+\end{DoxyItemize}
+
+If \char`\"{}anode\char`\"{} is not given then its value is take to be that of \char`\"{}response\char`\"{} and vice versa and at least one must be specified. A \char`\"{}cathode\char`\"{} value must be specified.
+
+Any depo not falling between \char`\"{}anode\char`\"{} and \char`\"{}cathode\char`\"{} will be dropped.
+
+Any depo falling between \char`\"{}response\char`\"{} and \char`\"{}cathode\char`\"{} will be drifted to the \char`\"{}response\char`\"{} plane.
+
+Any depo falling between \char`\"{}anode\char`\"{} and \char`\"{}response\char`\"{} will be A\+N\+T\+I-\/\+D\+R\+I\+F\+T\+ED to the \char`\"{}response\char`\"{} plane. Ie, it will be \char`\"{}\+B\+A\+C\+K\+E\+D U\+P\char`\"{} in space an time as if it had be produced earlier and at the response plane.
+
+Input depositions must be ordered in absolute time (their current time) and output depositions are produced ordered by their time after being drifted to the response plane.
+
+\hyperlink{class_wire_cell_1_1_diffusion}{Diffusion} and absorption effects and also, optionally, fluctuations are applied. Fano factor and Recombination are not applied in this component (see \hyperlink{class_wire_cell_1_1_i_recombination_model}{I\+Recombination\+Model} implementations).
+
+Typically a drifter is used just prior to a ductor and in such cases the \char`\"{}response\char`\"{} plane should be made coincident with the non-\/physical \char`\"{}response plane\char`\"{} which defines the starting point for the field response functions. The location of the response plane {\itshape realtive} to the wire planes can be found using\+:
+
+\$ wriecell-\/sigproc response-\/info garfield-\/1d-\/3planes-\/21wires-\/6impacts-\/dune-\/v1.\+json.\+bz2 origin\+:10.\+00 cm, period\+:0.\+10 us, tstart\+:0.\+00 us, speed\+:1.\+60 mm/us, axis\+:(1.\+00,0.\+00,0.\+00) plane\+:0, location\+:9.\+4200mm, pitch\+:4.\+7100mm plane\+:1, location\+:4.\+7100mm, pitch\+:4.\+7100mm plane\+:2, location\+:0.\+0000mm, pitch\+:4.\+7100mm
+
+Here, \char`\"{}origin\char`\"{} gives the location of the response plane. The location of the wire planes according to wire geometry can be similarly dumped.
+
+\$ wirecell-\/util wires-\/info protodune-\/wires-\/larsoft-\/v3.\+json.\+bz2 anode\+:0 face\+:0 X=\mbox{[}-\/3584.\+63,-\/3584.\+63\mbox{]}mm Y=\mbox{[}6066.\+70,6066.\+70\mbox{]}mm Z=\mbox{[}7.\+92,7.\+92\mbox{]}mm 0\+: x=-\/3584.\+63mm dx=9.\+5250mm 1\+: x=-\/3589.\+39mm dx=4.\+7620mm 2\+: x=-\/3594.\+16mm dx=0.\+0000mm .... anode\+:5 face\+:1 X=\mbox{[}3584.\+63,3584.\+63\mbox{]}mm Y=\mbox{[}6066.\+70,6066.\+70\mbox{]}mm Z=\mbox{[}6940.\+01,6940.\+01\mbox{]}mm 0\+: x=3584.\+63mm dx=-\/9.\+5250mm 1\+: x=3589.\+39mm dx=-\/4.\+7620mm 2\+: x=3594.\+16mm dx=0.\+0000mm
+
+Note, as can see, these two sources of information may not be consistent w.\+r.\+t. the inter-\/plane separation distance (4.\+71mm and 4.\+76mm, respectively). This mismatch will result in a relative shift in time between the planes for various waveform features (eg induction zero crossings and collection peak).
+
+For the example above, likely candidates for \char`\"{}anode\char`\"{} X locations are\+:
+
+x = -\/3594.\+16mm + 10cm
+
+and
+
+x = +3594.16mm -\/ 10cm 
+
+Definition at line 102 of file Drifter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_a26733fe40e2ed9bb562833312b466cc0}\label{class_wire_cell_1_1_gen_1_1_drifter_a26733fe40e2ed9bb562833312b466cc0}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!Drifter@{Drifter}}
+\index{Drifter@{Drifter}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{Drifter()}{Drifter()}}
+{\footnotesize\ttfamily Gen\+::\+Drifter\+::\+Drifter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file Drifter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_a8477d8f958696ba241c94708a8393cdf}\label{class_wire_cell_1_1_gen_1_1_drifter_a8477d8f958696ba241c94708a8393cdf}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!````~Drifter@{$\sim$\+Drifter}}
+\index{````~Drifter@{$\sim$\+Drifter}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{$\sim$\+Drifter()}{~Drifter()}}
+{\footnotesize\ttfamily Gen\+::\+Drifter\+::$\sim$\+Drifter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 74 of file Drifter.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_a3a4689030cd1223426682fefc0e85b35}\label{class_wire_cell_1_1_gen_1_1_drifter_a3a4689030cd1223426682fefc0e85b35}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Drifter\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable} interface. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 93 of file Drifter.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_wire_cell_1_1_gen_1_1_drifter_a3a4689030cd1223426682fefc0e85b35_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_ac0a59fbb4c7da9c2f7711dc8a0b4ae48}\label{class_wire_cell_1_1_gen_1_1_drifter_ac0a59fbb4c7da9c2f7711dc8a0b4ae48}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Drifter\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 78 of file Drifter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_aaff6334fd86eabe10bad0d0efd28dcb2}\label{class_wire_cell_1_1_gen_1_1_drifter_aaff6334fd86eabe10bad0d0efd28dcb2}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!flush@{flush}}
+\index{flush@{flush}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void Gen\+::\+Drifter\+::flush (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&}]{outq }\end{DoxyParamCaption})}
+
+
+
+Definition at line 206 of file Drifter.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_wire_cell_1_1_gen_1_1_drifter_aaff6334fd86eabe10bad0d0efd28dcb2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_drifter_aaff6334fd86eabe10bad0d0efd28dcb2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_adae5b8dde52b076da7ad8a9d3e3c2f29}\label{class_wire_cell_1_1_gen_1_1_drifter_adae5b8dde52b076da7ad8a9d3e3c2f29}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!flush\+\_\+ripe@{flush\+\_\+ripe}}
+\index{flush\+\_\+ripe@{flush\+\_\+ripe}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{flush\+\_\+ripe()}{flush\_ripe()}}
+{\footnotesize\ttfamily void Gen\+::\+Drifter\+::flush\+\_\+ripe (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&}]{outq,  }\item[{double}]{now }\end{DoxyParamCaption})}
+
+
+
+Definition at line 219 of file Drifter.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_wire_cell_1_1_gen_1_1_drifter_adae5b8dde52b076da7ad8a9d3e3c2f29_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_drifter_adae5b8dde52b076da7ad8a9d3e3c2f29_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_a29fcb959e2873e8887595566a12dba7c}\label{class_wire_cell_1_1_gen_1_1_drifter_a29fcb959e2873e8887595566a12dba7c}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!insert@{insert}}
+\index{insert@{insert}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily bool Gen\+::\+Drifter\+::insert (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&}]{depo }\end{DoxyParamCaption})}
+
+
+
+Definition at line 125 of file Drifter.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_wire_cell_1_1_gen_1_1_drifter_a29fcb959e2873e8887595566a12dba7c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_drifter_a29fcb959e2873e8887595566a12dba7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_aaac2664d52bd3ea47308e2760b256dab}\label{class_wire_cell_1_1_gen_1_1_drifter_aaac2664d52bd3ea47308e2760b256dab}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Gen\+::\+Drifter\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&}]{depo,  }\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&}]{outq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 252 of file Drifter.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_drifter_aaac2664d52bd3ea47308e2760b256dab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_wire_cell_1_1_gen_1_1_drifter_aaac2664d52bd3ea47308e2760b256dab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_a28657b21ffae9ef73622c60216fc2f59}\label{class_wire_cell_1_1_gen_1_1_drifter_a28657b21ffae9ef73622c60216fc2f59}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!proper\+\_\+time@{proper\+\_\+time}}
+\index{proper\+\_\+time@{proper\+\_\+time}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{proper\+\_\+time()}{proper\_time()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Drifter\+::proper\+\_\+time (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer}}]{depo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_a50935de34f9dd1171d76201b6081e9d7}\label{class_wire_cell_1_1_gen_1_1_drifter_a50935de34f9dd1171d76201b6081e9d7}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!reset@{reset}}
+\index{reset@{reset}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Gen\+::\+Drifter\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Optional hook to be implemented in order to reset after an end of stream is encountered. Fixme\+: this should be removed. 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_a7bf4dfff146b72f866ab25f7662c56a0}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 119 of file Drifter.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_wire_cell_1_1_gen_1_1_drifter_a50935de34f9dd1171d76201b6081e9d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_a6ddb93888f24726d2e261a328c1b4164}\label{class_wire_cell_1_1_gen_1_1_drifter_a6ddb93888f24726d2e261a328c1b4164}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!set\+\_\+lifetime@{set\+\_\+lifetime}}
+\index{set\+\_\+lifetime@{set\+\_\+lifetime}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{set\+\_\+lifetime()}{set\_lifetime()}}
+{\footnotesize\ttfamily virtual void Wire\+Cell\+::\+Gen\+::\+Drifter\+::set\+\_\+lifetime (\begin{DoxyParamCaption}\item[{double}]{lifetime\+\_\+to\+\_\+set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 129 of file Drifter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_drifter_a6ddb93888f24726d2e261a328c1b4164_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_drifter_a15c92059fc878922af5bbede346ff04f}\label{class_wire_cell_1_1_gen_1_1_drifter_a15c92059fc878922af5bbede346ff04f}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}!transport@{transport}}
+\index{transport@{transport}!Wire\+Cell\+::\+Gen\+::\+Drifter@{Wire\+Cell\+::\+Gen\+::\+Drifter}}
+\subsubsection{\texorpdfstring{transport()}{transport()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} Wire\+Cell\+::\+Gen\+::\+Drifter\+::transport (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer}}]{depo }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_drifter_8h}{Drifter.\+h}\item 
+gen/src/\hyperlink{_drifter_8cxx}{Drifter.\+cxx}\end{DoxyCompactItemize}

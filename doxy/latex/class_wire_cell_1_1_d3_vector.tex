@@ -1,0 +1,494 @@
+\hypertarget{class_wire_cell_1_1_d3_vector}{}\section{Wire\+Cell\+:\+:D3\+Vector$<$ T $>$ Class Template Reference}
+\label{class_wire_cell_1_1_d3_vector}\index{Wire\+Cell\+::\+D3\+Vector$<$ T $>$@{Wire\+Cell\+::\+D3\+Vector$<$ T $>$}}
+
+
+{\ttfamily \#include $<$D3\+Vector.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_d3_vector_a0bb7ef1f53b89ca0c137d8ccb3b246af}{D3\+Vector} (const T \&a=0, const T \&b=0, const T \&c=0)
+\begin{DoxyCompactList}\small\item\em Construct from elements. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_d3_vector_a192b9c89af9820765b1f730f63686e98}{D3\+Vector} (const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \&o)
+\item 
+\hyperlink{class_wire_cell_1_1_d3_vector_ac923609cfdaf817081acd82d0cd7474c}{D3\+Vector} (const T d\mbox{[}3\mbox{]})
+\item 
+\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \& \hyperlink{class_wire_cell_1_1_d3_vector_a912036ea6a79006cb0124f8347ae8f7e}{operator=} (const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \&o)
+\item 
+void \hyperlink{class_wire_cell_1_1_d3_vector_ada1f1aed4e0f6d2bc893c4290bcfa78a}{set} (const T \&a=0, const T \&b=0, const T \&c=0)
+\begin{DoxyCompactList}\small\item\em Set vector from elements;. \end{DoxyCompactList}\item 
+T \hyperlink{class_wire_cell_1_1_d3_vector_a9897c0952e82c2e7c285a4f064c00c80}{x} (const T \&val)
+\item 
+T \hyperlink{class_wire_cell_1_1_d3_vector_aa163ee62b7a8643fa374b2c4d3e3b386}{y} (const T \&val)
+\item 
+T \hyperlink{class_wire_cell_1_1_d3_vector_aabb1a5422a461697542a6755f30b575e}{z} (const T \&val)
+\item 
+{\footnotesize template$<$class TT $>$ }\\\hyperlink{class_wire_cell_1_1_d3_vector_ad414a22a14615b94d30980ee34f1cfd9}{D3\+Vector} (const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ TT $>$ \&o)
+\begin{DoxyCompactList}\small\item\em Convert from other typed vector. \end{DoxyCompactList}\item 
+T \hyperlink{class_wire_cell_1_1_d3_vector_a65c5efb75f44d8bb1b7979151f442c09}{x} () const
+\begin{DoxyCompactList}\small\item\em Access elements by name. \end{DoxyCompactList}\item 
+T \hyperlink{class_wire_cell_1_1_d3_vector_ad570e3dbb22e60a480ced87c278f4466}{y} () const
+\item 
+T \hyperlink{class_wire_cell_1_1_d3_vector_a75a340da006d17ee06a8c097fa09c25f}{z} () const
+\item 
+T \hyperlink{class_wire_cell_1_1_d3_vector_ac5cfef3dd3a6886c86ad58f020bb2ab4}{operator\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t index) const
+\begin{DoxyCompactList}\small\item\em Access elements by copy. \end{DoxyCompactList}\item 
+T \& \hyperlink{class_wire_cell_1_1_d3_vector_a7e5f8ace33d45da46becde8152e652ac}{operator\mbox{[}$\,$\mbox{]}} (std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Access elements by reference. \end{DoxyCompactList}\item 
+T \hyperlink{class_wire_cell_1_1_d3_vector_ad116deec8357b27dcad6be127c209490}{dot} (const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Return the dot product of this vector and the other. \end{DoxyCompactList}\item 
+T \hyperlink{class_wire_cell_1_1_d3_vector_aa05f4bdb8795cfa6565042177b5567cd}{magnitude} () const
+\begin{DoxyCompactList}\small\item\em Return the magnitude of this vector. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \hyperlink{class_wire_cell_1_1_d3_vector_a9cff9bf6015c3f7742d4fae7aac7c4a5}{norm} () const
+\begin{DoxyCompactList}\small\item\em Return a normalized vector in the direction of this vector. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \hyperlink{class_wire_cell_1_1_d3_vector_a23dc4ec801eb35c96d5843d1beed8bd2}{cross} (const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Return the cross product of this vector and the other. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \hyperlink{class_wire_cell_1_1_d3_vector_ad88cac8d3f57beaddacfc20ecbc76707}{triplevec} (\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \&a, \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \&b) const
+\begin{DoxyCompactList}\small\item\em Return the triple cross product of this vector and the other two. \end{DoxyCompactList}\item 
+T \hyperlink{class_wire_cell_1_1_d3_vector_ac656a3772a15e4a7db4393a9ffe576c1}{triplescal} (\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \&a, \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \&b) const
+\begin{DoxyCompactList}\small\item\em Return the dot-\/cross product of this vector and the other two. \end{DoxyCompactList}\item 
+bool \hyperlink{class_wire_cell_1_1_d3_vector_aa891af0e402dcbcbe178fe1b6bc5ed44}{operator$<$} (const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \&rhs) const
+\item 
+\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \& \hyperlink{class_wire_cell_1_1_d3_vector_a8a235eba65334ae4a2ff5e22bc58b815}{operator+=} (const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \&other)
+\item 
+bool \hyperlink{class_wire_cell_1_1_d3_vector_a1800f3c26224e1e4d35d81752046c3c3}{operator!} () const
+\item 
+\hyperlink{class_wire_cell_1_1_d3_vector_ac7393e217cc1d10e385b27fd40e70e0b}{operator bool} () const
+\item 
+void \hyperlink{class_wire_cell_1_1_d3_vector_a19020cb989bd6b3b8d8948db885f5811}{invalidate} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class U $>$ }\\std\+::ostream \& \hyperlink{class_wire_cell_1_1_d3_vector_af5d9b1d051306777ae5d07608467d1a0}{operator$<$$<$} (std\+::ostream \&, const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ U $>$ \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Wire\+Cell\+::\+D3\+Vector$<$ T $>$}
+
+Dimension-\/3 vector class.
+
+Adapted in laziness from\+: \href{http://rosettacode.org/wiki/Vector_products#C.2B.2B}{\tt http\+://rosettacode.\+org/wiki/\+Vector\+\_\+products\#\+C.\+2\+B.\+2B} 
+
+Definition at line 23 of file D3\+Vector.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a0bb7ef1f53b89ca0c137d8ccb3b246af}\label{class_wire_cell_1_1_d3_vector_a0bb7ef1f53b89ca0c137d8ccb3b246af}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!D3\+Vector@{D3\+Vector}}
+\index{D3\+Vector@{D3\+Vector}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{D3\+Vector()}{D3Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} (\begin{DoxyParamCaption}\item[{const T \&}]{a = {\ttfamily 0},  }\item[{const T \&}]{b = {\ttfamily 0},  }\item[{const T \&}]{c = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct from elements. 
+
+
+
+Definition at line 35 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a192b9c89af9820765b1f730f63686e98}\label{class_wire_cell_1_1_d3_vector_a192b9c89af9820765b1f730f63686e98}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!D3\+Vector@{D3\+Vector}}
+\index{D3\+Vector@{D3\+Vector}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{D3\+Vector()}{D3Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ T $>$ \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 38 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_ac923609cfdaf817081acd82d0cd7474c}\label{class_wire_cell_1_1_d3_vector_ac923609cfdaf817081acd82d0cd7474c}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!D3\+Vector@{D3\+Vector}}
+\index{D3\+Vector@{D3\+Vector}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{D3\+Vector()}{D3Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} (\begin{DoxyParamCaption}\item[{const T}]{d\mbox{[}3\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_ad414a22a14615b94d30980ee34f1cfd9}\label{class_wire_cell_1_1_d3_vector_ad414a22a14615b94d30980ee34f1cfd9}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!D3\+Vector@{D3\+Vector}}
+\index{D3\+Vector@{D3\+Vector}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{D3\+Vector()}{D3Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+template$<$class TT $>$ \\
+\hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ TT $>$ \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Convert from other typed vector. 
+
+
+
+Definition at line 62 of file D3\+Vector.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a23dc4ec801eb35c96d5843d1beed8bd2}\label{class_wire_cell_1_1_d3_vector_a23dc4ec801eb35c96d5843d1beed8bd2}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!cross@{cross}}
+\index{cross@{cross}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{cross()}{cross()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::cross (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the cross product of this vector and the other. 
+
+
+
+Definition at line 100 of file D3\+Vector.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_d3_vector_a23dc4ec801eb35c96d5843d1beed8bd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_ad116deec8357b27dcad6be127c209490}\label{class_wire_cell_1_1_d3_vector_ad116deec8357b27dcad6be127c209490}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!dot@{dot}}
+\index{dot@{dot}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{dot()}{dot()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::dot (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the dot product of this vector and the other. 
+
+
+
+Definition at line 80 of file D3\+Vector.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_d3_vector_ad116deec8357b27dcad6be127c209490_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a19020cb989bd6b3b8d8948db885f5811}\label{class_wire_cell_1_1_d3_vector_a19020cb989bd6b3b8d8948db885f5811}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!invalidate@{invalidate}}
+\index{invalidate@{invalidate}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{invalidate()}{invalidate()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::invalidate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 136 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_aa05f4bdb8795cfa6565042177b5567cd}\label{class_wire_cell_1_1_d3_vector_aa05f4bdb8795cfa6565042177b5567cd}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{magnitude()}{magnitude()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::magnitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the magnitude of this vector. 
+
+
+
+Definition at line 86 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a9cff9bf6015c3f7742d4fae7aac7c4a5}\label{class_wire_cell_1_1_d3_vector_a9cff9bf6015c3f7742d4fae7aac7c4a5}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!norm@{norm}}
+\index{norm@{norm}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{norm()}{norm()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::norm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a normalized vector in the direction of this vector. 
+
+
+
+Definition at line 91 of file D3\+Vector.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_d3_vector_a9cff9bf6015c3f7742d4fae7aac7c4a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_ac7393e217cc1d10e385b27fd40e70e0b}\label{class_wire_cell_1_1_d3_vector_ac7393e217cc1d10e385b27fd40e70e0b}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 132 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a1800f3c26224e1e4d35d81752046c3c3}\label{class_wire_cell_1_1_d3_vector_a1800f3c26224e1e4d35d81752046c3c3}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{operator"!()}{operator!()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::operator! (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 129 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a8a235eba65334ae4a2ff5e22bc58b815}\label{class_wire_cell_1_1_d3_vector_a8a235eba65334ae4a2ff5e22bc58b815}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}\& \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 124 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_aa891af0e402dcbcbe178fe1b6bc5ed44}\label{class_wire_cell_1_1_d3_vector_aa891af0e402dcbcbe178fe1b6bc5ed44}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 117 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a912036ea6a79006cb0124f8347ae8f7e}\label{class_wire_cell_1_1_d3_vector_a912036ea6a79006cb0124f8347ae8f7e}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}\& \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ T $>$ \&}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_ac5cfef3dd3a6886c86ad58f020bb2ab4}\label{class_wire_cell_1_1_d3_vector_ac5cfef3dd3a6886c86ad58f020bb2ab4}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access elements by copy. 
+
+
+
+Definition at line 70 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a7e5f8ace33d45da46becde8152e652ac}\label{class_wire_cell_1_1_d3_vector_a7e5f8ace33d45da46becde8152e652ac}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T\& \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access elements by reference. 
+
+
+
+Definition at line 75 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_ada1f1aed4e0f6d2bc893c4290bcfa78a}\label{class_wire_cell_1_1_d3_vector_ada1f1aed4e0f6d2bc893c4290bcfa78a}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!set@{set}}
+\index{set@{set}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::set (\begin{DoxyParamCaption}\item[{const T \&}]{a = {\ttfamily 0},  }\item[{const T \&}]{b = {\ttfamily 0},  }\item[{const T \&}]{c = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set vector from elements;. 
+
+
+
+Definition at line 49 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_ac656a3772a15e4a7db4393a9ffe576c1}\label{class_wire_cell_1_1_d3_vector_ac656a3772a15e4a7db4393a9ffe576c1}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!triplescal@{triplescal}}
+\index{triplescal@{triplescal}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{triplescal()}{triplescal()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::triplescal (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ T $>$ \&}]{a,  }\item[{\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ T $>$ \&}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the dot-\/cross product of this vector and the other two. 
+
+
+
+Definition at line 113 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_ad88cac8d3f57beaddacfc20ecbc76707}\label{class_wire_cell_1_1_d3_vector_ad88cac8d3f57beaddacfc20ecbc76707}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!triplevec@{triplevec}}
+\index{triplevec@{triplevec}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{triplevec()}{triplevec()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector} \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::triplevec (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ T $>$ \&}]{a,  }\item[{\hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ T $>$ \&}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the triple cross product of this vector and the other two. 
+
+
+
+Definition at line 109 of file D3\+Vector.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a9897c0952e82c2e7c285a4f064c00c80}\label{class_wire_cell_1_1_d3_vector_a9897c0952e82c2e7c285a4f064c00c80}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!x@{x}}
+\index{x@{x}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{x()}{x()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::x (\begin{DoxyParamCaption}\item[{const T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 55 of file D3\+Vector.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_d3_vector_a9897c0952e82c2e7c285a4f064c00c80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a65c5efb75f44d8bb1b7979151f442c09}\label{class_wire_cell_1_1_d3_vector_a65c5efb75f44d8bb1b7979151f442c09}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!x@{x}}
+\index{x@{x}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{x()}{x()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access elements by name. 
+
+
+
+Definition at line 65 of file D3\+Vector.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_wire_cell_1_1_d3_vector_a65c5efb75f44d8bb1b7979151f442c09_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_aa163ee62b7a8643fa374b2c4d3e3b386}\label{class_wire_cell_1_1_d3_vector_aa163ee62b7a8643fa374b2c4d3e3b386}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!y@{y}}
+\index{y@{y}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{y()}{y()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::y (\begin{DoxyParamCaption}\item[{const T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file D3\+Vector.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_d3_vector_aa163ee62b7a8643fa374b2c4d3e3b386_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_ad570e3dbb22e60a480ced87c278f4466}\label{class_wire_cell_1_1_d3_vector_ad570e3dbb22e60a480ced87c278f4466}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!y@{y}}
+\index{y@{y}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{y()}{y()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file D3\+Vector.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_wire_cell_1_1_d3_vector_ad570e3dbb22e60a480ced87c278f4466_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_aabb1a5422a461697542a6755f30b575e}\label{class_wire_cell_1_1_d3_vector_aabb1a5422a461697542a6755f30b575e}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!z@{z}}
+\index{z@{z}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{z()}{z()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::z (\begin{DoxyParamCaption}\item[{const T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file D3\+Vector.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_d3_vector_aabb1a5422a461697542a6755f30b575e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_a75a340da006d17ee06a8c097fa09c25f}\label{class_wire_cell_1_1_d3_vector_a75a340da006d17ee06a8c097fa09c25f}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!z@{z}}
+\index{z@{z}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{z()}{z()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{class_wire_cell_1_1_d3_vector}{Wire\+Cell\+::\+D3\+Vector}$<$ T $>$\+::z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 67 of file D3\+Vector.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_wire_cell_1_1_d3_vector_a75a340da006d17ee06a8c097fa09c25f_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_d3_vector_af5d9b1d051306777ae5d07608467d1a0}\label{class_wire_cell_1_1_d3_vector_af5d9b1d051306777ae5d07608467d1a0}} 
+\index{Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Wire\+Cell\+::\+D3\+Vector@{Wire\+Cell\+::\+D3\+Vector}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+template$<$class U $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{,  }\item[{const \hyperlink{class_wire_cell_1_1_d3_vector}{D3\+Vector}$<$ U $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_d3_vector_8h}{D3\+Vector.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,277 @@
+\hypertarget{class_wire_cell_1_1_diffusion}{}\section{Wire\+Cell\+:\+:Diffusion Class Reference}
+\label{class_wire_cell_1_1_diffusion}\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+
+
+{\ttfamily \#include $<$Diffusion.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Diffusion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_wire_cell_1_1_diffusion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Diffusion\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_wire_cell_1_1_diffusion__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_diffusion_a5cec68960d93a5a1293b1c3539035cca}{Diffusion} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \hyperlink{class_wire_cell_1_1_diffusion_a6d2cefc927cf2ae6c85587a7f579c01d}{depo}, int nlong, int ntrans, double lmin, double tmin, double lmax, double tmax)
+\item 
+\hyperlink{class_wire_cell_1_1_diffusion_a3665efc0e63c028a68813b8feb87dfb2}{Diffusion} (const \hyperlink{class_wire_cell_1_1_diffusion}{Diffusion} \&other)
+\item 
+\hyperlink{class_wire_cell_1_1_diffusion}{Diffusion} \& \hyperlink{class_wire_cell_1_1_diffusion_a245502cf5fcf7e278504f55263668a13}{operator=} (const \hyperlink{class_wire_cell_1_1_diffusion}{Diffusion} \&other)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_diffusion_a70bb6c0517b78c64ef52677863858a79}{$\sim$\+Diffusion} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \hyperlink{class_wire_cell_1_1_diffusion_a6d2cefc927cf2ae6c85587a7f579c01d}{depo} () const
+\begin{DoxyCompactList}\small\item\em Return the deposition that led to this diffusion. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_diffusion_aa590710356f717e695ebd9d49e3ef207}{lsize} () const
+\begin{DoxyCompactList}\small\item\em Helper method to give the array size in longitudinal dimension. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_diffusion_a0833d46be2aba6c268fef7dbd7fc2245}{tsize} () const
+\begin{DoxyCompactList}\small\item\em Helper method to give the array size in transverse dimension. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_diffusion_a765cac5acd074254aef9782b37292c1a}{get} (int lind, int tind) const
+\begin{DoxyCompactList}\small\item\em Get value at bin. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_diffusion_a18df718cd15d36f105c5eb2f4039b320}{set} (int lind, int tind, double value)
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_diffusion_a406a933c156b668dc25555e4aa851567}{lpos} (int ind, double offset=0.\+0) const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_diffusion_a86e78fa0c302bbbd2e1329b3f0294454}{tpos} (int ind, double offset=0.\+0) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file Diffusion.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_a5cec68960d93a5a1293b1c3539035cca}\label{class_wire_cell_1_1_diffusion_a5cec68960d93a5a1293b1c3539035cca}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!Diffusion@{Diffusion}}
+\index{Diffusion@{Diffusion}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{Diffusion()}{Diffusion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Diffusion\+::\+Diffusion (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer}}]{depo,  }\item[{int}]{nlong,  }\item[{int}]{ntrans,  }\item[{double}]{lmin,  }\item[{double}]{tmin,  }\item[{double}]{lmax,  }\item[{double}]{tmax }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file Diffusion.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_diffusion_a5cec68960d93a5a1293b1c3539035cca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_a3665efc0e63c028a68813b8feb87dfb2}\label{class_wire_cell_1_1_diffusion_a3665efc0e63c028a68813b8feb87dfb2}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!Diffusion@{Diffusion}}
+\index{Diffusion@{Diffusion}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{Diffusion()}{Diffusion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Diffusion\+::\+Diffusion (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_diffusion}{Diffusion} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 14 of file Diffusion.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_a70bb6c0517b78c64ef52677863858a79}\label{class_wire_cell_1_1_diffusion_a70bb6c0517b78c64ef52677863858a79}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!````~Diffusion@{$\sim$\+Diffusion}}
+\index{````~Diffusion@{$\sim$\+Diffusion}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{$\sim$\+Diffusion()}{~Diffusion()}}
+{\footnotesize\ttfamily Diffusion\+::$\sim$\+Diffusion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 35 of file Diffusion.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_a6d2cefc927cf2ae6c85587a7f579c01d}\label{class_wire_cell_1_1_diffusion_a6d2cefc927cf2ae6c85587a7f579c01d}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!depo@{depo}}
+\index{depo@{depo}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{depo()}{depo()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} Diffusion\+::depo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the deposition that led to this diffusion. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_diffusion_a657118deda45efadd86ec286ee9242a7}{Wire\+Cell\+::\+I\+Diffusion}.
+
+
+
+Definition at line 39 of file Diffusion.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_a765cac5acd074254aef9782b37292c1a}\label{class_wire_cell_1_1_diffusion_a765cac5acd074254aef9782b37292c1a}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!get@{get}}
+\index{get@{get}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily double Diffusion\+::get (\begin{DoxyParamCaption}\item[{int}]{lind,  }\item[{int}]{tind }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get value at bin. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_diffusion_ae37342e7b048d186c14fe86e81d706c5}{Wire\+Cell\+::\+I\+Diffusion}.
+
+
+
+Definition at line 52 of file Diffusion.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_a406a933c156b668dc25555e4aa851567}\label{class_wire_cell_1_1_diffusion_a406a933c156b668dc25555e4aa851567}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!lpos@{lpos}}
+\index{lpos@{lpos}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{lpos()}{lpos()}}
+{\footnotesize\ttfamily double Diffusion\+::lpos (\begin{DoxyParamCaption}\item[{int}]{ind,  }\item[{double}]{offset = {\ttfamily 0.0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_diffusion_a6e85228ca6d4b6848bb8f80a1018a2aa}{Wire\+Cell\+::\+I\+Diffusion}.
+
+
+
+Definition at line 62 of file Diffusion.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_diffusion_a406a933c156b668dc25555e4aa851567_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_aa590710356f717e695ebd9d49e3ef207}\label{class_wire_cell_1_1_diffusion_aa590710356f717e695ebd9d49e3ef207}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!lsize@{lsize}}
+\index{lsize@{lsize}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{lsize()}{lsize()}}
+{\footnotesize\ttfamily int Diffusion\+::lsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Helper method to give the array size in longitudinal dimension. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_diffusion_a877d15af9f833bc95a7943a0251289af}{Wire\+Cell\+::\+I\+Diffusion}.
+
+
+
+Definition at line 43 of file Diffusion.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_wire_cell_1_1_diffusion_aa590710356f717e695ebd9d49e3ef207_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_a245502cf5fcf7e278504f55263668a13}\label{class_wire_cell_1_1_diffusion_a245502cf5fcf7e278504f55263668a13}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!operator=@{operator=}}
+\index{operator=@{operator=}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_diffusion}{Diffusion} \& Diffusion\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_diffusion}{Diffusion} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Diffusion.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_wire_cell_1_1_diffusion_a245502cf5fcf7e278504f55263668a13_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_a18df718cd15d36f105c5eb2f4039b320}\label{class_wire_cell_1_1_diffusion_a18df718cd15d36f105c5eb2f4039b320}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!set@{set}}
+\index{set@{set}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily double Diffusion\+::set (\begin{DoxyParamCaption}\item[{int}]{lind,  }\item[{int}]{tind,  }\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 56 of file Diffusion.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_diffusion_a18df718cd15d36f105c5eb2f4039b320_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_a86e78fa0c302bbbd2e1329b3f0294454}\label{class_wire_cell_1_1_diffusion_a86e78fa0c302bbbd2e1329b3f0294454}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!tpos@{tpos}}
+\index{tpos@{tpos}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{tpos()}{tpos()}}
+{\footnotesize\ttfamily double Diffusion\+::tpos (\begin{DoxyParamCaption}\item[{int}]{ind,  }\item[{double}]{offset = {\ttfamily 0.0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_diffusion_a0f9fd1a277828333fa08f77fd9a6315d}{Wire\+Cell\+::\+I\+Diffusion}.
+
+
+
+Definition at line 67 of file Diffusion.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_diffusion_a86e78fa0c302bbbd2e1329b3f0294454_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_diffusion_a0833d46be2aba6c268fef7dbd7fc2245}\label{class_wire_cell_1_1_diffusion_a0833d46be2aba6c268fef7dbd7fc2245}} 
+\index{Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}!tsize@{tsize}}
+\index{tsize@{tsize}!Wire\+Cell\+::\+Diffusion@{Wire\+Cell\+::\+Diffusion}}
+\subsubsection{\texorpdfstring{tsize()}{tsize()}}
+{\footnotesize\ttfamily int Diffusion\+::tsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Helper method to give the array size in transverse dimension. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_diffusion_affce6824ad0e746270f0b6b27177584e}{Wire\+Cell\+::\+I\+Diffusion}.
+
+
+
+Definition at line 47 of file Diffusion.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_wire_cell_1_1_diffusion_a0833d46be2aba6c268fef7dbd7fc2245_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_diffusion_8h}{Diffusion.\+h}\item 
+gen/src/\hyperlink{_diffusion_8cxx}{Diffusion.\+cxx}\end{DoxyCompactItemize}

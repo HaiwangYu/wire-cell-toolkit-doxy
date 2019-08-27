@@ -1,0 +1,9 @@
+<map id="gen/inc/WireCellGen/BinnedDiffusion.h" name="gen/inc/WireCellGen/BinnedDiffusion.h">
+<area shape="rect" id="node2" href="$_impact_zipper_8h.html" title="gen/inc/WireCellGen\l/ImpactZipper.h" alt="" coords="296,95,439,136"/>
+<area shape="rect" id="node3" href="$_depo_zipper_8cxx.html" title="gen/src/DepoZipper.cxx" alt="" coords="5,184,167,211"/>
+<area shape="rect" id="node4" href="$_ductor_8cxx.html" title="gen/src/Ductor.cxx" alt="" coords="191,184,325,211"/>
+<area shape="rect" id="node6" href="$_truth_smearer_8cxx.html" title="gen/src/TruthSmearer.cxx" alt="" coords="543,184,717,211"/>
+<area shape="rect" id="node7" href="$_binned_diffusion_8cxx.html" title="gen/src/BinnedDiffusion.cxx" alt="" coords="514,102,701,129"/>
+<area shape="rect" id="node8" href="$_truth_trace_i_d_8cxx.html" title="gen/src/TruthTraceID.cxx" alt="" coords="725,102,895,129"/>
+<area shape="rect" id="node5" href="$_impact_zipper_8cxx.html" title="gen/src/ImpactZipper.cxx" alt="" coords="349,184,519,211"/>
+</map>

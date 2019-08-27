@@ -1,0 +1,5 @@
+<map id="WireCell::SigProc::ROI_formation::find_ROI_by_decon_itself" name="WireCell::SigProc::ROI_formation::find_ROI_by_decon_itself">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#a3d677e7421cc9da9a878d9e5528c9b2a" title="WireCell::SigProc::\lROI_formation::extend\l_ROI_self" alt="" coords="204,5,359,61"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#a9d634c399cbd39c902a0f84b25ae192f" title="WireCell::SigProc::\lROI_formation::create\l_ROI_connect_info" alt="" coords="206,85,357,141"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_waveform.html#a9116b8ebe848721a04d5100fa672b0aa" title="WireCell::Waveform\l::percentile" alt="" coords="407,93,547,134"/>
+</map>

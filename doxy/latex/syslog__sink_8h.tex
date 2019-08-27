@@ -1,0 +1,41 @@
+\hypertarget{syslog__sink_8h}{}\section{util/inc/spdlog/sinks/syslog\+\_\+sink.h File Reference}
+\label{syslog__sink_8h}\index{util/inc/spdlog/sinks/syslog\+\_\+sink.\+h@{util/inc/spdlog/sinks/syslog\+\_\+sink.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/spdlog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/sinks/base\+\_\+sink.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$syslog.\+h$>$}\newline
+Include dependency graph for syslog\+\_\+sink.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{syslog__sink_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{spdlog\+::sinks\+::syslog\+\_\+sink$<$ Mutex $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1sinks}{spdlog\+::sinks}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_a6674644a4ab8a7579e45bd79dc107a70}{spdlog\+::sinks\+::syslog\+\_\+sink\+\_\+mt} = syslog\+\_\+sink$<$ std\+::mutex $>$
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_a83f4d6616a2fbf3473a6a979647b5139}{spdlog\+::sinks\+::syslog\+\_\+sink\+\_\+st} = syslog\+\_\+sink$<$ details\+::null\+\_\+mutex $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_a49974c7465d12f994929f70c0caeeb7c}{spdlog\+::syslog\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name, const std\+::string \&syslog\+\_\+ident=\char`\"{}\char`\"{}, int syslog\+\_\+option=0, int syslog\+\_\+facility=(1$<$$<$ 3))
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_a2b5f25193cf4478d74cf9402a120c902}{spdlog\+::syslog\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name, const std\+::string \&syslog\+\_\+ident=\char`\"{}\char`\"{}, int syslog\+\_\+option=0, int syslog\+\_\+facility=(1$<$$<$ 3))
+\end{DoxyCompactItemize}

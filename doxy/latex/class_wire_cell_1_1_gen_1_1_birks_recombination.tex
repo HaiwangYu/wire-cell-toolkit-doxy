@@ -1,0 +1,129 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_birks_recombination}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Birks\+Recombination Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_birks_recombination}\index{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}}
+
+
+{\ttfamily \#include $<$Recombination\+Models.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Birks\+Recombination\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_wire_cell_1_1_gen_1_1_birks_recombination__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Birks\+Recombination\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_wire_cell_1_1_gen_1_1_birks_recombination__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_birks_recombination_aaad400ee5bb895a736dee173399e2f8c}{Birks\+Recombination} (double Efield=500 $\ast$units\+::volt/units\+::cm, double A3t=0.\+8, double k3t=0.\+0486 $\ast$units\+::gram/(units\+::\+MeV $\ast$units\+::cm2) $\ast$(units\+::kilovolt/units\+::cm), double rho=1.\+396 $\ast$units\+::gram/units\+::cm3, double Wi=23.\+6 $\ast$units\+::eV/(-\/1 $\ast$units\+::eplus))
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_birks_recombination_afb37f869c00a48b9f4497baad049b687}{$\sim$\+Birks\+Recombination} ()
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_gen_1_1_birks_recombination_afc95474baf06138cf5d52245137a5fd8}{operator()} (double dE, double dX=0.\+0)
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_birks_recombination_ad31fca3728b8815405db0f1ddb7d25ac}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_birks_recombination_a8b05816264eceae54a5d56a9bee504ea}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Birks model, R = a/(1+b$\ast$d\+E/dX), dQ = (R/\+Wi)$\ast$dE a = A3t, b=k3t/(Efield$\ast$rho) as defined in\+: \href{http://lar.bnl.gov/properties/pass.html#recombination}{\tt http\+://lar.\+bnl.\+gov/properties/pass.\+html\#recombination} 
+
+Definition at line 28 of file Recombination\+Models.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_birks_recombination_aaad400ee5bb895a736dee173399e2f8c}\label{class_wire_cell_1_1_gen_1_1_birks_recombination_aaad400ee5bb895a736dee173399e2f8c}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}!Birks\+Recombination@{Birks\+Recombination}}
+\index{Birks\+Recombination@{Birks\+Recombination}!Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}}
+\subsubsection{\texorpdfstring{Birks\+Recombination()}{BirksRecombination()}}
+{\footnotesize\ttfamily Gen\+::\+Birks\+Recombination\+::\+Birks\+Recombination (\begin{DoxyParamCaption}\item[{double}]{Efield = {\ttfamily 500$\ast$units\+:\+:volt/units\+:\+:cm},  }\item[{double}]{A3t = {\ttfamily 0.8},  }\item[{double}]{k3t = {\ttfamily 0.0486$\ast$units\+:\+:gram/(units\+:\+:MeV$\ast$units\+:\+:cm2)$\ast$(units\+:\+:kilovolt/units\+:\+:cm)},  }\item[{double}]{rho = {\ttfamily 1.396$\ast$units\+:\+:gram/units\+:\+:cm3},  }\item[{double}]{Wi = {\ttfamily 23.6$\ast$units\+:\+:eV/(-\/1$\ast$units\+:\+:eplus)} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 50 of file Recombination\+Models.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_birks_recombination_afb37f869c00a48b9f4497baad049b687}\label{class_wire_cell_1_1_gen_1_1_birks_recombination_afb37f869c00a48b9f4497baad049b687}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}!````~Birks\+Recombination@{$\sim$\+Birks\+Recombination}}
+\index{````~Birks\+Recombination@{$\sim$\+Birks\+Recombination}!Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}}
+\subsubsection{\texorpdfstring{$\sim$\+Birks\+Recombination()}{~BirksRecombination()}}
+{\footnotesize\ttfamily Gen\+::\+Birks\+Recombination\+::$\sim$\+Birks\+Recombination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 54 of file Recombination\+Models.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_birks_recombination_ad31fca3728b8815405db0f1ddb7d25ac}\label{class_wire_cell_1_1_gen_1_1_birks_recombination_ad31fca3728b8815405db0f1ddb7d25ac}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Birks\+Recombination\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 62 of file Recombination\+Models.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_birks_recombination_a8b05816264eceae54a5d56a9bee504ea}\label{class_wire_cell_1_1_gen_1_1_birks_recombination_a8b05816264eceae54a5d56a9bee504ea}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Birks\+Recombination\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 70 of file Recombination\+Models.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_birks_recombination_afc95474baf06138cf5d52245137a5fd8}\label{class_wire_cell_1_1_gen_1_1_birks_recombination_afc95474baf06138cf5d52245137a5fd8}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination@{Wire\+Cell\+::\+Gen\+::\+Birks\+Recombination}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily double Gen\+::\+Birks\+Recombination\+::operator() (\begin{DoxyParamCaption}\item[{double}]{dE,  }\item[{double}]{dX = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_recombination_model_a600558009b672e93219962f364829e00}{Wire\+Cell\+::\+I\+Recombination\+Model}.
+
+
+
+Definition at line 57 of file Recombination\+Models.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_recombination_models_8h}{Recombination\+Models.\+h}\item 
+gen/src/\hyperlink{_recombination_models_8cxx}{Recombination\+Models.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,127 @@
+\hypertarget{class_wire_cell_1_1_addresser}{}\section{Wire\+Cell\+:\+:Addresser$<$ Data, Address $>$ Class Template Reference}
+\label{class_wire_cell_1_1_addresser}\index{Wire\+Cell\+::\+Addresser$<$ Data, Address $>$@{Wire\+Cell\+::\+Addresser$<$ Data, Address $>$}}
+
+
+{\ttfamily \#include $<$Faninout.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Data \hyperlink{class_wire_cell_1_1_addresser_a125c54e88bc3ed2233b1730e0a19d82b}{value\+\_\+type}
+\item 
+typedef Address \hyperlink{class_wire_cell_1_1_addresser_af284800d5e9ccf8b92d3456888969e75}{address\+\_\+type}
+\item 
+typedef boost\+::signals2\+::signal$<$ \hyperlink{class_wire_cell_1_1_addresser_a125c54e88bc3ed2233b1730e0a19d82b}{value\+\_\+type}(const \hyperlink{class_wire_cell_1_1_addresser_af284800d5e9ccf8b92d3456888969e75}{address\+\_\+type} \&addr)$>$ \hyperlink{class_wire_cell_1_1_addresser_aa72cf5fb36dc246686aabfecdb621ea3}{signal}
+\item 
+typedef signal\+::slot\+\_\+type \hyperlink{class_wire_cell_1_1_addresser_a3c52496ae06c731123d9d7d8ba426ac3}{slot}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_addresser_a868e4dbaf25c16637e4d953be219a56f}{Addresser} (const \hyperlink{class_wire_cell_1_1_addresser_af284800d5e9ccf8b92d3456888969e75}{address\+\_\+type} \&addr)
+\item 
+void \hyperlink{class_wire_cell_1_1_addresser_ad391fb735381e4f23b37e45d9c18699c}{connect} (const \hyperlink{class_wire_cell_1_1_addresser_a3c52496ae06c731123d9d7d8ba426ac3}{slot} \&s)
+\item 
+\hyperlink{class_wire_cell_1_1_addresser_a125c54e88bc3ed2233b1730e0a19d82b}{value\+\_\+type} \hyperlink{class_wire_cell_1_1_addresser_a0ca706eb9f4e16fc5ebc8e8930683e3b}{operator()} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Data, typename Address = int$>$\newline
+class Wire\+Cell\+::\+Addresser$<$ Data, Address $>$}
+
+If you have a slot to connect to a \hyperlink{class_wire_cell_1_1_fanout}{Fanout} which doesn\textquotesingle{}t inherently care about the address to which it is attached, use the Addressed\+Shunt as a go-\/between. 
+
+Definition at line 61 of file Faninout.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_addresser_af284800d5e9ccf8b92d3456888969e75}\label{class_wire_cell_1_1_addresser_af284800d5e9ccf8b92d3456888969e75}} 
+\index{Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}!address\+\_\+type@{address\+\_\+type}}
+\index{address\+\_\+type@{address\+\_\+type}!Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}}
+\subsubsection{\texorpdfstring{address\+\_\+type}{address\_type}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+typedef Address \hyperlink{class_wire_cell_1_1_addresser}{Wire\+Cell\+::\+Addresser}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_addresser_af284800d5e9ccf8b92d3456888969e75}{address\+\_\+type}}
+
+
+
+Definition at line 64 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_addresser_aa72cf5fb36dc246686aabfecdb621ea3}\label{class_wire_cell_1_1_addresser_aa72cf5fb36dc246686aabfecdb621ea3}} 
+\index{Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}!signal@{signal}}
+\index{signal@{signal}!Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}}
+\subsubsection{\texorpdfstring{signal}{signal}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+typedef boost\+::signals2\+::signal$<$\hyperlink{class_wire_cell_1_1_addresser_a125c54e88bc3ed2233b1730e0a19d82b}{value\+\_\+type} (const \hyperlink{class_wire_cell_1_1_addresser_af284800d5e9ccf8b92d3456888969e75}{address\+\_\+type}\& addr)$>$ \hyperlink{class_wire_cell_1_1_addresser}{Wire\+Cell\+::\+Addresser}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_addresser_aa72cf5fb36dc246686aabfecdb621ea3}{signal}}
+
+
+
+Definition at line 67 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_addresser_a3c52496ae06c731123d9d7d8ba426ac3}\label{class_wire_cell_1_1_addresser_a3c52496ae06c731123d9d7d8ba426ac3}} 
+\index{Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}!slot@{slot}}
+\index{slot@{slot}!Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}}
+\subsubsection{\texorpdfstring{slot}{slot}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+typedef signal\+::slot\+\_\+type \hyperlink{class_wire_cell_1_1_addresser}{Wire\+Cell\+::\+Addresser}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_addresser_a3c52496ae06c731123d9d7d8ba426ac3}{slot}}
+
+
+
+Definition at line 69 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_addresser_a125c54e88bc3ed2233b1730e0a19d82b}\label{class_wire_cell_1_1_addresser_a125c54e88bc3ed2233b1730e0a19d82b}} 
+\index{Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+typedef Data \hyperlink{class_wire_cell_1_1_addresser}{Wire\+Cell\+::\+Addresser}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_addresser_a125c54e88bc3ed2233b1730e0a19d82b}{value\+\_\+type}}
+
+
+
+Definition at line 63 of file Faninout.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_addresser_a868e4dbaf25c16637e4d953be219a56f}\label{class_wire_cell_1_1_addresser_a868e4dbaf25c16637e4d953be219a56f}} 
+\index{Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}!Addresser@{Addresser}}
+\index{Addresser@{Addresser}!Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}}
+\subsubsection{\texorpdfstring{Addresser()}{Addresser()}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+\hyperlink{class_wire_cell_1_1_addresser}{Wire\+Cell\+::\+Addresser}$<$ Data, Address $>$\+::\hyperlink{class_wire_cell_1_1_addresser}{Addresser} (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_addresser_af284800d5e9ccf8b92d3456888969e75}{address\+\_\+type} \&}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 71 of file Faninout.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_addresser_ad391fb735381e4f23b37e45d9c18699c}\label{class_wire_cell_1_1_addresser_ad391fb735381e4f23b37e45d9c18699c}} 
+\index{Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}!connect@{connect}}
+\index{connect@{connect}!Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+void \hyperlink{class_wire_cell_1_1_addresser}{Wire\+Cell\+::\+Addresser}$<$ Data, Address $>$\+::connect (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_addresser_a3c52496ae06c731123d9d7d8ba426ac3}{slot} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file Faninout.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_addresser_a0ca706eb9f4e16fc5ebc8e8930683e3b}\label{class_wire_cell_1_1_addresser_a0ca706eb9f4e16fc5ebc8e8930683e3b}} 
+\index{Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Addresser@{Wire\+Cell\+::\+Addresser}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Data , typename Address  = int$>$ \\
+\hyperlink{class_wire_cell_1_1_addresser_a125c54e88bc3ed2233b1730e0a19d82b}{value\+\_\+type} \hyperlink{class_wire_cell_1_1_addresser}{Wire\+Cell\+::\+Addresser}$<$ Data, Address $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 77 of file Faninout.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_faninout_8h}{Faninout.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\hypertarget{class_wire_cell_1_1_i_deconvolution}{}\section{Wire\+Cell\+:\+:I\+Deconvolution Class Reference}
+\label{class_wire_cell_1_1_i_deconvolution}\index{Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}}
+
+
+{\ttfamily \#include $<$I\+Deconvolution.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Deconvolution\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_wire_cell_1_1_i_deconvolution__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Deconvolution\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_wire_cell_1_1_i_deconvolution__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \hyperlink{class_wire_cell_1_1_i_deconvolution_a8b4391e337dad4e658a33b1a6ee3dab5}{signal\+\_\+t}
+\item 
+typedef std\+::map$<$ int, \hyperlink{class_wire_cell_1_1_i_deconvolution_a8b4391e337dad4e658a33b1a6ee3dab5}{signal\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_i_deconvolution_a02ef33d767e273c9fbb9a1b27dc84f77}{channel\+\_\+signals\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_deconvolution_a9efd63e0381091260709ac8bc191b15d}{$\sim$\+I\+Deconvolution} ()
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_i_deconvolution_af13ec8cf283e1c21da9530329060565f}{apply} (int channel, \hyperlink{class_wire_cell_1_1_i_deconvolution_a8b4391e337dad4e658a33b1a6ee3dab5}{signal\+\_\+t} \&sig) const =0
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_i_deconvolution_a4c8f7f0aecfa099a75f43d1bc3ec1c7f}{apply} (\hyperlink{class_wire_cell_1_1_i_deconvolution_a02ef33d767e273c9fbb9a1b27dc84f77}{channel\+\_\+signals\+\_\+t} \&chansig) const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A deconvolution applies the inverse of a convolution 
+
+Definition at line 15 of file I\+Deconvolution.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_deconvolution_a02ef33d767e273c9fbb9a1b27dc84f77}\label{class_wire_cell_1_1_i_deconvolution_a02ef33d767e273c9fbb9a1b27dc84f77}} 
+\index{Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}!channel\+\_\+signals\+\_\+t@{channel\+\_\+signals\+\_\+t}}
+\index{channel\+\_\+signals\+\_\+t@{channel\+\_\+signals\+\_\+t}!Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}}
+\subsubsection{\texorpdfstring{channel\+\_\+signals\+\_\+t}{channel\_signals\_t}}
+{\footnotesize\ttfamily typedef std\+::map$<$int, \hyperlink{class_wire_cell_1_1_i_deconvolution_a8b4391e337dad4e658a33b1a6ee3dab5}{signal\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_i_deconvolution_a02ef33d767e273c9fbb9a1b27dc84f77}{Wire\+Cell\+::\+I\+Deconvolution\+::channel\+\_\+signals\+\_\+t}}
+
+
+
+Definition at line 21 of file I\+Deconvolution.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_deconvolution_a8b4391e337dad4e658a33b1a6ee3dab5}\label{class_wire_cell_1_1_i_deconvolution_a8b4391e337dad4e658a33b1a6ee3dab5}} 
+\index{Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}!signal\+\_\+t@{signal\+\_\+t}}
+\index{signal\+\_\+t@{signal\+\_\+t}!Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}}
+\subsubsection{\texorpdfstring{signal\+\_\+t}{signal\_t}}
+{\footnotesize\ttfamily typedef \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \hyperlink{class_wire_cell_1_1_i_deconvolution_a8b4391e337dad4e658a33b1a6ee3dab5}{Wire\+Cell\+::\+I\+Deconvolution\+::signal\+\_\+t}}
+
+
+
+Definition at line 20 of file I\+Deconvolution.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_deconvolution_a9efd63e0381091260709ac8bc191b15d}\label{class_wire_cell_1_1_i_deconvolution_a9efd63e0381091260709ac8bc191b15d}} 
+\index{Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}!````~I\+Deconvolution@{$\sim$\+I\+Deconvolution}}
+\index{````~I\+Deconvolution@{$\sim$\+I\+Deconvolution}!Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Deconvolution()}{~IDeconvolution()}}
+{\footnotesize\ttfamily I\+Deconvolution\+::$\sim$\+I\+Deconvolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 114 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_deconvolution_af13ec8cf283e1c21da9530329060565f}\label{class_wire_cell_1_1_i_deconvolution_af13ec8cf283e1c21da9530329060565f}} 
+\index{Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} Wire\+Cell\+::\+I\+Deconvolution\+::apply (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{\hyperlink{class_wire_cell_1_1_i_deconvolution_a8b4391e337dad4e658a33b1a6ee3dab5}{signal\+\_\+t} \&}]{sig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Filter in place the signal {\ttfamily sig} from given {\ttfamily channel}. Return a channel mask map with any tick-\/level masking that may be applied later. \mbox{\Hypertarget{class_wire_cell_1_1_i_deconvolution_a4c8f7f0aecfa099a75f43d1bc3ec1c7f}\label{class_wire_cell_1_1_i_deconvolution_a4c8f7f0aecfa099a75f43d1bc3ec1c7f}} 
+\index{Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+I\+Deconvolution@{Wire\+Cell\+::\+I\+Deconvolution}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} Wire\+Cell\+::\+I\+Deconvolution\+::apply (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_deconvolution_a02ef33d767e273c9fbb9a1b27dc84f77}{channel\+\_\+signals\+\_\+t} \&}]{chansig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Filter in place a group of signals together. Return a channel mask map with any tick-\/level masking that may be applied later. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_deconvolution_8h}{I\+Deconvolution.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

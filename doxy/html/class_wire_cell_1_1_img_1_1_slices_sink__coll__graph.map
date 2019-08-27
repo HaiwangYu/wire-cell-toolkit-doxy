@@ -1,0 +1,10 @@
+<map id="WireCell::Img::SlicesSink" name="WireCell::Img::SlicesSink">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_slice_frame_sink.html" title="WireCell::ISliceFrameSink" alt="" coords="49,408,225,435"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; ISliceFrame \&gt;" alt="" coords="36,319,177,360"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_sink_node_base.html" title="WireCell::ISinkNodeBase" alt="" coords="5,244,176,271"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="40,169,155,196"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="25,80,175,121"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="121,5,252,32"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="201,80,351,121"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="200,244,357,271"/>
+</map>

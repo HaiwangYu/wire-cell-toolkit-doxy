@@ -1,0 +1,80 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_impact_zipper}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Impact\+Zipper Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_impact_zipper}\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper@{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper}}
+
+
+{\ttfamily \#include $<$Impact\+Zipper.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_impact_zipper_a6bcfa16f6532464dd52cd01f58722594}{Impact\+Zipper} (\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Plane\+Impact\+Response\+::pointer} pir, \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion}{Binned\+Diffusion} \&bd)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_impact_zipper_a1c530ae00e741ecf8966371dbd12d85e}{$\sim$\+Impact\+Zipper} ()
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \hyperlink{class_wire_cell_1_1_gen_1_1_impact_zipper_a542bc19237317cce10742ae097e647ec}{waveform} (int wire) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An \hyperlink{class_wire_cell_1_1_gen_1_1_impact_zipper}{Impact\+Zipper} \char`\"{}zips\char`\"{} up through all the impact positions along a wire plane convolving the response functions and the local drifted charge distribution producing a waveform on each central wire. 
+
+Definition at line 16 of file Impact\+Zipper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_zipper_a6bcfa16f6532464dd52cd01f58722594}\label{class_wire_cell_1_1_gen_1_1_impact_zipper_a6bcfa16f6532464dd52cd01f58722594}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper@{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper}!Impact\+Zipper@{Impact\+Zipper}}
+\index{Impact\+Zipper@{Impact\+Zipper}!Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper@{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper}}
+\subsubsection{\texorpdfstring{Impact\+Zipper()}{ImpactZipper()}}
+{\footnotesize\ttfamily Gen\+::\+Impact\+Zipper\+::\+Impact\+Zipper (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Plane\+Impact\+Response\+::pointer}}]{pir,  }\item[{\hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion}{Binned\+Diffusion} \&}]{bd }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Impact\+Zipper.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_zipper_a1c530ae00e741ecf8966371dbd12d85e}\label{class_wire_cell_1_1_gen_1_1_impact_zipper_a1c530ae00e741ecf8966371dbd12d85e}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper@{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper}!````~Impact\+Zipper@{$\sim$\+Impact\+Zipper}}
+\index{````~Impact\+Zipper@{$\sim$\+Impact\+Zipper}!Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper@{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper}}
+\subsubsection{\texorpdfstring{$\sim$\+Impact\+Zipper()}{~ImpactZipper()}}
+{\footnotesize\ttfamily Gen\+::\+Impact\+Zipper\+::$\sim$\+Impact\+Zipper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 16 of file Impact\+Zipper.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_zipper_a542bc19237317cce10742ae097e647ec}\label{class_wire_cell_1_1_gen_1_1_impact_zipper_a542bc19237317cce10742ae097e647ec}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper@{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper}!waveform@{waveform}}
+\index{waveform@{waveform}!Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper@{Wire\+Cell\+::\+Gen\+::\+Impact\+Zipper}}
+\subsubsection{\texorpdfstring{waveform()}{waveform()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} Gen\+::\+Impact\+Zipper\+::waveform (\begin{DoxyParamCaption}\item[{int}]{wire }\end{DoxyParamCaption}) const}
+
+Return the wire\textquotesingle{}s waveform. If the response functions are just field response (ie, instantaneous current) then the waveforms are expressed as current integrated over each sample bin and thus in units of charge. If the response functions include electronics response then the waveforms are in units of voltage representing the sampling of the output of the F\+EE amplifiers. 
+
+Definition at line 21 of file Impact\+Zipper.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_zipper_a542bc19237317cce10742ae097e647ec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_zipper_a542bc19237317cce10742ae097e647ec_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_impact_zipper_8h}{Impact\+Zipper.\+h}\item 
+gen/src/\hyperlink{_impact_zipper_8cxx}{Impact\+Zipper.\+cxx}\end{DoxyCompactItemize}

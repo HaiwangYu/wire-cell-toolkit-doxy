@@ -1,0 +1,7 @@
+<map id="spdlog::details::os::utc_minutes_offset" name="spdlog::details::os::utc_minutes_offset">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1os.html#aef63b92ee93ec66603c0357d0ac75bed" title="spdlog::details::os\l::localtime" alt="" coords="195,5,323,47"/>
+<area shape="rect" id="node4" href="$namespacespdlog_1_1details_1_1os.html#ac993ad051e07cd5bda5328be2a54b0a8" title="spdlog::details::os\l::gmtime" alt="" coords="195,71,323,112"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a990db8ce6eb1702f344b5993587f37af" title="internal::localtime_s" alt="" coords="371,13,509,39"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a4df52163db0eff7ab6b17cb243a224b7" title="internal::gmtime_s" alt="" coords="375,70,505,97"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#a6a29b192fce543ff8c18fe7bedf3e321" title="internal::gmtime_r" alt="" coords="377,121,503,147"/>
+</map>

@@ -1,0 +1,104 @@
+\hypertarget{ranges_8h}{}\section{util/inc/spdlog/fmt/bundled/ranges.h File Reference}
+\label{ranges_8h}\index{util/inc/spdlog/fmt/bundled/ranges.\+h@{util/inc/spdlog/fmt/bundled/ranges.\+h}}
+{\ttfamily \#include \char`\"{}format.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+Include dependency graph for ranges.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ranges_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structformatting__base}{formatting\+\_\+base$<$ Char $>$}
+\item 
+struct \hyperlink{structformatting__range}{formatting\+\_\+range$<$ Char, Enable $>$}
+\item 
+struct \hyperlink{structformatting__tuple}{formatting\+\_\+tuple$<$ Char, Enable $>$}
+\item 
+class \hyperlink{classinternal_1_1is__like__std__string}{internal\+::is\+\_\+like\+\_\+std\+\_\+string$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Return true value if T has std\+::string interface, like std\+::string\+\_\+view. \end{DoxyCompactList}\item 
+struct \hyperlink{structinternal_1_1is__like__std__string_3_01fmt_1_1basic__string__view_3_01_char_01_4_01_4}{internal\+::is\+\_\+like\+\_\+std\+\_\+string$<$ fmt\+::basic\+\_\+string\+\_\+view$<$ Char $>$ $>$}
+\item 
+struct \hyperlink{structinternal_1_1conditional__helper}{internal\+::conditional\+\_\+helper$<$ Ts $>$}
+\item 
+struct \hyperlink{structinternal_1_1is__range__}{internal\+::is\+\_\+range\+\_\+$<$ T, \+\_\+ $>$}
+\item 
+struct \hyperlink{structinternal_1_1is__range___3_01_t_00_01typename_01std_1_1conditional_3_01false_00_01condition3cb3b849b8281fb701deab896849f46a}{internal\+::is\+\_\+range\+\_\+$<$ T, typename std\+::conditional$<$ false, conditional\+\_\+helper$<$ decltype(internal\+::declval$<$ T $>$().\+begin()), decltype(internal\+::declval$<$ T $>$().\+end())$>$, void $>$\+::type $>$}
+\item 
+class \hyperlink{classinternal_1_1is__tuple__like__}{internal\+::is\+\_\+tuple\+\_\+like\+\_\+$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em tuple\+\_\+size and tuple\+\_\+element check. \end{DoxyCompactList}\item 
+struct \hyperlink{structinternal_1_1integer__sequence}{internal\+::integer\+\_\+sequence$<$ T, N $>$}
+\item 
+struct \hyperlink{structinternal_1_1make__integer__sequence}{internal\+::make\+\_\+integer\+\_\+sequence$<$ T, N, Ns $>$}
+\item 
+struct \hyperlink{structinternal_1_1make__integer__sequence_3_01_t_00_010_00_01_ns_8_8_8_01_4}{internal\+::make\+\_\+integer\+\_\+sequence$<$ T, 0, Ns... $>$}
+\item 
+struct \hyperlink{structis__tuple__like}{is\+\_\+tuple\+\_\+like$<$ T $>$}
+\item 
+struct \hyperlink{structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d}{formatter$<$ Tuple\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+tuple\+\_\+like$<$ Tuple\+T $>$\+::value $>$\+::type $>$}
+\item 
+struct \hyperlink{structis__range}{is\+\_\+range$<$ T $>$}
+\item 
+struct \hyperlink{structformatter_3_01_range_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__range_338ef07b6d6c7537efaa2c888f2ea4c8d}{formatter$<$ Range\+T, Char, typename std\+::enable\+\_\+if$<$ fmt\+::is\+\_\+range$<$ Range\+T $>$\+::value $>$\+::type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceinternal}{internal}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ranges_8h_ad1c3ab4ad2c95d3f313323dbef5585df}{F\+M\+T\+\_\+\+R\+A\+N\+G\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+L\+I\+M\+IT}~256
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t... N$>$ }\\using \hyperlink{namespaceinternal_a934b7952794e1164012436fcd82abb6b}{internal\+::index\+\_\+sequence} = integer\+\_\+sequence$<$ std\+::size\+\_\+t, N... $>$
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t N$>$ }\\using \hyperlink{namespaceinternal_ac3a4f2187fce6a6dfd5576bd311c9876}{internal\+::make\+\_\+index\+\_\+sequence} = make\+\_\+integer\+\_\+sequence$<$ std\+::size\+\_\+t, N $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename RangeT , typename Output\+Iterator $>$ }\\void \hyperlink{namespaceinternal_a03b2086b2426ff3ecfce2d6fd22b66dc}{internal\+::copy} (const RangeT \&range, Output\+Iterator out)
+\item 
+{\footnotesize template$<$typename Output\+Iterator $>$ }\\void \hyperlink{namespaceinternal_ae7d6dd5299686c1c18bb12d34b574362}{internal\+::copy} (const char $\ast$str, Output\+Iterator out)
+\item 
+{\footnotesize template$<$typename Output\+Iterator $>$ }\\void \hyperlink{namespaceinternal_a3d05e3346c821a5dc90f1ea85ca6125e}{internal\+::copy} (char ch, Output\+Iterator out)
+\item 
+{\footnotesize template$<$class Tuple , class F , size\+\_\+t... Is$>$ }\\void \hyperlink{namespaceinternal_a135f5624f6539777a653836901ec2e9a}{internal\+::for\+\_\+each} (index\+\_\+sequence$<$ Is... $>$, Tuple \&\&tup, F \&\&f) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} make\+\_\+index\+\_\+sequence$<$ std\+::tuple\+\_\+size$<$ T $>$\+::value $>$ \hyperlink{namespaceinternal_aa8f32827bf5cced22ea13872d6058762}{internal\+::get\+\_\+indexes} (T const \&)
+\item 
+{\footnotesize template$<$class Tuple , class F $>$ }\\void \hyperlink{namespaceinternal_ad176bd254de2376b5b51d2aa8fbffed6}{internal\+::for\+\_\+each} (Tuple \&\&tup, F \&\&f)
+\item 
+{\footnotesize template$<$typename Arg $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{namespaceinternal_ae4a81ecefd309d3f64e05535ed306514}{internal\+::format\+\_\+str\+\_\+quoted} (bool add\+\_\+space, const Arg \&, typename std\+::enable\+\_\+if$<$ !is\+\_\+like\+\_\+std\+\_\+string$<$ typename std\+::decay$<$ Arg $>$\+::type $>$\+::value $>$\+::type $\ast$=nullptr)
+\item 
+{\footnotesize template$<$typename Arg $>$ }\\\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{namespaceinternal_a6b6d89b287d9960295aa6a1a46300b05}{internal\+::format\+\_\+str\+\_\+quoted} (bool add\+\_\+space, const Arg \&, typename std\+::enable\+\_\+if$<$ is\+\_\+like\+\_\+std\+\_\+string$<$ typename std\+::decay$<$ Arg $>$\+::type $>$\+::value $>$\+::type $\ast$=nullptr)
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{namespaceinternal_aa20fe9d203b6585b35f99cf2b5de3609}{internal\+::format\+\_\+str\+\_\+quoted} (bool add\+\_\+space, const char $\ast$)
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const wchar\+\_\+t $\ast$ \hyperlink{namespaceinternal_a4773ec73cdc3b39cffcdd4035bc5348f}{internal\+::format\+\_\+str\+\_\+quoted} (bool add\+\_\+space, const wchar\+\_\+t $\ast$)
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const char $\ast$ \hyperlink{namespaceinternal_a9ba8863a8d3f90fb4b02f679339ee868}{internal\+::format\+\_\+str\+\_\+quoted} (bool add\+\_\+space, const char)
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} const wchar\+\_\+t $\ast$ \hyperlink{namespaceinternal_a058b7ff5306c068d78ebd905aa902886}{internal\+::format\+\_\+str\+\_\+quoted} (bool add\+\_\+space, const wchar\+\_\+t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ranges_8h_ad1c3ab4ad2c95d3f313323dbef5585df}\label{ranges_8h_ad1c3ab4ad2c95d3f313323dbef5585df}} 
+\index{ranges.\+h@{ranges.\+h}!F\+M\+T\+\_\+\+R\+A\+N\+G\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+L\+I\+M\+IT@{F\+M\+T\+\_\+\+R\+A\+N\+G\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+L\+I\+M\+IT}}
+\index{F\+M\+T\+\_\+\+R\+A\+N\+G\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+L\+I\+M\+IT@{F\+M\+T\+\_\+\+R\+A\+N\+G\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+L\+I\+M\+IT}!ranges.\+h@{ranges.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+R\+A\+N\+G\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+L\+I\+M\+IT}{FMT\_RANGE\_OUTPUT\_LENGTH\_LIMIT}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+R\+A\+N\+G\+E\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+L\+E\+N\+G\+T\+H\+\_\+\+L\+I\+M\+IT~256}
+
+
+
+Definition at line 20 of file ranges.\+h.
+

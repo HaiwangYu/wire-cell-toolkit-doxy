@@ -1,0 +1,7 @@
+<map id="WireCell::Gen::WireSchemaFile" name="WireCell::Gen::WireSchemaFile">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_wire_schema.html" title="WireCell::IWireSchema" alt="" coords="5,169,164,196"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IWireSchema \&gt;" alt="" coords="13,80,164,121"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="110,5,241,32"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="189,80,340,121"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="189,169,346,196"/>
+</map>

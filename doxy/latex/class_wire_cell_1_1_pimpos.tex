@@ -1,0 +1,387 @@
+\hypertarget{class_wire_cell_1_1_pimpos}{}\section{Wire\+Cell\+:\+:Pimpos Class Reference}
+\label{class_wire_cell_1_1_pimpos}\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+
+
+Pitch-\/\+Impact-\/\+Position.  
+
+
+
+
+{\ttfamily \#include $<$Pimpos.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_pimpos_a3cced28a957f1b3f9610166e29441934}{Pimpos} (int nwires, double minwirepitch, double maxwirepitch, const \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} \&wire=\hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector}(0, 1, 0), const \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} \&pitch=\hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector}(0, 0, 1), const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&\hyperlink{class_wire_cell_1_1_pimpos_a9e7fe5e650d32ca5bc66bf69123e83f0}{origin}=\hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point}(0, 0, 0), int nimpact\+\_\+bins\+\_\+per\+\_\+wire\+\_\+region=10)
+\item 
+int \hyperlink{class_wire_cell_1_1_pimpos_a2728ed20a76edaab2b09f7cfacf5d99b}{nimpbins\+\_\+per\+\_\+wire} () const
+\begin{DoxyCompactList}\small\item\em Trivial accessor. \end{DoxyCompactList}\item 
+const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \& \hyperlink{class_wire_cell_1_1_pimpos_a9e7fe5e650d32ca5bc66bf69123e83f0}{origin} () const
+\begin{DoxyCompactList}\small\item\em Return given 3-\/point origin for plane pitch. \end{DoxyCompactList}\item 
+const \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} \& \hyperlink{class_wire_cell_1_1_pimpos_a0eed2ce13249e92b343e94e0ecaa3953}{axis} (int i) const
+\item 
+\hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} \hyperlink{class_wire_cell_1_1_pimpos_a291dda9270d9feb2a0f8afa18e4cf9e2}{relative} (const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&pt) const
+\begin{DoxyCompactList}\small\item\em Return the vector from the origin to the given point. \end{DoxyCompactList}\item 
+double \hyperlink{class_wire_cell_1_1_pimpos_abeadf8b503815d0dbfaf5d94d245b5bd}{distance} (const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&pt, int \hyperlink{class_wire_cell_1_1_pimpos_a0eed2ce13249e92b343e94e0ecaa3953}{axis}=2) const
+\item 
+\hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \hyperlink{class_wire_cell_1_1_pimpos_a0d2db56d6956aee06d0218ee50400f25}{transform} (const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&pt) const
+\item 
+const \hyperlink{class_wire_cell_1_1_binning}{Binning} \& \hyperlink{class_wire_cell_1_1_pimpos_ac2d0a4ce2474237948537f0e4bd358f5}{region\+\_\+binning} () const
+\item 
+const \hyperlink{class_wire_cell_1_1_binning}{Binning} \& \hyperlink{class_wire_cell_1_1_pimpos_a1b8aef1ec7d1cf9eb9d5d78a6359e2aa}{impact\+\_\+binning} () const
+\item 
+std\+::pair$<$ int, int $>$ \hyperlink{class_wire_cell_1_1_pimpos_ae3a8be480718c7cf1ad0551947591fc3}{closest} (double pitch) const
+\item 
+int \hyperlink{class_wire_cell_1_1_pimpos_ae91d0c7565196dba1fbf9bd83760d25e}{wire\+\_\+impact} (int wireind) const
+\begin{DoxyCompactList}\small\item\em Return the impact position index coincident with the wire index. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \hyperlink{class_wire_cell_1_1_pimpos_a185f13fbfd5be1350fe5ba268f7557ca}{wire\+\_\+impacts} (int wireind) const
+\item 
+int \hyperlink{class_wire_cell_1_1_pimpos_a712e8a7789b061dd96f1e21f15ecdc42}{reflect} (int wireind, int impind) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pitch-\/\+Impact-\/\+Position. 
+
+A \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos} object encapsulates information and methods related to geometry and binning of a plane of parallel and equidistant wires and a further uniform sub division along their pitch directions. \begin{DoxyVerb}A wire region or wire bin is the locus *centered* on a wire
+and which extends +/- 1/2 pitch from the wire position.
+
+An impact region or impact bin is the smaller locus of pitch
+formed by uniformly splitting a wire region.  It is *bound* by
+two (not centered on one) impact positions.
+
+Impact positions are "in phase" with wires" such that there is
+one impact position coincident with a wire position.
+
+For 3D "lab" to "plane" coordinate transformations there is a
+plane coordinate system which has these three orthogonal axes:
+\end{DoxyVerb}
+
+
+axis0) anti nominal drift direction (normal to the wire plane) and axis1) along the wire direction such that, axis2) the pitch direction is the cross product of axis0 X axis1. 
+
+Definition at line 36 of file Pimpos.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_a3cced28a957f1b3f9610166e29441934}\label{class_wire_cell_1_1_pimpos_a3cced28a957f1b3f9610166e29441934}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!Pimpos@{Pimpos}}
+\index{Pimpos@{Pimpos}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{Pimpos()}{Pimpos()}}
+{\footnotesize\ttfamily Pimpos\+::\+Pimpos (\begin{DoxyParamCaption}\item[{int}]{nwires,  }\item[{double}]{minwirepitch,  }\item[{double}]{maxwirepitch,  }\item[{const \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} \&}]{wire = {\ttfamily \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector}(0,1,0)},  }\item[{const \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} \&}]{pitch = {\ttfamily \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector}(0,0,1)},  }\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&}]{origin = {\ttfamily \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point}(0,0,0)},  }\item[{int}]{nimpact\+\_\+bins\+\_\+per\+\_\+wire\+\_\+region = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+Create a \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos} object for a particular plane. \begin{DoxyVerb}\param nwires is the number of wires in the plane.
+
+\param minwirepitch is the location in the pitch
+coordinate of the first (zero index) wire.
+
+\param maxwirepitch is the location in the pitch
+coordinate of the last wire (ie, index=nwires-1).
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em wire} & is a Vector which sets the direction of the wires in the plane. If the underlying wires are not exactly parallel, this should be some representative average wire direction.\\
+\hline
+{\em pitch} & is a Vector which sets the direction and of the pitch of the wires in the plane. The pitch should be such that the cross product, wire (x) pitch, points in the anti-\/drift direction for the region this plane services. If the underlying wires are not exactly parallel, this pitcvector should be some representative average pitch direction.\\
+\hline
+{\em origin} & is a Point which sets an origin for all transforms. In particular, the projection of this origin point along the drift direction to the plane of wires sets the origin for the pitch coordinate.\\
+\hline
+{\em nbins} & gives the number of of impact bins covering one wire region.\\
+\hline
+\end{DoxyParams}
+The pitch extents and the origin vector must be expressed in the W\+CT system of (length) units. 
+
+Definition at line 5 of file Pimpos.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a3cced28a957f1b3f9610166e29441934_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_a0eed2ce13249e92b343e94e0ecaa3953}\label{class_wire_cell_1_1_pimpos_a0eed2ce13249e92b343e94e0ecaa3953}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!axis@{axis}}
+\index{axis@{axis}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{axis()}{axis()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector}\& Wire\+Cell\+::\+Pimpos\+::axis (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return an axis of the plan. 0=normal to plane (aka anti-\/drift), 1=wire direction, 2=pitch direction. 
+
+Definition at line 89 of file Pimpos.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a0eed2ce13249e92b343e94e0ecaa3953_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a0eed2ce13249e92b343e94e0ecaa3953_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_ae3a8be480718c7cf1ad0551947591fc3}\label{class_wire_cell_1_1_pimpos_ae3a8be480718c7cf1ad0551947591fc3}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!closest@{closest}}
+\index{closest@{closest}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{closest()}{closest()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Pimpos\+::closest (\begin{DoxyParamCaption}\item[{double}]{pitch }\end{DoxyParamCaption}) const}
+
+Return a pair of indices. The first is the index of the wire closest to the given pitch. The second is the {\itshape relative} index of the impact closest impact position (index=0 means the impact position coincident with the wire). 
+
+Definition at line 34 of file Pimpos.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_ae3a8be480718c7cf1ad0551947591fc3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_ae3a8be480718c7cf1ad0551947591fc3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_abeadf8b503815d0dbfaf5d94d245b5bd}\label{class_wire_cell_1_1_pimpos_abeadf8b503815d0dbfaf5d94d245b5bd}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!distance@{distance}}
+\index{distance@{distance}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily double Pimpos\+::distance (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&}]{pt,  }\item[{int}]{axis = {\ttfamily 2} }\end{DoxyParamCaption}) const}
+
+Return the distance from origin to point along the given axis. Default is pitch distance. 
+
+Definition at line 71 of file Pimpos.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_abeadf8b503815d0dbfaf5d94d245b5bd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_abeadf8b503815d0dbfaf5d94d245b5bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_a1b8aef1ec7d1cf9eb9d5d78a6359e2aa}\label{class_wire_cell_1_1_pimpos_a1b8aef1ec7d1cf9eb9d5d78a6359e2aa}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!impact\+\_\+binning@{impact\+\_\+binning}}
+\index{impact\+\_\+binning@{impact\+\_\+binning}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{impact\+\_\+binning()}{impact\_binning()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_binning}{Binning}\& Wire\+Cell\+::\+Pimpos\+::impact\+\_\+binning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return impact position binning. Bin edges are at impact positions and are in-\/phase with wire centers. 
+
+Definition at line 113 of file Pimpos.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a1b8aef1ec7d1cf9eb9d5d78a6359e2aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a1b8aef1ec7d1cf9eb9d5d78a6359e2aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_a2728ed20a76edaab2b09f7cfacf5d99b}\label{class_wire_cell_1_1_pimpos_a2728ed20a76edaab2b09f7cfacf5d99b}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!nimpbins\+\_\+per\+\_\+wire@{nimpbins\+\_\+per\+\_\+wire}}
+\index{nimpbins\+\_\+per\+\_\+wire@{nimpbins\+\_\+per\+\_\+wire}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{nimpbins\+\_\+per\+\_\+wire()}{nimpbins\_per\_wire()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Pimpos\+::nimpbins\+\_\+per\+\_\+wire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Trivial accessor. 
+
+
+
+Definition at line 79 of file Pimpos.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_a9e7fe5e650d32ca5bc66bf69123e83f0}\label{class_wire_cell_1_1_pimpos_a9e7fe5e650d32ca5bc66bf69123e83f0}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!origin@{origin}}
+\index{origin@{origin}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{origin()}{origin()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point}\& Wire\+Cell\+::\+Pimpos\+::origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return given 3-\/point origin for plane pitch. 
+
+
+
+Definition at line 85 of file Pimpos.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_a712e8a7789b061dd96f1e21f15ecdc42}\label{class_wire_cell_1_1_pimpos_a712e8a7789b061dd96f1e21f15ecdc42}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!reflect@{reflect}}
+\index{reflect@{reflect}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{reflect()}{reflect()}}
+{\footnotesize\ttfamily int Pimpos\+::reflect (\begin{DoxyParamCaption}\item[{int}]{wireind,  }\item[{int}]{impind }\end{DoxyParamCaption}) const}
+
+Return the impact position index which is the reflection of the given impact position index through the given wire index. 
+
+Definition at line 56 of file Pimpos.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a712e8a7789b061dd96f1e21f15ecdc42_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a712e8a7789b061dd96f1e21f15ecdc42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_ac2d0a4ce2474237948537f0e4bd358f5}\label{class_wire_cell_1_1_pimpos_ac2d0a4ce2474237948537f0e4bd358f5}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!region\+\_\+binning@{region\+\_\+binning}}
+\index{region\+\_\+binning@{region\+\_\+binning}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{region\+\_\+binning()}{region\_binning()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_binning}{Binning}\& Wire\+Cell\+::\+Pimpos\+::region\+\_\+binning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return wire region binning. Each bin is centered on the wire. Bin edges extend a distance of 1/2 pitch between neighboring wires. 
+
+Definition at line 109 of file Pimpos.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_ac2d0a4ce2474237948537f0e4bd358f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_a291dda9270d9feb2a0f8afa18e4cf9e2}\label{class_wire_cell_1_1_pimpos_a291dda9270d9feb2a0f8afa18e4cf9e2}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!relative@{relative}}
+\index{relative@{relative}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{relative()}{relative()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} Pimpos\+::relative (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&}]{pt }\end{DoxyParamCaption}) const}
+
+
+
+Return the vector from the origin to the given point. 
+
+
+
+Definition at line 66 of file Pimpos.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a291dda9270d9feb2a0f8afa18e4cf9e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_a0d2db56d6956aee06d0218ee50400f25}\label{class_wire_cell_1_1_pimpos_a0d2db56d6956aee06d0218ee50400f25}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!transform@{transform}}
+\index{transform@{transform}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} Pimpos\+::transform (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&}]{pt }\end{DoxyParamCaption}) const}
+
+Transform the given point into the \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos} coordinate system. 
+
+Definition at line 76 of file Pimpos.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a0d2db56d6956aee06d0218ee50400f25_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a0d2db56d6956aee06d0218ee50400f25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_ae91d0c7565196dba1fbf9bd83760d25e}\label{class_wire_cell_1_1_pimpos_ae91d0c7565196dba1fbf9bd83760d25e}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!wire\+\_\+impact@{wire\+\_\+impact}}
+\index{wire\+\_\+impact@{wire\+\_\+impact}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{wire\+\_\+impact()}{wire\_impact()}}
+{\footnotesize\ttfamily int Pimpos\+::wire\+\_\+impact (\begin{DoxyParamCaption}\item[{int}]{wireind }\end{DoxyParamCaption}) const}
+
+
+
+Return the impact position index coincident with the wire index. 
+
+
+
+Definition at line 43 of file Pimpos.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_ae91d0c7565196dba1fbf9bd83760d25e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_pimpos_a185f13fbfd5be1350fe5ba268f7557ca}\label{class_wire_cell_1_1_pimpos_a185f13fbfd5be1350fe5ba268f7557ca}} 
+\index{Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}!wire\+\_\+impacts@{wire\+\_\+impacts}}
+\index{wire\+\_\+impacts@{wire\+\_\+impacts}!Wire\+Cell\+::\+Pimpos@{Wire\+Cell\+::\+Pimpos}}
+\subsubsection{\texorpdfstring{wire\+\_\+impacts()}{wire\_impacts()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Pimpos\+::wire\+\_\+impacts (\begin{DoxyParamCaption}\item[{int}]{wireind }\end{DoxyParamCaption}) const}
+
+Return the impact position indices (bin edges) at either extreme of the wire region. The smaller index for this wire is the larger index of wireind-\/1\textquotesingle{}s values and vice versa. 
+
+Definition at line 48 of file Pimpos.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a185f13fbfd5be1350fe5ba268f7557ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_pimpos_a185f13fbfd5be1350fe5ba268f7557ca_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_pimpos_8h}{Pimpos.\+h}\item 
+util/src/\hyperlink{_pimpos_8cxx}{Pimpos.\+cxx}\end{DoxyCompactItemize}

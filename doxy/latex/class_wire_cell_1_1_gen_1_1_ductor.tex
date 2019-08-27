@@ -1,0 +1,474 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_ductor}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Ductor Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_ductor}\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+
+
+{\ttfamily \#include $<$Ductor.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Ductor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_ductor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Ductor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_ductor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_ductor_aae745226fc466f6cab4b02e95c3338fb}{Ductor} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a331c4314dba8472ab8c49dbc9112ff4b}{$\sim$\+Ductor} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a1a103a685f920781c7d312f168b52841}{operator()} (const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&depo, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&frames)
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a2e5f7a0246fe8918d7b241a8be8e1917}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_ab9486eb33932f6f7c0ff321675829178}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a1454baebba2e385dea9cd098236dd515}{process} (\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&frames)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_afec4558613941dc3bb752a3811aadd3d}{process\+\_\+face} (\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Anode\+Face\+::pointer} face, const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Depo\+::vector} \&face\+\_\+depos)
+\item 
+bool \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_acf493c7246a3fb10a52edf8f9cba9e97}{start\+\_\+processing} (const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&depo)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a7382e604218bec981a02f471cc2507f6}{m\+\_\+anode\+\_\+tn}
+\item 
+std\+::string \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_ab2718e86088d614e00b83f2755512ffb}{m\+\_\+rng\+\_\+tn}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a37e02625a1dd89ab5e34ebd7adcfa0f7}{m\+\_\+pir\+\_\+tns}
+\item 
+\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Anode\+Plane\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a140f8f60e705ed486c631d8a90b606e3}{m\+\_\+anode}
+\item 
+\hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{I\+Random\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a901669d8280fa96379c769f8e2ff19c8}{m\+\_\+rng}
+\item 
+std\+::vector$<$ \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Plane\+Impact\+Response\+::pointer} $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a44d3cb27486f1a6dd7915dfdd66e9589}{m\+\_\+pirs}
+\item 
+\hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Depo\+::vector} \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a0df2cd8150ece869d3712c2ffbab1e9d}{m\+\_\+depos}
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a66ab44d72d625317020972b051d5530a}{m\+\_\+start\+\_\+time}
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a7a08d05c0cd47649959a9f85734654bf}{m\+\_\+readout\+\_\+time}
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_ab9a9d3d44a95f4a152afa44a78674c96}{m\+\_\+tick}
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_af049caba394e694e67221904a9964f91}{m\+\_\+drift\+\_\+speed}
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a2003fb40fb5472e939225e994006bd2f}{m\+\_\+nsigma}
+\item 
+bool \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a767147f07f2e7a9525baed82237999af}{m\+\_\+fluctuate}
+\item 
+std\+::string \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a0ab7ec58f476694f4af3a6f6c7a84ed2}{m\+\_\+mode}
+\item 
+int \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_ac8577d4c920065ece727d1fc170a4067}{m\+\_\+frame\+\_\+count}
+\item 
+\hyperlink{namespace_wire_cell_1_1_log_a5147137d4bcdf4d35c235c5c1ec1495f}{Log\+::logptr\+\_\+t} \hyperlink{class_wire_cell_1_1_gen_1_1_ductor_a7c7a41733999959445c78c4f72b17687}{l}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This \hyperlink{class_wire_cell_1_1_i_ductor}{I\+Ductor} needs a Garfield2D field calculation data file in compressed J\+S\+ON format as produced by Python module wirecell.\+sigproc.\+garfield. 
+
+Definition at line 25 of file Ductor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_aae745226fc466f6cab4b02e95c3338fb}\label{class_wire_cell_1_1_gen_1_1_ductor_aae745226fc466f6cab4b02e95c3338fb}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!Ductor@{Ductor}}
+\index{Ductor@{Ductor}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{Ductor()}{Ductor()}}
+{\footnotesize\ttfamily Gen\+::\+Ductor\+::\+Ductor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file Ductor.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a331c4314dba8472ab8c49dbc9112ff4b}\label{class_wire_cell_1_1_gen_1_1_ductor_a331c4314dba8472ab8c49dbc9112ff4b}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!````~Ductor@{$\sim$\+Ductor}}
+\index{````~Ductor@{$\sim$\+Ductor}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{$\sim$\+Ductor()}{~Ductor()}}
+{\footnotesize\ttfamily virtual Wire\+Cell\+::\+Gen\+::\+Ductor\+::$\sim$\+Ductor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 29 of file Ductor.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_ductor_a331c4314dba8472ab8c49dbc9112ff4b_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a2e5f7a0246fe8918d7b241a8be8e1917}\label{class_wire_cell_1_1_gen_1_1_ductor_a2e5f7a0246fe8918d7b241a8be8e1917}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Ductor\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 84 of file Ductor.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_gen_1_1_ductor_a2e5f7a0246fe8918d7b241a8be8e1917_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_ab9486eb33932f6f7c0ff321675829178}\label{class_wire_cell_1_1_gen_1_1_ductor_ab9486eb33932f6f7c0ff321675829178}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Ductor\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+How many Gaussian sigma due to diffusion to keep before truncating.
+
+Whether to fluctuate the final Gaussian deposition.
+
+The initial time for this ductor
+
+The time span for each readout.
+
+The sample period
+
+If false then determine start time of each readout based on the input depos. This option is useful when running W\+CT sim on a source of depos which have already been \char`\"{}chunked\char`\"{} in time. If true then this \hyperlink{class_wire_cell_1_1_gen_1_1_ductor}{Ductor} will continuously simulate all time in \char`\"{}readout\+\_\+time\char`\"{} frames leading to empty frames in the case of some readout time with no depos.
+
+Fixed mode simply reads out the same time window all the time. It implies discontinuous (continuous == false).
+
+The nominal speed of drifting electrons
+
+Allow for a custom starting frame number
+
+Name of component providing the anode plane.
+
+don\textquotesingle{}t set here so user must, but eg\+: 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 34 of file Ductor.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_ductor_ab9486eb33932f6f7c0ff321675829178_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_gen_1_1_ductor_ab9486eb33932f6f7c0ff321675829178_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a1a103a685f920781c7d312f168b52841}\label{class_wire_cell_1_1_gen_1_1_ductor_a1a103a685f920781c7d312f168b52841}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Gen\+::\+Ductor\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&}]{depo,  }\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&}]{frames }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 272 of file Ductor.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_ductor_a1a103a685f920781c7d312f168b52841_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_gen_1_1_ductor_a1a103a685f920781c7d312f168b52841_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a1454baebba2e385dea9cd098236dd515}\label{class_wire_cell_1_1_gen_1_1_ductor_a1454baebba2e385dea9cd098236dd515}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!process@{process}}
+\index{process@{process}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void Gen\+::\+Ductor\+::process (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&}]{frames }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 174 of file Ductor.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_ductor_a1454baebba2e385dea9cd098236dd515_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_ductor_a1454baebba2e385dea9cd098236dd515_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_afec4558613941dc3bb752a3811aadd3d}\label{class_wire_cell_1_1_gen_1_1_ductor_afec4558613941dc3bb752a3811aadd3d}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!process\+\_\+face@{process\+\_\+face}}
+\index{process\+\_\+face@{process\+\_\+face}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{process\+\_\+face()}{process\_face()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} Gen\+::\+Ductor\+::process\+\_\+face (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Anode\+Face\+::pointer}}]{face,  }\item[{const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Depo\+::vector} \&}]{face\+\_\+depos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_gen_1_1_depo_splat_a53de1c32277ad2c62b0f81760f8dcdc8}{Wire\+Cell\+::\+Gen\+::\+Depo\+Splat}.
+
+
+
+Definition at line 130 of file Ductor.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_ductor_afec4558613941dc3bb752a3811aadd3d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_ductor_afec4558613941dc3bb752a3811aadd3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_acf493c7246a3fb10a52edf8f9cba9e97}\label{class_wire_cell_1_1_gen_1_1_ductor_acf493c7246a3fb10a52edf8f9cba9e97}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!start\+\_\+processing@{start\+\_\+processing}}
+\index{start\+\_\+processing@{start\+\_\+processing}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{start\+\_\+processing()}{start\_processing()}}
+{\footnotesize\ttfamily bool Gen\+::\+Ductor\+::start\+\_\+processing (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&}]{depo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 244 of file Ductor.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_ductor_acf493c7246a3fb10a52edf8f9cba9e97_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a7c7a41733999959445c78c4f72b17687}\label{class_wire_cell_1_1_gen_1_1_ductor_a7c7a41733999959445c78c4f72b17687}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!l@{l}}
+\index{l@{l}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{l}{l}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_log_a5147137d4bcdf4d35c235c5c1ec1495f}{Log\+::logptr\+\_\+t} Wire\+Cell\+::\+Gen\+::\+Ductor\+::l\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 64 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a140f8f60e705ed486c631d8a90b606e3}\label{class_wire_cell_1_1_gen_1_1_ductor_a140f8f60e705ed486c631d8a90b606e3}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+anode@{m\+\_\+anode}}
+\index{m\+\_\+anode@{m\+\_\+anode}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+anode}{m\_anode}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Anode\+Plane\+::pointer} Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+anode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 44 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a7382e604218bec981a02f471cc2507f6}\label{class_wire_cell_1_1_gen_1_1_ductor_a7382e604218bec981a02f471cc2507f6}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+anode\+\_\+tn@{m\+\_\+anode\+\_\+tn}}
+\index{m\+\_\+anode\+\_\+tn@{m\+\_\+anode\+\_\+tn}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+anode\+\_\+tn}{m\_anode\_tn}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+anode\+\_\+tn\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 40 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a0df2cd8150ece869d3712c2ffbab1e9d}\label{class_wire_cell_1_1_gen_1_1_ductor_a0df2cd8150ece869d3712c2ffbab1e9d}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+depos@{m\+\_\+depos}}
+\index{m\+\_\+depos@{m\+\_\+depos}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+depos}{m\_depos}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Depo\+::vector} Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+depos\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 48 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_af049caba394e694e67221904a9964f91}\label{class_wire_cell_1_1_gen_1_1_ductor_af049caba394e694e67221904a9964f91}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+drift\+\_\+speed@{m\+\_\+drift\+\_\+speed}}
+\index{m\+\_\+drift\+\_\+speed@{m\+\_\+drift\+\_\+speed}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+drift\+\_\+speed}{m\_drift\_speed}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+drift\+\_\+speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 53 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a767147f07f2e7a9525baed82237999af}\label{class_wire_cell_1_1_gen_1_1_ductor_a767147f07f2e7a9525baed82237999af}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+fluctuate@{m\+\_\+fluctuate}}
+\index{m\+\_\+fluctuate@{m\+\_\+fluctuate}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+fluctuate}{m\_fluctuate}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+fluctuate\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 55 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_ac8577d4c920065ece727d1fc170a4067}\label{class_wire_cell_1_1_gen_1_1_ductor_ac8577d4c920065ece727d1fc170a4067}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+frame\+\_\+count@{m\+\_\+frame\+\_\+count}}
+\index{m\+\_\+frame\+\_\+count@{m\+\_\+frame\+\_\+count}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+frame\+\_\+count}{m\_frame\_count}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+frame\+\_\+count\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 58 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a0ab7ec58f476694f4af3a6f6c7a84ed2}\label{class_wire_cell_1_1_gen_1_1_ductor_a0ab7ec58f476694f4af3a6f6c7a84ed2}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+mode@{m\+\_\+mode}}
+\index{m\+\_\+mode@{m\+\_\+mode}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+mode}{m\_mode}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 56 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a2003fb40fb5472e939225e994006bd2f}\label{class_wire_cell_1_1_gen_1_1_ductor_a2003fb40fb5472e939225e994006bd2f}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+nsigma@{m\+\_\+nsigma}}
+\index{m\+\_\+nsigma@{m\+\_\+nsigma}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+nsigma}{m\_nsigma}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+nsigma\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a37e02625a1dd89ab5e34ebd7adcfa0f7}\label{class_wire_cell_1_1_gen_1_1_ductor_a37e02625a1dd89ab5e34ebd7adcfa0f7}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+pir\+\_\+tns@{m\+\_\+pir\+\_\+tns}}
+\index{m\+\_\+pir\+\_\+tns@{m\+\_\+pir\+\_\+tns}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+pir\+\_\+tns}{m\_pir\_tns}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+pir\+\_\+tns\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 42 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a44d3cb27486f1a6dd7915dfdd66e9589}\label{class_wire_cell_1_1_gen_1_1_ductor_a44d3cb27486f1a6dd7915dfdd66e9589}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+pirs@{m\+\_\+pirs}}
+\index{m\+\_\+pirs@{m\+\_\+pirs}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+pirs}{m\_pirs}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Plane\+Impact\+Response\+::pointer}$>$ Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+pirs\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 46 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a7a08d05c0cd47649959a9f85734654bf}\label{class_wire_cell_1_1_gen_1_1_ductor_a7a08d05c0cd47649959a9f85734654bf}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+readout\+\_\+time@{m\+\_\+readout\+\_\+time}}
+\index{m\+\_\+readout\+\_\+time@{m\+\_\+readout\+\_\+time}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+readout\+\_\+time}{m\_readout\_time}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+readout\+\_\+time\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 51 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a901669d8280fa96379c769f8e2ff19c8}\label{class_wire_cell_1_1_gen_1_1_ductor_a901669d8280fa96379c769f8e2ff19c8}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+rng@{m\+\_\+rng}}
+\index{m\+\_\+rng@{m\+\_\+rng}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+rng}{m\_rng}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{I\+Random\+::pointer} Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+rng\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 45 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_ab2718e86088d614e00b83f2755512ffb}\label{class_wire_cell_1_1_gen_1_1_ductor_ab2718e86088d614e00b83f2755512ffb}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+rng\+\_\+tn@{m\+\_\+rng\+\_\+tn}}
+\index{m\+\_\+rng\+\_\+tn@{m\+\_\+rng\+\_\+tn}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+rng\+\_\+tn}{m\_rng\_tn}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+rng\+\_\+tn\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 41 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_a66ab44d72d625317020972b051d5530a}\label{class_wire_cell_1_1_gen_1_1_ductor_a66ab44d72d625317020972b051d5530a}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+start\+\_\+time@{m\+\_\+start\+\_\+time}}
+\index{m\+\_\+start\+\_\+time@{m\+\_\+start\+\_\+time}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+start\+\_\+time}{m\_start\_time}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+start\+\_\+time\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 50 of file Ductor.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_ductor_ab9a9d3d44a95f4a152afa44a78674c96}\label{class_wire_cell_1_1_gen_1_1_ductor_ab9a9d3d44a95f4a152afa44a78674c96}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}!m\+\_\+tick@{m\+\_\+tick}}
+\index{m\+\_\+tick@{m\+\_\+tick}!Wire\+Cell\+::\+Gen\+::\+Ductor@{Wire\+Cell\+::\+Gen\+::\+Ductor}}
+\subsubsection{\texorpdfstring{m\+\_\+tick}{m\_tick}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Ductor\+::m\+\_\+tick\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 52 of file Ductor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_ductor_8h}{Ductor.\+h}\item 
+gen/src/\hyperlink{_ductor_8cxx}{Ductor.\+cxx}\end{DoxyCompactItemize}

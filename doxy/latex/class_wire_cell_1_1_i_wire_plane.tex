@@ -1,0 +1,149 @@
+\hypertarget{class_wire_cell_1_1_i_wire_plane}{}\section{Wire\+Cell\+:\+:I\+Wire\+Plane Class Reference}
+\label{class_wire_cell_1_1_i_wire_plane}\index{Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}}
+
+
+{\ttfamily \#include $<$I\+Wire\+Plane.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Wire\+Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_wire_cell_1_1_i_wire_plane__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Wire\+Plane\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_wire_cell_1_1_i_wire_plane__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_wire_plane_af8ab9502915f7fa2e1296915617b7ea6}{$\sim$\+I\+Wire\+Plane} ()
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_wire_plane_af6ee6155a91ec58ba2abbec9bab63a39}{ident} () const =0
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos} $\ast$ \hyperlink{class_wire_cell_1_1_i_wire_plane_a906ad17d425080349082a719b4362a36}{pimpos} () const =0
+\begin{DoxyCompactList}\small\item\em Return a \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos} object for this wire plane. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Wire\+::vector} \& \hyperlink{class_wire_cell_1_1_i_wire_plane_ad5f6668d7faefcd895daf602dc60be1a}{wires} () const =0
+\begin{DoxyCompactList}\small\item\em Return vector of wire objects ordered by increasing Z. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Channel\+::vector} \& \hyperlink{class_wire_cell_1_1_i_wire_plane_ad8bbb5fc7d09e19ea546262b8162a3c0}{channels} () const =0
+\item 
+virtual \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} \hyperlink{class_wire_cell_1_1_i_wire_plane_af43d2d7b981ab0eb4c5a4cc458f7bb1e}{planeid} () const
+\begin{DoxyCompactList}\small\item\em The ID of the plane of wire zero. This is just sugar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file I\+Wire\+Plane.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_plane_af8ab9502915f7fa2e1296915617b7ea6}\label{class_wire_cell_1_1_i_wire_plane_af8ab9502915f7fa2e1296915617b7ea6}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}!````~I\+Wire\+Plane@{$\sim$\+I\+Wire\+Plane}}
+\index{````~I\+Wire\+Plane@{$\sim$\+I\+Wire\+Plane}!Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Wire\+Plane()}{~IWirePlane()}}
+{\footnotesize\ttfamily I\+Wire\+Plane\+::$\sim$\+I\+Wire\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 5 of file I\+Wire\+Plane.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_plane_ad8bbb5fc7d09e19ea546262b8162a3c0}\label{class_wire_cell_1_1_i_wire_plane_ad8bbb5fc7d09e19ea546262b8162a3c0}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}!channels@{channels}}
+\index{channels@{channels}!Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}}
+\subsubsection{\texorpdfstring{channels()}{channels()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Channel\+::vector}\& Wire\+Cell\+::\+I\+Wire\+Plane\+::channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return vector of channel objects ordered by their index (N\+OT their channel ident number). 
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_wire_plane_aa338b325c5266d901cd8d9656aa025c0}{Wire\+Cell\+::\+Gen\+::\+Wire\+Plane}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_plane_af6ee6155a91ec58ba2abbec9bab63a39}\label{class_wire_cell_1_1_i_wire_plane_af6ee6155a91ec58ba2abbec9bab63a39}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}!ident@{ident}}
+\index{ident@{ident}!Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}}
+\subsubsection{\texorpdfstring{ident()}{ident()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Wire\+Plane\+::ident (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_wire_plane_ab043322069a1487486a32e0744897357}{Wire\+Cell\+::\+Gen\+::\+Wire\+Plane}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_plane_a906ad17d425080349082a719b4362a36}\label{class_wire_cell_1_1_i_wire_plane_a906ad17d425080349082a719b4362a36}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}!pimpos@{pimpos}}
+\index{pimpos@{pimpos}!Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}}
+\subsubsection{\texorpdfstring{pimpos()}{pimpos()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos}$\ast$ Wire\+Cell\+::\+I\+Wire\+Plane\+::pimpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return a \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos} object for this wire plane. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_wire_plane_adb80d740c4f245ae7fa6b26ccd539685}{Wire\+Cell\+::\+Gen\+::\+Wire\+Plane}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_plane_af43d2d7b981ab0eb4c5a4cc458f7bb1e}\label{class_wire_cell_1_1_i_wire_plane_af43d2d7b981ab0eb4c5a4cc458f7bb1e}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}!planeid@{planeid}}
+\index{planeid@{planeid}!Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}}
+\subsubsection{\texorpdfstring{planeid()}{planeid()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} I\+Wire\+Plane\+::planeid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The ID of the plane of wire zero. This is just sugar. 
+
+
+
+Definition at line 9 of file I\+Wire\+Plane.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_wire_cell_1_1_i_wire_plane_af43d2d7b981ab0eb4c5a4cc458f7bb1e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_plane_ad5f6668d7faefcd895daf602dc60be1a}\label{class_wire_cell_1_1_i_wire_plane_ad5f6668d7faefcd895daf602dc60be1a}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}!wires@{wires}}
+\index{wires@{wires}!Wire\+Cell\+::\+I\+Wire\+Plane@{Wire\+Cell\+::\+I\+Wire\+Plane}}
+\subsubsection{\texorpdfstring{wires()}{wires()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Wire\+::vector}\& Wire\+Cell\+::\+I\+Wire\+Plane\+::wires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return vector of wire objects ordered by increasing Z. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_wire_plane_aabd90e5ca70c31d41015980d7f320abe}{Wire\+Cell\+::\+Gen\+::\+Wire\+Plane}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_wire_cell_1_1_i_wire_plane_ad5f6668d7faefcd895daf602dc60be1a_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_wire_plane_8h}{I\+Wire\+Plane.\+h}\item 
+iface/src/\hyperlink{_i_wire_plane_8cxx}{I\+Wire\+Plane.\+cxx}\end{DoxyCompactItemize}

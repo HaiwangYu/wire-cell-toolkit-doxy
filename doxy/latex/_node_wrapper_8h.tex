@@ -1,0 +1,72 @@
+\hypertarget{_node_wrapper_8h}{}\section{tbb/inc/\+Wire\+Cell\+Tbb/\+Node\+Wrapper.h File Reference}
+\label{_node_wrapper_8h}\index{tbb/inc/\+Wire\+Cell\+Tbb/\+Node\+Wrapper.\+h@{tbb/inc/\+Wire\+Cell\+Tbb/\+Node\+Wrapper.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Node.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Tuple\+Helpers.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$tbb/flow\+\_\+graph.\+h$>$}\newline
+{\ttfamily \#include $<$boost/any.\+hpp$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+Include dependency graph for Node\+Wrapper.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_node_wrapper_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_node_wrapper_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_tbb_1_1_node_wrapper}{Wire\+Cell\+Tbb\+::\+Node\+Wrapper}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell_tbb}{Wire\+Cell\+Tbb}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef tbb\+::flow\+::sender$<$ boost\+::any $>$ \hyperlink{namespace_wire_cell_tbb_a6d03ef9befd6914b5cf734e3ebf4fc68}{Wire\+Cell\+Tbb\+::sender\+\_\+type}
+\item 
+typedef tbb\+::flow\+::receiver$<$ boost\+::any $>$ \hyperlink{namespace_wire_cell_tbb_ae1d3e39f466e5c2d3d5198cab827f73f}{Wire\+Cell\+Tbb\+::receiver\+\_\+type}
+\item 
+typedef std\+::vector$<$ sender\+\_\+type $\ast$ $>$ \hyperlink{namespace_wire_cell_tbb_a99272fef0f0c33dc9d4e6e8f777b2e6e}{Wire\+Cell\+Tbb\+::sender\+\_\+port\+\_\+vector}
+\item 
+typedef std\+::vector$<$ receiver\+\_\+type $\ast$ $>$ \hyperlink{namespace_wire_cell_tbb_a87f42fe8a3ccc3bf9d315cb2d252c7af}{Wire\+Cell\+Tbb\+::receiver\+\_\+port\+\_\+vector}
+\item 
+typedef std\+::vector$<$ boost\+::any $>$ \hyperlink{namespace_wire_cell_tbb_a5da2a89721f83af1aff5d0ce11ed8c44}{Wire\+Cell\+Tbb\+::any\+\_\+vector}
+\item 
+typedef std\+::tuple$<$ boost\+::any $>$ \hyperlink{namespace_wire_cell_tbb_add86809a147ec9695fadae148a7059ea}{Wire\+Cell\+Tbb\+::any\+\_\+single}
+\item 
+typedef std\+::tuple$<$ boost\+::any, boost\+::any $>$ \hyperlink{namespace_wire_cell_tbb_a5ebba472c9f7492c293d2705740ea148}{Wire\+Cell\+Tbb\+::any\+\_\+double}
+\item 
+typedef std\+::tuple$<$ boost\+::any, boost\+::any, boost\+::any $>$ \hyperlink{namespace_wire_cell_tbb_a7fd069c2369fd99a53829ff09b7a32b6}{Wire\+Cell\+Tbb\+::any\+\_\+triple}
+\item 
+typedef tbb\+::flow\+::source\+\_\+node$<$ boost\+::any $>$ \hyperlink{namespace_wire_cell_tbb_a5f0d1bf6be0fa850153848d32d3e6f1e}{Wire\+Cell\+Tbb\+::source\+\_\+node}
+\begin{DoxyCompactList}\small\item\em Types for T\+BB nodes. \end{DoxyCompactList}\item 
+typedef tbb\+::flow\+::function\+\_\+node$<$ boost\+::any $>$ \hyperlink{namespace_wire_cell_tbb_a00d199e066569f374f4baee329bf802c}{Wire\+Cell\+Tbb\+::sink\+\_\+node}
+\item 
+typedef tbb\+::flow\+::function\+\_\+node$<$ boost\+::any, boost\+::any $>$ \hyperlink{namespace_wire_cell_tbb_a61220b5d8f4185012c87d8bd7eb02909}{Wire\+Cell\+Tbb\+::function\+\_\+node}
+\item 
+typedef tbb\+::flow\+::multifunction\+\_\+node$<$ boost\+::any, any\+\_\+single $>$ \hyperlink{namespace_wire_cell_tbb_ad74c1ae0395c6232cc5f54579a928498}{Wire\+Cell\+Tbb\+::queuedout\+\_\+node}
+\item 
+typedef queuedout\+\_\+node\+::output\+\_\+ports\+\_\+type \hyperlink{namespace_wire_cell_tbb_a1812565243cb4597d2215ad672e1e991}{Wire\+Cell\+Tbb\+::queuedout\+\_\+port}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ Node\+Wrapper $>$ \hyperlink{namespace_wire_cell_tbb_aa7b6ff37a20e0174babf0614286bb59f}{Wire\+Cell\+Tbb\+::\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Tuple , std\+::size\+\_\+t... Is$>$ }\\receiver\+\_\+port\+\_\+vector \hyperlink{namespace_wire_cell_tbb_a6ecb68802302619dd9900975162a0354}{Wire\+Cell\+Tbb\+::receiver\+\_\+ports} (tbb\+::flow\+::join\+\_\+node$<$ Tuple $>$ \&jn, \hyperlink{structstd_1_1index__sequence}{std\+::index\+\_\+sequence}$<$ Is... $>$)
+\item 
+{\footnotesize template$<$typename Tuple $>$ }\\receiver\+\_\+port\+\_\+vector \hyperlink{namespace_wire_cell_tbb_ad0cab88f6e89c84bde6bbea2bff842e9}{Wire\+Cell\+Tbb\+::receiver\+\_\+ports} (tbb\+::flow\+::join\+\_\+node$<$ Tuple $>$ \&jn)
+\begin{DoxyCompactList}\small\item\em Return receiver ports of a join node as a vector. \end{DoxyCompactList}\end{DoxyCompactItemize}

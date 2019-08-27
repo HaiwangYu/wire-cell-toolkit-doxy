@@ -1,0 +1,6 @@
+<map id="WireCell::SimpleFrame::tag_traces" name="WireCell::SimpleFrame::tag_traces">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_frame_fanin.html#a07a4dc2a3d5126a5540613534c73b914" title="WireCell::Gen::FrameFanin\l::operator()" alt="" coords="211,5,392,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_frame_merger.html#a8869c4f2709ada2d63c9a5bec95cbc5f" title="WireCell::SigProc::\lFrameMerger::operator()" alt="" coords="220,71,383,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter.html#a861a76be3558adf47d2f7da5b00357f1" title="IFrameFilter interface. " alt="" coords="229,137,374,193"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_omnibus_p_m_t_noise_filter.html#ad33bf21dae5ad22503a33e6444057dcb" title="IFrameFilter interface. " alt="" coords="219,217,384,273"/>
+</map>

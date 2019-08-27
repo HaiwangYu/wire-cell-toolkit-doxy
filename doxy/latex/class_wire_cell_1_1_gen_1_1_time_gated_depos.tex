@@ -1,0 +1,133 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_time_gated_depos}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Time\+Gated\+Depos Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_time_gated_depos}\index{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}}
+
+
+{\ttfamily \#include $<$Time\+Gated\+Depos.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Time\+Gated\+Depos\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_time_gated_depos__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Time\+Gated\+Depos\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_time_gated_depos__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_time_gated_depos_ae2474173c20658bf9cd2a00005e6e006}{Time\+Gated\+Depos} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_time_gated_depos_a6a38f6c111683a7ee885db4213413c95}{$\sim$\+Time\+Gated\+Depos} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_gen_1_1_time_gated_depos_ad457a966103e9cd5e0c9b1dba36374d1}{operator()} (const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&depo, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&outq)
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_time_gated_depos_a7bc3213029b51a4017ba216d0c674dc3}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_time_gated_depos_a7a9b90856b2e7c8c0bed942eb6c21d03}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wire_cell_1_1_gen_1_1_time_gated_depos}{Time\+Gated\+Depos} outputs depos which pass a time based selection.
+
+The selection is defined as a time gate expressed as a start time and a duration.
+
+If a period is provided than the time gate is advanced by the configured period each time an E\+OS is received.
+
+It operates in one of accept or reject modes. To be output in the former mode depos must have times within the gate, in the latter they must not.
+
+The gate is half inclusive. Depo landing exactly at the end of the gate is considered outside the gate. 
+
+Definition at line 33 of file Time\+Gated\+Depos.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_time_gated_depos_ae2474173c20658bf9cd2a00005e6e006}\label{class_wire_cell_1_1_gen_1_1_time_gated_depos_ae2474173c20658bf9cd2a00005e6e006}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}!Time\+Gated\+Depos@{Time\+Gated\+Depos}}
+\index{Time\+Gated\+Depos@{Time\+Gated\+Depos}!Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}}
+\subsubsection{\texorpdfstring{Time\+Gated\+Depos()}{TimeGatedDepos()}}
+{\footnotesize\ttfamily Gen\+::\+Time\+Gated\+Depos\+::\+Time\+Gated\+Depos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file Time\+Gated\+Depos.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_time_gated_depos_a6a38f6c111683a7ee885db4213413c95}\label{class_wire_cell_1_1_gen_1_1_time_gated_depos_a6a38f6c111683a7ee885db4213413c95}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}!````~Time\+Gated\+Depos@{$\sim$\+Time\+Gated\+Depos}}
+\index{````~Time\+Gated\+Depos@{$\sim$\+Time\+Gated\+Depos}!Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}}
+\subsubsection{\texorpdfstring{$\sim$\+Time\+Gated\+Depos()}{~TimeGatedDepos()}}
+{\footnotesize\ttfamily Gen\+::\+Time\+Gated\+Depos\+::$\sim$\+Time\+Gated\+Depos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 44 of file Time\+Gated\+Depos.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_time_gated_depos_a7bc3213029b51a4017ba216d0c674dc3}\label{class_wire_cell_1_1_gen_1_1_time_gated_depos_a7bc3213029b51a4017ba216d0c674dc3}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Time\+Gated\+Depos\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 64 of file Time\+Gated\+Depos.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_time_gated_depos_a7a9b90856b2e7c8c0bed942eb6c21d03}\label{class_wire_cell_1_1_gen_1_1_time_gated_depos_a7a9b90856b2e7c8c0bed942eb6c21d03}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Time\+Gated\+Depos\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 24 of file Time\+Gated\+Depos.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_time_gated_depos_ad457a966103e9cd5e0c9b1dba36374d1}\label{class_wire_cell_1_1_gen_1_1_time_gated_depos_ad457a966103e9cd5e0c9b1dba36374d1}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos@{Wire\+Cell\+::\+Gen\+::\+Time\+Gated\+Depos}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Gen\+::\+Time\+Gated\+Depos\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_queuedout_node_acf5f716a764553f3c7055a9cf67e906e}{input\+\_\+pointer} \&}]{depo,  }\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_a39018e4e3dd886befac9636ac791a685}{output\+\_\+queue} \&}]{outq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 48 of file Time\+Gated\+Depos.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_time_gated_depos_8h}{Time\+Gated\+Depos.\+h}\item 
+gen/src/\hyperlink{_time_gated_depos_8cxx}{Time\+Gated\+Depos.\+cxx}\end{DoxyCompactItemize}

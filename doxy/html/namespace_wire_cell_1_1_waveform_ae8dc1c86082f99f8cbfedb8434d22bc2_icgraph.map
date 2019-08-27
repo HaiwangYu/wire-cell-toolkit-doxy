@@ -1,0 +1,7 @@
+<map id="WireCell::Waveform::magnitude" name="WireCell::Waveform::magnitude">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#a9ed3c28256c1c262064c62816b4b225f" title="IChannelSpectrum. " alt="" coords="207,5,374,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_response_sys.html#a71ff5f000f152ebfe338a15f0d49f0ef" title="WireCell::Gen::ResponseSys\l::ResponseSys" alt="" coords="193,71,388,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise.html#a2f0a41f11d154f971da95d9127be594d" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="193,137,388,193"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_waveform.html#ad08232b659cba09cf7174b900c557be5" title="WireCell::Waveform\l::resample" alt="" coords="221,217,361,259"/>
+<area shape="rect" id="node6" href="$struct_wire_cell_1_1_compare_points.html#ae6ab32afd52b312e3d452e68996fca76" title="WireCell::ComparePoints\l::operator()" alt="" coords="205,283,376,324"/>
+</map>

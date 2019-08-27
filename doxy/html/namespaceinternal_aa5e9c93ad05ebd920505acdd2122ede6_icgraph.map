@@ -1,0 +1,7 @@
+<map id="internal::parse_width" name="internal::parse_width">
+<area shape="rect" id="node2" href="$structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a0b4553a087ee08ec032965fe1fc35ff4" title="formatter\&lt; std::chrono\l::duration\&lt; Rep, Period\l \&gt;, Char \&gt;::parse" alt="" coords="196,49,353,105"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#af89a4b19adfe070b0cb66cf9f694caf3" title="internal::parse_format\l_specs" alt="" coords="201,129,349,171"/>
+<area shape="rect" id="node4" href="$structformatter_3_01_t_00_01_char_00_01typename_01std_1_1enable__if_3_01internal_1_1format__typeef2b7d59b5441fbead72290e06693dea.html#ae66fc4d23664a9533b055208fa9692bf" title="formatter\&lt; T, Char,\l typename std::enable\l_if\&lt; internal::format\l_type\&lt; typename buffer\l_context\&lt; Char \&gt;::type,\l T \&gt;::value \&gt;::type \&gt;::parse" alt="" coords="401,5,584,105"/>
+<area shape="rect" id="node5" href="$classdynamic__formatter.html#aa9bc96ae30462d4e5f13d207f957fc0b" title="dynamic_formatter::\lparse" alt="" coords="423,129,562,171"/>
+<area shape="rect" id="node6" href="$structformat__handler.html#a4d16ddae0958acb12d0606038c393b24" title="format_handler::on\l_format_specs" alt="" coords="427,195,558,236"/>
+</map>

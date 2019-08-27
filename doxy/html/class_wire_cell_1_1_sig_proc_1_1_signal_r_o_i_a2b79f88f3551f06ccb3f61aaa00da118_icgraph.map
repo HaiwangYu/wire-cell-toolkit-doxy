@@ -1,0 +1,6 @@
+<map id="WireCell::SigProc::SignalROI::overlap" name="WireCell::SigProc::SignalROI::overlap">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement.html#a2752abfaf6f0c8e84cef5dcec56010ee" title="WireCell::SigProc::\lROI_refinement::load_data" alt="" coords="401,5,580,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#aa2fee1613b1c49322cf5d738261cf1c9" title="WireCell::SigProc::\lSignalROI::get_contents" alt="" coords="188,68,353,109"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a19b3f1c69aa59c14e928af82302de058" title="WireCell::SigProc::\lSignalROI::SignalROI" alt="" coords="415,71,566,112"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#af714fd2a4bba4597bea27d2ab34f0d8d" title="WireCell::SigProc::\lSignalROI::overlap" alt="" coords="423,136,558,177"/>
+</map>

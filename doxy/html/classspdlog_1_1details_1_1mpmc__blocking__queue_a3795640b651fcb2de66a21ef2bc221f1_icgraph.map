@@ -1,0 +1,4 @@
+<map id="spdlog::details::mpmc_blocking_queue::enqueue" name="spdlog::details::mpmc_blocking_queue::enqueue">
+<area shape="rect" id="node2" href="$classspdlog_1_1details_1_1mpmc__blocking__queue.html#af4015ea1657b393755f34d76c97a28d1" title="spdlog::details::mpmc\l_blocking_queue\&lt; item\l_type \&gt;::dequeue_for" alt="" coords="229,5,385,61"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1details_1_1thread__pool.html#adc34920f65797d8f54986dc1894a8804" title="spdlog::details::thread\l_pool::overrun_counter" alt="" coords="230,86,385,127"/>
+</map>

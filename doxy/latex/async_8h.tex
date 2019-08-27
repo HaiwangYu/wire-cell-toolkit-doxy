@@ -1,0 +1,45 @@
+\hypertarget{async_8h}{}\section{util/inc/spdlog/async.h File Reference}
+\label{async_8h}\index{util/inc/spdlog/async.\+h@{util/inc/spdlog/async.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/async\+\_\+logger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/registry.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/thread\+\_\+pool.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+Include dependency graph for async.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{async_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structspdlog_1_1async__factory__impl}{spdlog\+::async\+\_\+factory\+\_\+impl$<$ Overflow\+Policy $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1details}{spdlog\+::details}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacespdlog_a962b94a80258f9a202d590888349577c}{spdlog\+::async\+\_\+factory} = async\+\_\+factory\+\_\+impl$<$ async\+\_\+overflow\+\_\+policy\+::block $>$
+\item 
+using \hyperlink{namespacespdlog_a796f2e548cff4f12a5b2a52b07d3128b}{spdlog\+::async\+\_\+factory\+\_\+nonblock} = async\+\_\+factory\+\_\+impl$<$ async\+\_\+overflow\+\_\+policy\+::overrun\+\_\+oldest $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Sink , typename... Sink\+Args$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespacespdlog_a220f834b057b45ef730c435bcc60b0aa}{spdlog\+::create\+\_\+async} (std\+::string logger\+\_\+name, Sink\+Args \&\&... sink\+\_\+args)
+\item 
+{\footnotesize template$<$typename Sink , typename... Sink\+Args$>$ }\\std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespacespdlog_ac5db26987120ac7b1ba0fbefe551ee52}{spdlog\+::create\+\_\+async\+\_\+nb} (std\+::string logger\+\_\+name, Sink\+Args \&\&... sink\+\_\+args)
+\item 
+void \hyperlink{namespacespdlog_a17a4d95759b4076827905fd8f6b10d36}{spdlog\+::init\+\_\+thread\+\_\+pool} (size\+\_\+t q\+\_\+size, size\+\_\+t thread\+\_\+count)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1details_1_1thread__pool}{spdlog\+::details\+::thread\+\_\+pool} $>$ \hyperlink{namespacespdlog_a6676a1ffb5ea174a2392ab0317bbcff2}{spdlog\+::thread\+\_\+pool} ()
+\end{DoxyCompactItemize}

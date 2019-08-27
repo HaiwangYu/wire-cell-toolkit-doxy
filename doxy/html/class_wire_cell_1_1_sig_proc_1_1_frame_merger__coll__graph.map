@@ -1,0 +1,10 @@
+<map id="WireCell::SigProc::FrameMerger" name="WireCell::SigProc::FrameMerger">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_frame_joiner.html" title="WireCell::IFrameJoiner" alt="" coords="956,28,1112,55"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_join_node.html" title="WireCell::IJoinNode\l\&lt; std::tuple\&lt; IFrame,\l IFrame \&gt;, IFrame \&gt;" alt="" coords="763,5,908,61"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_join_node_base.html" title="WireCell::IJoinNodeBase" alt="" coords="545,20,715,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="383,20,497,47"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="184,13,335,54"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,53,136,80"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="184,78,335,119"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="551,85,709,112"/>
+</map>

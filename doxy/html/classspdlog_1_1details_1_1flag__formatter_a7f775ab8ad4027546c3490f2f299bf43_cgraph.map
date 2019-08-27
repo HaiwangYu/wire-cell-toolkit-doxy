@@ -1,0 +1,10 @@
+<map id="spdlog::details::flag_formatter::flag_formatter" name="spdlog::details::flag_formatter::flag_formatter">
+<area shape="rect" id="node2" href="$core_8h.html#ae4af59c87c10d9a8d3ebd3eb455a25c1" title="format" alt="" coords="223,50,281,76"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a581988072e193a0fb0f54827f1b42cfd" title="internal::vformat" alt="" coords="329,50,445,76"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="684,24,840,51"/>
+<area shape="rect" id="node7" href="$core_8h.html#a7122c6820a7e6319d6fc2f30d1292faa" title="vprint" alt="" coords="360,104,415,131"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a9f6f592ec8a979251038265f241e7d48" title="internal::vformat_to" alt="" coords="497,75,632,102"/>
+<area shape="rect" id="node6" href="$format_8h.html#afe05b087244838ced775fa3f28134c34" title="to_string" alt="" coords="529,24,601,51"/>
+<area shape="rect" id="node8" href="$classinternal_1_1basic__buffer.html#ab4a96d7d4394f469568d290fde5a75a7" title="internal::basic_buffer\l::data" alt="" coords="493,192,636,233"/>
+<area shape="rect" id="node9" href="$classinternal_1_1basic__buffer.html#abc95713c3873c5820f10105fe7c7af93" title="internal::basic_buffer\l::size" alt="" coords="493,126,636,168"/>
+</map>

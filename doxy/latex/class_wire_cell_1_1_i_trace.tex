@@ -1,0 +1,120 @@
+\hypertarget{class_wire_cell_1_1_i_trace}{}\section{Wire\+Cell\+:\+:I\+Trace Class Reference}
+\label{class_wire_cell_1_1_i_trace}\index{Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}}
+
+
+{\ttfamily \#include $<$I\+Trace.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Trace\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_wire_cell_1_1_i_trace__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Trace\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_wire_cell_1_1_i_trace__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ float $>$ \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Charge\+Sequence}
+\begin{DoxyCompactList}\small\item\em Sequential collection of charge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_trace_a7ce72d715939df69a8daa5138d25e69f}{$\sim$\+I\+Trace} ()
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_trace_ae5903cdd197baf3b0ea67d80685851cb}{channel} () const =0
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_trace_ab8ffd89fdf73ef4b7b55af2f9c4312df}{tbin} () const =0
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Charge\+Sequence} \& \hyperlink{class_wire_cell_1_1_i_trace_a55a746bfec82aa0214f0462ae28476e0}{charge} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wire_cell_1_1_interface}{Interface} to charge vs time waveform signal on a channel.
+
+A trace is an ordered sequence of charge measurements in contiguous time bins. 
+
+Definition at line 16 of file I\+Trace.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}\label{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}} 
+\index{Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}!Charge\+Sequence@{Charge\+Sequence}}
+\index{Charge\+Sequence@{Charge\+Sequence}!Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}}
+\subsubsection{\texorpdfstring{Charge\+Sequence}{ChargeSequence}}
+{\footnotesize\ttfamily typedef std\+::vector$<$float$>$ \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Wire\+Cell\+::\+I\+Trace\+::\+Charge\+Sequence}}
+
+
+
+Sequential collection of charge. 
+
+
+
+Definition at line 21 of file I\+Trace.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_trace_a7ce72d715939df69a8daa5138d25e69f}\label{class_wire_cell_1_1_i_trace_a7ce72d715939df69a8daa5138d25e69f}} 
+\index{Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}!````~I\+Trace@{$\sim$\+I\+Trace}}
+\index{````~I\+Trace@{$\sim$\+I\+Trace}!Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Trace()}{~ITrace()}}
+{\footnotesize\ttfamily I\+Trace\+::$\sim$\+I\+Trace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 166 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_trace_ae5903cdd197baf3b0ea67d80685851cb}\label{class_wire_cell_1_1_i_trace_ae5903cdd197baf3b0ea67d80685851cb}} 
+\index{Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}!channel@{channel}}
+\index{channel@{channel}!Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}}
+\subsubsection{\texorpdfstring{channel()}{channel()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Trace\+::channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the identifier number for the channel on which this trace was recorded. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_simple_trace_ab88d78ce49eb45b395fb5411905ae010}{Wire\+Cell\+::\+Simple\+Trace}, and \hyperlink{class_wire_cell_1_1_z_s_ended_trace_ac873750a7a0d47c320050561e8608a0a}{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_trace_a55a746bfec82aa0214f0462ae28476e0}\label{class_wire_cell_1_1_i_trace_a55a746bfec82aa0214f0462ae28476e0}} 
+\index{Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}!charge@{charge}}
+\index{charge@{charge}!Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}}
+\subsubsection{\texorpdfstring{charge()}{charge()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_i_trace_a3dab103257bc46bfd486966f69836954}{Charge\+Sequence}\& Wire\+Cell\+::\+I\+Trace\+::charge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the contiguous adc/charge measurements on the channel starting at tbin. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_simple_trace_a961cf4538022571bfcc24895c2c45cb4}{Wire\+Cell\+::\+Simple\+Trace}, and \hyperlink{class_wire_cell_1_1_z_s_ended_trace_ab2434cf1397e2bc111fd44ffd0afe75e}{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_trace_ab8ffd89fdf73ef4b7b55af2f9c4312df}\label{class_wire_cell_1_1_i_trace_ab8ffd89fdf73ef4b7b55af2f9c4312df}} 
+\index{Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}!tbin@{tbin}}
+\index{tbin@{tbin}!Wire\+Cell\+::\+I\+Trace@{Wire\+Cell\+::\+I\+Trace}}
+\subsubsection{\texorpdfstring{tbin()}{tbin()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Trace\+::tbin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the time bin relative to some absolute time (typically the start of the frame) at which the first A\+D\+C/charge in the trace was digitized (leading bin edge). 
+
+Implemented in \hyperlink{class_wire_cell_1_1_simple_trace_a0a345e3606f66b64b2dbb00df7664210}{Wire\+Cell\+::\+Simple\+Trace}, and \hyperlink{class_wire_cell_1_1_z_s_ended_trace_ac0ae929485ed907726568f02193e931f}{Wire\+Cell\+::\+Z\+S\+Ended\+Trace}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_trace_8h}{I\+Trace.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

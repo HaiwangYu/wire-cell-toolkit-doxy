@@ -1,0 +1,15 @@
+<map id="internal::sprintf_format" name="internal::sprintf_format">
+<area shape="rect" id="node2" href="$classinternal_1_1basic__buffer.html#ae88bfc1cb8c896fa0b689ad8158cccae" title="internal::basic_buffer\l::capacity" alt="" coords="215,5,358,47"/>
+<area shape="rect" id="node3" href="$core_8h.html#ae4af59c87c10d9a8d3ebd3eb455a25c1" title="format" alt="" coords="257,71,316,98"/>
+<area shape="rect" id="node11" href="$structcore__format__specs.html#ac782db831425212c5513c61bde1c8f20" title="core_format_specs::has" alt="" coords="205,122,368,149"/>
+<area shape="rect" id="node12" href="$namespaceinternal.html#acc608c40c33952a5382db8aaaddfc854" title="internal::to_unsigned" alt="" coords="215,173,358,199"/>
+<area shape="rect" id="node13" href="$classinternal_1_1basic__buffer.html#adbd2b147e114f0cc4573f734d4326669" title="internal::basic_buffer\l::resize" alt="" coords="215,224,358,265"/>
+<area shape="rect" id="node14" href="$classinternal_1_1basic__buffer.html#ab4bbc728c01282567eebc165d545772a" title="internal::basic_buffer\l::reserve" alt="" coords="215,289,358,331"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a581988072e193a0fb0f54827f1b42cfd" title="internal::vformat" alt="" coords="416,71,532,98"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="771,46,927,73"/>
+<area shape="rect" id="node8" href="$core_8h.html#a7122c6820a7e6319d6fc2f30d1292faa" title="vprint" alt="" coords="447,126,501,153"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a9f6f592ec8a979251038265f241e7d48" title="internal::vformat_to" alt="" coords="584,97,719,123"/>
+<area shape="rect" id="node7" href="$format_8h.html#afe05b087244838ced775fa3f28134c34" title="to_string" alt="" coords="615,46,687,73"/>
+<area shape="rect" id="node9" href="$classinternal_1_1basic__buffer.html#ab4a96d7d4394f469568d290fde5a75a7" title="internal::basic_buffer\l::data" alt="" coords="580,213,723,255"/>
+<area shape="rect" id="node10" href="$classinternal_1_1basic__buffer.html#abc95713c3873c5820f10105fe7c7af93" title="internal::basic_buffer\l::size" alt="" coords="580,148,723,189"/>
+</map>

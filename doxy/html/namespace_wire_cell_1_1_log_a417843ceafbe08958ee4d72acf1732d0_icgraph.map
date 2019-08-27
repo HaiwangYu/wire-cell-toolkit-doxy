@@ -1,0 +1,4 @@
+<map id="WireCell::Log::add_stdout" name="WireCell::Log::add_stdout">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_main.html#a50af5cb3b3f2cfb176febecd4a1613ce" title="Add a log sink, reserved names &#39;stdout&#39; and &#39;stderr&#39; or a filename. " alt="" coords="184,5,321,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_main.html#a6d6b47f6893cc6474d71d70bf5f8adcb" title="WireCell::Main::cmdline" alt="" coords="369,13,531,39"/>
+</map>

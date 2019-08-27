@@ -1,0 +1,6 @@
+<map id="spdlog::level::to_string_view" name="spdlog::level::to_string_view">
+<area shape="rect" id="node2" href="$classspdlog_1_1logger.html#a50417cea5f81704cd4800aaafa944bc5" title="spdlog::logger::log" alt="" coords="251,5,379,32"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1logger.html#a3c5140393ec153b2b8478361aac80eb6" title="spdlog::logger::critical" alt="" coords="240,56,389,83"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1details_1_1level__formatter.html#a36967967164ade9221ad216e0b617749" title="spdlog::details::level\l_formatter::format" alt="" coords="244,107,385,149"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1details_1_1full__formatter.html#a11da1d2ec8378841d228df071915da35" title="spdlog::details::full\l_formatter::format" alt="" coords="249,173,380,214"/>
+</map>

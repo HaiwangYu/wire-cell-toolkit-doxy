@@ -1,0 +1,165 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Nominal\+Channel\+Response Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}}
+
+
+{\ttfamily \#include $<$Nominal\+Channel\+Response.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Nominal\+Channel\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Nominal\+Channel\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a1fc1257aff1f4477e19a2991c7eb7531}{Nominal\+Channel\+Response} (double gain=14 $\ast$Wire\+Cell\+::units\+::mV/Wire\+Cell\+::units\+::fC, double shaping=2 $\ast$Wire\+Cell\+::units\+::us, const \hyperlink{class_wire_cell_1_1_binning}{Binning} \&binning=\hyperlink{class_wire_cell_1_1_binning}{Binning}(100, 0, 10 $\ast$Wire\+Cell\+::units\+::us))
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a359424e2c7dd60340bb4e4d8e3207542}{$\sim$\+Nominal\+Channel\+Response} ()
+\item 
+virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a494997d5336628959e8585fd8d5a509d}{channel\+\_\+response} (int channel\+\_\+ident) const
+\item 
+virtual \hyperlink{class_wire_cell_1_1_binning}{Binning} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a542dd1589356f39690c01ec012c21c48}{channel\+\_\+response\+\_\+binning} () const
+\begin{DoxyCompactList}\small\item\em Return the binning that the channel\+\_\+response follows. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a3e1d2284621e69ff712cc6a7a373c797}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a897752df4a2a548028aa1051a0b5b372}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Nominal\+Channel\+Response.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a1fc1257aff1f4477e19a2991c7eb7531}\label{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a1fc1257aff1f4477e19a2991c7eb7531}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}!Nominal\+Channel\+Response@{Nominal\+Channel\+Response}}
+\index{Nominal\+Channel\+Response@{Nominal\+Channel\+Response}!Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}}
+\subsubsection{\texorpdfstring{Nominal\+Channel\+Response()}{NominalChannelResponse()}}
+{\footnotesize\ttfamily Sig\+Proc\+::\+Nominal\+Channel\+Response\+::\+Nominal\+Channel\+Response (\begin{DoxyParamCaption}\item[{double}]{gain = {\ttfamily 14$\ast$WireCell\+:\+:units\+:\+:mV/WireCell\+:\+:units\+:\+:fC},  }\item[{double}]{shaping = {\ttfamily 2$\ast$WireCell\+:\+:units\+:\+:us},  }\item[{const \hyperlink{class_wire_cell_1_1_binning}{Binning} \&}]{binning = {\ttfamily \hyperlink{class_wire_cell_1_1_binning}{Binning}(100,~0,~10$\ast$WireCell\+:\+:units\+:\+:us)} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file Nominal\+Channel\+Response.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a359424e2c7dd60340bb4e4d8e3207542}\label{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a359424e2c7dd60340bb4e4d8e3207542}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}!````~Nominal\+Channel\+Response@{$\sim$\+Nominal\+Channel\+Response}}
+\index{````~Nominal\+Channel\+Response@{$\sim$\+Nominal\+Channel\+Response}!Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}}
+\subsubsection{\texorpdfstring{$\sim$\+Nominal\+Channel\+Response()}{~NominalChannelResponse()}}
+{\footnotesize\ttfamily Sig\+Proc\+::\+Nominal\+Channel\+Response\+::$\sim$\+Nominal\+Channel\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 21 of file Nominal\+Channel\+Response.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a494997d5336628959e8585fd8d5a509d}\label{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a494997d5336628959e8585fd8d5a509d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}!channel\+\_\+response@{channel\+\_\+response}}
+\index{channel\+\_\+response@{channel\+\_\+response}!Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}}
+\subsubsection{\texorpdfstring{channel\+\_\+response()}{channel\_response()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \& Sig\+Proc\+::\+Nominal\+Channel\+Response\+::channel\+\_\+response (\begin{DoxyParamCaption}\item[{int}]{channel\+\_\+ident }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Provide the channel response for the given channel ID number. Note the binning of the returned waveform should be coordinated through configuration. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_response_aee79a65bc671678d529eca0e4792e10d}{Wire\+Cell\+::\+I\+Channel\+Response}.
+
+
+
+Definition at line 52 of file Nominal\+Channel\+Response.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a542dd1589356f39690c01ec012c21c48}\label{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a542dd1589356f39690c01ec012c21c48}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}!channel\+\_\+response\+\_\+binning@{channel\+\_\+response\+\_\+binning}}
+\index{channel\+\_\+response\+\_\+binning@{channel\+\_\+response\+\_\+binning}!Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}}
+\subsubsection{\texorpdfstring{channel\+\_\+response\+\_\+binning()}{channel\_response\_binning()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_binning}{Binning} Sig\+Proc\+::\+Nominal\+Channel\+Response\+::channel\+\_\+response\+\_\+binning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the binning that the channel\+\_\+response follows. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_response_a6a3daf077f98883b5d4f9dd6529e99fe}{Wire\+Cell\+::\+I\+Channel\+Response}.
+
+
+
+Definition at line 57 of file Nominal\+Channel\+Response.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a3e1d2284621e69ff712cc6a7a373c797}\label{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a3e1d2284621e69ff712cc6a7a373c797}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Sig\+Proc\+::\+Nominal\+Channel\+Response\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 36 of file Nominal\+Channel\+Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a3e1d2284621e69ff712cc6a7a373c797_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a897752df4a2a548028aa1051a0b5b372}\label{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a897752df4a2a548028aa1051a0b5b372}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response@{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Sig\+Proc\+::\+Nominal\+Channel\+Response\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 25 of file Nominal\+Channel\+Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a897752df4a2a548028aa1051a0b5b372_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_nominal_channel_response_8h}{Nominal\+Channel\+Response.\+h}\item 
+sigproc/src/\hyperlink{_nominal_channel_response_8cxx}{Nominal\+Channel\+Response.\+cxx}\end{DoxyCompactItemize}

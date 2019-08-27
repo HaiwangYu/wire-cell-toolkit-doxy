@@ -1,0 +1,96 @@
+\hypertarget{class_wire_cell_1_1_i_depo_collector}{}\section{Wire\+Cell\+:\+:I\+Depo\+Collector Class Reference}
+\label{class_wire_cell_1_1_i_depo_collector}\index{Wire\+Cell\+::\+I\+Depo\+Collector@{Wire\+Cell\+::\+I\+Depo\+Collector}}
+
+
+{\ttfamily \#include $<$I\+Depo\+Collector.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Depo\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_depo_collector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Depo\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_wire_cell_1_1_i_depo_collector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_depo_collector}{I\+Depo\+Collector} $>$ \hyperlink{class_wire_cell_1_1_i_depo_collector_a90a08b7b30e80a1a2d5ce1367cc2d698}{pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_depo_collector_a3200cc7cb980eddbffc4bd7fa3ebb11d}{$\sim$\+I\+Depo\+Collector} ()
+\item 
+virtual std\+::string \hyperlink{class_wire_cell_1_1_i_depo_collector_a0ea88b8d3e723800a2bbe3e4bd0c9793}{signature} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A depo collector if fed depos one at a time, possibly applying some filtering, until some condition is met at which time it produces a Depo\+Set.
+
+No depos will be retained after an E\+OS is received and it will lead to an E\+OS being emitted. 
+
+Definition at line 17 of file I\+Depo\+Collector.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_depo_collector_a90a08b7b30e80a1a2d5ce1367cc2d698}\label{class_wire_cell_1_1_i_depo_collector_a90a08b7b30e80a1a2d5ce1367cc2d698}} 
+\index{Wire\+Cell\+::\+I\+Depo\+Collector@{Wire\+Cell\+::\+I\+Depo\+Collector}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Depo\+Collector@{Wire\+Cell\+::\+I\+Depo\+Collector}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_depo_collector}{I\+Depo\+Collector}$>$ \hyperlink{class_wire_cell_1_1_i_depo_collector_a90a08b7b30e80a1a2d5ce1367cc2d698}{Wire\+Cell\+::\+I\+Depo\+Collector\+::pointer}}
+
+
+
+Definition at line 20 of file I\+Depo\+Collector.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_depo_collector_a3200cc7cb980eddbffc4bd7fa3ebb11d}\label{class_wire_cell_1_1_i_depo_collector_a3200cc7cb980eddbffc4bd7fa3ebb11d}} 
+\index{Wire\+Cell\+::\+I\+Depo\+Collector@{Wire\+Cell\+::\+I\+Depo\+Collector}!````~I\+Depo\+Collector@{$\sim$\+I\+Depo\+Collector}}
+\index{````~I\+Depo\+Collector@{$\sim$\+I\+Depo\+Collector}!Wire\+Cell\+::\+I\+Depo\+Collector@{Wire\+Cell\+::\+I\+Depo\+Collector}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Depo\+Collector()}{~IDepoCollector()}}
+{\footnotesize\ttfamily I\+Depo\+Collector\+::$\sim$\+I\+Depo\+Collector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 116 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_depo_collector_a0ea88b8d3e723800a2bbe3e4bd0c9793}\label{class_wire_cell_1_1_i_depo_collector_a0ea88b8d3e723800a2bbe3e4bd0c9793}} 
+\index{Wire\+Cell\+::\+I\+Depo\+Collector@{Wire\+Cell\+::\+I\+Depo\+Collector}!signature@{signature}}
+\index{signature@{signature}!Wire\+Cell\+::\+I\+Depo\+Collector@{Wire\+Cell\+::\+I\+Depo\+Collector}}
+\subsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily virtual std\+::string Wire\+Cell\+::\+I\+Depo\+Collector\+::signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The signature is string unique to all classes that implement a particular calling signature. These should be defined in lower level interfaces such as a mythical I\+My\+Foo\+To\+Bar\+Converter. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_node_a0b0763465adf5ba7febe8e378162b584}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 24 of file I\+Depo\+Collector.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_depo_collector_8h}{I\+Depo\+Collector.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

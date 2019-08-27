@@ -1,0 +1,66 @@
+\hypertarget{_i_cluster_8h}{}\section{iface/inc/\+Wire\+Cell\+Iface/\+I\+Cluster.h File Reference}
+\label{_i_cluster_8h}\index{iface/inc/\+Wire\+Cell\+Iface/\+I\+Cluster.\+h@{iface/inc/\+Wire\+Cell\+Iface/\+I\+Cluster.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Channel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Wire.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Blob.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+Wire\+Plane\+Id.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Indexed\+Graph.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/graph/graph\+\_\+traits.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/graph/adjacency\+\_\+list.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/graph/connected\+\_\+components.\+hpp$>$}\newline
+{\ttfamily \#include $<$variant$>$}\newline
+Include dependency graph for I\+Cluster.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_i_cluster_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_i_cluster_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1cluster__node__t}{Wire\+Cell\+::cluster\+\_\+node\+\_\+t}
+\item 
+struct \hyperlink{structstd_1_1hash_3_01_wire_cell_1_1cluster__node__t_01_4}{std\+::hash$<$ Wire\+Cell\+::cluster\+\_\+node\+\_\+t $>$}
+\item 
+class \hyperlink{class_wire_cell_1_1_i_cluster}{Wire\+Cell\+::\+I\+Cluster}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespacestd}{std}
+\begin{DoxyCompactList}\small\item\em If we are still before C++14, supply the fodder for doing the \char`\"{}indices trick\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::variant$<$ size\+\_\+t, I\+Channel\+::pointer, I\+Wire\+::pointer, I\+Blob\+::pointer, I\+Slice\+::pointer, I\+Channel\+::shared\+\_\+vector $>$ \hyperlink{namespace_wire_cell_a0dd058393dc7c7e35d888c206b9d479d}{Wire\+Cell\+::cluster\+\_\+ptr\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The vertex property. \end{DoxyCompactList}\item 
+typedef boost\+::adjacency\+\_\+list$<$ boost\+::setS, boost\+::vecS, boost\+::undirectedS, cluster\+\_\+node\+\_\+t $>$ \hyperlink{namespace_wire_cell_a6a9ecba14dfba50cdb081820a8bcacbe}{Wire\+Cell\+::cluster\+\_\+graph\+\_\+t}
+\item 
+typedef boost\+::graph\+\_\+traits$<$ cluster\+\_\+graph\+\_\+t $>$\+::vertex\+\_\+descriptor \hyperlink{namespace_wire_cell_a13568b475bcf41285e67c5d0420bd1c0}{Wire\+Cell\+::cluster\+\_\+vertex\+\_\+t}
+\item 
+typedef boost\+::graph\+\_\+traits$<$ cluster\+\_\+graph\+\_\+t $>$\+::edge\+\_\+descriptor \hyperlink{namespace_wire_cell_ad8467b97f80d30874cc5356432daf6f2}{Wire\+Cell\+::cluster\+\_\+edge\+\_\+t}
+\item 
+typedef boost\+::graph\+\_\+traits$<$ cluster\+\_\+graph\+\_\+t $>$\+::vertex\+\_\+iterator \hyperlink{namespace_wire_cell_a11c4792993ad2c34d5d4bd1ddf2f1e8a}{Wire\+Cell\+::cluster\+\_\+vertex\+\_\+iter\+\_\+t}
+\item 
+typedef Indexed\+Graph$<$ cluster\+\_\+node\+\_\+t $>$ \hyperlink{namespace_wire_cell_a81d03e7272d04b607afc90bd3f7a9499}{Wire\+Cell\+::cluster\+\_\+indexed\+\_\+graph\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Type $>$ }\\std\+::vector$<$ Type $>$ \hyperlink{namespace_wire_cell_ae4db8903c9e13b5563b27842413aa9ff}{Wire\+Cell\+::oftype} (const cluster\+\_\+indexed\+\_\+graph\+\_\+t \&g)
+\item 
+{\footnotesize template$<$typename Type $>$ }\\std\+::vector$<$ Type $>$ \hyperlink{namespace_wire_cell_a11c40bd5197fa73c633ce987e1d284e4}{Wire\+Cell\+::neighbors\+\_\+oftype} (const cluster\+\_\+indexed\+\_\+graph\+\_\+t \&g, const cluster\+\_\+node\+\_\+t \&\hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n})
+\end{DoxyCompactItemize}

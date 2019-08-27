@@ -1,0 +1,6 @@
+<map id="format_decimal" name="format_decimal">
+<area shape="rect" id="node2" href="$namespaceinternal.html#ac5822d6a6cf07ba173eae0ab2c53bf8c" title="internal::is_negative" alt="" coords="175,5,313,32"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a24a563e36236186f38e75ecf47a819ea" title="internal::count_digits" alt="" coords="173,56,315,83"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a887ca8a3160ba683e62bd9d7418e821f" title="internal::make_checked" alt="" coords="164,107,324,133"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#acc608c40c33952a5382db8aaaddfc854" title="internal::to_unsigned" alt="" coords="173,157,315,184"/>
+</map>

@@ -1,0 +1,193 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:L1\+S\+P\+Filter Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}}
+
+
+{\ttfamily \#include $<$L1\+S\+P\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:L1\+S\+P\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:L1\+S\+P\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a7d0f598eb9e9bbb7acbcdbce742ccdb2}{L1\+S\+P\+Filter} (double gain=14.\+0 $\ast$units\+::mV/units\+::fC, double shaping=2.\+2 $\ast$units\+::microsecond, double postgain=1.\+2, double A\+D\+C\+\_\+mV=4096/(2000.$\ast$units\+::mV), double fine\+\_\+time\+\_\+offset=0.\+0 $\ast$units\+::microsecond, double coarse\+\_\+time\+\_\+offset=-\/8.\+0 $\ast$units\+::microsecond)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a9e2ef6ef5928d6c386005d78de85d020}{$\sim$\+L1\+S\+P\+Filter} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_ac58397721b0a7b485d46ac63522ebe87}{operator()} (const \hyperlink{class_wire_cell_1_1_i_function_node_a55c0946156df9b712b8ad1a0b59b2db6}{input\+\_\+pointer} \&in, \hyperlink{class_wire_cell_1_1_i_function_node_afc02f1ec60d31aacddf64963f9ca650b}{output\+\_\+pointer} \&out)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_frame_filter}{I\+Frame\+Filter} interface. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a2a7fa041a4d3087b2070f676fc7e4fa2}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_configurable}{I\+Configurable} interface. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_aa37fc09d196529f29eb2477fe1c0317a}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_ad93828b53fee0709cd9649526b5884e7}{init\+\_\+resp} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a9720ba99e84d3cb4df578eb7ee0e436d}{L1\+\_\+fit} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_simple_trace}{Wire\+Cell\+::\+Simple\+Trace} $>$ \&newtrace, std\+::shared\+\_\+ptr$<$ const \hyperlink{class_wire_cell_1_1_i_trace}{Wire\+Cell\+::\+I\+Trace} $>$ \&adctrace, int start\+\_\+tick, int end\+\_\+tick, bool flag\+\_\+shorted=false)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file L1\+S\+P\+Filter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a7d0f598eb9e9bbb7acbcdbce742ccdb2}\label{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a7d0f598eb9e9bbb7acbcdbce742ccdb2}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}!L1\+S\+P\+Filter@{L1\+S\+P\+Filter}}
+\index{L1\+S\+P\+Filter@{L1\+S\+P\+Filter}!Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}}
+\subsubsection{\texorpdfstring{L1\+S\+P\+Filter()}{L1SPFilter()}}
+{\footnotesize\ttfamily L1\+S\+P\+Filter\+::\+L1\+S\+P\+Filter (\begin{DoxyParamCaption}\item[{double}]{gain = {\ttfamily 14.0~$\ast$~units\+:\+:mV/units\+:\+:fC},  }\item[{double}]{shaping = {\ttfamily 2.2~$\ast$~units\+:\+:microsecond},  }\item[{double}]{postgain = {\ttfamily 1.2},  }\item[{double}]{A\+D\+C\+\_\+mV = {\ttfamily 4096/(2000.$\ast$units\+:\+:mV)},  }\item[{double}]{fine\+\_\+time\+\_\+offset = {\ttfamily 0.0~$\ast$~units\+:\+:microsecond},  }\item[{double}]{coarse\+\_\+time\+\_\+offset = {\ttfamily -\/8.0~$\ast$~units\+:\+:microsecond} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file L1\+S\+P\+Filter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a9e2ef6ef5928d6c386005d78de85d020}\label{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a9e2ef6ef5928d6c386005d78de85d020}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}!````~L1\+S\+P\+Filter@{$\sim$\+L1\+S\+P\+Filter}}
+\index{````~L1\+S\+P\+Filter@{$\sim$\+L1\+S\+P\+Filter}!Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}}
+\subsubsection{\texorpdfstring{$\sim$\+L1\+S\+P\+Filter()}{~L1SPFilter()}}
+{\footnotesize\ttfamily L1\+S\+P\+Filter\+::$\sim$\+L1\+S\+P\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 42 of file L1\+S\+P\+Filter.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a2a7fa041a4d3087b2070f676fc7e4fa2}\label{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a2a7fa041a4d3087b2070f676fc7e4fa2}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void L1\+S\+P\+Filter\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_configurable}{I\+Configurable} interface. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 165 of file L1\+S\+P\+Filter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_aa37fc09d196529f29eb2477fe1c0317a}\label{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_aa37fc09d196529f29eb2477fe1c0317a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} L1\+S\+P\+Filter\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+Name of component providing field responses
+
+An array holding a waveform to use as the \char`\"{}smearing\char`\"{} filter.
+
+The tag identifying traces which represent \char`\"{}raw\char`\"{} (not deconvolved) A\+DC values.
+
+The tag identifying traces which represent \char`\"{}signal\char`\"{} processed (deconvolved) waveforms.
+
+The tag to place on the output waveforms 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 97 of file L1\+S\+P\+Filter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_ad93828b53fee0709cd9649526b5884e7}\label{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_ad93828b53fee0709cd9649526b5884e7}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}!init\+\_\+resp@{init\+\_\+resp}}
+\index{init\+\_\+resp@{init\+\_\+resp}!Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}}
+\subsubsection{\texorpdfstring{init\+\_\+resp()}{init\_resp()}}
+{\footnotesize\ttfamily void L1\+S\+P\+Filter\+::init\+\_\+resp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file L1\+S\+P\+Filter.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_ad93828b53fee0709cd9649526b5884e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_ad93828b53fee0709cd9649526b5884e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a9720ba99e84d3cb4df578eb7ee0e436d}\label{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a9720ba99e84d3cb4df578eb7ee0e436d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}!L1\+\_\+fit@{L1\+\_\+fit}}
+\index{L1\+\_\+fit@{L1\+\_\+fit}!Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}}
+\subsubsection{\texorpdfstring{L1\+\_\+fit()}{L1\_fit()}}
+{\footnotesize\ttfamily int L1\+S\+P\+Filter\+::\+L1\+\_\+fit (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_simple_trace}{Wire\+Cell\+::\+Simple\+Trace} $>$ \&}]{newtrace,  }\item[{std\+::shared\+\_\+ptr$<$ const \hyperlink{class_wire_cell_1_1_i_trace}{Wire\+Cell\+::\+I\+Trace} $>$ \&}]{adctrace,  }\item[{int}]{start\+\_\+tick,  }\item[{int}]{end\+\_\+tick,  }\item[{bool}]{flag\+\_\+shorted = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 494 of file L1\+S\+P\+Filter.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_a9720ba99e84d3cb4df578eb7ee0e436d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_ac58397721b0a7b485d46ac63522ebe87}\label{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_ac58397721b0a7b485d46ac63522ebe87}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+L1\+S\+P\+Filter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool L1\+S\+P\+Filter\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_function_node_a55c0946156df9b712b8ad1a0b59b2db6}{input\+\_\+pointer} \&}]{in,  }\item[{\hyperlink{class_wire_cell_1_1_i_function_node_afc02f1ec60d31aacddf64963f9ca650b}{output\+\_\+pointer} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_frame_filter}{I\+Frame\+Filter} interface. 
+
+here, use the A\+DC and signal traces to do L1\+SP put result in out\+\_\+traces 
+
+Definition at line 178 of file L1\+S\+P\+Filter.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter_ac58397721b0a7b485d46ac63522ebe87_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_l1_s_p_filter_8h}{L1\+S\+P\+Filter.\+h}\item 
+sigproc/src/\hyperlink{_l1_s_p_filter_8cxx}{L1\+S\+P\+Filter.\+cxx}\end{DoxyCompactItemize}

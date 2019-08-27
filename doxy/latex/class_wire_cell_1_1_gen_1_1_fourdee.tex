@@ -1,0 +1,199 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_fourdee}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Fourdee Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_fourdee}\index{Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}}
+
+
+{\ttfamily \#include $<$Fourdee.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Fourdee\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_wire_cell_1_1_gen_1_1_fourdee__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Fourdee\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_wire_cell_1_1_gen_1_1_fourdee__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_fourdee_ad0ed7e328ba4dd5aa5c748075d85783c}{Fourdee} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_fourdee_ab84cf40afeff0700d886e9c330a844f6}{$\sim$\+Fourdee} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_fourdee_ad7e5725da98e74348a3151e9ddd75cde}{execute} ()
+\begin{DoxyCompactList}\small\item\em Implement to run something. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_fourdee_a2a79017c41d76c2cd942ba1c87eb3106}{execute\+\_\+old} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_fourdee_a316c2ab798af8812a737b05ad5a788ae}{execute\+\_\+new} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_fourdee_a1ec0263b673e8fa7021737cd2ca5fe16}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_fourdee_a36c5e467b00f1598b8063f30aa33d981}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wire_cell_1_1_gen_1_1_fourdee}{Fourdee} is a Wire Cell Toolkit application class which handles a chain of \char`\"{}the 4 D\textquotesingle{}s\char`\"{}\+: deposition, drifting, \char`\"{}ducting\char`\"{} (induction response) and digitization. There is an optional \char`\"{}5th D\char`\"{}\+: \char`\"{}dissonance\char`\"{} which provides a source of noise to be summed.
+
+Each step provided by a model implemented as an instance of the associated component class. A final sink is also provided if the digitization output is provided. 
+
+Definition at line 34 of file Fourdee.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_fourdee_ad0ed7e328ba4dd5aa5c748075d85783c}\label{class_wire_cell_1_1_gen_1_1_fourdee_ad0ed7e328ba4dd5aa5c748075d85783c}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}!Fourdee@{Fourdee}}
+\index{Fourdee@{Fourdee}!Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}}
+\subsubsection{\texorpdfstring{Fourdee()}{Fourdee()}}
+{\footnotesize\ttfamily Gen\+::\+Fourdee\+::\+Fourdee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 16 of file Fourdee.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_fourdee_ab84cf40afeff0700d886e9c330a844f6}\label{class_wire_cell_1_1_gen_1_1_fourdee_ab84cf40afeff0700d886e9c330a844f6}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}!````~Fourdee@{$\sim$\+Fourdee}}
+\index{````~Fourdee@{$\sim$\+Fourdee}!Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}}
+\subsubsection{\texorpdfstring{$\sim$\+Fourdee()}{~Fourdee()}}
+{\footnotesize\ttfamily Gen\+::\+Fourdee\+::$\sim$\+Fourdee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 26 of file Fourdee.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_fourdee_a1ec0263b673e8fa7021737cd2ca5fe16}\label{class_wire_cell_1_1_gen_1_1_fourdee_a1ec0263b673e8fa7021737cd2ca5fe16}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Fourdee\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 48 of file Fourdee.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_fourdee_a36c5e467b00f1598b8063f30aa33d981}\label{class_wire_cell_1_1_gen_1_1_fourdee_a36c5e467b00f1598b8063f30aa33d981}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Fourdee\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 30 of file Fourdee.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_fourdee_a36c5e467b00f1598b8063f30aa33d981_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_fourdee_ad7e5725da98e74348a3151e9ddd75cde}\label{class_wire_cell_1_1_gen_1_1_fourdee_ad7e5725da98e74348a3151e9ddd75cde}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}!execute@{execute}}
+\index{execute@{execute}!Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Gen\+::\+Fourdee\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implement to run something. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_application_a5c77275a37093541aaad6410d8ce5c31}{Wire\+Cell\+::\+I\+Application}.
+
+
+
+Definition at line 254 of file Fourdee.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_fourdee_ad7e5725da98e74348a3151e9ddd75cde_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_fourdee_a316c2ab798af8812a737b05ad5a788ae}\label{class_wire_cell_1_1_gen_1_1_fourdee_a316c2ab798af8812a737b05ad5a788ae}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}!execute\+\_\+new@{execute\+\_\+new}}
+\index{execute\+\_\+new@{execute\+\_\+new}!Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}}
+\subsubsection{\texorpdfstring{execute\+\_\+new()}{execute\_new()}}
+{\footnotesize\ttfamily void Gen\+::\+Fourdee\+::execute\+\_\+new (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 260 of file Fourdee.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_fourdee_a316c2ab798af8812a737b05ad5a788ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_fourdee_a316c2ab798af8812a737b05ad5a788ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_fourdee_a2a79017c41d76c2cd942ba1c87eb3106}\label{class_wire_cell_1_1_gen_1_1_fourdee_a2a79017c41d76c2cd942ba1c87eb3106}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}!execute\+\_\+old@{execute\+\_\+old}}
+\index{execute\+\_\+old@{execute\+\_\+old}!Wire\+Cell\+::\+Gen\+::\+Fourdee@{Wire\+Cell\+::\+Gen\+::\+Fourdee}}
+\subsubsection{\texorpdfstring{execute\+\_\+old()}{execute\_old()}}
+{\footnotesize\ttfamily void Gen\+::\+Fourdee\+::execute\+\_\+old (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 361 of file Fourdee.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_fourdee_a2a79017c41d76c2cd942ba1c87eb3106_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_fourdee_8h}{Fourdee.\+h}\item 
+gen/src/\hyperlink{_fourdee_8cxx}{Fourdee.\+cxx}\end{DoxyCompactItemize}

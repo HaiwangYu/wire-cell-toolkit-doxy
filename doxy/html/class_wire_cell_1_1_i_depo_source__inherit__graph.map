@@ -1,0 +1,11 @@
+<map id="WireCell::IDepoSource" name="WireCell::IDepoSource">
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_blip_source.html" title="WireCell::Gen::BlipSource" alt="" coords="1204,5,1379,32"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_track_depos.html" title="A producer of depositions created from some number of simple, linear tracks. " alt="" coords="1200,56,1383,83"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_sio_1_1_bee_depo_source.html" title="WireCell::Sio::BeeDepoSource" alt="" coords="1190,107,1393,133"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_sio_1_1_json_depo_source.html" title="WireCell::Sio::JsonDepoSource" alt="" coords="1188,157,1395,184"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_source_node.html" title="WireCell::ISourceNode\l\&lt; IDepo \&gt;" alt="" coords="780,74,936,115"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_source_node_base.html" title="WireCell::ISourceNodeBase" alt="" coords="545,81,732,108"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="383,81,497,108"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="184,74,335,115"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,81,136,108"/>
+</map>

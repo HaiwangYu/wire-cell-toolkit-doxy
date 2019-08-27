@@ -1,0 +1,8 @@
+<map id="spdlog::details::os::prevent_child_fd" name="spdlog::details::os::prevent_child_fd">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1os.html#af2d11a0b892e2f0cb3c6beba4c659a47" title="spdlog::details::os\l::fopen_s" alt="" coords="181,71,309,112"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1details_1_1file__helper.html#a8612066fd098080cc60e3aefed6a6085" title="spdlog::details::file\l_helper::open" alt="" coords="357,71,488,112"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1details_1_1file__helper.html#a21c688da7f241c53871b462c3a5c2c94" title="spdlog::details::file\l_helper::reopen" alt="" coords="562,5,693,47"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1sinks_1_1basic__file__sink.html#a799e95cc46fd69b03f4ef7497aa21436" title="spdlog::sinks::basic\l_file_sink::basic_file_sink" alt="" coords="542,71,713,112"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#a0e754181168b32e8b1b60b82c35179e8" title="spdlog::sinks::rotating\l_file_sink::rotating_file_sink" alt="" coords="536,136,719,177"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#ae93e4792b76f73bb0be8e50b5c5e889b" title="spdlog::sinks::rotating\l_file_sink::flush_" alt="" coords="767,5,917,47"/>
+</map>

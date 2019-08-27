@@ -1,0 +1,5 @@
+<map id="WireCell::SigProc::NominalChannelResponse::default_configuration" name="WireCell::SigProc::NominalChannelResponse::default_configuration">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_binning.html#aaac66033ecc76a899c18f8f09404c419" title="WireCell::Binning::\lnbins" alt="" coords="243,5,374,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_binning.html#a5c7eadf5a87f443a18b93d18f1707372" title="WireCell::Binning::min" alt="" coords="233,71,385,98"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_binning.html#a91e6fb550bd6cac95e1e61be625583fe" title="WireCell::Binning::max" alt="" coords="231,122,387,149"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="spdlog::sinks::daily_file_sink::flush_" name="spdlog::sinks::daily_file_sink::flush_">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1os.html#aef63b92ee93ec66603c0357d0ac75bed" title="spdlog::details::os\l::localtime" alt="" coords="204,5,332,47"/>
+<area shape="rect" id="node4" href="$namespacespdlog_1_1details_1_1os.html#ab86a7d9f1495a0edae71ce647bae6a66" title="spdlog::details::os::now" alt="" coords="188,71,348,98"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a990db8ce6eb1702f344b5993587f37af" title="internal::localtime_s" alt="" coords="396,13,535,39"/>
+</map>

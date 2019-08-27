@@ -1,0 +1,133 @@
+\hypertarget{class_wire_cell_1_1_i_channel}{}\section{Wire\+Cell\+:\+:I\+Channel Class Reference}
+\label{class_wire_cell_1_1_i_channel}\index{Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}}
+
+
+{\ttfamily \#include $<$I\+Channel.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Channel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_wire_cell_1_1_i_channel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Channel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_wire_cell_1_1_i_channel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_a1954d6f43b7917ff4cad314eaa0acc6f}{$\sim$\+I\+Channel} ()
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_channel_a402dc3c45e1827f7437b7db059a834b1}{ident} () const =0
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_channel_a778ee7c6f6b69febe03862b4e2ae2a43}{index} () const =0
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Wire\+::vector} \& \hyperlink{class_wire_cell_1_1_i_channel_a699d41be0c4e79f99dfef3b69394cf52}{wires} () const =0
+\begin{DoxyCompactList}\small\item\em Wire segments ordered in increasing distance from channel input. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} \hyperlink{class_wire_cell_1_1_i_channel_abfb090d07e74573c9cf633695ca73927}{planeid} () const
+\begin{DoxyCompactList}\small\item\em The ID of the plane of wire zero. This is just sugar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file I\+Channel.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_a1954d6f43b7917ff4cad314eaa0acc6f}\label{class_wire_cell_1_1_i_channel_a1954d6f43b7917ff4cad314eaa0acc6f}} 
+\index{Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}!````~I\+Channel@{$\sim$\+I\+Channel}}
+\index{````~I\+Channel@{$\sim$\+I\+Channel}!Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Channel()}{~IChannel()}}
+{\footnotesize\ttfamily I\+Channel\+::$\sim$\+I\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 5 of file I\+Channel.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_a402dc3c45e1827f7437b7db059a834b1}\label{class_wire_cell_1_1_i_channel_a402dc3c45e1827f7437b7db059a834b1}} 
+\index{Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}!ident@{ident}}
+\index{ident@{ident}!Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}}
+\subsubsection{\texorpdfstring{ident()}{ident()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Channel\+::ident (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Detector-\/dependent, globally unique channel ID number. Negative is illegal, not guaranteed consecutive over all given channels. This same number may be called simply \char`\"{}channel\char`\"{} in other contexts. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_simple_channel_a778b1796236fda53b95214f0e60d310a}{Wire\+Cell\+::\+Simple\+Channel}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_a778ee7c6f6b69febe03862b4e2ae2a43}\label{class_wire_cell_1_1_i_channel_a778ee7c6f6b69febe03862b4e2ae2a43}} 
+\index{Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}!index@{index}}
+\index{index@{index}!Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}}
+\subsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Channel\+::index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+The channel index is the \char`\"{}\+Wire Attachment Number\char`\"{}. The W\+AN counts along points of attachment of the zero\textquotesingle{} zero-\/segment wires for a wire plane. Note, for detectors with wrapped wires this index also wraps. It counts in the same direction as the W\+IP number of \hyperlink{class_wire_cell_1_1_i_wire_abe81fe1d38c3d0a73e812e765f2081cd}{I\+Wire\+::index} but starts at zero even with wrapped wire detectors. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_simple_channel_af16019937e1b8fb48860f405c4607757}{Wire\+Cell\+::\+Simple\+Channel}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_abfb090d07e74573c9cf633695ca73927}\label{class_wire_cell_1_1_i_channel_abfb090d07e74573c9cf633695ca73927}} 
+\index{Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}!planeid@{planeid}}
+\index{planeid@{planeid}!Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}}
+\subsubsection{\texorpdfstring{planeid()}{planeid()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} I\+Channel\+::planeid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The ID of the plane of wire zero. This is just sugar. 
+
+
+
+Definition at line 9 of file I\+Channel.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_wire_cell_1_1_i_channel_abfb090d07e74573c9cf633695ca73927_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_a699d41be0c4e79f99dfef3b69394cf52}\label{class_wire_cell_1_1_i_channel_a699d41be0c4e79f99dfef3b69394cf52}} 
+\index{Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}!wires@{wires}}
+\index{wires@{wires}!Wire\+Cell\+::\+I\+Channel@{Wire\+Cell\+::\+I\+Channel}}
+\subsubsection{\texorpdfstring{wires()}{wires()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Wire\+::vector}\& Wire\+Cell\+::\+I\+Channel\+::wires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Wire segments ordered in increasing distance from channel input. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_simple_channel_a4e3b8a6e1f4d2ac98b532bb79aaaa6ef}{Wire\+Cell\+::\+Simple\+Channel}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_wire_cell_1_1_i_channel_a699d41be0c4e79f99dfef3b69394cf52_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_channel_8h}{I\+Channel.\+h}\item 
+iface/src/\hyperlink{_i_channel_8cxx}{I\+Channel.\+cxx}\end{DoxyCompactItemize}

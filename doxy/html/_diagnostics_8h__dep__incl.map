@@ -1,0 +1,8 @@
+<map id="sigproc/inc/WireCellSigProc/Diagnostics.h" name="sigproc/inc/WireCellSigProc/Diagnostics.h">
+<area shape="rect" id="node2" href="$_microboone_8h.html" title="sigproc/inc/WireCellSigProc\l/Microboone.h" alt="" coords="5,95,191,136"/>
+<area shape="rect" id="node5" href="$_protodune_8h.html" title="sigproc/inc/WireCellSigProc\l/Protodune.h" alt="" coords="215,95,400,136"/>
+<area shape="rect" id="node6" href="$_diagnostics_8cxx.html" title="sigproc/src/Diagnostics.cxx" alt="" coords="425,102,609,129"/>
+<area shape="rect" id="node7" href="$_omnibus_noise_filter_8cxx.html" title="sigproc/src/OmnibusNoise\lFilter.cxx" alt="" coords="633,95,809,136"/>
+<area shape="rect" id="node3" href="$_microboone_8cxx.html" title="sigproc/src/Microboone.cxx" alt="" coords="7,184,189,211"/>
+<area shape="rect" id="node4" href="$_protodune_8cxx.html" title="sigproc/src/Protodune.cxx" alt="" coords="216,184,391,211"/>
+</map>

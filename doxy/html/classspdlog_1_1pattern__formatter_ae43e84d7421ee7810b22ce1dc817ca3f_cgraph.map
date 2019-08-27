@@ -1,0 +1,10 @@
+<map id="spdlog::pattern_formatter::format" name="spdlog::pattern_formatter::format">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1fmt__helper.html#a603f4d0d8853a61610a0042d5d62fe94" title="spdlog::details::fmt\l_helper::append_string_view" alt="" coords="220,5,407,47"/>
+<area shape="rect" id="node3" href="$namespacespdlog_1_1details_1_1os.html#aef63b92ee93ec66603c0357d0ac75bed" title="spdlog::details::os\l::localtime" alt="" coords="249,71,377,112"/>
+<area shape="rect" id="node5" href="$namespacespdlog_1_1details_1_1os.html#ac993ad051e07cd5bda5328be2a54b0a8" title="spdlog::details::os\l::gmtime" alt="" coords="249,136,377,177"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="267,202,360,229"/>
+<area shape="rect" id="node9" href="$structspdlog_1_1details_1_1padding__info.html#a2ebd71cdda444c97eba736828179b573" title="spdlog::details::padding\l_info::padding_info" alt="" coords="234,253,393,295"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a990db8ce6eb1702f344b5993587f37af" title="internal::localtime_s" alt="" coords="455,78,593,105"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#a4df52163db0eff7ab6b17cb243a224b7" title="internal::gmtime_s" alt="" coords="459,137,589,163"/>
+<area shape="rect" id="node7" href="$namespaceinternal.html#a6a29b192fce543ff8c18fe7bedf3e321" title="internal::gmtime_r" alt="" coords="461,187,587,214"/>
+</map>

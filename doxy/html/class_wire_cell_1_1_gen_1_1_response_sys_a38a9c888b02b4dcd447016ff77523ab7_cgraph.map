@@ -1,0 +1,5 @@
+<map id="WireCell::Gen::ResponseSys::configure" name="WireCell::Gen::ResponseSys::configure">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_response_sys.html#ab6bced35ba8f8279d8204d842caf868a" title="WireCell::Gen::ResponseSys\l::waveform_period" alt="" coords="248,5,443,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_response_sys.html#a7b431ba8fb1668bd0b067f5f03b53171" title="WireCell::Gen::ResponseSys\l::waveform_start" alt="" coords="248,71,443,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_response_1_1_generator.html#aceed932e0bab5af1cb80981507667e5e" title="FIXME: eradicate Domain in favor of Binning. " alt="" coords="273,136,418,177"/>
+</map>

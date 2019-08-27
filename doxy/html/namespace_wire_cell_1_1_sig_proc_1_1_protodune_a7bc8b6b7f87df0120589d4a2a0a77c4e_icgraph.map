@@ -1,0 +1,4 @@
+<map id="WireCell::SigProc::Protodune::FftInterpSticky" name="WireCell::SigProc::Protodune::FftInterpSticky">
+<area shape="rect" id="node2" href="$_protodune_8cxx.html#a7aac856fd8d0ee8ddb8672c2fe6ae215" title="LedgeIdentify" alt="" coords="271,5,371,32"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig.html#aa42dce81ba4e7dad67cc5653c9a8249f" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="228,56,413,112"/>
+</map>

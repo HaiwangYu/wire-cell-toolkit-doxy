@@ -1,0 +1,56 @@
+\hypertarget{_protodune_8h}{}\section{sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\+Protodune.h File Reference}
+\label{_protodune_8h}\index{sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\+Protodune.\+h@{sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\+Protodune.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Waveform.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Bits.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Channel\+Filter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Configurable.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Channel\+Noise\+Database.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Anode\+Plane.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Sig\+Proc/\+Diagnostics.\+h\char`\"{}}\newline
+Include dependency graph for Protodune.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_protodune_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{_protodune_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Sticky\+Code\+Mitig}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_rel_gain_calib}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Rel\+Gain\+Calib}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_sig_proc}{Wire\+Cell\+::\+Sig\+Proc}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_protodune}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_protodune_afc41e8e05bb63814539ac2f89360c0de}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Linear\+Interp\+Sticky} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&signal, std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&st\+\_\+ranges, float stky\+\_\+sig\+\_\+like\+\_\+val, float stky\+\_\+sig\+\_\+like\+\_\+rms)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a7bc8b6b7f87df0120589d4a2a0a77c4e}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Fft\+Interp\+Sticky} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&signal, std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&st\+\_\+ranges)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a4a864612af01dc605e073a79fc261940}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Fft\+Shift\+Sticky} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&signal, double toffset, std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \&st\+\_\+ranges)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_protodune_a70a419137440aaee4a7afd4366c10404}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Fft\+Scaling} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&signal, int nsamples)
+\end{DoxyCompactItemize}

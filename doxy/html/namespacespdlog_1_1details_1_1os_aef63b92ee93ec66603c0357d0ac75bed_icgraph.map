@@ -1,0 +1,8 @@
+<map id="spdlog::details::os::localtime" name="spdlog::details::os::localtime">
+<area shape="rect" id="node2" href="$classspdlog_1_1logger.html#a3432e21bdc19d74024b57cc3f26a8471" title="spdlog::logger::default\l_err_handler_" alt="" coords="189,5,340,47"/>
+<area shape="rect" id="node3" href="$namespacespdlog_1_1details_1_1os.html#a3c7704d0c74aed204f258ac1fc7d4576" title="spdlog::details::os\l::localtime" alt="" coords="201,71,329,112"/>
+<area shape="rect" id="node4" href="$namespacespdlog_1_1details_1_1os.html#a6dce662c3a4ea0b6e95468272ec37047" title="spdlog::details::os\l::utc_minutes_offset" alt="" coords="194,136,335,177"/>
+<area shape="rect" id="node6" href="$classspdlog_1_1pattern__formatter.html#ae43e84d7421ee7810b22ce1dc817ca3f" title="spdlog::pattern_formatter\l::format" alt="" coords="181,201,348,243"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1sinks_1_1daily__file__sink.html#a37199f25868ac70b91e4f126bcc4b3f8" title="spdlog::sinks::daily\l_file_sink::flush_" alt="" coords="197,267,332,308"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1details_1_1z__formatter.html#ada7a5e9a3c30039cbfb684b7743b8945" title="spdlog::details::z\l_formatter::format" alt="" coords="396,136,523,177"/>
+</map>

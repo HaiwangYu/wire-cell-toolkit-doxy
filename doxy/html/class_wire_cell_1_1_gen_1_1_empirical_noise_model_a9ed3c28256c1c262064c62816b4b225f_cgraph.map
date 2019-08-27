@@ -1,0 +1,12 @@
+<map id="WireCell::Gen::EmpiricalNoiseModel::operator()" name="WireCell::Gen::EmpiricalNoiseModel::operator()">
+<area shape="rect" id="node2" href="$namespace_wire_cell.html#a078ec264f4f9f82fe3e6ba21b2108d00" title="WireCell::ray_length" alt="" coords="238,5,378,32"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#a5b1d7a97da1b07237cf03b28a2caacdf" title="WireCell::Gen::Empirical\lNoiseModel::interpolate" alt="" coords="225,57,391,98"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#a783b81a925de0823c63ade8b242033e8" title="WireCell::Gen::Empirical\lNoiseModel::gain" alt="" coords="225,122,391,163"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#ada27f0991c188eb877a6702bb0878805" title="WireCell::Gen::Empirical\lNoiseModel::shaping_time" alt="" coords="220,187,396,229"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_response_1_1_generator.html#aceed932e0bab5af1cb80981507667e5e" title="FIXME: eradicate Domain in favor of Binning. " alt="" coords="235,253,381,294"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="227,319,389,345"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1_waveform.html#ae8dc1c86082f99f8cbfedb8434d22bc2" title="Return the magnitude or absolute value of the sequence. " alt="" coords="238,370,378,411"/>
+<area shape="rect" id="node9" href="$_waveform_8cxx.html#aab765b49ae6d91a9309e22a5a80f66ec" title="c2r" alt="" coords="444,377,484,404"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="532,370,659,411"/>
+<area shape="rect" id="node11" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="707,370,833,411"/>
+</map>

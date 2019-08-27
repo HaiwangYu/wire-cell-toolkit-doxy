@@ -1,0 +1,147 @@
+\hypertarget{namespace_wire_cell_1_1tagrules}{}\section{Wire\+Cell\+:\+:tagrules Namespace Reference}
+\label{namespace_wire_cell_1_1tagrules}\index{Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1tagrules_1_1_context}{Context}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string \hyperlink{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}{tag\+\_\+t}
+\item 
+typedef std\+::string \hyperlink{namespace_wire_cell_1_1tagrules_ab71a655969745fcd6a4aecf278fa9333}{match\+\_\+t}
+\item 
+typedef std\+::unordered\+\_\+set$<$ \hyperlink{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}{tag\+\_\+t} $>$ \hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagset\+\_\+t}
+\item 
+typedef std\+::pair$<$ std\+::regex, \hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagset\+\_\+t} $>$ \hyperlink{namespace_wire_cell_1_1tagrules_abc013e08147e32e1661654bb3e768151}{rule\+\_\+t}
+\item 
+typedef std\+::vector$<$ \hyperlink{namespace_wire_cell_1_1tagrules_abc013e08147e32e1661654bb3e768151}{rule\+\_\+t} $>$ \hyperlink{namespace_wire_cell_1_1tagrules_a93f5672d7c60d5f990b42dd93fd0aee2}{ruleset\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagset\+\_\+t} \hyperlink{namespace_wire_cell_1_1tagrules_aed120ffc74c8d10ff4498490ec742f87}{match} (const \hyperlink{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}{tag\+\_\+t} \&tag, const \hyperlink{namespace_wire_cell_1_1tagrules_abc013e08147e32e1661654bb3e768151}{rule\+\_\+t} \&rs)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1tagrules_a307c2349fd136058ba33924faff92553}{match} (const \hyperlink{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}{tag\+\_\+t} \&tag, const \hyperlink{namespace_wire_cell_1_1tagrules_a93f5672d7c60d5f990b42dd93fd0aee2}{ruleset\+\_\+t} \&rs, \hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagset\+\_\+t} \&ret, bool all\+\_\+rules=true)
+\item 
+\hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagset\+\_\+t} \hyperlink{namespace_wire_cell_1_1tagrules_a8e7dac6e5d8aa67bbe4c801a1738d170}{transform} (const \hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagset\+\_\+t} \&ts, const \hyperlink{namespace_wire_cell_1_1tagrules_a93f5672d7c60d5f990b42dd93fd0aee2}{ruleset\+\_\+t} \&rs, bool all\+\_\+rules=true)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1tagrules_ab71a655969745fcd6a4aecf278fa9333}\label{namespace_wire_cell_1_1tagrules_ab71a655969745fcd6a4aecf278fa9333}} 
+\index{Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}!match\+\_\+t@{match\+\_\+t}}
+\index{match\+\_\+t@{match\+\_\+t}!Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}}
+\subsubsection{\texorpdfstring{match\+\_\+t}{match\_t}}
+{\footnotesize\ttfamily typedef std\+::string \hyperlink{namespace_wire_cell_1_1tagrules_ab71a655969745fcd6a4aecf278fa9333}{Wire\+Cell\+::tagrules\+::match\+\_\+t}}
+
+
+
+Definition at line 47 of file Tag\+Rules.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1tagrules_abc013e08147e32e1661654bb3e768151}\label{namespace_wire_cell_1_1tagrules_abc013e08147e32e1661654bb3e768151}} 
+\index{Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}!rule\+\_\+t@{rule\+\_\+t}}
+\index{rule\+\_\+t@{rule\+\_\+t}!Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}}
+\subsubsection{\texorpdfstring{rule\+\_\+t}{rule\_t}}
+{\footnotesize\ttfamily typedef std\+::pair$<$std\+::regex, \hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagset\+\_\+t}$>$ \hyperlink{namespace_wire_cell_1_1tagrules_abc013e08147e32e1661654bb3e768151}{Wire\+Cell\+::tagrules\+::rule\+\_\+t}}
+
+
+
+Definition at line 49 of file Tag\+Rules.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1tagrules_a93f5672d7c60d5f990b42dd93fd0aee2}\label{namespace_wire_cell_1_1tagrules_a93f5672d7c60d5f990b42dd93fd0aee2}} 
+\index{Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}!ruleset\+\_\+t@{ruleset\+\_\+t}}
+\index{ruleset\+\_\+t@{ruleset\+\_\+t}!Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}}
+\subsubsection{\texorpdfstring{ruleset\+\_\+t}{ruleset\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{namespace_wire_cell_1_1tagrules_abc013e08147e32e1661654bb3e768151}{rule\+\_\+t}$>$ \hyperlink{namespace_wire_cell_1_1tagrules_a93f5672d7c60d5f990b42dd93fd0aee2}{Wire\+Cell\+::tagrules\+::ruleset\+\_\+t}}
+
+
+
+Definition at line 50 of file Tag\+Rules.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}\label{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}} 
+\index{Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}!tag\+\_\+t@{tag\+\_\+t}}
+\index{tag\+\_\+t@{tag\+\_\+t}!Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}}
+\subsubsection{\texorpdfstring{tag\+\_\+t}{tag\_t}}
+{\footnotesize\ttfamily typedef std\+::string \hyperlink{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}{Wire\+Cell\+::tagrules\+::tag\+\_\+t}}
+
+
+
+Definition at line 46 of file Tag\+Rules.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}\label{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}} 
+\index{Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}!tagset\+\_\+t@{tagset\+\_\+t}}
+\index{tagset\+\_\+t@{tagset\+\_\+t}!Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}}
+\subsubsection{\texorpdfstring{tagset\+\_\+t}{tagset\_t}}
+{\footnotesize\ttfamily typedef std\+::unordered\+\_\+set$<$\hyperlink{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}{tag\+\_\+t}$>$ \hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{Wire\+Cell\+::tagrules\+::tagset\+\_\+t}}
+
+
+
+Definition at line 48 of file Tag\+Rules.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1tagrules_aed120ffc74c8d10ff4498490ec742f87}\label{namespace_wire_cell_1_1tagrules_aed120ffc74c8d10ff4498490ec742f87}} 
+\index{Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}!match@{match}}
+\index{match@{match}!Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}}
+\subsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagrules\+::tagset\+\_\+t} Wire\+Cell\+::tagrules\+::match (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}{tag\+\_\+t} \&}]{tag,  }\item[{const \hyperlink{namespace_wire_cell_1_1tagrules_abc013e08147e32e1661654bb3e768151}{rule\+\_\+t} \&}]{rs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 16 of file Tag\+Rules.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1tagrules_aed120ffc74c8d10ff4498490ec742f87_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1tagrules_a307c2349fd136058ba33924faff92553}\label{namespace_wire_cell_1_1tagrules_a307c2349fd136058ba33924faff92553}} 
+\index{Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}!match@{match}}
+\index{match@{match}!Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}}
+\subsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::tagrules\+::match (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1tagrules_ae74af6e8edaf0f64b70f6df4e0b66cdc}{tag\+\_\+t} \&}]{tag,  }\item[{const \hyperlink{namespace_wire_cell_1_1tagrules_a93f5672d7c60d5f990b42dd93fd0aee2}{ruleset\+\_\+t} \&}]{rs,  }\item[{\hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagrules\+::tagset\+\_\+t} \&}]{ret,  }\item[{bool}]{all\+\_\+rules = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Tag\+Rules.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{namespace_wire_cell_1_1tagrules_a307c2349fd136058ba33924faff92553_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1tagrules_a8e7dac6e5d8aa67bbe4c801a1738d170}\label{namespace_wire_cell_1_1tagrules_a8e7dac6e5d8aa67bbe4c801a1738d170}} 
+\index{Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}!transform@{transform}}
+\index{transform@{transform}!Wire\+Cell\+::tagrules@{Wire\+Cell\+::tagrules}}
+\subsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagrules\+::tagset\+\_\+t} Wire\+Cell\+::tagrules\+::transform (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1tagrules_a80263165e3d13e49e317c045829f76cb}{tagset\+\_\+t} \&}]{ts,  }\item[{const \hyperlink{namespace_wire_cell_1_1tagrules_a93f5672d7c60d5f990b42dd93fd0aee2}{ruleset\+\_\+t} \&}]{rs,  }\item[{bool}]{all\+\_\+rules = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file Tag\+Rules.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{namespace_wire_cell_1_1tagrules_a8e7dac6e5d8aa67bbe4c801a1738d170_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1tagrules_a8e7dac6e5d8aa67bbe4c801a1738d170_icgraph}
+\end{center}
+\end{figure}

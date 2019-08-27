@@ -1,0 +1,215 @@
+\hypertarget{classfile}{}\section{file Class Reference}
+\label{classfile}\index{file@{file}}
+
+
+{\ttfamily \#include $<$posix.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classfile_aa84b8a1d28ab2c03182796d9435e84c3aac58f1566e053cf5f8ee9dcb5f97b82b}{R\+D\+O\+N\+LY} = F\+M\+T\+\_\+\+P\+O\+S\+IX(O\+\_\+\+R\+D\+O\+N\+LY), 
+\hyperlink{classfile_aa84b8a1d28ab2c03182796d9435e84c3ade40e8cbe66eb259ed5378c7d13b4f69}{W\+R\+O\+N\+LY} = F\+M\+T\+\_\+\+P\+O\+S\+IX(O\+\_\+\+W\+R\+O\+N\+LY), 
+\hyperlink{classfile_aa84b8a1d28ab2c03182796d9435e84c3aafcab766b3f436a66049b850ef7efb5c}{R\+D\+WR} = F\+M\+T\+\_\+\+P\+O\+S\+IX(O\+\_\+\+R\+D\+WR)
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfile_a9219ca0c070b6bf05d6c26bd4dcb3628}{file} () \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} \hyperlink{classfile_a26bc3b2f162d44e6689757e35396c61c}{file} (\hyperlink{posix_8h_ae8eb4eb4ba15f0c8755e1d5c8e7c07d9}{cstring\+\_\+view} path, int oflag)
+\item 
+\hyperlink{classfile_a12ab9fbce2297a5839c1d0b3159be261}{file} (\hyperlink{classfile}{file} \&\&other) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{classfile}{file} \& \hyperlink{classfile_a2e4cddc680ac231d6386bcef58f4ce03}{operator=} (\hyperlink{classfile}{file} \&\&other)
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} \hyperlink{classfile_ab18abda35e187845274e67782840b683}{$\sim$file} () \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+int \hyperlink{classfile_a14a03f1516c926cc0785728ebad4175c}{descriptor} () const \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void \hyperlink{classfile_a843b122e594108e44d7435d57dbecce5}{close} ()
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} long long \hyperlink{classfile_a6ddfe0a8c58656f1dcdfd90869307bf1}{size} () const
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} std\+::size\+\_\+t \hyperlink{classfile_a0bd904f0a22919c36cefef0098c869e5}{read} (void $\ast$\hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer}, std\+::size\+\_\+t count)
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} std\+::size\+\_\+t \hyperlink{classfile_a3b9de9cd17abc79f4cd8b7fd48fcd9ec}{write} (const void $\ast$\hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer}, std\+::size\+\_\+t count)
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void \hyperlink{classfile_a5438e03088d3b7792a7bf0c2af581e7d}{dup2} (int fd)
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void \hyperlink{classfile_afcd00b59adb3e06540627960832a164c}{dup2} (int fd, \hyperlink{classerror__code}{error\+\_\+code} \&ec) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} \hyperlink{classbuffered__file}{buffered\+\_\+file} \hyperlink{classfile_a8e6b39b08670ce61993ee23acfe36c80}{fdopen} (const char $\ast$mode)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} \hyperlink{classfile}{file} \hyperlink{classfile_a68335715e12fa4a8b66390d9c875bf65}{dup} (int fd)
+\item 
+static \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void \hyperlink{classfile_a096b53bfb1b4cd1b566ddea0d6a6f3bc}{pipe} (\hyperlink{classfile}{file} \&read\+\_\+end, \hyperlink{classfile}{file} \&write\+\_\+end)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 188 of file posix.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classfile_aa84b8a1d28ab2c03182796d9435e84c3}\label{classfile_aa84b8a1d28ab2c03182796d9435e84c3}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+D\+O\+N\+LY@{R\+D\+O\+N\+LY}!file@{file}}\index{file@{file}!R\+D\+O\+N\+LY@{R\+D\+O\+N\+LY}}}\mbox{\Hypertarget{classfile_aa84b8a1d28ab2c03182796d9435e84c3aac58f1566e053cf5f8ee9dcb5f97b82b}\label{classfile_aa84b8a1d28ab2c03182796d9435e84c3aac58f1566e053cf5f8ee9dcb5f97b82b}} 
+R\+D\+O\+N\+LY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+R\+O\+N\+LY@{W\+R\+O\+N\+LY}!file@{file}}\index{file@{file}!W\+R\+O\+N\+LY@{W\+R\+O\+N\+LY}}}\mbox{\Hypertarget{classfile_aa84b8a1d28ab2c03182796d9435e84c3ade40e8cbe66eb259ed5378c7d13b4f69}\label{classfile_aa84b8a1d28ab2c03182796d9435e84c3ade40e8cbe66eb259ed5378c7d13b4f69}} 
+W\+R\+O\+N\+LY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+D\+WR@{R\+D\+WR}!file@{file}}\index{file@{file}!R\+D\+WR@{R\+D\+WR}}}\mbox{\Hypertarget{classfile_aa84b8a1d28ab2c03182796d9435e84c3aafcab766b3f436a66049b850ef7efb5c}\label{classfile_aa84b8a1d28ab2c03182796d9435e84c3aafcab766b3f436a66049b850ef7efb5c}} 
+R\+D\+WR&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 197 of file posix.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfile_a9219ca0c070b6bf05d6c26bd4dcb3628}\label{classfile_a9219ca0c070b6bf05d6c26bd4dcb3628}} 
+\index{file@{file}!file@{file}}
+\index{file@{file}!file@{file}}
+\subsubsection{\texorpdfstring{file()}{file()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily file\+::file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 204 of file posix.\+h.
+
+\mbox{\Hypertarget{classfile_a26bc3b2f162d44e6689757e35396c61c}\label{classfile_a26bc3b2f162d44e6689757e35396c61c}} 
+\index{file@{file}!file@{file}}
+\index{file@{file}!file@{file}}
+\subsubsection{\texorpdfstring{file()}{file()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} file\+::file (\begin{DoxyParamCaption}\item[{\hyperlink{posix_8h_ae8eb4eb4ba15f0c8755e1d5c8e7c07d9}{cstring\+\_\+view}}]{path,  }\item[{int}]{oflag }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classfile_a12ab9fbce2297a5839c1d0b3159be261}\label{classfile_a12ab9fbce2297a5839c1d0b3159be261}} 
+\index{file@{file}!file@{file}}
+\index{file@{file}!file@{file}}
+\subsubsection{\texorpdfstring{file()}{file()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily file\+::file (\begin{DoxyParamCaption}\item[{\hyperlink{classfile}{file} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 214 of file posix.\+h.
+
+\mbox{\Hypertarget{classfile_ab18abda35e187845274e67782840b683}\label{classfile_ab18abda35e187845274e67782840b683}} 
+\index{file@{file}!````~file@{$\sim$file}}
+\index{````~file@{$\sim$file}!file@{file}}
+\subsubsection{\texorpdfstring{$\sim$file()}{~file()}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} file\+::$\sim$file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfile_a843b122e594108e44d7435d57dbecce5}\label{classfile_a843b122e594108e44d7435d57dbecce5}} 
+\index{file@{file}!close@{close}}
+\index{close@{close}!file@{file}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void file\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classfile_a843b122e594108e44d7435d57dbecce5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classfile_a14a03f1516c926cc0785728ebad4175c}\label{classfile_a14a03f1516c926cc0785728ebad4175c}} 
+\index{file@{file}!descriptor@{descriptor}}
+\index{descriptor@{descriptor}!file@{file}}
+\subsubsection{\texorpdfstring{descriptor()}{descriptor()}}
+{\footnotesize\ttfamily int file\+::descriptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 229 of file posix.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classfile_a14a03f1516c926cc0785728ebad4175c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classfile_a68335715e12fa4a8b66390d9c875bf65}\label{classfile_a68335715e12fa4a8b66390d9c875bf65}} 
+\index{file@{file}!dup@{dup}}
+\index{dup@{dup}!file@{file}}
+\subsubsection{\texorpdfstring{dup()}{dup()}}
+{\footnotesize\ttfamily static \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} \hyperlink{classfile}{file} file\+::dup (\begin{DoxyParamCaption}\item[{int}]{fd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classfile_a5438e03088d3b7792a7bf0c2af581e7d}\label{classfile_a5438e03088d3b7792a7bf0c2af581e7d}} 
+\index{file@{file}!dup2@{dup2}}
+\index{dup2@{dup2}!file@{file}}
+\subsubsection{\texorpdfstring{dup2()}{dup2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void file\+::dup2 (\begin{DoxyParamCaption}\item[{int}]{fd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classfile_afcd00b59adb3e06540627960832a164c}\label{classfile_afcd00b59adb3e06540627960832a164c}} 
+\index{file@{file}!dup2@{dup2}}
+\index{dup2@{dup2}!file@{file}}
+\subsubsection{\texorpdfstring{dup2()}{dup2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void file\+::dup2 (\begin{DoxyParamCaption}\item[{int}]{fd,  }\item[{\hyperlink{classerror__code}{error\+\_\+code} \&}]{ec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classfile_a8e6b39b08670ce61993ee23acfe36c80}\label{classfile_a8e6b39b08670ce61993ee23acfe36c80}} 
+\index{file@{file}!fdopen@{fdopen}}
+\index{fdopen@{fdopen}!file@{file}}
+\subsubsection{\texorpdfstring{fdopen()}{fdopen()}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} \hyperlink{classbuffered__file}{buffered\+\_\+file} file\+::fdopen (\begin{DoxyParamCaption}\item[{const char $\ast$}]{mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classfile_a2e4cddc680ac231d6386bcef58f4ce03}\label{classfile_a2e4cddc680ac231d6386bcef58f4ce03}} 
+\index{file@{file}!operator=@{operator=}}
+\index{operator=@{operator=}!file@{file}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classfile}{file}\& file\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classfile}{file} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 218 of file posix.\+h.
+
+\mbox{\Hypertarget{classfile_a096b53bfb1b4cd1b566ddea0d6a6f3bc}\label{classfile_a096b53bfb1b4cd1b566ddea0d6a6f3bc}} 
+\index{file@{file}!pipe@{pipe}}
+\index{pipe@{pipe}!file@{file}}
+\subsubsection{\texorpdfstring{pipe()}{pipe()}}
+{\footnotesize\ttfamily static \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} void file\+::pipe (\begin{DoxyParamCaption}\item[{\hyperlink{classfile}{file} \&}]{read\+\_\+end,  }\item[{\hyperlink{classfile}{file} \&}]{write\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classfile_a0bd904f0a22919c36cefef0098c869e5}\label{classfile_a0bd904f0a22919c36cefef0098c869e5}} 
+\index{file@{file}!read@{read}}
+\index{read@{read}!file@{file}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} std\+::size\+\_\+t file\+::read (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{std\+::size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classfile_a6ddfe0a8c58656f1dcdfd90869307bf1}\label{classfile_a6ddfe0a8c58656f1dcdfd90869307bf1}} 
+\index{file@{file}!size@{size}}
+\index{size@{size}!file@{file}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} long long file\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classfile_a3b9de9cd17abc79f4cd8b7fd48fcd9ec}\label{classfile_a3b9de9cd17abc79f4cd8b7fd48fcd9ec}} 
+\index{file@{file}!write@{write}}
+\index{write@{write}!file@{file}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} std\+::size\+\_\+t file\+::write (\begin{DoxyParamCaption}\item[{const void $\ast$}]{buffer,  }\item[{std\+::size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{posix_8h}{posix.\+h}\end{DoxyCompactItemize}

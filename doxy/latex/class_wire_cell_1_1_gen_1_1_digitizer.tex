@@ -1,0 +1,161 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_digitizer}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Digitizer Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_digitizer}\index{Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}}
+
+
+{\ttfamily \#include $<$Digitizer.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Digitizer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_digitizer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Digitizer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_digitizer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_digitizer_aee4cf08d87691932751e7eb8a5a9559d}{Digitizer} (const std\+::string \&anode\+\_\+tn=\char`\"{}Anode\+Plane\char`\"{}, int resolution=12, double gain=-\/1.\+0, std\+::vector$<$ double $>$ fullscale=\{0.\+0, 2.\+0 $\ast$units\+::volt\}, std\+::vector$<$ double $>$ baselines=\{900 $\ast$units\+::mV, 900 $\ast$units\+::mV, 200 $\ast$units\+::mV\})
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_digitizer_a2f927b1818c23d7719b1ad4ec5d76a3e}{$\sim$\+Digitizer} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_digitizer_aca2a5cb3a51bcb3fb147456f3542babe}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_digitizer_a6f8c0cf139021b7b54162e1dc42d9668}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_wire_cell_1_1_gen_1_1_digitizer_a06ba39eb87a8acb50a3311f290d814a4}{operator()} (const \hyperlink{class_wire_cell_1_1_i_function_node_a55c0946156df9b712b8ad1a0b59b2db6}{input\+\_\+pointer} \&inframe, \hyperlink{class_wire_cell_1_1_i_function_node_afc02f1ec60d31aacddf64963f9ca650b}{output\+\_\+pointer} \&outframe)
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_digitizer_a0280442eb3c74a29e73899d976aa83f6}{digitize} (double voltage)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file Digitizer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_digitizer_aee4cf08d87691932751e7eb8a5a9559d}\label{class_wire_cell_1_1_gen_1_1_digitizer_aee4cf08d87691932751e7eb8a5a9559d}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}!Digitizer@{Digitizer}}
+\index{Digitizer@{Digitizer}!Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}}
+\subsubsection{\texorpdfstring{Digitizer()}{Digitizer()}}
+{\footnotesize\ttfamily Gen\+::\+Digitizer\+::\+Digitizer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{anode\+\_\+tn = {\ttfamily \char`\"{}AnodePlane\char`\"{}},  }\item[{int}]{resolution = {\ttfamily 12},  }\item[{double}]{gain = {\ttfamily -\/1.0},  }\item[{std\+::vector$<$ double $>$}]{fullscale = {\ttfamily \{0.0,~2.0$\ast$units\+:\+:volt\}},  }\item[{std\+::vector$<$ double $>$}]{baselines = {\ttfamily \{900$\ast$units\+:\+:mV,900$\ast$units\+:\+:mV,200$\ast$units\+:\+:mV\}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file Digitizer.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_digitizer_a2f927b1818c23d7719b1ad4ec5d76a3e}\label{class_wire_cell_1_1_gen_1_1_digitizer_a2f927b1818c23d7719b1ad4ec5d76a3e}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}!````~Digitizer@{$\sim$\+Digitizer}}
+\index{````~Digitizer@{$\sim$\+Digitizer}!Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}}
+\subsubsection{\texorpdfstring{$\sim$\+Digitizer()}{~Digitizer()}}
+{\footnotesize\ttfamily Gen\+::\+Digitizer\+::$\sim$\+Digitizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 32 of file Digitizer.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_digitizer_aca2a5cb3a51bcb3fb147456f3542babe}\label{class_wire_cell_1_1_gen_1_1_digitizer_aca2a5cb3a51bcb3fb147456f3542babe}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Digitizer\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 59 of file Digitizer.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_digitizer_a6f8c0cf139021b7b54162e1dc42d9668}\label{class_wire_cell_1_1_gen_1_1_digitizer_a6f8c0cf139021b7b54162e1dc42d9668}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Digitizer\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 36 of file Digitizer.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_digitizer_a6f8c0cf139021b7b54162e1dc42d9668_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_digitizer_a0280442eb3c74a29e73899d976aa83f6}\label{class_wire_cell_1_1_gen_1_1_digitizer_a0280442eb3c74a29e73899d976aa83f6}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}!digitize@{digitize}}
+\index{digitize@{digitize}!Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}}
+\subsubsection{\texorpdfstring{digitize()}{digitize()}}
+{\footnotesize\ttfamily double Gen\+::\+Digitizer\+::digitize (\begin{DoxyParamCaption}\item[{double}]{voltage }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file Digitizer.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_digitizer_a0280442eb3c74a29e73899d976aa83f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_digitizer_a06ba39eb87a8acb50a3311f290d814a4}\label{class_wire_cell_1_1_gen_1_1_digitizer_a06ba39eb87a8acb50a3311f290d814a4}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Gen\+::\+Digitizer@{Wire\+Cell\+::\+Gen\+::\+Digitizer}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Gen\+::\+Digitizer\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_function_node_a55c0946156df9b712b8ad1a0b59b2db6}{input\+\_\+pointer} \&}]{inframe,  }\item[{\hyperlink{class_wire_cell_1_1_i_function_node_afc02f1ec60d31aacddf64963f9ca650b}{output\+\_\+pointer} \&}]{outframe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 97 of file Digitizer.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_digitizer_a06ba39eb87a8acb50a3311f290d814a4_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_digitizer_8h}{Digitizer.\+h}\item 
+gen/src/\hyperlink{_digitizer_8cxx}{Digitizer.\+cxx}\end{DoxyCompactItemize}

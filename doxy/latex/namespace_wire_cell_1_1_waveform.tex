@@ -1,0 +1,1011 @@
+\hypertarget{namespace_wire_cell_1_1_waveform}{}\section{Wire\+Cell\+:\+:Waveform Namespace Reference}
+\label{namespace_wire_cell_1_1_waveform}\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The type for the signal in each bin. \end{DoxyCompactList}\item 
+typedef std\+::complex$<$ float $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a4a69305e16ea32b03030a13a52478c38}{complex\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The type for the spectrum in each bin. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\using \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence} = std\+::vector$<$ Val $>$
+\item 
+typedef \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ \hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t} $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t}
+\item 
+typedef \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ \hyperlink{namespace_wire_cell_1_1_waveform_a4a69305e16ea32b03030a13a52478c38}{complex\+\_\+t} $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t}
+\begin{DoxyCompactList}\small\item\em A complex-\/valued sequence, eg for discrete spectrum powers. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ int, int $>$ \hyperlink{namespace_wire_cell_1_1_waveform_accc2021da53792e30eb4f0335b630811}{Bin\+Range}
+\begin{DoxyCompactList}\small\item\em A half-\/open range of bins (from first bin to one past last bin) \end{DoxyCompactList}\item 
+typedef std\+::vector$<$ \hyperlink{namespace_wire_cell_1_1_waveform_accc2021da53792e30eb4f0335b630811}{Bin\+Range} $>$ \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List}
+\begin{DoxyCompactList}\small\item\em A list of bin ranges. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ int, \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List} $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Channel\+Masks}
+\begin{DoxyCompactList}\small\item\em Map channel number to a vector of Bin\+Ranges. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Channel\+Masks} $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Channel\+Mask\+Map}
+\begin{DoxyCompactList}\small\item\em Collect channel masks by some label. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ double, double $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a3f830cc3d44a8f05e0a3fd5f23947467}{Period}
+\begin{DoxyCompactList}\small\item\em A range of time. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ double, double $>$ \hyperlink{namespace_wire_cell_1_1_waveform_ab27ab5a1dc3d0ee2fb297a094e725662}{Band}
+\begin{DoxyCompactList}\small\item\em A range of frequency. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ double, double $>$ \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List} \hyperlink{namespace_wire_cell_1_1_waveform_a992189c16e04b7302539d42c94f9e296}{merge} (const \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List} \&br)
+\begin{DoxyCompactList}\small\item\em Return a new list with any overlaps formed into unions. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List} \hyperlink{namespace_wire_cell_1_1_waveform_af5a11c1c84f74aa42aedcc16029cb1c7}{merge} (const \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List} \&br1, const \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List} \&br2)
+\begin{DoxyCompactList}\small\item\em Merge two bin range lists, forming a union from any overlapping ranges. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Channel\+Masks} \hyperlink{namespace_wire_cell_1_1_waveform_a49c3b64d64db947f08b1eedcf4c47772}{merge} (const \hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Channel\+Masks} \&one, const \hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Channel\+Masks} \&two)
+\begin{DoxyCompactList}\small\item\em Return a new mapping which is the union of all same channel masks. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_wire_cell_1_1_waveform_aaa9e0dfb1762dd280646e4b3c123d3ef}{merge} (\hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Channel\+Mask\+Map} \&one, \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Channel\+Mask\+Map} \&two, std\+::map$<$ std\+::string, std\+::string $>$ \&name\+\_\+map)
+\item 
+int \hyperlink{namespace_wire_cell_1_1_waveform_a5f342071d33324064758877fb128e062}{sample\+\_\+count} (const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&domain, double width)
+\begin{DoxyCompactList}\small\item\em Return the number of samples needed to cover the domain with sample size width. \end{DoxyCompactList}\item 
+double \hyperlink{namespace_wire_cell_1_1_waveform_a76b0099d7c51a9e0a915bbee0fe48069}{sample\+\_\+width} (const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&domain, int count)
+\begin{DoxyCompactList}\small\item\em Return the sample size if domain is equally sampled with given number of samples. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a841c4668962007ef512b7a7df6ecfece}{sub\+\_\+sample} (const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&domain, int nsamples, const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&subdomain)
+\begin{DoxyCompactList}\small\item\em Return the begin/end sample numbers inside the a subdomain of a domain with nsamples total. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \hyperlink{namespace_wire_cell_1_1_waveform_ad08232b659cba09cf7174b900c557be5}{resample} (const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&wave, const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&domain, int nsamples, const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&newdomain)
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_a40f3344b248eea24a08d391e8f402bb8}{real} (const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t} \&seq)
+\begin{DoxyCompactList}\small\item\em Return the real part of the sequence. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_acc803e535b3e979dc331088b9fba8bc1}{imag} (const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t} \&seq)
+\begin{DoxyCompactList}\small\item\em Return the imaginary part of the sequence. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_ae8dc1c86082f99f8cbfedb8434d22bc2}{magnitude} (const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t} \&seq)
+\begin{DoxyCompactList}\small\item\em Return the magnitude or absolute value of the sequence. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_abcab023facead1d0eb14e2042ce578bb}{phase} (const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t} \&seq)
+\begin{DoxyCompactList}\small\item\em Return the phase or arg part of the sequence. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\void \hyperlink{namespace_wire_cell_1_1_waveform_af74deccaeb9e2147865029e16840e799}{increase} (\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&seq, Val scalar)
+\begin{DoxyCompactList}\small\item\em Increase (shift) sequence values by scalar. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_wire_cell_1_1_waveform_a3e92e2c63b937617bf8870412e7a6da7}{increase} (\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ float $>$ \&seq, double scalar)
+\item 
+{\footnotesize template$<$typename Val $>$ }\\void \hyperlink{namespace_wire_cell_1_1_waveform_a5f2540f66c9584343f87cbe624c76943}{increase} (\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&seq, const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Increase (shift) sequence values by values in another sequence. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\void \hyperlink{namespace_wire_cell_1_1_waveform_aa8d25ae88346929b5e54cd116f7a4f47}{scale} (\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&seq, Val scalar)
+\begin{DoxyCompactList}\small\item\em Scale (multiply) sequence values by scalar. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_wire_cell_1_1_waveform_a3278b47bbecdbb8a663286d9cdec0d75}{scale} (\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ float $>$ \&seq, double scalar)
+\item 
+{\footnotesize template$<$typename Val $>$ }\\void \hyperlink{namespace_wire_cell_1_1_waveform_a6eea0e61cd0999be1219fd0d504e3b13}{scale} (\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&seq, const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Scale (multiply) seq values by values from the other sequence. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\void \hyperlink{namespace_wire_cell_1_1_waveform_adad443bd3c3ee1a0c2e65c9a39282a53}{shrink} (\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&seq, const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&other)
+\begin{DoxyCompactList}\small\item\em Shrink (divide) seq values by values from the other sequence. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \hyperlink{namespace_wire_cell_1_1_waveform_ae368e58f014b0d634028afcbb05887cb}{edge} (const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \&wave)
+\item 
+{\footnotesize template$<$typename Val $>$ }\\Val \hyperlink{namespace_wire_cell_1_1_waveform_a4c7b82a4567d6c94227398f9511ffb92}{sum} (const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&seq)
+\begin{DoxyCompactList}\small\item\em Return sum of all entries in sequence. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Val $>$ }\\Val \hyperlink{namespace_wire_cell_1_1_waveform_a6aa0cf31fb8548b1f74ffb3f77350668}{sum2} (const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&seq)
+\begin{DoxyCompactList}\small\item\em Return sum of square of all entries in sequence. \end{DoxyCompactList}\item 
+std\+::pair$<$ double, double $>$ \hyperlink{namespace_wire_cell_1_1_waveform_af0395e9b0e5e9e86a26579badb834092}{mean\+\_\+rms} (const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \&wave)
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_af5e9352cbf35ddaf2f95e924d241a2aa}{median} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \&wave)
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_a9a72f0b40ec9e5b44713c59f338f6fd3}{median\+\_\+binned} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \&wave)
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_a9116b8ebe848721a04d5100fa672b0aa}{percentile} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \&wave, \hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t} percentage)
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_ae080d239c8b4426a6d74f9fd8ce85f1a}{percentile\+\_\+binned} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \&wave, \hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t} percentage)
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_a6cfae9f74c1bf06f69d6991f3f82cef5}{dft} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} seq)
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_aafc9307577968266045319c91ce3ab66}{linear\+\_\+convolve} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} in1, \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} in2, bool truncate=true)
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_abd675d86a770025f3ace47b277bf0e0e}{replace\+\_\+convolve} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} wave, \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} newres, \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} oldres, bool truncate=true)
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \hyperlink{namespace_wire_cell_1_1_waveform_a69255dad704fcb71fa53745e90a2f0e1}{idft} (\hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t} spec)
+\item 
+short \hyperlink{namespace_wire_cell_1_1_waveform_a86192f53532ba1e28516c2f8f3a9fa44}{most\+\_\+frequent} (const std\+::vector$<$ short $>$ \&vals)
+\begin{DoxyCompactList}\small\item\em Return the smallest, most frequent value to appear in vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_ab27ab5a1dc3d0ee2fb297a094e725662}\label{namespace_wire_cell_1_1_waveform_ab27ab5a1dc3d0ee2fb297a094e725662}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!Band@{Band}}
+\index{Band@{Band}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{Band}{Band}}
+{\footnotesize\ttfamily typedef std\+::pair$<$double,double$>$ \hyperlink{namespace_wire_cell_1_1_waveform_ab27ab5a1dc3d0ee2fb297a094e725662}{Wire\+Cell\+::\+Waveform\+::\+Band}}
+
+
+
+A range of frequency. 
+
+
+
+Definition at line 69 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_accc2021da53792e30eb4f0335b630811}\label{namespace_wire_cell_1_1_waveform_accc2021da53792e30eb4f0335b630811}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!Bin\+Range@{Bin\+Range}}
+\index{Bin\+Range@{Bin\+Range}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{Bin\+Range}{BinRange}}
+{\footnotesize\ttfamily typedef std\+::pair$<$int,int$>$ \hyperlink{namespace_wire_cell_1_1_waveform_accc2021da53792e30eb4f0335b630811}{Wire\+Cell\+::\+Waveform\+::\+Bin\+Range}}
+
+
+
+A half-\/open range of bins (from first bin to one past last bin) 
+
+
+
+Definition at line 38 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}\label{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!Bin\+Range\+List@{Bin\+Range\+List}}
+\index{Bin\+Range\+List@{Bin\+Range\+List}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{Bin\+Range\+List}{BinRangeList}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{namespace_wire_cell_1_1_waveform_accc2021da53792e30eb4f0335b630811}{Bin\+Range}$>$ \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Wire\+Cell\+::\+Waveform\+::\+Bin\+Range\+List}}
+
+
+
+A list of bin ranges. 
+
+
+
+Definition at line 41 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}\label{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!Channel\+Mask\+Map@{Channel\+Mask\+Map}}
+\index{Channel\+Mask\+Map@{Channel\+Mask\+Map}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{Channel\+Mask\+Map}{ChannelMaskMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Channel\+Masks}$>$ \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map}}
+
+
+
+Collect channel masks by some label. 
+
+
+
+Definition at line 59 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}\label{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!Channel\+Masks@{Channel\+Masks}}
+\index{Channel\+Masks@{Channel\+Masks}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{Channel\+Masks}{ChannelMasks}}
+{\footnotesize\ttfamily typedef std\+::map$<$int, \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List} $>$ \hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Masks}}
+
+
+
+Map channel number to a vector of Bin\+Ranges. 
+
+
+
+Definition at line 50 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a4a69305e16ea32b03030a13a52478c38}\label{namespace_wire_cell_1_1_waveform_a4a69305e16ea32b03030a13a52478c38}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!complex\+\_\+t@{complex\+\_\+t}}
+\index{complex\+\_\+t@{complex\+\_\+t}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{complex\+\_\+t}{complex\_t}}
+{\footnotesize\ttfamily typedef std\+::complex$<$float$>$ \hyperlink{namespace_wire_cell_1_1_waveform_a4a69305e16ea32b03030a13a52478c38}{Wire\+Cell\+::\+Waveform\+::complex\+\_\+t}}
+
+
+
+The type for the spectrum in each bin. 
+
+
+
+Definition at line 21 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}\label{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!compseq\+\_\+t@{compseq\+\_\+t}}
+\index{compseq\+\_\+t@{compseq\+\_\+t}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{compseq\+\_\+t}{compseq\_t}}
+{\footnotesize\ttfamily typedef \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$\hyperlink{namespace_wire_cell_1_1_waveform_a4a69305e16ea32b03030a13a52478c38}{complex\+\_\+t}$>$ \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Wire\+Cell\+::\+Waveform\+::compseq\+\_\+t}}
+
+
+
+A complex-\/valued sequence, eg for discrete spectrum powers. 
+
+
+
+Definition at line 34 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}\label{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!Domain@{Domain}}
+\index{Domain@{Domain}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{Domain}{Domain}}
+{\footnotesize\ttfamily typedef std\+::pair$<$double,double$>$ \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Wire\+Cell\+::\+Waveform\+::\+Domain}}
+
+A domain of a sequence is bounded by the time or frequency at the start of its first element and that at the end of its last. 
+
+Definition at line 75 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a3f830cc3d44a8f05e0a3fd5f23947467}\label{namespace_wire_cell_1_1_waveform_a3f830cc3d44a8f05e0a3fd5f23947467}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!Period@{Period}}
+\index{Period@{Period}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{Period}{Period}}
+{\footnotesize\ttfamily typedef std\+::pair$<$double,double$>$ \hyperlink{namespace_wire_cell_1_1_waveform_a3f830cc3d44a8f05e0a3fd5f23947467}{Wire\+Cell\+::\+Waveform\+::\+Period}}
+
+
+
+A range of time. 
+
+
+
+Definition at line 66 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}\label{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!real\+\_\+t@{real\+\_\+t}}
+\index{real\+\_\+t@{real\+\_\+t}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{real\+\_\+t}{real\_t}}
+{\footnotesize\ttfamily typedef float \hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{Wire\+Cell\+::\+Waveform\+::real\+\_\+t}}
+
+
+
+The type for the signal in each bin. 
+
+
+
+Definition at line 18 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}\label{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!realseq\+\_\+t@{realseq\+\_\+t}}
+\index{realseq\+\_\+t@{realseq\+\_\+t}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{realseq\+\_\+t}{realseq\_t}}
+{\footnotesize\ttfamily typedef \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$\hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t}$>$ \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t}}
+
+
+
+Definition at line 31 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}\label{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!Sequence@{Sequence}}
+\index{Sequence@{Sequence}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{Sequence}{Sequence}}
+{\footnotesize\ttfamily template$<$typename Val $>$ \\
+using \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Wire\+Cell\+::\+Waveform\+::\+Sequence} = typedef std\+::vector$<$Val$>$}
+
+A sequence is an ordered array of values (real or complex). By itself it is not associated with a domain. 
+
+Definition at line 27 of file Waveform.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a6cfae9f74c1bf06f69d6991f3f82cef5}\label{namespace_wire_cell_1_1_waveform_a6cfae9f74c1bf06f69d6991f3f82cef5}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!dft@{dft}}
+\index{dft@{dft}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{dft()}{dft()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Waveform\+::compseq\+\_\+t} Wire\+Cell\+::\+Waveform\+::dft (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t}}]{seq }\end{DoxyParamCaption})}
+
+Discrete Fourier transform of real sequence. Returns full spectrum. No normalization scaling applied 
+
+Definition at line 141 of file Waveform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a6cfae9f74c1bf06f69d6991f3f82cef5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_ae368e58f014b0d634028afcbb05887cb}\label{namespace_wire_cell_1_1_waveform_ae368e58f014b0d634028afcbb05887cb}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!edge@{edge}}
+\index{edge@{edge}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{edge()}{edge()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Wire\+Cell\+::\+Waveform\+::edge (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \&}]{wave }\end{DoxyParamCaption})}
+
+Return a pair of indices into wave which bound non-\/zero region. First index is of first non-\/zero sample, second index is one past last non-\/zero sample. If entire wave is empty then both are set to size(). 
+
+Definition at line 121 of file Waveform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_ae368e58f014b0d634028afcbb05887cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a69255dad704fcb71fa53745e90a2f0e1}\label{namespace_wire_cell_1_1_waveform_a69255dad704fcb71fa53745e90a2f0e1}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!idft@{idft}}
+\index{idft@{idft}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{idft()}{idft()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} Wire\+Cell\+::\+Waveform\+::idft (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t}}]{spec }\end{DoxyParamCaption})}
+
+Inverse, discrete Fourier transform. Expects full spectrum (twice Nyquist frequency). Applies the 1/\+Nsamples normalization. 
+
+Definition at line 149 of file Waveform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a69255dad704fcb71fa53745e90a2f0e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_acc803e535b3e979dc331088b9fba8bc1}\label{namespace_wire_cell_1_1_waveform_acc803e535b3e979dc331088b9fba8bc1}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!imag@{imag}}
+\index{imag@{imag}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{imag()}{imag()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} Wire\+Cell\+::\+Waveform\+::imag (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t} \&}]{seq }\end{DoxyParamCaption})}
+
+
+
+Return the imaginary part of the sequence. 
+
+
+
+Definition at line 60 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_acc803e535b3e979dc331088b9fba8bc1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_acc803e535b3e979dc331088b9fba8bc1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_af74deccaeb9e2147865029e16840e799}\label{namespace_wire_cell_1_1_waveform_af74deccaeb9e2147865029e16840e799}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!increase@{increase}}
+\index{increase@{increase}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{increase()}{increase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Val $>$ \\
+void Wire\+Cell\+::\+Waveform\+::increase (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{seq,  }\item[{Val}]{scalar }\end{DoxyParamCaption})}
+
+
+
+Increase (shift) sequence values by scalar. 
+
+
+
+Definition at line 129 of file Waveform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_af74deccaeb9e2147865029e16840e799_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_af74deccaeb9e2147865029e16840e799_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a3e92e2c63b937617bf8870412e7a6da7}\label{namespace_wire_cell_1_1_waveform_a3e92e2c63b937617bf8870412e7a6da7}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!increase@{increase}}
+\index{increase@{increase}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{increase()}{increase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Waveform\+::increase (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ float $>$ \&}]{seq,  }\item[{double}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 133 of file Waveform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a3e92e2c63b937617bf8870412e7a6da7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a5f2540f66c9584343f87cbe624c76943}\label{namespace_wire_cell_1_1_waveform_a5f2540f66c9584343f87cbe624c76943}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!increase@{increase}}
+\index{increase@{increase}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{increase()}{increase()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Val $>$ \\
+void Wire\+Cell\+::\+Waveform\+::increase (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{seq,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Increase (shift) sequence values by values in another sequence. 
+
+
+
+Definition at line 139 of file Waveform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a5f2540f66c9584343f87cbe624c76943_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_aafc9307577968266045319c91ce3ab66}\label{namespace_wire_cell_1_1_waveform_aafc9307577968266045319c91ce3ab66}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!linear\+\_\+convolve@{linear\+\_\+convolve}}
+\index{linear\+\_\+convolve@{linear\+\_\+convolve}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{linear\+\_\+convolve()}{linear\_convolve()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} Wire\+Cell\+::\+Waveform\+::linear\+\_\+convolve (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t}}]{in1,  }\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t}}]{in2,  }\item[{bool}]{truncate = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 159 of file Waveform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_aafc9307577968266045319c91ce3ab66_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_ae8dc1c86082f99f8cbfedb8434d22bc2}\label{namespace_wire_cell_1_1_waveform_ae8dc1c86082f99f8cbfedb8434d22bc2}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{magnitude()}{magnitude()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} Wire\+Cell\+::\+Waveform\+::magnitude (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t} \&}]{seq }\end{DoxyParamCaption})}
+
+
+
+Return the magnitude or absolute value of the sequence. 
+
+
+
+Definition at line 65 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_ae8dc1c86082f99f8cbfedb8434d22bc2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_ae8dc1c86082f99f8cbfedb8434d22bc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_af0395e9b0e5e9e86a26579badb834092}\label{namespace_wire_cell_1_1_waveform_af0395e9b0e5e9e86a26579badb834092}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!mean\+\_\+rms@{mean\+\_\+rms}}
+\index{mean\+\_\+rms@{mean\+\_\+rms}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{mean\+\_\+rms()}{mean\_rms()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Wire\+Cell\+::\+Waveform\+::mean\+\_\+rms (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{realseq\+\_\+t} \&}]{wave }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_af0395e9b0e5e9e86a26579badb834092_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_af0395e9b0e5e9e86a26579badb834092_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_af5e9352cbf35ddaf2f95e924d241a2aa}\label{namespace_wire_cell_1_1_waveform_af5e9352cbf35ddaf2f95e924d241a2aa}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!median@{median}}
+\index{median@{median}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{median()}{median()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{Waveform\+::real\+\_\+t} Wire\+Cell\+::\+Waveform\+::median (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \&}]{wave }\end{DoxyParamCaption})}
+
+
+
+Definition at line 76 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespace_wire_cell_1_1_waveform_af5e9352cbf35ddaf2f95e924d241a2aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_af5e9352cbf35ddaf2f95e924d241a2aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a9a72f0b40ec9e5b44713c59f338f6fd3}\label{namespace_wire_cell_1_1_waveform_a9a72f0b40ec9e5b44713c59f338f6fd3}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!median\+\_\+binned@{median\+\_\+binned}}
+\index{median\+\_\+binned@{median\+\_\+binned}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{median\+\_\+binned()}{median\_binned()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{Waveform\+::real\+\_\+t} Wire\+Cell\+::\+Waveform\+::median\+\_\+binned (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \&}]{wave }\end{DoxyParamCaption})}
+
+
+
+Definition at line 81 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespace_wire_cell_1_1_waveform_a9a72f0b40ec9e5b44713c59f338f6fd3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a9a72f0b40ec9e5b44713c59f338f6fd3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a992189c16e04b7302539d42c94f9e296}\label{namespace_wire_cell_1_1_waveform_a992189c16e04b7302539d42c94f9e296}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!merge@{merge}}
+\index{merge@{merge}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Wire\+Cell\+::\+Waveform\+::\+Bin\+Range\+List} Wire\+Cell\+::\+Waveform\+::merge (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List} \&}]{br }\end{DoxyParamCaption})}
+
+
+
+Return a new list with any overlaps formed into unions. 
+
+
+
+Definition at line 222 of file Waveform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{namespace_wire_cell_1_1_waveform_a992189c16e04b7302539d42c94f9e296_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_af5a11c1c84f74aa42aedcc16029cb1c7}\label{namespace_wire_cell_1_1_waveform_af5a11c1c84f74aa42aedcc16029cb1c7}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!merge@{merge}}
+\index{merge@{merge}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Wire\+Cell\+::\+Waveform\+::\+Bin\+Range\+List} Wire\+Cell\+::\+Waveform\+::merge (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List} \&}]{br1,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_ae9e850f13cd7f9cbcc309a5d7dd2fd37}{Bin\+Range\+List} \&}]{br2 }\end{DoxyParamCaption})}
+
+
+
+Merge two bin range lists, forming a union from any overlapping ranges. 
+
+
+
+Definition at line 243 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespace_wire_cell_1_1_waveform_af5a11c1c84f74aa42aedcc16029cb1c7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a49c3b64d64db947f08b1eedcf4c47772}\label{namespace_wire_cell_1_1_waveform_a49c3b64d64db947f08b1eedcf4c47772}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!merge@{merge}}
+\index{merge@{merge}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Masks} Wire\+Cell\+::\+Waveform\+::merge (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Channel\+Masks} \&}]{one,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a3d2f1baf84b749d139533ebd4d4da3f0}{Channel\+Masks} \&}]{two }\end{DoxyParamCaption})}
+
+
+
+Return a new mapping which is the union of all same channel masks. 
+
+
+
+Definition at line 258 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespace_wire_cell_1_1_waveform_a49c3b64d64db947f08b1eedcf4c47772_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_aaa9e0dfb1762dd280646e4b3c123d3ef}\label{namespace_wire_cell_1_1_waveform_aaa9e0dfb1762dd280646e4b3c123d3ef}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!merge@{merge}}
+\index{merge@{merge}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Waveform\+::merge (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Channel\+Mask\+Map} \&}]{one,  }\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Channel\+Mask\+Map} \&}]{two,  }\item[{std\+::map$<$ std\+::string, std\+::string $>$ \&}]{name\+\_\+map }\end{DoxyParamCaption})}
+
+
+
+Definition at line 270 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespace_wire_cell_1_1_waveform_aaa9e0dfb1762dd280646e4b3c123d3ef_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a86192f53532ba1e28516c2f8f3a9fa44}\label{namespace_wire_cell_1_1_waveform_a86192f53532ba1e28516c2f8f3a9fa44}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!most\+\_\+frequent@{most\+\_\+frequent}}
+\index{most\+\_\+frequent@{most\+\_\+frequent}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{most\+\_\+frequent()}{most\_frequent()}}
+{\footnotesize\ttfamily short Wire\+Cell\+::\+Waveform\+::most\+\_\+frequent (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ short $>$ \&}]{vals }\end{DoxyParamCaption})}
+
+
+
+Return the smallest, most frequent value to appear in vector. 
+
+
+
+Definition at line 289 of file Waveform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a86192f53532ba1e28516c2f8f3a9fa44_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a9116b8ebe848721a04d5100fa672b0aa}\label{namespace_wire_cell_1_1_waveform_a9116b8ebe848721a04d5100fa672b0aa}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!percentile@{percentile}}
+\index{percentile@{percentile}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{percentile()}{percentile()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{Waveform\+::real\+\_\+t} Wire\+Cell\+::\+Waveform\+::percentile (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \&}]{wave,  }\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t}}]{percentage }\end{DoxyParamCaption})}
+
+
+
+Definition at line 87 of file Waveform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a9116b8ebe848721a04d5100fa672b0aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_ae080d239c8b4426a6d74f9fd8ce85f1a}\label{namespace_wire_cell_1_1_waveform_ae080d239c8b4426a6d74f9fd8ce85f1a}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!percentile\+\_\+binned@{percentile\+\_\+binned}}
+\index{percentile\+\_\+binned@{percentile\+\_\+binned}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{percentile\+\_\+binned()}{percentile\_binned()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{Waveform\+::real\+\_\+t} Wire\+Cell\+::\+Waveform\+::percentile\+\_\+binned (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \&}]{wave,  }\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a47570354e4599d8387803188186aba1f}{real\+\_\+t}}]{percentage }\end{DoxyParamCaption})}
+
+
+
+Definition at line 93 of file Waveform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_ae080d239c8b4426a6d74f9fd8ce85f1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_abcab023facead1d0eb14e2042ce578bb}\label{namespace_wire_cell_1_1_waveform_abcab023facead1d0eb14e2042ce578bb}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!phase@{phase}}
+\index{phase@{phase}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{phase()}{phase()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} Wire\+Cell\+::\+Waveform\+::phase (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t} \&}]{seq }\end{DoxyParamCaption})}
+
+
+
+Return the phase or arg part of the sequence. 
+
+
+
+Definition at line 70 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_abcab023facead1d0eb14e2042ce578bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespace_wire_cell_1_1_waveform_abcab023facead1d0eb14e2042ce578bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a40f3344b248eea24a08d391e8f402bb8}\label{namespace_wire_cell_1_1_waveform_a40f3344b248eea24a08d391e8f402bb8}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!real@{real}}
+\index{real@{real}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{real()}{real()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} Wire\+Cell\+::\+Waveform\+::real (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{compseq\+\_\+t} \&}]{seq }\end{DoxyParamCaption})}
+
+
+
+Return the real part of the sequence. 
+
+
+
+Definition at line 55 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a40f3344b248eea24a08d391e8f402bb8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a40f3344b248eea24a08d391e8f402bb8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_abd675d86a770025f3ace47b277bf0e0e}\label{namespace_wire_cell_1_1_waveform_abd675d86a770025f3ace47b277bf0e0e}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!replace\+\_\+convolve@{replace\+\_\+convolve}}
+\index{replace\+\_\+convolve@{replace\+\_\+convolve}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{replace\+\_\+convolve()}{replace\_convolve()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} Wire\+Cell\+::\+Waveform\+::replace\+\_\+convolve (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t}}]{wave,  }\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t}}]{newres,  }\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t}}]{oldres,  }\item[{bool}]{truncate = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 187 of file Waveform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_abd675d86a770025f3ace47b277bf0e0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_ad08232b659cba09cf7174b900c557be5}\label{namespace_wire_cell_1_1_waveform_ad08232b659cba09cf7174b900c557be5}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!resample@{resample}}
+\index{resample@{resample}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{resample()}{resample()}}
+{\footnotesize\ttfamily template$<$typename Val $>$ \\
+\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$Val$>$ Wire\+Cell\+::\+Waveform\+::resample (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{wave,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&}]{domain,  }\item[{int}]{nsamples,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&}]{newdomain }\end{DoxyParamCaption})}
+
+Return a new sequence resampled and interpolated from the original wave defined over the domain to a new domain of nsamples. 
+
+Definition at line 92 of file Waveform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_ad08232b659cba09cf7174b900c557be5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a5f342071d33324064758877fb128e062}\label{namespace_wire_cell_1_1_waveform_a5f342071d33324064758877fb128e062}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!sample\+\_\+count@{sample\+\_\+count}}
+\index{sample\+\_\+count@{sample\+\_\+count}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{sample\+\_\+count()}{sample\_count()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Waveform\+::sample\+\_\+count (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&}]{domain,  }\item[{double}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the number of samples needed to cover the domain with sample size width. 
+
+
+
+Definition at line 77 of file Waveform.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a76b0099d7c51a9e0a915bbee0fe48069}\label{namespace_wire_cell_1_1_waveform_a76b0099d7c51a9e0a915bbee0fe48069}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!sample\+\_\+width@{sample\+\_\+width}}
+\index{sample\+\_\+width@{sample\+\_\+width}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{sample\+\_\+width()}{sample\_width()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Waveform\+::sample\+\_\+width (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&}]{domain,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the sample size if domain is equally sampled with given number of samples. 
+
+
+
+Definition at line 81 of file Waveform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a76b0099d7c51a9e0a915bbee0fe48069_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespace_wire_cell_1_1_waveform_a76b0099d7c51a9e0a915bbee0fe48069_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_aa8d25ae88346929b5e54cd116f7a4f47}\label{namespace_wire_cell_1_1_waveform_aa8d25ae88346929b5e54cd116f7a4f47}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!scale@{scale}}
+\index{scale@{scale}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Val $>$ \\
+void Wire\+Cell\+::\+Waveform\+::scale (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{seq,  }\item[{Val}]{scalar }\end{DoxyParamCaption})}
+
+
+
+Scale (multiply) sequence values by scalar. 
+
+
+
+Definition at line 146 of file Waveform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_aa8d25ae88346929b5e54cd116f7a4f47_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_aa8d25ae88346929b5e54cd116f7a4f47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a3278b47bbecdbb8a663286d9cdec0d75}\label{namespace_wire_cell_1_1_waveform_a3278b47bbecdbb8a663286d9cdec0d75}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!scale@{scale}}
+\index{scale@{scale}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Waveform\+::scale (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ float $>$ \&}]{seq,  }\item[{double}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 150 of file Waveform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a3278b47bbecdbb8a663286d9cdec0d75_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a6eea0e61cd0999be1219fd0d504e3b13}\label{namespace_wire_cell_1_1_waveform_a6eea0e61cd0999be1219fd0d504e3b13}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!scale@{scale}}
+\index{scale@{scale}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Val $>$ \\
+void Wire\+Cell\+::\+Waveform\+::scale (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{seq,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Scale (multiply) seq values by values from the other sequence. 
+
+
+
+Definition at line 156 of file Waveform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a6eea0e61cd0999be1219fd0d504e3b13_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_adad443bd3c3ee1a0c2e65c9a39282a53}\label{namespace_wire_cell_1_1_waveform_adad443bd3c3ee1a0c2e65c9a39282a53}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!shrink@{shrink}}
+\index{shrink@{shrink}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{shrink()}{shrink()}}
+{\footnotesize\ttfamily template$<$typename Val $>$ \\
+void Wire\+Cell\+::\+Waveform\+::shrink (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{seq,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Shrink (divide) seq values by values from the other sequence. 
+
+
+
+Definition at line 162 of file Waveform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_adad443bd3c3ee1a0c2e65c9a39282a53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_adad443bd3c3ee1a0c2e65c9a39282a53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a841c4668962007ef512b7a7df6ecfece}\label{namespace_wire_cell_1_1_waveform_a841c4668962007ef512b7a7df6ecfece}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!sub\+\_\+sample@{sub\+\_\+sample}}
+\index{sub\+\_\+sample@{sub\+\_\+sample}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{sub\+\_\+sample()}{sub\_sample()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Wire\+Cell\+::\+Waveform\+::sub\+\_\+sample (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&}]{domain,  }\item[{int}]{nsamples,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Domain} \&}]{subdomain }\end{DoxyParamCaption})}
+
+
+
+Return the begin/end sample numbers inside the a subdomain of a domain with nsamples total. 
+
+
+
+Definition at line 15 of file Waveform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{namespace_wire_cell_1_1_waveform_a841c4668962007ef512b7a7df6ecfece_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a841c4668962007ef512b7a7df6ecfece_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a4c7b82a4567d6c94227398f9511ffb92}\label{namespace_wire_cell_1_1_waveform_a4c7b82a4567d6c94227398f9511ffb92}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!sum@{sum}}
+\index{sum@{sum}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily template$<$typename Val $>$ \\
+Val Wire\+Cell\+::\+Waveform\+::sum (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{seq }\end{DoxyParamCaption})}
+
+
+
+Return sum of all entries in sequence. 
+
+
+
+Definition at line 178 of file Waveform.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a4c7b82a4567d6c94227398f9511ffb92_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_waveform_a6aa0cf31fb8548b1f74ffb3f77350668}\label{namespace_wire_cell_1_1_waveform_a6aa0cf31fb8548b1f74ffb3f77350668}} 
+\index{Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}!sum2@{sum2}}
+\index{sum2@{sum2}!Wire\+Cell\+::\+Waveform@{Wire\+Cell\+::\+Waveform}}
+\subsubsection{\texorpdfstring{sum2()}{sum2()}}
+{\footnotesize\ttfamily template$<$typename Val $>$ \\
+Val Wire\+Cell\+::\+Waveform\+::sum2 (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a1d2a1b672e3b220dcd64a994531de95d}{Sequence}$<$ Val $>$ \&}]{seq }\end{DoxyParamCaption})}
+
+
+
+Return sum of square of all entries in sequence. 
+
+
+
+Definition at line 184 of file Waveform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a6aa0cf31fb8548b1f74ffb3f77350668_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_waveform_a6aa0cf31fb8548b1f74ffb3f77350668_icgraph}
+\end{center}
+\end{figure}

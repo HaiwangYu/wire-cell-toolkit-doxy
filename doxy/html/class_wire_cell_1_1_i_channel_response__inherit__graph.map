@@ -1,0 +1,6 @@
+<map id="WireCell::IChannelResponse" name="WireCell::IChannelResponse">
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response.html" title="WireCell::SigProc::\lNominalChannelResponse" alt="" coords="5,244,183,285"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_per_channel_response.html" title="WireCell::SigProc::\lPerChannelResponse" alt="" coords="207,244,357,285"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelResponse \&gt;" alt="" coords="109,80,266,121"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="122,5,253,32"/>
+</map>

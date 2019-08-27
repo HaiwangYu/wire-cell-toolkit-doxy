@@ -1,0 +1,19 @@
+This is the Wire Cell Gen package. It provides reference implementation of Wire Cell interfaces in ways that can be generated with no outside dependencies.
+
+Functionality includes\+:
+
+
+\begin{DoxyItemize}
+\item wire and cell geometry,
+\item drifting charge deposition in the volume of the detector,
+\item diffusion of these charges as they drift,
+\item digitization of charge on the wire planes.
+\end{DoxyItemize}
+
+These layers can be used with other Wire Cell implementations. For example\+:
+
+
+\begin{DoxyItemize}
+\item depositions from detailed simulation can be provided and then Gen\textquotesingle{}s drifting, diffusing and digitization can be used.
+\item your own wire geometry can be used with Gen\textquotesingle{}s cell construction or Gen\textquotesingle{}s wire generated wire geometry can be used as input to your own cell construction. 
+\end{DoxyItemize}

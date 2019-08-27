@@ -1,0 +1,10 @@
+<map id="WireCell::RayGrid::Tiling::projection" name="WireCell::RayGrid::Tiling::projection">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_ray_grid_1_1_blob.html#a4334dac5e1c417337fc156c828036966" title="WireCell::RayGrid::\lBlob::strips" alt="" coords="211,5,347,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_ray_grid_1_1_coordinates.html#ae84a75729cdc5a180fe69d42809f72bc" title="WireCell::RayGrid::\lCoordinates::pitch_mags" alt="" coords="196,71,363,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#a871b9e9a8f3d3fbc728ce1c50ef39ece" title="WireCell::RayGrid::\lActivity::layer" alt="" coords="211,136,347,177"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_ray_grid_1_1_blob.html#afe8d4f5b3c993780eecf4944e92fdd55" title="WireCell::RayGrid::\lBlob::corners" alt="" coords="211,201,347,243"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_ray_grid_1_1_coordinates.html#ab201bc4926236a43676cbac2a7953158" title="WireCell::RayGrid::\lCoordinates::pitch_location" alt="" coords="189,267,369,308"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#abb7e7e8dd7757d7efbd31b3f85f2a69a" title="WireCell::RayGrid::\lActivity::begin" alt="" coords="211,332,347,373"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a265f36d9dee68d3f44381347ef2fd5cb" title="internal::begin" alt="" coords="417,118,520,145"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="422,169,515,195"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="print" name="print">
+<area shape="rect" id="node2" href="$color_8h.html#a63c7b66bfbfbf84f72a2c752cf28ff3e" title="print" alt="" coords="100,103,147,129"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a14d62818b14fe8556fdb1718e12fd1ab" title="internal::check_format\l_string" alt="" coords="195,66,345,107"/>
+<area shape="rect" id="node4" href="$color_8h.html#a42974a7a26c04b309f65d3fbba3494f8" title="vprint" alt="" coords="243,132,297,159"/>
+<area shape="rect" id="node5" href="$classtext__style.html#a57443deabb81d0e013d81813fc4d55cb" title="text_style::has_emphasis" alt="" coords="399,5,570,32"/>
+<area shape="rect" id="node6" href="$classtext__style.html#aecbbaaf438871b55905c4beaea7318b5" title="text_style::get_emphasis" alt="" coords="401,56,569,83"/>
+<area shape="rect" id="node9" href="$classtext__style.html#ad605ce62796a99d87f0e9744617cf402" title="text_style::has_foreground" alt="" coords="397,107,573,133"/>
+<area shape="rect" id="node10" href="$classtext__style.html#a695368429b582c3fef9b28e138beec4a" title="text_style::get_foreground" alt="" coords="398,157,571,184"/>
+<area shape="rect" id="node11" href="$classtext__style.html#afa9f90cd308a4a4b61ab8f6d6178a581" title="text_style::has_background" alt="" coords="393,208,576,235"/>
+<area shape="rect" id="node12" href="$classtext__style.html#a00fb4a1cc65844bc819f71a80050181f" title="text_style::get_background" alt="" coords="395,259,574,285"/>
+<area shape="rect" id="node7" href="$color_8h.html#a518db112c4d8afd36fd1ac6f5383399b" title="fg" alt="" coords="624,31,663,57"/>
+<area shape="rect" id="node8" href="$color_8h.html#a0993505119ca965ee31dbde1972ff33f" title="bg" alt="" coords="624,81,663,108"/>
+</map>

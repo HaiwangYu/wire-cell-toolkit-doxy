@@ -1,0 +1,22 @@
+<map id="LedgeIdentify" name="LedgeIdentify">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_waveform.html#af0395e9b0e5e9e86a26579badb834092" title="WireCell::Waveform\l::mean_rms" alt="" coords="181,305,321,347"/>
+<area shape="rect" id="node9" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="617,437,780,463"/>
+<area shape="rect" id="node12" href="$namespace_wire_cell_1_1_waveform.html#a69255dad704fcb71fa53745e90a2f0e1" title="WireCell::Waveform\l::idft" alt="" coords="629,488,769,529"/>
+<area shape="rect" id="node14" href="$namespace_wire_cell_1_1_sig_proc_1_1_protodune.html#afc41e8e05bb63814539ac2f89360c0de" title="WireCell::SigProc::\lProtodune::LinearInterpSticky" alt="" coords="153,539,348,580"/>
+<area shape="rect" id="node15" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="204,605,297,631"/>
+<area shape="rect" id="node16" href="$namespace_wire_cell_1_1_sig_proc_1_1_protodune.html#a7bc8b6b7f87df0120589d4a2a0a77c4e" title="WireCell::SigProc::\lProtodune::FftInterpSticky" alt="" coords="163,656,338,697"/>
+<area shape="rect" id="node17" href="$namespace_wire_cell_1_1_waveform.html#aa8d25ae88346929b5e54cd116f7a4f47" title="Scale (multiply) sequence values by scalar. " alt="" coords="181,721,321,763"/>
+<area shape="rect" id="node20" href="$namespace_wire_cell_1_1_sig_proc_1_1_protodune.html#a4a864612af01dc605e073a79fc261940" title="WireCell::SigProc::\lProtodune::FftShiftSticky" alt="" coords="166,787,335,828"/>
+<area shape="rect" id="node21" href="$namespace_wire_cell_1_1_sig_proc_1_1_protodune.html#a70a419137440aaee4a7afd4366c10404" title="WireCell::SigProc::\lProtodune::FftScaling" alt="" coords="177,852,325,893"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#a4c7b82a4567d6c94227398f9511ffb92" title="Return sum of all entries in sequence. " alt="" coords="396,342,569,369"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_waveform.html#a6aa0cf31fb8548b1f74ffb3f77350668" title="Return sum of square of all entries in sequence. " alt="" coords="413,276,553,317"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_waveform.html#af5e9352cbf35ddaf2f95e924d241a2aa" title="WireCell::Waveform\l::median" alt="" coords="629,305,769,347"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_waveform.html#a9116b8ebe848721a04d5100fa672b0aa" title="WireCell::Waveform\l::percentile" alt="" coords="828,263,968,304"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1_waveform.html#a9a72f0b40ec9e5b44713c59f338f6fd3" title="WireCell::Waveform\l::median_binned" alt="" coords="629,188,769,229"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1_waveform.html#ae080d239c8b4426a6d74f9fd8ce85f1a" title="WireCell::Waveform\l::percentile_binned" alt="" coords="828,172,968,213"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1_waveform.html#aafc9307577968266045319c91ce3ab66" title="WireCell::Waveform\l::linear_convolve" alt="" coords="629,371,769,412"/>
+<area shape="rect" id="node11" href="$namespace_wire_cell_1_1_waveform.html#abd675d86a770025f3ace47b277bf0e0e" title="WireCell::Waveform\l::replace_convolve" alt="" coords="629,5,769,47"/>
+<area shape="rect" id="node13" href="$namespace_wire_cell_1_1_waveform.html#a86192f53532ba1e28516c2f8f3a9fa44" title="Return the smallest, most frequent value to appear in vector. " alt="" coords="629,71,769,112"/>
+<area shape="rect" id="node18" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="419,721,546,763"/>
+<area shape="rect" id="node19" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="635,721,762,763"/>
+</map>

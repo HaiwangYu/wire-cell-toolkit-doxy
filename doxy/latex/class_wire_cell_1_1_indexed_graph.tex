@@ -1,0 +1,327 @@
+\hypertarget{class_wire_cell_1_1_indexed_graph}{}\section{Wire\+Cell\+:\+:Indexed\+Graph$<$ Vertex\+Type $>$ Class Template Reference}
+\label{class_wire_cell_1_1_indexed_graph}\index{Wire\+Cell\+::\+Indexed\+Graph$<$ Vertex\+Type $>$@{Wire\+Cell\+::\+Indexed\+Graph$<$ Vertex\+Type $>$}}
+
+
+{\ttfamily \#include $<$Indexed\+Graph.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Vertex\+Type \hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}
+\item 
+typedef boost\+::adjacency\+\_\+list$<$ boost\+::setS, boost\+::vecS, boost\+::undirectedS, \hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t}
+\item 
+typedef boost\+::graph\+\_\+traits$<$ \hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t} $>$\+::vertex\+\_\+descriptor \hyperlink{class_wire_cell_1_1_indexed_graph_a8bad4d4e6f2d8a8109e95757d502c9ba}{vdesc\+\_\+t}
+\item 
+typedef boost\+::graph\+\_\+traits$<$ \hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t} $>$\+::edge\+\_\+descriptor \hyperlink{class_wire_cell_1_1_indexed_graph_a7dabdef2dec280294d6ead6f0fdc66c8}{edesc\+\_\+t}
+\item 
+typedef std\+::unordered\+\_\+map$<$ int, std\+::vector$<$ \hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t} $>$ $>$ \hyperlink{class_wire_cell_1_1_indexed_graph_af5e6a57c2c26d4f3036745cfe73a8a98}{vertex\+\_\+grouping\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Return connected component subgraphs. \end{DoxyCompactList}\item 
+typedef std\+::unordered\+\_\+map$<$ \hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}, \hyperlink{class_wire_cell_1_1_indexed_graph_a8bad4d4e6f2d8a8109e95757d502c9ba}{vdesc\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_indexed_graph_aae3465237209e244b48b594b6284526e}{index\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_indexed_graph_a010abbec94dc4a91d471fe6a3131370a}{Indexed\+Graph} ()
+\item 
+\hyperlink{class_wire_cell_1_1_indexed_graph_a0bee33ff275af7255d0e7dafcc10d950}{Indexed\+Graph} (const \hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t} \&g)
+\item 
+std\+::vector$<$ \hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_indexed_graph_a172ae52877eb8727d2580e199b41cc64}{neighbors} (\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t} obj) const
+\item 
+bool \hyperlink{class_wire_cell_1_1_indexed_graph_a77bec91576cb23b64ea200cd03a5d686}{has} (\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t} vobj) const
+\item 
+\hyperlink{class_wire_cell_1_1_indexed_graph_a7dabdef2dec280294d6ead6f0fdc66c8}{edesc\+\_\+t} \hyperlink{class_wire_cell_1_1_indexed_graph_a03a0f192232d913bfb4171fc7b2e095a}{edge} (\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t} vobj1, \hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t} vobj2)
+\item 
+\hyperlink{class_wire_cell_1_1_indexed_graph_a8bad4d4e6f2d8a8109e95757d502c9ba}{vdesc\+\_\+t} \hyperlink{class_wire_cell_1_1_indexed_graph_a80546c5d1dee591fae4c845de560f806}{vertex} (\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t} vobj)
+\item 
+\hyperlink{class_wire_cell_1_1_indexed_graph_a8bad4d4e6f2d8a8109e95757d502c9ba}{vdesc\+\_\+t} \hyperlink{class_wire_cell_1_1_indexed_graph_a1c2b3474d425594b43dea46c975a27f4}{replace} (\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t} vold, \hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t} vnew)
+\item 
+void \hyperlink{class_wire_cell_1_1_indexed_graph_adb8836f8e4ccae7a86b062a47dedb0a3}{clear} ()
+\item 
+\hyperlink{class_wire_cell_1_1_indexed_graph_af5e6a57c2c26d4f3036745cfe73a8a98}{vertex\+\_\+grouping\+\_\+t} \hyperlink{class_wire_cell_1_1_indexed_graph_a157b4fedc1ded6acf0479635cb97d8fc}{groups} ()
+\item 
+const \hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t} \& \hyperlink{class_wire_cell_1_1_indexed_graph_a73e33d19b8b03611097aa02a2e72dd1d}{graph} () const
+\item 
+\hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t} \& \hyperlink{class_wire_cell_1_1_indexed_graph_a91bb9fbf5b1106979cc5119e606cf396}{graph} ()
+\item 
+\hyperlink{class_wire_cell_1_1_indexed_graph_aae3465237209e244b48b594b6284526e}{index\+\_\+t} \& \hyperlink{class_wire_cell_1_1_indexed_graph_ab26c470b918ae39eafe091a10ae8b119}{index} ()
+\item 
+const \hyperlink{class_wire_cell_1_1_indexed_graph_aae3465237209e244b48b594b6284526e}{index\+\_\+t} \& \hyperlink{class_wire_cell_1_1_indexed_graph_af2f586142f41e1316192a4768f04c4b1}{index} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Vertex\+Type$>$\newline
+class Wire\+Cell\+::\+Indexed\+Graph$<$ Vertex\+Type $>$}
+
+
+
+Definition at line 31 of file Indexed\+Graph.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a7dabdef2dec280294d6ead6f0fdc66c8}\label{class_wire_cell_1_1_indexed_graph_a7dabdef2dec280294d6ead6f0fdc66c8}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!edesc\+\_\+t@{edesc\+\_\+t}}
+\index{edesc\+\_\+t@{edesc\+\_\+t}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{edesc\+\_\+t}{edesc\_t}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+typedef boost\+::graph\+\_\+traits$<$\hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t}$>$\+::edge\+\_\+descriptor \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::\hyperlink{class_wire_cell_1_1_indexed_graph_a7dabdef2dec280294d6ead6f0fdc66c8}{edesc\+\_\+t}}
+
+
+
+Definition at line 46 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}\label{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!graph\+\_\+t@{graph\+\_\+t}}
+\index{graph\+\_\+t@{graph\+\_\+t}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{graph\+\_\+t}{graph\_t}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+typedef boost\+::adjacency\+\_\+list$<$boost\+::setS, boost\+::vecS, boost\+::undirectedS, \hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::\hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t}}
+
+
+
+Definition at line 44 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_aae3465237209e244b48b594b6284526e}\label{class_wire_cell_1_1_indexed_graph_aae3465237209e244b48b594b6284526e}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!index\+\_\+t@{index\+\_\+t}}
+\index{index\+\_\+t@{index\+\_\+t}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{index\+\_\+t}{index\_t}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+typedef std\+::unordered\+\_\+map$<$\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}, \hyperlink{class_wire_cell_1_1_indexed_graph_a8bad4d4e6f2d8a8109e95757d502c9ba}{vdesc\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::\hyperlink{class_wire_cell_1_1_indexed_graph_aae3465237209e244b48b594b6284526e}{index\+\_\+t}}
+
+
+
+Definition at line 149 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a8bad4d4e6f2d8a8109e95757d502c9ba}\label{class_wire_cell_1_1_indexed_graph_a8bad4d4e6f2d8a8109e95757d502c9ba}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!vdesc\+\_\+t@{vdesc\+\_\+t}}
+\index{vdesc\+\_\+t@{vdesc\+\_\+t}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{vdesc\+\_\+t}{vdesc\_t}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+typedef boost\+::graph\+\_\+traits$<$\hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t}$>$\+::vertex\+\_\+descriptor \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::\hyperlink{class_wire_cell_1_1_indexed_graph_a8bad4d4e6f2d8a8109e95757d502c9ba}{vdesc\+\_\+t}}
+
+
+
+Definition at line 45 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_af5e6a57c2c26d4f3036745cfe73a8a98}\label{class_wire_cell_1_1_indexed_graph_af5e6a57c2c26d4f3036745cfe73a8a98}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!vertex\+\_\+grouping\+\_\+t@{vertex\+\_\+grouping\+\_\+t}}
+\index{vertex\+\_\+grouping\+\_\+t@{vertex\+\_\+grouping\+\_\+t}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{vertex\+\_\+grouping\+\_\+t}{vertex\_grouping\_t}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+typedef std\+::unordered\+\_\+map$<$int, std\+::vector$<$\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}$>$ $>$ \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::\hyperlink{class_wire_cell_1_1_indexed_graph_af5e6a57c2c26d4f3036745cfe73a8a98}{vertex\+\_\+grouping\+\_\+t}}
+
+
+
+Return connected component subgraphs. 
+
+
+
+Definition at line 128 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}\label{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!vertex\+\_\+t@{vertex\+\_\+t}}
+\index{vertex\+\_\+t@{vertex\+\_\+t}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{vertex\+\_\+t}{vertex\_t}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+typedef Vertex\+Type \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}}
+
+
+
+Definition at line 33 of file Indexed\+Graph.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a010abbec94dc4a91d471fe6a3131370a}\label{class_wire_cell_1_1_indexed_graph_a010abbec94dc4a91d471fe6a3131370a}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!Indexed\+Graph@{Indexed\+Graph}}
+\index{Indexed\+Graph@{Indexed\+Graph}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{Indexed\+Graph()}{IndexedGraph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+\hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::\hyperlink{class_wire_cell_1_1_indexed_graph}{Indexed\+Graph} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 48 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a0bee33ff275af7255d0e7dafcc10d950}\label{class_wire_cell_1_1_indexed_graph_a0bee33ff275af7255d0e7dafcc10d950}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!Indexed\+Graph@{Indexed\+Graph}}
+\index{Indexed\+Graph@{Indexed\+Graph}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{Indexed\+Graph()}{IndexedGraph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+\hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::\hyperlink{class_wire_cell_1_1_indexed_graph}{Indexed\+Graph} (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t} \&}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 50 of file Indexed\+Graph.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_adb8836f8e4ccae7a86b062a47dedb0a3}\label{class_wire_cell_1_1_indexed_graph_adb8836f8e4ccae7a86b062a47dedb0a3}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!clear@{clear}}
+\index{clear@{clear}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+void \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 121 of file Indexed\+Graph.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_indexed_graph_adb8836f8e4ccae7a86b062a47dedb0a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a03a0f192232d913bfb4171fc7b2e095a}\label{class_wire_cell_1_1_indexed_graph_a03a0f192232d913bfb4171fc7b2e095a}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!edge@{edge}}
+\index{edge@{edge}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{edge()}{edge()}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+\hyperlink{class_wire_cell_1_1_indexed_graph_a7dabdef2dec280294d6ead6f0fdc66c8}{edesc\+\_\+t} \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::edge (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}}]{vobj1,  }\item[{\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}}]{vobj2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 93 of file Indexed\+Graph.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_indexed_graph_a03a0f192232d913bfb4171fc7b2e095a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a73e33d19b8b03611097aa02a2e72dd1d}\label{class_wire_cell_1_1_indexed_graph_a73e33d19b8b03611097aa02a2e72dd1d}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!graph@{graph}}
+\index{graph@{graph}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{graph()}{graph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+const \hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t}\& \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 141 of file Indexed\+Graph.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_indexed_graph_a73e33d19b8b03611097aa02a2e72dd1d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a91bb9fbf5b1106979cc5119e606cf396}\label{class_wire_cell_1_1_indexed_graph_a91bb9fbf5b1106979cc5119e606cf396}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!graph@{graph}}
+\index{graph@{graph}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{graph()}{graph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+\hyperlink{class_wire_cell_1_1_indexed_graph_a5593f08e4be84de33ebf37de7d071819}{graph\+\_\+t}\& \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 145 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a157b4fedc1ded6acf0479635cb97d8fc}\label{class_wire_cell_1_1_indexed_graph_a157b4fedc1ded6acf0479635cb97d8fc}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!groups@{groups}}
+\index{groups@{groups}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{groups()}{groups()}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+\hyperlink{class_wire_cell_1_1_indexed_graph_af5e6a57c2c26d4f3036745cfe73a8a98}{vertex\+\_\+grouping\+\_\+t} \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::groups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 129 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a77bec91576cb23b64ea200cd03a5d686}\label{class_wire_cell_1_1_indexed_graph_a77bec91576cb23b64ea200cd03a5d686}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!has@{has}}
+\index{has@{has}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+bool \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::has (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}}]{vobj }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file Indexed\+Graph.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_indexed_graph_a77bec91576cb23b64ea200cd03a5d686_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_ab26c470b918ae39eafe091a10ae8b119}\label{class_wire_cell_1_1_indexed_graph_ab26c470b918ae39eafe091a10ae8b119}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!index@{index}}
+\index{index@{index}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{index()}{index()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+\hyperlink{class_wire_cell_1_1_indexed_graph_aae3465237209e244b48b594b6284526e}{index\+\_\+t}\& \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 150 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_af2f586142f41e1316192a4768f04c4b1}\label{class_wire_cell_1_1_indexed_graph_af2f586142f41e1316192a4768f04c4b1}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!index@{index}}
+\index{index@{index}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{index()}{index()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+const \hyperlink{class_wire_cell_1_1_indexed_graph_aae3465237209e244b48b594b6284526e}{index\+\_\+t}\& \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 151 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a172ae52877eb8727d2580e199b41cc64}\label{class_wire_cell_1_1_indexed_graph_a172ae52877eb8727d2580e199b41cc64}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!neighbors@{neighbors}}
+\index{neighbors@{neighbors}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{neighbors()}{neighbors()}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+std\+::vector$<$\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::neighbors (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}}]{obj }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 69 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a1c2b3474d425594b43dea46c975a27f4}\label{class_wire_cell_1_1_indexed_graph_a1c2b3474d425594b43dea46c975a27f4}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!replace@{replace}}
+\index{replace@{replace}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+\hyperlink{class_wire_cell_1_1_indexed_graph_a8bad4d4e6f2d8a8109e95757d502c9ba}{vdesc\+\_\+t} \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::replace (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}}]{vold,  }\item[{\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}}]{vnew }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 113 of file Indexed\+Graph.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_indexed_graph_a80546c5d1dee591fae4c845de560f806}\label{class_wire_cell_1_1_indexed_graph_a80546c5d1dee591fae4c845de560f806}} 
+\index{Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}!vertex@{vertex}}
+\index{vertex@{vertex}!Wire\+Cell\+::\+Indexed\+Graph@{Wire\+Cell\+::\+Indexed\+Graph}}
+\subsubsection{\texorpdfstring{vertex()}{vertex()}}
+{\footnotesize\ttfamily template$<$typename Vertex\+Type$>$ \\
+\hyperlink{class_wire_cell_1_1_indexed_graph_a8bad4d4e6f2d8a8109e95757d502c9ba}{vdesc\+\_\+t} \hyperlink{class_wire_cell_1_1_indexed_graph}{Wire\+Cell\+::\+Indexed\+Graph}$<$ Vertex\+Type $>$\+::vertex (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_indexed_graph_ac26b25ac103373dde929a982d948d1b5}{vertex\+\_\+t}}]{vobj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file Indexed\+Graph.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_indexed_graph_a80546c5d1dee591fae4c845de560f806_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_indexed_graph_8h}{Indexed\+Graph.\+h}\end{DoxyCompactItemize}

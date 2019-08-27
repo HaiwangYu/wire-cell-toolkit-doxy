@@ -1,0 +1,98 @@
+\hypertarget{_cluster_sink_8cxx}{}\section{img/src/\+Cluster\+Sink.cxx File Reference}
+\label{_cluster_sink_8cxx}\index{img/src/\+Cluster\+Sink.\+cxx@{img/src/\+Cluster\+Sink.\+cxx}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Img/\+Cluster\+Sink.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/graph/graphviz.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+String.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Named\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Logging.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+Include dependency graph for Cluster\+Sink.\+cxx\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_cluster_sink_8cxx__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structlabel__writer__t}{label\+\_\+writer\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::function$<$ std\+::string(const \hyperlink{struct_wire_cell_1_1cluster__node__t}{cluster\+\_\+node\+\_\+t} \&\hyperlink{format_8h_ae6bfbee71e8bd00280b2d936f93f7b88}{ptr}) $>$ $>$ \hyperlink{_cluster_sink_8cxx_a992561fec9e9ad484d1a17b8d42ea3d0}{stringers\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cluster_sink_8cxx_a24dd2ae43c11723ef78d6c5f6d785d55}{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY} (Cluster\+Sink, \hyperlink{class_wire_cell_1_1_img_1_1_cluster_sink}{Wire\+Cell\+::\+Img\+::\+Cluster\+Sink}, \hyperlink{class_wire_cell_1_1_i_cluster_sink}{Wire\+Cell\+::\+I\+Cluster\+Sink}, \hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable}) using namespace Wire\+Cell
+\item 
+{\footnotesize template$<$typename Type $>$ }\\std\+::string \hyperlink{_cluster_sink_8cxx_a5a98446b7f474d30e5f222a375bbbbf9}{scalar\+\_\+stringer} (const \hyperlink{struct_wire_cell_1_1cluster__node__t}{cluster\+\_\+node\+\_\+t} \&\hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n})
+\item 
+{\footnotesize template$<$typename Type $>$ }\\std\+::string \hyperlink{_cluster_sink_8cxx_a9258785a1b302cbafe04319494069ede}{vector\+\_\+stringer} (const \hyperlink{struct_wire_cell_1_1cluster__node__t}{cluster\+\_\+node\+\_\+t} \&\hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n})
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{_cluster_sink_8cxx_a992561fec9e9ad484d1a17b8d42ea3d0}\label{_cluster_sink_8cxx_a992561fec9e9ad484d1a17b8d42ea3d0}} 
+\index{Cluster\+Sink.\+cxx@{Cluster\+Sink.\+cxx}!stringers\+\_\+t@{stringers\+\_\+t}}
+\index{stringers\+\_\+t@{stringers\+\_\+t}!Cluster\+Sink.\+cxx@{Cluster\+Sink.\+cxx}}
+\subsubsection{\texorpdfstring{stringers\+\_\+t}{stringers\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$ std\+::function$<$ std\+::string(const \hyperlink{struct_wire_cell_1_1cluster__node__t}{cluster\+\_\+node\+\_\+t}\& \hyperlink{format_8h_ae6bfbee71e8bd00280b2d936f93f7b88}{ptr}) $>$ $>$ \hyperlink{_cluster_sink_8cxx_a992561fec9e9ad484d1a17b8d42ea3d0}{stringers\+\_\+t}}
+
+
+
+Definition at line 47 of file Cluster\+Sink.\+cxx.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_cluster_sink_8cxx_a5a98446b7f474d30e5f222a375bbbbf9}\label{_cluster_sink_8cxx_a5a98446b7f474d30e5f222a375bbbbf9}} 
+\index{Cluster\+Sink.\+cxx@{Cluster\+Sink.\+cxx}!scalar\+\_\+stringer@{scalar\+\_\+stringer}}
+\index{scalar\+\_\+stringer@{scalar\+\_\+stringer}!Cluster\+Sink.\+cxx@{Cluster\+Sink.\+cxx}}
+\subsubsection{\texorpdfstring{scalar\+\_\+stringer()}{scalar\_stringer()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+std\+::string scalar\+\_\+stringer (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1cluster__node__t}{cluster\+\_\+node\+\_\+t} \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file Cluster\+Sink.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{_cluster_sink_8cxx_a5a98446b7f474d30e5f222a375bbbbf9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_cluster_sink_8cxx_a9258785a1b302cbafe04319494069ede}\label{_cluster_sink_8cxx_a9258785a1b302cbafe04319494069ede}} 
+\index{Cluster\+Sink.\+cxx@{Cluster\+Sink.\+cxx}!vector\+\_\+stringer@{vector\+\_\+stringer}}
+\index{vector\+\_\+stringer@{vector\+\_\+stringer}!Cluster\+Sink.\+cxx@{Cluster\+Sink.\+cxx}}
+\subsubsection{\texorpdfstring{vector\+\_\+stringer()}{vector\_stringer()}}
+{\footnotesize\ttfamily template$<$typename Type $>$ \\
+std\+::string vector\+\_\+stringer (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1cluster__node__t}{cluster\+\_\+node\+\_\+t} \&}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 67 of file Cluster\+Sink.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{_cluster_sink_8cxx_a9258785a1b302cbafe04319494069ede_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_cluster_sink_8cxx_a24dd2ae43c11723ef78d6c5f6d785d55}\label{_cluster_sink_8cxx_a24dd2ae43c11723ef78d6c5f6d785d55}} 
+\index{Cluster\+Sink.\+cxx@{Cluster\+Sink.\+cxx}!W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}}
+\index{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}!Cluster\+Sink.\+cxx@{Cluster\+Sink.\+cxx}}
+\subsubsection{\texorpdfstring{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+R\+Y()}{WIRECELL\_FACTORY()}}
+{\footnotesize\ttfamily W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY (\begin{DoxyParamCaption}\item[{Cluster\+Sink}]{,  }\item[{\hyperlink{class_wire_cell_1_1_img_1_1_cluster_sink}{Wire\+Cell\+::\+Img\+::\+Cluster\+Sink}}]{,  }\item[{\hyperlink{class_wire_cell_1_1_i_cluster_sink}{Wire\+Cell\+::\+I\+Cluster\+Sink}}]{,  }\item[{\hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable}}]{ }\end{DoxyParamCaption})}
+

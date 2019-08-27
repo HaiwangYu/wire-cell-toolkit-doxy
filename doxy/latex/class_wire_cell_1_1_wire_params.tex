@@ -1,0 +1,239 @@
+\hypertarget{class_wire_cell_1_1_wire_params}{}\section{Wire\+Cell\+:\+:Wire\+Params Class Reference}
+\label{class_wire_cell_1_1_wire_params}\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+
+
+{\ttfamily \#include $<$Wire\+Params.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Wire\+Params\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_wire_params__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Wire\+Params\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_wire_params__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_wire_cell_1_1_wire_params_a7ad51fcb64c9edae1695873f1bec86dc}{set} (const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&\hyperlink{class_wire_cell_1_1_wire_params_a20e01f2e7d229f28e0e2d414b36b4e57}{bounds}, const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&U, const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&V, const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&W)
+\item 
+void \hyperlink{class_wire_cell_1_1_wire_params_ac1e2cdbafe981979f06d802675f1e8ff}{set} (double dx=10 $\ast$units\+::mm, double dy=1 $\ast$units\+::meter, double dz=1 $\ast$units\+::meter, double \hyperlink{class_wire_cell_1_1_i_wire_parameters_aafb960715541113e82448f74e0f34e46}{pitch}=10 $\ast$units\+::mm, double angle=60.\+0 $\ast$units\+::degree)
+\item 
+const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& \hyperlink{class_wire_cell_1_1_wire_params_a20e01f2e7d229f28e0e2d414b36b4e57}{bounds} () const
+\item 
+const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& \hyperlink{class_wire_cell_1_1_wire_params_a8d61eb6c6ef8d3320172840079891322}{pitchU} () const
+\item 
+const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& \hyperlink{class_wire_cell_1_1_wire_params_a5bcff5a348b5ad2a26e8e0a6a3c63258}{pitchV} () const
+\item 
+const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& \hyperlink{class_wire_cell_1_1_wire_params_a8b310b4fe56d7c1eda061473ec86b5d0}{pitchW} () const
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_wire_params_a8d20db605558e5fa6afaa7c5cf53ae4f}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_wire_params_a062a30e00693380e0cf1d74f463b63b9}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_wire_params_a444210719faa33678a688b00b89ac0b4}{Wire\+Params} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_wire_params_aa66d971049ed2ece8e46eaeefadbc1bb}{$\sim$\+Wire\+Params} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Embody parameters describing a triple of wire planes and provide a configurable interface. 
+
+Definition at line 12 of file Wire\+Params.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_params_a444210719faa33678a688b00b89ac0b4}\label{class_wire_cell_1_1_wire_params_a444210719faa33678a688b00b89ac0b4}} 
+\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}!Wire\+Params@{Wire\+Params}}
+\index{Wire\+Params@{Wire\+Params}!Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+\subsubsection{\texorpdfstring{Wire\+Params()}{WireParams()}}
+{\footnotesize\ttfamily Wire\+Params\+::\+Wire\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 17 of file Wire\+Params.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_params_aa66d971049ed2ece8e46eaeefadbc1bb}\label{class_wire_cell_1_1_wire_params_aa66d971049ed2ece8e46eaeefadbc1bb}} 
+\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}!````~Wire\+Params@{$\sim$\+Wire\+Params}}
+\index{````~Wire\+Params@{$\sim$\+Wire\+Params}!Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+\subsubsection{\texorpdfstring{$\sim$\+Wire\+Params()}{~WireParams()}}
+{\footnotesize\ttfamily Wire\+Params\+::$\sim$\+Wire\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 23 of file Wire\+Params.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_params_a20e01f2e7d229f28e0e2d414b36b4e57}\label{class_wire_cell_1_1_wire_params_a20e01f2e7d229f28e0e2d414b36b4e57}} 
+\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}!bounds@{bounds}}
+\index{bounds@{bounds}!Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+\subsubsection{\texorpdfstring{bounds()}{bounds()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& Wire\+Params\+::bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Provide access to the rays which were used to define the wires. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_wire_parameters_a4cc116cbfff382ec8ba7711df078f845}{Wire\+Cell\+::\+I\+Wire\+Parameters}.
+
+
+
+Definition at line 149 of file Wire\+Params.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_params_a8d20db605558e5fa6afaa7c5cf53ae4f}\label{class_wire_cell_1_1_wire_params_a8d20db605558e5fa6afaa7c5cf53ae4f}} 
+\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Wire\+Params\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Configurable interface. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 44 of file Wire\+Params.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_wire_cell_1_1_wire_params_a8d20db605558e5fa6afaa7c5cf53ae4f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_params_a062a30e00693380e0cf1d74f463b63b9}\label{class_wire_cell_1_1_wire_params_a062a30e00693380e0cf1d74f463b63b9}} 
+\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} Wire\+Params\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 29 of file Wire\+Params.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_wire_params_a062a30e00693380e0cf1d74f463b63b9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_params_a8d61eb6c6ef8d3320172840079891322}\label{class_wire_cell_1_1_wire_params_a8d61eb6c6ef8d3320172840079891322}} 
+\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}!pitchU@{pitchU}}
+\index{pitchU@{pitchU}!Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+\subsubsection{\texorpdfstring{pitch\+U()}{pitchU()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& Wire\+Params\+::pitchU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+A ray going from the center of the first U wire to the second and perpendicular to both. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_wire_parameters_a37e3bb80331664feb75d00eb957fda78}{Wire\+Cell\+::\+I\+Wire\+Parameters}.
+
+
+
+Definition at line 150 of file Wire\+Params.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_params_a5bcff5a348b5ad2a26e8e0a6a3c63258}\label{class_wire_cell_1_1_wire_params_a5bcff5a348b5ad2a26e8e0a6a3c63258}} 
+\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}!pitchV@{pitchV}}
+\index{pitchV@{pitchV}!Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+\subsubsection{\texorpdfstring{pitch\+V()}{pitchV()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& Wire\+Params\+::pitchV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+A ray going from the center of the first V wire to the second and perpendicular to both. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_wire_parameters_a696c827d971a57805da41e3f2f14ba35}{Wire\+Cell\+::\+I\+Wire\+Parameters}.
+
+
+
+Definition at line 151 of file Wire\+Params.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_params_a8b310b4fe56d7c1eda061473ec86b5d0}\label{class_wire_cell_1_1_wire_params_a8b310b4fe56d7c1eda061473ec86b5d0}} 
+\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}!pitchW@{pitchW}}
+\index{pitchW@{pitchW}!Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+\subsubsection{\texorpdfstring{pitch\+W()}{pitchW()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \& Wire\+Params\+::pitchW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+A ray going from the center of the first W wire to the second and perpendicular to both. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_wire_parameters_a4e9d46ba775e642112628b79853b58cb}{Wire\+Cell\+::\+I\+Wire\+Parameters}.
+
+
+
+Definition at line 152 of file Wire\+Params.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_params_a7ad51fcb64c9edae1695873f1bec86dc}\label{class_wire_cell_1_1_wire_params_a7ad51fcb64c9edae1695873f1bec86dc}} 
+\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}!set@{set}}
+\index{set@{set}!Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Wire\+Params\+::set (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&}]{bounds,  }\item[{const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&}]{U,  }\item[{const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&}]{V,  }\item[{const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray} \&}]{W }\end{DoxyParamCaption})}
+
+Directly set the fundamental parameters. See \hyperlink{class_wire_cell_1_1_i_wire_parameters}{Wire\+Cell\+::\+I\+Wire\+Parameters}. 
+
+Definition at line 100 of file Wire\+Params.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_wire_params_a7ad51fcb64c9edae1695873f1bec86dc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_wire_params_ac1e2cdbafe981979f06d802675f1e8ff}\label{class_wire_cell_1_1_wire_params_ac1e2cdbafe981979f06d802675f1e8ff}} 
+\index{Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}!set@{set}}
+\index{set@{set}!Wire\+Cell\+::\+Wire\+Params@{Wire\+Cell\+::\+Wire\+Params}}
+\subsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Wire\+Params\+::set (\begin{DoxyParamCaption}\item[{double}]{dx = {\ttfamily 10~$\ast$units\+:\+:mm},  }\item[{double}]{dy = {\ttfamily 1~$\ast$units\+:\+:meter},  }\item[{double}]{dz = {\ttfamily 1~$\ast$units\+:\+:meter},  }\item[{double}]{pitch = {\ttfamily 10~$\ast$units\+:\+:mm},  }\item[{double}]{angle = {\ttfamily 60.0~$\ast$units\+:\+:degree} }\end{DoxyParamCaption})}
+
+Set the wire parameters simply.
+
+This method gives a simpler, more restricted interface to setting the wire parameter. It follows the same conventions as the one above but assumes\+:
+
+
+\begin{DoxyItemize}
+\item The bounding box is centered on the origin.
+\item One wire of each plane intersects the X-\/axis.
+\item The magnitudes of the U and V angles are equal.
+\item The pitches of all three planes are the same.
+\item The X values W, V and U planes evening distributed on the positive half of the X covered by the bounding box.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx,dy,dz} & are the full widths of the bounding box in the associated direction.\\
+\hline
+{\em pitch} & is the perpendicular distance between two adjacent wires in a plane.\\
+\hline
+{\em angle} & is the absolute angular distance from the U and V wires and the Y-\/axis. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_wire_params_8h}{Wire\+Params.\+h}\item 
+gen/src/\hyperlink{_wire_params_8cxx}{Wire\+Params.\+cxx}\end{DoxyCompactItemize}

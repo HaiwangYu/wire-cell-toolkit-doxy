@@ -1,0 +1,118 @@
+\hypertarget{class_wire_cell_1_1_i_blob_set}{}\section{Wire\+Cell\+:\+:I\+Blob\+Set Class Reference}
+\label{class_wire_cell_1_1_i_blob_set}\index{Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}}
+
+
+{\ttfamily \#include $<$I\+Blob\+Set.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Blob\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_wire_cell_1_1_i_blob_set__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Blob\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_wire_cell_1_1_i_blob_set__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_blob_set_a8bacb591cc8153bb98a84794c94fcf1a}{$\sim$\+I\+Blob\+Set} ()
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_blob_set_a18567545bde587af9d775efd55bf39fa}{ident} () const =0
+\begin{DoxyCompactList}\small\item\em Return some identifier number that is unique to this set. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Slice\+::pointer} \hyperlink{class_wire_cell_1_1_i_blob_set_ac3fae97101f3ab70f6833296e43817a3}{slice} () const =0
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Blob\+::vector} \hyperlink{class_wire_cell_1_1_i_blob_set_af9c19bbf4c1241ddaa3b2022129a766a}{blobs} () const =0
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_ray_grid_aea2069aff62790df3241ee7446e81ade}{Ray\+Grid\+::blobs\+\_\+t} \hyperlink{class_wire_cell_1_1_i_blob_set_abf09ebcd27b5dea4b7608ec7fd5abbc0}{shapes} () const
+\begin{DoxyCompactList}\small\item\em Return a vector of the underlying \hyperlink{class_wire_cell_1_1_i_blob_a241a18f7f178a2021c643ffb6eed6e3f}{I\+Blob\+::shape()} in order (sugar). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file I\+Blob\+Set.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_blob_set_a8bacb591cc8153bb98a84794c94fcf1a}\label{class_wire_cell_1_1_i_blob_set_a8bacb591cc8153bb98a84794c94fcf1a}} 
+\index{Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}!````~I\+Blob\+Set@{$\sim$\+I\+Blob\+Set}}
+\index{````~I\+Blob\+Set@{$\sim$\+I\+Blob\+Set}!Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Blob\+Set()}{~IBlobSet()}}
+{\footnotesize\ttfamily I\+Blob\+Set\+::$\sim$\+I\+Blob\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 97 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_blob_set_af9c19bbf4c1241ddaa3b2022129a766a}\label{class_wire_cell_1_1_i_blob_set_af9c19bbf4c1241ddaa3b2022129a766a}} 
+\index{Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}!blobs@{blobs}}
+\index{blobs@{blobs}!Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}}
+\subsubsection{\texorpdfstring{blobs()}{blobs()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Blob\+::vector} Wire\+Cell\+::\+I\+Blob\+Set\+::blobs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the blobs in this set. There is no ordering requirement. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_simple_blob_set_abee0b145a6a64ebc44fc37e05191188a}{Wire\+Cell\+::\+Simple\+Blob\+Set}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_blob_set_a18567545bde587af9d775efd55bf39fa}\label{class_wire_cell_1_1_i_blob_set_a18567545bde587af9d775efd55bf39fa}} 
+\index{Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}!ident@{ident}}
+\index{ident@{ident}!Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}}
+\subsubsection{\texorpdfstring{ident()}{ident()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Blob\+Set\+::ident (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return some identifier number that is unique to this set. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_simple_blob_set_ad3ac749afa97671793e1c16e390c3534}{Wire\+Cell\+::\+Simple\+Blob\+Set}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_blob_set_abf09ebcd27b5dea4b7608ec7fd5abbc0}\label{class_wire_cell_1_1_i_blob_set_abf09ebcd27b5dea4b7608ec7fd5abbc0}} 
+\index{Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}!shapes@{shapes}}
+\index{shapes@{shapes}!Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}}
+\subsubsection{\texorpdfstring{shapes()}{shapes()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_ray_grid_aea2069aff62790df3241ee7446e81ade}{Wire\+Cell\+::\+Ray\+Grid\+::blobs\+\_\+t} Wire\+Cell\+::\+I\+Blob\+Set\+::shapes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a vector of the underlying \hyperlink{class_wire_cell_1_1_i_blob_a241a18f7f178a2021c643ffb6eed6e3f}{I\+Blob\+::shape()} in order (sugar). 
+
+
+
+Definition at line 5 of file I\+Blob\+Set.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_blob_set_ac3fae97101f3ab70f6833296e43817a3}\label{class_wire_cell_1_1_i_blob_set_ac3fae97101f3ab70f6833296e43817a3}} 
+\index{Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}!slice@{slice}}
+\index{slice@{slice}!Wire\+Cell\+::\+I\+Blob\+Set@{Wire\+Cell\+::\+I\+Blob\+Set}}
+\subsubsection{\texorpdfstring{slice()}{slice()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Slice\+::pointer} Wire\+Cell\+::\+I\+Blob\+Set\+::slice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+A slice relevant to this set. This may be given even if there are no blobs (which have their own pointer to a slice). 
+
+Implemented in \hyperlink{class_wire_cell_1_1_simple_blob_set_a72e71d9df512fe2efe1d3e8c5a1f7087}{Wire\+Cell\+::\+Simple\+Blob\+Set}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_blob_set_8h}{I\+Blob\+Set.\+h}\item 
+iface/src/\hyperlink{_i_blob_set_8cxx}{I\+Blob\+Set.\+cxx}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

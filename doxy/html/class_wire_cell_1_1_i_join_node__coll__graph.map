@@ -1,0 +1,6 @@
+<map id="WireCell::IJoinNode&lt; InputTuple, OutputType &gt;" name="WireCell::IJoinNode&lt; InputTuple, OutputType &gt;">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_join_node_base.html" title="WireCell::IJoinNodeBase" alt="" coords="12,244,181,271"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="39,169,154,196"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="21,80,172,121"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="31,5,162,32"/>
+</map>

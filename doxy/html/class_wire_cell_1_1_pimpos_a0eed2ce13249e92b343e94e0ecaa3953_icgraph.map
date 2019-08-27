@@ -1,0 +1,19 @@
+<map id="WireCell::Pimpos::axis" name="WireCell::Pimpos::axis">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_pimpos.html#abeadf8b503815d0dbfaf5d94d245b5bd" title="WireCell::Pimpos::distance" alt="" coords="212,284,393,310"/>
+<area shape="rect" id="node18" href="$class_wire_cell_1_1_pimpos.html#a0d2db56d6956aee06d0218ee50400f25" title="WireCell::Pimpos::transform" alt="" coords="209,334,396,361"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion.html#a9c4c6664c76ad07ad29d71bdb8fb92f1" title="WireCell::Gen::BinnedDiffusion::add" alt="" coords="444,153,677,180"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion__transform.html#a18fd9a41fa313057caf57a8aa9957c86" title="WireCell::Gen::BinnedDiffusion\l_transform::add" alt="" coords="459,276,663,318"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_gen_1_1_depo_splat.html#a53de1c32277ad2c62b0f81760f8dcdc8" title="WireCell::Gen::DepoSplat\l::process_face" alt="" coords="474,342,647,383"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion.html#add5e00394c16a9fc27be4b7d617fa59b" title="WireCell::Gen::BinnedDiffusion\l::tbins" alt="" coords="725,116,929,158"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_depo_zipper.html#af883a6a654a4a374d17f4db84d268510" title="WireCell::Gen::DepoZipper\l::operator()" alt="" coords="1248,208,1427,250"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_ductor.html#afec4558613941dc3bb752a3811aadd3d" title="WireCell::Gen::Ductor\l::process_face" alt="" coords="1262,47,1413,88"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_gen_1_1_truth_smearer.html#a75e03e4110e01b8ff31ad3aba5e7804d" title="Accept a configuration. " alt="" coords="987,167,1178,208"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_gen_1_1_truth_trace_i_d.html#adeed1a28e9ed6d5da7e07378b172bd48" title="Accept a configuration. " alt="" coords="740,51,915,92"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_impact_zipper.html#a542bc19237317cce10742ae097e647ec" title="WireCell::Gen::ImpactZipper\l::waveform" alt="" coords="989,102,1177,143"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a1454baebba2e385dea9cd098236dd515" title="WireCell::Gen::Ductor\l::process" alt="" coords="1487,47,1637,88"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a1a103a685f920781c7d312f168b52841" title="WireCell::Gen::Ductor\l::operator()" alt="" coords="1685,47,1836,88"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a331c4314dba8472ab8c49dbc9112ff4b" title="WireCell::Gen::Ductor\l::~Ductor" alt="" coords="1884,47,2035,88"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion__transform.html#a57f26ea414abfae84cf54bdbe7992db5" title="WireCell::Gen::BinnedDiffusion\l_transform::tbins" alt="" coords="725,335,929,376"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_gen_1_1_depo_transform.html#a72bd0b9e256a8e9f4311c61cf6b5692b" title="WireCell::Gen::DepoTransform\l::operator()" alt="" coords="1236,295,1439,336"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_gen_1_1_impact_transform.html#ad65b81bab03b2a6f8836782c732556bc" title="WireCell::Gen::ImpactTransform\l::waveform" alt="" coords="977,335,1188,376"/>
+</map>

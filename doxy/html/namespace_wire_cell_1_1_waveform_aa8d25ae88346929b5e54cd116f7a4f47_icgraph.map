@@ -1,0 +1,18 @@
+<map id="WireCell::Waveform::scale" name="WireCell::Waveform::scale">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_elec_response.html#aefafca51074d60af586f6cf90599634c" title="Accept a configuration. " alt="" coords="198,5,395,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#a35db0e36d1426041740535fc2da0b07d" title="WireCell::Gen::Empirical\lNoiseModel::resample" alt="" coords="213,71,380,112"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_truth_smearer.html#a75e03e4110e01b8ff31ad3aba5e7804d" title="Accept a configuration. " alt="" coords="201,136,392,177"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ad93828b53fee0709cd9649526b5884e7" title="WireCell::SigProc::\lL1SPFilter::init_resp" alt="" coords="227,201,367,243"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_noise.html#a4d5cb537b5d9ca736fc1bbd3c463b76f" title="WireCell::SigProc::\lMicroboone::OneChannelNoise\l::apply" alt="" coords="195,267,398,323"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#af33aa262d6af04f4252abef453156799" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="215,347,378,403"/>
+<area shape="rect" id="node10" href="$_protodune_8cxx.html#a7aac856fd8d0ee8ddb8672c2fe6ae215" title="LedgeIdentify" alt="" coords="247,427,347,454"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b.html#a1c4c378e91ff2ead5aff08bc3615b1d2" title="WireCell::SigProc::\lSimpleChannelNoiseDB\l::set_rcrc_constant" alt="" coords="215,478,378,534"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_sio_1_1_json_depo_source.html#abc06840de469269082caee8f8c2369e0" title="Accept a configuration. " alt="" coords="193,559,400,600"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_sio_1_1_numpy_frame_saver.html#aa4e56c63747bea244fd47f07b0d59303" title="IFrameFilter. " alt="" coords="203,624,390,665"/>
+<area shape="rect" id="node15" href="$namespace_wire_cell_1_1_waveform.html#a3278b47bbecdbb8a663286d9cdec0d75" title="WireCell::Waveform\l::scale" alt="" coords="227,689,367,731"/>
+<area shape="rect" id="node16" href="$namespace_wire_cell.html#afb58116c2d5bbe14b5e798ca39caaa48" title="WireCell::hit_square" alt="" coords="227,755,367,782"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#aa38f65fc1f32c8017f8205b32850074e" title="IConfigurable. " alt="" coords="452,71,619,112"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ac58397721b0a7b485d46ac63522ebe87" title="IFrameFilter interface. " alt="" coords="462,201,609,243"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b.html#abc31faca2ae9ee69ebfd01b9edd36289" title="Return channels which are considered a&#39;priori &quot;bad&quot;. " alt="" coords="454,478,617,534"/>
+<area shape="rect" id="node17" href="$namespace_wire_cell.html#a2e8924bbcd70754adeb72b8e14f1d987" title="WireCell::box_intersection" alt="" coords="448,755,623,782"/>
+</map>

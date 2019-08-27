@@ -1,0 +1,11 @@
+<map id="WireCell::Log::logger" name="WireCell::Log::logger">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_log.html#af453ddce8d810f730dca72024376727e" title="WireCell::Log::set\l_level" alt="" coords="217,9,344,51"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_log.html#accaf0fe0149777811d7c5a648fe3f5e4" title="WireCell::Log::set\l_pattern" alt="" coords="456,71,583,112"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_plugin_manager.html#ad83fad032405351bde15ad4abeeef819" title="WireCell::PluginManager\l::find" alt="" coords="197,132,364,173"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_main.html#a2b649ad950c80a65798687e79b6bf7bd" title="WireCell::Main::set\l_loglevel" alt="" coords="452,5,587,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_main.html#a6d6b47f6893cc6474d71d70bf5f8adcb" title="WireCell::Main::cmdline" alt="" coords="675,46,836,73"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_named_factory_registry.html#a355e9be03e1950d63a14ae9bb2989918" title="Look up an existing factory by the name of the &quot;class&quot; it can create. " alt="" coords="412,136,627,177"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1_factory.html#a33318e89ff05184cf57267d20bdc076c" title="Lookup up a factory for the given type. " alt="" coords="689,136,821,177"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_named_factory_registry.html#a81b540cbf24b04c728ad24a7e0af6c2e" title="WireCell::NamedFactoryRegistry\l::instance" alt="" coords="884,136,1099,177"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1_factory.html#a17712091b6e64cd7936ec21901b32b39" title="WireCell::Factory::\llookup" alt="" coords="1147,136,1279,177"/>
+</map>

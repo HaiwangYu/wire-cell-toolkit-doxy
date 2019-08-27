@@ -1,0 +1,11 @@
+<map id="WireCell::Gen::MegaAnodePlane::~MegaAnodePlane" name="WireCell::Gen::MegaAnodePlane::~MegaAnodePlane">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_mega_anode_plane.html#a68669a57b1f5baa35fdbcc259e230fb4" title="Accept a configuration. " alt="" coords="235,5,417,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_mega_anode_plane.html#a46b1dc962d2894307fa820da9ea5f663" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="235,71,417,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_mega_anode_plane.html#a39f210db553e1e981412c2c44861870c" title="Resolve a channel ident number to a WirePlaneId. " alt="" coords="235,136,417,177"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_mega_anode_plane.html#a3cc2a292c89472524f21379c0eff1111" title="Return an IChannel with the associated channel ID. " alt="" coords="235,201,417,243"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_gen_1_1_mega_anode_plane.html#a1106718600e8a867efd62a7c9dedafd2" title="Return a collection of all channels. " alt="" coords="235,267,417,308"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_gen_1_1_mega_anode_plane.html#a1d4b6dd24d9b2d805120eed53e153bc3" title="Return all wires connected into the given channel ident number. " alt="" coords="235,332,417,373"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_wire_plane_id.html#a72e32df6a0f0721dba0f1c5c76649c9a" title="Layer as index number (0,1 or 2). &#45;1 if unknown. " alt="" coords="465,136,616,177"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_wire_plane_id.html#a203ede27a759b00518be11b8d23776fd" title="Layer as enum. " alt="" coords="664,136,815,177"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_wire_plane_id.html#a33a565cfc76f84e9bc103b1ca33d0974" title="Layer as integer (not index!) " alt="" coords="863,136,1013,177"/>
+</map>

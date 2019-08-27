@@ -1,0 +1,221 @@
+\hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_microboone}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Microboone Namespace Reference}
+\label{namespace_wire_cell_1_1_sig_proc_1_1_microboone}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_a_d_c_bit_shift}{A\+D\+C\+Bit\+Shift}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub}{Coherent\+Noise\+Sub}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base}{Config\+Filter\+Base}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_noise}{One\+Channel\+Noise}
+\item 
+class \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status}{One\+Channel\+Status}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a16d44a6eccccc47fd7f7967b37f8ba61}{Chirp\+\_\+raise\+\_\+baseline} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&sig, int bin1, int bin2)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a09348aad9dc69ef1d18d6145b03547ee}{Signal\+Filter} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&sig)
+\item 
+float \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_microboone_ae364f8dbc0dad92d515850a86baefb13}{Calc\+R\+M\+S\+With\+Flags} (const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&sig)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a05c4b5687320b38db3ada0478e9b729b}{Raw\+Adapative\+Baseline\+Alg} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&sig)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a772813d4954fff2b2089d97db4bd5875}{Remove\+Filter\+Flags} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&sig)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a8e98649e920ae702925434c6fe7676b9}{Noisy\+Filter\+Alg} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&spec, float min\+\_\+rms, float max\+\_\+rms)
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a3502d22dc7280eeea95f3a2f2d52891c}{Signal\+Protection} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&sig, const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Wire\+Cell\+::\+Waveform\+::compseq\+\_\+t} \&respec, int res\+\_\+offset, int pad\+\_\+f, int pad\+\_\+b, float upper\+\_\+decon\+\_\+limit=0.\+02, float decon\+\_\+lf\+\_\+cutoff=0.\+08, float upper\+\_\+adc\+\_\+limit=15, float protection\+\_\+factor=5.\+0, float min\+\_\+adc\+\_\+limit=50)
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a06023d4f9428b8e2f9ce469d3bacb7b4}{Subtract\+\_\+\+W\+Scaling} (\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{Wire\+Cell\+::\+I\+Channel\+Filter\+::channel\+\_\+signals\+\_\+t} \&chansig, const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&medians, const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Wire\+Cell\+::\+Waveform\+::compseq\+\_\+t} \&respec, int res\+\_\+offset, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&rois, float upper\+\_\+decon\+\_\+limit1=0.\+08, float roi\+\_\+min\+\_\+max\+\_\+ratio=0.\+8)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_microboone_ae364f8dbc0dad92d515850a86baefb13}\label{namespace_wire_cell_1_1_sig_proc_1_1_microboone_ae364f8dbc0dad92d515850a86baefb13}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}!Calc\+R\+M\+S\+With\+Flags@{Calc\+R\+M\+S\+With\+Flags}}
+\index{Calc\+R\+M\+S\+With\+Flags@{Calc\+R\+M\+S\+With\+Flags}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}}
+\subsubsection{\texorpdfstring{Calc\+R\+M\+S\+With\+Flags()}{CalcRMSWithFlags()}}
+{\footnotesize\ttfamily float Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Calc\+R\+M\+S\+With\+Flags (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{sig }\end{DoxyParamCaption})}
+
+
+
+Definition at line 625 of file Microboone.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_ae364f8dbc0dad92d515850a86baefb13_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_ae364f8dbc0dad92d515850a86baefb13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a16d44a6eccccc47fd7f7967b37f8ba61}\label{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a16d44a6eccccc47fd7f7967b37f8ba61}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}!Chirp\+\_\+raise\+\_\+baseline@{Chirp\+\_\+raise\+\_\+baseline}}
+\index{Chirp\+\_\+raise\+\_\+baseline@{Chirp\+\_\+raise\+\_\+baseline}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}}
+\subsubsection{\texorpdfstring{Chirp\+\_\+raise\+\_\+baseline()}{Chirp\_raise\_baseline()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Chirp\+\_\+raise\+\_\+baseline (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{sig,  }\item[{int}]{bin1,  }\item[{int}]{bin2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 615 of file Microboone.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a16d44a6eccccc47fd7f7967b37f8ba61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a8e98649e920ae702925434c6fe7676b9}\label{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a8e98649e920ae702925434c6fe7676b9}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}!Noisy\+Filter\+Alg@{Noisy\+Filter\+Alg}}
+\index{Noisy\+Filter\+Alg@{Noisy\+Filter\+Alg}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}}
+\subsubsection{\texorpdfstring{Noisy\+Filter\+Alg()}{NoisyFilterAlg()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Noisy\+Filter\+Alg (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{spec,  }\item[{float}]{min\+\_\+rms,  }\item[{float}]{max\+\_\+rms }\end{DoxyParamCaption})}
+
+
+
+Definition at line 542 of file Microboone.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a8e98649e920ae702925434c6fe7676b9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a8e98649e920ae702925434c6fe7676b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a05c4b5687320b38db3ada0478e9b729b}\label{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a05c4b5687320b38db3ada0478e9b729b}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}!Raw\+Adapative\+Baseline\+Alg@{Raw\+Adapative\+Baseline\+Alg}}
+\index{Raw\+Adapative\+Baseline\+Alg@{Raw\+Adapative\+Baseline\+Alg}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}}
+\subsubsection{\texorpdfstring{Raw\+Adapative\+Baseline\+Alg()}{RawAdapativeBaselineAlg()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Raw\+Adapative\+Baseline\+Alg (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{sig }\end{DoxyParamCaption})}
+
+
+
+Definition at line 693 of file Microboone.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a05c4b5687320b38db3ada0478e9b729b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a772813d4954fff2b2089d97db4bd5875}\label{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a772813d4954fff2b2089d97db4bd5875}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}!Remove\+Filter\+Flags@{Remove\+Filter\+Flags}}
+\index{Remove\+Filter\+Flags@{Remove\+Filter\+Flags}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}}
+\subsubsection{\texorpdfstring{Remove\+Filter\+Flags()}{RemoveFilterFlags()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Remove\+Filter\+Flags (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{sig }\end{DoxyParamCaption})}
+
+
+
+Definition at line 821 of file Microboone.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a772813d4954fff2b2089d97db4bd5875_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a09348aad9dc69ef1d18d6145b03547ee}\label{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a09348aad9dc69ef1d18d6145b03547ee}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}!Signal\+Filter@{Signal\+Filter}}
+\index{Signal\+Filter@{Signal\+Filter}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}}
+\subsubsection{\texorpdfstring{Signal\+Filter()}{SignalFilter()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Signal\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{sig }\end{DoxyParamCaption})}
+
+
+
+Definition at line 648 of file Microboone.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a09348aad9dc69ef1d18d6145b03547ee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a09348aad9dc69ef1d18d6145b03547ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a3502d22dc7280eeea95f3a2f2d52891c}\label{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a3502d22dc7280eeea95f3a2f2d52891c}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}!Signal\+Protection@{Signal\+Protection}}
+\index{Signal\+Protection@{Signal\+Protection}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}}
+\subsubsection{\texorpdfstring{Signal\+Protection()}{SignalProtection()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ int $>$ $>$ Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Signal\+Protection (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{sig,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Wire\+Cell\+::\+Waveform\+::compseq\+\_\+t} \&}]{respec,  }\item[{int}]{res\+\_\+offset,  }\item[{int}]{pad\+\_\+f,  }\item[{int}]{pad\+\_\+b,  }\item[{float}]{upper\+\_\+decon\+\_\+limit = {\ttfamily 0.02},  }\item[{float}]{decon\+\_\+lf\+\_\+cutoff = {\ttfamily 0.08},  }\item[{float}]{upper\+\_\+adc\+\_\+limit = {\ttfamily 15},  }\item[{float}]{protection\+\_\+factor = {\ttfamily 5.0},  }\item[{float}]{min\+\_\+adc\+\_\+limit = {\ttfamily 50} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 232 of file Microboone.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a3502d22dc7280eeea95f3a2f2d52891c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a3502d22dc7280eeea95f3a2f2d52891c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a06023d4f9428b8e2f9ce469d3bacb7b4}\label{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a06023d4f9428b8e2f9ce469d3bacb7b4}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}!Subtract\+\_\+\+W\+Scaling@{Subtract\+\_\+\+W\+Scaling}}
+\index{Subtract\+\_\+\+W\+Scaling@{Subtract\+\_\+\+W\+Scaling}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone}}
+\subsubsection{\texorpdfstring{Subtract\+\_\+\+W\+Scaling()}{Subtract\_WScaling()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Subtract\+\_\+\+W\+Scaling (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{Wire\+Cell\+::\+I\+Channel\+Filter\+::channel\+\_\+signals\+\_\+t} \&}]{chansig,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \&}]{medians,  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Wire\+Cell\+::\+Waveform\+::compseq\+\_\+t} \&}]{respec,  }\item[{int}]{res\+\_\+offset,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{rois,  }\item[{float}]{upper\+\_\+decon\+\_\+limit1 = {\ttfamily 0.08},  }\item[{float}]{roi\+\_\+min\+\_\+max\+\_\+ratio = {\ttfamily 0.8} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file Microboone.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a06023d4f9428b8e2f9ce469d3bacb7b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_sig_proc_1_1_microboone_a06023d4f9428b8e2f9ce469d3bacb7b4_icgraph}
+\end{center}
+\end{figure}

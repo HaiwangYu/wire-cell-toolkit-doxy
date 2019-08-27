@@ -1,0 +1,21 @@
+<map id="util/inc/spdlog/spdlog.h" name="util/inc/spdlog/spdlog.h">
+<area shape="rect" id="node2" href="$common_8h.html" title="spdlog/common.h" alt="" coords="1368,669,1493,695"/>
+<area shape="rect" id="node25" href="$registry_8h.html" title="spdlog/details/registry.h" alt="" coords="1088,80,1248,107"/>
+<area shape="rect" id="node30" href="$logger_8h.html" title="spdlog/logger.h" alt="" coords="995,162,1106,189"/>
+<area shape="rect" id="node50" href="$version_8h.html" title="spdlog/version.h" alt="" coords="2024,80,2141,107"/>
+<area shape="rect" id="node3" href="$tweakme_8h.html" title="spdlog/tweakme.h" alt="" coords="1365,758,1493,785"/>
+<area shape="rect" id="node14" href="$null__mutex_8h.html" title="spdlog/details/null\l_mutex.h" alt="" coords="2301,751,2427,792"/>
+<area shape="rect" id="node15" href="$fmt_8h.html" title="spdlog/fmt/fmt.h" alt="" coords="845,758,963,785"/>
+<area shape="rect" id="node16" href="$core_8h.html" title="bundled/core.h" alt="" coords="883,915,989,941"/>
+<area shape="rect" id="node20" href="$format_8h.html" title="bundled/format.h" alt="" coords="1042,840,1161,867"/>
+<area shape="rect" id="node26" href="$periodic__worker_8h.html" title="spdlog/details/periodic\l_worker.h" alt="" coords="674,572,825,613"/>
+<area shape="rect" id="node48" href="$ansicolor__sink_8h.html" title="spdlog/sinks/ansicolor\l_sink.h" alt="" coords="2101,155,2251,196"/>
+<area shape="rect" id="node31" href="$formatter_8h.html" title="spdlog/formatter.h" alt="" coords="1467,408,1594,435"/>
+<area shape="rect" id="node41" href="$sink_8h.html" title="spdlog/sinks/sink.h" alt="" coords="1463,244,1598,271"/>
+<area shape="rect" id="node47" href="$logger__impl_8h.html" title="details/logger_impl.h" alt="" coords="455,579,596,606"/>
+<area shape="rect" id="node32" href="$log__msg_8h.html" title="spdlog/details/log\l_msg.h" alt="" coords="1469,483,1592,524"/>
+<area shape="rect" id="node33" href="$os_8h.html" title="spdlog/details/os.h" alt="" coords="1872,579,2003,606"/>
+<area shape="rect" id="node42" href="$pattern__formatter_8h.html" title="spdlog/details/pattern\l_formatter.h" alt="" coords="1140,319,1287,360"/>
+<area shape="rect" id="node43" href="$fmt__helper_8h.html" title="spdlog/details/fmt\l_helper.h" alt="" coords="448,661,573,703"/>
+<area shape="rect" id="node49" href="$console__globals_8h.html" title="spdlog/details/console\l_globals.h" alt="" coords="2411,572,2562,613"/>
+</map>

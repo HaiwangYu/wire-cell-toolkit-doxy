@@ -1,0 +1,99 @@
+\hypertarget{time_8h}{}\section{util/inc/spdlog/fmt/bundled/time.h File Reference}
+\label{time_8h}\index{util/inc/spdlog/fmt/bundled/time.\+h@{util/inc/spdlog/fmt/bundled/time.\+h}}
+{\ttfamily \#include \char`\"{}format.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+Include dependency graph for time.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{time_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structformatter_3_01std_1_1tm_00_01_char_01_4}{formatter$<$ std\+::tm, Char $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceinternal}{internal}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{time_8h_a0c2d874e178da493766bca4f1b898780}{F\+M\+T\+\_\+\+N\+O\+M\+A\+C\+RO}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+null localtime\+\_\+r \hyperlink{namespaceinternal_a5da151108dc35a75dd46a3fa65cc8b94}{internal\+::\+F\+M\+T\+\_\+\+N\+O\+M\+A\+C\+RO} (...)
+\item 
+null \hyperlink{namespaceinternal_a990db8ce6eb1702f344b5993587f37af}{internal\+::localtime\+\_\+s} (...)
+\item 
+null \hyperlink{namespaceinternal_a6a29b192fce543ff8c18fe7bedf3e321}{internal\+::gmtime\+\_\+r} (...)
+\item 
+null \hyperlink{namespaceinternal_a4df52163db0eff7ab6b17cb243a224b7}{internal\+::gmtime\+\_\+s} (...)
+\item 
+std\+::tm \hyperlink{time_8h_a2b11a736f2ef77ba69490af3f5081abf}{localtime} (std\+::time\+\_\+t time)
+\item 
+std\+::tm \hyperlink{time_8h_aaf8e0f0ff843757380c35a9ec5321168}{gmtime} (std\+::time\+\_\+t time)
+\item 
+std\+::size\+\_\+t \hyperlink{namespaceinternal_a1358037a310a2e6f3d05538df58ff412}{internal\+::strftime} (char $\ast$str, std\+::size\+\_\+t count, const char $\ast$\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format}, const std\+::tm $\ast$time)
+\item 
+std\+::size\+\_\+t \hyperlink{namespaceinternal_aaa347e326b504b866752fd087f46d2b0}{internal\+::strftime} (wchar\+\_\+t $\ast$str, std\+::size\+\_\+t count, const wchar\+\_\+t $\ast$\hyperlink{locale_8h_a4d9ddd9260f49d99308d41580d169bd2}{format}, const std\+::tm $\ast$time)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{time_8h_a0c2d874e178da493766bca4f1b898780}\label{time_8h_a0c2d874e178da493766bca4f1b898780}} 
+\index{time.\+h@{time.\+h}!F\+M\+T\+\_\+\+N\+O\+M\+A\+C\+RO@{F\+M\+T\+\_\+\+N\+O\+M\+A\+C\+RO}}
+\index{F\+M\+T\+\_\+\+N\+O\+M\+A\+C\+RO@{F\+M\+T\+\_\+\+N\+O\+M\+A\+C\+RO}!time.\+h@{time.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+N\+O\+M\+A\+C\+RO}{FMT\_NOMACRO}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+N\+O\+M\+A\+C\+RO}
+
+
+
+Definition at line 19 of file time.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{time_8h_aaf8e0f0ff843757380c35a9ec5321168}\label{time_8h_aaf8e0f0ff843757380c35a9ec5321168}} 
+\index{time.\+h@{time.\+h}!gmtime@{gmtime}}
+\index{gmtime@{gmtime}!time.\+h@{time.\+h}}
+\subsubsection{\texorpdfstring{gmtime()}{gmtime()}}
+{\footnotesize\ttfamily std\+::tm gmtime (\begin{DoxyParamCaption}\item[{std\+::time\+\_\+t}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 67 of file time.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{time_8h_aaf8e0f0ff843757380c35a9ec5321168_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{time_8h_a2b11a736f2ef77ba69490af3f5081abf}\label{time_8h_a2b11a736f2ef77ba69490af3f5081abf}} 
+\index{time.\+h@{time.\+h}!localtime@{localtime}}
+\index{localtime@{localtime}!time.\+h@{time.\+h}}
+\subsubsection{\texorpdfstring{localtime()}{localtime()}}
+{\footnotesize\ttfamily std\+::tm localtime (\begin{DoxyParamCaption}\item[{std\+::time\+\_\+t}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file time.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{time_8h_a2b11a736f2ef77ba69490af3f5081abf_cgraph}
+\end{center}
+\end{figure}

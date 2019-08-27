@@ -1,0 +1,30 @@
+<map id="iface/inc/WireCellIface/SimpleFrame.h" name="iface/inc/WireCellIface/SimpleFrame.h">
+<area shape="rect" id="node2" href="$_frame_tools_8cxx.html" title="iface/src/FrameTools.cxx" alt="" coords="5,102,176,129"/>
+<area shape="rect" id="node3" href="$_simple_frame_8cxx.html" title="iface/src/SimpleFrame.cxx" alt="" coords="200,102,379,129"/>
+<area shape="rect" id="node4" href="$_add_noise_8cxx.html" title="gen/src/AddNoise.cxx" alt="" coords="403,102,554,129"/>
+<area shape="rect" id="node5" href="$_depo_transform_8cxx.html" title="gen/src/DepoTransform.cxx" alt="" coords="579,102,763,129"/>
+<area shape="rect" id="node6" href="$_depo_zipper_8cxx.html" title="gen/src/DepoZipper.cxx" alt="" coords="787,102,949,129"/>
+<area shape="rect" id="node7" href="$_digitizer_8cxx.html" title="gen/src/Digitizer.cxx" alt="" coords="973,102,1115,129"/>
+<area shape="rect" id="node8" href="$_ductor_8cxx.html" title="gen/src/Ductor.cxx" alt="" coords="1140,102,1273,129"/>
+<area shape="rect" id="node9" href="$_frame_fanin_8cxx.html" title="gen/src/FrameFanin.cxx" alt="" coords="1297,102,1460,129"/>
+<area shape="rect" id="node10" href="$_frame_fanout_8cxx.html" title="gen/src/FrameFanout.cxx" alt="" coords="1484,102,1655,129"/>
+<area shape="rect" id="node11" href="$_frame_summer_8cxx.html" title="gen/src/FrameSummer.cxx" alt="" coords="1679,102,1859,129"/>
+<area shape="rect" id="node12" href="$_frame_util_8cxx.html" title="gen/src/FrameUtil.cxx" alt="" coords="1883,102,2034,129"/>
+<area shape="rect" id="node13" href="$_misconfigure_8cxx.html" title="gen/src/Misconfigure.cxx" alt="" coords="2059,102,2227,129"/>
+<area shape="rect" id="node14" href="$_multi_ductor_8cxx.html" title="gen/src/MultiDuctor.cxx" alt="" coords="2251,102,2413,129"/>
+<area shape="rect" id="node15" href="$_noise_source_8cxx.html" title="gen/src/NoiseSource.cxx" alt="" coords="2437,102,2606,129"/>
+<area shape="rect" id="node16" href="$_per_channel_variation_8cxx.html" title="gen/src/PerChannelVariation.cxx" alt="" coords="2631,102,2844,129"/>
+<area shape="rect" id="node17" href="$_reframer_8cxx.html" title="gen/src/Reframer.cxx" alt="" coords="2869,102,3017,129"/>
+<area shape="rect" id="node18" href="$_retagger_8cxx.html" title="gen/src/Retagger.cxx" alt="" coords="3041,102,3188,129"/>
+<area shape="rect" id="node19" href="$_silent_noise_8cxx.html" title="gen/src/SilentNoise.cxx" alt="" coords="3213,102,3374,129"/>
+<area shape="rect" id="node20" href="$_truth_smearer_8cxx.html" title="gen/src/TruthSmearer.cxx" alt="" coords="3399,102,3572,129"/>
+<area shape="rect" id="node21" href="$_truth_trace_i_d_8cxx.html" title="gen/src/TruthTraceID.cxx" alt="" coords="3596,102,3767,129"/>
+<area shape="rect" id="node22" href="$_channel_selector_8cxx.html" title="sigproc/src/ChannelSelector.cxx" alt="" coords="3791,102,4001,129"/>
+<area shape="rect" id="node23" href="$_channel_splitter_8cxx.html" title="sigproc/src/ChannelSplitter.cxx" alt="" coords="4026,102,4230,129"/>
+<area shape="rect" id="node24" href="$_d_b_channel_selector_8cxx.html" title="sigproc/src/DBChannelSelector.cxx" alt="" coords="4254,102,4485,129"/>
+<area shape="rect" id="node25" href="$_frame_merger_8cxx.html" title="sigproc/src/FrameMerger.cxx" alt="" coords="4509,102,4701,129"/>
+<area shape="rect" id="node26" href="$_l1_s_p_filter_8cxx.html" title="sigproc/src/L1SPFilter.cxx" alt="" coords="4725,102,4901,129"/>
+<area shape="rect" id="node27" href="$_omnibus_noise_filter_8cxx.html" title="sigproc/src/OmnibusNoise\lFilter.cxx" alt="" coords="4925,95,5101,136"/>
+<area shape="rect" id="node28" href="$_omnibus_p_m_t_noise_filter_8cxx.html" title="sigproc/src/OmnibusPMTNoise\lFilter.cxx" alt="" coords="5126,95,5330,136"/>
+<area shape="rect" id="node29" href="$_omnibus_sig_proc_8cxx.html" title="sigproc/src/OmnibusSigProc.cxx" alt="" coords="5355,102,5568,129"/>
+</map>

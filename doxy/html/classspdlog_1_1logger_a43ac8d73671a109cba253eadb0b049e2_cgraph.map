@@ -1,0 +1,6 @@
+<map id="spdlog::logger::sink_it_" name="spdlog::logger::sink_it_">
+<area shape="rect" id="node2" href="$classspdlog_1_1logger.html#a55bf9c5c960391a56399b5f1ea601b4b" title="spdlog::logger::incr\l_msg_counter_" alt="" coords="218,5,350,47"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1logger.html#aa1bbe703cdeed2aef722a97a2bc1a800" title="spdlog::logger::should\l_flush_" alt="" coords="209,71,359,112"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1logger.html#a98981b19089a6000fdfa8765af52ef0e" title="spdlog::logger::flush_" alt="" coords="211,137,357,163"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1logger.html#a1b9b7304f017163d181692e41101b648" title="spdlog::logger::flush\l_level" alt="" coords="407,71,545,112"/>
+</map>

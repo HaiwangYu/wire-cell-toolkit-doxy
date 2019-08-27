@@ -1,0 +1,256 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:R\+O\+I\+\_\+refinement Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+
+
+{\ttfamily \#include $<$R\+O\+I\+\_\+refinement.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ad7b2030a624f7cc8753c028696792bb9}{R\+O\+I\+\_\+refinement} (\hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \&cmm, int nwire\+\_\+u, int nwire\+\_\+v, int nwire\+\_\+w, float th\+\_\+factor=3.\+0, float fake\+\_\+signal\+\_\+low\+\_\+th=500, float fake\+\_\+signal\+\_\+high\+\_\+th=1000, float fake\+\_\+signal\+\_\+low\+\_\+th\+\_\+ind\+\_\+factor=1.\+0, float fake\+\_\+signal\+\_\+high\+\_\+th\+\_\+ind\+\_\+factor=1.\+0, int pad=5, int break\+\_\+roi\+\_\+loop=2, float th\+\_\+peak=3.\+0, float sep\+\_\+peak=6.\+0, float low\+\_\+peak\+\_\+sep\+\_\+threshold\+\_\+pre=1200, int max\+\_\+npeaks=200, float sigma=2, float th\+\_\+percent=0.\+1)
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a818642a2a38842b4201ce2f84269b9c7}{$\sim$\+R\+O\+I\+\_\+refinement} ()
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a022c40a41ac572f1864dbd345c04159d}{Clear} ()
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a2752abfaf6f0c8e84cef5dcec56010ee}{load\+\_\+data} (int plane, const \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \&r\+\_\+data, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation}{R\+O\+I\+\_\+formation} \&roi\+\_\+form)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_adf99f43f2c712c0e78597388afad65d0}{refine\+\_\+data} (int plane, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation}{R\+O\+I\+\_\+formation} \&roi\+\_\+form)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ab63807936f9a429bf0d97b133068bd4a}{refine\+\_\+data\+\_\+debug\+\_\+mode} (int plane, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation}{R\+O\+I\+\_\+formation} \&roi\+\_\+form, const std\+::string \&cmd)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ad9fa04700e5990b6f2dee69eaefdaf49}{apply\+\_\+roi} (int plane, \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \&r\+\_\+data)
+\item 
+\hyperlink{namespace_wire_cell_1_1_sig_proc_a5b3db127bb7fb1e16d93fa60f52905af}{Signal\+R\+O\+I\+Ch\+List} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a9b1debf14ee8bae2c9a558da5308cfb3}{get\+\_\+u\+\_\+rois} ()
+\item 
+\hyperlink{namespace_wire_cell_1_1_sig_proc_a5b3db127bb7fb1e16d93fa60f52905af}{Signal\+R\+O\+I\+Ch\+List} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_abd0825bd27e31785fd255c90fab25df6}{get\+\_\+v\+\_\+rois} ()
+\item 
+\hyperlink{namespace_wire_cell_1_1_sig_proc_a5b3db127bb7fb1e16d93fa60f52905af}{Signal\+R\+O\+I\+Ch\+List} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a2a9a05d4936bffcc0946a2e7190d3112}{get\+\_\+w\+\_\+rois} ()
+\item 
+\hyperlink{namespace_wire_cell_1_1_sig_proc_a5b3db127bb7fb1e16d93fa60f52905af}{Signal\+R\+O\+I\+Ch\+List} \& \hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_afd5ab2626265ce9d6efd309bfeec3639}{get\+\_\+rois\+\_\+by\+\_\+plane} (int plane)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file R\+O\+I\+\_\+refinement.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ad7b2030a624f7cc8753c028696792bb9}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ad7b2030a624f7cc8753c028696792bb9}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!R\+O\+I\+\_\+refinement@{R\+O\+I\+\_\+refinement}}
+\index{R\+O\+I\+\_\+refinement@{R\+O\+I\+\_\+refinement}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{R\+O\+I\+\_\+refinement()}{ROI\_refinement()}}
+{\footnotesize\ttfamily R\+O\+I\+\_\+refinement\+::\+R\+O\+I\+\_\+refinement (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \&}]{cmm,  }\item[{int}]{nwire\+\_\+u,  }\item[{int}]{nwire\+\_\+v,  }\item[{int}]{nwire\+\_\+w,  }\item[{float}]{th\+\_\+factor = {\ttfamily 3.0},  }\item[{float}]{fake\+\_\+signal\+\_\+low\+\_\+th = {\ttfamily 500},  }\item[{float}]{fake\+\_\+signal\+\_\+high\+\_\+th = {\ttfamily 1000},  }\item[{float}]{fake\+\_\+signal\+\_\+low\+\_\+th\+\_\+ind\+\_\+factor = {\ttfamily 1.0},  }\item[{float}]{fake\+\_\+signal\+\_\+high\+\_\+th\+\_\+ind\+\_\+factor = {\ttfamily 1.0},  }\item[{int}]{pad = {\ttfamily 5},  }\item[{int}]{break\+\_\+roi\+\_\+loop = {\ttfamily 2},  }\item[{float}]{th\+\_\+peak = {\ttfamily 3.0},  }\item[{float}]{sep\+\_\+peak = {\ttfamily 6.0},  }\item[{float}]{low\+\_\+peak\+\_\+sep\+\_\+threshold\+\_\+pre = {\ttfamily 1200},  }\item[{int}]{max\+\_\+npeaks = {\ttfamily 200},  }\item[{float}]{sigma = {\ttfamily 2},  }\item[{float}]{th\+\_\+percent = {\ttfamily 0.1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file R\+O\+I\+\_\+refinement.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ad7b2030a624f7cc8753c028696792bb9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a818642a2a38842b4201ce2f84269b9c7}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a818642a2a38842b4201ce2f84269b9c7}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!````~R\+O\+I\+\_\+refinement@{$\sim$\+R\+O\+I\+\_\+refinement}}
+\index{````~R\+O\+I\+\_\+refinement@{$\sim$\+R\+O\+I\+\_\+refinement}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{$\sim$\+R\+O\+I\+\_\+refinement()}{~ROI\_refinement()}}
+{\footnotesize\ttfamily R\+O\+I\+\_\+refinement\+::$\sim$\+R\+O\+I\+\_\+refinement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 70 of file R\+O\+I\+\_\+refinement.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a818642a2a38842b4201ce2f84269b9c7_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ad9fa04700e5990b6f2dee69eaefdaf49}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ad9fa04700e5990b6f2dee69eaefdaf49}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!apply\+\_\+roi@{apply\+\_\+roi}}
+\index{apply\+\_\+roi@{apply\+\_\+roi}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{apply\+\_\+roi()}{apply\_roi()}}
+{\footnotesize\ttfamily void R\+O\+I\+\_\+refinement\+::apply\+\_\+roi (\begin{DoxyParamCaption}\item[{int}]{plane,  }\item[{\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \&}]{r\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 109 of file R\+O\+I\+\_\+refinement.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ad9fa04700e5990b6f2dee69eaefdaf49_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a022c40a41ac572f1864dbd345c04159d}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a022c40a41ac572f1864dbd345c04159d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!Clear@{Clear}}
+\index{Clear@{Clear}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void R\+O\+I\+\_\+refinement\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file R\+O\+I\+\_\+refinement.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a022c40a41ac572f1864dbd345c04159d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_afd5ab2626265ce9d6efd309bfeec3639}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_afd5ab2626265ce9d6efd309bfeec3639}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!get\+\_\+rois\+\_\+by\+\_\+plane@{get\+\_\+rois\+\_\+by\+\_\+plane}}
+\index{get\+\_\+rois\+\_\+by\+\_\+plane@{get\+\_\+rois\+\_\+by\+\_\+plane}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{get\+\_\+rois\+\_\+by\+\_\+plane()}{get\_rois\_by\_plane()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_sig_proc_a5b3db127bb7fb1e16d93fa60f52905af}{Signal\+R\+O\+I\+Ch\+List} \& R\+O\+I\+\_\+refinement\+::get\+\_\+rois\+\_\+by\+\_\+plane (\begin{DoxyParamCaption}\item[{int}]{plane }\end{DoxyParamCaption})}
+
+
+
+Definition at line 202 of file R\+O\+I\+\_\+refinement.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_afd5ab2626265ce9d6efd309bfeec3639_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_afd5ab2626265ce9d6efd309bfeec3639_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a9b1debf14ee8bae2c9a558da5308cfb3}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a9b1debf14ee8bae2c9a558da5308cfb3}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!get\+\_\+u\+\_\+rois@{get\+\_\+u\+\_\+rois}}
+\index{get\+\_\+u\+\_\+rois@{get\+\_\+u\+\_\+rois}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{get\+\_\+u\+\_\+rois()}{get\_u\_rois()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_sig_proc_a5b3db127bb7fb1e16d93fa60f52905af}{Signal\+R\+O\+I\+Ch\+List}\& Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement\+::get\+\_\+u\+\_\+rois (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 32 of file R\+O\+I\+\_\+refinement.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a9b1debf14ee8bae2c9a558da5308cfb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_abd0825bd27e31785fd255c90fab25df6}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_abd0825bd27e31785fd255c90fab25df6}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!get\+\_\+v\+\_\+rois@{get\+\_\+v\+\_\+rois}}
+\index{get\+\_\+v\+\_\+rois@{get\+\_\+v\+\_\+rois}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{get\+\_\+v\+\_\+rois()}{get\_v\_rois()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_sig_proc_a5b3db127bb7fb1e16d93fa60f52905af}{Signal\+R\+O\+I\+Ch\+List}\& Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement\+::get\+\_\+v\+\_\+rois (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 33 of file R\+O\+I\+\_\+refinement.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_abd0825bd27e31785fd255c90fab25df6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a2a9a05d4936bffcc0946a2e7190d3112}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a2a9a05d4936bffcc0946a2e7190d3112}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!get\+\_\+w\+\_\+rois@{get\+\_\+w\+\_\+rois}}
+\index{get\+\_\+w\+\_\+rois@{get\+\_\+w\+\_\+rois}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{get\+\_\+w\+\_\+rois()}{get\_w\_rois()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_sig_proc_a5b3db127bb7fb1e16d93fa60f52905af}{Signal\+R\+O\+I\+Ch\+List}\& Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement\+::get\+\_\+w\+\_\+rois (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file R\+O\+I\+\_\+refinement.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a2a9a05d4936bffcc0946a2e7190d3112_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a2a9a05d4936bffcc0946a2e7190d3112_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a2752abfaf6f0c8e84cef5dcec56010ee}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a2752abfaf6f0c8e84cef5dcec56010ee}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!load\+\_\+data@{load\+\_\+data}}
+\index{load\+\_\+data@{load\+\_\+data}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{load\+\_\+data()}{load\_data()}}
+{\footnotesize\ttfamily void R\+O\+I\+\_\+refinement\+::load\+\_\+data (\begin{DoxyParamCaption}\item[{int}]{plane,  }\item[{const \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Array\+::array\+\_\+xxf} \&}]{r\+\_\+data,  }\item[{\hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation}{R\+O\+I\+\_\+formation} \&}]{roi\+\_\+form }\end{DoxyParamCaption})}
+
+
+
+Definition at line 248 of file R\+O\+I\+\_\+refinement.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_a2752abfaf6f0c8e84cef5dcec56010ee_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_adf99f43f2c712c0e78597388afad65d0}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_adf99f43f2c712c0e78597388afad65d0}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!refine\+\_\+data@{refine\+\_\+data}}
+\index{refine\+\_\+data@{refine\+\_\+data}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{refine\+\_\+data()}{refine\_data()}}
+{\footnotesize\ttfamily void R\+O\+I\+\_\+refinement\+::refine\+\_\+data (\begin{DoxyParamCaption}\item[{int}]{plane,  }\item[{\hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation}{R\+O\+I\+\_\+formation} \&}]{roi\+\_\+form }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2159 of file R\+O\+I\+\_\+refinement.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ab63807936f9a429bf0d97b133068bd4a}\label{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ab63807936f9a429bf0d97b133068bd4a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}!refine\+\_\+data\+\_\+debug\+\_\+mode@{refine\+\_\+data\+\_\+debug\+\_\+mode}}
+\index{refine\+\_\+data\+\_\+debug\+\_\+mode@{refine\+\_\+data\+\_\+debug\+\_\+mode}!Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement@{Wire\+Cell\+::\+Sig\+Proc\+::\+R\+O\+I\+\_\+refinement}}
+\subsubsection{\texorpdfstring{refine\+\_\+data\+\_\+debug\+\_\+mode()}{refine\_data\_debug\_mode()}}
+{\footnotesize\ttfamily void R\+O\+I\+\_\+refinement\+::refine\+\_\+data\+\_\+debug\+\_\+mode (\begin{DoxyParamCaption}\item[{int}]{plane,  }\item[{\hyperlink{class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation}{R\+O\+I\+\_\+formation} \&}]{roi\+\_\+form,  }\item[{const std\+::string \&}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2204 of file R\+O\+I\+\_\+refinement.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement_ab63807936f9a429bf0d97b133068bd4a_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/src/\hyperlink{_r_o_i__refinement_8h}{R\+O\+I\+\_\+refinement.\+h}\item 
+sigproc/src/\hyperlink{_r_o_i__refinement_8cxx}{R\+O\+I\+\_\+refinement.\+cxx}\end{DoxyCompactItemize}

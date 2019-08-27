@@ -1,0 +1,17 @@
+<map id="internal::vformat" name="internal::vformat">
+<area shape="rect" id="node2" href="$structinternal_1_1checked__args.html#a972845a4996b1931df4ae50dbfb9f4cf" title="internal::checked_args\l::operator*" alt="" coords="169,105,323,147"/>
+<area shape="rect" id="node3" href="$core_8h.html#af8b0aefa8ea9f8e6bc0e381e4d16a3e6" title="vformat" alt="" coords="213,171,279,198"/>
+<area shape="rect" id="node4" href="$core_8h.html#ae4af59c87c10d9a8d3ebd3eb455a25c1" title="format" alt="" coords="217,222,275,249"/>
+<area shape="rect" id="node16" href="$namespaceinternal.html#a0eb92e21789faf5174aa9bb86bb78539" title="internal::thousands\l_sep_impl" alt="" coords="180,297,312,339"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a2d1c7a1dded73fe3b51cbcfb8d9e0e04" title="Accept a configuration. " alt="" coords="391,5,574,47"/>
+<area shape="rect" id="node7" href="$classspdlog_1_1logger.html#a3c5140393ec153b2b8478361aac80eb6" title="spdlog::logger::critical" alt="" coords="408,71,557,98"/>
+<area shape="rect" id="node8" href="$classspdlog_1_1details_1_1flag__formatter.html#a7f775ab8ad4027546c3490f2f299bf43" title="spdlog::details::flag\l_formatter::flag_formatter" alt="" coords="398,123,567,164"/>
+<area shape="rect" id="node9" href="$namespaceinternal.html#a13d861df4fe01615dc7cb28d77e839e4" title="internal::sprintf_format" alt="" coords="407,189,559,215"/>
+<area shape="rect" id="node12" href="$structformatter_3_01arg__join_3_01_it_00_01_char_01_4_00_01_char_01_4.html#ae0c4a217ef67f0a573d1c4fd9bfe0472" title="formatter\&lt; arg_join\l\&lt; It, Char \&gt;, Char \&gt;\l::format" alt="" coords="413,239,552,295"/>
+<area shape="rect" id="node13" href="$structformatter_3_01_t_00_01_char_00_01typename_01std_1_1enable__if_3_01internal_1_1is__streamabdfe791f5d6e0a8acd43f884d0761b8af.html#ae9b195822bae194b4006b061c16eaa0a" title="formatter\&lt; T, Char,\l typename std::enable\l_if\&lt; internal::is_streamable\l\&lt; T, Char \&gt;::value &amp;&amp;!internal\l::format_type\&lt; typename buffer\l_context\&lt; Char \&gt;::type, T \&gt;::value\l \&gt;::type \&gt;::format" alt="" coords="371,319,595,434"/>
+<area shape="rect" id="node14" href="$classbasic__printf__context.html#ae71967bec500702473ba5b98d4e36aa2" title="basic_printf_context\l::basic_printf_context" alt="" coords="409,459,556,500"/>
+<area shape="rect" id="node15" href="$printf_8h.html#aedcc5ecc2ec86bfe7affa306aae393b6" title="FMT_ENABLE_IF_T" alt="" coords="411,525,554,551"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a41df48506ad084531fa7ac376f454894" title="WireCell::Gen::AnodePlane\l::~AnodePlane" alt="" coords="643,5,825,47"/>
+<area shape="rect" id="node10" href="$namespaceinternal.html#aa6ca58c625a66aa96f3839eb3bfe2f6e" title="internal::grisu2_format" alt="" coords="659,159,809,186"/>
+<area shape="rect" id="node11" href="$structfloat__spec__handler.html#ae7ee9d59f1624b0cc52fe767a5ef96bf" title="float_spec_handler\l::on_error" alt="" coords="669,211,799,252"/>
+</map>

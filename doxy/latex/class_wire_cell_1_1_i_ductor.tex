@@ -1,0 +1,96 @@
+\hypertarget{class_wire_cell_1_1_i_ductor}{}\section{Wire\+Cell\+:\+:I\+Ductor Class Reference}
+\label{class_wire_cell_1_1_i_ductor}\index{Wire\+Cell\+::\+I\+Ductor@{Wire\+Cell\+::\+I\+Ductor}}
+
+
+{\ttfamily \#include $<$I\+Ductor.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Ductor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_ductor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Ductor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_wire_cell_1_1_i_ductor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_ductor}{I\+Ductor} $>$ \hyperlink{class_wire_cell_1_1_i_ductor_a66acc2aebf42b1d47baf40bbbc50e3db}{pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_ductor_af6ad8a9fdd4d1df1930f02e6dd15af1c}{$\sim$\+I\+Ductor} ()
+\item 
+virtual std\+::string \hyperlink{class_wire_cell_1_1_i_ductor_ac1f7ad244c991efc08719c9bbe38367a}{signature} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A ductor consumes depositions and collects the response on electrodes due to the depos drifting past as a number of sampled waveforms. This interface does not specify the units of the samples and they are left up to the implementation. But, they are typically either current or charge if only electric field responses are applied or voltage if additionally an electronics response model is applied.
+
+Implementation may also apply digitization in which case the floating point samples should be considered integer. Digitization may also be implemented as an \hyperlink{class_wire_cell_1_1_i_frame_filter}{I\+Frame\+Filter}. 
+
+Definition at line 22 of file I\+Ductor.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_ductor_a66acc2aebf42b1d47baf40bbbc50e3db}\label{class_wire_cell_1_1_i_ductor_a66acc2aebf42b1d47baf40bbbc50e3db}} 
+\index{Wire\+Cell\+::\+I\+Ductor@{Wire\+Cell\+::\+I\+Ductor}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Ductor@{Wire\+Cell\+::\+I\+Ductor}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_ductor}{I\+Ductor}$>$ \hyperlink{class_wire_cell_1_1_i_ductor_a66acc2aebf42b1d47baf40bbbc50e3db}{Wire\+Cell\+::\+I\+Ductor\+::pointer}}
+
+
+
+Definition at line 25 of file I\+Ductor.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_ductor_af6ad8a9fdd4d1df1930f02e6dd15af1c}\label{class_wire_cell_1_1_i_ductor_af6ad8a9fdd4d1df1930f02e6dd15af1c}} 
+\index{Wire\+Cell\+::\+I\+Ductor@{Wire\+Cell\+::\+I\+Ductor}!````~I\+Ductor@{$\sim$\+I\+Ductor}}
+\index{````~I\+Ductor@{$\sim$\+I\+Ductor}!Wire\+Cell\+::\+I\+Ductor@{Wire\+Cell\+::\+I\+Ductor}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Ductor()}{~IDuctor()}}
+{\footnotesize\ttfamily I\+Ductor\+::$\sim$\+I\+Ductor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 128 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_ductor_ac1f7ad244c991efc08719c9bbe38367a}\label{class_wire_cell_1_1_i_ductor_ac1f7ad244c991efc08719c9bbe38367a}} 
+\index{Wire\+Cell\+::\+I\+Ductor@{Wire\+Cell\+::\+I\+Ductor}!signature@{signature}}
+\index{signature@{signature}!Wire\+Cell\+::\+I\+Ductor@{Wire\+Cell\+::\+I\+Ductor}}
+\subsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily virtual std\+::string Wire\+Cell\+::\+I\+Ductor\+::signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The signature is string unique to all classes that implement a particular calling signature. These should be defined in lower level interfaces such as a mythical I\+My\+Foo\+To\+Bar\+Converter. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_node_a0b0763465adf5ba7febe8e378162b584}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 29 of file I\+Ductor.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_ductor_8h}{I\+Ductor.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

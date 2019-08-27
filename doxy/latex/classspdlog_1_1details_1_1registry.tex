@@ -1,0 +1,482 @@
+\hypertarget{classspdlog_1_1details_1_1registry}{}\section{spdlog\+:\+:details\+:\+:registry Class Reference}
+\label{classspdlog_1_1details_1_1registry}\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+
+
+{\ttfamily \#include $<$registry.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1details_1_1registry_ab5c1a2f7b8e2e9eec4e0fa75d9167f3b}{registry} (const \hyperlink{classspdlog_1_1details_1_1registry}{registry} \&)=delete
+\item 
+\hyperlink{classspdlog_1_1details_1_1registry}{registry} \& \hyperlink{classspdlog_1_1details_1_1registry_a12da238b4eda17829b194b36f383e8a0}{operator=} (const \hyperlink{classspdlog_1_1details_1_1registry}{registry} \&)=delete
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_ab77fb7513b2e3e6442a83f037543e391}{register\+\_\+logger} (std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ new\+\_\+logger)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a7e015c41e9c32c9f1e8e7f9adc578cee}{initialize\+\_\+logger} (std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ new\+\_\+logger)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{classspdlog_1_1details_1_1registry_a43cb4919dd9f66cf4eeeeaf9774caade}{get} (const std\+::string \&logger\+\_\+name)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ \hyperlink{classspdlog_1_1details_1_1registry_af6c1f16e0433b6400aef5219fa1b81ea}{default\+\_\+logger} ()
+\item 
+\hyperlink{classspdlog_1_1logger}{logger} $\ast$ \hyperlink{classspdlog_1_1details_1_1registry_a1fd3bc96c2a7be1af1841f5980cd5f4c}{get\+\_\+default\+\_\+raw} ()
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_ae2a45628046a1d0cd3f8de81a5556acb}{set\+\_\+default\+\_\+logger} (std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$ new\+\_\+default\+\_\+logger)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_aa5503db04a70a06f97e7c1218aa8cbe2}{set\+\_\+tp} (std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1details_1_1thread__pool}{thread\+\_\+pool} $>$ tp)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1details_1_1thread__pool}{thread\+\_\+pool} $>$ \hyperlink{classspdlog_1_1details_1_1registry_af86cd2fcbec489ebc343815f49a6e076}{get\+\_\+tp} ()
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a8f8dcb7f6b7987716cfbcb92bbe96517}{set\+\_\+formatter} (std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{formatter} $>$ \hyperlink{classspdlog_1_1formatter}{formatter})
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a4b8494e781ed3151586b307cca63edb7}{set\+\_\+level} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} log\+\_\+level)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a34841160632afca0f2063f1d55629d73}{flush\+\_\+on} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} log\+\_\+level)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a78eb75a31640c0bb204d7f2123ba825c}{flush\+\_\+every} (std\+::chrono\+::seconds interval)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a47543b9b7ebe0dc3664cfd5f3e385905}{set\+\_\+error\+\_\+handler} (\hyperlink{namespacespdlog_ad3ed787a29f245c833ef66faf48036e2}{log\+\_\+err\+\_\+handler} handler)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a781454ea62603cfaebddf14ec2ec9985}{apply\+\_\+all} (const std\+::function$<$ void(const std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$)$>$ \&fun)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a3abe5826eebb056d51dd0dd75beed42d}{flush\+\_\+all} ()
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a21f513aa5a7da6a21fe35a5077b2db74}{drop} (const std\+::string \&logger\+\_\+name)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a127ccc3786f6ddef57f16d354ba4db91}{drop\+\_\+all} ()
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_ac93f888f316b0488414771ad6533b6a9}{shutdown} ()
+\item 
+std\+::recursive\+\_\+mutex \& \hyperlink{classspdlog_1_1details_1_1registry_a0fddfd080598f35c675d618cb5e414c6}{tp\+\_\+mutex} ()
+\item 
+void \hyperlink{classspdlog_1_1details_1_1registry_a0cfc3780c18f5331ad31ea1d40248952}{set\+\_\+automatic\+\_\+registration} (bool automatic\+\_\+regsistration)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classspdlog_1_1details_1_1registry}{registry} \& \hyperlink{classspdlog_1_1details_1_1registry_a58a1bbb352f751f6b729bc57bfadd6be}{instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 36 of file registry.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_ab5c1a2f7b8e2e9eec4e0fa75d9167f3b}\label{classspdlog_1_1details_1_1registry_ab5c1a2f7b8e2e9eec4e0fa75d9167f3b}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!registry@{registry}}
+\index{registry@{registry}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{registry()}{registry()}}
+{\footnotesize\ttfamily spdlog\+::details\+::registry\+::registry (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1details_1_1registry}{registry} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a781454ea62603cfaebddf14ec2ec9985}\label{classspdlog_1_1details_1_1registry_a781454ea62603cfaebddf14ec2ec9985}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!apply\+\_\+all@{apply\+\_\+all}}
+\index{apply\+\_\+all@{apply\+\_\+all}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{apply\+\_\+all()}{apply\_all()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::apply\+\_\+all (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(const std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$)$>$ \&}]{fun }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 166 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classspdlog_1_1details_1_1registry_a781454ea62603cfaebddf14ec2ec9985_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_af6c1f16e0433b6400aef5219fa1b81ea}\label{classspdlog_1_1details_1_1registry_af6c1f16e0433b6400aef5219fa1b81ea}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!default\+\_\+logger@{default\+\_\+logger}}
+\index{default\+\_\+logger@{default\+\_\+logger}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{default\+\_\+logger()}{default\_logger()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::details\+::registry\+::default\+\_\+logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classspdlog_1_1details_1_1registry_af6c1f16e0433b6400aef5219fa1b81ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a21f513aa5a7da6a21fe35a5077b2db74}\label{classspdlog_1_1details_1_1registry_a21f513aa5a7da6a21fe35a5077b2db74}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!drop@{drop}}
+\index{drop@{drop}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{drop()}{drop()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::drop (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 184 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classspdlog_1_1details_1_1registry_a21f513aa5a7da6a21fe35a5077b2db74_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a127ccc3786f6ddef57f16d354ba4db91}\label{classspdlog_1_1details_1_1registry_a127ccc3786f6ddef57f16d354ba4db91}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!drop\+\_\+all@{drop\+\_\+all}}
+\index{drop\+\_\+all@{drop\+\_\+all}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{drop\+\_\+all()}{drop\_all()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::drop\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 194 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_a127ccc3786f6ddef57f16d354ba4db91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a3abe5826eebb056d51dd0dd75beed42d}\label{classspdlog_1_1details_1_1registry_a3abe5826eebb056d51dd0dd75beed42d}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!flush\+\_\+all@{flush\+\_\+all}}
+\index{flush\+\_\+all@{flush\+\_\+all}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{flush\+\_\+all()}{flush\_all()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::flush\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 175 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_a3abe5826eebb056d51dd0dd75beed42d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a78eb75a31640c0bb204d7f2123ba825c}\label{classspdlog_1_1details_1_1registry_a78eb75a31640c0bb204d7f2123ba825c}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!flush\+\_\+every@{flush\+\_\+every}}
+\index{flush\+\_\+every@{flush\+\_\+every}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{flush\+\_\+every()}{flush\_every()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::flush\+\_\+every (\begin{DoxyParamCaption}\item[{std\+::chrono\+::seconds}]{interval }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 149 of file registry.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_a78eb75a31640c0bb204d7f2123ba825c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classspdlog_1_1details_1_1registry_a78eb75a31640c0bb204d7f2123ba825c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a34841160632afca0f2063f1d55629d73}\label{classspdlog_1_1details_1_1registry_a34841160632afca0f2063f1d55629d73}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!flush\+\_\+on@{flush\+\_\+on}}
+\index{flush\+\_\+on@{flush\+\_\+on}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{flush\+\_\+on()}{flush\_on()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::flush\+\_\+on (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 139 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classspdlog_1_1details_1_1registry_a34841160632afca0f2063f1d55629d73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a43cb4919dd9f66cf4eeeeaf9774caade}\label{classspdlog_1_1details_1_1registry_a43cb4919dd9f66cf4eeeeaf9774caade}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!get@{get}}
+\index{get@{get}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{logger}$>$ spdlog\+::details\+::registry\+::get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{logger\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 67 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_a43cb4919dd9f66cf4eeeeaf9774caade_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a1fd3bc96c2a7be1af1841f5980cd5f4c}\label{classspdlog_1_1details_1_1registry_a1fd3bc96c2a7be1af1841f5980cd5f4c}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!get\+\_\+default\+\_\+raw@{get\+\_\+default\+\_\+raw}}
+\index{get\+\_\+default\+\_\+raw@{get\+\_\+default\+\_\+raw}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{get\+\_\+default\+\_\+raw()}{get\_default\_raw()}}
+{\footnotesize\ttfamily \hyperlink{classspdlog_1_1logger}{logger}$\ast$ spdlog\+::details\+::registry\+::get\+\_\+default\+\_\+raw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_a1fd3bc96c2a7be1af1841f5980cd5f4c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_af86cd2fcbec489ebc343815f49a6e076}\label{classspdlog_1_1details_1_1registry_af86cd2fcbec489ebc343815f49a6e076}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!get\+\_\+tp@{get\+\_\+tp}}
+\index{get\+\_\+tp@{get\+\_\+tp}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{get\+\_\+tp()}{get\_tp()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1details_1_1thread__pool}{thread\+\_\+pool}$>$ spdlog\+::details\+::registry\+::get\+\_\+tp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 112 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_af86cd2fcbec489ebc343815f49a6e076_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a7e015c41e9c32c9f1e8e7f9adc578cee}\label{classspdlog_1_1details_1_1registry_a7e015c41e9c32c9f1e8e7f9adc578cee}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!initialize\+\_\+logger@{initialize\+\_\+logger}}
+\index{initialize\+\_\+logger@{initialize\+\_\+logger}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{initialize\+\_\+logger()}{initialize\_logger()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::initialize\+\_\+logger (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$}]{new\+\_\+logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 48 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classspdlog_1_1details_1_1registry_a7e015c41e9c32c9f1e8e7f9adc578cee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a58a1bbb352f751f6b729bc57bfadd6be}\label{classspdlog_1_1details_1_1registry_a58a1bbb352f751f6b729bc57bfadd6be}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!instance@{instance}}
+\index{instance@{instance}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily static \hyperlink{classspdlog_1_1details_1_1registry}{registry}\& spdlog\+::details\+::registry\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 228 of file registry.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classspdlog_1_1details_1_1registry_a58a1bbb352f751f6b729bc57bfadd6be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_a58a1bbb352f751f6b729bc57bfadd6be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a12da238b4eda17829b194b36f383e8a0}\label{classspdlog_1_1details_1_1registry_a12da238b4eda17829b194b36f383e8a0}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!operator=@{operator=}}
+\index{operator=@{operator=}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classspdlog_1_1details_1_1registry}{registry}\& spdlog\+::details\+::registry\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1details_1_1registry}{registry} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_ab77fb7513b2e3e6442a83f037543e391}\label{classspdlog_1_1details_1_1registry_ab77fb7513b2e3e6442a83f037543e391}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!register\+\_\+logger@{register\+\_\+logger}}
+\index{register\+\_\+logger@{register\+\_\+logger}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{register\+\_\+logger()}{register\_logger()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::register\+\_\+logger (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$}]{new\+\_\+logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classspdlog_1_1details_1_1registry_ab77fb7513b2e3e6442a83f037543e391_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a0cfc3780c18f5331ad31ea1d40248952}\label{classspdlog_1_1details_1_1registry_a0cfc3780c18f5331ad31ea1d40248952}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!set\+\_\+automatic\+\_\+registration@{set\+\_\+automatic\+\_\+registration}}
+\index{set\+\_\+automatic\+\_\+registration@{set\+\_\+automatic\+\_\+registration}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{set\+\_\+automatic\+\_\+registration()}{set\_automatic\_registration()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::set\+\_\+automatic\+\_\+registration (\begin{DoxyParamCaption}\item[{bool}]{automatic\+\_\+regsistration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 222 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_a0cfc3780c18f5331ad31ea1d40248952_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_ae2a45628046a1d0cd3f8de81a5556acb}\label{classspdlog_1_1details_1_1registry_ae2a45628046a1d0cd3f8de81a5556acb}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!set\+\_\+default\+\_\+logger@{set\+\_\+default\+\_\+logger}}
+\index{set\+\_\+default\+\_\+logger@{set\+\_\+default\+\_\+logger}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{set\+\_\+default\+\_\+logger()}{set\_default\_logger()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::set\+\_\+default\+\_\+logger (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{logger} $>$}]{new\+\_\+default\+\_\+logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 91 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classspdlog_1_1details_1_1registry_ae2a45628046a1d0cd3f8de81a5556acb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a47543b9b7ebe0dc3664cfd5f3e385905}\label{classspdlog_1_1details_1_1registry_a47543b9b7ebe0dc3664cfd5f3e385905}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!set\+\_\+error\+\_\+handler@{set\+\_\+error\+\_\+handler}}
+\index{set\+\_\+error\+\_\+handler@{set\+\_\+error\+\_\+handler}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{set\+\_\+error\+\_\+handler()}{set\_error\_handler()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::set\+\_\+error\+\_\+handler (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_ad3ed787a29f245c833ef66faf48036e2}{log\+\_\+err\+\_\+handler}}]{handler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 156 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_a47543b9b7ebe0dc3664cfd5f3e385905_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a8f8dcb7f6b7987716cfbcb92bbe96517}\label{classspdlog_1_1details_1_1registry_a8f8dcb7f6b7987716cfbcb92bbe96517}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!set\+\_\+formatter@{set\+\_\+formatter}}
+\index{set\+\_\+formatter@{set\+\_\+formatter}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{set\+\_\+formatter()}{set\_formatter()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::set\+\_\+formatter (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{formatter} $>$}]{formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 119 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_a8f8dcb7f6b7987716cfbcb92bbe96517_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a4b8494e781ed3151586b307cca63edb7}\label{classspdlog_1_1details_1_1registry_a4b8494e781ed3151586b307cca63edb7}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!set\+\_\+level@{set\+\_\+level}}
+\index{set\+\_\+level@{set\+\_\+level}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{set\+\_\+level()}{set\_level()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::set\+\_\+level (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 129 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_a4b8494e781ed3151586b307cca63edb7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_aa5503db04a70a06f97e7c1218aa8cbe2}\label{classspdlog_1_1details_1_1registry_aa5503db04a70a06f97e7c1218aa8cbe2}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!set\+\_\+tp@{set\+\_\+tp}}
+\index{set\+\_\+tp@{set\+\_\+tp}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{set\+\_\+tp()}{set\_tp()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::set\+\_\+tp (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1details_1_1thread__pool}{thread\+\_\+pool} $>$}]{tp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 106 of file registry.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_aa5503db04a70a06f97e7c1218aa8cbe2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_ac93f888f316b0488414771ad6533b6a9}\label{classspdlog_1_1details_1_1registry_ac93f888f316b0488414771ad6533b6a9}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::registry\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 202 of file registry.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1registry_ac93f888f316b0488414771ad6533b6a9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classspdlog_1_1details_1_1registry_ac93f888f316b0488414771ad6533b6a9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1registry_a0fddfd080598f35c675d618cb5e414c6}\label{classspdlog_1_1details_1_1registry_a0fddfd080598f35c675d618cb5e414c6}} 
+\index{spdlog\+::details\+::registry@{spdlog\+::details\+::registry}!tp\+\_\+mutex@{tp\+\_\+mutex}}
+\index{tp\+\_\+mutex@{tp\+\_\+mutex}!spdlog\+::details\+::registry@{spdlog\+::details\+::registry}}
+\subsubsection{\texorpdfstring{tp\+\_\+mutex()}{tp\_mutex()}}
+{\footnotesize\ttfamily std\+::recursive\+\_\+mutex\& spdlog\+::details\+::registry\+::tp\+\_\+mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 217 of file registry.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/details/\hyperlink{registry_8h}{registry.\+h}\end{DoxyCompactItemize}

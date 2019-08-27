@@ -1,0 +1,287 @@
+\hypertarget{class_wire_cell_1_1_simple_frame}{}\section{Wire\+Cell\+:\+:Simple\+Frame Class Reference}
+\label{class_wire_cell_1_1_simple_frame}\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+
+
+{\ttfamily \#include $<$Simple\+Frame.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Simple\+Frame\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_wire_cell_1_1_simple_frame__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Simple\+Frame\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_wire_cell_1_1_simple_frame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_simple_frame_aae6b1f1cf7b2f1fcd5f57608366eb862}{Simple\+Frame} (int \hyperlink{class_wire_cell_1_1_simple_frame_a66da8e8ce7a801019b6457ebd2381f6c}{ident}, double \hyperlink{class_wire_cell_1_1_simple_frame_a992d807e8f20c9481deb419496b9de91}{time}, const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \&\hyperlink{class_wire_cell_1_1_simple_frame_aec2f4f732121b801887077c874cb8b98}{traces}, double \hyperlink{class_wire_cell_1_1_simple_frame_a14d84465625254f1b0086cef1d0bb5cd}{tick}=0.\+5 $\ast$units\+::microsecond, const \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \&cmm=\hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map}())
+\item 
+\hyperlink{class_wire_cell_1_1_simple_frame_ac4d4421a7c4f8a129bb2712345073d51}{Simple\+Frame} (int \hyperlink{class_wire_cell_1_1_simple_frame_a66da8e8ce7a801019b6457ebd2381f6c}{ident}, double \hyperlink{class_wire_cell_1_1_simple_frame_a992d807e8f20c9481deb419496b9de91}{time}, \hyperlink{class_wire_cell_1_1_i_data_a6edac35e7dd886018740993b28c7ca1e}{I\+Trace\+::shared\+\_\+vector} \hyperlink{class_wire_cell_1_1_simple_frame_aec2f4f732121b801887077c874cb8b98}{traces}, double \hyperlink{class_wire_cell_1_1_simple_frame_a14d84465625254f1b0086cef1d0bb5cd}{tick}=0.\+5 $\ast$units\+::microsecond, const \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \&cmm=\hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map}())
+\item 
+\hyperlink{class_wire_cell_1_1_simple_frame_ad40f9232148c703316df79058cf9ea24}{$\sim$\+Simple\+Frame} ()
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_simple_frame_a66da8e8ce7a801019b6457ebd2381f6c}{ident} () const
+\begin{DoxyCompactList}\small\item\em Return an identifying number of this frame. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_simple_frame_a992d807e8f20c9481deb419496b9de91}{time} () const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_simple_frame_a14d84465625254f1b0086cef1d0bb5cd}{tick} () const
+\begin{DoxyCompactList}\small\item\em Return the digitization sample period. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_a6edac35e7dd886018740993b28c7ca1e}{I\+Trace\+::shared\+\_\+vector} \hyperlink{class_wire_cell_1_1_simple_frame_aec2f4f732121b801887077c874cb8b98}{traces} () const
+\begin{DoxyCompactList}\small\item\em Return a vector of all traces ignoring any potential tag. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_simple_frame_a9261256f0f814b50120d6eabe2a13f0d}{masks} () const
+\begin{DoxyCompactList}\small\item\em Return all masks associated with this frame. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_frame_ab34485d40e352997c21b9ec99504ba7c}{tag\+\_\+list\+\_\+t} \& \hyperlink{class_wire_cell_1_1_simple_frame_ac52a4eab51683ef1b5bf746da3dcaec5}{frame\+\_\+tags} () const
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_frame_ab34485d40e352997c21b9ec99504ba7c}{tag\+\_\+list\+\_\+t} \& \hyperlink{class_wire_cell_1_1_simple_frame_af174d058e161ae60dd374deea25c725c}{trace\+\_\+tags} () const
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_frame_a12f08adf79d21cb9b4862a16193fda8f}{trace\+\_\+list\+\_\+t} \& \hyperlink{class_wire_cell_1_1_simple_frame_a141502ebb9e7b55be68073b9782cb17d}{tagged\+\_\+traces} (const \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{tag\+\_\+t} \&tag) const
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_frame_ad65f8b090c2607591e44d7b40777517e}{trace\+\_\+summary\+\_\+t} \& \hyperlink{class_wire_cell_1_1_simple_frame_a3e564b456f19fa5f3afe7639c74ffb00}{trace\+\_\+summary} (const \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{tag\+\_\+t} \&tag) const
+\item 
+void \hyperlink{class_wire_cell_1_1_simple_frame_aaa71e980a3b4467a9ed05af3e5f45f03}{tag\+\_\+frame} (const \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{tag\+\_\+t} \&tag)
+\item 
+void \hyperlink{class_wire_cell_1_1_simple_frame_a106f413268020b6ea2a87364089bd65c}{tag\+\_\+traces} (const \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{tag\+\_\+t} \&tag, const \hyperlink{class_wire_cell_1_1_i_frame_a12f08adf79d21cb9b4862a16193fda8f}{I\+Frame\+::trace\+\_\+list\+\_\+t} \&indices, const \hyperlink{class_wire_cell_1_1_i_frame_ad65f8b090c2607591e44d7b40777517e}{I\+Frame\+::trace\+\_\+summary\+\_\+t} \&summary=\hyperlink{class_wire_cell_1_1_i_frame_ad65f8b090c2607591e44d7b40777517e}{I\+Frame\+::trace\+\_\+summary\+\_\+t}(0))
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A simple frame.
+
+This is is nothing more than a bag of data. 
+
+Definition at line 15 of file Simple\+Frame.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_aae6b1f1cf7b2f1fcd5f57608366eb862}\label{class_wire_cell_1_1_simple_frame_aae6b1f1cf7b2f1fcd5f57608366eb862}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!Simple\+Frame@{Simple\+Frame}}
+\index{Simple\+Frame@{Simple\+Frame}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{Simple\+Frame()}{SimpleFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Simple\+Frame\+::\+Simple\+Frame (\begin{DoxyParamCaption}\item[{int}]{ident,  }\item[{double}]{time,  }\item[{const \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Trace\+::vector} \&}]{traces,  }\item[{double}]{tick = {\ttfamily 0.5$\ast$units\+:\+:microsecond},  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \&}]{cmm = {\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map}()} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file Simple\+Frame.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_ac4d4421a7c4f8a129bb2712345073d51}\label{class_wire_cell_1_1_simple_frame_ac4d4421a7c4f8a129bb2712345073d51}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!Simple\+Frame@{Simple\+Frame}}
+\index{Simple\+Frame@{Simple\+Frame}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{Simple\+Frame()}{SimpleFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Simple\+Frame\+::\+Simple\+Frame (\begin{DoxyParamCaption}\item[{int}]{ident,  }\item[{double}]{time,  }\item[{\hyperlink{class_wire_cell_1_1_i_data_a6edac35e7dd886018740993b28c7ca1e}{I\+Trace\+::shared\+\_\+vector}}]{traces,  }\item[{double}]{tick = {\ttfamily 0.5$\ast$units\+:\+:microsecond},  }\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} \&}]{cmm = {\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map}()} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 13 of file Simple\+Frame.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_ad40f9232148c703316df79058cf9ea24}\label{class_wire_cell_1_1_simple_frame_ad40f9232148c703316df79058cf9ea24}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!````~Simple\+Frame@{$\sim$\+Simple\+Frame}}
+\index{````~Simple\+Frame@{$\sim$\+Simple\+Frame}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{$\sim$\+Simple\+Frame()}{~SimpleFrame()}}
+{\footnotesize\ttfamily Simple\+Frame\+::$\sim$\+Simple\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file Simple\+Frame.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_ac52a4eab51683ef1b5bf746da3dcaec5}\label{class_wire_cell_1_1_simple_frame_ac52a4eab51683ef1b5bf746da3dcaec5}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!frame\+\_\+tags@{frame\+\_\+tags}}
+\index{frame\+\_\+tags@{frame\+\_\+tags}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{frame\+\_\+tags()}{frame\_tags()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_frame_ab34485d40e352997c21b9ec99504ba7c}{I\+Frame\+::tag\+\_\+list\+\_\+t} \& Simple\+Frame\+::frame\+\_\+tags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_frame_a4de75840db5d079b285e29c0e7f081e5}{Wire\+Cell\+::\+I\+Frame}.
+
+
+
+Definition at line 52 of file Simple\+Frame.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_simple_frame_ac52a4eab51683ef1b5bf746da3dcaec5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_a66da8e8ce7a801019b6457ebd2381f6c}\label{class_wire_cell_1_1_simple_frame_a66da8e8ce7a801019b6457ebd2381f6c}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!ident@{ident}}
+\index{ident@{ident}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{ident()}{ident()}}
+{\footnotesize\ttfamily int Simple\+Frame\+::ident (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return an identifying number of this frame. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_frame_adbd5a27db1364bd8f5d89e1e7ca3c938}{Wire\+Cell\+::\+I\+Frame}.
+
+
+
+Definition at line 24 of file Simple\+Frame.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_a9261256f0f814b50120d6eabe2a13f0d}\label{class_wire_cell_1_1_simple_frame_a9261256f0f814b50120d6eabe2a13f0d}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!masks@{masks}}
+\index{masks@{masks}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{masks()}{masks()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Waveform\+::\+Channel\+Mask\+Map} Simple\+Frame\+::masks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return all masks associated with this frame. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_frame_a577dd9839b5239799ee8c8e508b3a9e4}{Wire\+Cell\+::\+I\+Frame}.
+
+
+
+Definition at line 31 of file Simple\+Frame.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_aaa71e980a3b4467a9ed05af3e5f45f03}\label{class_wire_cell_1_1_simple_frame_aaa71e980a3b4467a9ed05af3e5f45f03}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!tag\+\_\+frame@{tag\+\_\+frame}}
+\index{tag\+\_\+frame@{tag\+\_\+frame}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{tag\+\_\+frame()}{tag\_frame()}}
+{\footnotesize\ttfamily void Simple\+Frame\+::tag\+\_\+frame (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{tag\+\_\+t} \&}]{tag }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file Simple\+Frame.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_a106f413268020b6ea2a87364089bd65c}\label{class_wire_cell_1_1_simple_frame_a106f413268020b6ea2a87364089bd65c}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!tag\+\_\+traces@{tag\+\_\+traces}}
+\index{tag\+\_\+traces@{tag\+\_\+traces}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{tag\+\_\+traces()}{tag\_traces()}}
+{\footnotesize\ttfamily void Simple\+Frame\+::tag\+\_\+traces (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{tag\+\_\+t} \&}]{tag,  }\item[{const \hyperlink{class_wire_cell_1_1_i_frame_a12f08adf79d21cb9b4862a16193fda8f}{I\+Frame\+::trace\+\_\+list\+\_\+t} \&}]{indices,  }\item[{const \hyperlink{class_wire_cell_1_1_i_frame_ad65f8b090c2607591e44d7b40777517e}{I\+Frame\+::trace\+\_\+summary\+\_\+t} \&}]{summary = {\ttfamily \hyperlink{class_wire_cell_1_1_i_frame_ad65f8b090c2607591e44d7b40777517e}{I\+Frame\+::trace\+\_\+summary\+\_\+t}(0)} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 76 of file Simple\+Frame.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_simple_frame_a106f413268020b6ea2a87364089bd65c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_a141502ebb9e7b55be68073b9782cb17d}\label{class_wire_cell_1_1_simple_frame_a141502ebb9e7b55be68073b9782cb17d}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!tagged\+\_\+traces@{tagged\+\_\+traces}}
+\index{tagged\+\_\+traces@{tagged\+\_\+traces}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{tagged\+\_\+traces()}{tagged\_traces()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_frame_a12f08adf79d21cb9b4862a16193fda8f}{I\+Frame\+::trace\+\_\+list\+\_\+t} \& Simple\+Frame\+::tagged\+\_\+traces (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{tag\+\_\+t} \&}]{tag }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_frame_ae5d922a082d23583c7b6dff24c1116ed}{Wire\+Cell\+::\+I\+Frame}.
+
+
+
+Definition at line 61 of file Simple\+Frame.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_a14d84465625254f1b0086cef1d0bb5cd}\label{class_wire_cell_1_1_simple_frame_a14d84465625254f1b0086cef1d0bb5cd}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!tick@{tick}}
+\index{tick@{tick}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily double Simple\+Frame\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the digitization sample period. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_frame_a5003631e8cb3f013c6ab84f26e09b852}{Wire\+Cell\+::\+I\+Frame}.
+
+
+
+Definition at line 26 of file Simple\+Frame.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_a992d807e8f20c9481deb419496b9de91}\label{class_wire_cell_1_1_simple_frame_a992d807e8f20c9481deb419496b9de91}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!time@{time}}
+\index{time@{time}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily double Simple\+Frame\+::time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the reference time of the frame w.\+r.\+t. some global time. Note, each trace has a \char`\"{}tbin\char`\"{} counting number of ticks w.\+r.\+t. to this time where the trace starts. In general, tbin is not zero. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_frame_ae65ceeb2ebe5ef5371793a21a835b0df}{Wire\+Cell\+::\+I\+Frame}.
+
+
+
+Definition at line 25 of file Simple\+Frame.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_a3e564b456f19fa5f3afe7639c74ffb00}\label{class_wire_cell_1_1_simple_frame_a3e564b456f19fa5f3afe7639c74ffb00}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!trace\+\_\+summary@{trace\+\_\+summary}}
+\index{trace\+\_\+summary@{trace\+\_\+summary}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{trace\+\_\+summary()}{trace\_summary()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_frame_ad65f8b090c2607591e44d7b40777517e}{I\+Frame\+::trace\+\_\+summary\+\_\+t} \& Simple\+Frame\+::trace\+\_\+summary (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_frame_ae206ba618e10f398625dfeb675a4215a}{tag\+\_\+t} \&}]{tag }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_frame_a4b2841b0245453235f223be1c67c2ff5}{Wire\+Cell\+::\+I\+Frame}.
+
+
+
+Definition at line 66 of file Simple\+Frame.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_af174d058e161ae60dd374deea25c725c}\label{class_wire_cell_1_1_simple_frame_af174d058e161ae60dd374deea25c725c}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!trace\+\_\+tags@{trace\+\_\+tags}}
+\index{trace\+\_\+tags@{trace\+\_\+tags}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{trace\+\_\+tags()}{trace\_tags()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_frame_ab34485d40e352997c21b9ec99504ba7c}{I\+Frame\+::tag\+\_\+list\+\_\+t} \& Simple\+Frame\+::trace\+\_\+tags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_frame_aac1f359b2e383089e718853d359f8a97}{Wire\+Cell\+::\+I\+Frame}.
+
+
+
+Definition at line 56 of file Simple\+Frame.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_frame_aec2f4f732121b801887077c874cb8b98}\label{class_wire_cell_1_1_simple_frame_aec2f4f732121b801887077c874cb8b98}} 
+\index{Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}!traces@{traces}}
+\index{traces@{traces}!Wire\+Cell\+::\+Simple\+Frame@{Wire\+Cell\+::\+Simple\+Frame}}
+\subsubsection{\texorpdfstring{traces()}{traces()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_a6edac35e7dd886018740993b28c7ca1e}{I\+Trace\+::shared\+\_\+vector} Simple\+Frame\+::traces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return a vector of all traces ignoring any potential tag. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_frame_aff349734fe22aafed42c3dc0b7553f64}{Wire\+Cell\+::\+I\+Frame}.
+
+
+
+Definition at line 28 of file Simple\+Frame.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_simple_frame_8h}{Simple\+Frame.\+h}\item 
+iface/src/\hyperlink{_simple_frame_8cxx}{Simple\+Frame.\+cxx}\end{DoxyCompactItemize}

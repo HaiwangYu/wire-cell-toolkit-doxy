@@ -1,0 +1,5 @@
+<map id="WireCell::Gen::Ductor::default_configuration" name="WireCell::Gen::Ductor::default_configuration">
+<area shape="rect" id="node2" href="$namespace_wire_cell.html#a86bf5b387104e6d8db8e9b8fa2d09e9c" title="Put value in configuration at the dotted path. " alt="" coords="204,31,303,57"/>
+<area shape="rect" id="node3" href="$format_8h.html#ae6bfbee71e8bd00280b2d936f93f7b88" title="ptr" alt="" coords="405,5,443,32"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_string.html#aef23d7b89dbe21e34a499c9156dd1e60" title="WireCell::String::split" alt="" coords="351,56,497,83"/>
+</map>

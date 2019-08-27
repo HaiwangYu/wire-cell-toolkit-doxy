@@ -1,0 +1,86 @@
+\hypertarget{_exceptions_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Exceptions.h File Reference}
+\label{_exceptions_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Exceptions.\+h@{util/inc/\+Wire\+Cell\+Util/\+Exceptions.\+h}}
+{\ttfamily \#include $<$boost/exception/all.\+hpp$>$}\newline
+{\ttfamily \#include $<$exception$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Exceptions.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{_exceptions_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_exceptions_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_exception}{Wire\+Cell\+::\+Exception}
+\begin{DoxyCompactList}\small\item\em The base wire cell exception. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_wire_cell_1_1_value_error}{Wire\+Cell\+::\+Value\+Error}
+\begin{DoxyCompactList}\small\item\em Thrown when a wrong value has been encountered. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_wire_cell_1_1_index_error}{Wire\+Cell\+::\+Index\+Error}
+\begin{DoxyCompactList}\small\item\em Thrown when a wrong index is used. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_wire_cell_1_1_key_error}{Wire\+Cell\+::\+Key\+Error}
+\begin{DoxyCompactList}\small\item\em Thrown when a wrong key or has been encountered. \end{DoxyCompactList}\item 
+class \hyperlink{class_wire_cell_1_1_i_o_error}{Wire\+Cell\+::\+I\+O\+Error}
+\begin{DoxyCompactList}\small\item\em Thrown when an error involving accessing input or output has occurred. \end{DoxyCompactList}\item 
+class \hyperlink{class_wire_cell_1_1_runtime_error}{Wire\+Cell\+::\+Runtime\+Error}
+\begin{DoxyCompactList}\small\item\em Thrown when an error occurs during the data processing. \end{DoxyCompactList}\item 
+class \hyperlink{class_wire_cell_1_1_assertion_error}{Wire\+Cell\+::\+Assertion\+Error}
+\begin{DoxyCompactList}\small\item\em Thrown when an assertion fails. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_exceptions_8h_a8d940770e78617d670d314ca0b8c35ef}{T\+H\+R\+OW}(e)~B\+O\+O\+S\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON(e)
+\item 
+\#define \hyperlink{_exceptions_8h_a6281d672f59f9a54d28d1c0906f60f4a}{errstr}(e)~boost\+::diagnostic\+\_\+information(e)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::error\+\_\+info$<$ struct tag\+\_\+errmsg, std\+::string $>$ \hyperlink{namespace_wire_cell_ae6c20ffaec96b23b9655898e20a673f1}{Wire\+Cell\+::errmsg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_exceptions_8h_a6281d672f59f9a54d28d1c0906f60f4a}\label{_exceptions_8h_a6281d672f59f9a54d28d1c0906f60f4a}} 
+\index{Exceptions.\+h@{Exceptions.\+h}!errstr@{errstr}}
+\index{errstr@{errstr}!Exceptions.\+h@{Exceptions.\+h}}
+\subsubsection{\texorpdfstring{errstr}{errstr}}
+{\footnotesize\ttfamily \#define errstr(\begin{DoxyParamCaption}\item[{}]{e }\end{DoxyParamCaption})~boost\+::diagnostic\+\_\+information(e)}
+
+
+
+Definition at line 26 of file Exceptions.\+h.
+
+\mbox{\Hypertarget{_exceptions_8h_a8d940770e78617d670d314ca0b8c35ef}\label{_exceptions_8h_a8d940770e78617d670d314ca0b8c35ef}} 
+\index{Exceptions.\+h@{Exceptions.\+h}!T\+H\+R\+OW@{T\+H\+R\+OW}}
+\index{T\+H\+R\+OW@{T\+H\+R\+OW}!Exceptions.\+h@{Exceptions.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+R\+OW}{THROW}}
+{\footnotesize\ttfamily \#define T\+H\+R\+OW(\begin{DoxyParamCaption}\item[{}]{e }\end{DoxyParamCaption})~B\+O\+O\+S\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON(e)}
+
+Wire Cell code may throw exceptions.
+
+The core Wire Cell code should only throw \hyperlink{struct_wire_cell_1_1_exception}{Wire\+Cell\+::\+Exception} (or a subclass).
+
+Boost exceptions are used to allow the programmer to provide dynamic information about an error and to collect file name and line number.
+
+Exceptions should be thrown something like\+:
+
+if (omg) \{ T\+H\+R\+OW(Value\+Error() $<$$<$ errmsg\{\char`\"{}\+I didn\textquotesingle{}t expect that\char`\"{}\}); \} 
+
+Definition at line 25 of file Exceptions.\+h.
+

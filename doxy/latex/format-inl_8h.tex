@@ -1,0 +1,357 @@
+\hypertarget{format-inl_8h}{}\section{util/inc/spdlog/fmt/bundled/format-\/inl.h File Reference}
+\label{format-inl_8h}\index{util/inc/spdlog/fmt/bundled/format-\/inl.\+h@{util/inc/spdlog/fmt/bundled/format-\/inl.\+h}}
+{\ttfamily \#include \char`\"{}format.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$cerrno$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdarg$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+Include dependency graph for format-\/inl.h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classinternal_1_1fp}{internal\+::fp}
+\item 
+struct \hyperlink{structinternal_1_1gen__digits__params}{internal\+::gen\+\_\+digits\+\_\+params}
+\item 
+struct \hyperlink{structinternal_1_1prettify__handler}{internal\+::prettify\+\_\+handler}
+\item 
+struct \hyperlink{structinternal_1_1fill}{internal\+::fill}
+\item 
+struct \hyperlink{structinternal_1_1char__counter}{internal\+::char\+\_\+counter}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_f_m_t___b_e_g_i_n___n_a_m_e_s_p_a_c_e}{F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}
+\item 
+ \hyperlink{namespaceinternal}{internal}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{format-inl_8h_a4aa79926398ee27fe7d6db8b0dd54edf}{F\+M\+T\+\_\+\+T\+RY}~try
+\item 
+\#define \hyperlink{format-inl_8h_ab8efe0100a6d7cc74729f5bf7537799c}{F\+M\+T\+\_\+\+C\+A\+T\+CH}(x)~catch (x)
+\item 
+\#define \hyperlink{format-inl_8h_a9a9bb3caa94066b3adc175bb24cb1783}{F\+M\+T\+\_\+\+S\+N\+P\+R\+I\+N\+TF}~snprintf
+\item 
+\#define \hyperlink{format-inl_8h_a7b59f9b149f610d3edd05ed99536253c}{F\+M\+T\+\_\+\+S\+W\+P\+R\+I\+N\+TF}~swprintf
+\item 
+\#define \hyperlink{format-inl_8h_aeff75c93a29bc942ca36b31a4b634fe9}{F\+M\+T\+\_\+\+P\+O\+W\+E\+R\+S\+\_\+\+O\+F\+\_\+10}(factor)
+\item 
+\#define \hyperlink{format-inl_8h_a35d4bc2bf717ac7731de7713c54175bb}{F\+M\+T\+\_\+\+F\+A\+L\+L\+T\+H\+R\+O\+U\+GH}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{namespace_f_m_t___b_e_g_i_n___n_a_m_e_s_p_a_c_e_a6da944ca5d9656fe12a5c1f629f665ff}{F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+::\+Format\+Func}) (\hyperlink{namespaceinternal_a5fcdbc3efad1f390e6c3f0fdafa56122}{internal\+::buffer} \&, int, \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+fmt\+::internal\+::null \hyperlink{format-inl_8h_a8307cb500850a7c5033cf64702e15990}{strerror\+\_\+r} (int, char $\ast$,...)
+\item 
+fmt\+::internal\+::null \hyperlink{format-inl_8h_a3bbfb7ce6b764966d8cf5d018589375e}{strerror\+\_\+s} (char $\ast$, std\+::size\+\_\+t,...)
+\item 
+int \hyperlink{namespace_f_m_t___b_e_g_i_n___n_a_m_e_s_p_a_c_e_a3770dc340d58166b701180e092935e12}{F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+::safe\+\_\+strerror} (int \hyperlink{classerror__code}{error\+\_\+code}, char $\ast$\&\hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer}, std\+::size\+\_\+t buffer\+\_\+size) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+void \hyperlink{namespace_f_m_t___b_e_g_i_n___n_a_m_e_s_p_a_c_e_ad71fe6b856abb34c3351b17daaaae709}{F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+::format\+\_\+error\+\_\+code} (\hyperlink{namespaceinternal_a5fcdbc3efad1f390e6c3f0fdafa56122}{internal\+::buffer} \&out, int \hyperlink{classerror__code}{error\+\_\+code}, \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view} message) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+void \hyperlink{namespace_f_m_t___b_e_g_i_n___n_a_m_e_s_p_a_c_e_a9a8134e5f6a1fb2e4fca1b8efdbb3927}{F\+M\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+::report\+\_\+error} (Format\+Func func, int \hyperlink{classerror__code}{error\+\_\+code}, \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view} message) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+{\footnotesize template$<$typename Char $>$ }\\\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} Char \hyperlink{namespaceinternal_a70aa19597fbb8bad857a307b17c6b478}{internal\+::thousands\+\_\+sep\+\_\+impl} (locale\+\_\+ref loc)
+\item 
+fp \hyperlink{namespaceinternal_a7e865636bf5c10d44d1dfb4d9ec22c79}{internal\+::operator-\/} (fp x, fp y)
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} fp \hyperlink{namespaceinternal_a2142ade7c615c7cd113144896aed15c8}{internal\+::operator$\ast$} (fp x, fp y)
+\item 
+\hyperlink{core_8h_a9a4960b70582ed2620911a0b75dce0b5}{F\+M\+T\+\_\+\+A\+PI} fp \hyperlink{namespaceinternal_aeafc6f6fcfd4e798c6bde994828330e6}{internal\+::get\+\_\+cached\+\_\+power} (int min\+\_\+exponent, int \&pow10\+\_\+exponent)
+\item 
+\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} bool \hyperlink{namespaceinternal_afc76db0ad587455f6942b74d175ee56a}{internal\+::grisu2\+\_\+round} (char $\ast$buf, int \&size, int max\+\_\+digits, uint64\+\_\+t delta, uint64\+\_\+t remainder, uint64\+\_\+t exp, uint64\+\_\+t diff, int \&exp10)
+\item 
+\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} bool \hyperlink{namespaceinternal_a654d8a0809bb6e5db2deacf15b2971a2}{internal\+::grisu2\+\_\+gen\+\_\+digits} (char $\ast$buf, int \&size, uint32\+\_\+t hi, uint64\+\_\+t lo, int \&exp, uint64\+\_\+t delta, const fp \&one, const fp \&diff, int max\+\_\+digits)
+\item 
+{\footnotesize template$<$typename Handler $>$ }\\\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void \hyperlink{namespaceinternal_a580207e19bc8ef3c099ccc3154f1e8d6}{internal\+::write\+\_\+exponent} (int exp, Handler \&\&h)
+\item 
+{\footnotesize template$<$typename Handler $>$ }\\\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void \hyperlink{namespaceinternal_a868ca3301073105fcbd25d79ff98ca16}{internal\+::grisu2\+\_\+prettify} (const gen\+\_\+digits\+\_\+params \&params, int size, int exp, Handler \&\&handler)
+\item 
+\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} gen\+\_\+digits\+\_\+params \hyperlink{namespaceinternal_ae7e379764ed4a98f3058130ffbca218a}{internal\+::process\+\_\+specs} (const \hyperlink{structcore__format__specs}{core\+\_\+format\+\_\+specs} \&specs, int exp, \hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer} \&buf)
+\item 
+{\footnotesize template$<$typename Double $>$ }\\\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} std\+::enable\+\_\+if$<$ sizeof(Double)==sizeof(uint64\+\_\+t), bool $>$\+::type \hyperlink{namespaceinternal_a2cba199f690b1f46cbf62c8e9e2786bc}{internal\+::grisu2\+\_\+format} (Double value, \hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer} \&buf, \hyperlink{structcore__format__specs}{core\+\_\+format\+\_\+specs} specs)
+\item 
+{\footnotesize template$<$typename Double $>$ }\\void \hyperlink{namespaceinternal_a13d861df4fe01615dc7cb28d77e839e4}{internal\+::sprintf\+\_\+format} (Double value, \hyperlink{namespaceinternal_a5fcdbc3efad1f390e6c3f0fdafa56122}{internal\+::buffer} \&buf, \hyperlink{structcore__format__specs}{core\+\_\+format\+\_\+specs} spec)
+\item 
+\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void \hyperlink{format-inl_8h_a4826487444d21827180f5fbce3c64508}{format\+\_\+system\+\_\+error} (\hyperlink{namespaceinternal_a5fcdbc3efad1f390e6c3f0fdafa56122}{internal\+::buffer} \&out, int \hyperlink{classerror__code}{error\+\_\+code}, \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view} message) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void \hyperlink{format-inl_8h_a82b610312f3005c8480b1d8439b129be}{report\+\_\+system\+\_\+error} (int \hyperlink{classerror__code}{error\+\_\+code}, \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{fmt\+::string\+\_\+view} message) \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void \hyperlink{format-inl_8h_a9d834f6ef5c0553b6c434f8d9ac105bf}{vprint} (std\+::\+F\+I\+LE $\ast$f, \hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view} \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{structformat__args}{format\+\_\+args} \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void \hyperlink{format-inl_8h_a263a1a720ae8f902535a6c7a4933841e}{vprint} (std\+::\+F\+I\+LE $\ast$f, \hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view} \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{structwformat__args}{wformat\+\_\+args} \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void \hyperlink{format-inl_8h_a77fcf4959d4c69c3800b759696f37248}{vprint} (\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view} \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{structformat__args}{format\+\_\+args} \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+\hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void \hyperlink{format-inl_8h_aeba80e7dd0c0541ae25553f1627a55e1}{vprint} (\hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view} \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{structwformat__args}{wformat\+\_\+args} \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{format-inl_8h_ab8efe0100a6d7cc74729f5bf7537799c}\label{format-inl_8h_ab8efe0100a6d7cc74729f5bf7537799c}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!F\+M\+T\+\_\+\+C\+A\+T\+CH@{F\+M\+T\+\_\+\+C\+A\+T\+CH}}
+\index{F\+M\+T\+\_\+\+C\+A\+T\+CH@{F\+M\+T\+\_\+\+C\+A\+T\+CH}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+C\+A\+T\+CH}{FMT\_CATCH}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+C\+A\+T\+CH(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~catch (x)}
+
+
+
+Definition at line 41 of file format-\/inl.\+h.
+
+\mbox{\Hypertarget{format-inl_8h_a35d4bc2bf717ac7731de7713c54175bb}\label{format-inl_8h_a35d4bc2bf717ac7731de7713c54175bb}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!F\+M\+T\+\_\+\+F\+A\+L\+L\+T\+H\+R\+O\+U\+GH@{F\+M\+T\+\_\+\+F\+A\+L\+L\+T\+H\+R\+O\+U\+GH}}
+\index{F\+M\+T\+\_\+\+F\+A\+L\+L\+T\+H\+R\+O\+U\+GH@{F\+M\+T\+\_\+\+F\+A\+L\+L\+T\+H\+R\+O\+U\+GH}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+F\+A\+L\+L\+T\+H\+R\+O\+U\+GH}{FMT\_FALLTHROUGH}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+F\+A\+L\+L\+T\+H\+R\+O\+U\+GH}
+
+
+
+Definition at line 538 of file format-\/inl.\+h.
+
+\mbox{\Hypertarget{format-inl_8h_aeff75c93a29bc942ca36b31a4b634fe9}\label{format-inl_8h_aeff75c93a29bc942ca36b31a4b634fe9}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!F\+M\+T\+\_\+\+P\+O\+W\+E\+R\+S\+\_\+\+O\+F\+\_\+10@{F\+M\+T\+\_\+\+P\+O\+W\+E\+R\+S\+\_\+\+O\+F\+\_\+10}}
+\index{F\+M\+T\+\_\+\+P\+O\+W\+E\+R\+S\+\_\+\+O\+F\+\_\+10@{F\+M\+T\+\_\+\+P\+O\+W\+E\+R\+S\+\_\+\+O\+F\+\_\+10}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+P\+O\+W\+E\+R\+S\+\_\+\+O\+F\+\_\+10}{FMT\_POWERS\_OF\_10}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+P\+O\+W\+E\+R\+S\+\_\+\+O\+F\+\_\+10(\begin{DoxyParamCaption}\item[{}]{factor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+factor * 10, \(\backslash\)
+  factor * 100, \(\backslash\)
+  factor * 1000, \(\backslash\)
+  factor * 10000, \(\backslash\)
+  factor * 100000, \(\backslash\)
+  factor * 1000000, \(\backslash\)
+  factor * 10000000, \(\backslash\)
+  factor * 100000000, \(\backslash\)
+  factor * 1000000000
+\end{DoxyCode}
+
+
+Definition at line 269 of file format-\/inl.\+h.
+
+\mbox{\Hypertarget{format-inl_8h_a9a9bb3caa94066b3adc175bb24cb1783}\label{format-inl_8h_a9a9bb3caa94066b3adc175bb24cb1783}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!F\+M\+T\+\_\+\+S\+N\+P\+R\+I\+N\+TF@{F\+M\+T\+\_\+\+S\+N\+P\+R\+I\+N\+TF}}
+\index{F\+M\+T\+\_\+\+S\+N\+P\+R\+I\+N\+TF@{F\+M\+T\+\_\+\+S\+N\+P\+R\+I\+N\+TF}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+S\+N\+P\+R\+I\+N\+TF}{FMT\_SNPRINTF}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+S\+N\+P\+R\+I\+N\+TF~snprintf}
+
+
+
+Definition at line 70 of file format-\/inl.\+h.
+
+\mbox{\Hypertarget{format-inl_8h_a7b59f9b149f610d3edd05ed99536253c}\label{format-inl_8h_a7b59f9b149f610d3edd05ed99536253c}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!F\+M\+T\+\_\+\+S\+W\+P\+R\+I\+N\+TF@{F\+M\+T\+\_\+\+S\+W\+P\+R\+I\+N\+TF}}
+\index{F\+M\+T\+\_\+\+S\+W\+P\+R\+I\+N\+TF@{F\+M\+T\+\_\+\+S\+W\+P\+R\+I\+N\+TF}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+S\+W\+P\+R\+I\+N\+TF}{FMT\_SWPRINTF}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+S\+W\+P\+R\+I\+N\+TF~swprintf}
+
+
+
+Definition at line 85 of file format-\/inl.\+h.
+
+\mbox{\Hypertarget{format-inl_8h_a4aa79926398ee27fe7d6db8b0dd54edf}\label{format-inl_8h_a4aa79926398ee27fe7d6db8b0dd54edf}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!F\+M\+T\+\_\+\+T\+RY@{F\+M\+T\+\_\+\+T\+RY}}
+\index{F\+M\+T\+\_\+\+T\+RY@{F\+M\+T\+\_\+\+T\+RY}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{F\+M\+T\+\_\+\+T\+RY}{FMT\_TRY}}
+{\footnotesize\ttfamily \#define F\+M\+T\+\_\+\+T\+RY~try}
+
+
+
+Definition at line 40 of file format-\/inl.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{format-inl_8h_a4826487444d21827180f5fbce3c64508}\label{format-inl_8h_a4826487444d21827180f5fbce3c64508}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!format\+\_\+system\+\_\+error@{format\+\_\+system\+\_\+error}}
+\index{format\+\_\+system\+\_\+error@{format\+\_\+system\+\_\+error}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{format\+\_\+system\+\_\+error()}{format\_system\_error()}}
+{\footnotesize\ttfamily \hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void format\+\_\+system\+\_\+error (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceinternal_a5fcdbc3efad1f390e6c3f0fdafa56122}{internal\+::buffer} \&}]{out,  }\item[{int}]{error\+\_\+code,  }\item[{\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{fmt\+::string\+\_\+view}}]{message }\end{DoxyParamCaption})}
+
+Formats an error returned by an operating system or a language runtime, for example a file opening error, and writes it to {\itshape out} in the following form\+:
+
+.. parsed-\/literal\+:\+: $<$message$>$$\ast$\+: $\ast$$<$system-\/message$>$$\ast$
+
+where $\ast$$<$message$>$$\ast$ is the passed message and $\ast$$<$system-\/message$>$$\ast$ is the system message corresponding to the error code. error\+\_\+code$\ast$ is a system error code as given by {\ttfamily errno}. If {\itshape \hyperlink{classerror__code}{error\+\_\+code}} is not a valid error code such as -\/1, the system message may look like \char`\"{}\+Unknown error -\/1\char`\"{} and is platform-\/dependent.  
+
+Definition at line 906 of file format-\/inl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h_a4826487444d21827180f5fbce3c64508_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h_a4826487444d21827180f5fbce3c64508_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{format-inl_8h_a82b610312f3005c8480b1d8439b129be}\label{format-inl_8h_a82b610312f3005c8480b1d8439b129be}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!report\+\_\+system\+\_\+error@{report\+\_\+system\+\_\+error}}
+\index{report\+\_\+system\+\_\+error@{report\+\_\+system\+\_\+error}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{report\+\_\+system\+\_\+error()}{report\_system\_error()}}
+{\footnotesize\ttfamily \hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void report\+\_\+system\+\_\+error (\begin{DoxyParamCaption}\item[{int}]{error\+\_\+code,  }\item[{\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{fmt\+::string\+\_\+view}}]{message }\end{DoxyParamCaption})}
+
+
+
+Definition at line 933 of file format-\/inl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h_a82b610312f3005c8480b1d8439b129be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{format-inl_8h_a82b610312f3005c8480b1d8439b129be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{format-inl_8h_a8307cb500850a7c5033cf64702e15990}\label{format-inl_8h_a8307cb500850a7c5033cf64702e15990}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!strerror\+\_\+r@{strerror\+\_\+r}}
+\index{strerror\+\_\+r@{strerror\+\_\+r}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{strerror\+\_\+r()}{strerror\_r()}}
+{\footnotesize\ttfamily fmt\+::internal\+::null strerror\+\_\+r (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{char $\ast$}]{,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file format-\/inl.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h_a8307cb500850a7c5033cf64702e15990_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{format-inl_8h_a3bbfb7ce6b764966d8cf5d018589375e}\label{format-inl_8h_a3bbfb7ce6b764966d8cf5d018589375e}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!strerror\+\_\+s@{strerror\+\_\+s}}
+\index{strerror\+\_\+s@{strerror\+\_\+s}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{strerror\+\_\+s()}{strerror\_s()}}
+{\footnotesize\ttfamily fmt\+::internal\+::null strerror\+\_\+s (\begin{DoxyParamCaption}\item[{char $\ast$}]{,  }\item[{std\+::size\+\_\+t}]{,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file format-\/inl.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h_a3bbfb7ce6b764966d8cf5d018589375e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{format-inl_8h_a9d834f6ef5c0553b6c434f8d9ac105bf}\label{format-inl_8h_a9d834f6ef5c0553b6c434f8d9ac105bf}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!vprint@{vprint}}
+\index{vprint@{vprint}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{vprint()}{vprint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void vprint (\begin{DoxyParamCaption}\item[{std\+::\+F\+I\+LE $\ast$}]{f,  }\item[{\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view}}]{format\+\_\+str,  }\item[{\hyperlink{structformat__args}{format\+\_\+args}}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 945 of file format-\/inl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h_a9d834f6ef5c0553b6c434f8d9ac105bf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h_a9d834f6ef5c0553b6c434f8d9ac105bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{format-inl_8h_a263a1a720ae8f902535a6c7a4933841e}\label{format-inl_8h_a263a1a720ae8f902535a6c7a4933841e}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!vprint@{vprint}}
+\index{vprint@{vprint}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{vprint()}{vprint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void vprint (\begin{DoxyParamCaption}\item[{std\+::\+F\+I\+LE $\ast$}]{f,  }\item[{\hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view}}]{format\+\_\+str,  }\item[{\hyperlink{structwformat__args}{wformat\+\_\+args}}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 952 of file format-\/inl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h_a263a1a720ae8f902535a6c7a4933841e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{format-inl_8h_a77fcf4959d4c69c3800b759696f37248}\label{format-inl_8h_a77fcf4959d4c69c3800b759696f37248}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!vprint@{vprint}}
+\index{vprint@{vprint}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{vprint()}{vprint()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void vprint (\begin{DoxyParamCaption}\item[{\hyperlink{core_8h_a17e3ff7f9ac2b8f068f719b829890036}{string\+\_\+view}}]{format\+\_\+str,  }\item[{\hyperlink{structformat__args}{format\+\_\+args}}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 958 of file format-\/inl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h_a77fcf4959d4c69c3800b759696f37248_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{format-inl_8h_aeba80e7dd0c0541ae25553f1627a55e1}\label{format-inl_8h_aeba80e7dd0c0541ae25553f1627a55e1}} 
+\index{format-\/inl.\+h@{format-\/inl.\+h}!vprint@{vprint}}
+\index{vprint@{vprint}!format-\/inl.\+h@{format-\/inl.\+h}}
+\subsubsection{\texorpdfstring{vprint()}{vprint()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \hyperlink{format_8h_a02c8898388e0ae59aab58be14fcd4e05}{F\+M\+T\+\_\+\+F\+U\+NC} void vprint (\begin{DoxyParamCaption}\item[{\hyperlink{core_8h_ad7c259380697a46ef799332f3ded429e}{wstring\+\_\+view}}]{format\+\_\+str,  }\item[{\hyperlink{structwformat__args}{wformat\+\_\+args}}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 962 of file format-\/inl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{format-inl_8h_aeba80e7dd0c0541ae25553f1627a55e1_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,117 @@
+\hypertarget{classspdlog_1_1sinks_1_1daily__file__sink}{}\section{spdlog\+:\+:sinks\+:\+:daily\+\_\+file\+\_\+sink$<$ Mutex, File\+Name\+Calc $>$ Class Template Reference}
+\label{classspdlog_1_1sinks_1_1daily__file__sink}\index{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink$<$ Mutex, File\+Name\+Calc $>$@{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink$<$ Mutex, File\+Name\+Calc $>$}}
+
+
+{\ttfamily \#include $<$daily\+\_\+file\+\_\+sink.\+h$>$}
+
+
+
+Inheritance diagram for spdlog\+:\+:sinks\+:\+:daily\+\_\+file\+\_\+sink$<$ Mutex, File\+Name\+Calc $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classspdlog_1_1sinks_1_1daily__file__sink__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for spdlog\+:\+:sinks\+:\+:daily\+\_\+file\+\_\+sink$<$ Mutex, File\+Name\+Calc $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classspdlog_1_1sinks_1_1daily__file__sink__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1daily__file__sink_a442164b0813283bc631ad39708fb3669}{daily\+\_\+file\+\_\+sink} (\hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} base\+\_\+filename, int rotation\+\_\+hour, int rotation\+\_\+minute, bool truncate=false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1daily__file__sink_ac82447cddb7a2ddb45ab81f97b74286d}{sink\+\_\+it\+\_\+} (const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&msg) override
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1daily__file__sink_a37199f25868ac70b91e4f126bcc4b3f8}{flush\+\_\+} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Mutex, typename File\+Name\+Calc = daily\+\_\+filename\+\_\+calculator$>$\newline
+class spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink$<$ Mutex, File\+Name\+Calc $>$}
+
+
+
+Definition at line 47 of file daily\+\_\+file\+\_\+sink.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1daily__file__sink_a442164b0813283bc631ad39708fb3669}\label{classspdlog_1_1sinks_1_1daily__file__sink_a442164b0813283bc631ad39708fb3669}} 
+\index{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink@{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink}!daily\+\_\+file\+\_\+sink@{daily\+\_\+file\+\_\+sink}}
+\index{daily\+\_\+file\+\_\+sink@{daily\+\_\+file\+\_\+sink}!spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink@{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink}}
+\subsubsection{\texorpdfstring{daily\+\_\+file\+\_\+sink()}{daily\_file\_sink()}}
+{\footnotesize\ttfamily template$<$typename Mutex , typename File\+Name\+Calc  = daily\+\_\+filename\+\_\+calculator$>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1daily__file__sink}{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink}$<$ Mutex, File\+Name\+Calc $>$\+::\hyperlink{classspdlog_1_1sinks_1_1daily__file__sink}{daily\+\_\+file\+\_\+sink} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t}}]{base\+\_\+filename,  }\item[{int}]{rotation\+\_\+hour,  }\item[{int}]{rotation\+\_\+minute,  }\item[{bool}]{truncate = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 51 of file daily\+\_\+file\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1sinks_1_1daily__file__sink_a442164b0813283bc631ad39708fb3669_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1daily__file__sink_a37199f25868ac70b91e4f126bcc4b3f8}\label{classspdlog_1_1sinks_1_1daily__file__sink_a37199f25868ac70b91e4f126bcc4b3f8}} 
+\index{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink@{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink}!flush\+\_\+@{flush\+\_\+}}
+\index{flush\+\_\+@{flush\+\_\+}!spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink@{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink}}
+\subsubsection{\texorpdfstring{flush\+\_\+()}{flush\_()}}
+{\footnotesize\ttfamily template$<$typename Mutex , typename File\+Name\+Calc  = daily\+\_\+filename\+\_\+calculator$>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1daily__file__sink}{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink}$<$ Mutex, File\+Name\+Calc $>$\+::flush\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1base__sink_a5ac2b237c60f68a18122a1ca09b812b4}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+
+
+Definition at line 80 of file daily\+\_\+file\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1sinks_1_1daily__file__sink_a37199f25868ac70b91e4f126bcc4b3f8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1daily__file__sink_ac82447cddb7a2ddb45ab81f97b74286d}\label{classspdlog_1_1sinks_1_1daily__file__sink_ac82447cddb7a2ddb45ab81f97b74286d}} 
+\index{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink@{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink}!sink\+\_\+it\+\_\+@{sink\+\_\+it\+\_\+}}
+\index{sink\+\_\+it\+\_\+@{sink\+\_\+it\+\_\+}!spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink@{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink}}
+\subsubsection{\texorpdfstring{sink\+\_\+it\+\_\+()}{sink\_it\_()}}
+{\footnotesize\ttfamily template$<$typename Mutex , typename File\+Name\+Calc  = daily\+\_\+filename\+\_\+calculator$>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1daily__file__sink}{spdlog\+::sinks\+::daily\+\_\+file\+\_\+sink}$<$ Mutex, File\+Name\+Calc $>$\+::sink\+\_\+it\+\_\+ (\begin{DoxyParamCaption}\item[{const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1base__sink_ad698d300cb7f5e58b2aa1b9907cdbd87}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+
+
+Definition at line 67 of file daily\+\_\+file\+\_\+sink.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/sinks/\hyperlink{daily__file__sink_8h}{daily\+\_\+file\+\_\+sink.\+h}\end{DoxyCompactItemize}

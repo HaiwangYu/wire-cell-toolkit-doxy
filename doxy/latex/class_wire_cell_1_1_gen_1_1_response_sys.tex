@@ -1,0 +1,181 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_response_sys}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Response\+Sys Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_response_sys}\index{Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}}
+
+
+{\ttfamily \#include $<$Response\+Sys.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Response\+Sys\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_response_sys__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Response\+Sys\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_response_sys__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_response_sys_a71ff5f000f152ebfe338a15f0d49f0ef}{Response\+Sys} (int nticks=10000, double start=0.\+0 $\ast$units\+::us, double tick=0.\+5 $\ast$units\+::us, double magnitude=1.\+0, double time\+\_\+smear=0.\+0 $\ast$units\+::us, double offset=0.\+0 $\ast$units\+::us)
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_response_sys_a38a9c888b02b4dcd447016ff77523ab7}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&cfg)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_response_sys_a04c3840c5ba2e0c8046895ed0bd288b9}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_gen_1_1_response_sys_a7b431ba8fb1668bd0b067f5f03b53171}{waveform\+\_\+start} () const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_gen_1_1_response_sys_ab6bced35ba8f8279d8204d842caf868a}{waveform\+\_\+period} () const
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_waveform_ad8f85e800ab8082ddbd89ac91164db7d}{sequence\+\_\+type} \& \hyperlink{class_wire_cell_1_1_gen_1_1_response_sys_acfe9c4ac7194cd013c12168df9021005}{waveform\+\_\+samples} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Response\+Sys.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_response_sys_a71ff5f000f152ebfe338a15f0d49f0ef}\label{class_wire_cell_1_1_gen_1_1_response_sys_a71ff5f000f152ebfe338a15f0d49f0ef}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}!Response\+Sys@{Response\+Sys}}
+\index{Response\+Sys@{Response\+Sys}!Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}}
+\subsubsection{\texorpdfstring{Response\+Sys()}{ResponseSys()}}
+{\footnotesize\ttfamily Gen\+::\+Response\+Sys\+::\+Response\+Sys (\begin{DoxyParamCaption}\item[{int}]{nticks = {\ttfamily 10000},  }\item[{double}]{start = {\ttfamily 0.0$\ast$units\+:\+:us},  }\item[{double}]{tick = {\ttfamily 0.5$\ast$units\+:\+:us},  }\item[{double}]{magnitude = {\ttfamily 1.0},  }\item[{double}]{time\+\_\+smear = {\ttfamily 0.0$\ast$units\+:\+:us},  }\item[{double}]{offset = {\ttfamily 0.0$\ast$units\+:\+:us} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file Response\+Sys.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_response_sys_a71ff5f000f152ebfe338a15f0d49f0ef_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_response_sys_a38a9c888b02b4dcd447016ff77523ab7}\label{class_wire_cell_1_1_gen_1_1_response_sys_a38a9c888b02b4dcd447016ff77523ab7}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Response\+Sys\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 25 of file Response\+Sys.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_response_sys_a38a9c888b02b4dcd447016ff77523ab7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_response_sys_a04c3840c5ba2e0c8046895ed0bd288b9}\label{class_wire_cell_1_1_gen_1_1_response_sys_a04c3840c5ba2e0c8046895ed0bd288b9}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Response\+Sys\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 21 of file Response\+Sys.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_response_sys_ab6bced35ba8f8279d8204d842caf868a}\label{class_wire_cell_1_1_gen_1_1_response_sys_ab6bced35ba8f8279d8204d842caf868a}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}!waveform\+\_\+period@{waveform\+\_\+period}}
+\index{waveform\+\_\+period@{waveform\+\_\+period}!Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}}
+\subsubsection{\texorpdfstring{waveform\+\_\+period()}{waveform\_period()}}
+{\footnotesize\ttfamily double Gen\+::\+Response\+Sys\+::waveform\+\_\+period (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_waveform_a0d5d0cd99b8a4e49d5d8b633150b707a}{Wire\+Cell\+::\+I\+Waveform}.
+
+
+
+Definition at line 50 of file Response\+Sys.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_response_sys_ab6bced35ba8f8279d8204d842caf868a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_response_sys_acfe9c4ac7194cd013c12168df9021005}\label{class_wire_cell_1_1_gen_1_1_response_sys_acfe9c4ac7194cd013c12168df9021005}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}!waveform\+\_\+samples@{waveform\+\_\+samples}}
+\index{waveform\+\_\+samples@{waveform\+\_\+samples}!Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}}
+\subsubsection{\texorpdfstring{waveform\+\_\+samples()}{waveform\_samples()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_waveform_ad8f85e800ab8082ddbd89ac91164db7d}{I\+Waveform\+::sequence\+\_\+type} \& Gen\+::\+Response\+Sys\+::waveform\+\_\+samples (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_waveform_a4901f7f36170f22c3e89ebd7939be4d0}{Wire\+Cell\+::\+I\+Waveform}.
+
+
+
+Definition at line 55 of file Response\+Sys.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_response_sys_a7b431ba8fb1668bd0b067f5f03b53171}\label{class_wire_cell_1_1_gen_1_1_response_sys_a7b431ba8fb1668bd0b067f5f03b53171}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}!waveform\+\_\+start@{waveform\+\_\+start}}
+\index{waveform\+\_\+start@{waveform\+\_\+start}!Wire\+Cell\+::\+Gen\+::\+Response\+Sys@{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}}
+\subsubsection{\texorpdfstring{waveform\+\_\+start()}{waveform\_start()}}
+{\footnotesize\ttfamily double Gen\+::\+Response\+Sys\+::waveform\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_waveform_ac7dfdf92e835bf708838bcdc1ba91ba2}{Wire\+Cell\+::\+I\+Waveform}.
+
+
+
+Definition at line 45 of file Response\+Sys.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_response_sys_a7b431ba8fb1668bd0b067f5f03b53171_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_response_sys_8h}{Response\+Sys.\+h}\item 
+gen/src/\hyperlink{_response_sys_8cxx}{Response\+Sys.\+cxx}\end{DoxyCompactItemize}

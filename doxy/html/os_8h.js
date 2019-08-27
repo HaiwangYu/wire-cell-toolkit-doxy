@@ -1,0 +1,25 @@
+var os_8h =
+[
+    [ "__has_feature", "os_8h.html#af989845e24678c452b9222afdac95e7f", null ],
+    [ "SPDLOG_EOL", "os_8h.html#a3c16021694c04b9b7341a9348b6d8dd4", null ],
+    [ "SPDLOG_FILENAME_T", "os_8h.html#a63d60ea1c1a925d3db13864d37bd2da2", null ],
+    [ "_thread_id", "os_8h.html#a4cb88fcf54ef3878c1ff660456e9819c", null ],
+    [ "file_exists", "os_8h.html#a0831288e524f8cf53c98bce8facd0a0c", null ],
+    [ "filename_to_str", "os_8h.html#ac7c0d6af1f3f652f23e57f057217b9a7", null ],
+    [ "filesize", "os_8h.html#a6d2fb5a293e8515f651288992d5443cc", null ],
+    [ "fopen_s", "os_8h.html#af2d11a0b892e2f0cb3c6beba4c659a47", null ],
+    [ "gmtime", "os_8h.html#ac993ad051e07cd5bda5328be2a54b0a8", null ],
+    [ "gmtime", "os_8h.html#a504776f0a18b0090f66778f7ad8add0b", null ],
+    [ "in_terminal", "os_8h.html#a2d4716c3ff12a2cc7f3bae7f3f769917", null ],
+    [ "is_color_terminal", "os_8h.html#a41c3f67d2cbabfcb20e89d0524e5097f", null ],
+    [ "localtime", "os_8h.html#aef63b92ee93ec66603c0357d0ac75bed", null ],
+    [ "localtime", "os_8h.html#a3c7704d0c74aed204f258ac1fc7d4576", null ],
+    [ "now", "os_8h.html#ab86a7d9f1495a0edae71ce647bae6a66", null ],
+    [ "pid", "os_8h.html#afa5e2f0096ec0aa63c2d20143cb18b17", null ],
+    [ "prevent_child_fd", "os_8h.html#a58e68538bb3667c56f3623bf047093d6", null ],
+    [ "remove", "os_8h.html#a08477012dc14c38d86657b40edd2f534", null ],
+    [ "rename", "os_8h.html#a88940402c9b1b8c9d01ea7dae8f26127", null ],
+    [ "sleep_for_millis", "os_8h.html#a49ccbc872aa679db9d1187a48897804e", null ],
+    [ "thread_id", "os_8h.html#ad0fc3a9bd510324d2d5f31acb3607e90", null ],
+    [ "utc_minutes_offset", "os_8h.html#a6dce662c3a4ea0b6e95468272ec37047", null ]
+];

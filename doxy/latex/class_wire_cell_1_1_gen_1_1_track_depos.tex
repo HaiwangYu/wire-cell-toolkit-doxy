@@ -1,0 +1,211 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_track_depos}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Track\+Depos Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_track_depos}\index{Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}}
+
+
+A producer of depositions created from some number of simple, linear tracks.  
+
+
+
+
+{\ttfamily \#include $<$Track\+Depos.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Track\+Depos\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_track_depos__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Track\+Depos\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_track_depos__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::tuple$<$ double, \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}, double $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_a70b397dea6bfcd6d4181a1716b0f3e54}{track\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_afe4fb6691d2d50e382987d53ed581eb7}{Track\+Depos} (double stepsize=1.\+0 $\ast$units\+::millimeter, double clight=1.\+0)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_a41f8d22bd935a3f211bee15f2dbbef2c}{$\sim$\+Track\+Depos} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_a0a3e984c40fe60a0b8fbd451091a008b}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_ad96354353f477b5efeed326167b5b531}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_adae13601f092202fbdc66c3d0be8be8a}{add\+\_\+track} (double time, const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Wire\+Cell\+::\+Ray} \&ray, double dedx=-\/1.\+0)
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_a336b9bcb6d5d3e494ff295d7a70c94cc}{operator()} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \&out)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_source_node}{I\+Source\+Node}. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{Wire\+Cell\+::\+I\+Depo\+::vector} \hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_a443e4c53c68ad46102395e7e86d24653}{depos} ()
+\item 
+std\+::vector$<$ \hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_a70b397dea6bfcd6d4181a1716b0f3e54}{track\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_a9a2eca2798c0655336150e7237e8c5cd}{tracks} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A producer of depositions created from some number of simple, linear tracks. 
+
+Definition at line 17 of file Track\+Depos.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_track_depos_a70b397dea6bfcd6d4181a1716b0f3e54}\label{class_wire_cell_1_1_gen_1_1_track_depos_a70b397dea6bfcd6d4181a1716b0f3e54}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}!track\+\_\+t@{track\+\_\+t}}
+\index{track\+\_\+t@{track\+\_\+t}!Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}}
+\subsubsection{\texorpdfstring{track\+\_\+t}{track\_t}}
+{\footnotesize\ttfamily typedef std\+::tuple$<$double, \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Ray}, double$>$ \hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_a70b397dea6bfcd6d4181a1716b0f3e54}{Wire\+Cell\+::\+Gen\+::\+Track\+Depos\+::track\+\_\+t}}
+
+
+
+Definition at line 40 of file Track\+Depos.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_track_depos_afe4fb6691d2d50e382987d53ed581eb7}\label{class_wire_cell_1_1_gen_1_1_track_depos_afe4fb6691d2d50e382987d53ed581eb7}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}!Track\+Depos@{Track\+Depos}}
+\index{Track\+Depos@{Track\+Depos}!Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}}
+\subsubsection{\texorpdfstring{Track\+Depos()}{TrackDepos()}}
+{\footnotesize\ttfamily Gen\+::\+Track\+Depos\+::\+Track\+Depos (\begin{DoxyParamCaption}\item[{double}]{stepsize = {\ttfamily 1.0$\ast$units\+:\+:millimeter},  }\item[{double}]{clight = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+Create tracks with depositions every stepsize and assumed to be traveling at clight. 
+
+Definition at line 18 of file Track\+Depos.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_track_depos_a41f8d22bd935a3f211bee15f2dbbef2c}\label{class_wire_cell_1_1_gen_1_1_track_depos_a41f8d22bd935a3f211bee15f2dbbef2c}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}!````~Track\+Depos@{$\sim$\+Track\+Depos}}
+\index{````~Track\+Depos@{$\sim$\+Track\+Depos}!Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}}
+\subsubsection{\texorpdfstring{$\sim$\+Track\+Depos()}{~TrackDepos()}}
+{\footnotesize\ttfamily Gen\+::\+Track\+Depos\+::$\sim$\+Track\+Depos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 26 of file Track\+Depos.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_track_depos_adae13601f092202fbdc66c3d0be8be8a}\label{class_wire_cell_1_1_gen_1_1_track_depos_adae13601f092202fbdc66c3d0be8be8a}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}!add\+\_\+track@{add\+\_\+track}}
+\index{add\+\_\+track@{add\+\_\+track}!Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}}
+\subsubsection{\texorpdfstring{add\+\_\+track()}{add\_track()}}
+{\footnotesize\ttfamily void Gen\+::\+Track\+Depos\+::add\+\_\+track (\begin{DoxyParamCaption}\item[{double}]{time,  }\item[{const \hyperlink{namespace_wire_cell_a3ab20d9b438feb7eb1ffaab9ba98af0c}{Wire\+Cell\+::\+Ray} \&}]{ray,  }\item[{double}]{dedx = {\ttfamily -\/1.0} }\end{DoxyParamCaption})}
+
+Add track starting at given $<$time$>$ and stretching across given ray. The $<$dedx$>$ gives a uniform charge/distance and if $<$ 0 then it gives the (negative of) absolute amount of charge per deposition. 
+
+Definition at line 85 of file Track\+Depos.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_track_depos_adae13601f092202fbdc66c3d0be8be8a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_track_depos_adae13601f092202fbdc66c3d0be8be8a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_track_depos_a0a3e984c40fe60a0b8fbd451091a008b}\label{class_wire_cell_1_1_gen_1_1_track_depos_a0a3e984c40fe60a0b8fbd451091a008b}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Track\+Depos\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 45 of file Track\+Depos.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_track_depos_a0a3e984c40fe60a0b8fbd451091a008b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_track_depos_ad96354353f477b5efeed326167b5b531}\label{class_wire_cell_1_1_gen_1_1_track_depos_ad96354353f477b5efeed326167b5b531}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} Gen\+::\+Track\+Depos\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 30 of file Track\+Depos.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_track_depos_a443e4c53c68ad46102395e7e86d24653}\label{class_wire_cell_1_1_gen_1_1_track_depos_a443e4c53c68ad46102395e7e86d24653}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}!depos@{depos}}
+\index{depos@{depos}!Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}}
+\subsubsection{\texorpdfstring{depos()}{depos()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{Wire\+Cell\+::\+I\+Depo\+::vector} Gen\+::\+Track\+Depos\+::depos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 137 of file Track\+Depos.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_track_depos_a336b9bcb6d5d3e494ff295d7a70c94cc}\label{class_wire_cell_1_1_gen_1_1_track_depos_a336b9bcb6d5d3e494ff295d7a70c94cc}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Gen\+::\+Track\+Depos\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_source_node}{I\+Source\+Node}. 
+
+
+
+Definition at line 119 of file Track\+Depos.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_track_depos_a9a2eca2798c0655336150e7237e8c5cd}\label{class_wire_cell_1_1_gen_1_1_track_depos_a9a2eca2798c0655336150e7237e8c5cd}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}!tracks@{tracks}}
+\index{tracks@{tracks}!Wire\+Cell\+::\+Gen\+::\+Track\+Depos@{Wire\+Cell\+::\+Gen\+::\+Track\+Depos}}
+\subsubsection{\texorpdfstring{tracks()}{tracks()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{class_wire_cell_1_1_gen_1_1_track_depos_a70b397dea6bfcd6d4181a1716b0f3e54}{track\+\_\+t}$>$ Wire\+Cell\+::\+Gen\+::\+Track\+Depos\+::tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 41 of file Track\+Depos.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_track_depos_8h}{Track\+Depos.\+h}\item 
+gen/src/\hyperlink{_track_depos_8cxx}{Track\+Depos.\+cxx}\end{DoxyCompactItemize}

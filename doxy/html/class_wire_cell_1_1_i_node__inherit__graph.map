@@ -1,0 +1,50 @@
+<map id="WireCell::INode" name="WireCell::INode">
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_fanin_node_base.html" title="WireCell::IFaninNodeBase" alt="" coords="561,143,738,170"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_i_fanout_node_base.html" title="WireCell::IFanoutNodeBase" alt="" coords="557,486,742,513"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_i_function_node_base.html" title="WireCell::IFunctionNodeBase" alt="" coords="552,1058,747,1085"/>
+<area shape="rect" id="node28" href="$class_wire_cell_1_1_i_hydra_node_base.html" title="WireCell::IHydraNodeBase" alt="" coords="559,1527,739,1554"/>
+<area shape="rect" id="node31" href="$class_wire_cell_1_1_i_join_node_base.html" title="WireCell::IJoinNodeBase" alt="" coords="565,1638,734,1665"/>
+<area shape="rect" id="node34" href="$class_wire_cell_1_1_i_queuedout_node_base.html" title="WireCell::IQueuedoutNodeBase" alt="" coords="545,1935,753,1962"/>
+<area shape="rect" id="node43" href="$class_wire_cell_1_1_i_sink_node_base.html" title="WireCell::ISinkNodeBase" alt="" coords="564,2262,735,2289"/>
+<area shape="rect" id="node48" href="$class_wire_cell_1_1_i_source_node_base.html" title="WireCell::ISourceNodeBase" alt="" coords="556,2313,743,2339"/>
+<area shape="rect" id="node49" href="$class_wire_cell_1_1_i_split_node_base.html" title="WireCell::ISplitNodeBase" alt="" coords="564,2363,735,2390"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="184,1631,335,1672"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,1638,136,1665"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_fanin_node.html" title="WireCell::IFaninNode\l\&lt; IBlobSet, IBlobSet, 0 \&gt;" alt="" coords="825,5,994,47"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_fanin_node.html" title="WireCell::IFaninNode\l\&lt; ICluster, ICluster, 0 \&gt;" alt="" coords="829,71,990,112"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_i_fanin_node.html" title="WireCell::IFaninNode\l\&lt; IFrame, IFrame, 0 \&gt;" alt="" coords="834,136,985,177"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_i_fanin_node.html" title="WireCell::IFaninNode\l\&lt; InputType, OutputType,\l FaninMultiplicity \&gt;" alt="" coords="823,202,995,258"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; IBlobSet::vector, IBlobSet, 0 \&gt;" alt="" coords="803,283,1016,324"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; IDepo, IDepo, 0 \&gt;" alt="" coords="832,348,987,389"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; IDepoSet, IDepoSet, 0 \&gt;" alt="" coords="820,413,999,455"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; IFrame, IFrame, 0 \&gt;" alt="" coords="832,479,987,520"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; ISlice, ISlice, 0 \&gt;" alt="" coords="832,544,987,585"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_i_fanout_node.html" title="WireCell::IFanoutNode\l\&lt; InputType, OutputType,\l FanoutMultiplicity \&gt;" alt="" coords="823,610,995,666"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; ICluster, ICluster \&gt;" alt="" coords="827,691,992,732"/>
+<area shape="rect" id="node18" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; ICluster, IFrame \&gt;" alt="" coords="827,756,992,797"/>
+<area shape="rect" id="node19" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IDepo, IDepo \&gt;" alt="" coords="827,821,992,863"/>
+<area shape="rect" id="node20" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IDepoSet, IFrame \&gt;" alt="" coords="827,887,992,928"/>
+<area shape="rect" id="node21" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IFrame, IFrame \&gt;" alt="" coords="827,952,992,993"/>
+<area shape="rect" id="node22" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IFrame, ISliceFrame \&gt;" alt="" coords="827,1017,992,1059"/>
+<area shape="rect" id="node23" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; ISlice, IBlobSet \&gt;" alt="" coords="827,1083,992,1124"/>
+<area shape="rect" id="node24" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; ISlice, IStripeSet \&gt;" alt="" coords="827,1148,992,1189"/>
+<area shape="rect" id="node25" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IWire::vector, IWireSummary \&gt;" alt="" coords="801,1213,1017,1255"/>
+<area shape="rect" id="node26" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IWireParameters, IWire\l::vector \&gt;" alt="" coords="824,1279,995,1335"/>
+<area shape="rect" id="node27" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; InputType, OutputType \&gt;" alt="" coords="819,1360,999,1401"/>
+<area shape="rect" id="node29" href="$class_wire_cell_1_1_i_hydra_node.html" title="WireCell::IHydraNode\l\&lt; std::tuple\&lt; IDepo,\l IDepo \&gt;, std::tuple\&lt;\l IDepo \&gt; \&gt;" alt="" coords="834,1425,985,1496"/>
+<area shape="rect" id="node30" href="$class_wire_cell_1_1_i_hydra_node.html" title="WireCell::IHydraNode\l\&lt; InputTuple, OutputTuple \&gt;" alt="" coords="816,1520,1003,1561"/>
+<area shape="rect" id="node32" href="$class_wire_cell_1_1_i_join_node.html" title="WireCell::IJoinNode\l\&lt; std::tuple\&lt; IFrame,\l IFrame \&gt;, IFrame \&gt;" alt="" coords="837,1586,982,1642"/>
+<area shape="rect" id="node33" href="$class_wire_cell_1_1_i_join_node.html" title="WireCell::IJoinNode\l\&lt; InputTuple, OutputType \&gt;" alt="" coords="818,1667,1001,1708"/>
+<area shape="rect" id="node35" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IBlobSet, IBlobSet \&gt;" alt="" coords="820,1732,999,1773"/>
+<area shape="rect" id="node36" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IBlobSet, ICluster \&gt;" alt="" coords="820,1797,999,1839"/>
+<area shape="rect" id="node37" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IDepo, IDepo \&gt;" alt="" coords="820,1863,999,1904"/>
+<area shape="rect" id="node38" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IDepo, IDepoSet \&gt;" alt="" coords="820,1928,999,1969"/>
+<area shape="rect" id="node39" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IDepo, IDiffusion \&gt;" alt="" coords="820,1993,999,2035"/>
+<area shape="rect" id="node40" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IDepo, IFrame \&gt;" alt="" coords="820,2059,999,2100"/>
+<area shape="rect" id="node41" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; IFrame, ISlice \&gt;" alt="" coords="820,2124,999,2165"/>
+<area shape="rect" id="node42" href="$class_wire_cell_1_1_i_queuedout_node.html" title="WireCell::IQueuedoutNode\l\&lt; InputType, OutputType \&gt;" alt="" coords="819,2189,999,2231"/>
+<area shape="rect" id="node44" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; IBlobSet \&gt;" alt="" coords="839,2255,980,2296"/>
+<area shape="rect" id="node45" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; ICluster \&gt;" alt="" coords="839,2320,980,2361"/>
+<area shape="rect" id="node46" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; IDepo \&gt;" alt="" coords="839,2385,980,2427"/>
+<area shape="rect" id="node47" href="$class_wire_cell_1_1_i_sink_node.html" title="WireCell::ISinkNode\l\&lt; IFrame \&gt;" alt="" coords="839,2451,980,2492"/>
+</map>

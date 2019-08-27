@@ -1,0 +1,8 @@
+<map id="spdlog::sinks::basic_file_sink::basic_file_sink" name="spdlog::sinks::basic_file_sink::basic_file_sink">
+<area shape="rect" id="node2" href="$classspdlog_1_1details_1_1file__helper.html#a8612066fd098080cc60e3aefed6a6085" title="spdlog::details::file\l_helper::open" alt="" coords="224,104,355,145"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1details_1_1file__helper.html#a6a6d7a75014ae880857b4fe4fd01dc7a" title="spdlog::details::file\l_helper::close" alt="" coords="403,5,533,47"/>
+<area shape="rect" id="node4" href="$namespacespdlog_1_1details_1_1os.html#af2d11a0b892e2f0cb3c6beba4c659a47" title="spdlog::details::os\l::fopen_s" alt="" coords="404,71,532,112"/>
+<area shape="rect" id="node6" href="$namespacespdlog_1_1details_1_1os.html#a49ccbc872aa679db9d1187a48897804e" title="spdlog::details::os\l::sleep_for_millis" alt="" coords="404,136,532,177"/>
+<area shape="rect" id="node7" href="$namespacespdlog_1_1details_1_1os.html#ac7c0d6af1f3f652f23e57f057217b9a7" title="spdlog::details::os\l::filename_to_str" alt="" coords="581,165,709,207"/>
+<area shape="rect" id="node5" href="$namespacespdlog_1_1details_1_1os.html#a58e68538bb3667c56f3623bf047093d6" title="spdlog::details::os\l::prevent_child_fd" alt="" coords="581,71,709,112"/>
+</map>

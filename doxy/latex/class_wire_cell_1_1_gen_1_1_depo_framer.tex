@@ -1,0 +1,143 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_depo_framer}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Depo\+Framer Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_depo_framer}\index{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}}
+
+
+{\ttfamily \#include $<$Depo\+Framer.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Depo\+Framer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_depo_framer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Depo\+Framer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_depo_framer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_depo_framer_a3e9b79b211fdff52e2f20cfa0956c298}{Depo\+Framer} (const std\+::string \&drifter=\char`\"{}Drifter\char`\"{}, const std\+::string \&ductor=\char`\"{}Ductor\char`\"{})
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_depo_framer_a34ad1abcd0b204c1b7baf2fb454dda5a}{$\sim$\+Depo\+Framer} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_gen_1_1_depo_framer_a6ad456e0ccd9361b047b5f3f8b89fbd6}{operator()} (const \hyperlink{class_wire_cell_1_1_i_function_node_a55c0946156df9b712b8ad1a0b59b2db6}{input\+\_\+pointer} \&in, \hyperlink{class_wire_cell_1_1_i_function_node_afc02f1ec60d31aacddf64963f9ca650b}{output\+\_\+pointer} \&out)
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_depo_framer_a3e476a422c8e5e56662d4040c0fdac69}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_depo_framer_adee1889f1ab532a31f8ae66e149ee8a4}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wire_cell_1_1_gen_1_1_depo_framer}{Depo\+Framer} handles simulating the signal from a set of depositions returning a frame of signal voltage traces. The frame ident is taken from the the ident of the input \hyperlink{class_wire_cell_1_1_i_depo_set}{I\+Depo\+Set}. It delegates to a \char`\"{}drifter\char`\"{} and a \char`\"{}ductor\char`\"{} to perform bulk drifting through the detector volume and conversion of charge distribution to signals via convolution with field and electronics response, respectively.
+
+Because the output frame will span the entire signal corresponding to the sent of input depositions, it is up to the caller to limit this set accordingly. 
+
+Definition at line 26 of file Depo\+Framer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_framer_a3e9b79b211fdff52e2f20cfa0956c298}\label{class_wire_cell_1_1_gen_1_1_depo_framer_a3e9b79b211fdff52e2f20cfa0956c298}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}!Depo\+Framer@{Depo\+Framer}}
+\index{Depo\+Framer@{Depo\+Framer}!Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}}
+\subsubsection{\texorpdfstring{Depo\+Framer()}{DepoFramer()}}
+{\footnotesize\ttfamily Gen\+::\+Depo\+Framer\+::\+Depo\+Framer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{drifter = {\ttfamily \char`\"{}Drifter\char`\"{}},  }\item[{const std\+::string \&}]{ductor = {\ttfamily \char`\"{}Ductor\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file Depo\+Framer.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_framer_a34ad1abcd0b204c1b7baf2fb454dda5a}\label{class_wire_cell_1_1_gen_1_1_depo_framer_a34ad1abcd0b204c1b7baf2fb454dda5a}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}!````~Depo\+Framer@{$\sim$\+Depo\+Framer}}
+\index{````~Depo\+Framer@{$\sim$\+Depo\+Framer}!Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}}
+\subsubsection{\texorpdfstring{$\sim$\+Depo\+Framer()}{~DepoFramer()}}
+{\footnotesize\ttfamily Gen\+::\+Depo\+Framer\+::$\sim$\+Depo\+Framer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 18 of file Depo\+Framer.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_framer_a3e476a422c8e5e56662d4040c0fdac69}\label{class_wire_cell_1_1_gen_1_1_depo_framer_a3e476a422c8e5e56662d4040c0fdac69}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Depo\+Framer\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 31 of file Depo\+Framer.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_framer_adee1889f1ab532a31f8ae66e149ee8a4}\label{class_wire_cell_1_1_gen_1_1_depo_framer_adee1889f1ab532a31f8ae66e149ee8a4}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Depo\+Framer\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 23 of file Depo\+Framer.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_depo_framer_adee1889f1ab532a31f8ae66e149ee8a4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_depo_framer_a6ad456e0ccd9361b047b5f3f8b89fbd6}\label{class_wire_cell_1_1_gen_1_1_depo_framer_a6ad456e0ccd9361b047b5f3f8b89fbd6}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Gen\+::\+Depo\+Framer@{Wire\+Cell\+::\+Gen\+::\+Depo\+Framer}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Gen\+::\+Depo\+Framer\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_function_node_a55c0946156df9b712b8ad1a0b59b2db6}{input\+\_\+pointer} \&}]{in,  }\item[{\hyperlink{class_wire_cell_1_1_i_function_node_afc02f1ec60d31aacddf64963f9ca650b}{output\+\_\+pointer} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 39 of file Depo\+Framer.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_depo_framer_a6ad456e0ccd9361b047b5f3f8b89fbd6_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_depo_framer_8h}{Depo\+Framer.\+h}\item 
+gen/src/\hyperlink{_depo_framer_8cxx}{Depo\+Framer.\+cxx}\end{DoxyCompactItemize}

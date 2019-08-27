@@ -1,0 +1,102 @@
+\hypertarget{ostream_8h}{}\section{util/inc/spdlog/fmt/bundled/ostream.h File Reference}
+\label{ostream_8h}\index{util/inc/spdlog/fmt/bundled/ostream.\+h@{util/inc/spdlog/fmt/bundled/ostream.\+h}}
+{\ttfamily \#include \char`\"{}format.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+Include dependency graph for ostream.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ostream_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ostream_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classinternal_1_1formatbuf}{internal\+::formatbuf$<$ Char $>$}
+\item 
+struct \hyperlink{structinternal_1_1test__stream}{internal\+::test\+\_\+stream$<$ Char $>$}
+\item 
+class \hyperlink{classinternal_1_1is__streamable}{internal\+::is\+\_\+streamable$<$ T, Char $>$}
+\item 
+struct \hyperlink{structconvert__to__int_3_01_t_00_01_char_00_01void_01_4}{convert\+\_\+to\+\_\+int$<$ T, Char, void $>$}
+\item 
+struct \hyperlink{structformatter_3_01_t_00_01_char_00_01typename_01std_1_1enable__if_3_01internal_1_1is__streamabdfe791f5d6e0a8acd43f884d0761b8af}{formatter$<$ T, Char, typename std\+::enable\+\_\+if$<$ internal\+::is\+\_\+streamable$<$ T, Char $>$\+::value \&\&!internal\+::format\+\_\+type$<$ typename buffer\+\_\+context$<$ Char $>$\+::type, T $>$\+::value $>$\+::type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceinternal}{internal}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Char $>$ }\\void \hyperlink{namespaceinternal_a1d6eb1d297ebb5fc0f724732f23b22eb}{internal\+::write} (std\+::basic\+\_\+ostream$<$ Char $>$ \&os, basic\+\_\+buffer$<$ Char $>$ \&buf)
+\item 
+{\footnotesize template$<$typename Char , typename T $>$ }\\void \hyperlink{namespaceinternal_a1be3f9974ada7afa2fc121fd6cf13521}{internal\+::format\+\_\+value} (basic\+\_\+buffer$<$ Char $>$ \&\hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer}, const T \&value)
+\item 
+{\footnotesize template$<$typename Char $>$ }\\void \hyperlink{ostream_8h_a928c1e51eee22713de6b27dada091c40}{vprint} (std\+::basic\+\_\+ostream$<$ Char $>$ \&os, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type $>$ \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\item 
+{\footnotesize template$<$typename S , typename... Args$>$ }\\std\+::enable\+\_\+if$<$ \hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$ S $>$\+::value $>$\+::type \hyperlink{ostream_8h_ac1dc30880e72d663127488352238aac0}{print} (std\+::basic\+\_\+ostream$<$ \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$ \&os, const S \&\hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ostream_8h_ac1dc30880e72d663127488352238aac0}\label{ostream_8h_ac1dc30880e72d663127488352238aac0}} 
+\index{ostream.\+h@{ostream.\+h}!print@{print}}
+\index{print@{print}!ostream.\+h@{ostream.\+h}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$typename S , typename... Args$>$ \\
+std\+::enable\+\_\+if$<$\hyperlink{structinternal_1_1is__string}{internal\+::is\+\_\+string}$<$S$>$\+::value$>$\+::type print (\begin{DoxyParamCaption}\item[{std\+::basic\+\_\+ostream$<$ \hyperlink{format_8h_a719e8ab6760f525f663de75c59a68ef3}{F\+M\+T\+\_\+\+C\+H\+AR}(S)$>$ \&}]{os,  }\item[{const S \&}]{format\+\_\+str,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints formatted data to the stream {\itshape os}.
+
+Example$\ast$$\ast$\+:\+:
+
+fmt\+::print(cerr, \char`\"{}\+Don\textquotesingle{}t \{\}!\char`\"{}, \char`\"{}panic\char`\"{});  
+
+Definition at line 146 of file ostream.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ostream_8h_ac1dc30880e72d663127488352238aac0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ostream_8h_a928c1e51eee22713de6b27dada091c40}\label{ostream_8h_a928c1e51eee22713de6b27dada091c40}} 
+\index{ostream.\+h@{ostream.\+h}!vprint@{vprint}}
+\index{vprint@{vprint}!ostream.\+h@{ostream.\+h}}
+\subsubsection{\texorpdfstring{vprint()}{vprint()}}
+{\footnotesize\ttfamily template$<$typename Char $>$ \\
+void vprint (\begin{DoxyParamCaption}\item[{std\+::basic\+\_\+ostream$<$ Char $>$ \&}]{os,  }\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{format\+\_\+str,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ typename \hyperlink{structbuffer__context}{buffer\+\_\+context}$<$ Char $>$\+::type $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 128 of file ostream.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ostream_8h_a928c1e51eee22713de6b27dada091c40_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{ostream_8h_a928c1e51eee22713de6b27dada091c40_icgraph}
+\end{center}
+\end{figure}

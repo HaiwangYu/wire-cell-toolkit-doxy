@@ -1,0 +1,5 @@
+<map id="WireCell::Gen::GausDesc::sigma_range" name="WireCell::Gen::GausDesc::sigma_range">
+<area shape="rect" id="node2" href="$struct_wire_cell_1_1_gen_1_1_gaus_desc.html#a0d636bf5b689646d52f07cac3432824e" title="WireCell::Gen::GausDesc\l::sample" alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node3" href="$struct_wire_cell_1_1_gen_1_1_gaus_desc.html#a1b437283fecc3cbfcdb616179381d666" title="WireCell::Gen::GausDesc\l::binint" alt="" coords="228,71,403,112"/>
+<area shape="rect" id="node4" href="$struct_wire_cell_1_1_gen_1_1_gaus_desc.html#aa7099866e931d552fead98c5fcfcefb8" title="WireCell::Gen::GausDesc\l::weight" alt="" coords="228,136,403,177"/>
+</map>

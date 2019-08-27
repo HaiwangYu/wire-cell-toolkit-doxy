@@ -1,0 +1,198 @@
+\hypertarget{class_wire_cell_1_1_i_split_node}{}\section{Wire\+Cell\+:\+:I\+Split\+Node$<$ Input\+Type, Output\+Tuple $>$ Class Template Reference}
+\label{class_wire_cell_1_1_i_split_node}\index{Wire\+Cell\+::\+I\+Split\+Node$<$ Input\+Type, Output\+Tuple $>$@{Wire\+Cell\+::\+I\+Split\+Node$<$ Input\+Type, Output\+Tuple $>$}}
+
+
+{\ttfamily \#include $<$I\+Split\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Split\+Node$<$ Input\+Type, Output\+Tuple $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_wire_cell_1_1_i_split_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Split\+Node$<$ Input\+Type, Output\+Tuple $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_wire_cell_1_1_i_split_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{struct_wire_cell_1_1tuple__helper}{tuple\+\_\+helper}$<$ Output\+Tuple $>$ \hyperlink{class_wire_cell_1_1_i_split_node_a1ac35da3c288620eadd7276c9772fa28}{port\+\_\+helper\+\_\+type}
+\item 
+typedef port\+\_\+helper\+\_\+type\+::template Wrapped\+Const$<$ std\+::shared\+\_\+ptr $>$\+::\hyperlink{namespace_wire_cell_a1f69a2598e2cdb413ffac1157b50670a}{type} \hyperlink{class_wire_cell_1_1_i_split_node_acd382a6b5a9c3f322943ce2dd66fa7f4}{output\+\_\+tuple\+\_\+type}
+\item 
+typedef \hyperlink{struct_wire_cell_1_1tuple__helper}{tuple\+\_\+helper}$<$ \hyperlink{class_wire_cell_1_1_i_split_node_acd382a6b5a9c3f322943ce2dd66fa7f4}{output\+\_\+tuple\+\_\+type} $>$ \hyperlink{class_wire_cell_1_1_i_split_node_aad34eb757f9df60286669875d91173a1}{output\+\_\+helper\+\_\+type}
+\item 
+typedef Input\+Type \hyperlink{class_wire_cell_1_1_i_split_node_aa8893ad410e8ed0aaf420a77475ffcc9}{input\+\_\+type}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ const Input\+Type $>$ \hyperlink{class_wire_cell_1_1_i_split_node_a270990964b36cf939159efa595779407}{input\+\_\+pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_split_node_ae89ad2fc266377589e4041c0cf84b350}{$\sim$\+I\+Split\+Node} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_split_node_a7c33f98661c236a21d093bb40374186b}{operator()} (const boost\+::any \&anyin, \hyperlink{class_wire_cell_1_1_i_split_node_base_af68870ead16af4b29a3b0d486f217fe8}{any\+\_\+vector} \&anyvout)
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_split_node_aa0a69c19d5dacc4ebf3c6acec4120933}{operator()} (const \hyperlink{class_wire_cell_1_1_i_split_node_a270990964b36cf939159efa595779407}{input\+\_\+pointer} \&in, \hyperlink{class_wire_cell_1_1_i_split_node_acd382a6b5a9c3f322943ce2dd66fa7f4}{output\+\_\+tuple\+\_\+type} \&out)=0
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_split_node_a777776f3e11a8fb95c1e8974249a1f8d}{input\+\_\+types} ()
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_split_node_a924ce0894e2f6dec8fb49b14923df91d}{output\+\_\+types} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Input\+Type, typename Output\+Tuple$>$\newline
+class Wire\+Cell\+::\+I\+Split\+Node$<$ Input\+Type, Output\+Tuple $>$}
+
+
+
+Definition at line 42 of file I\+Split\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_split_node_a270990964b36cf939159efa595779407}\label{class_wire_cell_1_1_i_split_node_a270990964b36cf939159efa595779407}} 
+\index{Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}!input\+\_\+pointer@{input\+\_\+pointer}}
+\index{input\+\_\+pointer@{input\+\_\+pointer}!Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+pointer}{input\_pointer}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Tuple$>$ \\
+typedef std\+::shared\+\_\+ptr$<$const Input\+Type$>$ \hyperlink{class_wire_cell_1_1_i_split_node}{Wire\+Cell\+::\+I\+Split\+Node}$<$ Input\+Type, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_split_node_a270990964b36cf939159efa595779407}{input\+\_\+pointer}}
+
+
+
+Definition at line 51 of file I\+Split\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_split_node_aa8893ad410e8ed0aaf420a77475ffcc9}\label{class_wire_cell_1_1_i_split_node_aa8893ad410e8ed0aaf420a77475ffcc9}} 
+\index{Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}!input\+\_\+type@{input\+\_\+type}}
+\index{input\+\_\+type@{input\+\_\+type}!Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+type}{input\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Tuple$>$ \\
+typedef Input\+Type \hyperlink{class_wire_cell_1_1_i_split_node}{Wire\+Cell\+::\+I\+Split\+Node}$<$ Input\+Type, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_split_node_aa8893ad410e8ed0aaf420a77475ffcc9}{input\+\_\+type}}
+
+
+
+Definition at line 49 of file I\+Split\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_split_node_aad34eb757f9df60286669875d91173a1}\label{class_wire_cell_1_1_i_split_node_aad34eb757f9df60286669875d91173a1}} 
+\index{Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}!output\+\_\+helper\+\_\+type@{output\+\_\+helper\+\_\+type}}
+\index{output\+\_\+helper\+\_\+type@{output\+\_\+helper\+\_\+type}!Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+helper\+\_\+type}{output\_helper\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Tuple$>$ \\
+typedef \hyperlink{struct_wire_cell_1_1tuple__helper}{tuple\+\_\+helper}$<$\hyperlink{class_wire_cell_1_1_i_split_node_acd382a6b5a9c3f322943ce2dd66fa7f4}{output\+\_\+tuple\+\_\+type}$>$ \hyperlink{class_wire_cell_1_1_i_split_node}{Wire\+Cell\+::\+I\+Split\+Node}$<$ Input\+Type, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_split_node_aad34eb757f9df60286669875d91173a1}{output\+\_\+helper\+\_\+type}}
+
+
+
+Definition at line 47 of file I\+Split\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_split_node_acd382a6b5a9c3f322943ce2dd66fa7f4}\label{class_wire_cell_1_1_i_split_node_acd382a6b5a9c3f322943ce2dd66fa7f4}} 
+\index{Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}!output\+\_\+tuple\+\_\+type@{output\+\_\+tuple\+\_\+type}}
+\index{output\+\_\+tuple\+\_\+type@{output\+\_\+tuple\+\_\+type}!Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+tuple\+\_\+type}{output\_tuple\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Tuple$>$ \\
+typedef port\+\_\+helper\+\_\+type\+::template Wrapped\+Const$<$std\+::shared\+\_\+ptr$>$\+::\hyperlink{namespace_wire_cell_a1f69a2598e2cdb413ffac1157b50670a}{type} \hyperlink{class_wire_cell_1_1_i_split_node}{Wire\+Cell\+::\+I\+Split\+Node}$<$ Input\+Type, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_split_node_acd382a6b5a9c3f322943ce2dd66fa7f4}{output\+\_\+tuple\+\_\+type}}
+
+
+
+Definition at line 46 of file I\+Split\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_split_node_a1ac35da3c288620eadd7276c9772fa28}\label{class_wire_cell_1_1_i_split_node_a1ac35da3c288620eadd7276c9772fa28}} 
+\index{Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}!port\+\_\+helper\+\_\+type@{port\+\_\+helper\+\_\+type}}
+\index{port\+\_\+helper\+\_\+type@{port\+\_\+helper\+\_\+type}!Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}}
+\subsubsection{\texorpdfstring{port\+\_\+helper\+\_\+type}{port\_helper\_type}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Tuple$>$ \\
+typedef \hyperlink{struct_wire_cell_1_1tuple__helper}{tuple\+\_\+helper}$<$Output\+Tuple$>$ \hyperlink{class_wire_cell_1_1_i_split_node}{Wire\+Cell\+::\+I\+Split\+Node}$<$ Input\+Type, Output\+Tuple $>$\+::\hyperlink{class_wire_cell_1_1_i_split_node_a1ac35da3c288620eadd7276c9772fa28}{port\+\_\+helper\+\_\+type}}
+
+
+
+Definition at line 45 of file I\+Split\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_split_node_ae89ad2fc266377589e4041c0cf84b350}\label{class_wire_cell_1_1_i_split_node_ae89ad2fc266377589e4041c0cf84b350}} 
+\index{Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}!````~I\+Split\+Node@{$\sim$\+I\+Split\+Node}}
+\index{````~I\+Split\+Node@{$\sim$\+I\+Split\+Node}!Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Split\+Node()}{~ISplitNode()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Tuple$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_split_node}{Wire\+Cell\+::\+I\+Split\+Node}$<$ Input\+Type, Output\+Tuple $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_i_split_node}{I\+Split\+Node} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 53 of file I\+Split\+Node.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_split_node_a777776f3e11a8fb95c1e8974249a1f8d}\label{class_wire_cell_1_1_i_split_node_a777776f3e11a8fb95c1e8974249a1f8d}} 
+\index{Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}!input\+\_\+types@{input\+\_\+types}}
+\index{input\+\_\+types@{input\+\_\+types}!Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+types()}{input\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Tuple$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_split_node}{Wire\+Cell\+::\+I\+Split\+Node}$<$ Input\+Type, Output\+Tuple $>$\+::input\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_ae13fc140c8e815fac9327dfa5b43f853}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 71 of file I\+Split\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_split_node_a7c33f98661c236a21d093bb40374186b}\label{class_wire_cell_1_1_i_split_node_a7c33f98661c236a21d093bb40374186b}} 
+\index{Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Tuple$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_split_node}{Wire\+Cell\+::\+I\+Split\+Node}$<$ Input\+Type, Output\+Tuple $>$\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::any \&}]{anyin,  }\item[{\hyperlink{class_wire_cell_1_1_i_split_node_base_af68870ead16af4b29a3b0d486f217fe8}{any\+\_\+vector} \&}]{anyout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The calling signature\+: 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_split_node_base_a40983dc11d8835581d0abcd1989cbc44}{Wire\+Cell\+::\+I\+Split\+Node\+Base}.
+
+
+
+Definition at line 55 of file I\+Split\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_split_node_aa0a69c19d5dacc4ebf3c6acec4120933}\label{class_wire_cell_1_1_i_split_node_aa0a69c19d5dacc4ebf3c6acec4120933}} 
+\index{Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Tuple$>$ \\
+virtual bool \hyperlink{class_wire_cell_1_1_i_split_node}{Wire\+Cell\+::\+I\+Split\+Node}$<$ Input\+Type, Output\+Tuple $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_split_node_a270990964b36cf939159efa595779407}{input\+\_\+pointer} \&}]{in,  }\item[{\hyperlink{class_wire_cell_1_1_i_split_node_acd382a6b5a9c3f322943ce2dd66fa7f4}{output\+\_\+tuple\+\_\+type} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_split_node_a924ce0894e2f6dec8fb49b14923df91d}\label{class_wire_cell_1_1_i_split_node_a924ce0894e2f6dec8fb49b14923df91d}} 
+\index{Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}!output\+\_\+types@{output\+\_\+types}}
+\index{output\+\_\+types@{output\+\_\+types}!Wire\+Cell\+::\+I\+Split\+Node@{Wire\+Cell\+::\+I\+Split\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+types()}{output\_types()}}
+{\footnotesize\ttfamily template$<$typename Input\+Type, typename Output\+Tuple$>$ \\
+virtual std\+::vector$<$std\+::string$>$ \hyperlink{class_wire_cell_1_1_i_split_node}{Wire\+Cell\+::\+I\+Split\+Node}$<$ Input\+Type, Output\+Tuple $>$\+::output\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 75 of file I\+Split\+Node.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_split_node_8h}{I\+Split\+Node.\+h}\end{DoxyCompactItemize}

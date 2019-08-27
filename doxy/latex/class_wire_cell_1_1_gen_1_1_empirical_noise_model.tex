@@ -1,0 +1,294 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Empirical\+Noise\+Model Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model}\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+
+
+{\ttfamily \#include $<$Empirical\+Noise\+Model.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Empirical\+Noise\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Empirical\+Noise\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_gen_1_1_empirical_noise_model_1_1_noise_spectrum}{Noise\+Spectrum}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a3478b5daf202fbb7f923664ac21fdeb5}{Empirical\+Noise\+Model} (const std\+::string \&spectra\+\_\+file=\char`\"{}\char`\"{}, const int nsamples=10000, const double period=0.\+5 $\ast$units\+::us, const double wire\+\_\+length\+\_\+scale=1.\+0 $\ast$units\+::cm, const std\+::string anode\+\_\+tn=\char`\"{}Anode\+Plane\char`\"{}, const std\+::string chanstat\+\_\+tn=\char`\"{}Static\+Channel\+Status\char`\"{})
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a4de4558ce8eb7aa69193a315741eadc6}{$\sim$\+Empirical\+Noise\+Model} ()
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_spectrum_a9af7bfed961f49dc8a532fd5d0bf3e6e}{amplitude\+\_\+t} \& \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a9ed3c28256c1c262064c62816b4b225f}{operator()} (int chid) const
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_channel_spectrum}{I\+Channel\+Spectrum}. \end{DoxyCompactList}\item 
+virtual const std\+::vector$<$ float $>$ \& \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a10ae08668a26ca0818608a4d653dea1c}{freq} () const
+\item 
+virtual const double \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a783b81a925de0823c63ade8b242033e8}{gain} (int chid) const
+\item 
+virtual const double \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_ada27f0991c188eb877a6702bb0878805}{shaping\+\_\+time} (int chid) const
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_aa38f65fc1f32c8017f8205b32850074e}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_configurable}{I\+Configurable}. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a683bdf03c14c78ff74b12a844a688c61}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a35db0e36d1426041740535fc2da0b07d}{resample} (\hyperlink{struct_wire_cell_1_1_gen_1_1_empirical_noise_model_1_1_noise_spectrum}{Noise\+Spectrum} \&spectrum) const
+\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_abf5f2823eb9522997306417ddd1d9ca4}{gen\+\_\+elec\+\_\+resp\+\_\+default} ()
+\item 
+\hyperlink{class_wire_cell_1_1_i_channel_spectrum_a9af7bfed961f49dc8a532fd5d0bf3e6e}{amplitude\+\_\+t} \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a5b1d7a97da1b07237cf03b28a2caacdf}{interpolate} (int plane, double wire\+\_\+length) const
+\item 
+int \hyperlink{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a29809eaa37653939840eda3863a66ac5}{get\+\_\+nsamples} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file Empirical\+Noise\+Model.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a3478b5daf202fbb7f923664ac21fdeb5}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a3478b5daf202fbb7f923664ac21fdeb5}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!Empirical\+Noise\+Model@{Empirical\+Noise\+Model}}
+\index{Empirical\+Noise\+Model@{Empirical\+Noise\+Model}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{Empirical\+Noise\+Model()}{EmpiricalNoiseModel()}}
+{\footnotesize\ttfamily Gen\+::\+Empirical\+Noise\+Model\+::\+Empirical\+Noise\+Model (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{spectra\+\_\+file = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const int}]{nsamples = {\ttfamily 10000},  }\item[{const double}]{period = {\ttfamily 0.5$\ast$units\+:\+:us},  }\item[{const double}]{wire\+\_\+length\+\_\+scale = {\ttfamily 1.0$\ast$units\+:\+:cm},  }\item[{const std\+::string}]{anode\+\_\+tn = {\ttfamily \char`\"{}AnodePlane\char`\"{}},  }\item[{const std\+::string}]{chanstat\+\_\+tn = {\ttfamily \char`\"{}StaticChannelStatus\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Empirical\+Noise\+Model.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a3478b5daf202fbb7f923664ac21fdeb5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a4de4558ce8eb7aa69193a315741eadc6}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a4de4558ce8eb7aa69193a315741eadc6}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!````~Empirical\+Noise\+Model@{$\sim$\+Empirical\+Noise\+Model}}
+\index{````~Empirical\+Noise\+Model@{$\sim$\+Empirical\+Noise\+Model}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{$\sim$\+Empirical\+Noise\+Model()}{~EmpiricalNoiseModel()}}
+{\footnotesize\ttfamily Gen\+::\+Empirical\+Noise\+Model\+::$\sim$\+Empirical\+Noise\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 48 of file Empirical\+Noise\+Model.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_aa38f65fc1f32c8017f8205b32850074e}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_aa38f65fc1f32c8017f8205b32850074e}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Empirical\+Noise\+Model\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_configurable}{I\+Configurable}. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 150 of file Empirical\+Noise\+Model.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model_aa38f65fc1f32c8017f8205b32850074e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a683bdf03c14c78ff74b12a844a688c61}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a683bdf03c14c78ff74b12a844a688c61}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Empirical\+Noise\+Model\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+The file holding the spectral data 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 80 of file Empirical\+Noise\+Model.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a10ae08668a26ca0818608a4d653dea1c}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a10ae08668a26ca0818608a4d653dea1c}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!freq@{freq}}
+\index{freq@{freq}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{freq()}{freq()}}
+{\footnotesize\ttfamily const std\+::vector$<$ float $>$ \& Gen\+::\+Empirical\+Noise\+Model\+::freq (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 266 of file Empirical\+Noise\+Model.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a783b81a925de0823c63ade8b242033e8}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a783b81a925de0823c63ade8b242033e8}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!gain@{gain}}
+\index{gain@{gain}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{gain()}{gain()}}
+{\footnotesize\ttfamily const double Gen\+::\+Empirical\+Noise\+Model\+::gain (\begin{DoxyParamCaption}\item[{int}]{chid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 284 of file Empirical\+Noise\+Model.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a783b81a925de0823c63ade8b242033e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_abf5f2823eb9522997306417ddd1d9ca4}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_abf5f2823eb9522997306417ddd1d9ca4}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!gen\+\_\+elec\+\_\+resp\+\_\+default@{gen\+\_\+elec\+\_\+resp\+\_\+default}}
+\index{gen\+\_\+elec\+\_\+resp\+\_\+default@{gen\+\_\+elec\+\_\+resp\+\_\+default}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{gen\+\_\+elec\+\_\+resp\+\_\+default()}{gen\_elec\_resp\_default()}}
+{\footnotesize\ttfamily void Gen\+::\+Empirical\+Noise\+Model\+::gen\+\_\+elec\+\_\+resp\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 52 of file Empirical\+Noise\+Model.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model_abf5f2823eb9522997306417ddd1d9ca4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a29809eaa37653939840eda3863a66ac5}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a29809eaa37653939840eda3863a66ac5}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!get\+\_\+nsamples@{get\+\_\+nsamples}}
+\index{get\+\_\+nsamples@{get\+\_\+nsamples}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{get\+\_\+nsamples()}{get\_nsamples()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model\+::get\+\_\+nsamples (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 87 of file Empirical\+Noise\+Model.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a5b1d7a97da1b07237cf03b28a2caacdf}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a5b1d7a97da1b07237cf03b28a2caacdf}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{interpolate()}{interpolate()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_channel_spectrum_a9af7bfed961f49dc8a532fd5d0bf3e6e}{I\+Channel\+Spectrum\+::amplitude\+\_\+t} Gen\+::\+Empirical\+Noise\+Model\+::interpolate (\begin{DoxyParamCaption}\item[{int}]{plane,  }\item[{double}]{wire\+\_\+length }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 216 of file Empirical\+Noise\+Model.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a5b1d7a97da1b07237cf03b28a2caacdf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a9ed3c28256c1c262064c62816b4b225f}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a9ed3c28256c1c262064c62816b4b225f}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_i_channel_spectrum_a9af7bfed961f49dc8a532fd5d0bf3e6e}{I\+Channel\+Spectrum\+::amplitude\+\_\+t} \& Gen\+::\+Empirical\+Noise\+Model\+::operator() (\begin{DoxyParamCaption}\item[{int}]{chid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_channel_spectrum}{I\+Channel\+Spectrum}. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_spectrum_a587c11bd2e39e3136b1b60268d22bf9f}{Wire\+Cell\+::\+I\+Channel\+Spectrum}.
+
+
+
+Definition at line 295 of file Empirical\+Noise\+Model.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a9ed3c28256c1c262064c62816b4b225f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a35db0e36d1426041740535fc2da0b07d}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a35db0e36d1426041740535fc2da0b07d}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!resample@{resample}}
+\index{resample@{resample}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{resample()}{resample()}}
+{\footnotesize\ttfamily void Gen\+::\+Empirical\+Noise\+Model\+::resample (\begin{DoxyParamCaption}\item[{\hyperlink{struct_wire_cell_1_1_gen_1_1_empirical_noise_model_1_1_noise_spectrum}{Noise\+Spectrum} \&}]{spectrum }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 97 of file Empirical\+Noise\+Model.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a35db0e36d1426041740535fc2da0b07d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model_a35db0e36d1426041740535fc2da0b07d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_empirical_noise_model_ada27f0991c188eb877a6702bb0878805}\label{class_wire_cell_1_1_gen_1_1_empirical_noise_model_ada27f0991c188eb877a6702bb0878805}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}!shaping\+\_\+time@{shaping\+\_\+time}}
+\index{shaping\+\_\+time@{shaping\+\_\+time}!Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model@{Wire\+Cell\+::\+Gen\+::\+Empirical\+Noise\+Model}}
+\subsubsection{\texorpdfstring{shaping\+\_\+time()}{shaping\_time()}}
+{\footnotesize\ttfamily const double Gen\+::\+Empirical\+Noise\+Model\+::shaping\+\_\+time (\begin{DoxyParamCaption}\item[{int}]{chid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 275 of file Empirical\+Noise\+Model.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_empirical_noise_model_ada27f0991c188eb877a6702bb0878805_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_empirical_noise_model_8h}{Empirical\+Noise\+Model.\+h}\item 
+gen/src/\hyperlink{_empirical_noise_model_8cxx}{Empirical\+Noise\+Model.\+cxx}\end{DoxyCompactItemize}

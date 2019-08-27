@@ -1,0 +1,10 @@
+<map id="WireCell::ray_unit" name="WireCell::ray_unit">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_track_depos.html#adae13601f092202fbdc66c3d0be8be8a" title="WireCell::Gen::TrackDepos\l::add_track" alt="" coords="180,9,363,51"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell.html#a8e3ed293f3eefafaec9f8cf97f460a9b" title="WireCell::ray_pitch" alt="" coords="205,78,338,105"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell.html#a5ff051f9db5117e68d6a372ce828a90a" title="WireCell::ray_dist" alt="" coords="208,135,335,162"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_track_depos.html#a0a3e984c40fe60a0b8fbd451091a008b" title="Accept a configuration. " alt="" coords="411,5,593,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_ray_grid_1_1_coordinates.html#a4b9a727396d48768585d9d13916b88c1" title="WireCell::RayGrid::\lCoordinates::Coordinates" alt="" coords="417,71,587,112"/>
+<area shape="rect" id="node7" href="$struct_wire_plane_cache.html#a01c8f094e36bf466517df1b9b4ee071d" title="WirePlaneCache::pitch\l_distance" alt="" coords="424,136,580,177"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_wire_summary.html#ad5b6996523e8d8a98fd0caec607fd9ad" title="WireCell::WireSummary\l::closest" alt="" coords="641,103,804,144"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_wire_summary.html#a61c1c383ee6b110a37609a3d892b01d2" title="WireCell::WireSummary\l::pitch_distance" alt="" coords="641,168,804,209"/>
+</map>

@@ -1,0 +1,216 @@
+\hypertarget{struct_wire_cell_1_1_dfp_graph}{}\section{Wire\+Cell\+:\+:Dfp\+Graph Struct Reference}
+\label{struct_wire_cell_1_1_dfp_graph}\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+
+
+{\ttfamily \#include $<$Dfp\+Graph.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_edge_property}{Edge\+Property}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::adjacency\+\_\+list$<$ boost\+::vecS, boost\+::setS, boost\+::directedS, \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property}, \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_edge_property}{Edge\+Property} $>$ \hyperlink{struct_wire_cell_1_1_dfp_graph_ad5dd2546b355a72f5f24e90a985a45e9}{Graph}
+\item 
+typedef boost\+::graph\+\_\+traits$<$ \hyperlink{struct_wire_cell_1_1_dfp_graph_ad5dd2546b355a72f5f24e90a985a45e9}{Graph} $>$\+::vertex\+\_\+descriptor \hyperlink{struct_wire_cell_1_1_dfp_graph_a2f38c4e60540b0b3e530b7b8588f7725}{Vertex}
+\item 
+typedef boost\+::graph\+\_\+traits$<$ \hyperlink{struct_wire_cell_1_1_dfp_graph_ad5dd2546b355a72f5f24e90a985a45e9}{Graph} $>$\+::edge\+\_\+descriptor \hyperlink{struct_wire_cell_1_1_dfp_graph_af3fc4fb6130bbad095ffe90480d59998}{Edge}
+\item 
+typedef std\+::map$<$ \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property}, \hyperlink{struct_wire_cell_1_1_dfp_graph_a2f38c4e60540b0b3e530b7b8588f7725}{Vertex} $>$ \hyperlink{struct_wire_cell_1_1_dfp_graph_a3908c3dc81685f845df6243825cc6021}{Vertex\+Property\+Map}
+\item 
+typedef std\+::tuple$<$ \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property}, \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property}, \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_edge_property}{Edge\+Property} $>$ \hyperlink{struct_wire_cell_1_1_dfp_graph_a2411a46952a0b08b986e57ce0100ce21}{Connection}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_wire_cell_1_1_dfp_graph_a2f38c4e60540b0b3e530b7b8588f7725}{Vertex} \hyperlink{struct_wire_cell_1_1_dfp_graph_abb2159fd44adc3a08ad127f9ee71c92b}{get\+\_\+add\+\_\+vertex} (const \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property} \&tn)
+\item 
+void \hyperlink{struct_wire_cell_1_1_dfp_graph_aa618fc26a6380c93e382a23c64612e77}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \&cfg)
+\item 
+\hyperlink{struct_wire_cell_1_1_dfp_graph_af3fc4fb6130bbad095ffe90480d59998}{Edge} \hyperlink{struct_wire_cell_1_1_dfp_graph_af4a13a365021fdaf75e8aa699bc7262f}{connect} (const std\+::string \&tail\+\_\+type, const std\+::string \&tail\+\_\+name, int tail\+\_\+port, const std\+::string \&head\+\_\+type, const std\+::string \&head\+\_\+name, int head\+\_\+port)
+\begin{DoxyCompactList}\small\item\em Explicitly connect one edge. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_dfp_graph_a2411a46952a0b08b986e57ce0100ce21}{Connection} $>$ \hyperlink{struct_wire_cell_1_1_dfp_graph_ae88aaad51c4b745653f97e5452048d74}{connections} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_wire_cell_1_1_dfp_graph_ad5dd2546b355a72f5f24e90a985a45e9}{Graph} \hyperlink{struct_wire_cell_1_1_dfp_graph_ab74af213f84aa4a942ec7327c24ac04f}{graph}
+\item 
+\hyperlink{struct_wire_cell_1_1_dfp_graph_a3908c3dc81685f845df6243825cc6021}{Vertex\+Property\+Map} \hyperlink{struct_wire_cell_1_1_dfp_graph_aab5d8374b32287d34d0d7226014f3958}{vertex\+\_\+property\+\_\+map}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Dfp\+Graph.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_a2411a46952a0b08b986e57ce0100ce21}\label{struct_wire_cell_1_1_dfp_graph_a2411a46952a0b08b986e57ce0100ce21}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!Connection@{Connection}}
+\index{Connection@{Connection}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{Connection}{Connection}}
+{\footnotesize\ttfamily typedef std\+::tuple$<$\hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property}, \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property}, \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_edge_property}{Edge\+Property}$>$ \hyperlink{struct_wire_cell_1_1_dfp_graph_a2411a46952a0b08b986e57ce0100ce21}{Wire\+Cell\+::\+Dfp\+Graph\+::\+Connection}}
+
+
+
+Definition at line 50 of file Dfp\+Graph.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_af3fc4fb6130bbad095ffe90480d59998}\label{struct_wire_cell_1_1_dfp_graph_af3fc4fb6130bbad095ffe90480d59998}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!Edge@{Edge}}
+\index{Edge@{Edge}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{Edge}{Edge}}
+{\footnotesize\ttfamily typedef boost\+::graph\+\_\+traits$<$\hyperlink{struct_wire_cell_1_1_dfp_graph_ad5dd2546b355a72f5f24e90a985a45e9}{Graph}$>$\+::edge\+\_\+descriptor \hyperlink{struct_wire_cell_1_1_dfp_graph_af3fc4fb6130bbad095ffe90480d59998}{Wire\+Cell\+::\+Dfp\+Graph\+::\+Edge}}
+
+
+
+Definition at line 46 of file Dfp\+Graph.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_ad5dd2546b355a72f5f24e90a985a45e9}\label{struct_wire_cell_1_1_dfp_graph_ad5dd2546b355a72f5f24e90a985a45e9}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{Graph}{Graph}}
+{\footnotesize\ttfamily typedef boost\+::adjacency\+\_\+list$<$boost\+::vecS, boost\+::setS, boost\+::directedS, \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property}, \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_edge_property}{Edge\+Property}$>$ \hyperlink{struct_wire_cell_1_1_dfp_graph_ad5dd2546b355a72f5f24e90a985a45e9}{Wire\+Cell\+::\+Dfp\+Graph\+::\+Graph}}
+
+
+
+Definition at line 43 of file Dfp\+Graph.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_a2f38c4e60540b0b3e530b7b8588f7725}\label{struct_wire_cell_1_1_dfp_graph_a2f38c4e60540b0b3e530b7b8588f7725}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{Vertex}{Vertex}}
+{\footnotesize\ttfamily typedef boost\+::graph\+\_\+traits$<$\hyperlink{struct_wire_cell_1_1_dfp_graph_ad5dd2546b355a72f5f24e90a985a45e9}{Graph}$>$\+::vertex\+\_\+descriptor \hyperlink{struct_wire_cell_1_1_dfp_graph_a2f38c4e60540b0b3e530b7b8588f7725}{Wire\+Cell\+::\+Dfp\+Graph\+::\+Vertex}}
+
+
+
+Definition at line 45 of file Dfp\+Graph.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_a3908c3dc81685f845df6243825cc6021}\label{struct_wire_cell_1_1_dfp_graph_a3908c3dc81685f845df6243825cc6021}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!Vertex\+Property\+Map@{Vertex\+Property\+Map}}
+\index{Vertex\+Property\+Map@{Vertex\+Property\+Map}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{Vertex\+Property\+Map}{VertexPropertyMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$\hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property}, \hyperlink{struct_wire_cell_1_1_dfp_graph_a2f38c4e60540b0b3e530b7b8588f7725}{Vertex}$>$ \hyperlink{struct_wire_cell_1_1_dfp_graph_a3908c3dc81685f845df6243825cc6021}{Wire\+Cell\+::\+Dfp\+Graph\+::\+Vertex\+Property\+Map}}
+
+
+
+Definition at line 48 of file Dfp\+Graph.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_aa618fc26a6380c93e382a23c64612e77}\label{struct_wire_cell_1_1_dfp_graph_aa618fc26a6380c93e382a23c64612e77}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Dfp\+Graph\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Configuration} \&}]{cfg }\end{DoxyParamCaption})}
+
+Configure with list of connection dictionaries like\+:
+
+\{ \char`\"{}tail\char`\"{}\+: \{\char`\"{}type\char`\"{}\+:\char`\"{}\+Tail\+Type\char`\"{},\char`\"{}name\char`\"{}\+:\char`\"{}tailname\char`\"{}, \char`\"{}port\char`\"{}\+:0\}, \char`\"{}head\char`\"{}\+: \{\char`\"{}type\char`\"{}\+:\char`\"{}\+Head\+Type\char`\"{},\char`\"{}name\char`\"{}\+:\char`\"{}headname\char`\"{}, \char`\"{}port\char`\"{}\+:42\} \},
+
+Only \char`\"{}type\char`\"{} key is required. 
+
+Definition at line 55 of file Dfp\+Graph.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_dfp_graph_aa618fc26a6380c93e382a23c64612e77_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_af4a13a365021fdaf75e8aa699bc7262f}\label{struct_wire_cell_1_1_dfp_graph_af4a13a365021fdaf75e8aa699bc7262f}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!connect@{connect}}
+\index{connect@{connect}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \hyperlink{struct_wire_cell_1_1_dfp_graph_af3fc4fb6130bbad095ffe90480d59998}{Dfp\+Graph\+::\+Edge} Dfp\+Graph\+::connect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tail\+\_\+type,  }\item[{const std\+::string \&}]{tail\+\_\+name,  }\item[{int}]{tail\+\_\+port,  }\item[{const std\+::string \&}]{head\+\_\+type,  }\item[{const std\+::string \&}]{head\+\_\+name,  }\item[{int}]{head\+\_\+port }\end{DoxyParamCaption})}
+
+
+
+Explicitly connect one edge. 
+
+
+
+Definition at line 16 of file Dfp\+Graph.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{struct_wire_cell_1_1_dfp_graph_af4a13a365021fdaf75e8aa699bc7262f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{struct_wire_cell_1_1_dfp_graph_af4a13a365021fdaf75e8aa699bc7262f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_ae88aaad51c4b745653f97e5452048d74}\label{struct_wire_cell_1_1_dfp_graph_ae88aaad51c4b745653f97e5452048d74}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!connections@{connections}}
+\index{connections@{connections}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{connections()}{connections()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{struct_wire_cell_1_1_dfp_graph_a2411a46952a0b08b986e57ce0100ce21}{Dfp\+Graph\+::\+Connection} $>$ Dfp\+Graph\+::connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 32 of file Dfp\+Graph.\+cxx.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_abb2159fd44adc3a08ad127f9ee71c92b}\label{struct_wire_cell_1_1_dfp_graph_abb2159fd44adc3a08ad127f9ee71c92b}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!get\+\_\+add\+\_\+vertex@{get\+\_\+add\+\_\+vertex}}
+\index{get\+\_\+add\+\_\+vertex@{get\+\_\+add\+\_\+vertex}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{get\+\_\+add\+\_\+vertex()}{get\_add\_vertex()}}
+{\footnotesize\ttfamily \hyperlink{struct_wire_cell_1_1_dfp_graph_a2f38c4e60540b0b3e530b7b8588f7725}{Dfp\+Graph\+::\+Vertex} Dfp\+Graph\+::get\+\_\+add\+\_\+vertex (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_dfp_graph_1_1_vertex_property}{Vertex\+Property} \&}]{tn }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file Dfp\+Graph.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_dfp_graph_abb2159fd44adc3a08ad127f9ee71c92b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_ab74af213f84aa4a942ec7327c24ac04f}\label{struct_wire_cell_1_1_dfp_graph_ab74af213f84aa4a942ec7327c24ac04f}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!graph@{graph}}
+\index{graph@{graph}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily \hyperlink{struct_wire_cell_1_1_dfp_graph_ad5dd2546b355a72f5f24e90a985a45e9}{Graph} Wire\+Cell\+::\+Dfp\+Graph\+::graph}
+
+
+
+Definition at line 53 of file Dfp\+Graph.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_dfp_graph_aab5d8374b32287d34d0d7226014f3958}\label{struct_wire_cell_1_1_dfp_graph_aab5d8374b32287d34d0d7226014f3958}} 
+\index{Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}!vertex\+\_\+property\+\_\+map@{vertex\+\_\+property\+\_\+map}}
+\index{vertex\+\_\+property\+\_\+map@{vertex\+\_\+property\+\_\+map}!Wire\+Cell\+::\+Dfp\+Graph@{Wire\+Cell\+::\+Dfp\+Graph}}
+\subsubsection{\texorpdfstring{vertex\+\_\+property\+\_\+map}{vertex\_property\_map}}
+{\footnotesize\ttfamily \hyperlink{struct_wire_cell_1_1_dfp_graph_a3908c3dc81685f845df6243825cc6021}{Vertex\+Property\+Map} Wire\+Cell\+::\+Dfp\+Graph\+::vertex\+\_\+property\+\_\+map}
+
+
+
+Definition at line 54 of file Dfp\+Graph.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_dfp_graph_8h}{Dfp\+Graph.\+h}\item 
+util/src/\hyperlink{_dfp_graph_8cxx}{Dfp\+Graph.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,144 @@
+\hypertarget{class_wire_cell_1_1_exec_mon}{}\section{Wire\+Cell\+:\+:Exec\+Mon Class Reference}
+\label{class_wire_cell_1_1_exec_mon}\index{Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}}
+
+
+{\ttfamily \#include $<$Exec\+Mon.\+h$>$}
+
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Exec\+Mon\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_wire_cell_1_1_exec_mon__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_exec_mon_a1a08950f85d1874aa41ac1231d6e30ca}{Exec\+Mon} (const std\+::string \&msg=\char`\"{}start\char`\"{}, Time\+Keeper\+::ptime starting\+\_\+time=boost\+::posix\+\_\+time\+::microsec\+\_\+clock\+::local\+\_\+time())
+\item 
+\hyperlink{class_wire_cell_1_1_exec_mon_a0a76667527008a5eabb5901af4c88521}{$\sim$\+Exec\+Mon} ()
+\item 
+std\+::string \hyperlink{class_wire_cell_1_1_exec_mon_a5c5ea20b413d06cf43a844ebdb6f847e}{operator()} (std\+::string msg=\char`\"{}$<$tick$>$\char`\"{}, Time\+Keeper\+::ptime now=boost\+::posix\+\_\+time\+::microsec\+\_\+clock\+::local\+\_\+time(), \hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{Mem\+Usage\+::memusage} \hyperlink{class_wire_cell_1_1_exec_mon_a7401839fabb43101f59468d9a1b43864}{mu}=\hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{Mem\+Usage\+::memusage}(-\/1,-\/1))
+\begin{DoxyCompactList}\small\item\em Record an event. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_wire_cell_1_1_exec_mon_ab46d26801f07ff9da1df0fa4c531a97c}{summary} () const
+\begin{DoxyCompactList}\small\item\em Return summary up to now. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_time_keeper}{Time\+Keeper} \hyperlink{class_wire_cell_1_1_exec_mon_abdbaf65a4ec1def3a226c7b94851ed3d}{tk}
+\item 
+\hyperlink{class_wire_cell_1_1_mem_usage}{Mem\+Usage} \hyperlink{class_wire_cell_1_1_exec_mon_a7401839fabb43101f59468d9a1b43864}{mu}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A helper class combining a \hyperlink{class_wire_cell_1_1_time_keeper}{Time\+Keeper} and a \hyperlink{class_wire_cell_1_1_mem_usage}{Mem\+Usage}
+
+Use like
+
+\hyperlink{class_wire_cell_1_1_exec_mon}{Exec\+Mon} em(\char`\"{}starting\char`\"{}); ... em(\char`\"{}starting long calculation....\char`\"{}); do\+\_\+long\+\_\+calculation(); em(\char`\"{}...\+done\char`\"{}); ... info(em.\+summary()); 
+
+Definition at line 21 of file Exec\+Mon.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_exec_mon_a1a08950f85d1874aa41ac1231d6e30ca}\label{class_wire_cell_1_1_exec_mon_a1a08950f85d1874aa41ac1231d6e30ca}} 
+\index{Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}!Exec\+Mon@{Exec\+Mon}}
+\index{Exec\+Mon@{Exec\+Mon}!Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}}
+\subsubsection{\texorpdfstring{Exec\+Mon()}{ExecMon()}}
+{\footnotesize\ttfamily Exec\+Mon\+::\+Exec\+Mon (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg = {\ttfamily \char`\"{}start\char`\"{}},  }\item[{\hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{Time\+Keeper\+::ptime}}]{starting\+\_\+time = {\ttfamily boost\+:\+:posix\+\_\+time\+:\+:microsec\+\_\+clock\+:\+:local\+\_\+time()} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6 of file Exec\+Mon.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_exec_mon_a0a76667527008a5eabb5901af4c88521}\label{class_wire_cell_1_1_exec_mon_a0a76667527008a5eabb5901af4c88521}} 
+\index{Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}!````~Exec\+Mon@{$\sim$\+Exec\+Mon}}
+\index{````~Exec\+Mon@{$\sim$\+Exec\+Mon}!Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}}
+\subsubsection{\texorpdfstring{$\sim$\+Exec\+Mon()}{~ExecMon()}}
+{\footnotesize\ttfamily Exec\+Mon\+::$\sim$\+Exec\+Mon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 10 of file Exec\+Mon.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_exec_mon_a5c5ea20b413d06cf43a844ebdb6f847e}\label{class_wire_cell_1_1_exec_mon_a5c5ea20b413d06cf43a844ebdb6f847e}} 
+\index{Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily std\+::string Exec\+Mon\+::operator() (\begin{DoxyParamCaption}\item[{std\+::string}]{msg = {\ttfamily \char`\"{}$<$tick$>$\char`\"{}},  }\item[{\hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{Time\+Keeper\+::ptime}}]{now = {\ttfamily boost\+:\+:posix\+\_\+time\+:\+:microsec\+\_\+clock\+:\+:local\+\_\+time()},  }\item[{\hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{Mem\+Usage\+::memusage}}]{mu = {\ttfamily \hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{Mem\+Usage\+::memusage}(-\/1,-\/1)} }\end{DoxyParamCaption})}
+
+
+
+Record an event. 
+
+
+
+Definition at line 12 of file Exec\+Mon.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_exec_mon_ab46d26801f07ff9da1df0fa4c531a97c}\label{class_wire_cell_1_1_exec_mon_ab46d26801f07ff9da1df0fa4c531a97c}} 
+\index{Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}!summary@{summary}}
+\index{summary@{summary}!Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}}
+\subsubsection{\texorpdfstring{summary()}{summary()}}
+{\footnotesize\ttfamily std\+::string Exec\+Mon\+::summary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return summary up to now. 
+
+
+
+Definition at line 21 of file Exec\+Mon.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_wire_cell_1_1_exec_mon_ab46d26801f07ff9da1df0fa4c531a97c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_wire_cell_1_1_exec_mon_ab46d26801f07ff9da1df0fa4c531a97c_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_exec_mon_a7401839fabb43101f59468d9a1b43864}\label{class_wire_cell_1_1_exec_mon_a7401839fabb43101f59468d9a1b43864}} 
+\index{Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}!mu@{mu}}
+\index{mu@{mu}!Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}}
+\subsubsection{\texorpdfstring{mu}{mu}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_mem_usage}{Mem\+Usage} Wire\+Cell\+::\+Exec\+Mon\+::mu}
+
+
+
+Definition at line 38 of file Exec\+Mon.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_exec_mon_abdbaf65a4ec1def3a226c7b94851ed3d}\label{class_wire_cell_1_1_exec_mon_abdbaf65a4ec1def3a226c7b94851ed3d}} 
+\index{Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}!tk@{tk}}
+\index{tk@{tk}!Wire\+Cell\+::\+Exec\+Mon@{Wire\+Cell\+::\+Exec\+Mon}}
+\subsubsection{\texorpdfstring{tk}{tk}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_time_keeper}{Time\+Keeper} Wire\+Cell\+::\+Exec\+Mon\+::tk}
+
+
+
+Definition at line 37 of file Exec\+Mon.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_exec_mon_8h}{Exec\+Mon.\+h}\item 
+util/src/\hyperlink{_exec_mon_8cxx}{Exec\+Mon.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,96 @@
+\hypertarget{class_wire_cell_1_1_i_frame_slices}{}\section{Wire\+Cell\+:\+:I\+Frame\+Slices Class Reference}
+\label{class_wire_cell_1_1_i_frame_slices}\index{Wire\+Cell\+::\+I\+Frame\+Slices@{Wire\+Cell\+::\+I\+Frame\+Slices}}
+
+
+{\ttfamily \#include $<$I\+Frame\+Slices.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Frame\+Slices\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_wire_cell_1_1_i_frame_slices__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Frame\+Slices\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_wire_cell_1_1_i_frame_slices__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_frame_slices}{I\+Frame\+Slices} $>$ \hyperlink{class_wire_cell_1_1_i_frame_slices_a07b3528664286368bde54d2db79064e1}{pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_frame_slices_a12596b1638a6a03c13433165d22bb716}{$\sim$\+I\+Frame\+Slices} ()
+\item 
+virtual std\+::string \hyperlink{class_wire_cell_1_1_i_frame_slices_acd57c74cab5f5a7ec99fdd89f2bfdb50}{signature} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A frame slicer conceptually performs a transpose of a frame from being tick-\/major order to being channel-\/major while on the way possibly rebinning the per-\/tick samples by applying some metric function (typically just a sum) and possibly some uncertainty function.
+
+See also \hyperlink{class_wire_cell_1_1_i_slice_frame}{I\+Slice\+Frame} which is a more monolithic but function node. 
+
+Definition at line 19 of file I\+Frame\+Slices.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_frame_slices_a07b3528664286368bde54d2db79064e1}\label{class_wire_cell_1_1_i_frame_slices_a07b3528664286368bde54d2db79064e1}} 
+\index{Wire\+Cell\+::\+I\+Frame\+Slices@{Wire\+Cell\+::\+I\+Frame\+Slices}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Frame\+Slices@{Wire\+Cell\+::\+I\+Frame\+Slices}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_frame_slices}{I\+Frame\+Slices}$>$ \hyperlink{class_wire_cell_1_1_i_frame_slices_a07b3528664286368bde54d2db79064e1}{Wire\+Cell\+::\+I\+Frame\+Slices\+::pointer}}
+
+
+
+Definition at line 22 of file I\+Frame\+Slices.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_frame_slices_a12596b1638a6a03c13433165d22bb716}\label{class_wire_cell_1_1_i_frame_slices_a12596b1638a6a03c13433165d22bb716}} 
+\index{Wire\+Cell\+::\+I\+Frame\+Slices@{Wire\+Cell\+::\+I\+Frame\+Slices}!````~I\+Frame\+Slices@{$\sim$\+I\+Frame\+Slices}}
+\index{````~I\+Frame\+Slices@{$\sim$\+I\+Frame\+Slices}!Wire\+Cell\+::\+I\+Frame\+Slices@{Wire\+Cell\+::\+I\+Frame\+Slices}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Frame\+Slices()}{~IFrameSlices()}}
+{\footnotesize\ttfamily I\+Frame\+Slices\+::$\sim$\+I\+Frame\+Slices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 140 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_frame_slices_acd57c74cab5f5a7ec99fdd89f2bfdb50}\label{class_wire_cell_1_1_i_frame_slices_acd57c74cab5f5a7ec99fdd89f2bfdb50}} 
+\index{Wire\+Cell\+::\+I\+Frame\+Slices@{Wire\+Cell\+::\+I\+Frame\+Slices}!signature@{signature}}
+\index{signature@{signature}!Wire\+Cell\+::\+I\+Frame\+Slices@{Wire\+Cell\+::\+I\+Frame\+Slices}}
+\subsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily virtual std\+::string Wire\+Cell\+::\+I\+Frame\+Slices\+::signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The signature is string unique to all classes that implement a particular calling signature. These should be defined in lower level interfaces such as a mythical I\+My\+Foo\+To\+Bar\+Converter. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_node_a0b0763465adf5ba7febe8e378162b584}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 26 of file I\+Frame\+Slices.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_frame_slices_8h}{I\+Frame\+Slices.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

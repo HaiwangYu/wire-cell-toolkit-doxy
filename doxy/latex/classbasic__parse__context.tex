@@ -1,0 +1,216 @@
+\hypertarget{classbasic__parse__context}{}\section{basic\+\_\+parse\+\_\+context$<$ Char, Error\+Handler $>$ Class Template Reference}
+\label{classbasic__parse__context}\index{basic\+\_\+parse\+\_\+context$<$ Char, Error\+Handler $>$@{basic\+\_\+parse\+\_\+context$<$ Char, Error\+Handler $>$}}
+
+
+{\ttfamily \#include $<$core.\+h$>$}
+
+
+
+Inheritance diagram for basic\+\_\+parse\+\_\+context$<$ Char, Error\+Handler $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classbasic__parse__context__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for basic\+\_\+parse\+\_\+context$<$ Char, Error\+Handler $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classbasic__parse__context__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Char \hyperlink{classbasic__parse__context_a09eb161010dcd5587f3a425a6d6d4524}{char\+\_\+type}
+\item 
+typedef \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$\+::\hyperlink{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}{iterator} \hyperlink{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__parse__context_a623fba02aeaad00d368fd18b61555466}{basic\+\_\+parse\+\_\+context} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ \hyperlink{format_8h_aa2b402011ee0619f2158f13e0827e585}{format\+\_\+str}, Error\+Handler eh=Error\+Handler())
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}{iterator} \hyperlink{classbasic__parse__context_a7310b2c2d78ceba845e0fcc380dc11dd}{begin} () const \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}{iterator} \hyperlink{classbasic__parse__context_a98a62ad72f0a71feb602f74d9e4a2434}{end} () const \hyperlink{core_8h_aef128913e8400683b1cbd1a3a2e11df3}{F\+M\+T\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} void \hyperlink{classbasic__parse__context_ad75183c1c2299c4a34f82265156fe99d}{advance\+\_\+to} (\hyperlink{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}{iterator} it)
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} unsigned \hyperlink{classbasic__parse__context_aff323793124411a7c83d53f3e007b10f}{next\+\_\+arg\+\_\+id} ()
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} bool \hyperlink{classbasic__parse__context_a17562843a84ff128340e4b64fa66911e}{check\+\_\+arg\+\_\+id} (unsigned)
+\item 
+void \hyperlink{classbasic__parse__context_af01556b56c7dd8e4c1c0692687125b96}{check\+\_\+arg\+\_\+id} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$)
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} void \hyperlink{classbasic__parse__context_aaef39fb2abf13cfee75cdc54519c5322}{on\+\_\+error} (const char $\ast$message)
+\item 
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} Error\+Handler \hyperlink{classbasic__parse__context_a3d7ff4e0bfe29c60c028b6d7c3ed1c1c}{error\+\_\+handler} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$\newline
+class basic\+\_\+parse\+\_\+context$<$ Char, Error\+Handler $>$}
+
+
+
+Definition at line 878 of file core.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classbasic__parse__context_a09eb161010dcd5587f3a425a6d6d4524}\label{classbasic__parse__context_a09eb161010dcd5587f3a425a6d6d4524}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!char\+\_\+type@{char\+\_\+type}}
+\index{char\+\_\+type@{char\+\_\+type}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{char\+\_\+type}{char\_type}}
+{\footnotesize\ttfamily template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$ \\
+typedef Char \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::\hyperlink{classbasic__parse__context_a09eb161010dcd5587f3a425a6d6d4524}{char\+\_\+type}}
+
+
+
+Definition at line 884 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}\label{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!iterator@{iterator}}
+\index{iterator@{iterator}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$ \\
+typedef \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$Char$>$\+::\hyperlink{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}{iterator} \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::\hyperlink{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}{iterator}}
+
+
+
+Definition at line 885 of file core.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbasic__parse__context_a623fba02aeaad00d368fd18b61555466}\label{classbasic__parse__context_a623fba02aeaad00d368fd18b61555466}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{basic\+\_\+parse\+\_\+context()}{basic\_parse\_context()}}
+{\footnotesize\ttfamily template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::\hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context} (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{format\+\_\+str,  }\item[{Error\+Handler}]{eh = {\ttfamily ErrorHandler()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 887 of file core.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbasic__parse__context_ad75183c1c2299c4a34f82265156fe99d}\label{classbasic__parse__context_ad75183c1c2299c4a34f82265156fe99d}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!advance\+\_\+to@{advance\+\_\+to}}
+\index{advance\+\_\+to@{advance\+\_\+to}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{advance\+\_\+to()}{advance\_to()}}
+{\footnotesize\ttfamily template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} void \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::advance\+\_\+to (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}{iterator}}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 901 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__parse__context_a7310b2c2d78ceba845e0fcc380dc11dd}\label{classbasic__parse__context_a7310b2c2d78ceba845e0fcc380dc11dd}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!begin@{begin}}
+\index{begin@{begin}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}{iterator} \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 893 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__parse__context_a17562843a84ff128340e4b64fa66911e}\label{classbasic__parse__context_a17562843a84ff128340e4b64fa66911e}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!check\+\_\+arg\+\_\+id@{check\+\_\+arg\+\_\+id}}
+\index{check\+\_\+arg\+\_\+id@{check\+\_\+arg\+\_\+id}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{check\+\_\+arg\+\_\+id()}{check\_arg\_id()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} bool \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::check\+\_\+arg\+\_\+id (\begin{DoxyParamCaption}\item[{unsigned}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 908 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__parse__context_af01556b56c7dd8e4c1c0692687125b96}\label{classbasic__parse__context_af01556b56c7dd8e4c1c0692687125b96}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!check\+\_\+arg\+\_\+id@{check\+\_\+arg\+\_\+id}}
+\index{check\+\_\+arg\+\_\+id@{check\+\_\+arg\+\_\+id}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{check\+\_\+arg\+\_\+id()}{check\_arg\_id()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$ \\
+void \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::check\+\_\+arg\+\_\+id (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 916 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__parse__context_a98a62ad72f0a71feb602f74d9e4a2434}\label{classbasic__parse__context_a98a62ad72f0a71feb602f74d9e4a2434}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!end@{end}}
+\index{end@{end}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} \hyperlink{classbasic__parse__context_ac3ff96575e89371a99076d8e84dbdbee}{iterator} \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 898 of file core.\+h.
+
+\mbox{\Hypertarget{classbasic__parse__context_a3d7ff4e0bfe29c60c028b6d7c3ed1c1c}\label{classbasic__parse__context_a3d7ff4e0bfe29c60c028b6d7c3ed1c1c}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!error\+\_\+handler@{error\+\_\+handler}}
+\index{error\+\_\+handler@{error\+\_\+handler}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{error\+\_\+handler()}{error\_handler()}}
+{\footnotesize\ttfamily template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} Error\+Handler \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::error\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 922 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classbasic__parse__context_a3d7ff4e0bfe29c60c028b6d7c3ed1c1c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbasic__parse__context_aff323793124411a7c83d53f3e007b10f}\label{classbasic__parse__context_aff323793124411a7c83d53f3e007b10f}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!next\+\_\+arg\+\_\+id@{next\+\_\+arg\+\_\+id}}
+\index{next\+\_\+arg\+\_\+id@{next\+\_\+arg\+\_\+id}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{next\+\_\+arg\+\_\+id()}{next\_arg\_id()}}
+{\footnotesize\ttfamily template$<$typename Char , typename Error\+Handler $>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} unsigned \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::next\+\_\+arg\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1118 of file format.\+h.
+
+\mbox{\Hypertarget{classbasic__parse__context_aaef39fb2abf13cfee75cdc54519c5322}\label{classbasic__parse__context_aaef39fb2abf13cfee75cdc54519c5322}} 
+\index{basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}!on\+\_\+error@{on\+\_\+error}}
+\index{on\+\_\+error@{on\+\_\+error}!basic\+\_\+parse\+\_\+context@{basic\+\_\+parse\+\_\+context}}
+\subsubsection{\texorpdfstring{on\+\_\+error()}{on\_error()}}
+{\footnotesize\ttfamily template$<$typename Char, typename Error\+Handler = internal\+::error\+\_\+handler$>$ \\
+\hyperlink{core_8h_a69201cb276383873487bf68b4ef8b4cd}{F\+M\+T\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR} void \hyperlink{classbasic__parse__context}{basic\+\_\+parse\+\_\+context}$<$ Char, Error\+Handler $>$\+::on\+\_\+error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 918 of file core.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classbasic__parse__context_aaef39fb2abf13cfee75cdc54519c5322_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{core_8h}{core.\+h}\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{format_8h}{format.\+h}\end{DoxyCompactItemize}

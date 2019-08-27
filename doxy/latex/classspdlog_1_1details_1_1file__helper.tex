@@ -1,0 +1,316 @@
+\hypertarget{classspdlog_1_1details_1_1file__helper}{}\section{spdlog\+:\+:details\+:\+:file\+\_\+helper Class Reference}
+\label{classspdlog_1_1details_1_1file__helper}\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+
+
+{\ttfamily \#include $<$file\+\_\+helper.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1details_1_1file__helper_aa11a5129c9d7492638a68d849d66d47d}{file\+\_\+helper} ()=default
+\item 
+\hyperlink{classspdlog_1_1details_1_1file__helper_ab68b7720555f7656a8f387f8e0dcb37d}{file\+\_\+helper} (const \hyperlink{classspdlog_1_1details_1_1file__helper}{file\+\_\+helper} \&)=delete
+\item 
+\hyperlink{classspdlog_1_1details_1_1file__helper}{file\+\_\+helper} \& \hyperlink{classspdlog_1_1details_1_1file__helper_a7c7314360e404efa02326feb7aa98442}{operator=} (const \hyperlink{classspdlog_1_1details_1_1file__helper}{file\+\_\+helper} \&)=delete
+\item 
+\hyperlink{classspdlog_1_1details_1_1file__helper_aad84ef5f999c2721a0a8ad36ce641e8c}{$\sim$file\+\_\+helper} ()
+\item 
+void \hyperlink{classspdlog_1_1details_1_1file__helper_a8612066fd098080cc60e3aefed6a6085}{open} (const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&fname, bool truncate=false)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1file__helper_a21c688da7f241c53871b462c3a5c2c94}{reopen} (bool truncate)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1file__helper_a1a75f29ec0c13d9fbc269bcd8378b18b}{flush} ()
+\item 
+void \hyperlink{classspdlog_1_1details_1_1file__helper_a6a6d7a75014ae880857b4fe4fd01dc7a}{close} ()
+\item 
+void \hyperlink{classspdlog_1_1details_1_1file__helper_a51eb58a2d46f1896f3ab7b9d323d97ae}{write} (const \hyperlink{format_8h_a21cbf729f69302f578e6db21c5e9e0d2}{fmt\+::memory\+\_\+buffer} \&buf)
+\item 
+size\+\_\+t \hyperlink{classspdlog_1_1details_1_1file__helper_ae945d9701134218c2d0558958e9d1cf2}{size} () const
+\item 
+const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \& \hyperlink{classspdlog_1_1details_1_1file__helper_a76610058a1769b25bd6ed52a1443b552}{filename} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classspdlog_1_1details_1_1file__helper_a8c5f69588e8a54f436c3565317c233bd}{file\+\_\+exists} (const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&fname)
+\item 
+static std\+::tuple$<$ \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t}, \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} $>$ \hyperlink{classspdlog_1_1details_1_1file__helper_a28d87e3f42c52a12c95af0558aca66f2}{split\+\_\+by\+\_\+extension} (const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{spdlog\+::filename\+\_\+t} \&fname)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classspdlog_1_1details_1_1file__helper_a22be952a421d866566eed3a5ce201144}{open\+\_\+tries} = 5
+\item 
+const int \hyperlink{classspdlog_1_1details_1_1file__helper_aea72ea8d655bb11f19dbe48477e6c8b3}{open\+\_\+interval} = 10
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 25 of file file\+\_\+helper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_aa11a5129c9d7492638a68d849d66d47d}\label{classspdlog_1_1details_1_1file__helper_aa11a5129c9d7492638a68d849d66d47d}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!file\+\_\+helper@{file\+\_\+helper}}
+\index{file\+\_\+helper@{file\+\_\+helper}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{file\+\_\+helper()}{file\_helper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily spdlog\+::details\+::file\+\_\+helper\+::file\+\_\+helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_ab68b7720555f7656a8f387f8e0dcb37d}\label{classspdlog_1_1details_1_1file__helper_ab68b7720555f7656a8f387f8e0dcb37d}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!file\+\_\+helper@{file\+\_\+helper}}
+\index{file\+\_\+helper@{file\+\_\+helper}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{file\+\_\+helper()}{file\_helper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily spdlog\+::details\+::file\+\_\+helper\+::file\+\_\+helper (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1details_1_1file__helper}{file\+\_\+helper} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_aad84ef5f999c2721a0a8ad36ce641e8c}\label{classspdlog_1_1details_1_1file__helper_aad84ef5f999c2721a0a8ad36ce641e8c}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!````~file\+\_\+helper@{$\sim$file\+\_\+helper}}
+\index{````~file\+\_\+helper@{$\sim$file\+\_\+helper}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{$\sim$file\+\_\+helper()}{~file\_helper()}}
+{\footnotesize\ttfamily spdlog\+::details\+::file\+\_\+helper\+::$\sim$file\+\_\+helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file file\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classspdlog_1_1details_1_1file__helper_aad84ef5f999c2721a0a8ad36ce641e8c_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_a6a6d7a75014ae880857b4fe4fd01dc7a}\label{classspdlog_1_1details_1_1file__helper_a6a6d7a75014ae880857b4fe4fd01dc7a}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!close@{close}}
+\index{close@{close}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::file\+\_\+helper\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file file\+\_\+helper.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1file__helper_a6a6d7a75014ae880857b4fe4fd01dc7a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_a8c5f69588e8a54f436c3565317c233bd}\label{classspdlog_1_1details_1_1file__helper_a8c5f69588e8a54f436c3565317c233bd}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!file\+\_\+exists@{file\+\_\+exists}}
+\index{file\+\_\+exists@{file\+\_\+exists}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{file\+\_\+exists()}{file\_exists()}}
+{\footnotesize\ttfamily static bool spdlog\+::details\+::file\+\_\+helper\+::file\+\_\+exists (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 107 of file file\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classspdlog_1_1details_1_1file__helper_a8c5f69588e8a54f436c3565317c233bd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classspdlog_1_1details_1_1file__helper_a8c5f69588e8a54f436c3565317c233bd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_a76610058a1769b25bd6ed52a1443b552}\label{classspdlog_1_1details_1_1file__helper_a76610058a1769b25bd6ed52a1443b552}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!filename@{filename}}
+\index{filename@{filename}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t}\& spdlog\+::details\+::file\+\_\+helper\+::filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 102 of file file\+\_\+helper.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_a1a75f29ec0c13d9fbc269bcd8378b18b}\label{classspdlog_1_1details_1_1file__helper_a1a75f29ec0c13d9fbc269bcd8378b18b}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!flush@{flush}}
+\index{flush@{flush}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::file\+\_\+helper\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 69 of file file\+\_\+helper.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classspdlog_1_1details_1_1file__helper_a1a75f29ec0c13d9fbc269bcd8378b18b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_a8612066fd098080cc60e3aefed6a6085}\label{classspdlog_1_1details_1_1file__helper_a8612066fd098080cc60e3aefed6a6085}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!open@{open}}
+\index{open@{open}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::file\+\_\+helper\+::open (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{fname,  }\item[{bool}]{truncate = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file file\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1file__helper_a8612066fd098080cc60e3aefed6a6085_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1file__helper_a8612066fd098080cc60e3aefed6a6085_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_a7c7314360e404efa02326feb7aa98442}\label{classspdlog_1_1details_1_1file__helper_a7c7314360e404efa02326feb7aa98442}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!operator=@{operator=}}
+\index{operator=@{operator=}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classspdlog_1_1details_1_1file__helper}{file\+\_\+helper}\& spdlog\+::details\+::file\+\_\+helper\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1details_1_1file__helper}{file\+\_\+helper} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_a21c688da7f241c53871b462c3a5c2c94}\label{classspdlog_1_1details_1_1file__helper_a21c688da7f241c53871b462c3a5c2c94}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!reopen@{reopen}}
+\index{reopen@{reopen}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{reopen()}{reopen()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::file\+\_\+helper\+::reopen (\begin{DoxyParamCaption}\item[{bool}]{truncate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file file\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1file__helper_a21c688da7f241c53871b462c3a5c2c94_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classspdlog_1_1details_1_1file__helper_a21c688da7f241c53871b462c3a5c2c94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_ae945d9701134218c2d0558958e9d1cf2}\label{classspdlog_1_1details_1_1file__helper_ae945d9701134218c2d0558958e9d1cf2}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!size@{size}}
+\index{size@{size}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t spdlog\+::details\+::file\+\_\+helper\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 93 of file file\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classspdlog_1_1details_1_1file__helper_ae945d9701134218c2d0558958e9d1cf2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1file__helper_ae945d9701134218c2d0558958e9d1cf2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_a28d87e3f42c52a12c95af0558aca66f2}\label{classspdlog_1_1details_1_1file__helper_a28d87e3f42c52a12c95af0558aca66f2}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!split\+\_\+by\+\_\+extension@{split\+\_\+by\+\_\+extension}}
+\index{split\+\_\+by\+\_\+extension@{split\+\_\+by\+\_\+extension}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{split\+\_\+by\+\_\+extension()}{split\_by\_extension()}}
+{\footnotesize\ttfamily static std\+::tuple$<$\hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t}, \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t}$>$ spdlog\+::details\+::file\+\_\+helper\+::split\+\_\+by\+\_\+extension (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{spdlog\+::filename\+\_\+t} \&}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 125 of file file\+\_\+helper.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1file__helper_a28d87e3f42c52a12c95af0558aca66f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_a51eb58a2d46f1896f3ab7b9d323d97ae}\label{classspdlog_1_1details_1_1file__helper_a51eb58a2d46f1896f3ab7b9d323d97ae}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!write@{write}}
+\index{write@{write}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::file\+\_\+helper\+::write (\begin{DoxyParamCaption}\item[{const \hyperlink{format_8h_a21cbf729f69302f578e6db21c5e9e0d2}{fmt\+::memory\+\_\+buffer} \&}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 83 of file file\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classspdlog_1_1details_1_1file__helper_a51eb58a2d46f1896f3ab7b9d323d97ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classspdlog_1_1details_1_1file__helper_a51eb58a2d46f1896f3ab7b9d323d97ae_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_aea72ea8d655bb11f19dbe48477e6c8b3}\label{classspdlog_1_1details_1_1file__helper_aea72ea8d655bb11f19dbe48477e6c8b3}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!open\+\_\+interval@{open\+\_\+interval}}
+\index{open\+\_\+interval@{open\+\_\+interval}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{open\+\_\+interval}{open\_interval}}
+{\footnotesize\ttfamily const int spdlog\+::details\+::file\+\_\+helper\+::open\+\_\+interval = 10}
+
+
+
+Definition at line 30 of file file\+\_\+helper.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1details_1_1file__helper_a22be952a421d866566eed3a5ce201144}\label{classspdlog_1_1details_1_1file__helper_a22be952a421d866566eed3a5ce201144}} 
+\index{spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}!open\+\_\+tries@{open\+\_\+tries}}
+\index{open\+\_\+tries@{open\+\_\+tries}!spdlog\+::details\+::file\+\_\+helper@{spdlog\+::details\+::file\+\_\+helper}}
+\subsubsection{\texorpdfstring{open\+\_\+tries}{open\_tries}}
+{\footnotesize\ttfamily const int spdlog\+::details\+::file\+\_\+helper\+::open\+\_\+tries = 5}
+
+
+
+Definition at line 29 of file file\+\_\+helper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/details/\hyperlink{file__helper_8h}{file\+\_\+helper.\+h}\end{DoxyCompactItemize}

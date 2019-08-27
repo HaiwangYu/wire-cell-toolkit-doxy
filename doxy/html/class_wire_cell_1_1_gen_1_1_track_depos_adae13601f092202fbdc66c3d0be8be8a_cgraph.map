@@ -1,0 +1,8 @@
+<map id="WireCell::Gen::TrackDepos::add_track" name="WireCell::Gen::TrackDepos::add_track">
+<area shape="rect" id="node2" href="$namespace_wire_cell.html#a15976410f167da6dd279a8facf3218df" title="WireCell::ray_unit" alt="" coords="258,35,385,61"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell.html#a078ec264f4f9f82fe3e6ba21b2108d00" title="WireCell::ray_length" alt="" coords="251,85,391,112"/>
+<area shape="rect" id="node6" href="$namespacespdlog_1_1details_1_1os.html#ab86a7d9f1495a0edae71ce647bae6a66" title="spdlog::details::os::now" alt="" coords="241,136,401,163"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell.html#a294987a743cfdf49097f1215ac70ab66" title="Compare two IDepo::pointer by time (ascending). x is used to break tie. " alt="" coords="236,187,407,213"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell.html#a3e825e090f86eed7647960e8e611a144" title="WireCell::ray_vector" alt="" coords="455,5,596,32"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_d3_vector.html#a9cff9bf6015c3f7742d4fae7aac7c4a5" title="Return a normalized vector in the direction of this vector. " alt="" coords="458,57,593,98"/>
+</map>

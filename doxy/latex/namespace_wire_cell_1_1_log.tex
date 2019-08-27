@@ -1,0 +1,194 @@
+\hypertarget{namespace_wire_cell_1_1_log}{}\section{Wire\+Cell\+:\+:Log Namespace Reference}
+\label{namespace_wire_cell_1_1_log}\index{Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1logger}{spdlog\+::logger} $>$ \hyperlink{namespace_wire_cell_1_1_log_a5147137d4bcdf4d35c235c5c1ec1495f}{logptr\+\_\+t}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1sinks_1_1sink}{spdlog\+::sinks\+::sink} $>$ \hyperlink{namespace_wire_cell_1_1_log_abee3220a6c332928df3d1583550c6e22}{sinkptr\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_adbf98ba02ee62812b211ede24464c91c}{add\+\_\+sink} (\hyperlink{namespace_wire_cell_1_1_log_abee3220a6c332928df3d1583550c6e22}{sinkptr\+\_\+t} sink, std\+::string level=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_a2b30e7b1375fa3fdb23be092fe116cfb}{add\+\_\+file} (std\+::string filename, std\+::string level=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_a417843ceafbe08958ee4d72acf1732d0}{add\+\_\+stdout} (bool \hyperlink{color_8h_a80d1dc5f416b97f92939a4166d41203c}{color}=true, std\+::string level=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_a01ca295ba785cd50c408dc064404949c}{add\+\_\+stderr} (bool \hyperlink{color_8h_a80d1dc5f416b97f92939a4166d41203c}{color}=true, std\+::string level=\char`\"{}\char`\"{})
+\item 
+\hyperlink{namespace_wire_cell_1_1_log_a5147137d4bcdf4d35c235c5c1ec1495f}{logptr\+\_\+t} \hyperlink{namespace_wire_cell_1_1_log_a7675bcc4bf25b2bc66314d5c096cf676}{logger} (std\+::string name)
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_af453ddce8d810f730dca72024376727e}{set\+\_\+level} (std\+::string level, std\+::string which=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{namespace_wire_cell_1_1_log_accaf0fe0149777811d7c5a648fe3f5e4}{set\+\_\+pattern} (std\+::string pattern, std\+::string which=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_log_a5147137d4bcdf4d35c235c5c1ec1495f}\label{namespace_wire_cell_1_1_log_a5147137d4bcdf4d35c235c5c1ec1495f}} 
+\index{Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}!logptr\+\_\+t@{logptr\+\_\+t}}
+\index{logptr\+\_\+t@{logptr\+\_\+t}!Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}}
+\subsubsection{\texorpdfstring{logptr\+\_\+t}{logptr\_t}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1logger}{spdlog\+::logger}$>$ \hyperlink{namespace_wire_cell_1_1_log_a5147137d4bcdf4d35c235c5c1ec1495f}{Wire\+Cell\+::\+Log\+::logptr\+\_\+t}}
+
+
+
+Definition at line 24 of file Logging.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_log_abee3220a6c332928df3d1583550c6e22}\label{namespace_wire_cell_1_1_log_abee3220a6c332928df3d1583550c6e22}} 
+\index{Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}!sinkptr\+\_\+t@{sinkptr\+\_\+t}}
+\index{sinkptr\+\_\+t@{sinkptr\+\_\+t}!Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}}
+\subsubsection{\texorpdfstring{sinkptr\+\_\+t}{sinkptr\_t}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1sinks_1_1sink}{spdlog\+::sinks\+::sink}$>$ \hyperlink{namespace_wire_cell_1_1_log_abee3220a6c332928df3d1583550c6e22}{Wire\+Cell\+::\+Log\+::sinkptr\+\_\+t}}
+
+
+
+Definition at line 25 of file Logging.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_log_a2b30e7b1375fa3fdb23be092fe116cfb}\label{namespace_wire_cell_1_1_log_a2b30e7b1375fa3fdb23be092fe116cfb}} 
+\index{Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}!add\+\_\+file@{add\+\_\+file}}
+\index{add\+\_\+file@{add\+\_\+file}!Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}}
+\subsubsection{\texorpdfstring{add\+\_\+file()}{add\_file()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Log\+::add\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{filename,  }\item[{std\+::string}]{level = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Logging.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_log_a2b30e7b1375fa3fdb23be092fe116cfb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_log_adbf98ba02ee62812b211ede24464c91c}\label{namespace_wire_cell_1_1_log_adbf98ba02ee62812b211ede24464c91c}} 
+\index{Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}!add\+\_\+sink@{add\+\_\+sink}}
+\index{add\+\_\+sink@{add\+\_\+sink}!Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}}
+\subsubsection{\texorpdfstring{add\+\_\+sink()}{add\_sink()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Log\+::add\+\_\+sink (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_log_abee3220a6c332928df3d1583550c6e22}{Log\+::sinkptr\+\_\+t}}]{sink,  }\item[{std\+::string}]{level = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file Logging.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_log_adbf98ba02ee62812b211ede24464c91c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_log_a01ca295ba785cd50c408dc064404949c}\label{namespace_wire_cell_1_1_log_a01ca295ba785cd50c408dc064404949c}} 
+\index{Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}!add\+\_\+stderr@{add\+\_\+stderr}}
+\index{add\+\_\+stderr@{add\+\_\+stderr}!Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}}
+\subsubsection{\texorpdfstring{add\+\_\+stderr()}{add\_stderr()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Log\+::add\+\_\+stderr (\begin{DoxyParamCaption}\item[{bool}]{color = {\ttfamily true},  }\item[{std\+::string}]{level = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file Logging.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_log_a01ca295ba785cd50c408dc064404949c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_log_a417843ceafbe08958ee4d72acf1732d0}\label{namespace_wire_cell_1_1_log_a417843ceafbe08958ee4d72acf1732d0}} 
+\index{Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}!add\+\_\+stdout@{add\+\_\+stdout}}
+\index{add\+\_\+stdout@{add\+\_\+stdout}!Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}}
+\subsubsection{\texorpdfstring{add\+\_\+stdout()}{add\_stdout()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Log\+::add\+\_\+stdout (\begin{DoxyParamCaption}\item[{bool}]{color = {\ttfamily true},  }\item[{std\+::string}]{level = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file Logging.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_log_a417843ceafbe08958ee4d72acf1732d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_log_a7675bcc4bf25b2bc66314d5c096cf676}\label{namespace_wire_cell_1_1_log_a7675bcc4bf25b2bc66314d5c096cf676}} 
+\index{Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}!logger@{logger}}
+\index{logger@{logger}!Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}}
+\subsubsection{\texorpdfstring{logger()}{logger()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_log_a5147137d4bcdf4d35c235c5c1ec1495f}{Log\+::logptr\+\_\+t} Wire\+Cell\+::\+Log\+::logger (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file Logging.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_log_a7675bcc4bf25b2bc66314d5c096cf676_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_log_af453ddce8d810f730dca72024376727e}\label{namespace_wire_cell_1_1_log_af453ddce8d810f730dca72024376727e}} 
+\index{Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}!set\+\_\+level@{set\+\_\+level}}
+\index{set\+\_\+level@{set\+\_\+level}!Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}}
+\subsubsection{\texorpdfstring{set\+\_\+level()}{set\_level()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Log\+::set\+\_\+level (\begin{DoxyParamCaption}\item[{std\+::string}]{level,  }\item[{std\+::string}]{which = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file Logging.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_log_af453ddce8d810f730dca72024376727e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_log_af453ddce8d810f730dca72024376727e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_log_accaf0fe0149777811d7c5a648fe3f5e4}\label{namespace_wire_cell_1_1_log_accaf0fe0149777811d7c5a648fe3f5e4}} 
+\index{Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}!set\+\_\+pattern@{set\+\_\+pattern}}
+\index{set\+\_\+pattern@{set\+\_\+pattern}!Wire\+Cell\+::\+Log@{Wire\+Cell\+::\+Log}}
+\subsubsection{\texorpdfstring{set\+\_\+pattern()}{set\_pattern()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Log\+::set\+\_\+pattern (\begin{DoxyParamCaption}\item[{std\+::string}]{pattern,  }\item[{std\+::string}]{which = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file Logging.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_log_accaf0fe0149777811d7c5a648fe3f5e4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{namespace_wire_cell_1_1_log_accaf0fe0149777811d7c5a648fe3f5e4_icgraph}
+\end{center}
+\end{figure}

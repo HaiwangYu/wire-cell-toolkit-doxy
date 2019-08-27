@@ -1,0 +1,42 @@
+<map id="internal::basic_buffer::size" name="internal::basic_buffer::size">
+<area shape="rect" id="node2" href="$structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a8e85fb782f4dddcd3cb1fa207f2dd48c" title="formatter\&lt; std::chrono\l::duration\&lt; Rep, Period\l \&gt;, Char \&gt;::format" alt="" coords="213,5,370,61"/>
+<area shape="rect" id="node3" href="$namespace_f_m_t___b_e_g_i_n___n_a_m_e_s_p_a_c_e.html#a9a8134e5f6a1fb2e4fca1b8efdbb3927" title="FMT_BEGIN_NAMESPACE\l::report_error" alt="" coords="196,137,387,178"/>
+<area shape="rect" id="node5" href="$structfloat__spec__handler.html#ae7ee9d59f1624b0cc52fe767a5ef96bf" title="float_spec_handler\l::on_error" alt="" coords="951,133,1082,174"/>
+<area shape="rect" id="node6" href="$structinternal_1_1prettify__handler.html#a96f87d5af83e2986ccff6090aba6e228" title="internal::prettify\l_handler::~prettify\l_handler" alt="" coords="228,876,355,932"/>
+<area shape="rect" id="node7" href="$format_8h.html#ac99badb700e346dd1c86629e4e3b900d" title="format_system_error" alt="" coords="220,339,363,365"/>
+<area shape="rect" id="node11" href="$format-inl_8h.html#a9d834f6ef5c0553b6c434f8d9ac105bf" title="vprint" alt="" coords="264,825,319,852"/>
+<area shape="rect" id="node20" href="$structformatter_3_01_t_00_01_char_00_01typename_01std_1_1enable__if_3_01internal_1_1is__streamabdfe791f5d6e0a8acd43f884d0761b8af.html#ae9b195822bae194b4006b061c16eaa0a" title="formatter\&lt; T, Char,\l typename std::enable\l_if\&lt; internal::is_streamable\l\&lt; T, Char \&gt;::value &amp;&amp;!internal\l::format_type\&lt; typename buffer\l_context\&lt; Char \&gt;::type, T \&gt;::value\l \&gt;::type \&gt;::format" alt="" coords="653,455,877,569"/>
+<area shape="rect" id="node25" href="$classbasic__memory__buffer.html#a05e9c75571c728ebcf299c6670f12569" title="basic_memory_buffer\l\&lt; Char \&gt;::~basic_memory\l_buffer" alt="" coords="204,956,379,1012"/>
+<area shape="rect" id="node26" href="$format_8h.html#aaf17bd2981e8aaf621b4fb6d1b9f0093" title="to_string" alt="" coords="255,1036,327,1063"/>
+<area shape="rect" id="node27" href="$namespaceinternal.html#a1d6eb1d297ebb5fc0f724732f23b22eb" title="internal::write" alt="" coords="241,775,341,801"/>
+<area shape="rect" id="node37" href="$namespaceinternal.html#a1be3f9974ada7afa2fc121fd6cf13521" title="internal::format_value" alt="" coords="218,499,365,525"/>
+<area shape="rect" id="node39" href="$printf_8h.html#a8e76ca41df7c4f7dc305be2db6dbe298" title="vfprintf" alt="" coords="260,600,323,627"/>
+<area shape="rect" id="node41" href="$structformatter_3_01std_1_1tm_00_01_char_01_4.html#ab9ede05d9788f38bfc435af29d7fefe0" title="formatter\&lt; std::tm,\l Char \&gt;::format" alt="" coords="226,1087,357,1129"/>
+<area shape="rect" id="node4" href="$format_8h.html#aa87a526a913eeaf54e8d7b16020c8174" title="report_system_error" alt="" coords="451,140,589,167"/>
+<area shape="rect" id="node8" href="$classspdlog_1_1spdlog__ex.html#a0758933dd1e6c4c8e76bb8e7134f7d9b" title="spdlog::spdlog_ex::\lspdlog_ex" alt="" coords="453,242,587,283"/>
+<area shape="rect" id="node9" href="$namespaceinternal.html#a0eb92e21789faf5174aa9bb86bb78539" title="internal::thousands\l_sep_impl" alt="" coords="454,331,586,373"/>
+<area shape="rect" id="node10" href="$classsystem__error.html#a9c095f54f80c8393f6bf24eb9d188ec4" title="system_error::error_code" alt="" coords="437,397,603,424"/>
+<area shape="rect" id="node12" href="$core_8h.html#ae4af59c87c10d9a8d3ebd3eb455a25c1" title="format" alt="" coords="491,1233,549,1260"/>
+<area shape="rect" id="node23" href="$core_8h.html#a2f34cff9937acb3ac6a983ba6108b5b9" title="FMT_ENABLE_IF_T" alt="" coords="449,1132,591,1159"/>
+<area shape="rect" id="node24" href="$format-inl_8h.html#a77fcf4959d4c69c3800b759696f37248" title="vprint" alt="" coords="493,1183,547,1209"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a2d1c7a1dded73fe3b51cbcfb8d9e0e04" title="Accept a configuration. " alt="" coords="674,1113,857,1154"/>
+<area shape="rect" id="node15" href="$classspdlog_1_1logger.html#a3c5140393ec153b2b8478361aac80eb6" title="spdlog::logger::critical" alt="" coords="691,1179,840,1205"/>
+<area shape="rect" id="node16" href="$classspdlog_1_1details_1_1flag__formatter.html#a7f775ab8ad4027546c3490f2f299bf43" title="spdlog::details::flag\l_formatter::flag_formatter" alt="" coords="681,1230,850,1271"/>
+<area shape="rect" id="node17" href="$namespaceinternal.html#a13d861df4fe01615dc7cb28d77e839e4" title="internal::sprintf_format" alt="" coords="689,1061,841,1088"/>
+<area shape="rect" id="node19" href="$structformatter_3_01arg__join_3_01_it_00_01_char_01_4_00_01_char_01_4.html#ae0c4a217ef67f0a573d1c4fd9bfe0472" title="formatter\&lt; arg_join\l\&lt; It, Char \&gt;, Char \&gt;\l::format" alt="" coords="696,1296,835,1352"/>
+<area shape="rect" id="node21" href="$classbasic__printf__context.html#ae71967bec500702473ba5b98d4e36aa2" title="basic_printf_context\l::basic_printf_context" alt="" coords="692,1377,839,1418"/>
+<area shape="rect" id="node22" href="$printf_8h.html#aedcc5ecc2ec86bfe7affa306aae393b6" title="FMT_ENABLE_IF_T" alt="" coords="694,1011,837,1037"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a41df48506ad084531fa7ac376f454894" title="WireCell::Gen::AnodePlane\l::~AnodePlane" alt="" coords="925,1113,1108,1154"/>
+<area shape="rect" id="node18" href="$namespaceinternal.html#aa6ca58c625a66aa96f3839eb3bfe2f6e" title="internal::grisu2_format" alt="" coords="941,1061,1092,1088"/>
+<area shape="rect" id="node28" href="$structinternal_1_1chrono__formatter.html#a5c9271dd72f0802191c6adfaeae8a1dc" title="internal::chrono_formatter\l::on_24_hour_time" alt="" coords="435,702,605,743"/>
+<area shape="rect" id="node29" href="$structinternal_1_1chrono__formatter.html#a578e890af81d7ea6c4c3dcb64ba2e8e2" title="internal::chrono_formatter\l::on_iso_time" alt="" coords="435,767,605,809"/>
+<area shape="rect" id="node30" href="$classinternal_1_1arg__formatter__base.html#a7cf58948dafdb66e977cfadb03176de5" title="internal::arg_formatter\l_base::operator()" alt="" coords="445,833,595,874"/>
+<area shape="rect" id="node31" href="$namespaceinternal.html#a47fffd25c13670b8e2eb6559caeef974" title="internal::parse_format\l_string" alt="" coords="446,898,594,939"/>
+<area shape="rect" id="node32" href="$ostream_8h.html#a928c1e51eee22713de6b27dada091c40" title="vprint" alt="" coords="493,964,547,991"/>
+<area shape="rect" id="node34" href="$classfile.html#a14a03f1516c926cc0785728ebad4175c" title="file::descriptor" alt="" coords="468,1015,572,1041"/>
+<area shape="rect" id="node35" href="$classprintf__arg__formatter.html#adf72c691ec2561e444ac9520cc158243" title="printf_arg_formatter\l::operator()" alt="" coords="453,1066,587,1107"/>
+<area shape="rect" id="node36" href="$printf_8h.html#aee35a45c63a0f61f10fcb3dde7ae07ce" title="vfprintf" alt="" coords="489,651,551,677"/>
+<area shape="rect" id="node33" href="$ostream_8h.html#ac1dc30880e72d663127488352238aac0" title="print" alt="" coords="742,960,789,987"/>
+<area shape="rect" id="node38" href="$structprintf__formatter.html#a339e8b7c2916129b1e1001bfd68fe584" title="printf_formatter::format" alt="" coords="443,448,597,475"/>
+<area shape="rect" id="node40" href="$printf_8h.html#a990055ea68d22b98d476e6c090d99f58" title="vprintf" alt="" coords="491,549,549,576"/>
+</map>

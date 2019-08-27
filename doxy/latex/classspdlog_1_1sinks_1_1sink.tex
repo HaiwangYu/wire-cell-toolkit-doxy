@@ -1,0 +1,255 @@
+\hypertarget{classspdlog_1_1sinks_1_1sink}{}\section{spdlog\+:\+:sinks\+:\+:sink Class Reference}
+\label{classspdlog_1_1sinks_1_1sink}\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+
+
+{\ttfamily \#include $<$sink.\+h$>$}
+
+
+
+Inheritance diagram for spdlog\+:\+:sinks\+:\+:sink\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1sinks_1_1sink__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1sink_a9fc419b02a5b7bd279da42f04f6979ab}{sink} ()
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1sink_a8523cd526092feffd549cf7a8b5f38fe}{sink} (std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1pattern__formatter}{spdlog\+::pattern\+\_\+formatter} $>$ \hyperlink{classspdlog_1_1formatter}{formatter})
+\item 
+virtual \hyperlink{classspdlog_1_1sinks_1_1sink_a2637af0973ac863eedd76ee683279c0b}{$\sim$sink} ()=default
+\item 
+virtual void \hyperlink{classspdlog_1_1sinks_1_1sink_a51d8f34ad79064e0dc13c6013236e427}{log} (const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&msg)=0
+\item 
+virtual void \hyperlink{classspdlog_1_1sinks_1_1sink_a8a0674ae3bca8f1617aef820e23a2ccd}{flush} ()=0
+\item 
+virtual void \hyperlink{classspdlog_1_1sinks_1_1sink_a7e5cfd4b683c8bfa8fbd602d7f409632}{set\+\_\+pattern} (const std\+::string \&pattern)=0
+\item 
+virtual void \hyperlink{classspdlog_1_1sinks_1_1sink_ac410f2229e583a75337a5fdf45d020be}{set\+\_\+formatter} (std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$ sink\+\_\+formatter)=0
+\item 
+bool \hyperlink{classspdlog_1_1sinks_1_1sink_a1c932f19f67057fbe7518999bdd5c422}{should\+\_\+log} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} msg\+\_\+level) const
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1sink_a038a91409395dca18a7ccca81622fd83}{set\+\_\+level} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} log\+\_\+level)
+\item 
+\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} \hyperlink{classspdlog_1_1sinks_1_1sink_ae59ca2b418c5cdfed1c04e49a444be1c}{level} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacespdlog_a8585bf495310a6ce695191739351709b}{level\+\_\+t} \hyperlink{classspdlog_1_1sinks_1_1sink_a435da07b59e1165b38d53635cdada30a}{level\+\_\+}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$ \hyperlink{classspdlog_1_1sinks_1_1sink_aa0d19f09363a11b63b4a9b1d46f8a4b3}{formatter\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file sink.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_a9fc419b02a5b7bd279da42f04f6979ab}\label{classspdlog_1_1sinks_1_1sink_a9fc419b02a5b7bd279da42f04f6979ab}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!sink@{sink}}
+\index{sink@{sink}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{sink()}{sink()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily spdlog\+::sinks\+::sink\+::sink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 17 of file sink.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classspdlog_1_1sinks_1_1sink_a9fc419b02a5b7bd279da42f04f6979ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_a8523cd526092feffd549cf7a8b5f38fe}\label{classspdlog_1_1sinks_1_1sink_a8523cd526092feffd549cf7a8b5f38fe}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!sink@{sink}}
+\index{sink@{sink}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{sink()}{sink()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily spdlog\+::sinks\+::sink\+::sink (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1pattern__formatter}{spdlog\+::pattern\+\_\+formatter} $>$}]{formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 23 of file sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classspdlog_1_1sinks_1_1sink_a8523cd526092feffd549cf7a8b5f38fe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_a2637af0973ac863eedd76ee683279c0b}\label{classspdlog_1_1sinks_1_1sink_a2637af0973ac863eedd76ee683279c0b}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!````~sink@{$\sim$sink}}
+\index{````~sink@{$\sim$sink}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{$\sim$sink()}{~sink()}}
+{\footnotesize\ttfamily virtual spdlog\+::sinks\+::sink\+::$\sim$sink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classspdlog_1_1sinks_1_1sink_a2637af0973ac863eedd76ee683279c0b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_a8a0674ae3bca8f1617aef820e23a2ccd}\label{classspdlog_1_1sinks_1_1sink_a8a0674ae3bca8f1617aef820e23a2ccd}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!flush@{flush}}
+\index{flush@{flush}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily virtual void spdlog\+::sinks\+::sink\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a3c0587e868d2a42f96b878c6031333a0}{spdlog\+::sinks\+::ansicolor\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$}, \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a3746a35fc36218e76dc3080e52fe6233}{spdlog\+::sinks\+::wincolor\+\_\+sink$<$ Out\+Handle, Console\+Mutex $>$}, \hyperlink{classspdlog_1_1sinks_1_1stdout__sink_af3a13cc82215681bdd7ca5e33a7c28b5}{spdlog\+::sinks\+::stdout\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$}, and \hyperlink{classspdlog_1_1sinks_1_1base__sink_a2de93f1edc37e891555685ed4e520343}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classspdlog_1_1sinks_1_1sink_a8a0674ae3bca8f1617aef820e23a2ccd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_ae59ca2b418c5cdfed1c04e49a444be1c}\label{classspdlog_1_1sinks_1_1sink_ae59ca2b418c5cdfed1c04e49a444be1c}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!level@{level}}
+\index{level@{level}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{level()}{level()}}
+{\footnotesize\ttfamily \hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} spdlog\+::sinks\+::sink\+::level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file sink.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classspdlog_1_1sinks_1_1sink_ae59ca2b418c5cdfed1c04e49a444be1c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_a51d8f34ad79064e0dc13c6013236e427}\label{classspdlog_1_1sinks_1_1sink_a51d8f34ad79064e0dc13c6013236e427}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!log@{log}}
+\index{log@{log}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily virtual void spdlog\+::sinks\+::sink\+::log (\begin{DoxyParamCaption}\item[{const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a042a6ab886430570095737e1984e7c6e}{spdlog\+::sinks\+::ansicolor\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$}, \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a64d98363a05d1a7a4f295f6de1b5cec1}{spdlog\+::sinks\+::wincolor\+\_\+sink$<$ Out\+Handle, Console\+Mutex $>$}, \hyperlink{classspdlog_1_1sinks_1_1stdout__sink_adda1fffa1daf4565f72b3e94734d984a}{spdlog\+::sinks\+::stdout\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$}, and \hyperlink{classspdlog_1_1sinks_1_1base__sink_a6a72602ffe60fdfe6a3cbfbecca54bb0}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classspdlog_1_1sinks_1_1sink_a51d8f34ad79064e0dc13c6013236e427_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_ac410f2229e583a75337a5fdf45d020be}\label{classspdlog_1_1sinks_1_1sink_ac410f2229e583a75337a5fdf45d020be}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!set\+\_\+formatter@{set\+\_\+formatter}}
+\index{set\+\_\+formatter@{set\+\_\+formatter}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{set\+\_\+formatter()}{set\_formatter()}}
+{\footnotesize\ttfamily virtual void spdlog\+::sinks\+::sink\+::set\+\_\+formatter (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$}]{sink\+\_\+formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a030c3495398d4f320ad444ca940b4731}{spdlog\+::sinks\+::ansicolor\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$}, \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a48cc1a252565bdbb66b12ba2a40e62f9}{spdlog\+::sinks\+::wincolor\+\_\+sink$<$ Out\+Handle, Console\+Mutex $>$}, \hyperlink{classspdlog_1_1sinks_1_1stdout__sink_ada2b3ef5a7821873df46ebda72b77e6c}{spdlog\+::sinks\+::stdout\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$}, and \hyperlink{classspdlog_1_1sinks_1_1base__sink_ad66435c2e9e0adb06ee279dde88a2243}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1sinks_1_1sink_ac410f2229e583a75337a5fdf45d020be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_a038a91409395dca18a7ccca81622fd83}\label{classspdlog_1_1sinks_1_1sink_a038a91409395dca18a7ccca81622fd83}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!set\+\_\+level@{set\+\_\+level}}
+\index{set\+\_\+level@{set\+\_\+level}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{set\+\_\+level()}{set\_level()}}
+{\footnotesize\ttfamily void spdlog\+::sinks\+::sink\+::set\+\_\+level (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_a7e5cfd4b683c8bfa8fbd602d7f409632}\label{classspdlog_1_1sinks_1_1sink_a7e5cfd4b683c8bfa8fbd602d7f409632}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!set\+\_\+pattern@{set\+\_\+pattern}}
+\index{set\+\_\+pattern@{set\+\_\+pattern}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{set\+\_\+pattern()}{set\_pattern()}}
+{\footnotesize\ttfamily virtual void spdlog\+::sinks\+::sink\+::set\+\_\+pattern (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_ab84f8a9299e060e55dcfbe333806aedc}{spdlog\+::sinks\+::ansicolor\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$}, \hyperlink{classspdlog_1_1sinks_1_1wincolor__sink_a5032da6fc760507134a7d1eff1a20b0a}{spdlog\+::sinks\+::wincolor\+\_\+sink$<$ Out\+Handle, Console\+Mutex $>$}, \hyperlink{classspdlog_1_1sinks_1_1stdout__sink_a5b8759dab80ca44e9d185e21aa797d2a}{spdlog\+::sinks\+::stdout\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$}, and \hyperlink{classspdlog_1_1sinks_1_1base__sink_a2b0a0b95f1e7272b443de67b46914152}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classspdlog_1_1sinks_1_1sink_a7e5cfd4b683c8bfa8fbd602d7f409632_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_a1c932f19f67057fbe7518999bdd5c422}\label{classspdlog_1_1sinks_1_1sink_a1c932f19f67057fbe7518999bdd5c422}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!should\+\_\+log@{should\+\_\+log}}
+\index{should\+\_\+log@{should\+\_\+log}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{should\+\_\+log()}{should\_log()}}
+{\footnotesize\ttfamily bool spdlog\+::sinks\+::sink\+::should\+\_\+log (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{msg\+\_\+level }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 35 of file sink.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classspdlog_1_1sinks_1_1sink_a1c932f19f67057fbe7518999bdd5c422_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_aa0d19f09363a11b63b4a9b1d46f8a4b3}\label{classspdlog_1_1sinks_1_1sink_aa0d19f09363a11b63b4a9b1d46f8a4b3}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!formatter\+\_\+@{formatter\+\_\+}}
+\index{formatter\+\_\+@{formatter\+\_\+}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{formatter\+\_\+}{formatter\_}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter}$>$ spdlog\+::sinks\+::sink\+::formatter\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 55 of file sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1sink_a435da07b59e1165b38d53635cdada30a}\label{classspdlog_1_1sinks_1_1sink_a435da07b59e1165b38d53635cdada30a}} 
+\index{spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}!level\+\_\+@{level\+\_\+}}
+\index{level\+\_\+@{level\+\_\+}!spdlog\+::sinks\+::sink@{spdlog\+::sinks\+::sink}}
+\subsubsection{\texorpdfstring{level\+\_\+}{level\_}}
+{\footnotesize\ttfamily \hyperlink{namespacespdlog_a8585bf495310a6ce695191739351709b}{level\+\_\+t} spdlog\+::sinks\+::sink\+::level\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 52 of file sink.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/sinks/\hyperlink{sink_8h}{sink.\+h}\end{DoxyCompactItemize}

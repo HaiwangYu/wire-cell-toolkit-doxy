@@ -1,0 +1,6 @@
+<map id="WireCell::Gen::ElecResponse::configure" name="WireCell::Gen::ElecResponse::configure">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_response_1_1_generator.html#aceed932e0bab5af1cb80981507667e5e" title="FIXME: eradicate Domain in favor of Binning. " alt="" coords="251,5,396,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#aa8d25ae88346929b5e54cd116f7a4f47" title="Scale (multiply) sequence values by scalar. " alt="" coords="253,71,393,112"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="444,71,571,112"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1tagrules.html#aed120ffc74c8d10ff4498490ec742f87" title="WireCell::tagrules\l::match" alt="" coords="619,71,745,112"/>
+</map>

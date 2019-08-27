@@ -1,0 +1,10 @@
+<map id="iface/inc/WireCellIface/IJoinNode.h" name="iface/inc/WireCellIface/IJoinNode.h">
+<area shape="rect" id="node2" href="$_i_frame_joiner_8h.html" title="iface/inc/WireCellIface\l/IFrameJoiner.h" alt="" coords="229,95,384,136"/>
+<area shape="rect" id="node3" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,191,211,218"/>
+<area shape="rect" id="node8" href="$_join_cat_8h.html" title="tbb/inc/WireCellTbb\l/JoinCat.h" alt="" coords="522,95,659,136"/>
+<area shape="rect" id="node4" href="$_frame_summer_8h.html" title="gen/inc/WireCellGen\l/FrameSummer.h" alt="" coords="235,184,378,225"/>
+<area shape="rect" id="node6" href="$_frame_merger_8h.html" title="sigproc/inc/WireCellSigProc\l/FrameMerger.h" alt="" coords="402,184,587,225"/>
+<area shape="rect" id="node5" href="$_frame_summer_8cxx.html" title="gen/src/FrameSummer.cxx" alt="" coords="206,273,386,300"/>
+<area shape="rect" id="node7" href="$_frame_merger_8cxx.html" title="sigproc/src/FrameMerger.cxx" alt="" coords="411,273,603,300"/>
+<area shape="rect" id="node9" href="$_wrapper_factory_8cxx.html" title="tbb/src/WrapperFactory.cxx" alt="" coords="612,191,796,218"/>
+</map>

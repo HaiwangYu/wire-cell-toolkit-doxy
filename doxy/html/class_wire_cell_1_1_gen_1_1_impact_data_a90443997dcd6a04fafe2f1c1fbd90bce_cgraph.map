@@ -1,0 +1,8 @@
+<map id="WireCell::Gen::ImpactData::diffusions" name="WireCell::Gen::ImpactData::diffusions">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_impact_data.html#a323019d50d44dea084f1691da674b755" title="WireCell::Gen::ImpactData\l::calculate" alt="" coords="233,5,413,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_impact_data.html#a80d2f6a9ccdbba236c9e75360316b014" title="WireCell::Gen::ImpactData\l::waveform" alt="" coords="233,71,413,112"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_impact_data.html#afb1c936f26afc1f968f727b3f72af2e4" title="WireCell::Gen::ImpactData\l::spectrum" alt="" coords="233,136,413,177"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_impact_data.html#a8a2ccedf08eab6acee300809308ef216" title="WireCell::Gen::ImpactData\l::weightform" alt="" coords="233,201,413,243"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_impact_data.html#a81cef30a2ec41d8b63f07267506582d1" title="WireCell::Gen::ImpactData\l::weight_spectrum" alt="" coords="233,267,413,308"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="461,13,624,39"/>
+</map>

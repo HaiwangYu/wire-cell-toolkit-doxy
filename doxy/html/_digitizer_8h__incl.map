@@ -1,0 +1,34 @@
+<map id="gen/inc/WireCellGen/Digitizer.h" name="gen/inc/WireCellGen/Digitizer.h">
+<area shape="rect" id="node2" href="$_i_frame_filter_8h.html" title="WireCellIface/IFrameFilter.h" alt="" coords="869,95,1056,121"/>
+<area shape="rect" id="node23" href="$_units_8h.html" title="WireCellUtil/Units.h" alt="" coords="500,393,639,420"/>
+<area shape="rect" id="node35" href="$_i_configurable_8h.html" title="WireCellIface/IConfigurable.h" alt="" coords="1782,244,1975,271"/>
+<area shape="rect" id="node36" href="$_i_anode_plane_8h.html" title="WireCellIface/IAnodePlane.h" alt="" coords="1339,95,1530,121"/>
+<area shape="rect" id="node40" href="$_logging_8h.html" title="WireCellUtil/Logging.h" alt="" coords="2212,169,2364,196"/>
+<area shape="rect" id="node3" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="993,319,1172,345"/>
+<area shape="rect" id="node7" href="$_i_function_node_8h.html" title="WireCellIface/IFunctionNode.h" alt="" coords="51,169,253,196"/>
+<area shape="rect" id="node10" href="$_i_frame_8h.html" title="WireCellIface/IFrame.h" alt="" coords="1088,169,1245,196"/>
+<area shape="rect" id="node4" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="994,393,1153,420"/>
+<area shape="rect" id="node8" href="$_i_node_8h.html" title="WireCellIface/INode.h" alt="" coords="133,244,283,271"/>
+<area shape="rect" id="node11" href="$_i_trace_8h.html" title="WireCellIface/ITrace.h" alt="" coords="1177,393,1330,420"/>
+<area shape="rect" id="node14" href="$_i_wire_plane_8h.html" title="WireCellIface/IWirePlane.h" alt="" coords="1077,244,1257,271"/>
+<area shape="rect" id="node25" href="$_wire_plane_id_8h.html" title="WireCellIface/WirePlaneId.h" alt="" coords="1699,468,1885,495"/>
+<area shape="rect" id="node30" href="$_waveform_8h.html" title="WireCellUtil/Waveform.h" alt="" coords="207,393,374,420"/>
+<area shape="rect" id="node12" href="$_i_data_8h.html" title="WireCellIface/IData.h" alt="" coords="1374,468,1522,495"/>
+<area shape="rect" id="node13" href="$_i_sequence_8h.html" title="WireCellIface/ISequence.h" alt="" coords="1120,468,1299,495"/>
+<area shape="rect" id="node15" href="$_pimpos_8h.html" title="WireCellUtil/Pimpos.h" alt="" coords="767,319,918,345"/>
+<area shape="rect" id="node24" href="$_i_wire_8h.html" title="WireCellIface/IWire.h" alt="" coords="1355,393,1501,420"/>
+<area shape="rect" id="node29" href="$_i_channel_8h.html" title="WireCellIface/IChannel.h" alt="" coords="1388,319,1556,345"/>
+<area shape="rect" id="node16" href="$_point_8h.html" title="WireCellUtil/Point.h" alt="" coords="857,468,994,495"/>
+<area shape="rect" id="node17" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="2215,543,2399,569"/>
+<area shape="rect" id="node37" href="$_i_anode_face_8h.html" title="WireCellIface/IAnodeFace.h" alt="" coords="815,169,1001,196"/>
+<area shape="rect" id="node38" href="$_bounding_box_8h.html" title="WireCellUtil/BoundingBox.h" alt="" coords="767,244,951,271"/>
+<area shape="rect" id="node39" href="$_ray_grid_8h.html" title="WireCellUtil/RayGrid.h" alt="" coords="713,393,868,420"/>
+<area shape="rect" id="node41" href="$spdlog_8h.html" title="spdlog/spdlog.h" alt="" coords="2343,244,2457,271"/>
+<area shape="rect" id="node48" href="$ostr_8h.html" title="spdlog/fmt/ostr.h" alt="" coords="2072,393,2192,420"/>
+<area shape="rect" id="node42" href="$common_8h.html" title="spdlog/common.h" alt="" coords="2419,468,2544,495"/>
+<area shape="rect" id="node45" href="$registry_8h.html" title="spdlog/details/registry.h" alt="" coords="2320,319,2480,345"/>
+<area shape="rect" id="node46" href="$logger_8h.html" title="spdlog/logger.h" alt="" coords="2318,393,2429,420"/>
+<area shape="rect" id="node47" href="$version_8h.html" title="spdlog/version.h" alt="" coords="2555,319,2672,345"/>
+<area shape="rect" id="node44" href="$fmt_8h.html" title="spdlog/fmt/fmt.h" alt="" coords="2423,543,2540,569"/>
+<area shape="rect" id="node49" href="$ostream_8h.html" title="bundled/ostream.h" alt="" coords="2011,468,2141,495"/>
+</map>

@@ -1,0 +1,51 @@
+<map id="internal::end" name="internal::end">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_random.html#a25d7fa1d2b2a1dbb64964acbe5162d95" title="WireCell::Gen::Random\l::~Random" alt="" coords="157,5,319,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_track_depos.html#a0a3e984c40fe60a0b8fbd451091a008b" title="Accept a configuration. " alt="" coords="147,71,329,112"/>
+<area shape="rect" id="node4" href="$_protodune_8cxx.html#a7aac856fd8d0ee8ddb8672c2fe6ae215" title="LedgeIdentify" alt="" coords="188,137,288,163"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#aadada4e6a77ac41217a7b8858b26355f" title="WireCell::SigProc::\lROI_formation::extend\l_ROI_loose" alt="" coords="161,187,315,243"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#af11c69caa55a69618d96892afcb46933" title="WireCell::SigProc::\lROI_formation::find\l_ROI_loose" alt="" coords="407,213,543,269"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement.html#a2752abfaf6f0c8e84cef5dcec56010ee" title="WireCell::SigProc::\lROI_refinement::load_data" alt="" coords="620,355,799,396"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#ad7adf2e8940e21c808371578e16eeac8" title="WireCell::SigProc::\lSignalROI::get_above\l_threshold" alt="" coords="163,369,313,425"/>
+<area shape="rect" id="node12" href="$namespacespdlog_1_1details_1_1os.html#a41c3f67d2cbabfcb20e89d0524e5097f" title="spdlog::details::os\l::is_color_terminal" alt="" coords="174,449,302,491"/>
+<area shape="rect" id="node14" href="$classspdlog_1_1pattern__formatter.html#ae43e84d7421ee7810b22ce1dc817ca3f" title="spdlog::pattern_formatter\l::format" alt="" coords="155,515,321,556"/>
+<area shape="rect" id="node15" href="$namespacespdlog.html#acd3f4323bb627945b4cecbbbc62770ef" title="spdlog::to_hex" alt="" coords="185,581,291,607"/>
+<area shape="rect" id="node16" href="$structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a0b4553a087ee08ec032965fe1fc35ff4" title="formatter\&lt; std::chrono\l::duration\&lt; Rep, Period\l \&gt;, Char \&gt;::parse" alt="" coords="159,631,317,687"/>
+<area shape="rect" id="node17" href="$structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a8e85fb782f4dddcd3cb1fa207f2dd48c" title="formatter\&lt; std::chrono\l::duration\&lt; Rep, Period\l \&gt;, Char \&gt;::format" alt="" coords="159,711,317,767"/>
+<area shape="rect" id="node18" href="$classinternal_1_1basic__buffer.html#a8dd9de72728ab902c31f22bdba9a7a55" title="internal::basic_buffer\l\&lt; Char \&gt;::push_back" alt="" coords="165,792,311,833"/>
+<area shape="rect" id="node19" href="$classinternal_1_1arg__map.html#ae7e3b96f6d27cfac78a8df730eee4b8e" title="internal::arg_map\&lt;\l basic_format_context\l \&gt;::find" alt="" coords="163,858,313,914"/>
+<area shape="rect" id="node20" href="$namespaceinternal.html#a40361ef75be4acee6abc19730bdb54e3" title="internal::format_decimal" alt="" coords="157,938,319,965"/>
+<area shape="rect" id="node22" href="$namespaceinternal.html#a4308052bc51067b992e122ace6fd606c" title="internal::format_uint" alt="" coords="169,989,307,1015"/>
+<area shape="rect" id="node23" href="$namespaceinternal.html#a47fffd25c13670b8e2eb6559caeef974" title="internal::parse_format\l_string" alt="" coords="164,1040,312,1081"/>
+<area shape="rect" id="node24" href="$format_8h.html#a18e7680505b6590c4413c65355c1325a" title="join" alt="" coords="217,1106,259,1133"/>
+<area shape="rect" id="node26" href="$classfile.html#a14a03f1516c926cc0785728ebad4175c" title="file::descriptor" alt="" coords="186,1157,290,1183"/>
+<area shape="rect" id="node27" href="$namespaceinternal.html#a03b2086b2426ff3ecfce2d6fd22b66dc" title="internal::copy" alt="" coords="188,1207,288,1234"/>
+<area shape="rect" id="node36" href="$structformatter_3_01_range_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__range_338ef07b6d6c7537efaa2c888f2ea4c8d.html#a3fa03f9297c176ec30214531355f9ff3" title="formatter\&lt; RangeT,\l Char, typename std\l::enable_if\&lt; fmt::is\l_range\&lt; RangeT \&gt;::value\l \&gt;::type \&gt;::format" alt="" coords="389,1501,560,1586"/>
+<area shape="rect" id="node38" href="$structformatter_3_01std_1_1tm_00_01_char_01_4.html#a48e18c3d8fc0bf234d6981a60828f5ca" title="formatter\&lt; std::tm,\l Char \&gt;::parse" alt="" coords="173,1309,303,1351"/>
+<area shape="rect" id="node39" href="$classspdlog_1_1sinks_1_1ansicolor__sink.html#a030c3495398d4f320ad444ca940b4731" title="spdlog::sinks::ansicolor\l_sink::set_formatter" alt="" coords="159,1375,317,1416"/>
+<area shape="rect" id="node40" href="$classspdlog_1_1sinks_1_1wincolor__sink.html#a48cc1a252565bdbb66b12ba2a40e62f9" title="spdlog::sinks::wincolor\l_sink::set_formatter" alt="" coords="161,1440,315,1481"/>
+<area shape="rect" id="node41" href="$class_wire_cell_1_1_bounding_box.html#ac84d096b79ddd8ea2b4d73c1d324c739" title="Create a bounding box from an iterator pair. " alt="" coords="159,1505,317,1547"/>
+<area shape="rect" id="node42" href="$class_wire_cell_1_1_bounding_box.html#ad5b6bb08392180f15f1647a8b76ffcc9" title="WireCell::BoundingBox\l::operator()" alt="" coords="159,1571,317,1612"/>
+<area shape="rect" id="node43" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#a871b9e9a8f3d3fbc728ce1c50ef39ece" title="WireCell::RayGrid::\lActivity::layer" alt="" coords="170,1663,306,1704"/>
+<area shape="rect" id="node47" href="$namespace_wire_cell_1_1_ray_grid.html#a11febee1f22df148439d0782ffb754f4" title="free functions " alt="" coords="170,1775,306,1816"/>
+<area shape="rect" id="node49" href="$namespace_wire_cell_1_1_waveform.html#a841c4668962007ef512b7a7df6ecfece" title="Return the begin/end sample numbers inside the a subdomain of a domain with nsamples total..." alt="" coords="168,1872,308,1913"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#aa2fee1613b1c49322cf5d738261cf1c9" title="WireCell::SigProc::\lSignalROI::get_contents" alt="" coords="392,420,557,461"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a19b3f1c69aa59c14e928af82302de058" title="WireCell::SigProc::\lSignalROI::SignalROI" alt="" coords="634,420,785,461"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#af714fd2a4bba4597bea27d2ab34f0d8d" title="WireCell::SigProc::\lSignalROI::overlap" alt="" coords="642,485,777,527"/>
+<area shape="rect" id="node13" href="$classspdlog_1_1sinks_1_1ansicolor__sink.html#aed8c41cc6f792b27bc37d2f46536268d" title="spdlog::sinks::ansicolor\l_sink::ansicolor_sink" alt="" coords="395,485,554,527"/>
+<area shape="rect" id="node21" href="$namespaceinternal.html#a4a9acc87fcfbaaceb13bd64a92c866ed" title="internal::format_decimal" alt="" coords="394,763,555,790"/>
+<area shape="rect" id="node25" href="$format_8h.html#aed448f5aee13085982d2ca56fca0ae60" title="join" alt="" coords="453,814,496,841"/>
+<area shape="rect" id="node28" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ac58397721b0a7b485d46ac63522ebe87" title="IFrameFilter interface. " alt="" coords="401,865,548,907"/>
+<area shape="rect" id="node29" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise.html#a2f0a41f11d154f971da95d9127be594d" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="377,931,572,987"/>
+<area shape="rect" id="node30" href="$structinternal_1_1chrono__formatter.html#a1466a3d30fb07c336e5ba5239482d8ec" title="internal::chrono_formatter\l::format_localized" alt="" coords="389,1012,560,1053"/>
+<area shape="rect" id="node31" href="$structinternal_1_1chrono__formatter.html#aaae159c7a01320f53cf0ce746fc855ea" title="internal::chrono_formatter\l::on_text" alt="" coords="389,1077,560,1119"/>
+<area shape="rect" id="node32" href="$namespaceinternal.html#a8d09228af5e19a701d0d6372a036cf24" title="internal::copy_str" alt="" coords="413,1143,536,1170"/>
+<area shape="rect" id="node33" href="$classbasic__writer.html#ac6bb2fa0a1325a20d4288b66378fb4dd" title="basic_writer::write" alt="" coords="411,1194,539,1221"/>
+<area shape="rect" id="node34" href="$structformatter_3_01arg__join_3_01_it_00_01_char_01_4_00_01_char_01_4.html#ae0c4a217ef67f0a573d1c4fd9bfe0472" title="formatter\&lt; arg_join\l\&lt; It, Char \&gt;, Char \&gt;\l::format" alt="" coords="405,1245,544,1301"/>
+<area shape="rect" id="node35" href="$structformatter_3_01_tuple_t_00_01_char_00_01typename_01std_1_1enable__if_3_01fmt_1_1is__tuple__a8a88f793f5f612c28a21643fc88182d.html#a7d5dc29d45fc8f500059ce69020b2ea6" title="formatter\&lt; TupleT,\l Char, typename std\l::enable_if\&lt; fmt::is\l_tuple_like\&lt; TupleT \&gt;\l::value \&gt;::type \&gt;::format" alt="" coords="393,1325,556,1410"/>
+<area shape="rect" id="node37" href="$structformatter_3_01std_1_1tm_00_01_char_01_4.html#ab9ede05d9788f38bfc435af29d7fefe0" title="formatter\&lt; std::tm,\l Char \&gt;::format" alt="" coords="409,1435,540,1476"/>
+<area shape="rect" id="node44" href="$namespace_wire_cell_1_1_ray_grid.html#ab7bb8eba0ead6662043107193ad27361" title="WireCell::RayGrid::\loperator\&lt;\&lt;" alt="" coords="407,1611,543,1652"/>
+<area shape="rect" id="node45" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#aed4ac25a6f5ce1a5933b04f04858597e" title="WireCell::RayGrid::\lActivity::Activity" alt="" coords="407,1676,543,1717"/>
+<area shape="rect" id="node46" href="$class_wire_cell_1_1_ray_grid_1_1_tiling.html#a621e1fdb35b900f3eb6dcd2e933b40d9" title="WireCell::RayGrid::\lTiling::projection" alt="" coords="407,1741,543,1783"/>
+<area shape="rect" id="node48" href="$namespace_wire_cell_1_1_ray_grid.html#a096e166d076b5ecaec0412ebb7f54f9e" title="WireCell::RayGrid::\lmake_blobs" alt="" coords="407,1807,543,1848"/>
+<area shape="rect" id="node50" href="$namespace_wire_cell_1_1_waveform.html#a76b0099d7c51a9e0a915bbee0fe48069" title="Return the sample size if domain is equally sampled with given number of samples. ..." alt="" coords="405,1872,545,1913"/>
+</map>

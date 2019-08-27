@@ -1,0 +1,8 @@
+<map id="WireCell::Diffuser::operator()" name="WireCell::Diffuser::operator()">
+<area shape="rect" id="node2" href="$namespace_wire_cell.html#a78bd389d29c322c5a6822bee8581ee73" title="WireCell::depo_chain" alt="" coords="187,5,334,32"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_d3_vector.html#ad116deec8357b27dcad6be127c209490" title="Return the dot product of this vector and the other. " alt="" coords="180,56,341,83"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_diffuser.html#adc579ba4d356101b4b9afdb8422087b6" title="WireCell::Diffuser\l::diffuse" alt="" coords="197,107,324,149"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_diffuser.html#a2b37e9c8a8e88697620fda6acb8ef3b1" title="WireCell::Diffuser\l::bounds" alt="" coords="405,42,532,83"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_diffuser.html#a19e1586fdca351c264970065699e9c39" title="WireCell::Diffuser\l::oned" alt="" coords="405,107,532,149"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_diffusion.html#a18df718cd15d36f105c5eb2f4039b320" title="WireCell::Diffusion::set" alt="" coords="389,173,548,200"/>
+</map>

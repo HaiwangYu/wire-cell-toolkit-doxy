@@ -1,0 +1,89 @@
+\hypertarget{class_wire_cell_1_1_i_channel_response}{}\section{Wire\+Cell\+:\+:I\+Channel\+Response Class Reference}
+\label{class_wire_cell_1_1_i_channel_response}\index{Wire\+Cell\+::\+I\+Channel\+Response@{Wire\+Cell\+::\+I\+Channel\+Response}}
+
+
+{\ttfamily \#include $<$I\+Channel\+Response.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Channel\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_wire_cell_1_1_i_channel_response__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Channel\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_wire_cell_1_1_i_channel_response__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_response_aa97564060e81d7b77733e755b010bdd5}{$\sim$\+I\+Channel\+Response} ()
+\item 
+virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \& \hyperlink{class_wire_cell_1_1_i_channel_response_aee79a65bc671678d529eca0e4792e10d}{channel\+\_\+response} (int channel\+\_\+ident) const =0
+\item 
+virtual \hyperlink{class_wire_cell_1_1_binning}{Binning} \hyperlink{class_wire_cell_1_1_i_channel_response_a6a3daf077f98883b5d4f9dd6529e99fe}{channel\+\_\+response\+\_\+binning} () const =0
+\begin{DoxyCompactList}\small\item\em Return the binning that the channel\+\_\+response follows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file I\+Channel\+Response.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_response_aa97564060e81d7b77733e755b010bdd5}\label{class_wire_cell_1_1_i_channel_response_aa97564060e81d7b77733e755b010bdd5}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Response@{Wire\+Cell\+::\+I\+Channel\+Response}!````~I\+Channel\+Response@{$\sim$\+I\+Channel\+Response}}
+\index{````~I\+Channel\+Response@{$\sim$\+I\+Channel\+Response}!Wire\+Cell\+::\+I\+Channel\+Response@{Wire\+Cell\+::\+I\+Channel\+Response}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Channel\+Response()}{~IChannelResponse()}}
+{\footnotesize\ttfamily I\+Channel\+Response\+::$\sim$\+I\+Channel\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 103 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_response_aee79a65bc671678d529eca0e4792e10d}\label{class_wire_cell_1_1_i_channel_response_aee79a65bc671678d529eca0e4792e10d}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Response@{Wire\+Cell\+::\+I\+Channel\+Response}!channel\+\_\+response@{channel\+\_\+response}}
+\index{channel\+\_\+response@{channel\+\_\+response}!Wire\+Cell\+::\+I\+Channel\+Response@{Wire\+Cell\+::\+I\+Channel\+Response}}
+\subsubsection{\texorpdfstring{channel\+\_\+response()}{channel\_response()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t}\& Wire\+Cell\+::\+I\+Channel\+Response\+::channel\+\_\+response (\begin{DoxyParamCaption}\item[{int}]{channel\+\_\+ident }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Provide the channel response for the given channel ID number. Note the binning of the returned waveform should be coordinated through configuration. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a494997d5336628959e8585fd8d5a509d}{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_per_channel_response_a9112d33075a8ac432b5e32bed5c65f5b}{Wire\+Cell\+::\+Sig\+Proc\+::\+Per\+Channel\+Response}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_response_a6a3daf077f98883b5d4f9dd6529e99fe}\label{class_wire_cell_1_1_i_channel_response_a6a3daf077f98883b5d4f9dd6529e99fe}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Response@{Wire\+Cell\+::\+I\+Channel\+Response}!channel\+\_\+response\+\_\+binning@{channel\+\_\+response\+\_\+binning}}
+\index{channel\+\_\+response\+\_\+binning@{channel\+\_\+response\+\_\+binning}!Wire\+Cell\+::\+I\+Channel\+Response@{Wire\+Cell\+::\+I\+Channel\+Response}}
+\subsubsection{\texorpdfstring{channel\+\_\+response\+\_\+binning()}{channel\_response\_binning()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_binning}{Binning} Wire\+Cell\+::\+I\+Channel\+Response\+::channel\+\_\+response\+\_\+binning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the binning that the channel\+\_\+response follows. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response_a542dd1589356f39690c01ec012c21c48}{Wire\+Cell\+::\+Sig\+Proc\+::\+Nominal\+Channel\+Response}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_per_channel_response_ab5b6e69f75c2847269b1a0c6c4992709}{Wire\+Cell\+::\+Sig\+Proc\+::\+Per\+Channel\+Response}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_channel_response_8h}{I\+Channel\+Response.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

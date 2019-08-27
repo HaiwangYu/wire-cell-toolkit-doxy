@@ -1,0 +1,33 @@
+<map id="iface/inc/WireCellIface/IFrameFilter.h" name="iface/inc/WireCellIface/IFrameFilter.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_add_noise_8h.html" title="gen/inc/WireCellGen\l/AddNoise.h" alt="" coords="235,95,378,136"/>
+<area shape="rect" id="node5" href="$_digitizer_8h.html" title="gen/inc/WireCellGen\l/Digitizer.h" alt="" coords="402,95,545,136"/>
+<area shape="rect" id="node7" href="$_fourdee_8h.html" title="gen/inc/WireCellGen\l/Fourdee.h" alt="" coords="569,95,711,136"/>
+<area shape="rect" id="node9" href="$_misconfigure_8h.html" title="gen/inc/WireCellGen\l/Misconfigure.h" alt="" coords="735,95,878,136"/>
+<area shape="rect" id="node11" href="$_per_channel_variation_8h.html" title="gen/inc/WireCellGen\l/PerChannelVariation.h" alt="" coords="902,95,1058,136"/>
+<area shape="rect" id="node13" href="$_reframer_8h.html" title="gen/inc/WireCellGen\l/Reframer.h" alt="" coords="1082,95,1225,136"/>
+<area shape="rect" id="node15" href="$_retagger_8h.html" title="gen/inc/WireCellGen\l/Retagger.h" alt="" coords="1249,95,1391,136"/>
+<area shape="rect" id="node17" href="$_channel_selector_8h.html" title="sigproc/inc/WireCellSigProc\l/ChannelSelector.h" alt="" coords="1467,95,1653,136"/>
+<area shape="rect" id="node18" href="$_d_b_channel_selector_8h.html" title="sigproc/inc/WireCellSigProc\l/DBChannelSelector.h" alt="" coords="1377,184,1562,225"/>
+<area shape="rect" id="node21" href="$_l1_s_p_filter_8h.html" title="sigproc/inc/WireCellSigProc\l/L1SPFilter.h" alt="" coords="1706,95,1891,136"/>
+<area shape="rect" id="node23" href="$_omnibus_8h.html" title="sigproc/inc/WireCellSigProc\l/Omnibus.h" alt="" coords="1951,95,2137,136"/>
+<area shape="rect" id="node25" href="$_omnibus_noise_filter_8h.html" title="sigproc/inc/WireCellSigProc\l/OmnibusNoiseFilter.h" alt="" coords="2179,95,2365,136"/>
+<area shape="rect" id="node27" href="$_omnibus_p_m_t_noise_filter_8h.html" title="sigproc/inc/WireCellSigProc\l/OmnibusPMTNoiseFilter.h" alt="" coords="2406,95,2591,136"/>
+<area shape="rect" id="node29" href="$_omnibus_sig_proc_8h.html" title="sigproc/inc/WireCellSigProc\l/OmnibusSigProc.h" alt="" coords="2637,95,2822,136"/>
+<area shape="rect" id="node31" href="$_numpy_frame_saver_8h.html" title="sio/inc/WireCellSio\l/NumpyFrameSaver.h" alt="" coords="2886,95,3037,136"/>
+<area shape="rect" id="node4" href="$_add_noise_8cxx.html" title="gen/src/AddNoise.cxx" alt="" coords="95,191,246,218"/>
+<area shape="rect" id="node6" href="$_digitizer_8cxx.html" title="gen/src/Digitizer.cxx" alt="" coords="270,191,413,218"/>
+<area shape="rect" id="node8" href="$_fourdee_8cxx.html" title="gen/src/Fourdee.cxx" alt="" coords="437,191,579,218"/>
+<area shape="rect" id="node10" href="$_misconfigure_8cxx.html" title="gen/src/Misconfigure.cxx" alt="" coords="603,191,771,218"/>
+<area shape="rect" id="node12" href="$_per_channel_variation_8cxx.html" title="gen/src/PerChannelVariation.cxx" alt="" coords="795,191,1008,218"/>
+<area shape="rect" id="node14" href="$_reframer_8cxx.html" title="gen/src/Reframer.cxx" alt="" coords="1033,191,1181,218"/>
+<area shape="rect" id="node16" href="$_retagger_8cxx.html" title="gen/src/Retagger.cxx" alt="" coords="1205,191,1352,218"/>
+<area shape="rect" id="node20" href="$_channel_selector_8cxx.html" title="sigproc/src/ChannelSelector.cxx" alt="" coords="1587,191,1797,218"/>
+<area shape="rect" id="node19" href="$_d_b_channel_selector_8cxx.html" title="sigproc/src/DBChannelSelector.cxx" alt="" coords="1354,273,1585,300"/>
+<area shape="rect" id="node22" href="$_l1_s_p_filter_8cxx.html" title="sigproc/src/L1SPFilter.cxx" alt="" coords="1821,191,1997,218"/>
+<area shape="rect" id="node24" href="$_omnibus_8cxx.html" title="sigproc/src/Omnibus.cxx" alt="" coords="2022,191,2189,218"/>
+<area shape="rect" id="node26" href="$_omnibus_noise_filter_8cxx.html" title="sigproc/src/OmnibusNoise\lFilter.cxx" alt="" coords="2213,184,2389,225"/>
+<area shape="rect" id="node28" href="$_omnibus_p_m_t_noise_filter_8cxx.html" title="sigproc/src/OmnibusPMTNoise\lFilter.cxx" alt="" coords="2414,184,2618,225"/>
+<area shape="rect" id="node30" href="$_omnibus_sig_proc_8cxx.html" title="sigproc/src/OmnibusSigProc.cxx" alt="" coords="2643,191,2856,218"/>
+<area shape="rect" id="node32" href="$_numpy_frame_saver_8cxx.html" title="sio/src/NumpyFrameSaver.cxx" alt="" coords="2880,191,3083,218"/>
+</map>

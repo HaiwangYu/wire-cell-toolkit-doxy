@@ -1,0 +1,63 @@
+\hypertarget{_array_8h}{}\section{util/inc/\+Wire\+Cell\+Util/\+Array.h File Reference}
+\label{_array_8h}\index{util/inc/\+Wire\+Cell\+Util/\+Array.\+h@{util/inc/\+Wire\+Cell\+Util/\+Array.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Waveform.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Eigen/\+Core$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for Array.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_array_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_array_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespace_wire_cell_1_1_array}{Wire\+Cell\+::\+Array}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\+::\+Array\+Xf \hyperlink{namespace_wire_cell_1_1_array_ac1868a05b1fe180d6323674e8b5a3db9}{Wire\+Cell\+::\+Array\+::array\+\_\+xf}
+\item 
+typedef Eigen\+::\+Array\+Xcf \hyperlink{namespace_wire_cell_1_1_array_aa3b8841eb0edb05008f49e62484eac89}{Wire\+Cell\+::\+Array\+::array\+\_\+xc}
+\item 
+typedef Eigen\+::\+Array$<$ short, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ \hyperlink{namespace_wire_cell_1_1_array_a9cfeb4a60ab1746f8295d623c49e8cd4}{Wire\+Cell\+::\+Array\+::array\+\_\+xxs}
+\begin{DoxyCompactList}\small\item\em A 16 bit short integer 2D array. \end{DoxyCompactList}\item 
+typedef Eigen\+::\+Array$<$ int, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ \hyperlink{namespace_wire_cell_1_1_array_ab9b1f02c15124679d6a6f521e34a2479}{Wire\+Cell\+::\+Array\+::array\+\_\+xxi}
+\begin{DoxyCompactList}\small\item\em Integer. \end{DoxyCompactList}\item 
+typedef Eigen\+::\+Array$<$ long, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ \hyperlink{namespace_wire_cell_1_1_array_a2fa3192873f7b97d7fe22d3018a73874}{Wire\+Cell\+::\+Array\+::array\+\_\+xxl}
+\begin{DoxyCompactList}\small\item\em Integer. \end{DoxyCompactList}\item 
+typedef Eigen\+::\+Array\+X\+Xf \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{Wire\+Cell\+::\+Array\+::array\+\_\+xxf}
+\begin{DoxyCompactList}\small\item\em A real, 2D array. \end{DoxyCompactList}\item 
+typedef Eigen\+::\+Array\+X\+Xcf \hyperlink{namespace_wire_cell_1_1_array_a4688507545975422d74b9ba78530956a}{Wire\+Cell\+::\+Array\+::array\+\_\+xxc}
+\begin{DoxyCompactList}\small\item\em A complex, 2D array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_a4688507545975422d74b9ba78530956a}{array\+\_\+xxc} \hyperlink{namespace_wire_cell_1_1_array_aa6783f65a9e3b61db246eee7352fa6ee}{Wire\+Cell\+::\+Array\+::dft} (const \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{array\+\_\+xxf} \&arr)
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{array\+\_\+xxf} \hyperlink{namespace_wire_cell_1_1_array_a7c00f9a4791a2e3ced35753de37a5403}{Wire\+Cell\+::\+Array\+::idft} (const \hyperlink{namespace_wire_cell_1_1_array_a4688507545975422d74b9ba78530956a}{array\+\_\+xxc} \&arr)
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_a4688507545975422d74b9ba78530956a}{array\+\_\+xxc} \hyperlink{namespace_wire_cell_1_1_array_aa18a99e94f8ba5fdc974ddfdc5778c97}{Wire\+Cell\+::\+Array\+::dft\+\_\+rc} (const \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{array\+\_\+xxf} \&arr, int dim=0)
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_a4688507545975422d74b9ba78530956a}{array\+\_\+xxc} \hyperlink{namespace_wire_cell_1_1_array_a312b7bcf55424009be17c8fd731e85f1}{Wire\+Cell\+::\+Array\+::dft\+\_\+cc} (const \hyperlink{namespace_wire_cell_1_1_array_a4688507545975422d74b9ba78530956a}{array\+\_\+xxc} \&arr, int dim=1)
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_a4688507545975422d74b9ba78530956a}{array\+\_\+xxc} \hyperlink{namespace_wire_cell_1_1_array_a9d111d786752105dff7dff62704ca7d2}{Wire\+Cell\+::\+Array\+::idft\+\_\+cc} (const \hyperlink{namespace_wire_cell_1_1_array_a4688507545975422d74b9ba78530956a}{array\+\_\+xxc} \&arr, int dim=1)
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{array\+\_\+xxf} \hyperlink{namespace_wire_cell_1_1_array_aff0d07e015ea44d76736b57baa5d3693}{Wire\+Cell\+::\+Array\+::idft\+\_\+cr} (const \hyperlink{namespace_wire_cell_1_1_array_a4688507545975422d74b9ba78530956a}{array\+\_\+xxc} \&arr, int dim=0)
+\item 
+\hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{array\+\_\+xxf} \hyperlink{namespace_wire_cell_1_1_array_ae1c856168b5f280c3a5dfda8292124b4}{Wire\+Cell\+::\+Array\+::deconv} (const \hyperlink{namespace_wire_cell_1_1_array_ab565fef5e33632bb02f0ed4be803020c}{array\+\_\+xxf} \&arr, const \hyperlink{namespace_wire_cell_1_1_array_a4688507545975422d74b9ba78530956a}{array\+\_\+xxc} \&filter)
+\end{DoxyCompactItemize}

@@ -1,0 +1,20 @@
+\subsection*{Overview }
+
+This package provides some utility classes and functions. The functionality is not specific to Wire Cell, per se.
+
+\subsection*{Dependencies }
+
+This package has no dependencies on any other Wire Cell package and no outside dependencies other than C++.
+
+\subsection*{Highlights }
+
+Some classes and functionality are worth highlighting here\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries Interface} Wire Cell makes heavy use of the Interface software pattern. The entire {\ttfamily iface} package is mostly made of interface classes. Of particular note is the {\ttfamily Interface} interface class which is used to mark major component classes. Component classes can be instantiated while maintaining loose coupling between compilation units.
+\item {\bfseries Named\+Factory} is the mechanism to allow construction of an interface given its base class type and the \char`\"{}name\char`\"{} of its concrete implementation. Client code which instantiates an interface does not compile against the concrete implementation and only indirectly links against the shared library in which it resides.
+\item {\bfseries Point} is a simple but useful implementation of a 3D vector.
+\item {\bfseries Units} is a system of units. Any and all numeric quantities in Wire Cell which has units is assumed to be in this system of units
+\item {\bfseries Testing} is some functions that facilitate writing tests such as {\ttfamily Assert}. Two more are {\ttfamily Time\+Keeper} and {\ttfamily Mem\+Usage} which are bundled together in {\ttfamily Exec\+Mon}. As their names imply they help code measure how much time and memory it uses. 
+\end{DoxyItemize}

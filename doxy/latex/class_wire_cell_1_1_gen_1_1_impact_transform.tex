@@ -1,0 +1,88 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_impact_transform}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Impact\+Transform Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_impact_transform}\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform@{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform}}
+
+
+{\ttfamily \#include $<$Impact\+Transform.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_impact_transform_ad467b6b26b2e740a1c170cb8a5223e6e}{Impact\+Transform} (\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Plane\+Impact\+Response\+::pointer} pir, \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform}{Binned\+Diffusion\+\_\+transform} \&bd)
+\item 
+virtual \hyperlink{class_wire_cell_1_1_gen_1_1_impact_transform_a01530f803d5d1cc06688fb37e4163acb}{$\sim$\+Impact\+Transform} ()
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \hyperlink{class_wire_cell_1_1_gen_1_1_impact_transform_ad65b81bab03b2a6f8836782c732556bc}{waveform} (int wire) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An \hyperlink{class_wire_cell_1_1_gen_1_1_impact_transform}{Impact\+Transform} transforms charge on impact positions into waveforms via 2D F\+FT. 
+
+Definition at line 18 of file Impact\+Transform.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_transform_ad467b6b26b2e740a1c170cb8a5223e6e}\label{class_wire_cell_1_1_gen_1_1_impact_transform_ad467b6b26b2e740a1c170cb8a5223e6e}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform@{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform}!Impact\+Transform@{Impact\+Transform}}
+\index{Impact\+Transform@{Impact\+Transform}!Wire\+Cell\+::\+Gen\+::\+Impact\+Transform@{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform}}
+\subsubsection{\texorpdfstring{Impact\+Transform()}{ImpactTransform()}}
+{\footnotesize\ttfamily Gen\+::\+Impact\+Transform\+::\+Impact\+Transform (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Plane\+Impact\+Response\+::pointer}}]{pir,  }\item[{\hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform}{Binned\+Diffusion\+\_\+transform} \&}]{bd }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Impact\+Transform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_transform_ad467b6b26b2e740a1c170cb8a5223e6e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_transform_a01530f803d5d1cc06688fb37e4163acb}\label{class_wire_cell_1_1_gen_1_1_impact_transform_a01530f803d5d1cc06688fb37e4163acb}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform@{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform}!````~Impact\+Transform@{$\sim$\+Impact\+Transform}}
+\index{````~Impact\+Transform@{$\sim$\+Impact\+Transform}!Wire\+Cell\+::\+Gen\+::\+Impact\+Transform@{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform}}
+\subsubsection{\texorpdfstring{$\sim$\+Impact\+Transform()}{~ImpactTransform()}}
+{\footnotesize\ttfamily Gen\+::\+Impact\+Transform\+::$\sim$\+Impact\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 444 of file Impact\+Transform.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_impact_transform_ad65b81bab03b2a6f8836782c732556bc}\label{class_wire_cell_1_1_gen_1_1_impact_transform_ad65b81bab03b2a6f8836782c732556bc}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform@{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform}!waveform@{waveform}}
+\index{waveform@{waveform}!Wire\+Cell\+::\+Gen\+::\+Impact\+Transform@{Wire\+Cell\+::\+Gen\+::\+Impact\+Transform}}
+\subsubsection{\texorpdfstring{waveform()}{waveform()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} Gen\+::\+Impact\+Transform\+::waveform (\begin{DoxyParamCaption}\item[{int}]{wire }\end{DoxyParamCaption}) const}
+
+Return the wire\textquotesingle{}s waveform. If the response functions are just field response (ie, instantaneous current) then the waveforms are expressed as current integrated over each sample bin and thus in units of charge. If the response functions include electronics response then the waveforms are in units of voltage representing the sampling of the output of the F\+EE amplifiers. 
+
+Definition at line 450 of file Impact\+Transform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_transform_ad65b81bab03b2a6f8836782c732556bc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_impact_transform_ad65b81bab03b2a6f8836782c732556bc_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_impact_transform_8h}{Impact\+Transform.\+h}\item 
+gen/src/\hyperlink{_impact_transform_8cxx}{Impact\+Transform.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{class_wire_cell_1_1_i_frame_slicer}{}\section{Wire\+Cell\+:\+:I\+Frame\+Slicer Class Reference}
+\label{class_wire_cell_1_1_i_frame_slicer}\index{Wire\+Cell\+::\+I\+Frame\+Slicer@{Wire\+Cell\+::\+I\+Frame\+Slicer}}
+
+
+{\ttfamily \#include $<$I\+Frame\+Slicer.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Frame\+Slicer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_wire_cell_1_1_i_frame_slicer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Frame\+Slicer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_wire_cell_1_1_i_frame_slicer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_frame_slicer}{I\+Frame\+Slicer} $>$ \hyperlink{class_wire_cell_1_1_i_frame_slicer_a8ecaccfa6013e07f0d4f7b0438ef7ee8}{pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_frame_slicer_a32dc41fc3b3da509688d2fe0ef88335f}{$\sim$\+I\+Frame\+Slicer} ()
+\item 
+virtual std\+::string \hyperlink{class_wire_cell_1_1_i_frame_slicer_a1af9b9d4cc6a0925925a5d7de316e730}{signature} ()
+\begin{DoxyCompactList}\small\item\em Set the signature for all subclasses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A frame slicer conceptually performs a transpose of a frame from being tick-\/major order to being channel-\/major while on the way possibly rebinning the per-\/tick samples by applying some metric function (typically just a sum) and possibly some uncertainty function.
+
+Note, there could be a closely related \hyperlink{class_wire_cell_1_1_i_queuedout_node}{I\+Queuedout\+Node} which instead returns a queue of \hyperlink{class_wire_cell_1_1_i_slice}{I\+Slice} which might be more suited to stream processing. O\+T\+OH, implementations of this \hyperlink{class_wire_cell_1_1_i_frame_slicer}{I\+Frame\+Slicer} are expected produce an \hyperlink{class_wire_cell_1_1_i_slice_frame}{I\+Slice\+Frame} which spans the same time as the input \hyperlink{class_wire_cell_1_1_i_frame}{I\+Frame}. 
+
+Definition at line 23 of file I\+Frame\+Slicer.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_frame_slicer_a8ecaccfa6013e07f0d4f7b0438ef7ee8}\label{class_wire_cell_1_1_i_frame_slicer_a8ecaccfa6013e07f0d4f7b0438ef7ee8}} 
+\index{Wire\+Cell\+::\+I\+Frame\+Slicer@{Wire\+Cell\+::\+I\+Frame\+Slicer}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Frame\+Slicer@{Wire\+Cell\+::\+I\+Frame\+Slicer}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_frame_slicer}{I\+Frame\+Slicer}$>$ \hyperlink{class_wire_cell_1_1_i_frame_slicer_a8ecaccfa6013e07f0d4f7b0438ef7ee8}{Wire\+Cell\+::\+I\+Frame\+Slicer\+::pointer}}
+
+
+
+Definition at line 26 of file I\+Frame\+Slicer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_frame_slicer_a32dc41fc3b3da509688d2fe0ef88335f}\label{class_wire_cell_1_1_i_frame_slicer_a32dc41fc3b3da509688d2fe0ef88335f}} 
+\index{Wire\+Cell\+::\+I\+Frame\+Slicer@{Wire\+Cell\+::\+I\+Frame\+Slicer}!````~I\+Frame\+Slicer@{$\sim$\+I\+Frame\+Slicer}}
+\index{````~I\+Frame\+Slicer@{$\sim$\+I\+Frame\+Slicer}!Wire\+Cell\+::\+I\+Frame\+Slicer@{Wire\+Cell\+::\+I\+Frame\+Slicer}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Frame\+Slicer()}{~IFrameSlicer()}}
+{\footnotesize\ttfamily I\+Frame\+Slicer\+::$\sim$\+I\+Frame\+Slicer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 139 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_frame_slicer_a1af9b9d4cc6a0925925a5d7de316e730}\label{class_wire_cell_1_1_i_frame_slicer_a1af9b9d4cc6a0925925a5d7de316e730}} 
+\index{Wire\+Cell\+::\+I\+Frame\+Slicer@{Wire\+Cell\+::\+I\+Frame\+Slicer}!signature@{signature}}
+\index{signature@{signature}!Wire\+Cell\+::\+I\+Frame\+Slicer@{Wire\+Cell\+::\+I\+Frame\+Slicer}}
+\subsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily virtual std\+::string Wire\+Cell\+::\+I\+Frame\+Slicer\+::signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the signature for all subclasses. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Frame, I\+Slice\+Frame $>$}.
+
+
+
+Definition at line 30 of file I\+Frame\+Slicer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_frame_slicer_8h}{I\+Frame\+Slicer.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+<map id="vprint" name="vprint">
+<area shape="rect" id="node2" href="$classtext__style.html#a57443deabb81d0e013d81813fc4d55cb" title="text_style::has_emphasis" alt="" coords="114,5,285,32"/>
+<area shape="rect" id="node3" href="$classtext__style.html#aecbbaaf438871b55905c4beaea7318b5" title="text_style::get_emphasis" alt="" coords="115,56,283,83"/>
+<area shape="rect" id="node6" href="$classtext__style.html#ad605ce62796a99d87f0e9744617cf402" title="text_style::has_foreground" alt="" coords="111,107,287,133"/>
+<area shape="rect" id="node7" href="$classtext__style.html#a695368429b582c3fef9b28e138beec4a" title="text_style::get_foreground" alt="" coords="113,157,286,184"/>
+<area shape="rect" id="node8" href="$classtext__style.html#afa9f90cd308a4a4b61ab8f6d6178a581" title="text_style::has_background" alt="" coords="108,208,291,235"/>
+<area shape="rect" id="node9" href="$classtext__style.html#a00fb4a1cc65844bc819f71a80050181f" title="text_style::get_background" alt="" coords="110,259,289,285"/>
+<area shape="rect" id="node4" href="$color_8h.html#a518db112c4d8afd36fd1ac6f5383399b" title="fg" alt="" coords="339,31,377,57"/>
+<area shape="rect" id="node5" href="$color_8h.html#a0993505119ca965ee31dbde1972ff33f" title="bg" alt="" coords="339,81,377,108"/>
+</map>

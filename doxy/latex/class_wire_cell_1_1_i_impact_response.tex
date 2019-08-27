@@ -1,0 +1,157 @@
+\hypertarget{class_wire_cell_1_1_i_impact_response}{}\section{Wire\+Cell\+:\+:I\+Impact\+Response Class Reference}
+\label{class_wire_cell_1_1_i_impact_response}\index{Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}}
+
+
+{\ttfamily \#include $<$I\+Plane\+Impact\+Response.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Impact\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{class_wire_cell_1_1_i_impact_response__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Impact\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_wire_cell_1_1_i_impact_response__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_impact_response_a1e058d161735e892d8fd53f8d5a5765c}{$\sim$\+I\+Impact\+Response} ()
+\item 
+virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Waveform\+::compseq\+\_\+t} \& \hyperlink{class_wire_cell_1_1_i_impact_response_ade63911c39df242ecc8b6858916b0fc8}{spectrum} ()=0
+\begin{DoxyCompactList}\small\item\em Frequency-\/domain spectrum of response. \end{DoxyCompactList}\item 
+virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \& \hyperlink{class_wire_cell_1_1_i_impact_response_a3f4821a846e98daf92768e33e795df8d}{waveform} () const =0
+\begin{DoxyCompactList}\small\item\em Time-\/domain waveform of the response. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_impact_response_ae706c2b62577ed856bfdb6d9453b9d98}{waveform\+\_\+pad} () const =0
+\item 
+virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Waveform\+::compseq\+\_\+t} \& \hyperlink{class_wire_cell_1_1_i_impact_response_a9f7ad74ee3cbc5b5cb5138d4bfaf29b5}{long\+\_\+aux\+\_\+spectrum} ()=0
+\item 
+virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \& \hyperlink{class_wire_cell_1_1_i_impact_response_ac4f1779e2e202ddb853ec1df8fd38d6d}{long\+\_\+aux\+\_\+waveform} () const =0
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_impact_response_a2f9b7f14cf42e37639c193238f357c43}{long\+\_\+aux\+\_\+waveform\+\_\+pad} () const =0
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_impact_response_a13026bcae5d6d06701752f96a9544c5d}{impact} () const =0
+\begin{DoxyCompactList}\small\item\em Corresponding impact number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file I\+Plane\+Impact\+Response.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_impact_response_a1e058d161735e892d8fd53f8d5a5765c}\label{class_wire_cell_1_1_i_impact_response_a1e058d161735e892d8fd53f8d5a5765c}} 
+\index{Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}!````~I\+Impact\+Response@{$\sim$\+I\+Impact\+Response}}
+\index{````~I\+Impact\+Response@{$\sim$\+I\+Impact\+Response}!Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Impact\+Response()}{~IImpactResponse()}}
+{\footnotesize\ttfamily I\+Impact\+Response\+::$\sim$\+I\+Impact\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 147 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_impact_response_a13026bcae5d6d06701752f96a9544c5d}\label{class_wire_cell_1_1_i_impact_response_a13026bcae5d6d06701752f96a9544c5d}} 
+\index{Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}!impact@{impact}}
+\index{impact@{impact}!Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}}
+\subsubsection{\texorpdfstring{impact()}{impact()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Impact\+Response\+::impact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Corresponding impact number. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_impact_response_a664b5b110cc63973d357bcf9c9f155d8}{Wire\+Cell\+::\+Gen\+::\+Impact\+Response}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_impact_response_a9f7ad74ee3cbc5b5cb5138d4bfaf29b5}\label{class_wire_cell_1_1_i_impact_response_a9f7ad74ee3cbc5b5cb5138d4bfaf29b5}} 
+\index{Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}!long\+\_\+aux\+\_\+spectrum@{long\+\_\+aux\+\_\+spectrum}}
+\index{long\+\_\+aux\+\_\+spectrum@{long\+\_\+aux\+\_\+spectrum}!Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}}
+\subsubsection{\texorpdfstring{long\+\_\+aux\+\_\+spectrum()}{long\_aux\_spectrum()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Waveform\+::compseq\+\_\+t}\& Wire\+Cell\+::\+I\+Impact\+Response\+::long\+\_\+aux\+\_\+spectrum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_impact_response_a8d8bd238c6286a8e6c70dc7a543a5ca3}{Wire\+Cell\+::\+Gen\+::\+Impact\+Response}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_impact_response_ac4f1779e2e202ddb853ec1df8fd38d6d}\label{class_wire_cell_1_1_i_impact_response_ac4f1779e2e202ddb853ec1df8fd38d6d}} 
+\index{Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}!long\+\_\+aux\+\_\+waveform@{long\+\_\+aux\+\_\+waveform}}
+\index{long\+\_\+aux\+\_\+waveform@{long\+\_\+aux\+\_\+waveform}!Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}}
+\subsubsection{\texorpdfstring{long\+\_\+aux\+\_\+waveform()}{long\_aux\_waveform()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t}\& Wire\+Cell\+::\+I\+Impact\+Response\+::long\+\_\+aux\+\_\+waveform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_impact_response_ad722252b3658fea7cfc38d1d1dee3787}{Wire\+Cell\+::\+Gen\+::\+Impact\+Response}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_impact_response_a2f9b7f14cf42e37639c193238f357c43}\label{class_wire_cell_1_1_i_impact_response_a2f9b7f14cf42e37639c193238f357c43}} 
+\index{Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}!long\+\_\+aux\+\_\+waveform\+\_\+pad@{long\+\_\+aux\+\_\+waveform\+\_\+pad}}
+\index{long\+\_\+aux\+\_\+waveform\+\_\+pad@{long\+\_\+aux\+\_\+waveform\+\_\+pad}!Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}}
+\subsubsection{\texorpdfstring{long\+\_\+aux\+\_\+waveform\+\_\+pad()}{long\_aux\_waveform\_pad()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Impact\+Response\+::long\+\_\+aux\+\_\+waveform\+\_\+pad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_impact_response_a0ea37ecd9dfc58b77c11dd8599128f14}{Wire\+Cell\+::\+Gen\+::\+Impact\+Response}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_impact_response_ade63911c39df242ecc8b6858916b0fc8}\label{class_wire_cell_1_1_i_impact_response_ade63911c39df242ecc8b6858916b0fc8}} 
+\index{Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}!spectrum@{spectrum}}
+\index{spectrum@{spectrum}!Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}}
+\subsubsection{\texorpdfstring{spectrum()}{spectrum()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Waveform\+::compseq\+\_\+t}\& Wire\+Cell\+::\+I\+Impact\+Response\+::spectrum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Frequency-\/domain spectrum of response. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_impact_response_a8bd5c0dbe10911359e29892d4f1380c1}{Wire\+Cell\+::\+Gen\+::\+Impact\+Response}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_impact_response_a3f4821a846e98daf92768e33e795df8d}\label{class_wire_cell_1_1_i_impact_response_a3f4821a846e98daf92768e33e795df8d}} 
+\index{Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}!waveform@{waveform}}
+\index{waveform@{waveform}!Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}}
+\subsubsection{\texorpdfstring{waveform()}{waveform()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t}\& Wire\+Cell\+::\+I\+Impact\+Response\+::waveform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Time-\/domain waveform of the response. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_impact_response_a50a66f592c1eb71279cbf6981fd5f8e5}{Wire\+Cell\+::\+Gen\+::\+Impact\+Response}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_impact_response_ae706c2b62577ed856bfdb6d9453b9d98}\label{class_wire_cell_1_1_i_impact_response_ae706c2b62577ed856bfdb6d9453b9d98}} 
+\index{Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}!waveform\+\_\+pad@{waveform\+\_\+pad}}
+\index{waveform\+\_\+pad@{waveform\+\_\+pad}!Wire\+Cell\+::\+I\+Impact\+Response@{Wire\+Cell\+::\+I\+Impact\+Response}}
+\subsubsection{\texorpdfstring{waveform\+\_\+pad()}{waveform\_pad()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Impact\+Response\+::waveform\+\_\+pad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_impact_response_a11a5437cb671e68e35244757d92dda56}{Wire\+Cell\+::\+Gen\+::\+Impact\+Response}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_plane_impact_response_8h}{I\+Plane\+Impact\+Response.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="WireCell::Persist::resolve" name="WireCell::Persist::resolve">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_persist.html#a65787a912677f1990c010e7ee4610a9f" title="WireCell::Persist::\lslurp" alt="" coords="195,5,325,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_persist.html#ab70e06414625bf66f10b20dd41112697" title="WireCell::Persist::\levaluate_jsonnet_file" alt="" coords="188,71,332,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_persist_1_1_parser.html#ac33db035695f8fa0e800f2eb6c922ef0" title="WireCell::Persist::\lParser::load" alt="" coords="195,136,325,177"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1_wire_schema.html#a0543dcae10ded4ff64c32a3e43743cbb" title="WireCell::WireSchema\l::load" alt="" coords="183,201,337,243"/>
+<area shape="rect" id="node5" href="$wcsonnet_8cxx.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="453,97,504,123"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_main.html#a7cd2683098093ad0f714873a9112543e" title="WireCell::Main::initialize" alt="" coords="397,147,560,174"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_wire_schema_file.html#a790d78e917e9fb5b2b19406e4b054c03" title="Accept a configuration. " alt="" coords="385,201,572,243"/>
+</map>

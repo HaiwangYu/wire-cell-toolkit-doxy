@@ -1,0 +1,6 @@
+<map id="spdlog::details::file_helper::split_by_extension" name="spdlog::details::file_helper::split_by_extension">
+<area shape="rect" id="node2" href="$structspdlog_1_1sinks_1_1daily__filename__calculator.html#ae8461e586d3426987a3b11a00b158db2" title="spdlog::sinks::daily\l_filename_calculator\l::calc_filename" alt="" coords="245,5,387,61"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#a05d77d7013bc54f55cac702c122ac1c9" title="spdlog::sinks::rotating\l_file_sink::calc_filename" alt="" coords="233,86,399,127"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#a0e754181168b32e8b1b60b82c35179e8" title="spdlog::sinks::rotating\l_file_sink::rotating_file_sink" alt="" coords="447,53,629,94"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1sinks_1_1rotating__file__sink.html#ae93e4792b76f73bb0be8e50b5c5e889b" title="spdlog::sinks::rotating\l_file_sink::flush_" alt="" coords="463,118,613,159"/>
+</map>

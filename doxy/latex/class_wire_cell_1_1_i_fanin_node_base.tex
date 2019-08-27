@@ -1,0 +1,154 @@
+\hypertarget{class_wire_cell_1_1_i_fanin_node_base}{}\section{Wire\+Cell\+:\+:I\+Fanin\+Node\+Base Class Reference}
+\label{class_wire_cell_1_1_i_fanin_node_base}\index{Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}}
+
+
+{\ttfamily \#include $<$I\+Fanin\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Fanin\+Node\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_fanin_node_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Fanin\+Node\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_wire_cell_1_1_i_fanin_node_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_fanin_node_base}{I\+Fanin\+Node\+Base} $>$ \hyperlink{class_wire_cell_1_1_i_fanin_node_base_ad68050255fd53c8b9a129083299bca2d}{pointer}
+\item 
+typedef std\+::vector$<$ boost\+::any $>$ \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a9dc315fe5b56f41f13ea247fc4b7f34b}{any\+\_\+vector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a34a12b984eb778c5fbc443c9f7eae666}{$\sim$\+I\+Fanin\+Node\+Base} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a7fd741cc204d2eb03402709bff0694f2}{operator()} (const \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a9dc315fe5b56f41f13ea247fc4b7f34b}{any\+\_\+vector} \&anyin, boost\+::any \&anyout)=0
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a1eadd634e7beaafcd7d0e93ea35a6f3b}{category} ()
+\begin{DoxyCompactList}\small\item\em Return the behavior category type. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_fanin_node_base_af0f007d93e510830bccbc186c6642749}{concurrency} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_wire_cell_1_1_fanin}{Fanin} nodes can usually do their thing stateless. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A node which fans-\/in N data objects of the same, given Input\+Type to produce the given Output\+Type. 
+
+Definition at line 15 of file I\+Fanin\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_base_a9dc315fe5b56f41f13ea247fc4b7f34b}\label{class_wire_cell_1_1_i_fanin_node_base_a9dc315fe5b56f41f13ea247fc4b7f34b}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}!any\+\_\+vector@{any\+\_\+vector}}
+\index{any\+\_\+vector@{any\+\_\+vector}!Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}}
+\subsubsection{\texorpdfstring{any\+\_\+vector}{any\_vector}}
+{\footnotesize\ttfamily typedef std\+::vector$<$boost\+::any$>$ \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a9dc315fe5b56f41f13ea247fc4b7f34b}{Wire\+Cell\+::\+I\+Fanin\+Node\+Base\+::any\+\_\+vector}}
+
+
+
+Definition at line 22 of file I\+Fanin\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_base_ad68050255fd53c8b9a129083299bca2d}\label{class_wire_cell_1_1_i_fanin_node_base_ad68050255fd53c8b9a129083299bca2d}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_fanin_node_base}{I\+Fanin\+Node\+Base}$>$ \hyperlink{class_wire_cell_1_1_i_fanin_node_base_ad68050255fd53c8b9a129083299bca2d}{Wire\+Cell\+::\+I\+Fanin\+Node\+Base\+::pointer}}
+
+
+
+Definition at line 18 of file I\+Fanin\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_base_a34a12b984eb778c5fbc443c9f7eae666}\label{class_wire_cell_1_1_i_fanin_node_base_a34a12b984eb778c5fbc443c9f7eae666}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}!````~I\+Fanin\+Node\+Base@{$\sim$\+I\+Fanin\+Node\+Base}}
+\index{````~I\+Fanin\+Node\+Base@{$\sim$\+I\+Fanin\+Node\+Base}!Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Fanin\+Node\+Base()}{~IFaninNodeBase()}}
+{\footnotesize\ttfamily I\+Fanin\+Node\+Base\+::$\sim$\+I\+Fanin\+Node\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 129 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_base_a1eadd634e7beaafcd7d0e93ea35a6f3b}\label{class_wire_cell_1_1_i_fanin_node_base_a1eadd634e7beaafcd7d0e93ea35a6f3b}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}!category@{category}}
+\index{category@{category}!Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}}
+\subsubsection{\texorpdfstring{category()}{category()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} Wire\+Cell\+::\+I\+Fanin\+Node\+Base\+::category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the behavior category type. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_node_a58c07f15b165e5fb33bbc7b2e047b39b}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 27 of file I\+Fanin\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_base_af0f007d93e510830bccbc186c6642749}\label{class_wire_cell_1_1_i_fanin_node_base_af0f007d93e510830bccbc186c6642749}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}!concurrency@{concurrency}}
+\index{concurrency@{concurrency}!Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}}
+\subsubsection{\texorpdfstring{concurrency()}{concurrency()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Fanin\+Node\+Base\+::concurrency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\hyperlink{struct_wire_cell_1_1_fanin}{Fanin} nodes can usually do their thing stateless. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_a87d2b7293da4f6955e389ac6a2011306}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 32 of file I\+Fanin\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_fanin_node_base_a7fd741cc204d2eb03402709bff0694f2}\label{class_wire_cell_1_1_i_fanin_node_base_a7fd741cc204d2eb03402709bff0694f2}} 
+\index{Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Fanin\+Node\+Base@{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual bool Wire\+Cell\+::\+I\+Fanin\+Node\+Base\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a9dc315fe5b56f41f13ea247fc4b7f34b}{any\+\_\+vector} \&}]{anyin,  }\item[{boost\+::any \&}]{anyout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The calling signature\+: 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_i_fanin_node_a36fa55f6c92585211789beab2e2ef46a}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$}, \hyperlink{class_wire_cell_1_1_i_fanin_node_a36fa55f6c92585211789beab2e2ef46a}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ I\+Frame, I\+Frame, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanin_node_a36fa55f6c92585211789beab2e2ef46a}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ I\+Cluster, I\+Cluster, 0 $>$}, and \hyperlink{class_wire_cell_1_1_i_fanin_node_a36fa55f6c92585211789beab2e2ef46a}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ I\+Blob\+Set, I\+Blob\+Set, 0 $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_fanin_node_base_a7fd741cc204d2eb03402709bff0694f2_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_fanin_node_8h}{I\+Fanin\+Node.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

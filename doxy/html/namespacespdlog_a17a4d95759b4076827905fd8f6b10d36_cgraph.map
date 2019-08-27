@@ -1,0 +1,5 @@
+<map id="spdlog::init_thread_pool" name="spdlog::init_thread_pool">
+<area shape="rect" id="node2" href="$classspdlog_1_1details_1_1registry.html#a58a1bbb352f751f6b729bc57bfadd6be" title="spdlog::details::registry\l::instance" alt="" coords="212,5,369,47"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1details_1_1registry.html#aa5503db04a70a06f97e7c1218aa8cbe2" title="spdlog::details::registry\l::set_tp" alt="" coords="212,71,369,112"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1logger.html#a0d0307a6501a9f56689c386a006991fe" title="spdlog::logger::default\l_level" alt="" coords="417,5,568,47"/>
+</map>

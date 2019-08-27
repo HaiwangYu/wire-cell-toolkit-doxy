@@ -1,0 +1,5 @@
+<map id="WireCell::SigProc::PMTNoiseROI::insert_vwires" name="WireCell::SigProc::PMTNoiseROI::insert_vwires">
+<area shape="rect" id="node2" href="$namespace_wire_cell.html#aeda39bc129b6bab40d0e35ffb4af55ef" title="Return dictionary in given list if it value at dotpath matches. " alt="" coords="201,20,303,47"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell.html#ade8a8d63c0beb7335d7f969903bfeedc" title="Follow a dot.separated.path and return the branch there. " alt="" coords="351,20,469,47"/>
+<area shape="rect" id="node4" href="$namespace_wire_cell_1_1_string.html#aef23d7b89dbe21e34a499c9156dd1e60" title="WireCell::String::split" alt="" coords="517,20,664,47"/>
+</map>

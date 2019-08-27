@@ -1,0 +1,9 @@
+<map id="WireCell::ISplitNodeBase" name="WireCell::ISplitNodeBase">
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_split_node.html" title="WireCell::ISplitNode\l\&lt; IFrame, std::tuple\l\&lt; IFrame, IFrame \&gt; \&gt;" alt="" coords="781,5,929,61"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_i_split_node.html" title="WireCell::ISplitNode\l\&lt; InputType, OutputTuple \&gt;" alt="" coords="764,86,947,127"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="383,57,497,84"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="184,50,335,91"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,57,136,84"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_frame_splitter.html" title="WireCell::IFrameSplitter" alt="" coords="995,20,1157,47"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_frame_splitter.html" title="WireCell::SigProc::\lFrameSplitter" alt="" coords="1205,13,1340,54"/>
+</map>

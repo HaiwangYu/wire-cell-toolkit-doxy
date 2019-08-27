@@ -1,0 +1,7 @@
+<map id="WireCell::Gen::StaticChannelStatus" name="WireCell::Gen::StaticChannelStatus">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_channel_status.html" title="WireCell::IChannelStatus" alt="" coords="5,169,176,196"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelStatus \&gt;" alt="" coords="22,80,173,121"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="119,5,249,32"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="199,80,350,121"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="200,169,357,196"/>
+</map>

@@ -1,0 +1,48 @@
+<map id="WireCell::tagrules::match" name="WireCell::tagrules::match">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1tagrules.html#a307c2349fd136058ba33924faff92553" title="WireCell::tagrules\l::match" alt="" coords="180,224,307,265"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1tagrules.html#a8e7dac6e5d8aa67bbe4c801a1738d170" title="WireCell::tagrules\l::transform" alt="" coords="180,289,307,331"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_depo_transform.html#a72bd0b9e256a8e9f4311c61cf6b5692b" title="WireCell::Gen::DepoTransform\l::operator()" alt="" coords="355,107,557,148"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a6ad6580819e6e957d9c2cab372b6e620" title="internal::copy_str" alt="" coords="395,173,517,199"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1tagrules_1_1_context.html#aeade5e7b1f30a07bb1194320575e0ec0" title="WireCell::tagrules\l::Context::transform" alt="" coords="387,224,525,265"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1_waveform.html#af74deccaeb9e2147865029e16840e799" title="Increase (shift) sequence values by scalar. " alt="" coords="386,289,526,331"/>
+<area shape="rect" id="node20" href="$namespace_wire_cell_1_1_waveform.html#aa8d25ae88346929b5e54cd116f7a4f47" title="Scale (multiply) sequence values by scalar. " alt="" coords="386,632,526,673"/>
+<area shape="rect" id="node35" href="$namespace_wire_cell_1_1_waveform.html#adad443bd3c3ee1a0c2e65c9a39282a53" title="Shrink (divide) seq values by values from the other sequence. " alt="" coords="386,1088,526,1129"/>
+<area shape="rect" id="node39" href="$_waveform_8cxx.html#aab765b49ae6d91a9309e22a5a80f66ec" title="c2r" alt="" coords="436,1391,476,1418"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_add_noise.html#aa5bdb418d61bfb70d1507bd4b1798d53" title="IFrameFilter. " alt="" coords="624,71,793,112"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_gen_1_1_impact_zipper.html#a542bc19237317cce10742ae097e647ec" title="WireCell::Gen::ImpactZipper\l::waveform" alt="" coords="615,136,803,177"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_gen_1_1_truth_smearer.html#a75e03e4110e01b8ff31ad3aba5e7804d" title="Accept a configuration. " alt="" coords="613,319,804,360"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_gen_1_1_truth_trace_i_d.html#adeed1a28e9ed6d5da7e07378b172bd48" title="Accept a configuration. " alt="" coords="621,201,796,243"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_noise.html#a4d5cb537b5d9ca736fc1bbd3c463b76f" title="WireCell::SigProc::\lMicroboone::OneChannelNoise\l::apply" alt="" coords="607,501,810,557"/>
+<area shape="rect" id="node18" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise.html#a2f0a41f11d154f971da95d9127be594d" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="866,1307,1061,1363"/>
+<area shape="rect" id="node19" href="$namespace_wire_cell_1_1_waveform.html#a3e92e2c63b937617bf8870412e7a6da7" title="WireCell::Waveform\l::increase" alt="" coords="639,5,779,47"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_gen_1_1_depo_zipper.html#af883a6a654a4a374d17f4db84d268510" title="WireCell::Gen::DepoZipper\l::operator()" alt="" coords="874,104,1053,145"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_gen_1_1_ductor.html#afec4558613941dc3bb752a3811aadd3d" title="WireCell::Gen::Ductor\l::process_face" alt="" coords="888,169,1039,211"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a1454baebba2e385dea9cd098236dd515" title="WireCell::Gen::Ductor\l::process" alt="" coords="1115,169,1265,211"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a1a103a685f920781c7d312f168b52841" title="WireCell::Gen::Ductor\l::operator()" alt="" coords="1313,169,1464,211"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a331c4314dba8472ab8c49dbc9112ff4b" title="WireCell::Gen::Ductor\l::~Ductor" alt="" coords="1512,169,1663,211"/>
+<area shape="rect" id="node21" href="$class_wire_cell_1_1_gen_1_1_elec_response.html#aefafca51074d60af586f6cf90599634c" title="Accept a configuration. " alt="" coords="610,975,807,1016"/>
+<area shape="rect" id="node22" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#a35db0e36d1426041740535fc2da0b07d" title="WireCell::Gen::Empirical\lNoiseModel::resample" alt="" coords="625,828,792,869"/>
+<area shape="rect" id="node24" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ad93828b53fee0709cd9649526b5884e7" title="WireCell::SigProc::\lL1SPFilter::init_resp" alt="" coords="639,384,779,425"/>
+<area shape="rect" id="node26" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#af33aa262d6af04f4252abef453156799" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="627,1041,790,1097"/>
+<area shape="rect" id="node27" href="$_protodune_8cxx.html#a7aac856fd8d0ee8ddb8672c2fe6ae215" title="LedgeIdentify" alt="" coords="659,581,759,607"/>
+<area shape="rect" id="node28" href="$class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b.html#a1c4c378e91ff2ead5aff08bc3615b1d2" title="WireCell::SigProc::\lSimpleChannelNoiseDB\l::set_rcrc_constant" alt="" coords="627,894,790,950"/>
+<area shape="rect" id="node30" href="$class_wire_cell_1_1_sio_1_1_json_depo_source.html#abc06840de469269082caee8f8c2369e0" title="Accept a configuration. " alt="" coords="605,632,812,673"/>
+<area shape="rect" id="node31" href="$class_wire_cell_1_1_sio_1_1_numpy_frame_saver.html#aa4e56c63747bea244fd47f07b0d59303" title="IFrameFilter. " alt="" coords="615,697,802,739"/>
+<area shape="rect" id="node32" href="$namespace_wire_cell_1_1_waveform.html#a3278b47bbecdbb8a663286d9cdec0d75" title="WireCell::Waveform\l::scale" alt="" coords="639,763,779,804"/>
+<area shape="rect" id="node33" href="$namespace_wire_cell.html#afb58116c2d5bbe14b5e798ca39caaa48" title="WireCell::hit_square" alt="" coords="639,450,779,477"/>
+<area shape="rect" id="node23" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#aa38f65fc1f32c8017f8205b32850074e" title="IConfigurable. " alt="" coords="880,828,1047,869"/>
+<area shape="rect" id="node25" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ac58397721b0a7b485d46ac63522ebe87" title="IFrameFilter interface. " alt="" coords="890,384,1037,425"/>
+<area shape="rect" id="node29" href="$class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b.html#abc31faca2ae9ee69ebfd01b9edd36289" title="Return channels which are considered a&#39;priori &quot;bad&quot;. " alt="" coords="882,1003,1045,1059"/>
+<area shape="rect" id="node34" href="$namespace_wire_cell.html#a2e8924bbcd70754adeb72b8e14f1d987" title="WireCell::box_intersection" alt="" coords="876,450,1051,477"/>
+<area shape="rect" id="node36" href="$namespace_wire_cell_1_1_sig_proc_1_1_microboone.html#a3502d22dc7280eeea95f3a2f2d52891c" title="WireCell::SigProc::\lMicroboone::SignalProtection" alt="" coords="613,1201,805,1243"/>
+<area shape="rect" id="node38" href="$class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b.html#a82e2e7cf205e61e1ab1e7970aa6655cb" title="WireCell::SigProc::\lSimpleChannelNoiseDB\l::set_gains_shapings" alt="" coords="627,1121,790,1177"/>
+<area shape="rect" id="node37" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub.html#a0c98bcbea0288592dfe6603e92b742b5" title="WireCell::SigProc::\lMicroboone::CoherentNoiseSub\l::apply" alt="" coords="860,1194,1067,1250"/>
+<area shape="rect" id="node40" href="$namespace_wire_cell_1_1_waveform.html#a40f3344b248eea24a08d391e8f402bb8" title="Return the real part of the sequence. " alt="" coords="639,1384,779,1425"/>
+<area shape="rect" id="node42" href="$namespace_wire_cell_1_1_waveform.html#acc803e535b3e979dc331088b9fba8bc1" title="Return the imaginary part of the sequence. " alt="" coords="639,1319,779,1360"/>
+<area shape="rect" id="node43" href="$namespace_wire_cell_1_1_waveform.html#ae8dc1c86082f99f8cbfedb8434d22bc2" title="Return the magnitude or absolute value of the sequence. " alt="" coords="639,1515,779,1556"/>
+<area shape="rect" id="node47" href="$namespace_wire_cell_1_1_waveform.html#abcab023facead1d0eb14e2042ce578bb" title="Return the phase or arg part of the sequence. " alt="" coords="639,1449,779,1491"/>
+<area shape="rect" id="node41" href="$namespace_wire_cell_1_1_waveform.html#ad08232b659cba09cf7174b900c557be5" title="WireCell::Waveform\l::resample" alt="" coords="893,1388,1033,1429"/>
+<area shape="rect" id="node44" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#a9ed3c28256c1c262064c62816b4b225f" title="IChannelSpectrum. " alt="" coords="880,1453,1047,1495"/>
+<area shape="rect" id="node45" href="$class_wire_cell_1_1_gen_1_1_response_sys.html#a71ff5f000f152ebfe338a15f0d49f0ef" title="WireCell::Gen::ResponseSys\l::ResponseSys" alt="" coords="866,1519,1061,1560"/>
+<area shape="rect" id="node46" href="$struct_wire_cell_1_1_compare_points.html#ae6ab32afd52b312e3d452e68996fca76" title="WireCell::ComparePoints\l::operator()" alt="" coords="878,1584,1049,1625"/>
+</map>

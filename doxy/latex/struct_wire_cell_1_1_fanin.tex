@@ -1,0 +1,66 @@
+\hypertarget{struct_wire_cell_1_1_fanin}{}\section{Wire\+Cell\+:\+:Fanin$<$ Collection $>$ Struct Template Reference}
+\label{struct_wire_cell_1_1_fanin}\index{Wire\+Cell\+::\+Fanin$<$ Collection $>$@{Wire\+Cell\+::\+Fanin$<$ Collection $>$}}
+
+
+{\ttfamily \#include $<$Faninout.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Collection \hyperlink{struct_wire_cell_1_1_fanin_aa5da112620a039252591b5d26e49bf7a}{result\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Input\+Iterator $>$ }\\\hyperlink{struct_wire_cell_1_1_fanin_aa5da112620a039252591b5d26e49bf7a}{result\+\_\+type} \hyperlink{struct_wire_cell_1_1_fanin_aad94a942146c713fb60d6b85046cbbb9}{operator()} (Input\+Iterator first, Input\+Iterator last) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Collection$>$\newline
+struct Wire\+Cell\+::\+Fanin$<$ Collection $>$}
+
+Fan-\/in concept is inherent in boost\+::signals2, but does require some \char`\"{}combiner\char`\"{} to enact whatever fan-\/in policy is desired. This most obvious one is one which synchronizes all input into a simple collection. A signal like this will return a vector of its inputs.
+
+// a generator returning one higher count each time called Counter c1(10),c2(20),c3(30);
+
+boost\+::signals2\+::signal$<$ int (), \hyperlink{struct_wire_cell_1_1_fanin}{Fanin}$<$ std\+::vector$<$int$>$ $>$ $>$ sig; sig.\+connect(c1); sig.\+connect(c2); sig.\+connect(c3);
+
+sig(); // --$>$ vector(10,20,30) 
+
+Definition at line 105 of file Faninout.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_fanin_aa5da112620a039252591b5d26e49bf7a}\label{struct_wire_cell_1_1_fanin_aa5da112620a039252591b5d26e49bf7a}} 
+\index{Wire\+Cell\+::\+Fanin@{Wire\+Cell\+::\+Fanin}!result\+\_\+type@{result\+\_\+type}}
+\index{result\+\_\+type@{result\+\_\+type}!Wire\+Cell\+::\+Fanin@{Wire\+Cell\+::\+Fanin}}
+\subsubsection{\texorpdfstring{result\+\_\+type}{result\_type}}
+{\footnotesize\ttfamily template$<$typename Collection $>$ \\
+typedef Collection \hyperlink{struct_wire_cell_1_1_fanin}{Wire\+Cell\+::\+Fanin}$<$ Collection $>$\+::\hyperlink{struct_wire_cell_1_1_fanin_aa5da112620a039252591b5d26e49bf7a}{result\+\_\+type}}
+
+
+
+Definition at line 107 of file Faninout.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_fanin_aad94a942146c713fb60d6b85046cbbb9}\label{struct_wire_cell_1_1_fanin_aad94a942146c713fb60d6b85046cbbb9}} 
+\index{Wire\+Cell\+::\+Fanin@{Wire\+Cell\+::\+Fanin}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Fanin@{Wire\+Cell\+::\+Fanin}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Collection $>$ \\
+template$<$typename Input\+Iterator $>$ \\
+\hyperlink{struct_wire_cell_1_1_fanin_aa5da112620a039252591b5d26e49bf7a}{result\+\_\+type} \hyperlink{struct_wire_cell_1_1_fanin}{Wire\+Cell\+::\+Fanin}$<$ Collection $>$\+::operator() (\begin{DoxyParamCaption}\item[{Input\+Iterator}]{first,  }\item[{Input\+Iterator}]{last }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 111 of file Faninout.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_faninout_8h}{Faninout.\+h}\end{DoxyCompactItemize}

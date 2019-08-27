@@ -1,0 +1,5 @@
+<map id="WireCell::IWireParameters::pitch" name="WireCell::IWireParameters::pitch">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_wire_parameters.html#a37e3bb80331664feb75d00eb957fda78" title="WireCell::IWireParameters\l::pitchU" alt="" coords="232,5,411,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_wire_parameters.html#a696c827d971a57805da41e3f2f14ba35" title="WireCell::IWireParameters\l::pitchV" alt="" coords="232,71,411,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_wire_parameters.html#a4e9d46ba775e642112628b79853b58cb" title="WireCell::IWireParameters\l::pitchW" alt="" coords="232,136,411,177"/>
+</map>

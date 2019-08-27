@@ -1,0 +1,363 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Plane\+Impact\+Response Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_plane_impact_response}\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+
+
+{\ttfamily \#include $<$Plane\+Impact\+Response.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Gen\+:\+:Plane\+Impact\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_plane_impact_response__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Gen\+:\+:Plane\+Impact\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_plane_impact_response__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ int $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a76147eaef10e6fe542bf25d85acc40f7}{region\+\_\+indices\+\_\+t}
+\item 
+typedef std\+::vector$<$ \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a76147eaef10e6fe542bf25d85acc40f7}{region\+\_\+indices\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a383b0ed60a99682b46afeb5ecb446078}{wire\+\_\+region\+\_\+indicies\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a47289d4ed5ce503243642044b47907fb}{Plane\+Impact\+Response} (int plane\+\_\+ident=0, size\+\_\+t \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_ae6ff423372c28e1fec5e13a47d1648d2}{nbins}=10000, double tick=0.\+5 $\ast$units\+::us)
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a3d10a9817c3f150e03b72181bea818c1}{$\sim$\+Plane\+Impact\+Response} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a5ab969666fea20210311a3751db47db0}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&cfg)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_aa3ff90ee6b2da59981703b26ea36dd03}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Impact\+Response\+::pointer} \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a1f0049663133e90f7c3b30f7dda63943}{closest} (double relpitch) const
+\item 
+virtual \hyperlink{namespace_wire_cell_ae163f7e69ff1625cf269418b35194d37}{Two\+Impact\+Responses} \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_aa33dc4d2ab03046b055a8a8843fc07bd}{bounded} (double relpitch) const
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a6d35e0f23850e8b5922216bae603af5e}{pitch\+\_\+range} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a350984012f21b48b8ab4515a371a3f8c}{pitch} () const
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_ae0d3d3611d894db56f398abbf67d3373}{impact} () const
+\item 
+int \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a8fc3604f6bd80d29095f205c59b768c2}{nwires} () const
+\begin{DoxyCompactList}\small\item\em The number of wires that span the pitch range. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_ae6ff423372c28e1fec5e13a47d1648d2}{nbins} () const
+\item 
+int \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a0b1b68468b3987429e394680deb33c76}{nimp\+\_\+per\+\_\+wire} () const
+\begin{DoxyCompactList}\small\item\em not in the interface \end{DoxyCompactList}\item 
+const \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a383b0ed60a99682b46afeb5ecb446078}{wire\+\_\+region\+\_\+indicies\+\_\+t} \& \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_aae6cf57460996098bba052af6793a6de}{bywire\+\_\+map} () const
+\item 
+std\+::pair$<$ int, int $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a205df947b332100ddf1179b58b46f47e}{closest\+\_\+wire\+\_\+impact} (double relpitch) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Collection of all impact responses for a plane 
+
+Definition at line 53 of file Plane\+Impact\+Response.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a76147eaef10e6fe542bf25d85acc40f7}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a76147eaef10e6fe542bf25d85acc40f7}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!region\+\_\+indices\+\_\+t@{region\+\_\+indices\+\_\+t}}
+\index{region\+\_\+indices\+\_\+t@{region\+\_\+indices\+\_\+t}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{region\+\_\+indices\+\_\+t}{region\_indices\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$int$>$ \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a76147eaef10e6fe542bf25d85acc40f7}{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response\+::region\+\_\+indices\+\_\+t}}
+
+
+
+Definition at line 99 of file Plane\+Impact\+Response.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a383b0ed60a99682b46afeb5ecb446078}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a383b0ed60a99682b46afeb5ecb446078}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!wire\+\_\+region\+\_\+indicies\+\_\+t@{wire\+\_\+region\+\_\+indicies\+\_\+t}}
+\index{wire\+\_\+region\+\_\+indicies\+\_\+t@{wire\+\_\+region\+\_\+indicies\+\_\+t}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{wire\+\_\+region\+\_\+indicies\+\_\+t}{wire\_region\_indicies\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a76147eaef10e6fe542bf25d85acc40f7}{region\+\_\+indices\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a383b0ed60a99682b46afeb5ecb446078}{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response\+::wire\+\_\+region\+\_\+indicies\+\_\+t}}
+
+
+
+Definition at line 100 of file Plane\+Impact\+Response.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a47289d4ed5ce503243642044b47907fb}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a47289d4ed5ce503243642044b47907fb}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!Plane\+Impact\+Response@{Plane\+Impact\+Response}}
+\index{Plane\+Impact\+Response@{Plane\+Impact\+Response}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{Plane\+Impact\+Response()}{PlaneImpactResponse()}}
+{\footnotesize\ttfamily Gen\+::\+Plane\+Impact\+Response\+::\+Plane\+Impact\+Response (\begin{DoxyParamCaption}\item[{int}]{plane\+\_\+ident = {\ttfamily 0},  }\item[{size\+\_\+t}]{nbins = {\ttfamily 10000},  }\item[{double}]{tick = {\ttfamily 0.5$\ast$units\+:\+:us} }\end{DoxyParamCaption})}
+
+Create a \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response}{Plane\+Impact\+Response}.
+
+Field response is assumed to be normalized in units of current.
+
+Pre-\/amplifier gain and peaking time is that of the FE electronics. The preamp gain should be in units consistent with the field response. If 0.\+0 then no electronics response will be convolved.
+
+A flat post-\/\+F\+EE amplifier gain can also be given to provide a global scaling of the output of the electronics.
+
+Fixme\+: field response should be provided by a component. 
+
+Definition at line 34 of file Plane\+Impact\+Response.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a3d10a9817c3f150e03b72181bea818c1}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a3d10a9817c3f150e03b72181bea818c1}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!````~Plane\+Impact\+Response@{$\sim$\+Plane\+Impact\+Response}}
+\index{````~Plane\+Impact\+Response@{$\sim$\+Plane\+Impact\+Response}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{$\sim$\+Plane\+Impact\+Response()}{~PlaneImpactResponse()}}
+{\footnotesize\ttfamily Gen\+::\+Plane\+Impact\+Response\+::$\sim$\+Plane\+Impact\+Response (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 253 of file Plane\+Impact\+Response.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_aa33dc4d2ab03046b055a8a8843fc07bd}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_aa33dc4d2ab03046b055a8a8843fc07bd}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!bounded@{bounded}}
+\index{bounded@{bounded}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{bounded()}{bounded()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_ae163f7e69ff1625cf269418b35194d37}{Two\+Impact\+Responses} Gen\+::\+Plane\+Impact\+Response\+::bounded (\begin{DoxyParamCaption}\item[{double}]{relpitch }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the two responses which are associated with the impact positions on either side of the given pitch location (measured relative to the wire of interest). 
+
+Implements \hyperlink{class_wire_cell_1_1_i_plane_impact_response_af336a51ac8ccc5df822e10fe1d8275d3}{Wire\+Cell\+::\+I\+Plane\+Impact\+Response}.
+
+
+
+Definition at line 302 of file Plane\+Impact\+Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_plane_impact_response_aa33dc4d2ab03046b055a8a8843fc07bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_aae6cf57460996098bba052af6793a6de}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_aae6cf57460996098bba052af6793a6de}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!bywire\+\_\+map@{bywire\+\_\+map}}
+\index{bywire\+\_\+map@{bywire\+\_\+map}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{bywire\+\_\+map()}{bywire\_map()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_gen_1_1_plane_impact_response_a383b0ed60a99682b46afeb5ecb446078}{wire\+\_\+region\+\_\+indicies\+\_\+t}\& Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response\+::bywire\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file Plane\+Impact\+Response.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a1f0049663133e90f7c3b30f7dda63943}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a1f0049663133e90f7c3b30f7dda63943}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!closest@{closest}}
+\index{closest@{closest}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{closest()}{closest()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Impact\+Response\+::pointer} Gen\+::\+Plane\+Impact\+Response\+::closest (\begin{DoxyParamCaption}\item[{double}]{relpitch }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Return the response at the impact position closest to the given relative pitch location (measured relative to the wire of interest). 
+
+Implements \hyperlink{class_wire_cell_1_1_i_plane_impact_response_acae9f97e8ec30523c563bd90a66b4eab}{Wire\+Cell\+::\+I\+Plane\+Impact\+Response}.
+
+
+
+Definition at line 275 of file Plane\+Impact\+Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_plane_impact_response_a1f0049663133e90f7c3b30f7dda63943_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a205df947b332100ddf1179b58b46f47e}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a205df947b332100ddf1179b58b46f47e}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!closest\+\_\+wire\+\_\+impact@{closest\+\_\+wire\+\_\+impact}}
+\index{closest\+\_\+wire\+\_\+impact@{closest\+\_\+wire\+\_\+impact}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{closest\+\_\+wire\+\_\+impact()}{closest\_wire\_impact()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Gen\+::\+Plane\+Impact\+Response\+::closest\+\_\+wire\+\_\+impact (\begin{DoxyParamCaption}\item[{double}]{relpitch }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 262 of file Plane\+Impact\+Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_plane_impact_response_a205df947b332100ddf1179b58b46f47e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_plane_impact_response_a205df947b332100ddf1179b58b46f47e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a5ab969666fea20210311a3751db47db0}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a5ab969666fea20210311a3751db47db0}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Gen\+::\+Plane\+Impact\+Response\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 64 of file Plane\+Impact\+Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_plane_impact_response_a5ab969666fea20210311a3751db47db0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_aa3ff90ee6b2da59981703b26ea36dd03}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_aa3ff90ee6b2da59981703b26ea36dd03}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Gen\+::\+Plane\+Impact\+Response\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 44 of file Plane\+Impact\+Response.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_ae0d3d3611d894db56f398abbf67d3373}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_ae0d3d3611d894db56f398abbf67d3373}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!impact@{impact}}
+\index{impact@{impact}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{impact()}{impact()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response\+::impact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_plane_impact_response_a3259cbe4883bce2cb4010e0667ec957b}{Wire\+Cell\+::\+I\+Plane\+Impact\+Response}.
+
+
+
+Definition at line 91 of file Plane\+Impact\+Response.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_ae6ff423372c28e1fec5e13a47d1648d2}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_ae6ff423372c28e1fec5e13a47d1648d2}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!nbins@{nbins}}
+\index{nbins@{nbins}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{nbins()}{nbins()}}
+{\footnotesize\ttfamily size\+\_\+t Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response\+::nbins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_plane_impact_response_acc087884ba0315e588e29398062ed12e}{Wire\+Cell\+::\+I\+Plane\+Impact\+Response}.
+
+
+
+Definition at line 95 of file Plane\+Impact\+Response.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a0b1b68468b3987429e394680deb33c76}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a0b1b68468b3987429e394680deb33c76}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!nimp\+\_\+per\+\_\+wire@{nimp\+\_\+per\+\_\+wire}}
+\index{nimp\+\_\+per\+\_\+wire@{nimp\+\_\+per\+\_\+wire}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{nimp\+\_\+per\+\_\+wire()}{nimp\_per\_wire()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response\+::nimp\+\_\+per\+\_\+wire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+not in the interface 
+
+
+
+Definition at line 98 of file Plane\+Impact\+Response.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_plane_impact_response_a0b1b68468b3987429e394680deb33c76_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a8fc3604f6bd80d29095f205c59b768c2}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a8fc3604f6bd80d29095f205c59b768c2}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!nwires@{nwires}}
+\index{nwires@{nwires}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{nwires()}{nwires()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response\+::nwires (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The number of wires that span the pitch range. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_plane_impact_response_abe58b933a8ba84911d705f46f277b306}{Wire\+Cell\+::\+I\+Plane\+Impact\+Response}.
+
+
+
+Definition at line 93 of file Plane\+Impact\+Response.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_plane_impact_response_a8fc3604f6bd80d29095f205c59b768c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a350984012f21b48b8ab4515a371a3f8c}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a350984012f21b48b8ab4515a371a3f8c}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!pitch@{pitch}}
+\index{pitch@{pitch}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{pitch()}{pitch()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response\+::pitch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_plane_impact_response_ad8fcf3440976f14b05debbbf6d743d88}{Wire\+Cell\+::\+I\+Plane\+Impact\+Response}.
+
+
+
+Definition at line 90 of file Plane\+Impact\+Response.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_plane_impact_response_a6d35e0f23850e8b5922216bae603af5e}\label{class_wire_cell_1_1_gen_1_1_plane_impact_response_a6d35e0f23850e8b5922216bae603af5e}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}!pitch\+\_\+range@{pitch\+\_\+range}}
+\index{pitch\+\_\+range@{pitch\+\_\+range}!Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response@{Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response}}
+\subsubsection{\texorpdfstring{pitch\+\_\+range()}{pitch\_range()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Plane\+Impact\+Response\+::pitch\+\_\+range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The extent in pitch covered by the impact positions. This extent is relative to and centered on the \char`\"{}wire of
+interest\char`\"{} for which the P\+IR is associated. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_plane_impact_response_a2145d23de537013749fb0cbe822ad7c2}{Wire\+Cell\+::\+I\+Plane\+Impact\+Response}.
+
+
+
+Definition at line 89 of file Plane\+Impact\+Response.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_plane_impact_response_8h}{Plane\+Impact\+Response.\+h}\item 
+gen/src/\hyperlink{_plane_impact_response_8cxx}{Plane\+Impact\+Response.\+cxx}\end{DoxyCompactItemize}

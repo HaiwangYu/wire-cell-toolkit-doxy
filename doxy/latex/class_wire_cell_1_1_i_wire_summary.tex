@@ -1,0 +1,147 @@
+\hypertarget{class_wire_cell_1_1_i_wire_summary}{}\section{Wire\+Cell\+:\+:I\+Wire\+Summary Class Reference}
+\label{class_wire_cell_1_1_i_wire_summary}\index{Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}}
+
+
+{\ttfamily \#include $<$I\+Wire\+Summary.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Wire\+Summary\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_wire_cell_1_1_i_wire_summary__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Wire\+Summary\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_wire_cell_1_1_i_wire_summary__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_wire_summary_add8f74cd11ca13a3d91d8ae3bc9bfca4}{$\sim$\+I\+Wire\+Summary} ()
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box} \& \hyperlink{class_wire_cell_1_1_i_wire_summary_a58909d3b43592b2633c9d4d9109c90fb}{box} () const =0
+\begin{DoxyCompactList}\small\item\em Return the bounding box of the wire planes. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Wire\+::pointer} \hyperlink{class_wire_cell_1_1_i_wire_summary_aa3c27c8c001bfacb7b1eb55dc586fb9f}{closest} (const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&point, \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} wpid) const =0
+\item 
+virtual \hyperlink{namespace_wire_cell_ad5f0e75d8f0e885d9ae4e9154e812d76}{I\+Wire\+Pair} \hyperlink{class_wire_cell_1_1_i_wire_summary_a13c8567121a0ab3dc34f402eddd5f718}{bounding\+\_\+wires} (const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&point, \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} wpid) const =0
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_wire_summary_ac84fc8bf80d707050bda62b0dc9355fd}{pitch\+\_\+distance} (const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&point, \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} wpid) const =0
+\item 
+virtual const \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} \& \hyperlink{class_wire_cell_1_1_i_wire_summary_a7ed1cb880286717c269fa4fb9fcceec9}{pitch\+\_\+direction} (\hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id} wpid) const =0
+\begin{DoxyCompactList}\small\item\em Return a unit vector along the direction of the pitch. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Wire\+::vector} \hyperlink{class_wire_cell_1_1_i_wire_summary_a145ad4b5e1099d7914754459cc3a5a41}{by\+\_\+channel} (int channel) const =0
+\begin{DoxyCompactList}\small\item\em Return all wires, in order of segment number, attached to the channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wire_cell_1_1_interface}{Interface} to summary information about wires.
+
+Note\+: the actual implementation of these are likely just a bunch of stand-\/alone functions. They are couched into a class in order to allow for caching optimization and to avoid having to constantly pass in the wires. 
+
+Definition at line 16 of file I\+Wire\+Summary.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_summary_add8f74cd11ca13a3d91d8ae3bc9bfca4}\label{class_wire_cell_1_1_i_wire_summary_add8f74cd11ca13a3d91d8ae3bc9bfca4}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}!````~I\+Wire\+Summary@{$\sim$\+I\+Wire\+Summary}}
+\index{````~I\+Wire\+Summary@{$\sim$\+I\+Wire\+Summary}!Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Wire\+Summary()}{~IWireSummary()}}
+{\footnotesize\ttfamily I\+Wire\+Summary\+::$\sim$\+I\+Wire\+Summary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 172 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_summary_a13c8567121a0ab3dc34f402eddd5f718}\label{class_wire_cell_1_1_i_wire_summary_a13c8567121a0ab3dc34f402eddd5f718}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}!bounding\+\_\+wires@{bounding\+\_\+wires}}
+\index{bounding\+\_\+wires@{bounding\+\_\+wires}!Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}}
+\subsubsection{\texorpdfstring{bounding\+\_\+wires()}{bounding\_wires()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespace_wire_cell_ad5f0e75d8f0e885d9ae4e9154e812d76}{I\+Wire\+Pair} Wire\+Cell\+::\+I\+Wire\+Summary\+::bounding\+\_\+wires (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&}]{point,  }\item[{\hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id}}]{wpid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return a pair of adjacent wires from the given plane which bound the given point along the pitch direction. The pair is ordered by increasing wire index number. If one or both sides of the point are unbound by wire (segments) the associated pointer will be zero. It is assumed the point is in the (Y-\/Z) bounding box of the wire plane. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_wire_summary_a0dd41ce408d6cf49e923a1bd0a893038}{Wire\+Cell\+::\+Wire\+Summary}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_summary_a58909d3b43592b2633c9d4d9109c90fb}\label{class_wire_cell_1_1_i_wire_summary_a58909d3b43592b2633c9d4d9109c90fb}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}!box@{box}}
+\index{box@{box}!Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}}
+\subsubsection{\texorpdfstring{box()}{box()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_bounding_box}{Bounding\+Box}\& Wire\+Cell\+::\+I\+Wire\+Summary\+::box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the bounding box of the wire planes. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_wire_summary_aeb12de01cfc6a14c8745100e5bef3e3d}{Wire\+Cell\+::\+Wire\+Summary}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_summary_a145ad4b5e1099d7914754459cc3a5a41}\label{class_wire_cell_1_1_i_wire_summary_a145ad4b5e1099d7914754459cc3a5a41}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}!by\+\_\+channel@{by\+\_\+channel}}
+\index{by\+\_\+channel@{by\+\_\+channel}!Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}}
+\subsubsection{\texorpdfstring{by\+\_\+channel()}{by\_channel()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_data_ae1a9f863380499bb43f39fabb6276660}{I\+Wire\+::vector} Wire\+Cell\+::\+I\+Wire\+Summary\+::by\+\_\+channel (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return all wires, in order of segment number, attached to the channel. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_wire_summary_ae627ae15980a5d2ea5dd0e3f8eb47fe8}{Wire\+Cell\+::\+Wire\+Summary}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_summary_aa3c27c8c001bfacb7b1eb55dc586fb9f}\label{class_wire_cell_1_1_i_wire_summary_aa3c27c8c001bfacb7b1eb55dc586fb9f}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}!closest@{closest}}
+\index{closest@{closest}!Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}}
+\subsubsection{\texorpdfstring{closest()}{closest()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Wire\+::pointer} Wire\+Cell\+::\+I\+Wire\+Summary\+::closest (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&}]{point,  }\item[{\hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id}}]{wpid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the closest wire along the pitch direction to the given point in the given wire plane. It is assumed the point is in the (Y-\/Z) bounding box of the wire plane. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_wire_summary_ad5b6996523e8d8a98fd0caec607fd9ad}{Wire\+Cell\+::\+Wire\+Summary}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_summary_a7ed1cb880286717c269fa4fb9fcceec9}\label{class_wire_cell_1_1_i_wire_summary_a7ed1cb880286717c269fa4fb9fcceec9}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}!pitch\+\_\+direction@{pitch\+\_\+direction}}
+\index{pitch\+\_\+direction@{pitch\+\_\+direction}!Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}}
+\subsubsection{\texorpdfstring{pitch\+\_\+direction()}{pitch\_direction()}}
+{\footnotesize\ttfamily virtual const \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector}\& Wire\+Cell\+::\+I\+Wire\+Summary\+::pitch\+\_\+direction (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id}}]{wpid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return a unit vector along the direction of the pitch. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_wire_summary_a0b38146487504f384c0a619db67f6e4a}{Wire\+Cell\+::\+Wire\+Summary}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_wire_summary_ac84fc8bf80d707050bda62b0dc9355fd}\label{class_wire_cell_1_1_i_wire_summary_ac84fc8bf80d707050bda62b0dc9355fd}} 
+\index{Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}!pitch\+\_\+distance@{pitch\+\_\+distance}}
+\index{pitch\+\_\+distance@{pitch\+\_\+distance}!Wire\+Cell\+::\+I\+Wire\+Summary@{Wire\+Cell\+::\+I\+Wire\+Summary}}
+\subsubsection{\texorpdfstring{pitch\+\_\+distance()}{pitch\_distance()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Wire\+Summary\+::pitch\+\_\+distance (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Point} \&}]{point,  }\item[{\hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Plane\+Id}}]{wpid }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return the distance along the pitch of the given wire plane to the given point as measured from the zeroth wire. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_wire_summary_a61c1c383ee6b110a37609a3d892b01d2}{Wire\+Cell\+::\+Wire\+Summary}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_wire_summary_8h}{I\+Wire\+Summary.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

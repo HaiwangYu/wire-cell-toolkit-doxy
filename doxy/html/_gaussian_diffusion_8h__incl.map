@@ -1,0 +1,14 @@
+<map id="gen/inc/WireCellGen/GaussianDiffusion.h" name="gen/inc/WireCellGen/GaussianDiffusion.h">
+<area shape="rect" id="node2" href="$_array_8h.html" title="WireCellUtil/Array.h" alt="" coords="745,169,884,196"/>
+<area shape="rect" id="node13" href="$_binning_8h.html" title="WireCellUtil/Binning.h" alt="" coords="62,244,213,271"/>
+<area shape="rect" id="node16" href="$_i_depo_8h.html" title="WireCellIface/IDepo.h" alt="" coords="1009,95,1159,121"/>
+<area shape="rect" id="node27" href="$_i_random_8h.html" title="WireCellIface/IRandom.h" alt="" coords="1339,95,1509,121"/>
+<area shape="rect" id="node3" href="$_waveform_8h.html" title="WireCellUtil/Waveform.h" alt="" coords="535,244,702,271"/>
+<area shape="rect" id="node17" href="$_i_data_8h.html" title="WireCellIface/IData.h" alt="" coords="1207,244,1355,271"/>
+<area shape="rect" id="node18" href="$_point_8h.html" title="WireCellUtil/Point.h" alt="" coords="909,169,1046,196"/>
+<area shape="rect" id="node26" href="$_units_8h.html" title="WireCellUtil/Units.h" alt="" coords="1172,169,1311,196"/>
+<area shape="rect" id="node19" href="$_d3_vector_8h.html" title="WireCellUtil/D3Vector.h" alt="" coords="348,244,511,271"/>
+<area shape="rect" id="node20" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="732,244,916,271"/>
+<area shape="rect" id="node28" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="1335,169,1513,196"/>
+<area shape="rect" id="node29" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="1431,244,1590,271"/>
+</map>

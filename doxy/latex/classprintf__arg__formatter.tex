@@ -1,0 +1,221 @@
+\hypertarget{classprintf__arg__formatter}{}\section{printf\+\_\+arg\+\_\+formatter$<$ Range $>$ Class Template Reference}
+\label{classprintf__arg__formatter}\index{printf\+\_\+arg\+\_\+formatter$<$ Range $>$@{printf\+\_\+arg\+\_\+formatter$<$ Range $>$}}
+
+
+{\ttfamily \#include $<$printf.\+h$>$}
+
+
+
+Inheritance diagram for printf\+\_\+arg\+\_\+formatter$<$ Range $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprintf__arg__formatter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for printf\+\_\+arg\+\_\+formatter$<$ Range $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprintf__arg__formatter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{base\+::format\+\_\+specs} \hyperlink{classprintf__arg__formatter_ac9aa8ec04599fa4a6e0dc5645defc718}{format\+\_\+specs}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classprintf__arg__formatter_a776ca166c8295596e9636470e8522f66}{printf\+\_\+arg\+\_\+formatter} (\hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $>$ \&\hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer}, \hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{format\+\_\+specs} \&\hyperlink{classinternal_1_1arg__formatter__base_aee5efc224d29ce5352d856cbb9afeffa}{spec}, \hyperlink{classbasic__printf__context}{context\+\_\+type} \&ctx)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+integral$<$ T $>$\+::value, iterator $>$\+::type \hyperlink{classprintf__arg__formatter_adf72c691ec2561e444ac9520cc158243}{operator()} (T value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+floating\+\_\+point$<$ T $>$\+::value, iterator $>$\+::type \hyperlink{classprintf__arg__formatter_a5f44717eed332acb0f2a50cfaa6b2efd}{operator()} (T value)
+\item 
+iterator \hyperlink{classprintf__arg__formatter_a4e462c5b70ceef75a41261472aa56313}{operator()} (const char $\ast$value)
+\item 
+iterator \hyperlink{classprintf__arg__formatter_a880170cd3e3ace7546cb01268586ac77}{operator()} (const wchar\+\_\+t $\ast$value)
+\item 
+iterator \hyperlink{classprintf__arg__formatter_a5207b86409ce0aab09db50ae8200097e}{operator()} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $>$ value)
+\item 
+iterator \hyperlink{classprintf__arg__formatter_ae4e5a2115e2770ef22b98b3329a5916a}{operator()} (\hyperlink{structmonostate}{monostate} value)
+\item 
+iterator \hyperlink{classprintf__arg__formatter_a22c7d349112400ecf9a66005b1a0229e}{operator()} (const void $\ast$value)
+\item 
+iterator \hyperlink{classprintf__arg__formatter_a57ded50a248eab9775966e05330dfcb5}{operator()} (typename \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ \hyperlink{classbasic__printf__context}{context\+\_\+type} $>$\+::handle handle)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Range$>$\newline
+class printf\+\_\+arg\+\_\+formatter$<$ Range $>$}
+
+The {\ttfamily printf} argument formatter.  
+
+Definition at line 330 of file printf.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classprintf__arg__formatter_ac9aa8ec04599fa4a6e0dc5645defc718}\label{classprintf__arg__formatter_ac9aa8ec04599fa4a6e0dc5645defc718}} 
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!format\+\_\+specs@{format\+\_\+specs}}
+\index{format\+\_\+specs@{format\+\_\+specs}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\subsubsection{\texorpdfstring{format\+\_\+specs}{format\_specs}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+typedef \hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{base\+::format\+\_\+specs} \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter}$<$ Range $>$\+::\hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{format\+\_\+specs}}
+
+
+
+Definition at line 367 of file printf.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classprintf__arg__formatter_a776ca166c8295596e9636470e8522f66}\label{classprintf__arg__formatter_a776ca166c8295596e9636470e8522f66}} 
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\subsubsection{\texorpdfstring{printf\+\_\+arg\+\_\+formatter()}{printf\_arg\_formatter()}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+\hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter}$<$ Range $>$\+::\hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter} (\begin{DoxyParamCaption}\item[{\hyperlink{classinternal_1_1basic__buffer}{internal\+::basic\+\_\+buffer}$<$ \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $>$ \&}]{buffer,  }\item[{\hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{format\+\_\+specs} \&}]{spec,  }\item[{\hyperlink{classbasic__printf__context}{context\+\_\+type} \&}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs an argument formatter object. buffer$\ast$ is a reference to the output buffer and {\itshape spec} contains format specifier information for standard argument types.  
+
+Definition at line 376 of file printf.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classprintf__arg__formatter_adf72c691ec2561e444ac9520cc158243}\label{classprintf__arg__formatter_adf72c691ec2561e444ac9520cc158243}} 
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!operator()@{operator()}}
+\index{operator()@{operator()}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+template$<$typename T $>$ \\
+std\+::enable\+\_\+if$<$std\+::is\+\_\+integral$<$T$>$\+::value, iterator$>$\+::type \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 384 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprintf__arg__formatter_adf72c691ec2561e444ac9520cc158243_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprintf__arg__formatter_a5f44717eed332acb0f2a50cfaa6b2efd}\label{classprintf__arg__formatter_a5f44717eed332acb0f2a50cfaa6b2efd}} 
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!operator()@{operator()}}
+\index{operator()@{operator()}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+template$<$typename T $>$ \\
+std\+::enable\+\_\+if$<$std\+::is\+\_\+floating\+\_\+point$<$T$>$\+::value, iterator$>$\+::type \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 408 of file printf.\+h.
+
+\mbox{\Hypertarget{classprintf__arg__formatter_a4e462c5b70ceef75a41261472aa56313}\label{classprintf__arg__formatter_a4e462c5b70ceef75a41261472aa56313}} 
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!operator()@{operator()}}
+\index{operator()@{operator()}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+iterator \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{const char $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Formats a null-\/terminated C string. 
+
+Definition at line 413 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprintf__arg__formatter_a4e462c5b70ceef75a41261472aa56313_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprintf__arg__formatter_a880170cd3e3ace7546cb01268586ac77}\label{classprintf__arg__formatter_a880170cd3e3ace7546cb01268586ac77}} 
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!operator()@{operator()}}
+\index{operator()@{operator()}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+iterator \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Formats a null-\/terminated wide C string. 
+
+Definition at line 424 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprintf__arg__formatter_a880170cd3e3ace7546cb01268586ac77_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprintf__arg__formatter_a5207b86409ce0aab09db50ae8200097e}\label{classprintf__arg__formatter_a5207b86409ce0aab09db50ae8200097e}} 
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!operator()@{operator()}}
+\index{operator()@{operator()}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+iterator \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 434 of file printf.\+h.
+
+\mbox{\Hypertarget{classprintf__arg__formatter_ae4e5a2115e2770ef22b98b3329a5916a}\label{classprintf__arg__formatter_ae4e5a2115e2770ef22b98b3329a5916a}} 
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!operator()@{operator()}}
+\index{operator()@{operator()}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+iterator \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{structmonostate}{monostate}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 438 of file printf.\+h.
+
+\mbox{\Hypertarget{classprintf__arg__formatter_a22c7d349112400ecf9a66005b1a0229e}\label{classprintf__arg__formatter_a22c7d349112400ecf9a66005b1a0229e}} 
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!operator()@{operator()}}
+\index{operator()@{operator()}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+iterator \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{const void $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Formats a pointer. 
+
+Definition at line 443 of file printf.\+h.
+
+\mbox{\Hypertarget{classprintf__arg__formatter_a57ded50a248eab9775966e05330dfcb5}\label{classprintf__arg__formatter_a57ded50a248eab9775966e05330dfcb5}} 
+\index{printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}!operator()@{operator()}}
+\index{operator()@{operator()}!printf\+\_\+arg\+\_\+formatter@{printf\+\_\+arg\+\_\+formatter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+iterator \hyperlink{classprintf__arg__formatter}{printf\+\_\+arg\+\_\+formatter}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{typename \hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ \hyperlink{classbasic__printf__context}{context\+\_\+type} $>$\+::handle}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Formats an argument of a custom (user-\/defined) type. 
+
+Definition at line 452 of file printf.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classprintf__arg__formatter_a57ded50a248eab9775966e05330dfcb5_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{printf_8h}{printf.\+h}\end{DoxyCompactItemize}

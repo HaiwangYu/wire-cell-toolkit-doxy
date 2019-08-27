@@ -1,0 +1,11 @@
+<map id="WireCell::Img::SumSlicer" name="WireCell::Img::SumSlicer">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_img_1_1_sum_slice_base.html" title="WireCell::Img::SumSliceBase" alt="" coords="5,341,201,367"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="27,259,185,285"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="52,169,203,211"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="139,5,270,32"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="197,80,348,121"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_frame_slicer.html" title="WireCell::IFrameSlicer" alt="" coords="209,423,363,449"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_i_function_node.html" title="WireCell::IFunctionNode\l\&lt; IFrame, ISliceFrame \&gt;" alt="" coords="226,333,391,375"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_i_function_node_base.html" title="WireCell::IFunctionNodeBase" alt="" coords="210,259,405,285"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="238,177,353,203"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="WireCell::type" name="WireCell::type">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_main.html#a7cd2683098093ad0f714873a9112543e" title="WireCell::Main::initialize" alt="" coords="185,5,347,32"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_main.html#a4a7f5c181bfd1cc972156ff96952436a" title="Run any and all application components once. " alt="" coords="181,56,351,83"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_fourdee.html#a316c2ab798af8812a737b05ad5a788ae" title="WireCell::Gen::Fourdee\l::execute_new" alt="" coords="187,107,345,149"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_fourdee.html#a2a79017c41d76c2cd942ba1c87eb3106" title="WireCell::Gen::Fourdee\l::execute_old" alt="" coords="187,173,345,214"/>
+<area shape="rect" id="node7" href="$class_wire_cell_tbb_1_1_tbb_flow.html#aad4ef0b553f5efdbe2558fad84373ab9" title="Accept a configuration. " alt="" coords="190,238,342,279"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_named_factory_registry.html#a81b540cbf24b04c728ad24a7e0af6c2e" title="WireCell::NamedFactoryRegistry\l::instance" alt="" coords="159,303,373,345"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_config_manager.html#a8c96b5d7ab755d24a7dc9d9c2ea6cf4b" title="WireCell::ConfigManager::add" alt="" coords="167,369,365,396"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_fourdee.html#ad7e5725da98e74348a3151e9ddd75cde" title="Implement to run something. " alt="" coords="421,107,580,149"/>
+<area shape="rect" id="node9" href="$namespace_wire_cell_1_1_factory.html#a17712091b6e64cd7936ec21901b32b39" title="WireCell::Factory::\llookup" alt="" coords="435,303,567,345"/>
+</map>

@@ -1,0 +1,154 @@
+\hypertarget{class_wire_cell_1_1_i_join_node_base}{}\section{Wire\+Cell\+:\+:I\+Join\+Node\+Base Class Reference}
+\label{class_wire_cell_1_1_i_join_node_base}\index{Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}}
+
+
+{\ttfamily \#include $<$I\+Join\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Join\+Node\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_join_node_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Join\+Node\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{class_wire_cell_1_1_i_join_node_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_join_node_base}{I\+Join\+Node\+Base} $>$ \hyperlink{class_wire_cell_1_1_i_join_node_base_a9491ccf1feadd927311d30eba0ff816b}{pointer}
+\item 
+typedef std\+::vector$<$ boost\+::any $>$ \hyperlink{class_wire_cell_1_1_i_join_node_base_a5d53e0f00c30b472677c399c7d358fa3}{any\+\_\+vector}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_join_node_base_a3ce8adfd85d17ef7433cc615b934c488}{$\sim$\+I\+Join\+Node\+Base} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_join_node_base_a8d90a969ef56dbb0731e70b05a9d06f8}{operator()} (const \hyperlink{class_wire_cell_1_1_i_join_node_base_a5d53e0f00c30b472677c399c7d358fa3}{any\+\_\+vector} \&anyin, boost\+::any \&anyout)=0
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} \hyperlink{class_wire_cell_1_1_i_join_node_base_aa136f23e80aa3919612a3fd396b502f9}{category} ()
+\begin{DoxyCompactList}\small\item\em Return the behavior category type. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_join_node_base_a03ae350e6d99bff19fc4e01c9e3d7f6d}{concurrency} ()
+\begin{DoxyCompactList}\small\item\em Join nodes can usually do their thing stateless. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A node which joins N data objects each of a distinct type and arriving synchronously to produce a single output object. 
+
+Definition at line 18 of file I\+Join\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_base_a5d53e0f00c30b472677c399c7d358fa3}\label{class_wire_cell_1_1_i_join_node_base_a5d53e0f00c30b472677c399c7d358fa3}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}!any\+\_\+vector@{any\+\_\+vector}}
+\index{any\+\_\+vector@{any\+\_\+vector}!Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}}
+\subsubsection{\texorpdfstring{any\+\_\+vector}{any\_vector}}
+{\footnotesize\ttfamily typedef std\+::vector$<$boost\+::any$>$ \hyperlink{class_wire_cell_1_1_i_join_node_base_a5d53e0f00c30b472677c399c7d358fa3}{Wire\+Cell\+::\+I\+Join\+Node\+Base\+::any\+\_\+vector}}
+
+
+
+Definition at line 25 of file I\+Join\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_base_a9491ccf1feadd927311d30eba0ff816b}\label{class_wire_cell_1_1_i_join_node_base_a9491ccf1feadd927311d30eba0ff816b}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_join_node_base}{I\+Join\+Node\+Base}$>$ \hyperlink{class_wire_cell_1_1_i_join_node_base_a9491ccf1feadd927311d30eba0ff816b}{Wire\+Cell\+::\+I\+Join\+Node\+Base\+::pointer}}
+
+
+
+Definition at line 21 of file I\+Join\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_base_a3ce8adfd85d17ef7433cc615b934c488}\label{class_wire_cell_1_1_i_join_node_base_a3ce8adfd85d17ef7433cc615b934c488}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}!````~I\+Join\+Node\+Base@{$\sim$\+I\+Join\+Node\+Base}}
+\index{````~I\+Join\+Node\+Base@{$\sim$\+I\+Join\+Node\+Base}!Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Join\+Node\+Base()}{~IJoinNodeBase()}}
+{\footnotesize\ttfamily I\+Join\+Node\+Base\+::$\sim$\+I\+Join\+Node\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 145 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_base_aa136f23e80aa3919612a3fd396b502f9}\label{class_wire_cell_1_1_i_join_node_base_aa136f23e80aa3919612a3fd396b502f9}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}!category@{category}}
+\index{category@{category}!Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}}
+\subsubsection{\texorpdfstring{category()}{category()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} Wire\+Cell\+::\+I\+Join\+Node\+Base\+::category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the behavior category type. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_node_a58c07f15b165e5fb33bbc7b2e047b39b}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 30 of file I\+Join\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_base_a03ae350e6d99bff19fc4e01c9e3d7f6d}\label{class_wire_cell_1_1_i_join_node_base_a03ae350e6d99bff19fc4e01c9e3d7f6d}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}!concurrency@{concurrency}}
+\index{concurrency@{concurrency}!Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}}
+\subsubsection{\texorpdfstring{concurrency()}{concurrency()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Join\+Node\+Base\+::concurrency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Join nodes can usually do their thing stateless. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_a87d2b7293da4f6955e389ac6a2011306}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 35 of file I\+Join\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_join_node_base_a8d90a969ef56dbb0731e70b05a9d06f8}\label{class_wire_cell_1_1_i_join_node_base_a8d90a969ef56dbb0731e70b05a9d06f8}} 
+\index{Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Join\+Node\+Base@{Wire\+Cell\+::\+I\+Join\+Node\+Base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual bool Wire\+Cell\+::\+I\+Join\+Node\+Base\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_join_node_base_a5d53e0f00c30b472677c399c7d358fa3}{any\+\_\+vector} \&}]{anyin,  }\item[{boost\+::any \&}]{anyout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The calling signature\+: 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_i_join_node_ab807b2f2f3abbfedc1c1292f8a9cd617}{Wire\+Cell\+::\+I\+Join\+Node$<$ Input\+Tuple, Output\+Type $>$}, and \hyperlink{class_wire_cell_1_1_i_join_node_ab807b2f2f3abbfedc1c1292f8a9cd617}{Wire\+Cell\+::\+I\+Join\+Node$<$ std\+::tuple$<$ I\+Frame, I\+Frame $>$, I\+Frame $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_join_node_base_a8d90a969ef56dbb0731e70b05a9d06f8_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_join_node_8h}{I\+Join\+Node.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

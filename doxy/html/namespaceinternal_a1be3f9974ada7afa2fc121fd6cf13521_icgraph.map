@@ -1,0 +1,4 @@
+<map id="internal::format_value" name="internal::format_value">
+<area shape="rect" id="node2" href="$structformatter_3_01_t_00_01_char_00_01typename_01std_1_1enable__if_3_01internal_1_1is__streamabdfe791f5d6e0a8acd43f884d0761b8af.html#ae9b195822bae194b4006b061c16eaa0a" title="formatter\&lt; T, Char,\l typename std::enable\l_if\&lt; internal::is_streamable\l\&lt; T, Char \&gt;::value &amp;&amp;!internal\l::format_type\&lt; typename buffer\l_context\&lt; Char \&gt;::type, T \&gt;::value\l \&gt;::type \&gt;::format" alt="" coords="200,5,424,120"/>
+<area shape="rect" id="node3" href="$structprintf__formatter.html#a339e8b7c2916129b1e1001bfd68fe584" title="printf_formatter::format" alt="" coords="235,144,389,171"/>
+</map>

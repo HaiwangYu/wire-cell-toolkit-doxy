@@ -1,0 +1,157 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Protodune\+:\+:One\+Channel\+Noise Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}}
+
+
+{\ttfamily \#include $<$Protodune.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Protodune\+:\+:One\+Channel\+Noise\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Protodune\+:\+:One\+Channel\+Noise\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a31da7da5bc68c93fc56f22135fd0595c}{One\+Channel\+Noise} (const std\+::string \&anode\+\_\+tn=\char`\"{}Anode\+Plane\char`\"{}, const std\+::string \&noisedb=\char`\"{}Omni\+Channel\+Noise\+DB\char`\"{})
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_ab1bfb3d77b45634fbaa594e8c33a891f}{$\sim$\+One\+Channel\+Noise} ()
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a7d891c87a8867d57fc4b6ac86d226876}{apply} (int channel, \hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&sig) const
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_ae4c1803fb4849e5a9e73f65d79fdc909}{apply} (\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t} \&chansig) const
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_acf32ea2e00ad1f3e39e987aa30ca60c3}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em Accept a configuration. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a2f0a41f11d154f971da95d9127be594d}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 95 of file Protodune.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a31da7da5bc68c93fc56f22135fd0595c}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a31da7da5bc68c93fc56f22135fd0595c}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}!One\+Channel\+Noise@{One\+Channel\+Noise}}
+\index{One\+Channel\+Noise@{One\+Channel\+Noise}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}}
+\subsubsection{\texorpdfstring{One\+Channel\+Noise()}{OneChannelNoise()}}
+{\footnotesize\ttfamily Protodune\+::\+One\+Channel\+Noise\+::\+One\+Channel\+Noise (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{anode\+\_\+tn = {\ttfamily \char`\"{}AnodePlane\char`\"{}},  }\item[{const std\+::string \&}]{noisedb = {\ttfamily \char`\"{}OmniChannelNoiseDB\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 776 of file Protodune.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_ab1bfb3d77b45634fbaa594e8c33a891f}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_ab1bfb3d77b45634fbaa594e8c33a891f}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}!````~One\+Channel\+Noise@{$\sim$\+One\+Channel\+Noise}}
+\index{````~One\+Channel\+Noise@{$\sim$\+One\+Channel\+Noise}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}}
+\subsubsection{\texorpdfstring{$\sim$\+One\+Channel\+Noise()}{~OneChannelNoise()}}
+{\footnotesize\ttfamily Protodune\+::\+One\+Channel\+Noise\+::$\sim$\+One\+Channel\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 782 of file Protodune.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a7d891c87a8867d57fc4b6ac86d226876}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a7d891c87a8867d57fc4b6ac86d226876}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise\+::apply (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&}]{sig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Filter in place the signal {\ttfamily sig} from given {\ttfamily channel}. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_filter_a6981186ee38a4b9b66e16c0d9b376b08}{Wire\+Cell\+::\+I\+Channel\+Filter}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a7d891c87a8867d57fc4b6ac86d226876_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_ae4c1803fb4849e5a9e73f65d79fdc909}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_ae4c1803fb4849e5a9e73f65d79fdc909}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} Protodune\+::\+One\+Channel\+Noise\+::apply (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t} \&}]{chansig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Filter in place a group of signals together. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_filter_a47554d77b1dca5596dc61e2221e0a137}{Wire\+Cell\+::\+I\+Channel\+Filter}.
+
+
+
+Definition at line 1028 of file Protodune.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_acf32ea2e00ad1f3e39e987aa30ca60c3}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_acf32ea2e00ad1f3e39e987aa30ca60c3}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Protodune\+::\+One\+Channel\+Noise\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Accept a configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a70292e077d8a9a578494a64e9f9afa6a}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}.
+
+
+
+Definition at line 786 of file Protodune.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a2f0a41f11d154f971da95d9127be594d}\label{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a2f0a41f11d154f971da95d9127be594d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise@{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+One\+Channel\+Noise}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Protodune\+::\+One\+Channel\+Noise\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_config_filter_base_a68b71c244f3a6ade0320a43f1699f1c9}{Wire\+Cell\+::\+Sig\+Proc\+::\+Protodune\+::\+Config\+Filter\+Base}.
+
+
+
+Definition at line 810 of file Protodune.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise_a2f0a41f11d154f971da95d9127be594d_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_protodune_8h}{Protodune.\+h}\item 
+sigproc/src/\hyperlink{_protodune_8cxx}{Protodune.\+cxx}\end{DoxyCompactItemize}

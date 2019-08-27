@@ -1,0 +1,80 @@
+\hypertarget{cnpy_8h}{}\section{util/inc/\+Wire\+Cell\+Util/cnpy.h File Reference}
+\label{cnpy_8h}\index{util/inc/\+Wire\+Cell\+Util/cnpy.\+h@{util/inc/\+Wire\+Cell\+Util/cnpy.\+h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$zlib.\+h$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+Include dependency graph for cnpy.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cnpy_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cnpy_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcnpy_1_1_npy_array}{cnpy\+::\+Npy\+Array}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacecnpy}{cnpy}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacecnpy_acfea2d25a7c0e41b79f04864b0a64a2b}{cnpy\+::npz\+\_\+t} = std\+::map$<$ std\+::string, Npy\+Array $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{namespacecnpy_aa24638ba6b2f41429ee32e03295448cf}{cnpy\+::\+Big\+Endian\+Test} ()
+\item 
+char \hyperlink{namespacecnpy_a569c852a9455b0b0c2a6ffc358155127}{cnpy\+::map\+\_\+type} (const std\+::type\+\_\+info \&t)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ char $>$ \hyperlink{namespacecnpy_a9e4cd705ce96b2350ba17bfdf6f09a24}{cnpy\+::create\+\_\+npy\+\_\+header} (const std\+::vector$<$ size\+\_\+t $>$ \&shape)
+\item 
+void \hyperlink{namespacecnpy_adb801e369cfcf2e47c4b0348dcb54787}{cnpy\+::parse\+\_\+npy\+\_\+header} (F\+I\+LE $\ast$fp, size\+\_\+t \&word\+\_\+size, std\+::vector$<$ size\+\_\+t $>$ \&shape, bool \&fortran\+\_\+order)
+\item 
+void \hyperlink{namespacecnpy_a9ea9e228db8c205a039b7763c74829e8}{cnpy\+::parse\+\_\+npy\+\_\+header} (unsigned char $\ast$\hyperlink{printf_8h_ae986769e0053f875cd11c9fa4d22c8a8}{buffer}, size\+\_\+t \&word\+\_\+size, std\+::vector$<$ size\+\_\+t $>$ \&shape, bool \&fortran\+\_\+order)
+\item 
+void \hyperlink{namespacecnpy_a0feec097a7dbb48c449bc7e9b27b7fd6}{cnpy\+::parse\+\_\+zip\+\_\+footer} (F\+I\+LE $\ast$fp, uint16\+\_\+t \&nrecs, size\+\_\+t \&global\+\_\+header\+\_\+size, size\+\_\+t \&global\+\_\+header\+\_\+offset)
+\item 
+npz\+\_\+t \hyperlink{namespacecnpy_ab6ef932e48b81bddc5457ff4ceb44a3a}{cnpy\+::npz\+\_\+load} (std\+::string fname)
+\item 
+Npy\+Array \hyperlink{namespacecnpy_abfeb43960d51a799dbe718b3d73e8b52}{cnpy\+::npz\+\_\+load} (std\+::string fname, std\+::string varname)
+\item 
+Npy\+Array \hyperlink{namespacecnpy_abffb25587a54473fbe1d3c86fa4df4fb}{cnpy\+::npy\+\_\+load} (std\+::string fname)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ char $>$ \& \hyperlink{namespacecnpy_ac8daa2ff90ad9f02b13e8a6f6b88bca6}{cnpy\+::operator+=} (std\+::vector$<$ char $>$ \&lhs, const T rhs)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::vector$<$ char $>$ \& \hyperlink{namespacecnpy_a357cd39fe2f4327eb08495b48544d47e}{cnpy\+::operator+=} (std\+::vector$<$ char $>$ \&lhs, const std\+::string rhs)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::vector$<$ char $>$ \& \hyperlink{namespacecnpy_adde4f7c4e52778f1e28effe4ae80bef3}{cnpy\+::operator+=} (std\+::vector$<$ char $>$ \&lhs, const char $\ast$rhs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacecnpy_abd95249bf67216d36416294df339fb47}{cnpy\+::npy\+\_\+save} (std\+::string fname, const T $\ast$data, const std\+::vector$<$ size\+\_\+t $>$ shape, std\+::string mode=\char`\"{}w\char`\"{})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacecnpy_acdeed7370a9ddc23ce3b66534e039a1f}{cnpy\+::npz\+\_\+save} (std\+::string zipname, std\+::string fname, const T $\ast$data, const std\+::vector$<$ size\+\_\+t $>$ \&shape, std\+::string mode=\char`\"{}w\char`\"{})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacecnpy_a9311beeca7e441c777c78fc80be40649}{cnpy\+::npy\+\_\+save} (std\+::string fname, const std\+::vector$<$ T $>$ data, std\+::string mode=\char`\"{}w\char`\"{})
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacecnpy_a7161744ba1c204fea5c5e15b177a311f}{cnpy\+::npz\+\_\+save} (std\+::string zipname, std\+::string fname, const std\+::vector$<$ T $>$ data, std\+::string mode=\char`\"{}w\char`\"{})
+\end{DoxyCompactItemize}

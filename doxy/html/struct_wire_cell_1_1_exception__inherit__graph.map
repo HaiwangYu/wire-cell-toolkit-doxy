@@ -1,0 +1,9 @@
+<map id="WireCell::Exception" name="WireCell::Exception">
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_assertion_error.html" title="Thrown when an assertion fails. " alt="" coords="369,5,531,32"/>
+<area shape="rect" id="node5" href="$struct_wire_cell_1_1_factory_exception.html" title="WireCell::FactoryException" alt="" coords="359,56,541,83"/>
+<area shape="rect" id="node6" href="$struct_wire_cell_1_1_index_error.html" title="Thrown when a wrong index is used. " alt="" coords="380,107,520,133"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_i_o_error.html" title="Thrown when an error involving accessing input or output has occurred. " alt="" coords="389,157,511,184"/>
+<area shape="rect" id="node8" href="$struct_wire_cell_1_1_key_error.html" title="Thrown when a wrong key or has been encountered. " alt="" coords="385,208,515,235"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_runtime_error.html" title="Thrown when an error occurs during the data processing. " alt="" coords="371,259,529,285"/>
+<area shape="rect" id="node10" href="$struct_wire_cell_1_1_value_error.html" title="Thrown when a wrong value has been encountered. " alt="" coords="379,309,521,336"/>
+</map>

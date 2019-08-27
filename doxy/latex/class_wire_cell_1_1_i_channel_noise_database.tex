@@ -1,0 +1,408 @@
+\hypertarget{class_wire_cell_1_1_i_channel_noise_database}{}\section{Wire\+Cell\+:\+:I\+Channel\+Noise\+Database Class Reference}
+\label{class_wire_cell_1_1_i_channel_noise_database}\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+
+
+{\ttfamily \#include $<$I\+Channel\+Noise\+Database.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Channel\+Noise\+Database\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_wire_cell_1_1_i_channel_noise_database__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Channel\+Noise\+Database\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_wire_cell_1_1_i_channel_noise_database__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Wire\+Cell\+::\+Waveform\+::compseq\+\_\+t} \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The data type for all frequency-\/space, multiplicative filters. \end{DoxyCompactList}\item 
+typedef std\+::vector$<$ int $>$ \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a997b922519e63f2c7e98ea6a2ee3c858}{$\sim$\+I\+Channel\+Noise\+Database} ()
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a82406ba30d65412db34e038e789be95c}{sample\+\_\+time} () const =0
+\begin{DoxyCompactList}\small\item\em F\+I\+X\+ME\+: how to handle state changes? \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a253f602c70bddb7986e63dc14b8d8e6e}{nominal\+\_\+baseline} (int channel) const =0
+\begin{DoxyCompactList}\small\item\em Return a nominal baseline correction (additive offset) \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad2cdf46aea4ac11f8b7d097bd19c2e80}{gain\+\_\+correction} (int channel) const =0
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a5a1d081b5cd6d32ac7209b99eb2c61dc}{response\+\_\+offset} (int channel) const =0
+\begin{DoxyCompactList}\small\item\em Return a time offset associated with the \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad3c42f59a26e8a8e115199a894d881da}{response()}. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a77f82280942595e1a2506f49a6f76f56}{pad\+\_\+window\+\_\+front} (int channel) const =0
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4d772c3ba5f7071a2d869264f37dfecc}{pad\+\_\+window\+\_\+back} (int channel) const =0
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_i_channel_noise_database_af1b0da30d4aa280deca52a84a9a6326d}{coherent\+\_\+nf\+\_\+decon\+\_\+limit} (int channel) const =0
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4104509a65ce9fe5a77fac6ddd39ec56}{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff} (int channel) const =0
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ac75b3b6b0c7368c0c87d907012abaf9d}{coherent\+\_\+nf\+\_\+adc\+\_\+limit} (int channel) const =0
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4b2033312603fd90885efdfe14eb71cc}{coherent\+\_\+nf\+\_\+decon\+\_\+limit1} (int channel) const =0
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a4572de7acbdd4427cc4c409193abaae8}{coherent\+\_\+nf\+\_\+protection\+\_\+factor} (int channel) const =0
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a1668979331fd999d36d5cb5bb1ed00d6}{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit} (int channel) const =0
+\item 
+virtual float \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a3fab0404aa8a10ad7ed2ac7afd2fe9a7}{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio} (int channel) const =0
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad0e7e7c3424260af2bd426e578ad83f6}{min\+\_\+rms\+\_\+cut} (int channel) const =0
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad5e4a49ff6b257e2ef290eeeaba95da7}{max\+\_\+rms\+\_\+cut} (int channel) const =0
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a8f9fa5547062c23f689fde9bb810361b}{rcrc} (int channel) const =0
+\begin{DoxyCompactList}\small\item\em Return the filter for the R\+C+\+RC coupling response function. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_i_channel_noise_database_af6887aa00ed134c7fcb1ee85bd950311}{config} (int channel) const =0
+\begin{DoxyCompactList}\small\item\em Return the filter to correct any wrongly configured channels. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a1197551d9dcfd6dc8f656a8aecd5b962}{noise} (int channel) const =0
+\begin{DoxyCompactList}\small\item\em Return the filter to attenuate noise. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t} \& \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad3c42f59a26e8a8e115199a894d881da}{response} (int channel) const =0
+\begin{DoxyCompactList}\small\item\em A nominal detector response spectrum for a given channel. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0f220478d9d7ed3c913b925e84b39138}{coherent\+\_\+channels} () const =0
+\begin{DoxyCompactList}\small\item\em Return channel grouping for coherent noise subtraction. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a70f4c0a24525f6a7c8ef84245fd6d01e}{bad\+\_\+channels} () const
+\begin{DoxyCompactList}\small\item\em Return channels which are considered a\textquotesingle{}priori \char`\"{}bad\char`\"{}. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad653c3c17b0524eca95fa4ce8574ffe9}{miscfg\+\_\+channels} () const
+\begin{DoxyCompactList}\small\item\em Return channels which are considered a\textquotesingle{}priori \char`\"{}misconfigured\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file I\+Channel\+Noise\+Database.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}\label{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!channel\+\_\+group\+\_\+t@{channel\+\_\+group\+\_\+t}}
+\index{channel\+\_\+group\+\_\+t@{channel\+\_\+group\+\_\+t}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{channel\+\_\+group\+\_\+t}{channel\_group\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$int$>$ \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::channel\+\_\+group\+\_\+t}}
+
+
+
+Definition at line 19 of file I\+Channel\+Noise\+Database.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}\label{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!filter\+\_\+t@{filter\+\_\+t}}
+\index{filter\+\_\+t@{filter\+\_\+t}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{filter\+\_\+t}{filter\_t}}
+{\footnotesize\ttfamily typedef \hyperlink{namespace_wire_cell_1_1_waveform_a7e4a8d371f774438bb360e7d1dcb583a}{Wire\+Cell\+::\+Waveform\+::compseq\+\_\+t} \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::filter\+\_\+t}}
+
+
+
+The data type for all frequency-\/space, multiplicative filters. 
+
+
+
+Definition at line 18 of file I\+Channel\+Noise\+Database.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a997b922519e63f2c7e98ea6a2ee3c858}\label{class_wire_cell_1_1_i_channel_noise_database_a997b922519e63f2c7e98ea6a2ee3c858}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!````~I\+Channel\+Noise\+Database@{$\sim$\+I\+Channel\+Noise\+Database}}
+\index{````~I\+Channel\+Noise\+Database@{$\sim$\+I\+Channel\+Noise\+Database}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Channel\+Noise\+Database()}{~IChannelNoiseDatabase()}}
+{\footnotesize\ttfamily I\+Channel\+Noise\+Database\+::$\sim$\+I\+Channel\+Noise\+Database (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 102 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a70f4c0a24525f6a7c8ef84245fd6d01e}\label{class_wire_cell_1_1_i_channel_noise_database_a70f4c0a24525f6a7c8ef84245fd6d01e}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!bad\+\_\+channels@{bad\+\_\+channels}}
+\index{bad\+\_\+channels@{bad\+\_\+channels}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{bad\+\_\+channels()}{bad\_channels()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::bad\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return channels which are considered a\textquotesingle{}priori \char`\"{}bad\char`\"{}. 
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a04ee13cfae6285a0c0ac160a259fb2b5}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_abc31faca2ae9ee69ebfd01b9edd36289}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+
+
+Definition at line 80 of file I\+Channel\+Noise\+Database.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a0f220478d9d7ed3c913b925e84b39138}\label{class_wire_cell_1_1_i_channel_noise_database_a0f220478d9d7ed3c913b925e84b39138}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!coherent\+\_\+channels@{coherent\+\_\+channels}}
+\index{coherent\+\_\+channels@{coherent\+\_\+channels}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{coherent\+\_\+channels()}{coherent\_channels()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t}$>$ Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::coherent\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return channel grouping for coherent noise subtraction. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a8cdff2a7435fc85ff77b234a88aaaece}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a157979de597ebfcf99238544ffd82c0e}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_ac75b3b6b0c7368c0c87d907012abaf9d}\label{class_wire_cell_1_1_i_channel_noise_database_ac75b3b6b0c7368c0c87d907012abaf9d}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!coherent\+\_\+nf\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+adc\+\_\+limit}}
+\index{coherent\+\_\+nf\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+adc\+\_\+limit}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+adc\+\_\+limit()}{coherent\_nf\_adc\_limit()}}
+{\footnotesize\ttfamily virtual float Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::coherent\+\_\+nf\+\_\+adc\+\_\+limit (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_abc80cb5a10e48500824f710c3846900d}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5c9dfedd62780fe11dafaa0739876803}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a4104509a65ce9fe5a77fac6ddd39ec56}\label{class_wire_cell_1_1_i_channel_noise_database_a4104509a65ce9fe5a77fac6ddd39ec56}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff@{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff}}
+\index{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff@{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff()}{coherent\_nf\_decon\_lf\_cutoff()}}
+{\footnotesize\ttfamily virtual float Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::coherent\+\_\+nf\+\_\+decon\+\_\+lf\+\_\+cutoff (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a43dbea0d5db7c2217f35f7df45dd8b4f}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a52def69ce297e7fc097b91a4472cbc25}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_af1b0da30d4aa280deca52a84a9a6326d}\label{class_wire_cell_1_1_i_channel_noise_database_af1b0da30d4aa280deca52a84a9a6326d}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!coherent\+\_\+nf\+\_\+decon\+\_\+limit@{coherent\+\_\+nf\+\_\+decon\+\_\+limit}}
+\index{coherent\+\_\+nf\+\_\+decon\+\_\+limit@{coherent\+\_\+nf\+\_\+decon\+\_\+limit}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+decon\+\_\+limit()}{coherent\_nf\_decon\_limit()}}
+{\footnotesize\ttfamily virtual float Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::coherent\+\_\+nf\+\_\+decon\+\_\+limit (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae062cbbc8743dd33840d92589b04821b}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a602938fd9dbdd7fe8093231a1d5c5d5a}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a4b2033312603fd90885efdfe14eb71cc}\label{class_wire_cell_1_1_i_channel_noise_database_a4b2033312603fd90885efdfe14eb71cc}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!coherent\+\_\+nf\+\_\+decon\+\_\+limit1@{coherent\+\_\+nf\+\_\+decon\+\_\+limit1}}
+\index{coherent\+\_\+nf\+\_\+decon\+\_\+limit1@{coherent\+\_\+nf\+\_\+decon\+\_\+limit1}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+decon\+\_\+limit1()}{coherent\_nf\_decon\_limit1()}}
+{\footnotesize\ttfamily virtual float Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::coherent\+\_\+nf\+\_\+decon\+\_\+limit1 (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7c98e373e09268af35e18121d2a173f2}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a570a71f729172f7b19659f21d44b2e81}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a1668979331fd999d36d5cb5bb1ed00d6}\label{class_wire_cell_1_1_i_channel_noise_database_a1668979331fd999d36d5cb5bb1ed00d6}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit}}
+\index{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit@{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit()}{coherent\_nf\_min\_adc\_limit()}}
+{\footnotesize\ttfamily virtual float Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::coherent\+\_\+nf\+\_\+min\+\_\+adc\+\_\+limit (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a346695c1e101b6cbcfac60ae4c9f0ea3}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab501b262245b5c052abd49fd0d67c803}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a4572de7acbdd4427cc4c409193abaae8}\label{class_wire_cell_1_1_i_channel_noise_database_a4572de7acbdd4427cc4c409193abaae8}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!coherent\+\_\+nf\+\_\+protection\+\_\+factor@{coherent\+\_\+nf\+\_\+protection\+\_\+factor}}
+\index{coherent\+\_\+nf\+\_\+protection\+\_\+factor@{coherent\+\_\+nf\+\_\+protection\+\_\+factor}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+protection\+\_\+factor()}{coherent\_nf\_protection\_factor()}}
+{\footnotesize\ttfamily virtual float Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::coherent\+\_\+nf\+\_\+protection\+\_\+factor (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_aa4d6c9f3a30c788683caacf735510ceb}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_aa17316b608537c3cf2c30ab600092bac}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a3fab0404aa8a10ad7ed2ac7afd2fe9a7}\label{class_wire_cell_1_1_i_channel_noise_database_a3fab0404aa8a10ad7ed2ac7afd2fe9a7}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio@{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio}}
+\index{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio@{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio()}{coherent\_nf\_roi\_min\_max\_ratio()}}
+{\footnotesize\ttfamily virtual float Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::coherent\+\_\+nf\+\_\+roi\+\_\+min\+\_\+max\+\_\+ratio (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae92b71da5d91c1069ba78d9658d97f8b}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a31eba95e77c824eb351f3ed4e5e58eac}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_af6887aa00ed134c7fcb1ee85bd950311}\label{class_wire_cell_1_1_i_channel_noise_database_af6887aa00ed134c7fcb1ee85bd950311}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!config@{config}}
+\index{config@{config}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t}\& Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::config (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the filter to correct any wrongly configured channels. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_acc904d0a6472acede55bd40ef8b6cd01}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a3eabaf3d48c127aaa6c594c682e6a77a}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_ad2cdf46aea4ac11f8b7d097bd19c2e80}\label{class_wire_cell_1_1_i_channel_noise_database_ad2cdf46aea4ac11f8b7d097bd19c2e80}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!gain\+\_\+correction@{gain\+\_\+correction}}
+\index{gain\+\_\+correction@{gain\+\_\+correction}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{gain\+\_\+correction()}{gain\_correction()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::gain\+\_\+correction (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return simple gain correction (a multiplicative, unitless scaling) to apply to a given channel. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a60802eabcf081d7b82ed7b270dcefe00}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a7b4f5283401aa1668adda46ba52b06c6}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_ad5e4a49ff6b257e2ef290eeeaba95da7}\label{class_wire_cell_1_1_i_channel_noise_database_ad5e4a49ff6b257e2ef290eeeaba95da7}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!max\+\_\+rms\+\_\+cut@{max\+\_\+rms\+\_\+cut}}
+\index{max\+\_\+rms\+\_\+cut@{max\+\_\+rms\+\_\+cut}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{max\+\_\+rms\+\_\+cut()}{max\_rms\_cut()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::max\+\_\+rms\+\_\+cut (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a494d0e48066357d8e86ea7ce4d462bdb}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a22eaf2783321cb45cd904f97de2ba7d3}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_ad0e7e7c3424260af2bd426e578ad83f6}\label{class_wire_cell_1_1_i_channel_noise_database_ad0e7e7c3424260af2bd426e578ad83f6}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!min\+\_\+rms\+\_\+cut@{min\+\_\+rms\+\_\+cut}}
+\index{min\+\_\+rms\+\_\+cut@{min\+\_\+rms\+\_\+cut}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{min\+\_\+rms\+\_\+cut()}{min\_rms\_cut()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::min\+\_\+rms\+\_\+cut (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a37f1dda111792a36315f977c2ade5783}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a8e8aa023834a47f96b0bdb69bc76e7a8}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_ad653c3c17b0524eca95fa4ce8574ffe9}\label{class_wire_cell_1_1_i_channel_noise_database_ad653c3c17b0524eca95fa4ce8574ffe9}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!miscfg\+\_\+channels@{miscfg\+\_\+channels}}
+\index{miscfg\+\_\+channels@{miscfg\+\_\+channels}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{miscfg\+\_\+channels()}{miscfg\_channels()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a7fedd6ab67ba4e7eeb8cf182cc9dc6b1}{channel\+\_\+group\+\_\+t} Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::miscfg\+\_\+channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return channels which are considered a\textquotesingle{}priori \char`\"{}misconfigured\char`\"{}. 
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a32b0db5811fe2d33ec566c31283800fa}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}.
+
+
+
+Definition at line 85 of file I\+Channel\+Noise\+Database.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a1197551d9dcfd6dc8f656a8aecd5b962}\label{class_wire_cell_1_1_i_channel_noise_database_a1197551d9dcfd6dc8f656a8aecd5b962}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!noise@{noise}}
+\index{noise@{noise}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{noise()}{noise()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t}\& Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::noise (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the filter to attenuate noise. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a125b09b4d7d5cb973ae418936343bf4a}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ab0b17e111bc6617ac4702610b262ed2f}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a253f602c70bddb7986e63dc14b8d8e6e}\label{class_wire_cell_1_1_i_channel_noise_database_a253f602c70bddb7986e63dc14b8d8e6e}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!nominal\+\_\+baseline@{nominal\+\_\+baseline}}
+\index{nominal\+\_\+baseline@{nominal\+\_\+baseline}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{nominal\+\_\+baseline()}{nominal\_baseline()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::nominal\+\_\+baseline (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return a nominal baseline correction (additive offset) 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a7d762e341143dea15eb2d8f57aac9c86}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ae5b0390412d61c8fab8514ddd8358fa1}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a4d772c3ba5f7071a2d869264f37dfecc}\label{class_wire_cell_1_1_i_channel_noise_database_a4d772c3ba5f7071a2d869264f37dfecc}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!pad\+\_\+window\+\_\+back@{pad\+\_\+window\+\_\+back}}
+\index{pad\+\_\+window\+\_\+back@{pad\+\_\+window\+\_\+back}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{pad\+\_\+window\+\_\+back()}{pad\_window\_back()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::pad\+\_\+window\+\_\+back (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ac765001725b5a181ccfd605d0221e0ef}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a4643919d65336ba0090213d772bb6bf9}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a77f82280942595e1a2506f49a6f76f56}\label{class_wire_cell_1_1_i_channel_noise_database_a77f82280942595e1a2506f49a6f76f56}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!pad\+\_\+window\+\_\+front@{pad\+\_\+window\+\_\+front}}
+\index{pad\+\_\+window\+\_\+front@{pad\+\_\+window\+\_\+front}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{pad\+\_\+window\+\_\+front()}{pad\_window\_front()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::pad\+\_\+window\+\_\+front (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_afc69ca596a5ff6f8a63fc64234c8062e}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a5c1e58cf0586ac32c1e6d3810606a992}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a8f9fa5547062c23f689fde9bb810361b}\label{class_wire_cell_1_1_i_channel_noise_database_a8f9fa5547062c23f689fde9bb810361b}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!rcrc@{rcrc}}
+\index{rcrc@{rcrc}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{rcrc()}{rcrc()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t}\& Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::rcrc (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the filter for the R\+C+\+RC coupling response function. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0155aba843a5a04966ffcfe556b207f8}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a9a4481bf485a0aaa4903094463f4e2b3}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_ad3c42f59a26e8a8e115199a894d881da}\label{class_wire_cell_1_1_i_channel_noise_database_ad3c42f59a26e8a8e115199a894d881da}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!response@{response}}
+\index{response@{response}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{response()}{response()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_i_channel_noise_database_a0acbae29743542eb1c652f7a56e692f5}{filter\+\_\+t}\& Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::response (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+A nominal detector response spectrum for a given channel. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_ae269e377629b9a96c8e0cdb0f30353a4}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac86433de014502928205161b6ea93ba0}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a5a1d081b5cd6d32ac7209b99eb2c61dc}\label{class_wire_cell_1_1_i_channel_noise_database_a5a1d081b5cd6d32ac7209b99eb2c61dc}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!response\+\_\+offset@{response\+\_\+offset}}
+\index{response\+\_\+offset@{response\+\_\+offset}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{response\+\_\+offset()}{response\_offset()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::response\+\_\+offset (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return a time offset associated with the \hyperlink{class_wire_cell_1_1_i_channel_noise_database_ad3c42f59a26e8a8e115199a894d881da}{response()}. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a0b6fa7b4d342adf1313b86684b811023}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_a089731ed6979ee7a3d5029dc6c104902}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_channel_noise_database_a82406ba30d65412db34e038e789be95c}\label{class_wire_cell_1_1_i_channel_noise_database_a82406ba30d65412db34e038e789be95c}} 
+\index{Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}!sample\+\_\+time@{sample\+\_\+time}}
+\index{sample\+\_\+time@{sample\+\_\+time}!Wire\+Cell\+::\+I\+Channel\+Noise\+Database@{Wire\+Cell\+::\+I\+Channel\+Noise\+Database}}
+\subsubsection{\texorpdfstring{sample\+\_\+time()}{sample\_time()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::sample\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+F\+I\+X\+ME\+: how to handle state changes? 
+
+Return the time-\/domain sample period (time in system of units) which is was used in producing the filter response spectral functions (filter\+\_\+t).
+
+Warning\+: take care that the number of frequency samples (filter\+\_\+t\+::size()) is fixed and may not match the number of ticks in your waveform. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b_a33769e729aab08e5320647cd4c04304c}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omni\+Channel\+Noise\+DB}, and \hyperlink{class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b_ac4ef81b15ca1bf55585bd89a092b8693}{Wire\+Cell\+::\+Sig\+Proc\+::\+Simple\+Channel\+Noise\+DB}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_channel_noise_database_8h}{I\+Channel\+Noise\+Database.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,63 @@
+\hypertarget{_numpy_depo_saver_8cxx}{}\section{sio/src/\+Numpy\+Depo\+Saver.cxx File Reference}
+\label{_numpy_depo_saver_8cxx}\index{sio/src/\+Numpy\+Depo\+Saver.\+cxx@{sio/src/\+Numpy\+Depo\+Saver.\+cxx}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Sio/\+Numpy\+Depo\+Saver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+Frame\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Named\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/cnpy.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+Include dependency graph for Numpy\+Depo\+Saver.\+cxx\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_numpy_depo_saver_8cxx__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::tuple$<$ I\+Depo\+::pointer, size\+\_\+t, size\+\_\+t $>$ \hyperlink{_numpy_depo_saver_8cxx_ad32445a759539bd7744caffff2136109}{depo\+\_\+gen\+\_\+child}
+\item 
+typedef std\+::vector$<$ \hyperlink{_numpy_depo_saver_8cxx_ad32445a759539bd7744caffff2136109}{depo\+\_\+gen\+\_\+child} $>$ \hyperlink{_numpy_depo_saver_8cxx_af5fbd6df3c0235dd9bc4881bdbe32c87}{depos\+\_\+with\+\_\+prior}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_numpy_depo_saver_8cxx_ad70c45fcfc4d2ab102b8d1f793c29bc7}{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY} (Numpy\+Depo\+Saver, \hyperlink{class_wire_cell_1_1_sio_1_1_numpy_depo_saver}{Wire\+Cell\+::\+Sio\+::\+Numpy\+Depo\+Saver}, \hyperlink{class_wire_cell_1_1_i_depo_filter}{Wire\+Cell\+::\+I\+Depo\+Filter}, \hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable}) using namespace Wire\+Cell
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{_numpy_depo_saver_8cxx_ad32445a759539bd7744caffff2136109}\label{_numpy_depo_saver_8cxx_ad32445a759539bd7744caffff2136109}} 
+\index{Numpy\+Depo\+Saver.\+cxx@{Numpy\+Depo\+Saver.\+cxx}!depo\+\_\+gen\+\_\+child@{depo\+\_\+gen\+\_\+child}}
+\index{depo\+\_\+gen\+\_\+child@{depo\+\_\+gen\+\_\+child}!Numpy\+Depo\+Saver.\+cxx@{Numpy\+Depo\+Saver.\+cxx}}
+\subsubsection{\texorpdfstring{depo\+\_\+gen\+\_\+child}{depo\_gen\_child}}
+{\footnotesize\ttfamily typedef std\+::tuple$<$I\+Depo\+::pointer, size\+\_\+t, size\+\_\+t$>$ \hyperlink{_numpy_depo_saver_8cxx_ad32445a759539bd7744caffff2136109}{depo\+\_\+gen\+\_\+child}}
+
+
+
+Definition at line 47 of file Numpy\+Depo\+Saver.\+cxx.
+
+\mbox{\Hypertarget{_numpy_depo_saver_8cxx_af5fbd6df3c0235dd9bc4881bdbe32c87}\label{_numpy_depo_saver_8cxx_af5fbd6df3c0235dd9bc4881bdbe32c87}} 
+\index{Numpy\+Depo\+Saver.\+cxx@{Numpy\+Depo\+Saver.\+cxx}!depos\+\_\+with\+\_\+prior@{depos\+\_\+with\+\_\+prior}}
+\index{depos\+\_\+with\+\_\+prior@{depos\+\_\+with\+\_\+prior}!Numpy\+Depo\+Saver.\+cxx@{Numpy\+Depo\+Saver.\+cxx}}
+\subsubsection{\texorpdfstring{depos\+\_\+with\+\_\+prior}{depos\_with\_prior}}
+{\footnotesize\ttfamily typedef std\+::vector$<$ \hyperlink{_numpy_depo_saver_8cxx_ad32445a759539bd7744caffff2136109}{depo\+\_\+gen\+\_\+child} $>$ \hyperlink{_numpy_depo_saver_8cxx_af5fbd6df3c0235dd9bc4881bdbe32c87}{depos\+\_\+with\+\_\+prior}}
+
+
+
+Definition at line 48 of file Numpy\+Depo\+Saver.\+cxx.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_numpy_depo_saver_8cxx_ad70c45fcfc4d2ab102b8d1f793c29bc7}\label{_numpy_depo_saver_8cxx_ad70c45fcfc4d2ab102b8d1f793c29bc7}} 
+\index{Numpy\+Depo\+Saver.\+cxx@{Numpy\+Depo\+Saver.\+cxx}!W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}}
+\index{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}!Numpy\+Depo\+Saver.\+cxx@{Numpy\+Depo\+Saver.\+cxx}}
+\subsubsection{\texorpdfstring{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+R\+Y()}{WIRECELL\_FACTORY()}}
+{\footnotesize\ttfamily W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY (\begin{DoxyParamCaption}\item[{Numpy\+Depo\+Saver}]{,  }\item[{\hyperlink{class_wire_cell_1_1_sio_1_1_numpy_depo_saver}{Wire\+Cell\+::\+Sio\+::\+Numpy\+Depo\+Saver}}]{,  }\item[{\hyperlink{class_wire_cell_1_1_i_depo_filter}{Wire\+Cell\+::\+I\+Depo\+Filter}}]{,  }\item[{\hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable}}]{ }\end{DoxyParamCaption})}
+

@@ -1,0 +1,4 @@
+<map id="formatter&lt; RangeT, Char, typename std::enable_if&lt; fmt::is_range&lt; RangeT &gt;::value &gt;::type &gt;" name="formatter&lt; RangeT, Char, typename std::enable_if&lt; fmt::is_range&lt; RangeT &gt;::value &gt;::type &gt;">
+<area shape="rect" id="node2" href="$structformatting__range.html" title="formatting_range\&lt; Char \&gt;" alt="" coords="70,124,241,151"/>
+<area shape="rect" id="node3" href="$structformatting__base.html" title="formatting_base\&lt; Char \&gt;" alt="" coords="5,5,172,32"/>
+</map>

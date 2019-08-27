@@ -1,0 +1,10 @@
+<map id="WireCell::Factory::lookup_factory" name="WireCell::Factory::lookup_factory">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_named_factory_registry.html#a355e9be03e1950d63a14ae9bb2989918" title="Look up an existing factory by the name of the &quot;class&quot; it can create. " alt="" coords="185,90,400,131"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell.html#a7d0326b3a49de0eeba671d6dc20a1959" title="WireCell::demangle" alt="" coords="465,5,601,32"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_named_factory.html#a4e87a7c8957a57aa6d23fef2f9e1dbd3" title="Return existing instance or nullptr if not found. " alt="" coords="448,57,619,98"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_plugin_manager.html#aa1a081d67e99b8ef796b879e450fc8e0" title="WireCell::PluginManager\l::instance" alt="" coords="450,122,617,163"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_plugin_manager.html#ad83fad032405351bde15ad4abeeef819" title="WireCell::PluginManager\l::find" alt="" coords="450,187,617,229"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_plugin.html#ab8f49d4beba0924fa53ba45ec54ad649" title="WireCell::Plugin::contains" alt="" coords="667,169,840,196"/>
+<area shape="rect" id="node9" href="$namespace_wire_cell_1_1_log.html#a7675bcc4bf25b2bc66314d5c096cf676" title="WireCell::Log::logger" alt="" coords="681,220,825,247"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_plugin.html#a6532d3eb05241c25780a18194cd6572f" title="WireCell::Plugin::raw" alt="" coords="888,169,1033,196"/>
+</map>

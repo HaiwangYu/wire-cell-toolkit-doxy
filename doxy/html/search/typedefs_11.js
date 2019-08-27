@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['range',['range',['../classarg__formatter.html#a088e253d561ae361330c296be28af81b',1,'arg_formatter::range()'],['../structformat__handler.html#ac65f0cea520d6e2db8e8738bdbbfa246',1,'format_handler::range()']]],
+  ['range_5ft',['range_t',['../class_wire_cell_1_1_ray_grid_1_1_activity.html#af70e5851ae6fb8d76415033c0f90cb3e',1,'WireCell::RayGrid::Activity']]],
+  ['ranges_5ft',['ranges_t',['../class_wire_cell_1_1_ray_grid_1_1_activity.html#ac1614e7c72c06f7be7c03a80a25b024b',1,'WireCell::RayGrid::Activity']]],
+  ['ray',['Ray',['../namespace_wire_cell.html#a3ab20d9b438feb7eb1ffaab9ba98af0c',1,'WireCell']]],
+  ['ray_5fpair_5ft',['ray_pair_t',['../namespace_wire_cell.html#a8d74e36d330a8250d92fd4415822c5bc',1,'WireCell']]],
+  ['ray_5fpair_5fvector_5ft',['ray_pair_vector_t',['../namespace_wire_cell.html#a15d47ec1e9e43890c5cb09f1e9d77dd3',1,'WireCell']]],
+  ['real_5ft',['real_t',['../namespace_wire_cell_1_1_waveform.html#a47570354e4599d8387803188186aba1f',1,'WireCell::Waveform']]],
+  ['realseq_5ft',['realseq_t',['../namespace_wire_cell_1_1_waveform.html#a479175e541c8545e87cd8063b74b6956',1,'WireCell::Waveform']]],
+  ['receiver_5fport_5fvector',['receiver_port_vector',['../namespace_wire_cell_tbb.html#a87f42fe8a3ccc3bf9d315cb2d252c7af',1,'WireCellTbb']]],
+  ['receiver_5ftype',['receiver_type',['../namespace_wire_cell_tbb.html#ae1d3e39f466e5c2d3d5198cab827f73f',1,'WireCellTbb']]],
+  ['reference',['reference',['../classinternal_1_1counting__iterator.html#a040c67c71ec6569100eda9296fbd914f',1,'internal::counting_iterator::reference()'],['../classinternal_1_1truncating__iterator__base.html#ae3802d66130989a3717422e196ca4a92',1,'internal::truncating_iterator_base::reference()'],['../classinternal_1_1null__terminating__iterator.html#ae7aa95cd6c1413d74515a1dbcf21e040',1,'internal::null_terminating_iterator::reference()']]],
+  ['region_5findices_5ft',['region_indices_t',['../class_wire_cell_1_1_gen_1_1_plane_impact_response.html#a76147eaef10e6fe542bf25d85acc40f7',1,'WireCell::Gen::PlaneImpactResponse']]],
+  ['result_5ftype',['result_type',['../class_wire_cell_1_1_fanout.html#ab2aa0c746557cf71d0454640c91ce0c5',1,'WireCell::Fanout::result_type()'],['../struct_wire_cell_1_1_fanin.html#aa5da112620a039252591b5d26e49bf7a',1,'WireCell::Fanin::result_type()']]],
+  ['rotating_5ffile_5fsink_5fmt',['rotating_file_sink_mt',['../namespacespdlog_1_1sinks.html#a70b4fab83ca180ef19c4124f4823aeaa',1,'spdlog::sinks']]],
+  ['rotating_5ffile_5fsink_5fst',['rotating_file_sink_st',['../namespacespdlog_1_1sinks.html#a694eff66a11012e2fbe3fa3a1c963c96',1,'spdlog::sinks']]],
+  ['rule_5ft',['rule_t',['../namespace_wire_cell_1_1tagrules.html#abc013e08147e32e1661654bb3e768151',1,'WireCell::tagrules']]],
+  ['ruleset_5ft',['ruleset_t',['../namespace_wire_cell_1_1tagrules.html#a93f5672d7c60d5f990b42dd93fd0aee2',1,'WireCell::tagrules']]]
+];

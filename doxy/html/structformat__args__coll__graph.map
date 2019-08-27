@@ -1,0 +1,9 @@
+<map id="format_args" name="format_args">
+<area shape="rect" id="node2" href="$classbasic__format__args.html" title="basic_format_args\&lt;\l format_context \&gt;" alt="" coords="544,140,681,181"/>
+<area shape="rect" id="node3" href="$classinternal_1_1value.html" title="internal::value\&lt; format\l_context \&gt;" alt="" coords="275,104,427,145"/>
+<area shape="rect" id="node4" href="$structinternal_1_1custom__value.html" title="internal::custom_value\l\&lt; format_context \&gt;" alt="" coords="5,5,159,47"/>
+<area shape="rect" id="node5" href="$structinternal_1_1string__value.html" title="internal::string_value\l\&lt; unsigned char \&gt;" alt="" coords="11,71,153,112"/>
+<area shape="rect" id="node6" href="$structinternal_1_1string__value.html" title="internal::string_value\l\&lt; signed char \&gt;" alt="" coords="11,136,153,177"/>
+<area shape="rect" id="node7" href="$structinternal_1_1string__value.html" title="internal::string_value\l\&lt; char_type \&gt;" alt="" coords="11,201,153,243"/>
+<area shape="rect" id="node8" href="$classbasic__format__arg.html" title="basic_format_arg\&lt; Context \&gt;" alt="" coords="255,170,447,197"/>
+</map>

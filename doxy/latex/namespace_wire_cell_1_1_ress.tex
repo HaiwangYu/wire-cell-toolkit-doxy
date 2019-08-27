@@ -1,0 +1,146 @@
+\hypertarget{namespace_wire_cell_1_1_ress}{}\section{Wire\+Cell\+:\+:Ress Namespace Reference}
+\label{namespace_wire_cell_1_1_ress}\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_ress_1_1_params}{Params}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\+::\+Vector\+Xd \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t}
+\item 
+typedef Eigen\+::\+Matrix\+Xd \hyperlink{namespace_wire_cell_1_1_ress_a42b8962e4f04a1258a3393990acda985}{matrix\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573}{Model} \{ \hyperlink{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573aefec7adf6d17dbe0e6c93b42688fb531}{unknown} =0, 
+\hyperlink{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573aecfa7e8c337e1903673044d7ace793b1}{lasso}, 
+\hyperlink{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573a2b1f23a7622c659094509e0bb0843d86}{elnet}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} \hyperlink{namespace_wire_cell_1_1_ress_adfe5a11064a23319b6204e6af6a72cfd}{solve} (\hyperlink{namespace_wire_cell_1_1_ress_a42b8962e4f04a1258a3393990acda985}{matrix\+\_\+t} response, \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} measured, const \hyperlink{struct_wire_cell_1_1_ress_1_1_params}{Params} \&params=\hyperlink{struct_wire_cell_1_1_ress_1_1_params}{Params}(), \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} source=Eigen\+::\+Vector\+Xd(), \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} weights=Eigen\+::\+Vector\+Xd())
+\item 
+\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} \hyperlink{namespace_wire_cell_1_1_ress_a367c0a2adb4a51f64136adbb2363a6c9}{predict} (\hyperlink{namespace_wire_cell_1_1_ress_a42b8962e4f04a1258a3393990acda985}{matrix\+\_\+t} response, \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} source)
+\item 
+double \hyperlink{namespace_wire_cell_1_1_ress_a65a0dc2747ac88cca0e776420c9dc8b1}{chi2} (\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} measured, \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} predicted)
+\item 
+double \hyperlink{namespace_wire_cell_1_1_ress_a649d5fb1892afac9f20fde57b9c93382}{mean\+\_\+residual} (\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} measured, \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} predicted)
+\item 
+double \hyperlink{namespace_wire_cell_1_1_ress_a0f6f8764e96a080b10c03f7432fe9bba}{chi2\+\_\+l1} (\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} measured, \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t} solved, double lambda=1.\+0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_a42b8962e4f04a1258a3393990acda985}\label{namespace_wire_cell_1_1_ress_a42b8962e4f04a1258a3393990acda985}} 
+\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!matrix\+\_\+t@{matrix\+\_\+t}}
+\index{matrix\+\_\+t@{matrix\+\_\+t}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}
+\subsubsection{\texorpdfstring{matrix\+\_\+t}{matrix\_t}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Matrix\+Xd \hyperlink{namespace_wire_cell_1_1_ress_a42b8962e4f04a1258a3393990acda985}{Wire\+Cell\+::\+Ress\+::matrix\+\_\+t}}
+
+
+
+Definition at line 13 of file Ress.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}\label{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}} 
+\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!vector\+\_\+t@{vector\+\_\+t}}
+\index{vector\+\_\+t@{vector\+\_\+t}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}
+\subsubsection{\texorpdfstring{vector\+\_\+t}{vector\_t}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Vector\+Xd \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{Wire\+Cell\+::\+Ress\+::vector\+\_\+t}}
+
+
+
+Definition at line 12 of file Ress.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573}\label{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573}} 
+\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!Model@{Model}}
+\index{Model@{Model}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}
+\subsubsection{\texorpdfstring{Model}{Model}}
+{\footnotesize\ttfamily enum \hyperlink{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573}{Wire\+Cell\+::\+Ress\+::\+Model}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{unknown@{unknown}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!unknown@{unknown}}}\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573aefec7adf6d17dbe0e6c93b42688fb531}\label{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573aefec7adf6d17dbe0e6c93b42688fb531}} 
+unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lasso@{lasso}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!lasso@{lasso}}}\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573aecfa7e8c337e1903673044d7ace793b1}\label{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573aecfa7e8c337e1903673044d7ace793b1}} 
+lasso&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{elnet@{elnet}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!elnet@{elnet}}}\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573a2b1f23a7622c659094509e0bb0843d86}\label{namespace_wire_cell_1_1_ress_abca29d9a906e0f4e9be142ff3b3b3573a2b1f23a7622c659094509e0bb0843d86}} 
+elnet&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 15 of file Ress.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_a65a0dc2747ac88cca0e776420c9dc8b1}\label{namespace_wire_cell_1_1_ress_a65a0dc2747ac88cca0e776420c9dc8b1}} 
+\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!chi2@{chi2}}
+\index{chi2@{chi2}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}
+\subsubsection{\texorpdfstring{chi2()}{chi2()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Ress\+::chi2 (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t}}]{measured,  }\item[{\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t}}]{predicted }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file Ress.\+cxx.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_a0f6f8764e96a080b10c03f7432fe9bba}\label{namespace_wire_cell_1_1_ress_a0f6f8764e96a080b10c03f7432fe9bba}} 
+\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!chi2\+\_\+l1@{chi2\+\_\+l1}}
+\index{chi2\+\_\+l1@{chi2\+\_\+l1}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}
+\subsubsection{\texorpdfstring{chi2\+\_\+l1()}{chi2\_l1()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Ress\+::chi2\+\_\+l1 (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t}}]{measured,  }\item[{\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t}}]{solved,  }\item[{double}]{lambda = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file Ress.\+cxx.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_a649d5fb1892afac9f20fde57b9c93382}\label{namespace_wire_cell_1_1_ress_a649d5fb1892afac9f20fde57b9c93382}} 
+\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!mean\+\_\+residual@{mean\+\_\+residual}}
+\index{mean\+\_\+residual@{mean\+\_\+residual}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}
+\subsubsection{\texorpdfstring{mean\+\_\+residual()}{mean\_residual()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Ress\+::mean\+\_\+residual (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t}}]{measured,  }\item[{\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t}}]{predicted }\end{DoxyParamCaption})}
+
+
+
+Definition at line 62 of file Ress.\+cxx.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_a367c0a2adb4a51f64136adbb2363a6c9}\label{namespace_wire_cell_1_1_ress_a367c0a2adb4a51f64136adbb2363a6c9}} 
+\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!predict@{predict}}
+\index{predict@{predict}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}
+\subsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{Ress\+::vector\+\_\+t} Wire\+Cell\+::\+Ress\+::predict (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_ress_a42b8962e4f04a1258a3393990acda985}{matrix\+\_\+t}}]{response,  }\item[{\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{vector\+\_\+t}}]{source }\end{DoxyParamCaption})}
+
+
+
+Definition at line 52 of file Ress.\+cxx.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_ress_adfe5a11064a23319b6204e6af6a72cfd}\label{namespace_wire_cell_1_1_ress_adfe5a11064a23319b6204e6af6a72cfd}} 
+\index{Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}!solve@{solve}}
+\index{solve@{solve}!Wire\+Cell\+::\+Ress@{Wire\+Cell\+::\+Ress}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{Ress\+::vector\+\_\+t} Wire\+Cell\+::\+Ress\+::solve (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_ress_a42b8962e4f04a1258a3393990acda985}{Ress\+::matrix\+\_\+t}}]{matrix,  }\item[{\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{Ress\+::vector\+\_\+t}}]{measured,  }\item[{const \hyperlink{struct_wire_cell_1_1_ress_1_1_params}{Params} \&}]{params = {\ttfamily \hyperlink{struct_wire_cell_1_1_ress_1_1_params}{Params}()},  }\item[{\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{Ress\+::vector\+\_\+t}}]{initial = {\ttfamily Eigen\+:\+:VectorXd()},  }\item[{\hyperlink{namespace_wire_cell_1_1_ress_a4f1e55ff97c04ad9ff5530f3f5e8c453}{Ress\+::vector\+\_\+t}}]{weights = {\ttfamily Eigen\+:\+:VectorXd()} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file Ress.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{namespace_wire_cell_1_1_ress_adfe5a11064a23319b6204e6af6a72cfd_icgraph}
+\end{center}
+\end{figure}

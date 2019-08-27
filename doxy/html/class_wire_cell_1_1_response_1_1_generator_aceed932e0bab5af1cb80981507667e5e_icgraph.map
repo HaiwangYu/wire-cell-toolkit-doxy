@@ -1,0 +1,14 @@
+<map id="WireCell::Response::Generator::generate" name="WireCell::Response::Generator::generate">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_elec_response.html#aefafca51074d60af586f6cf90599634c" title="Accept a configuration. " alt="" coords="199,5,396,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_empirical_noise_model.html#a9ed3c28256c1c262064c62816b4b225f" title="IChannelSpectrum. " alt="" coords="214,71,381,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_misconfigure.html#a99eea8b08c7ca7a5ea9bbc79e7bce228" title="Accept a configuration. " alt="" coords="204,136,391,177"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_per_channel_variation.html#afc90740a0c322146c135575b2d7ace12" title="Accept a configuration. " alt="" coords="207,201,387,243"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_r_c_response.html#a64fa5b6fb48fce6482836c4489bac542" title="Accept a configuration. " alt="" coords="202,267,393,308"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_response_sys.html#a38a9c888b02b4dcd447016ff77523ab7" title="Accept a configuration. " alt="" coords="200,332,395,373"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_truth_trace_i_d.html#adeed1a28e9ed6d5da7e07378b172bd48" title="Accept a configuration. " alt="" coords="210,397,385,439"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_sig_proc_1_1_nominal_channel_response.html#a3e1d2284621e69ff712cc6a7a373c797" title="Accept a configuration. " alt="" coords="209,463,386,519"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_sig_proc_1_1_omni_channel_noise_d_b.html#af33aa262d6af04f4252abef453156799" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="216,543,379,599"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b.html#a1c4c378e91ff2ead5aff08bc3615b1d2" title="WireCell::SigProc::\lSimpleChannelNoiseDB\l::set_rcrc_constant" alt="" coords="216,623,379,679"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b.html#a82e2e7cf205e61e1ab1e7970aa6655cb" title="WireCell::SigProc::\lSimpleChannelNoiseDB\l::set_gains_shapings" alt="" coords="216,703,379,759"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_sig_proc_1_1_simple_channel_noise_d_b.html#abc31faca2ae9ee69ebfd01b9edd36289" title="Return channels which are considered a&#39;priori &quot;bad&quot;. " alt="" coords="444,663,607,719"/>
+</map>

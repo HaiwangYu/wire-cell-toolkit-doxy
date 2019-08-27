@@ -1,0 +1,114 @@
+\hypertarget{class_wire_cell_1_1_i_waveform}{}\section{Wire\+Cell\+:\+:I\+Waveform Class Reference}
+\label{class_wire_cell_1_1_i_waveform}\index{Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}}
+
+
+{\ttfamily \#include $<$I\+Waveform.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Waveform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_waveform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Waveform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_wire_cell_1_1_i_waveform__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ float $>$ \hyperlink{class_wire_cell_1_1_i_waveform_ad8f85e800ab8082ddbd89ac91164db7d}{sequence\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_waveform_ab4787e8ab17e3d205b490dc29b2192ef}{$\sim$\+I\+Waveform} ()
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_waveform_ac7dfdf92e835bf708838bcdc1ba91ba2}{waveform\+\_\+start} () const =0
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_i_waveform_a0d5d0cd99b8a4e49d5d8b633150b707a}{waveform\+\_\+period} () const =0
+\item 
+virtual const \hyperlink{class_wire_cell_1_1_i_waveform_ad8f85e800ab8082ddbd89ac91164db7d}{sequence\+\_\+type} \& \hyperlink{class_wire_cell_1_1_i_waveform_a4901f7f36170f22c3e89ebd7939be4d0}{waveform\+\_\+samples} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file I\+Waveform.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_waveform_ad8f85e800ab8082ddbd89ac91164db7d}\label{class_wire_cell_1_1_i_waveform_ad8f85e800ab8082ddbd89ac91164db7d}} 
+\index{Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}!sequence\+\_\+type@{sequence\+\_\+type}}
+\index{sequence\+\_\+type@{sequence\+\_\+type}!Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}}
+\subsubsection{\texorpdfstring{sequence\+\_\+type}{sequence\_type}}
+{\footnotesize\ttfamily typedef std\+::vector$<$float$>$ \hyperlink{class_wire_cell_1_1_i_waveform_ad8f85e800ab8082ddbd89ac91164db7d}{Wire\+Cell\+::\+I\+Waveform\+::sequence\+\_\+type}}
+
+
+
+Definition at line 17 of file I\+Waveform.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_waveform_ab4787e8ab17e3d205b490dc29b2192ef}\label{class_wire_cell_1_1_i_waveform_ab4787e8ab17e3d205b490dc29b2192ef}} 
+\index{Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}!````~I\+Waveform@{$\sim$\+I\+Waveform}}
+\index{````~I\+Waveform@{$\sim$\+I\+Waveform}!Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Waveform()}{~IWaveform()}}
+{\footnotesize\ttfamily I\+Waveform\+::$\sim$\+I\+Waveform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 167 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_waveform_a0d5d0cd99b8a4e49d5d8b633150b707a}\label{class_wire_cell_1_1_i_waveform_a0d5d0cd99b8a4e49d5d8b633150b707a}} 
+\index{Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}!waveform\+\_\+period@{waveform\+\_\+period}}
+\index{waveform\+\_\+period@{waveform\+\_\+period}!Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}}
+\subsubsection{\texorpdfstring{waveform\+\_\+period()}{waveform\_period()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Waveform\+::waveform\+\_\+period (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_response_sys_ab6bced35ba8f8279d8204d842caf868a}{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}, \hyperlink{class_wire_cell_1_1_gen_1_1_elec_response_a7e2061fe4702e667aecb29427383a5ce}{Wire\+Cell\+::\+Gen\+::\+Elec\+Response}, and \hyperlink{class_wire_cell_1_1_gen_1_1_r_c_response_a866c57fca71207b5d32b8e68b467a965}{Wire\+Cell\+::\+Gen\+::\+R\+C\+Response}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_waveform_a4901f7f36170f22c3e89ebd7939be4d0}\label{class_wire_cell_1_1_i_waveform_a4901f7f36170f22c3e89ebd7939be4d0}} 
+\index{Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}!waveform\+\_\+samples@{waveform\+\_\+samples}}
+\index{waveform\+\_\+samples@{waveform\+\_\+samples}!Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}}
+\subsubsection{\texorpdfstring{waveform\+\_\+samples()}{waveform\_samples()}}
+{\footnotesize\ttfamily virtual const \hyperlink{class_wire_cell_1_1_i_waveform_ad8f85e800ab8082ddbd89ac91164db7d}{sequence\+\_\+type}\& Wire\+Cell\+::\+I\+Waveform\+::waveform\+\_\+samples (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_response_sys_acfe9c4ac7194cd013c12168df9021005}{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}, \hyperlink{class_wire_cell_1_1_gen_1_1_elec_response_a78f88dda994c96afaf9b7d82044a46a7}{Wire\+Cell\+::\+Gen\+::\+Elec\+Response}, and \hyperlink{class_wire_cell_1_1_gen_1_1_r_c_response_ac51bbb2238729a224d49dc513b02a16e}{Wire\+Cell\+::\+Gen\+::\+R\+C\+Response}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_waveform_ac7dfdf92e835bf708838bcdc1ba91ba2}\label{class_wire_cell_1_1_i_waveform_ac7dfdf92e835bf708838bcdc1ba91ba2}} 
+\index{Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}!waveform\+\_\+start@{waveform\+\_\+start}}
+\index{waveform\+\_\+start@{waveform\+\_\+start}!Wire\+Cell\+::\+I\+Waveform@{Wire\+Cell\+::\+I\+Waveform}}
+\subsubsection{\texorpdfstring{waveform\+\_\+start()}{waveform\_start()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+I\+Waveform\+::waveform\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_gen_1_1_response_sys_a7b431ba8fb1668bd0b067f5f03b53171}{Wire\+Cell\+::\+Gen\+::\+Response\+Sys}, \hyperlink{class_wire_cell_1_1_gen_1_1_elec_response_a098956b30d90fb379d538052204011f5}{Wire\+Cell\+::\+Gen\+::\+Elec\+Response}, and \hyperlink{class_wire_cell_1_1_gen_1_1_r_c_response_acbb5822df38128bb24093caf14573766}{Wire\+Cell\+::\+Gen\+::\+R\+C\+Response}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_waveform_8h}{I\+Waveform.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

@@ -1,0 +1,300 @@
+\hypertarget{class_wire_cell_1_1_main}{}\section{Wire\+Cell\+:\+:Main Class Reference}
+\label{class_wire_cell_1_1_main}\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+
+
+{\ttfamily \#include $<$Main.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_main_a50d4361a1b613205467a441b5c40c199}{Main} ()
+\item 
+\hyperlink{class_wire_cell_1_1_main_a58d9c0798f0d2114e736d04d780a080f}{$\sim$\+Main} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_main_a6d6b47f6893cc6474d71d70bf5f8adcb}{cmdline} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{class_wire_cell_1_1_main_af256b8bb1a2af9cdd7a96468db4c929d}{add\+\_\+app} (const std\+::string \&tn)
+\item 
+void \hyperlink{class_wire_cell_1_1_main_a9c790104cfb1a5223d041dd10187d2e2}{add\+\_\+config} (const std\+::string \&filename)
+\item 
+void \hyperlink{class_wire_cell_1_1_main_a6c37e436a63876d242172070198e3192}{add\+\_\+var} (const std\+::string \&name, const std\+::string \&value)
+\item 
+void \hyperlink{class_wire_cell_1_1_main_aed27a7aa4fcf7fc4bb03637bc226f318}{add\+\_\+code} (const std\+::string \&name, const std\+::string \&value)
+\item 
+void \hyperlink{class_wire_cell_1_1_main_a5747c7dd28185179cb961b37d1b55a48}{add\+\_\+path} (const std\+::string \&dirname)
+\item 
+void \hyperlink{class_wire_cell_1_1_main_a198d57d515d756dc488dbc6ad5b14ccb}{add\+\_\+plugin} (const std\+::string \&libname)
+\item 
+void \hyperlink{class_wire_cell_1_1_main_a50af5cb3b3f2cfb176febecd4a1613ce}{add\+\_\+logsink} (const std\+::string \&log, const std\+::string \&level=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Add a log sink, reserved names \textquotesingle{}stdout\textquotesingle{} and \textquotesingle{}stderr\textquotesingle{} or a filename. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_main_a2b649ad950c80a65798687e79b6bf7bd}{set\+\_\+loglevel} (const std\+::string \&log, const std\+::string \&level=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{class_wire_cell_1_1_main_a7cd2683098093ad0f714873a9112543e}{initialize} ()
+\item 
+void \hyperlink{class_wire_cell_1_1_main_a4a7f5c181bfd1cc972156ff96952436a}{operator()} ()
+\begin{DoxyCompactList}\small\item\em Run any and all application components once. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file Main.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a50d4361a1b613205467a441b5c40c199}\label{class_wire_cell_1_1_main_a50d4361a1b613205467a441b5c40c199}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!Main@{Main}}
+\index{Main@{Main}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{Main()}{Main()}}
+{\footnotesize\ttfamily Main\+::\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file Main.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a58d9c0798f0d2114e736d04d780a080f}\label{class_wire_cell_1_1_main_a58d9c0798f0d2114e736d04d780a080f}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!````~Main@{$\sim$\+Main}}
+\index{````~Main@{$\sim$\+Main}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{$\sim$\+Main()}{~Main()}}
+{\footnotesize\ttfamily Main\+::$\sim$\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 32 of file Main.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_af256b8bb1a2af9cdd7a96468db4c929d}\label{class_wire_cell_1_1_main_af256b8bb1a2af9cdd7a96468db4c929d}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!add\+\_\+app@{add\+\_\+app}}
+\index{add\+\_\+app@{add\+\_\+app}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{add\+\_\+app()}{add\_app()}}
+{\footnotesize\ttfamily void Main\+::add\+\_\+app (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tn }\end{DoxyParamCaption})}
+
+Individual setup methods called by \hyperlink{class_wire_cell_1_1_main_a6d6b47f6893cc6474d71d70bf5f8adcb}{cmdline()} or called explicitly by external application/frameork\+: Add an \hyperlink{class_wire_cell_1_1_i_application}{I\+Application} component to execute as a {\ttfamily type\+:name} string. 
+
+Definition at line 142 of file Main.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_main_af256b8bb1a2af9cdd7a96468db4c929d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_aed27a7aa4fcf7fc4bb03637bc226f318}\label{class_wire_cell_1_1_main_aed27a7aa4fcf7fc4bb03637bc226f318}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!add\+\_\+code@{add\+\_\+code}}
+\index{add\+\_\+code@{add\+\_\+code}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{add\+\_\+code()}{add\_code()}}
+{\footnotesize\ttfamily void Main\+::add\+\_\+code (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+Bind external configuration code (in Jsonnet language) to a variable so that its may be referenced the configuration files (via std.\+ext\+Var()) 
+
+Definition at line 173 of file Main.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_main_aed27a7aa4fcf7fc4bb03637bc226f318_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a9c790104cfb1a5223d041dd10187d2e2}\label{class_wire_cell_1_1_main_a9c790104cfb1a5223d041dd10187d2e2}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!add\+\_\+config@{add\+\_\+config}}
+\index{add\+\_\+config@{add\+\_\+config}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{add\+\_\+config()}{add\_config()}}
+{\footnotesize\ttfamily void Main\+::add\+\_\+config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Append a top-\/level J\+S\+O\+N/\+Jsonnet configuration file to the configuration sequence. 
+
+Definition at line 163 of file Main.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_wire_cell_1_1_main_a9c790104cfb1a5223d041dd10187d2e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a50af5cb3b3f2cfb176febecd4a1613ce}\label{class_wire_cell_1_1_main_a50af5cb3b3f2cfb176febecd4a1613ce}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!add\+\_\+logsink@{add\+\_\+logsink}}
+\index{add\+\_\+logsink@{add\+\_\+logsink}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{add\+\_\+logsink()}{add\_logsink()}}
+{\footnotesize\ttfamily void Main\+::add\+\_\+logsink (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{log,  }\item[{const std\+::string \&}]{level = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Add a log sink, reserved names \textquotesingle{}stdout\textquotesingle{} and \textquotesingle{}stderr\textquotesingle{} or a filename. 
+
+
+
+Definition at line 147 of file Main.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_wire_cell_1_1_main_a50af5cb3b3f2cfb176febecd4a1613ce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_wire_cell_1_1_main_a50af5cb3b3f2cfb176febecd4a1613ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a5747c7dd28185179cb961b37d1b55a48}\label{class_wire_cell_1_1_main_a5747c7dd28185179cb961b37d1b55a48}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!add\+\_\+path@{add\+\_\+path}}
+\index{add\+\_\+path@{add\+\_\+path}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{add\+\_\+path()}{add\_path()}}
+{\footnotesize\ttfamily void Main\+::add\+\_\+path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{dirname }\end{DoxyParamCaption})}
+
+Add an element to the configuration path in which configuration files may be found. 
+
+Definition at line 178 of file Main.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_main_a5747c7dd28185179cb961b37d1b55a48_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a198d57d515d756dc488dbc6ad5b14ccb}\label{class_wire_cell_1_1_main_a198d57d515d756dc488dbc6ad5b14ccb}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!add\+\_\+plugin@{add\+\_\+plugin}}
+\index{add\+\_\+plugin@{add\+\_\+plugin}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{add\+\_\+plugin()}{add\_plugin()}}
+{\footnotesize\ttfamily void Main\+::add\+\_\+plugin (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{libname }\end{DoxyParamCaption})}
+
+Add a plugin library in which components may be found. The libname may lack the initial \char`\"{}lib\char`\"{} prefix and file extension. 
+
+Definition at line 137 of file Main.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_wire_cell_1_1_main_a198d57d515d756dc488dbc6ad5b14ccb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a6c37e436a63876d242172070198e3192}\label{class_wire_cell_1_1_main_a6c37e436a63876d242172070198e3192}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!add\+\_\+var@{add\+\_\+var}}
+\index{add\+\_\+var@{add\+\_\+var}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{add\+\_\+var()}{add\_var()}}
+{\footnotesize\ttfamily void Main\+::add\+\_\+var (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+Bind an external scalar value to a variable so that it may be referenced in the configuration files (via std.\+ext\+Var()). 
+
+Definition at line 168 of file Main.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_main_a6c37e436a63876d242172070198e3192_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a6d6b47f6893cc6474d71d70bf5f8adcb}\label{class_wire_cell_1_1_main_a6d6b47f6893cc6474d71d70bf5f8adcb}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!cmdline@{cmdline}}
+\index{cmdline@{cmdline}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{cmdline()}{cmdline()}}
+{\footnotesize\ttfamily int Main\+::cmdline (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Single-\/point entry to Wire Cell.
+
+Pass in literal command line arguments and return a return code. See {\ttfamily wire-\/cell -\/-\/help} for args.
+
+Or, one can use subsequent methods for more fine-\/grained setup and execution. 
+
+Definition at line 38 of file Main.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_main_a6d6b47f6893cc6474d71d70bf5f8adcb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a7cd2683098093ad0f714873a9112543e}\label{class_wire_cell_1_1_main_a7cd2683098093ad0f714873a9112543e}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!initialize@{initialize}}
+\index{initialize@{initialize}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void Main\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Call once after all setup has been done and before running. 
+
+Definition at line 184 of file Main.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_main_a7cd2683098093ad0f714873a9112543e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a4a7f5c181bfd1cc972156ff96952436a}\label{class_wire_cell_1_1_main_a4a7f5c181bfd1cc972156ff96952436a}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily void Main\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Run any and all application components once. 
+
+
+
+Definition at line 265 of file Main.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_main_a4a7f5c181bfd1cc972156ff96952436a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_main_a2b649ad950c80a65798687e79b6bf7bd}\label{class_wire_cell_1_1_main_a2b649ad950c80a65798687e79b6bf7bd}} 
+\index{Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}!set\+\_\+loglevel@{set\+\_\+loglevel}}
+\index{set\+\_\+loglevel@{set\+\_\+loglevel}!Wire\+Cell\+::\+Main@{Wire\+Cell\+::\+Main}}
+\subsubsection{\texorpdfstring{set\+\_\+loglevel()}{set\_loglevel()}}
+{\footnotesize\ttfamily void Main\+::set\+\_\+loglevel (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{log,  }\item[{const std\+::string \&}]{level = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Set a minimum level to emit a message for a given log. (levels\+: critical, error, warn, info, debug, trace). 
+
+Definition at line 159 of file Main.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_main_a2b649ad950c80a65798687e79b6bf7bd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_wire_cell_1_1_main_a2b649ad950c80a65798687e79b6bf7bd_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+apps/inc/\+Wire\+Cell\+Apps/\hyperlink{_main_8h}{Main.\+h}\item 
+apps/src/\hyperlink{_main_8cxx}{Main.\+cxx}\end{DoxyCompactItemize}

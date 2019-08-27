@@ -1,0 +1,50 @@
+<map id="WireCell::Interface" name="WireCell::Interface">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IAnodeFace \&gt;" alt="" coords="203,5,353,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IAnodePlane \&gt;" alt="" coords="203,71,353,112"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IApplication \&gt;" alt="" coords="203,136,353,177"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelFilter \&gt;" alt="" coords="203,201,353,243"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelNoiseDatabase \&gt;" alt="" coords="184,267,372,308"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelResponse \&gt;" alt="" coords="199,332,357,373"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelSpectrum \&gt;" alt="" coords="201,397,355,439"/>
+<area shape="rect" id="node18" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IChannelStatus \&gt;" alt="" coords="203,463,353,504"/>
+<area shape="rect" id="node20" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="203,528,353,569"/>
+<area shape="rect" id="node22" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IDataFlowGraph \&gt;" alt="" coords="203,593,353,635"/>
+<area shape="rect" id="node24" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IDeconvolution \&gt;" alt="" coords="203,659,353,700"/>
+<area shape="rect" id="node26" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IFactory \&gt;" alt="" coords="203,724,353,765"/>
+<area shape="rect" id="node28" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IFieldResponse \&gt;" alt="" coords="203,789,353,831"/>
+<area shape="rect" id="node30" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IFilterWaveform \&gt;" alt="" coords="203,855,353,896"/>
+<area shape="rect" id="node32" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IImpactResponse \&gt;" alt="" coords="203,920,353,961"/>
+<area shape="rect" id="node34" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="203,985,353,1027"/>
+<area shape="rect" id="node36" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IPlaneImpactResponse \&gt;" alt="" coords="187,1051,369,1092"/>
+<area shape="rect" id="node38" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IRandom \&gt;" alt="" coords="203,1116,353,1157"/>
+<area shape="rect" id="node40" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IRecombinationModel \&gt;" alt="" coords="192,1181,364,1223"/>
+<area shape="rect" id="node42" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IWireParameters \&gt;" alt="" coords="203,1247,353,1288"/>
+<area shape="rect" id="node44" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IWirePlane \&gt;" alt="" coords="203,1312,353,1353"/>
+<area shape="rect" id="node46" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IWireSchema \&gt;" alt="" coords="203,1377,353,1419"/>
+<area shape="rect" id="node48" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; Type \&gt;" alt="" coords="203,1443,353,1484"/>
+<area shape="rect" id="node49" href="$class_wire_cell_1_1_i_processor.html" title="WireCell::IProcessor" alt="" coords="207,1509,349,1535"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_anode_face.html" title="WireCell::IAnodeFace" alt="" coords="456,13,607,39"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_anode_face.html" title="WireCell::Gen::AnodeFace" alt="" coords="693,13,871,39"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_anode_plane.html" title="WireCell::IAnodePlane" alt="" coords="454,85,609,111"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html" title="WireCell::Gen::AnodePlane" alt="" coords="691,306,873,333"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_i_application.html" title="WireCell::IApplication" alt="" coords="457,143,605,170"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_i_channel_filter.html" title="WireCell::IChannelFilter" alt="" coords="451,209,612,235"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_i_channel_noise_database.html" title="WireCell::IChannelNoiseDatabase" alt="" coords="420,274,643,301"/>
+<area shape="rect" id="node15" href="$class_wire_cell_1_1_i_channel_response.html" title="WireCell::IChannelResponse" alt="" coords="436,339,627,366"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_i_channel_spectrum.html" title="WireCell::IChannelSpectrum" alt="" coords="437,405,625,431"/>
+<area shape="rect" id="node19" href="$class_wire_cell_1_1_i_channel_status.html" title="WireCell::IChannelStatus" alt="" coords="446,470,617,497"/>
+<area shape="rect" id="node21" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="453,527,610,554"/>
+<area shape="rect" id="node23" href="$class_wire_cell_1_1_i_data_flow_graph.html" title="WireCell::IDataFlowGraph" alt="" coords="444,601,619,627"/>
+<area shape="rect" id="node25" href="$class_wire_cell_1_1_i_deconvolution.html" title="WireCell::IDeconvolution" alt="" coords="448,666,615,693"/>
+<area shape="rect" id="node27" href="$class_wire_cell_1_1_i_factory.html" title="WireCell::IFactory" alt="" coords="467,731,595,758"/>
+<area shape="rect" id="node29" href="$class_wire_cell_1_1_i_field_response.html" title="WireCell::IFieldResponse" alt="" coords="446,797,617,823"/>
+<area shape="rect" id="node31" href="$class_wire_cell_1_1_i_filter_waveform.html" title="WireCell::IFilterWaveform" alt="" coords="445,862,618,889"/>
+<area shape="rect" id="node33" href="$class_wire_cell_1_1_i_impact_response.html" title="WireCell::IImpactResponse" alt="" coords="440,927,623,954"/>
+<area shape="rect" id="node35" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="474,993,589,1019"/>
+<area shape="rect" id="node37" href="$class_wire_cell_1_1_i_plane_impact_response.html" title="WireCell::IPlaneImpactResponse" alt="" coords="423,1058,639,1085"/>
+<area shape="rect" id="node39" href="$class_wire_cell_1_1_i_random.html" title="WireCell::IRandom" alt="" coords="465,1123,598,1150"/>
+<area shape="rect" id="node41" href="$class_wire_cell_1_1_i_recombination_model.html" title="WireCell::IRecombination\lModel" alt="" coords="446,1181,617,1223"/>
+<area shape="rect" id="node43" href="$class_wire_cell_1_1_i_wire_parameters.html" title="WireCell::IWireParameters" alt="" coords="442,1254,621,1281"/>
+<area shape="rect" id="node45" href="$class_wire_cell_1_1_i_wire_plane.html" title="WireCell::IWirePlane" alt="" coords="459,1319,603,1346"/>
+<area shape="rect" id="node47" href="$class_wire_cell_1_1_i_wire_schema.html" title="WireCell::IWireSchema" alt="" coords="452,1385,611,1411"/>
+</map>

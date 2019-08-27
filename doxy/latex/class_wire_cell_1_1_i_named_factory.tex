@@ -1,0 +1,162 @@
+\hypertarget{class_wire_cell_1_1_i_named_factory}{}\section{Wire\+Cell\+:\+:I\+Named\+Factory Class Reference}
+\label{class_wire_cell_1_1_i_named_factory}\index{Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}}
+
+
+{\ttfamily \#include $<$I\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Named\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_wire_cell_1_1_i_named_factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Named\+Factory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_wire_cell_1_1_i_named_factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_named_factory}{I\+Named\+Factory} $>$ \hyperlink{class_wire_cell_1_1_i_named_factory_a76fa5c86b2a5f65a74952f8bec4941d2}{pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_named_factory_aae114af54abe808635cd2f29f1bbddbb}{$\sim$\+I\+Named\+Factory} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_i_named_factory_a9175190c6f03f9d7fb43f3c8643e10d6}{set\+\_\+classname} (const std\+::string \&name)=0
+\begin{DoxyCompactList}\small\item\em Set name of class this factory can make. \end{DoxyCompactList}\item 
+virtual const std\+::string \& \hyperlink{class_wire_cell_1_1_i_named_factory_aa66da8d5128e202367b56a0a340dc754}{classname} ()=0
+\begin{DoxyCompactList}\small\item\em Access name of class this factory can make. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{Interface\+::pointer} \hyperlink{class_wire_cell_1_1_i_named_factory_aab305aa4c3d65450f97f95b26475d3fe}{create} (const std\+::string \&name)=0
+\begin{DoxyCompactList}\small\item\em Create an instance by name. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{Interface\+::pointer} \hyperlink{class_wire_cell_1_1_i_named_factory_a4e87a7c8957a57aa6d23fef2f9e1dbd3}{find} (const std\+::string \&name)=0
+\begin{DoxyCompactList}\small\item\em Return existing instance or nullptr if not found. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file I\+Factory.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_named_factory_a76fa5c86b2a5f65a74952f8bec4941d2}\label{class_wire_cell_1_1_i_named_factory_a76fa5c86b2a5f65a74952f8bec4941d2}} 
+\index{Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_named_factory}{I\+Named\+Factory}$>$ \hyperlink{class_wire_cell_1_1_i_named_factory_a76fa5c86b2a5f65a74952f8bec4941d2}{Wire\+Cell\+::\+I\+Named\+Factory\+::pointer}}
+
+
+
+Definition at line 22 of file I\+Factory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_named_factory_aae114af54abe808635cd2f29f1bbddbb}\label{class_wire_cell_1_1_i_named_factory_aae114af54abe808635cd2f29f1bbddbb}} 
+\index{Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}!````~I\+Named\+Factory@{$\sim$\+I\+Named\+Factory}}
+\index{````~I\+Named\+Factory@{$\sim$\+I\+Named\+Factory}!Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Named\+Factory()}{~INamedFactory()}}
+{\footnotesize\ttfamily Wire\+Cell\+::\+I\+Named\+Factory\+::$\sim$\+I\+Named\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 8 of file Wire\+Cell\+Util.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_named_factory_aa66da8d5128e202367b56a0a340dc754}\label{class_wire_cell_1_1_i_named_factory_aa66da8d5128e202367b56a0a340dc754}} 
+\index{Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}!classname@{classname}}
+\index{classname@{classname}!Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}}
+\subsubsection{\texorpdfstring{classname()}{classname()}}
+{\footnotesize\ttfamily virtual const std\+::string\& Wire\+Cell\+::\+I\+Named\+Factory\+::classname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Access name of class this factory can make. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_named_factory_a55b839d7786ecca7b85bcabb7c163daa}{Wire\+Cell\+::\+Named\+Factory$<$ Type $>$}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_named_factory_aab305aa4c3d65450f97f95b26475d3fe}\label{class_wire_cell_1_1_i_named_factory_aab305aa4c3d65450f97f95b26475d3fe}} 
+\index{Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}!create@{create}}
+\index{create@{create}!Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{Interface\+::pointer} Wire\+Cell\+::\+I\+Named\+Factory\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create an instance by name. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_named_factory_aaf8b55bd335453198f23f412b8174419}{Wire\+Cell\+::\+Named\+Factory$<$ Type $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_named_factory_aab305aa4c3d65450f97f95b26475d3fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_named_factory_a4e87a7c8957a57aa6d23fef2f9e1dbd3}\label{class_wire_cell_1_1_i_named_factory_a4e87a7c8957a57aa6d23fef2f9e1dbd3}} 
+\index{Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}!find@{find}}
+\index{find@{find}!Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{Interface\+::pointer} Wire\+Cell\+::\+I\+Named\+Factory\+::find (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return existing instance or nullptr if not found. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_factory_a4365897d9d1e7951ce53c553dba3e116}{Wire\+Cell\+::\+I\+Factory}.
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_named_factory_a1c0faed7ba682bd801069997d60ea81b}{Wire\+Cell\+::\+Named\+Factory$<$ Type $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_named_factory_a4e87a7c8957a57aa6d23fef2f9e1dbd3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_named_factory_a9175190c6f03f9d7fb43f3c8643e10d6}\label{class_wire_cell_1_1_i_named_factory_a9175190c6f03f9d7fb43f3c8643e10d6}} 
+\index{Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}!set\+\_\+classname@{set\+\_\+classname}}
+\index{set\+\_\+classname@{set\+\_\+classname}!Wire\+Cell\+::\+I\+Named\+Factory@{Wire\+Cell\+::\+I\+Named\+Factory}}
+\subsubsection{\texorpdfstring{set\+\_\+classname()}{set\_classname()}}
+{\footnotesize\ttfamily virtual void Wire\+Cell\+::\+I\+Named\+Factory\+::set\+\_\+classname (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set name of class this factory can make. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_named_factory_afd42539ccd3d6f8b49b0afa5b675747b}{Wire\+Cell\+::\+Named\+Factory$<$ Type $>$}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_i_factory_8h}{I\+Factory.\+h}\item 
+util/src/\hyperlink{_wire_cell_util_8cxx}{Wire\+Cell\+Util.\+cxx}\end{DoxyCompactItemize}

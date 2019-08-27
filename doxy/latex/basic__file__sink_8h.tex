@@ -1,0 +1,50 @@
+\hypertarget{basic__file__sink_8h}{}\section{util/inc/spdlog/sinks/basic\+\_\+file\+\_\+sink.h File Reference}
+\label{basic__file__sink_8h}\index{util/inc/spdlog/sinks/basic\+\_\+file\+\_\+sink.\+h@{util/inc/spdlog/sinks/basic\+\_\+file\+\_\+sink.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/spdlog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/file\+\_\+helper.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/null\+\_\+mutex.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/sinks/base\+\_\+sink.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for basic\+\_\+file\+\_\+sink.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{basic__file__sink_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{basic__file__sink_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classspdlog_1_1sinks_1_1basic__file__sink}{spdlog\+::sinks\+::basic\+\_\+file\+\_\+sink$<$ Mutex $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1sinks}{spdlog\+::sinks}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_a3c2170781ef0f706f8cea55f8d6b0609}{spdlog\+::sinks\+::basic\+\_\+file\+\_\+sink\+\_\+mt} = basic\+\_\+file\+\_\+sink$<$ std\+::mutex $>$
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_ab6d38313481cd7fedfb8aeb68c2c61d1}{spdlog\+::sinks\+::basic\+\_\+file\+\_\+sink\+\_\+st} = basic\+\_\+file\+\_\+sink$<$ details\+::null\+\_\+mutex $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_abd73a6177edaccb77048bf47e3f8ad23}{spdlog\+::basic\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name, const filename\+\_\+t \&filename, bool truncate=false)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_abc9cd0646191cc0b295b6e50367b22b7}{spdlog\+::basic\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name, const filename\+\_\+t \&filename, bool truncate=false)
+\end{DoxyCompactItemize}

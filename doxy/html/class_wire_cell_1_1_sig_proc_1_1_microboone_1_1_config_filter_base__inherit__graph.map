@@ -1,0 +1,7 @@
+<map id="WireCell::SigProc::Microboone::ConfigFilterBase" name="WireCell::SigProc::Microboone::ConfigFilterBase">
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub.html" title="WireCell::SigProc::\lMicroboone::CoherentNoiseSub" alt="" coords="831,5,1037,47"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_noise.html" title="WireCell::SigProc::\lMicroboone::OneChannelNoise" alt="" coords="833,71,1035,112"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_configurable.html" title="WireCell::IConfigurable" alt="" coords="383,46,540,73"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IConfigurable \&gt;" alt="" coords="184,39,335,80"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,46,136,73"/>
+</map>

@@ -1,0 +1,334 @@
+\hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform}{}\section{Wire\+Cell\+:\+:Gen\+:\+:Binned\+Diffusion\+\_\+transform Class Reference}
+\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform}\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+
+
+{\ttfamily \#include $<$Binned\+Diffusion\+\_\+transform.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8}{Impact\+Data\+Calculation\+Strategy} \{ \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8a99ec31c36d9e2273b7dfac22cb4cf9c5}{constant} =1, 
+\hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8aaac1a1f642137ad29456e098e82c7b6e}{linear} =2
+ \}\begin{DoxyCompactList}\small\item\em Useful to client code to mark a calculation strategy. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a73d5b050771927475423f0aa17369b46}{Binned\+Diffusion\+\_\+transform} (const \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos} \&\hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a5da47771953721da39a78625d1845363}{pimpos}, const \hyperlink{class_wire_cell_1_1_binning}{Binning} \&\hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a57f26ea414abfae84cf54bdbe7992db5}{tbins}, double nsigma=3.\+0, \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Random\+::pointer} fluctuate=nullptr, \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8}{Impact\+Data\+Calculation\+Strategy} calcstrat=\hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8aaac1a1f642137ad29456e098e82c7b6e}{linear})
+\item 
+const \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos} \& \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a5da47771953721da39a78625d1845363}{pimpos} () const
+\item 
+const \hyperlink{class_wire_cell_1_1_binning}{Binning} \& \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a57f26ea414abfae84cf54bdbe7992db5}{tbins} () const
+\item 
+bool \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a18fd9a41fa313057caf57a8aa9957c86}{add} (\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} deposition, double sigma\+\_\+time, double sigma\+\_\+pitch)
+\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_acb9922e051d067601b96fa03e80445bc}{get\+\_\+charge\+\_\+vec} (std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, double $>$ $>$ $>$ \&vec\+\_\+vec\+\_\+charge, std\+::vector$<$ int $>$ \&vec\+\_\+impact)
+\item 
+void \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a7baeb40d106e11019f0cf96917a59d18}{get\+\_\+charge\+\_\+matrix} (std\+::vector$<$ Eigen\+::\+Sparse\+Matrix$<$ float $>$ $\ast$ $>$ \&vec\+\_\+spmatrix, std\+::vector$<$ int $>$ \&vec\+\_\+impact)
+\item 
+std\+::pair$<$ double, double $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a930b6511084f18a355737ca78cbc5bb8}{pitch\+\_\+range} (double nsigma=0.\+0) const
+\item 
+std\+::pair$<$ int, int $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_acc55b5ad48ce4bc6081155bc9b3847aa}{impact\+\_\+bin\+\_\+range} (double nsigma=0.\+0) const
+\item 
+std\+::pair$<$ double, double $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a85b39e7bc1fde6350ee84c8a3407cada}{time\+\_\+range} (double nsigma=0.\+0) const
+\item 
+std\+::pair$<$ int, int $>$ \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a8c66fd61a47999c36c8b00cafbe3fb87}{time\+\_\+bin\+\_\+range} (double nsigma=0.\+0) const
+\item 
+double \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a34dcb68c70dcf99ff252e36442f4bce8}{get\+\_\+nsigma} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform}{Binned\+Diffusion\+\_\+transform} maintains an association between impact positions along the pitch direction of a wire plane and the diffused depositions that drift to them. \begin{DoxyVerb}It covers a fixed and discretely sampled time and pitch
+domain.\end{DoxyVerb}
+ 
+
+Definition at line 27 of file Binned\+Diffusion\+\_\+transform.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!Impact\+Data\+Calculation\+Strategy@{Impact\+Data\+Calculation\+Strategy}}
+\index{Impact\+Data\+Calculation\+Strategy@{Impact\+Data\+Calculation\+Strategy}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{Impact\+Data\+Calculation\+Strategy}{ImpactDataCalculationStrategy}}
+{\footnotesize\ttfamily enum \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8}{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform\+::\+Impact\+Data\+Calculation\+Strategy}}
+
+
+
+Useful to client code to mark a calculation strategy. 
+
+Create a \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform}{Binned\+Diffusion\+\_\+transform}.
+
+Arguments are\+:
+
+
+\begin{DoxyItemize}
+\item pimpos \+:\+: a \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos} instance defining the wire and impact binning.
+\item tbins \+:\+: a \hyperlink{class_wire_cell_1_1_binning}{Binning} instance defining the time sampling binning.
+\end{DoxyItemize}
+
+nsigma \+:\+: number of sigma the 2D (transverse X longitudinal) Gaussian extends.
+
+
+\begin{DoxyItemize}
+\item fluctuate \+:\+: set to an \hyperlink{class_wire_cell_1_1_i_random}{I\+Random} if charge-\/preserving Poisson fluctuations are to be applied.
+\begin{DoxyItemize}
+\item calcstrat \+:\+: set a calculation strategy that gives how the microscopic distribution of charge between two impacts will be interpolated toward either edge. 
+\end{DoxyItemize}
+\end{DoxyItemize}\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{constant@{constant}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!constant@{constant}}}\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8a99ec31c36d9e2273b7dfac22cb4cf9c5}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8a99ec31c36d9e2273b7dfac22cb4cf9c5}} 
+constant&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{linear@{linear}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!linear@{linear}}}\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8aaac1a1f642137ad29456e098e82c7b6e}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8aaac1a1f642137ad29456e098e82c7b6e}} 
+linear&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 51 of file Binned\+Diffusion\+\_\+transform.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a73d5b050771927475423f0aa17369b46}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a73d5b050771927475423f0aa17369b46}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!Binned\+Diffusion\+\_\+transform@{Binned\+Diffusion\+\_\+transform}}
+\index{Binned\+Diffusion\+\_\+transform@{Binned\+Diffusion\+\_\+transform}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{Binned\+Diffusion\+\_\+transform()}{BinnedDiffusion\_transform()}}
+{\footnotesize\ttfamily Gen\+::\+Binned\+Diffusion\+\_\+transform\+::\+Binned\+Diffusion\+\_\+transform (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos} \&}]{pimpos,  }\item[{const \hyperlink{class_wire_cell_1_1_binning}{Binning} \&}]{tbins,  }\item[{double}]{nsigma = {\ttfamily 3.0},  }\item[{\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Random\+::pointer}}]{fluctuate = {\ttfamily nullptr},  }\item[{\hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8}{Impact\+Data\+Calculation\+Strategy}}]{calcstrat = {\ttfamily \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_af412f1b73b13a90b066cb7284735ddf8aaac1a1f642137ad29456e098e82c7b6e}{linear}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file Binned\+Diffusion\+\_\+transform.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a18fd9a41fa313057caf57a8aa9957c86}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a18fd9a41fa313057caf57a8aa9957c86}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!add@{add}}
+\index{add@{add}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily bool Gen\+::\+Binned\+Diffusion\+\_\+transform\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer}}]{deposition,  }\item[{double}]{sigma\+\_\+time,  }\item[{double}]{sigma\+\_\+pitch }\end{DoxyParamCaption})}
+
+Add a deposition and its associated diffusion sigmas. Return false if no activity falls within the domain. 
+
+Definition at line 37 of file Binned\+Diffusion\+\_\+transform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a18fd9a41fa313057caf57a8aa9957c86_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a18fd9a41fa313057caf57a8aa9957c86_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a7baeb40d106e11019f0cf96917a59d18}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a7baeb40d106e11019f0cf96917a59d18}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!get\+\_\+charge\+\_\+matrix@{get\+\_\+charge\+\_\+matrix}}
+\index{get\+\_\+charge\+\_\+matrix@{get\+\_\+charge\+\_\+matrix}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{get\+\_\+charge\+\_\+matrix()}{get\_charge\_matrix()}}
+{\footnotesize\ttfamily void Gen\+::\+Binned\+Diffusion\+\_\+transform\+::get\+\_\+charge\+\_\+matrix (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Eigen\+::\+Sparse\+Matrix$<$ float $>$ $\ast$ $>$ \&}]{vec\+\_\+spmatrix,  }\item[{std\+::vector$<$ int $>$ \&}]{vec\+\_\+impact }\end{DoxyParamCaption})}
+
+
+
+Definition at line 128 of file Binned\+Diffusion\+\_\+transform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a7baeb40d106e11019f0cf96917a59d18_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a7baeb40d106e11019f0cf96917a59d18_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_acb9922e051d067601b96fa03e80445bc}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_acb9922e051d067601b96fa03e80445bc}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!get\+\_\+charge\+\_\+vec@{get\+\_\+charge\+\_\+vec}}
+\index{get\+\_\+charge\+\_\+vec@{get\+\_\+charge\+\_\+vec}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{get\+\_\+charge\+\_\+vec()}{get\_charge\_vec()}}
+{\footnotesize\ttfamily void Gen\+::\+Binned\+Diffusion\+\_\+transform\+::get\+\_\+charge\+\_\+vec (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ std\+::tuple$<$ int, int, double $>$ $>$ $>$ \&}]{vec\+\_\+vec\+\_\+charge,  }\item[{std\+::vector$<$ int $>$ \&}]{vec\+\_\+impact }\end{DoxyParamCaption})}
+
+Unconditionally associate an already built \hyperlink{class_wire_cell_1_1_gen_1_1_gaussian_diffusion}{Gaussian\+Diffusion} to one impact. Drop any stored \hyperlink{class_wire_cell_1_1_gen_1_1_impact_data}{Impact\+Data} within the half open impact index range. Return the data in the given impact bin. Note, this bin represents drifted charge between two impact positions. Take care when using \hyperlink{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform}{Binned\+Diffusion\+\_\+transform} and field responses because epsilon above or below the impact position exactly in the middle of two wires drastically different response. 
+
+Definition at line 223 of file Binned\+Diffusion\+\_\+transform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_acb9922e051d067601b96fa03e80445bc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_acb9922e051d067601b96fa03e80445bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a34dcb68c70dcf99ff252e36442f4bce8}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a34dcb68c70dcf99ff252e36442f4bce8}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!get\+\_\+nsigma@{get\+\_\+nsigma}}
+\index{get\+\_\+nsigma@{get\+\_\+nsigma}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{get\+\_\+nsigma()}{get\_nsigma()}}
+{\footnotesize\ttfamily double Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform\+::get\+\_\+nsigma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file Binned\+Diffusion\+\_\+transform.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a34dcb68c70dcf99ff252e36442f4bce8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_acc55b5ad48ce4bc6081155bc9b3847aa}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_acc55b5ad48ce4bc6081155bc9b3847aa}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!impact\+\_\+bin\+\_\+range@{impact\+\_\+bin\+\_\+range}}
+\index{impact\+\_\+bin\+\_\+range@{impact\+\_\+bin\+\_\+range}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{impact\+\_\+bin\+\_\+range()}{impact\_bin\_range()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Gen\+::\+Binned\+Diffusion\+\_\+transform\+::impact\+\_\+bin\+\_\+range (\begin{DoxyParamCaption}\item[{double}]{nsigma = {\ttfamily 0.0} }\end{DoxyParamCaption}) const}
+
+Return the half open bin range of impact bins, constrained so that either number is in \mbox{[}0,nimpacts\mbox{]}. 
+
+Definition at line 439 of file Binned\+Diffusion\+\_\+transform.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_acc55b5ad48ce4bc6081155bc9b3847aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_acc55b5ad48ce4bc6081155bc9b3847aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a5da47771953721da39a78625d1845363}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a5da47771953721da39a78625d1845363}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!pimpos@{pimpos}}
+\index{pimpos@{pimpos}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{pimpos()}{pimpos()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_pimpos}{Pimpos}\& Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform\+::pimpos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file Binned\+Diffusion\+\_\+transform.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a5da47771953721da39a78625d1845363_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a930b6511084f18a355737ca78cbc5bb8}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a930b6511084f18a355737ca78cbc5bb8}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!pitch\+\_\+range@{pitch\+\_\+range}}
+\index{pitch\+\_\+range@{pitch\+\_\+range}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{pitch\+\_\+range()}{pitch\_range()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Gen\+::\+Binned\+Diffusion\+\_\+transform\+::pitch\+\_\+range (\begin{DoxyParamCaption}\item[{double}]{nsigma = {\ttfamily 0.0} }\end{DoxyParamCaption}) const}
+
+Return the range of pitch containing depos out to given nsigma and without bounds checking. 
+
+Definition at line 430 of file Binned\+Diffusion\+\_\+transform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a930b6511084f18a355737ca78cbc5bb8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a57f26ea414abfae84cf54bdbe7992db5}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a57f26ea414abfae84cf54bdbe7992db5}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!tbins@{tbins}}
+\index{tbins@{tbins}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{tbins()}{tbins()}}
+{\footnotesize\ttfamily const \hyperlink{class_wire_cell_1_1_binning}{Binning}\& Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform\+::tbins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file Binned\+Diffusion\+\_\+transform.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a57f26ea414abfae84cf54bdbe7992db5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a57f26ea414abfae84cf54bdbe7992db5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a8c66fd61a47999c36c8b00cafbe3fb87}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a8c66fd61a47999c36c8b00cafbe3fb87}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!time\+\_\+bin\+\_\+range@{time\+\_\+bin\+\_\+range}}
+\index{time\+\_\+bin\+\_\+range@{time\+\_\+bin\+\_\+range}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{time\+\_\+bin\+\_\+range()}{time\_bin\_range()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Gen\+::\+Binned\+Diffusion\+\_\+transform\+::time\+\_\+bin\+\_\+range (\begin{DoxyParamCaption}\item[{double}]{nsigma = {\ttfamily 0.0} }\end{DoxyParamCaption}) const}
+
+Return the half open bin range for time bins constrained so that either number is in \mbox{[}0,nticks\mbox{]}. 
+
+Definition at line 456 of file Binned\+Diffusion\+\_\+transform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a8c66fd61a47999c36c8b00cafbe3fb87_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a85b39e7bc1fde6350ee84c8a3407cada}\label{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a85b39e7bc1fde6350ee84c8a3407cada}} 
+\index{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}!time\+\_\+range@{time\+\_\+range}}
+\index{time\+\_\+range@{time\+\_\+range}!Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform@{Wire\+Cell\+::\+Gen\+::\+Binned\+Diffusion\+\_\+transform}}
+\subsubsection{\texorpdfstring{time\+\_\+range()}{time\_range()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Gen\+::\+Binned\+Diffusion\+\_\+transform\+::time\+\_\+range (\begin{DoxyParamCaption}\item[{double}]{nsigma = {\ttfamily 0.0} }\end{DoxyParamCaption}) const}
+
+Return the range of time containing depos out to given nsigma and without bounds checking. 
+
+Definition at line 447 of file Binned\+Diffusion\+\_\+transform.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_gen_1_1_binned_diffusion__transform_a85b39e7bc1fde6350ee84c8a3407cada_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gen/inc/\+Wire\+Cell\+Gen/\hyperlink{_binned_diffusion__transform_8h}{Binned\+Diffusion\+\_\+transform.\+h}\item 
+gen/src/\hyperlink{_binned_diffusion__transform_8cxx}{Binned\+Diffusion\+\_\+transform.\+cxx}\end{DoxyCompactItemize}

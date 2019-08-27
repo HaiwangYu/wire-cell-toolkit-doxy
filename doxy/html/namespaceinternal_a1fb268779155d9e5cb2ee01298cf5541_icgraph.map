@@ -1,0 +1,15 @@
+<map id="internal::find" name="internal::find">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_frame_tools.html#ab75409594f96814edb45d39db9d705f6" title="WireCell::FrameTools\l::tagged_traces" alt="" coords="165,235,314,276"/>
+<area shape="rect" id="node12" href="$namespacewct_1_1sigproc.html#ad081c59d5eae16e2375425a9e1a65679" title="wct::sigproc::raster" alt="" coords="172,301,307,327"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_sticky_code_mitig.html#aa42dce81ba4e7dad67cc5653c9a8249f" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="147,351,332,407"/>
+<area shape="rect" id="node14" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement.html#a2752abfaf6f0c8e84cef5dcec56010ee" title="WireCell::SigProc::\lROI_refinement::load_data" alt="" coords="150,432,329,473"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_img_1_1_sum_slice_base.html#a173581daeeac8e467120be1a0a9eea82" title="WireCell::Img::SumSliceBase\l::slice" alt="" coords="380,71,576,112"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_channel_selector.html#aaca59eb8b7d47e29fed24f6976adc4f3" title="IFrameFilter interface. " alt="" coords="387,136,569,177"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_sig_proc_1_1_frame_merger.html#a8869c4f2709ada2d63c9a5bec95cbc5f" title="WireCell::SigProc::\lFrameMerger::operator()" alt="" coords="397,201,559,243"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_sig_proc_1_1_frame_splitter.html#a1cd01d98b6da5cb6df5fe4941d1564f3" title="WireCell::SigProc::\lFrameSplitter::operator()" alt="" coords="397,267,559,308"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_sig_proc_1_1_l1_s_p_filter.html#ac58397721b0a7b485d46ac63522ebe87" title="IFrameFilter interface. " alt="" coords="405,332,551,373"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_sio_1_1_numpy_frame_saver.html#aa4e56c63747bea244fd47f07b0d59303" title="IFrameFilter. " alt="" coords="385,397,571,439"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_img_1_1_sum_slicer.html#aace8b802844078b3d58f1fcff9c30ebd" title="WireCell::Img::SumSlicer\l::operator()" alt="" coords="639,5,809,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_img_1_1_sum_slices.html#a75a674a3d5db69eef80d0d7c465c5394" title="WireCell::Img::SumSlices\l::operator()" alt="" coords="637,71,811,112"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_sig_proc_1_1_d_b_channel_selector.html#aed483bbdb14a86719f307749becf7695" title="IFrameFilter interface. " alt="" coords="624,136,824,177"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="WireCell::SigProc::SignalROI::get_end_bin" name="WireCell::SigProc::SignalROI::get_end_bin">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement.html#a2752abfaf6f0c8e84cef5dcec56010ee" title="WireCell::SigProc::\lROI_refinement::load_data" alt="" coords="213,5,392,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__refinement.html#ab63807936f9a429bf0d97b133068bd4a" title="WireCell::SigProc::\lROI_refinement::refine\l_data_debug_mode" alt="" coords="225,71,380,127"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a19b3f1c69aa59c14e928af82302de058" title="WireCell::SigProc::\lSignalROI::SignalROI" alt="" coords="227,152,378,193"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#af714fd2a4bba4597bea27d2ab34f0d8d" title="WireCell::SigProc::\lSignalROI::overlap" alt="" coords="235,217,370,259"/>
+</map>

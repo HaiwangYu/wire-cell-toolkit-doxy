@@ -1,0 +1,115 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Microboone\+:\+:Coherent\+Noise\+Sub Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}}
+
+
+{\ttfamily \#include $<$Microboone.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Microboone\+:\+:Coherent\+Noise\+Sub\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Microboone\+:\+:Coherent\+Noise\+Sub\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a3f5ef54c3ed9fb3f8dbd9141aa08bb73}{Coherent\+Noise\+Sub} (const std\+::string \&anode=\char`\"{}Anode\+Plane\char`\"{}, const std\+::string \&noisedb=\char`\"{}Omni\+Channel\+Noise\+DB\char`\"{})
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a51b125b33f083f79e1971bb2472fab5e}{$\sim$\+Coherent\+Noise\+Sub} ()
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a039888ecfad21c7a4e5724566661501d}{apply} (int channel, \hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&sig) const
+\item 
+virtual \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a0c98bcbea0288592dfe6603e92b742b5}{apply} (\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t} \&chansig) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{namespace_wire_cell_1_1_sig_proc_1_1_microboone}{Microboone} style coherent noise subtraction.
+
+Fixme\+: in principle, this class could be general purpose for other detectors. However, it uses the functions above which hard code microboone-\/isms. If those microboone-\/specific parameters can be pulled out to a higher layer then this class can become generic and move outside of this file. 
+
+Definition at line 67 of file Microboone.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a3f5ef54c3ed9fb3f8dbd9141aa08bb73}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a3f5ef54c3ed9fb3f8dbd9141aa08bb73}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}!Coherent\+Noise\+Sub@{Coherent\+Noise\+Sub}}
+\index{Coherent\+Noise\+Sub@{Coherent\+Noise\+Sub}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}}
+\subsubsection{\texorpdfstring{Coherent\+Noise\+Sub()}{CoherentNoiseSub()}}
+{\footnotesize\ttfamily Microboone\+::\+Coherent\+Noise\+Sub\+::\+Coherent\+Noise\+Sub (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{anode = {\ttfamily \char`\"{}AnodePlane\char`\"{}},  }\item[{const std\+::string \&}]{noisedb = {\ttfamily \char`\"{}OmniChannelNoiseDB\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 871 of file Microboone.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a51b125b33f083f79e1971bb2472fab5e}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a51b125b33f083f79e1971bb2472fab5e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}!````~Coherent\+Noise\+Sub@{$\sim$\+Coherent\+Noise\+Sub}}
+\index{````~Coherent\+Noise\+Sub@{$\sim$\+Coherent\+Noise\+Sub}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}}
+\subsubsection{\texorpdfstring{$\sim$\+Coherent\+Noise\+Sub()}{~CoherentNoiseSub()}}
+{\footnotesize\ttfamily Microboone\+::\+Coherent\+Noise\+Sub\+::$\sim$\+Coherent\+Noise\+Sub (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 873 of file Microboone.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a039888ecfad21c7a4e5724566661501d}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a039888ecfad21c7a4e5724566661501d}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} Microboone\+::\+Coherent\+Noise\+Sub\+::apply (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a434ed96cc4b805fa0eeec14f9f8d85e9}{signal\+\_\+t} \&}]{sig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Filter in place the signal {\ttfamily sig} from given {\ttfamily channel}. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_filter_a6981186ee38a4b9b66e16c0d9b376b08}{Wire\+Cell\+::\+I\+Channel\+Filter}.
+
+
+
+Definition at line 947 of file Microboone.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a0c98bcbea0288592dfe6603e92b742b5}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a0c98bcbea0288592dfe6603e92b742b5}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}!apply@{apply}}
+\index{apply@{apply}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}}
+\subsubsection{\texorpdfstring{apply()}{apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a18b9ae61c858e340252ba3ac83ac3bc0}{Wire\+Cell\+::\+Waveform\+::\+Channel\+Mask\+Map} Microboone\+::\+Coherent\+Noise\+Sub\+::apply (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter_a44de35ce47701d84cd45393c6bcd5e2f}{channel\+\_\+signals\+\_\+t} \&}]{chansig }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Filter in place a group of signals together. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_channel_filter_a47554d77b1dca5596dc61e2221e0a137}{Wire\+Cell\+::\+I\+Channel\+Filter}.
+
+
+
+Definition at line 876 of file Microboone.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub_a0c98bcbea0288592dfe6603e92b742b5_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_microboone_8h}{Microboone.\+h}\item 
+sigproc/src/\hyperlink{_microboone_8cxx}{Microboone.\+cxx}\end{DoxyCompactItemize}

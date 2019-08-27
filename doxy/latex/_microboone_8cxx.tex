@@ -1,0 +1,91 @@
+\hypertarget{_microboone_8cxx}{}\section{sigproc/src/\+Microboone.cxx File Reference}
+\label{_microboone_8cxx}\index{sigproc/src/\+Microboone.\+cxx@{sigproc/src/\+Microboone.\+cxx}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Sig\+Proc/\+Microboone.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Sig\+Proc/\+Derivations.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Named\+Factory.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$complex$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+Include dependency graph for Microboone.\+cxx\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_microboone_8cxx__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_microboone_8cxx_ae7b501da1cfe92d24917ea126abe7983}{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY} (mb\+Coherent\+Noise\+Sub, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}, \hyperlink{class_wire_cell_1_1_i_channel_filter}{Wire\+Cell\+::\+I\+Channel\+Filter}) W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY(mb\+One\+Channel\+Noise
+\item 
+\hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable} \hyperlink{_microboone_8cxx_ac326f4a768fc4971909ba8c1d0f679f1}{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY} (mb\+One\+Channel\+Status, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}, \hyperlink{class_wire_cell_1_1_i_channel_filter}{Wire\+Cell\+::\+I\+Channel\+Filter}, \hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable}) W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY(mb\+A\+D\+C\+Bit\+Shift
+\item 
+double \hyperlink{_microboone_8cxx_aec26e8475b24101e8d42280a9fe6ecf4}{filter\+\_\+low} (double freq, double cut\+\_\+off=0.\+08)
+\item 
+double \hyperlink{_microboone_8cxx_a94de968b0c02e8752b87276d53f4b5e6}{filter\+\_\+time} (double freq)
+\item 
+double \hyperlink{_microboone_8cxx_af80fc12da48126d2226458b674708db8}{filter\+\_\+low\+\_\+loose} (double freq)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_microboone_8cxx_aec26e8475b24101e8d42280a9fe6ecf4}\label{_microboone_8cxx_aec26e8475b24101e8d42280a9fe6ecf4}} 
+\index{Microboone.\+cxx@{Microboone.\+cxx}!filter\+\_\+low@{filter\+\_\+low}}
+\index{filter\+\_\+low@{filter\+\_\+low}!Microboone.\+cxx@{Microboone.\+cxx}}
+\subsubsection{\texorpdfstring{filter\+\_\+low()}{filter\_low()}}
+{\footnotesize\ttfamily double filter\+\_\+low (\begin{DoxyParamCaption}\item[{double}]{freq,  }\item[{double}]{cut\+\_\+off = {\ttfamily 0.08} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file Microboone.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_microboone_8cxx_aec26e8475b24101e8d42280a9fe6ecf4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_microboone_8cxx_af80fc12da48126d2226458b674708db8}\label{_microboone_8cxx_af80fc12da48126d2226458b674708db8}} 
+\index{Microboone.\+cxx@{Microboone.\+cxx}!filter\+\_\+low\+\_\+loose@{filter\+\_\+low\+\_\+loose}}
+\index{filter\+\_\+low\+\_\+loose@{filter\+\_\+low\+\_\+loose}!Microboone.\+cxx@{Microboone.\+cxx}}
+\subsubsection{\texorpdfstring{filter\+\_\+low\+\_\+loose()}{filter\_low\_loose()}}
+{\footnotesize\ttfamily double filter\+\_\+low\+\_\+loose (\begin{DoxyParamCaption}\item[{double}]{freq }\end{DoxyParamCaption})}
+
+
+
+Definition at line 50 of file Microboone.\+cxx.
+
+\mbox{\Hypertarget{_microboone_8cxx_a94de968b0c02e8752b87276d53f4b5e6}\label{_microboone_8cxx_a94de968b0c02e8752b87276d53f4b5e6}} 
+\index{Microboone.\+cxx@{Microboone.\+cxx}!filter\+\_\+time@{filter\+\_\+time}}
+\index{filter\+\_\+time@{filter\+\_\+time}!Microboone.\+cxx@{Microboone.\+cxx}}
+\subsubsection{\texorpdfstring{filter\+\_\+time()}{filter\_time()}}
+{\footnotesize\ttfamily double filter\+\_\+time (\begin{DoxyParamCaption}\item[{double}]{freq }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file Microboone.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_microboone_8cxx_a94de968b0c02e8752b87276d53f4b5e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_microboone_8cxx_ae7b501da1cfe92d24917ea126abe7983}\label{_microboone_8cxx_ae7b501da1cfe92d24917ea126abe7983}} 
+\index{Microboone.\+cxx@{Microboone.\+cxx}!W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}}
+\index{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}!Microboone.\+cxx@{Microboone.\+cxx}}
+\subsubsection{\texorpdfstring{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+R\+Y()}{WIRECELL\_FACTORY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY (\begin{DoxyParamCaption}\item[{mb\+Coherent\+Noise\+Sub}]{,  }\item[{\hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_coherent_noise_sub}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Coherent\+Noise\+Sub}}]{,  }\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter}{Wire\+Cell\+::\+I\+Channel\+Filter}}]{ }\end{DoxyParamCaption})}
+
+F\+I\+X\+ME\+: this file is full of magic numbers and likely totally not usable for detectors other than Micro\+Boo\+NE. \mbox{\Hypertarget{_microboone_8cxx_ac326f4a768fc4971909ba8c1d0f679f1}\label{_microboone_8cxx_ac326f4a768fc4971909ba8c1d0f679f1}} 
+\index{Microboone.\+cxx@{Microboone.\+cxx}!W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}}
+\index{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY@{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY}!Microboone.\+cxx@{Microboone.\+cxx}}
+\subsubsection{\texorpdfstring{W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+R\+Y()}{WIRECELL\_FACTORY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable} W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+F\+A\+C\+T\+O\+RY (\begin{DoxyParamCaption}\item[{mb\+One\+Channel\+Status}]{,  }\item[{\hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_status}{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+One\+Channel\+Status}}]{,  }\item[{\hyperlink{class_wire_cell_1_1_i_channel_filter}{Wire\+Cell\+::\+I\+Channel\+Filter}}]{,  }\item[{\hyperlink{class_wire_cell_1_1_i_configurable}{Wire\+Cell\+::\+I\+Configurable}}]{ }\end{DoxyParamCaption})}
+

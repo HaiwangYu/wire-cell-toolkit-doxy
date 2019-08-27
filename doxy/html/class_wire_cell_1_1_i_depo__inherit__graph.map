@@ -1,0 +1,5 @@
+<map id="WireCell::IDepo" name="WireCell::IDepo">
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_transported_depo.html" title="WireCell::Gen::TransportedDepo" alt="" coords="5,155,217,181"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_simple_depo.html" title="WireCell::SimpleDepo" alt="" coords="241,155,392,181"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_data.html" title="WireCell::IData\&lt; IDepo \&gt;" alt="" coords="129,5,299,32"/>
+</map>

@@ -1,0 +1,263 @@
+\hypertarget{namespacespdlog_1_1details_1_1fmt__helper}{}\section{spdlog\+:\+:details\+:\+:fmt\+\_\+helper Namespace Reference}
+\label{namespacespdlog_1_1details_1_1fmt__helper}\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t Buffer\+\_\+\+Size$>$ }\\\hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{spdlog\+::string\+\_\+view\+\_\+t} \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_aa2b4191cb8c40474fb61787ad67face5}{to\+\_\+string\+\_\+view} (const fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&buf) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+{\footnotesize template$<$size\+\_\+t Buffer\+\_\+\+Size1, size\+\_\+t Buffer\+\_\+\+Size2$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a1cd64e7ba833d726c77344aa9fb85e6a}{append\+\_\+buf} (const fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size1 $>$ \&buf, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size2 $>$ \&dest)
+\item 
+{\footnotesize template$<$size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a603f4d0d8853a61610a0042d5d62fe94}{append\+\_\+string\+\_\+view} (\hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{spdlog\+::string\+\_\+view\+\_\+t} view, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a0d2621043fa718e54ffcaa2e9812dfa4}{append\+\_\+int} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T $>$ }\\unsigned \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a976eeb3c4a42ccfb05437aa9a0d4d9f7}{count\+\_\+digits} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n})
+\item 
+{\footnotesize template$<$size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_ae8d7b70c5b54338c0903cf494b06404a}{pad2} (int \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a569553750f9f2fa7b16c94a56a398de3}{pad\+\_\+uint} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, unsigned int width, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_af739ecce102d47ff08a0f344a96897d9}{pad3} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_aefae60b1ebdae78bc8f11c26b36b2cd6}{pad6} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_aad467c706932b56929dae091b39c23f3}{pad9} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename To\+Duration $>$ }\\To\+Duration \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a27585b20ce58cd861f4e37be0057cc41}{time\+\_\+fraction} (const log\+\_\+clock\+::time\+\_\+point \&tp)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_a1cd64e7ba833d726c77344aa9fb85e6a}\label{namespacespdlog_1_1details_1_1fmt__helper_a1cd64e7ba833d726c77344aa9fb85e6a}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!append\+\_\+buf@{append\+\_\+buf}}
+\index{append\+\_\+buf@{append\+\_\+buf}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{append\+\_\+buf()}{append\_buf()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t Buffer\+\_\+\+Size1, size\+\_\+t Buffer\+\_\+\+Size2$>$ \\
+void spdlog\+::details\+::fmt\+\_\+helper\+::append\+\_\+buf (\begin{DoxyParamCaption}\item[{const fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size1 $>$ \&}]{buf,  }\item[{fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size2 $>$ \&}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file fmt\+\_\+helper.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{namespacespdlog_1_1details_1_1fmt__helper_a1cd64e7ba833d726c77344aa9fb85e6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_a0d2621043fa718e54ffcaa2e9812dfa4}\label{namespacespdlog_1_1details_1_1fmt__helper_a0d2621043fa718e54ffcaa2e9812dfa4}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!append\+\_\+int@{append\+\_\+int}}
+\index{append\+\_\+int@{append\+\_\+int}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{append\+\_\+int()}{append\_int()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ \\
+void spdlog\+::details\+::fmt\+\_\+helper\+::append\+\_\+int (\begin{DoxyParamCaption}\item[{T}]{n,  }\item[{fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file fmt\+\_\+helper.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacespdlog_1_1details_1_1fmt__helper_a0d2621043fa718e54ffcaa2e9812dfa4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_a603f4d0d8853a61610a0042d5d62fe94}\label{namespacespdlog_1_1details_1_1fmt__helper_a603f4d0d8853a61610a0042d5d62fe94}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!append\+\_\+string\+\_\+view@{append\+\_\+string\+\_\+view}}
+\index{append\+\_\+string\+\_\+view@{append\+\_\+string\+\_\+view}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{append\+\_\+string\+\_\+view()}{append\_string\_view()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t Buffer\+\_\+\+Size$>$ \\
+void spdlog\+::details\+::fmt\+\_\+helper\+::append\+\_\+string\+\_\+view (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{spdlog\+::string\+\_\+view\+\_\+t}}]{view,  }\item[{fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 30 of file fmt\+\_\+helper.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacespdlog_1_1details_1_1fmt__helper_a603f4d0d8853a61610a0042d5d62fe94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_a976eeb3c4a42ccfb05437aa9a0d4d9f7}\label{namespacespdlog_1_1details_1_1fmt__helper_a976eeb3c4a42ccfb05437aa9a0d4d9f7}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!count\+\_\+digits@{count\+\_\+digits}}
+\index{count\+\_\+digits@{count\+\_\+digits}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{count\+\_\+digits()}{count\_digits()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+unsigned spdlog\+::details\+::fmt\+\_\+helper\+::count\+\_\+digits (\begin{DoxyParamCaption}\item[{T}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 47 of file fmt\+\_\+helper.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1fmt__helper_a976eeb3c4a42ccfb05437aa9a0d4d9f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_ae8d7b70c5b54338c0903cf494b06404a}\label{namespacespdlog_1_1details_1_1fmt__helper_ae8d7b70c5b54338c0903cf494b06404a}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!pad2@{pad2}}
+\index{pad2@{pad2}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{pad2()}{pad2()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t Buffer\+\_\+\+Size$>$ \\
+void spdlog\+::details\+::fmt\+\_\+helper\+::pad2 (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 54 of file fmt\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1fmt__helper_ae8d7b70c5b54338c0903cf494b06404a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacespdlog_1_1details_1_1fmt__helper_ae8d7b70c5b54338c0903cf494b06404a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_af739ecce102d47ff08a0f344a96897d9}\label{namespacespdlog_1_1details_1_1fmt__helper_af739ecce102d47ff08a0f344a96897d9}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!pad3@{pad3}}
+\index{pad3@{pad3}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{pad3()}{pad3()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ \\
+void spdlog\+::details\+::fmt\+\_\+helper\+::pad3 (\begin{DoxyParamCaption}\item[{T}]{n,  }\item[{fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 90 of file fmt\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1fmt__helper_af739ecce102d47ff08a0f344a96897d9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{namespacespdlog_1_1details_1_1fmt__helper_af739ecce102d47ff08a0f344a96897d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_aefae60b1ebdae78bc8f11c26b36b2cd6}\label{namespacespdlog_1_1details_1_1fmt__helper_aefae60b1ebdae78bc8f11c26b36b2cd6}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!pad6@{pad6}}
+\index{pad6@{pad6}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{pad6()}{pad6()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ \\
+void spdlog\+::details\+::fmt\+\_\+helper\+::pad6 (\begin{DoxyParamCaption}\item[{T}]{n,  }\item[{fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 96 of file fmt\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1fmt__helper_aefae60b1ebdae78bc8f11c26b36b2cd6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{namespacespdlog_1_1details_1_1fmt__helper_aefae60b1ebdae78bc8f11c26b36b2cd6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_aad467c706932b56929dae091b39c23f3}\label{namespacespdlog_1_1details_1_1fmt__helper_aad467c706932b56929dae091b39c23f3}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!pad9@{pad9}}
+\index{pad9@{pad9}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{pad9()}{pad9()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ \\
+void spdlog\+::details\+::fmt\+\_\+helper\+::pad9 (\begin{DoxyParamCaption}\item[{T}]{n,  }\item[{fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 102 of file fmt\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1fmt__helper_aad467c706932b56929dae091b39c23f3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_a569553750f9f2fa7b16c94a56a398de3}\label{namespacespdlog_1_1details_1_1fmt__helper_a569553750f9f2fa7b16c94a56a398de3}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!pad\+\_\+uint@{pad\+\_\+uint}}
+\index{pad\+\_\+uint@{pad\+\_\+uint}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{pad\+\_\+uint()}{pad\_uint()}}
+{\footnotesize\ttfamily template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ \\
+void spdlog\+::details\+::fmt\+\_\+helper\+::pad\+\_\+uint (\begin{DoxyParamCaption}\item[{T}]{n,  }\item[{unsigned int}]{width,  }\item[{fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 77 of file fmt\+\_\+helper.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{namespacespdlog_1_1details_1_1fmt__helper_a569553750f9f2fa7b16c94a56a398de3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1fmt__helper_a569553750f9f2fa7b16c94a56a398de3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_a27585b20ce58cd861f4e37be0057cc41}\label{namespacespdlog_1_1details_1_1fmt__helper_a27585b20ce58cd861f4e37be0057cc41}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!time\+\_\+fraction@{time\+\_\+fraction}}
+\index{time\+\_\+fraction@{time\+\_\+fraction}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{time\+\_\+fraction()}{time\_fraction()}}
+{\footnotesize\ttfamily template$<$typename To\+Duration $>$ \\
+To\+Duration spdlog\+::details\+::fmt\+\_\+helper\+::time\+\_\+fraction (\begin{DoxyParamCaption}\item[{const log\+\_\+clock\+::time\+\_\+point \&}]{tp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 111 of file fmt\+\_\+helper.\+h.
+
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1fmt__helper_aa2b4191cb8c40474fb61787ad67face5}\label{namespacespdlog_1_1details_1_1fmt__helper_aa2b4191cb8c40474fb61787ad67face5}} 
+\index{spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}!to\+\_\+string\+\_\+view@{to\+\_\+string\+\_\+view}}
+\index{to\+\_\+string\+\_\+view@{to\+\_\+string\+\_\+view}!spdlog\+::details\+::fmt\+\_\+helper@{spdlog\+::details\+::fmt\+\_\+helper}}
+\subsubsection{\texorpdfstring{to\+\_\+string\+\_\+view()}{to\_string\_view()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t Buffer\+\_\+\+Size$>$ \\
+\hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{spdlog\+::string\+\_\+view\+\_\+t} spdlog\+::details\+::fmt\+\_\+helper\+::to\+\_\+string\+\_\+view (\begin{DoxyParamCaption}\item[{const fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 17 of file fmt\+\_\+helper.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{namespacespdlog_1_1details_1_1fmt__helper_aa2b4191cb8c40474fb61787ad67face5_icgraph}
+\end{center}
+\end{figure}

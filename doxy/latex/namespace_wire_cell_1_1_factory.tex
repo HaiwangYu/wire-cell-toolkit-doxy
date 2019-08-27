@@ -1,0 +1,230 @@
+\hypertarget{namespace_wire_cell_1_1_factory}{}\section{Wire\+Cell\+:\+:Factory Namespace Reference}
+\label{namespace_wire_cell_1_1_factory}\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+
+
+\hyperlink{class_wire_cell_1_1_singleton}{Singleton} interface.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class I\+Type $>$ }\\bool \hyperlink{namespace_wire_cell_1_1_factory_ae6f78981e3c42c6df31f8face901e982}{associate} (const std\+::string \&classname, \hyperlink{class_wire_cell_1_1_i_named_factory}{Wire\+Cell\+::\+I\+Named\+Factory} $\ast$factory)
+\begin{DoxyCompactList}\small\item\em Associate a factory with the type it makes. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\\hyperlink{class_wire_cell_1_1_i_named_factory}{Wire\+Cell\+::\+I\+Named\+Factory} $\ast$ \hyperlink{namespace_wire_cell_1_1_factory_a33318e89ff05184cf57267d20bdc076c}{lookup\+\_\+factory} (const std\+::string \&classname)
+\begin{DoxyCompactList}\small\item\em Lookup up a factory for the given type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_a17712091b6e64cd7936ec21901b32b39}{lookup} (const std\+::string \&classname, const std\+::string \&instname=\char`\"{}\char`\"{}, bool create=true, bool nullok=false)
+\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_abfb60a87055b2837f69e65cd27d9cb26}{find} (const std\+::string \&classname, const std\+::string \&instname=\char`\"{}\char`\"{})
+\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_adf719a75b0700dc095df9b9d27c32ede}{find\+\_\+maybe} (const std\+::string \&classname, const std\+::string \&instname=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em As above but quietly returns nullptr on failure. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_acde6688421b73bf10a0d26e77c9330c2}{lookup\+\_\+tn} (const std\+::string \&tn, bool create=true, bool nullok=false)
+\begin{DoxyCompactList}\small\item\em Lookup an interface by a type\+:name pair. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_a19e5e02dfbb9f332865af3b41b3c302a}{find\+\_\+tn} (const std\+::string \&tn)
+\begin{DoxyCompactList}\small\item\em Like lookup\+\_\+tn but with create false. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ I\+Type $>$ \hyperlink{namespace_wire_cell_1_1_factory_a3ddc9d93fb9d5c5b32eeef3e996e52bd}{find\+\_\+maybe\+\_\+tn} (const std\+::string \&tn)
+\begin{DoxyCompactList}\small\item\em Like find\+\_\+tn but with nullok true. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::vector$<$ std\+::string $>$ \hyperlink{namespace_wire_cell_1_1_factory_abfc39deedef2d6c44f0c9af364bcdd2d}{known\+\_\+classes} ()
+\begin{DoxyCompactList}\small\item\em Return a vector of all known classes of given interface. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class I\+Type $>$ }\\std\+::vector$<$ std\+::string $>$ \hyperlink{namespace_wire_cell_1_1_factory_aedc58cf1d2d6c0e60586e95fd415f96e}{known\+\_\+types} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_wire_cell_1_1_singleton}{Singleton} interface. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_factory_ae6f78981e3c42c6df31f8face901e982}\label{namespace_wire_cell_1_1_factory_ae6f78981e3c42c6df31f8face901e982}} 
+\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}!associate@{associate}}
+\index{associate@{associate}!Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+\subsubsection{\texorpdfstring{associate()}{associate()}}
+{\footnotesize\ttfamily template$<$class I\+Type $>$ \\
+bool Wire\+Cell\+::\+Factory\+::associate (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{classname,  }\item[{\hyperlink{class_wire_cell_1_1_i_named_factory}{Wire\+Cell\+::\+I\+Named\+Factory} $\ast$}]{factory }\end{DoxyParamCaption})}
+
+
+
+Associate a factory with the type it makes. 
+
+
+
+Definition at line 210 of file Named\+Factory.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_factory_ae6f78981e3c42c6df31f8face901e982_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_factory_abfb60a87055b2837f69e65cd27d9cb26}\label{namespace_wire_cell_1_1_factory_abfb60a87055b2837f69e65cd27d9cb26}} 
+\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}!find@{find}}
+\index{find@{find}!Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$class I\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$I\+Type$>$ Wire\+Cell\+::\+Factory\+::find (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{classname,  }\item[{const std\+::string \&}]{instname = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Return existing instance of given classname with instname Throws on failure. 
+
+Definition at line 247 of file Named\+Factory.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_factory_adf719a75b0700dc095df9b9d27c32ede}\label{namespace_wire_cell_1_1_factory_adf719a75b0700dc095df9b9d27c32ede}} 
+\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}!find\+\_\+maybe@{find\+\_\+maybe}}
+\index{find\+\_\+maybe@{find\+\_\+maybe}!Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+\subsubsection{\texorpdfstring{find\+\_\+maybe()}{find\_maybe()}}
+{\footnotesize\ttfamily template$<$class I\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$I\+Type$>$ Wire\+Cell\+::\+Factory\+::find\+\_\+maybe (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{classname,  }\item[{const std\+::string \&}]{instname = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+As above but quietly returns nullptr on failure. 
+
+
+
+Definition at line 253 of file Named\+Factory.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_factory_a3ddc9d93fb9d5c5b32eeef3e996e52bd}\label{namespace_wire_cell_1_1_factory_a3ddc9d93fb9d5c5b32eeef3e996e52bd}} 
+\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}!find\+\_\+maybe\+\_\+tn@{find\+\_\+maybe\+\_\+tn}}
+\index{find\+\_\+maybe\+\_\+tn@{find\+\_\+maybe\+\_\+tn}!Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+\subsubsection{\texorpdfstring{find\+\_\+maybe\+\_\+tn()}{find\_maybe\_tn()}}
+{\footnotesize\ttfamily template$<$class I\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$I\+Type$>$ Wire\+Cell\+::\+Factory\+::find\+\_\+maybe\+\_\+tn (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tn }\end{DoxyParamCaption})}
+
+
+
+Like find\+\_\+tn but with nullok true. 
+
+
+
+Definition at line 281 of file Named\+Factory.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_factory_a19e5e02dfbb9f332865af3b41b3c302a}\label{namespace_wire_cell_1_1_factory_a19e5e02dfbb9f332865af3b41b3c302a}} 
+\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}!find\+\_\+tn@{find\+\_\+tn}}
+\index{find\+\_\+tn@{find\+\_\+tn}!Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+\subsubsection{\texorpdfstring{find\+\_\+tn()}{find\_tn()}}
+{\footnotesize\ttfamily template$<$class I\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$I\+Type$>$ Wire\+Cell\+::\+Factory\+::find\+\_\+tn (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tn }\end{DoxyParamCaption})}
+
+
+
+Like lookup\+\_\+tn but with create false. 
+
+
+
+Definition at line 275 of file Named\+Factory.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_factory_abfc39deedef2d6c44f0c9af364bcdd2d}\label{namespace_wire_cell_1_1_factory_abfc39deedef2d6c44f0c9af364bcdd2d}} 
+\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}!known\+\_\+classes@{known\+\_\+classes}}
+\index{known\+\_\+classes@{known\+\_\+classes}!Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+\subsubsection{\texorpdfstring{known\+\_\+classes()}{known\_classes()}}
+{\footnotesize\ttfamily template$<$class I\+Type $>$ \\
+std\+::vector$<$std\+::string$>$ Wire\+Cell\+::\+Factory\+::known\+\_\+classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return a vector of all known classes of given interface. 
+
+
+
+Definition at line 288 of file Named\+Factory.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_factory_abfc39deedef2d6c44f0c9af364bcdd2d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_factory_aedc58cf1d2d6c0e60586e95fd415f96e}\label{namespace_wire_cell_1_1_factory_aedc58cf1d2d6c0e60586e95fd415f96e}} 
+\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}!known\+\_\+types@{known\+\_\+types}}
+\index{known\+\_\+types@{known\+\_\+types}!Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+\subsubsection{\texorpdfstring{known\+\_\+types()}{known\_types()}}
+{\footnotesize\ttfamily template$<$class I\+Type $>$ \\
+std\+::vector$<$std\+::string$>$ Wire\+Cell\+::\+Factory\+::known\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 294 of file Named\+Factory.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_factory_aedc58cf1d2d6c0e60586e95fd415f96e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_factory_a17712091b6e64cd7936ec21901b32b39}\label{namespace_wire_cell_1_1_factory_a17712091b6e64cd7936ec21901b32b39}} 
+\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}!lookup@{lookup}}
+\index{lookup@{lookup}!Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+\subsubsection{\texorpdfstring{lookup()}{lookup()}}
+{\footnotesize\ttfamily template$<$class I\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$I\+Type$>$ Wire\+Cell\+::\+Factory\+::lookup (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{classname,  }\item[{const std\+::string \&}]{instname = {\ttfamily \char`\"{}\char`\"{}},  }\item[{bool}]{create = {\ttfamily true},  }\item[{bool}]{nullok = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Lookup an interface by a type and optional name. If create is true, create instance if missing. if nullok is true return nullptr if can not create. See also \hyperlink{namespace_wire_cell_1_1_factory_abfb60a87055b2837f69e65cd27d9cb26}{find$<$\+I\+Type$>$()}. 
+
+Definition at line 233 of file Named\+Factory.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_factory_a17712091b6e64cd7936ec21901b32b39_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_factory_a33318e89ff05184cf57267d20bdc076c}\label{namespace_wire_cell_1_1_factory_a33318e89ff05184cf57267d20bdc076c}} 
+\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}!lookup\+\_\+factory@{lookup\+\_\+factory}}
+\index{lookup\+\_\+factory@{lookup\+\_\+factory}!Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+\subsubsection{\texorpdfstring{lookup\+\_\+factory()}{lookup\_factory()}}
+{\footnotesize\ttfamily template$<$class I\+Type $>$ \\
+\hyperlink{class_wire_cell_1_1_i_named_factory}{Wire\+Cell\+::\+I\+Named\+Factory}$\ast$ Wire\+Cell\+::\+Factory\+::lookup\+\_\+factory (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{classname }\end{DoxyParamCaption})}
+
+
+
+Lookup up a factory for the given type. 
+
+
+
+Definition at line 220 of file Named\+Factory.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_factory_a33318e89ff05184cf57267d20bdc076c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_factory_a33318e89ff05184cf57267d20bdc076c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_factory_acde6688421b73bf10a0d26e77c9330c2}\label{namespace_wire_cell_1_1_factory_acde6688421b73bf10a0d26e77c9330c2}} 
+\index{Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}!lookup\+\_\+tn@{lookup\+\_\+tn}}
+\index{lookup\+\_\+tn@{lookup\+\_\+tn}!Wire\+Cell\+::\+Factory@{Wire\+Cell\+::\+Factory}}
+\subsubsection{\texorpdfstring{lookup\+\_\+tn()}{lookup\_tn()}}
+{\footnotesize\ttfamily template$<$class I\+Type $>$ \\
+std\+::shared\+\_\+ptr$<$I\+Type$>$ Wire\+Cell\+::\+Factory\+::lookup\+\_\+tn (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tn,  }\item[{bool}]{create = {\ttfamily true},  }\item[{bool}]{nullok = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Lookup an interface by a type\+:name pair. 
+
+
+
+Definition at line 260 of file Named\+Factory.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_factory_acde6688421b73bf10a0d26e77c9330c2_cgraph}
+\end{center}
+\end{figure}

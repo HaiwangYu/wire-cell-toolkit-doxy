@@ -1,0 +1,7 @@
+<map id="iface/inc/WireCellIface/IFrameJoiner.h" name="iface/inc/WireCellIface/IFrameJoiner.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_frame_summer_8h.html" title="gen/inc/WireCellGen\l/FrameSummer.h" alt="" coords="235,95,378,136"/>
+<area shape="rect" id="node5" href="$_frame_merger_8h.html" title="sigproc/inc/WireCellSigProc\l/FrameMerger.h" alt="" coords="413,95,598,136"/>
+<area shape="rect" id="node4" href="$_frame_summer_8cxx.html" title="gen/src/FrameSummer.cxx" alt="" coords="210,184,390,211"/>
+<area shape="rect" id="node6" href="$_frame_merger_8cxx.html" title="sigproc/src/FrameMerger.cxx" alt="" coords="415,184,607,211"/>
+</map>

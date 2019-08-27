@@ -1,0 +1,4 @@
+<map id="WireCell::SigProc::ROI_refinement::apply_roi" name="WireCell::SigProc::ROI_refinement::apply_roi">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#ab7e97b198f41b189dc24556c6c0ccd52" title="WireCell::SigProc::\lSignalROI::get_ext_start_bin" alt="" coords="228,5,419,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a5d660871a8da8908e8ee1e1ed99a7ce7" title="WireCell::SigProc::\lSignalROI::get_ext_end_bin" alt="" coords="231,71,416,112"/>
+</map>

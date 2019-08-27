@@ -1,0 +1,128 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_peak_finding}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Peak\+Finding Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_peak_finding}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}}
+
+
+{\ttfamily \#include $<$Peak\+Finding.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_peak_finding_a422708530e34ee207959d873860f9aaf}{Peak\+Finding} (int f\+Max\+Peaks=200, double sigma=1, double threshold=0.\+05, bool background\+Remove=false, int decon\+Iterations=3, bool markov=true, int aver\+Window=3)
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_peak_finding_abc705320887d205ed48a5aa3d3022245}{$\sim$\+Peak\+Finding} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_peak_finding_aa66a533f1d774c2c73c9d07744a3d6d1}{find\+\_\+peak} (\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \&signal)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_peak_finding_ab4d567863883d75efc434f8193cd4b6a}{Clear} ()
+\item 
+int \hyperlink{class_wire_cell_1_1_sig_proc_1_1_peak_finding_a7266f6b9a28655301cb4b802eb02af76}{Get\+N\+Peaks} ()
+\item 
+double $\ast$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_peak_finding_a05680c66cae65c8d54244f19aaa3ba4a}{Get\+PositionX} ()
+\item 
+double $\ast$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_peak_finding_ab148b0ccbdadeb7e418cb0f11b0dc3cd}{Get\+PositionY} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file Peak\+Finding.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_peak_finding_a422708530e34ee207959d873860f9aaf}\label{class_wire_cell_1_1_sig_proc_1_1_peak_finding_a422708530e34ee207959d873860f9aaf}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}!Peak\+Finding@{Peak\+Finding}}
+\index{Peak\+Finding@{Peak\+Finding}!Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}}
+\subsubsection{\texorpdfstring{Peak\+Finding()}{PeakFinding()}}
+{\footnotesize\ttfamily Peak\+Finding\+::\+Peak\+Finding (\begin{DoxyParamCaption}\item[{int}]{f\+Max\+Peaks = {\ttfamily 200},  }\item[{double}]{sigma = {\ttfamily 1},  }\item[{double}]{threshold = {\ttfamily 0.05},  }\item[{bool}]{background\+Remove = {\ttfamily false},  }\item[{int}]{decon\+Iterations = {\ttfamily 3},  }\item[{bool}]{markov = {\ttfamily true},  }\item[{int}]{aver\+Window = {\ttfamily 3} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Peak\+Finding.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_peak_finding_abc705320887d205ed48a5aa3d3022245}\label{class_wire_cell_1_1_sig_proc_1_1_peak_finding_abc705320887d205ed48a5aa3d3022245}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}!````~Peak\+Finding@{$\sim$\+Peak\+Finding}}
+\index{````~Peak\+Finding@{$\sim$\+Peak\+Finding}!Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}}
+\subsubsection{\texorpdfstring{$\sim$\+Peak\+Finding()}{~PeakFinding()}}
+{\footnotesize\ttfamily Peak\+Finding\+::$\sim$\+Peak\+Finding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Peak\+Finding.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_peak_finding_abc705320887d205ed48a5aa3d3022245_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_peak_finding_ab4d567863883d75efc434f8193cd4b6a}\label{class_wire_cell_1_1_sig_proc_1_1_peak_finding_ab4d567863883d75efc434f8193cd4b6a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}!Clear@{Clear}}
+\index{Clear@{Clear}!Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Peak\+Finding\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file Peak\+Finding.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_peak_finding_ab4d567863883d75efc434f8193cd4b6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_peak_finding_aa66a533f1d774c2c73c9d07744a3d6d1}\label{class_wire_cell_1_1_sig_proc_1_1_peak_finding_aa66a533f1d774c2c73c9d07744a3d6d1}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}!find\+\_\+peak@{find\+\_\+peak}}
+\index{find\+\_\+peak@{find\+\_\+peak}!Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}}
+\subsubsection{\texorpdfstring{find\+\_\+peak()}{find\_peak()}}
+{\footnotesize\ttfamily int Peak\+Finding\+::find\+\_\+peak (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Waveform\+::realseq\+\_\+t} \&}]{signal }\end{DoxyParamCaption})}
+
+
+
+Definition at line 38 of file Peak\+Finding.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_peak_finding_a7266f6b9a28655301cb4b802eb02af76}\label{class_wire_cell_1_1_sig_proc_1_1_peak_finding_a7266f6b9a28655301cb4b802eb02af76}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}!Get\+N\+Peaks@{Get\+N\+Peaks}}
+\index{Get\+N\+Peaks@{Get\+N\+Peaks}!Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}}
+\subsubsection{\texorpdfstring{Get\+N\+Peaks()}{GetNPeaks()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding\+::\+Get\+N\+Peaks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 22 of file Peak\+Finding.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_peak_finding_a05680c66cae65c8d54244f19aaa3ba4a}\label{class_wire_cell_1_1_sig_proc_1_1_peak_finding_a05680c66cae65c8d54244f19aaa3ba4a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}!Get\+PositionX@{Get\+PositionX}}
+\index{Get\+PositionX@{Get\+PositionX}!Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}}
+\subsubsection{\texorpdfstring{Get\+Position\+X()}{GetPositionX()}}
+{\footnotesize\ttfamily double$\ast$ Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding\+::\+Get\+PositionX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file Peak\+Finding.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_peak_finding_ab148b0ccbdadeb7e418cb0f11b0dc3cd}\label{class_wire_cell_1_1_sig_proc_1_1_peak_finding_ab148b0ccbdadeb7e418cb0f11b0dc3cd}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}!Get\+PositionY@{Get\+PositionY}}
+\index{Get\+PositionY@{Get\+PositionY}!Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding@{Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding}}
+\subsubsection{\texorpdfstring{Get\+Position\+Y()}{GetPositionY()}}
+{\footnotesize\ttfamily double$\ast$ Wire\+Cell\+::\+Sig\+Proc\+::\+Peak\+Finding\+::\+Get\+PositionY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 24 of file Peak\+Finding.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/src/\hyperlink{_peak_finding_8h}{Peak\+Finding.\+h}\item 
+sigproc/src/\hyperlink{_peak_finding_8cxx}{Peak\+Finding.\+cxx}\end{DoxyCompactItemize}

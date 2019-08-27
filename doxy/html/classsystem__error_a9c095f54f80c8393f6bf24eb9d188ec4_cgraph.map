@@ -1,0 +1,13 @@
+<map id="system_error::error_code" name="system_error::error_code">
+<area shape="rect" id="node2" href="$format_8h.html#ac99badb700e346dd1c86629e4e3b900d" title="format_system_error" alt="" coords="220,143,363,170"/>
+<area shape="rect" id="node3" href="$classinternal_1_1basic__buffer.html#adbd2b147e114f0cc4573f734d4326669" title="internal::basic_buffer\l::resize" alt="" coords="435,5,577,47"/>
+<area shape="rect" id="node4" href="$namespace_f_m_t___b_e_g_i_n___n_a_m_e_s_p_a_c_e.html#a3770dc340d58166b701180e092935e12" title="FMT_BEGIN_NAMESPACE\l::safe_strerror" alt="" coords="411,71,601,112"/>
+<area shape="rect" id="node7" href="$classinternal_1_1basic__buffer.html#abc95713c3873c5820f10105fe7c7af93" title="internal::basic_buffer\l::size" alt="" coords="435,136,577,177"/>
+<area shape="rect" id="node8" href="$classbasic__writer.html#a1d44923710a19cdeb09ca5e834641ea8" title="basic_writer::write" alt="" coords="657,202,785,229"/>
+<area shape="rect" id="node9" href="$namespace_f_m_t___b_e_g_i_n___n_a_m_e_s_p_a_c_e.html#ad71fe6b856abb34c3351b17daaaae709" title="FMT_BEGIN_NAMESPACE\l::format_error_code" alt="" coords="411,253,601,295"/>
+<area shape="rect" id="node5" href="$format-inl_8h.html#a3bbfb7ce6b764966d8cf5d018589375e" title="strerror_s" alt="" coords="682,53,759,79"/>
+<area shape="rect" id="node6" href="$format-inl_8h.html#a8307cb500850a7c5033cf64702e15990" title="strerror_r" alt="" coords="683,103,758,130"/>
+<area shape="rect" id="node10" href="$namespaceinternal.html#ac5822d6a6cf07ba173eae0ab2c53bf8c" title="internal::is_negative" alt="" coords="651,253,790,279"/>
+<area shape="rect" id="node11" href="$namespaceinternal.html#acc608c40c33952a5382db8aaaddfc854" title="internal::to_unsigned" alt="" coords="649,303,792,330"/>
+<area shape="rect" id="node12" href="$namespaceinternal.html#a24a563e36236186f38e75ecf47a819ea" title="internal::count_digits" alt="" coords="649,354,792,381"/>
+</map>

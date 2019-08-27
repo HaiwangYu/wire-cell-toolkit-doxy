@@ -1,0 +1,12 @@
+<map id="iface/inc/WireCellIface/IStripe.h" name="iface/inc/WireCellIface/IStripe.h">
+<area shape="rect" id="node2" href="$_i_stripe_set_8h.html" title="iface/inc/WireCellIface\l/IStripeSet.h" alt="" coords="279,95,433,136"/>
+<area shape="rect" id="node4" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,281,211,307"/>
+<area shape="rect" id="node7" href="$_img_data_8h.html" title="img/inc/WireCellImg\l/ImgData.h" alt="" coords="567,184,707,225"/>
+<area shape="rect" id="node3" href="$_i_slice_striper_8h.html" title="iface/inc/WireCellIface\l/ISliceStriper.h" alt="" coords="224,184,379,225"/>
+<area shape="rect" id="node10" href="$_stripes_sink_8h.html" title="img/inc/WireCellImg\l/StripesSink.h" alt="" coords="403,184,543,225"/>
+<area shape="rect" id="node5" href="$_naive_striper_8h.html" title="img/inc/WireCellImg\l/NaiveStriper.h" alt="" coords="235,273,375,315"/>
+<area shape="rect" id="node6" href="$_naive_striper_8cxx.html" title="img/src/NaiveStriper.cxx" alt="" coords="369,363,535,389"/>
+<area shape="rect" id="node8" href="$_img_data_8cxx.html" title="img/src/ImgData.cxx" alt="" coords="636,281,780,307"/>
+<area shape="rect" id="node9" href="$_sum_slice_8cxx.html" title="img/src/SumSlice.cxx" alt="" coords="805,281,955,307"/>
+<area shape="rect" id="node11" href="$_stripes_sink_8cxx.html" title="img/src/StripesSink.cxx" alt="" coords="399,281,561,307"/>
+</map>

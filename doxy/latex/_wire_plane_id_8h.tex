@@ -1,0 +1,58 @@
+\hypertarget{_wire_plane_id_8h}{}\section{iface/inc/\+Wire\+Cell\+Iface/\+Wire\+Plane\+Id.h File Reference}
+\label{_wire_plane_id_8h}\index{iface/inc/\+Wire\+Cell\+Iface/\+Wire\+Plane\+Id.\+h@{iface/inc/\+Wire\+Cell\+Iface/\+Wire\+Plane\+Id.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Configuration.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+Include dependency graph for Wire\+Plane\+Id.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_wire_plane_id_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_wire_plane_id_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Cell\+::\+Wire\+Plane\+Id}
+\item 
+struct \hyperlink{structstd_1_1hash_3_01_wire_cell_1_1_wire_plane_id_01_4}{std\+::hash$<$ Wire\+Cell\+::\+Wire\+Plane\+Id $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\item 
+ \hyperlink{namespacestd}{std}
+\begin{DoxyCompactList}\small\item\em If we are still before C++14, supply the fodder for doing the \char`\"{}indices trick\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_wire_cell_a761397ff086f0a7e1a1d9ccd251ac618}{Wire\+Cell\+::\+Wire\+Plane\+Layer\+\_\+t} \{ \hyperlink{namespace_wire_cell_a761397ff086f0a7e1a1d9ccd251ac618a5e08d3f7bdabe20d6e2f00bc353beff9}{Wire\+Cell\+::k\+Unknown\+Layer} =0, 
+\hyperlink{namespace_wire_cell_a761397ff086f0a7e1a1d9ccd251ac618a4543784e91b7463d50a413e9eaea3229}{Wire\+Cell\+::k\+Ulayer} =1, 
+\hyperlink{namespace_wire_cell_a761397ff086f0a7e1a1d9ccd251ac618ad767a06a96af29d2fd31cbf13f4a1c86}{Wire\+Cell\+::k\+Vlayer} =2, 
+\hyperlink{namespace_wire_cell_a761397ff086f0a7e1a1d9ccd251ac618ac96acb93802a30ef1648ee1c0e81eab1}{Wire\+Cell\+::k\+Wlayer} =4
+ \}\begin{DoxyCompactList}\small\item\em Enumerate layer I\+Ds. These are not indices! \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{namespace_wire_cell_a470282420df828d72316462cefed8139}{Wire\+Cell\+::operator$<$$<$} (std\+::ostream \&os, const \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Cell\+::\+Wire\+Plane\+Id} \&wpid)
+\item 
+std\+::ostream \& \hyperlink{namespace_wire_cell_a9f35d6b6f8b4ed877efb37690b51803f}{Wire\+Cell\+::operator$<$$<$} (std\+::ostream \&o, const \hyperlink{namespace_wire_cell_a761397ff086f0a7e1a1d9ccd251ac618}{Wire\+Cell\+::\+Wire\+Plane\+Layer\+\_\+t} \&layer)
+\item 
+{\footnotesize template$<$$>$ }\\\hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Cell\+::\+Wire\+Plane\+Id} \hyperlink{namespace_wire_cell_ac5c430ec5c4c9bbb7437f281d4094c4f}{Wire\+Cell\+::convert$<$ Wire\+Cell\+::\+Wire\+Plane\+Id $>$} (const Configuration \&cfg, const \hyperlink{class_wire_cell_1_1_wire_plane_id}{Wire\+Cell\+::\+Wire\+Plane\+Id} \&def)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const Wire\+Plane\+Layer\+\_\+t \hyperlink{namespace_wire_cell_ae1f5243cecaaeeea6ddd0b5ac75719df}{Wire\+Cell\+::iplane2layer} \mbox{[}3\mbox{]} = \{ k\+Ulayer, k\+Vlayer, k\+Wlayer \}
+\end{DoxyCompactItemize}

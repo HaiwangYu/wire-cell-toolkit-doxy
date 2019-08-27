@@ -1,0 +1,206 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Omnibus\+Noise\+Filter Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+
+
+{\ttfamily \#include $<$Omnibus\+Noise\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Omnibus\+Noise\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Omnibus\+Noise\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a9f1abbd77ac8a8b21fcc71a9578d650e}{grouped\+\_\+channels\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_aa968cf19dcd4e95020cc7959deffcc63}{Omnibus\+Noise\+Filter} (std\+::string intag=\char`\"{}orig\char`\"{}, std\+::string outtag=\char`\"{}raw\char`\"{})
+\begin{DoxyCompactList}\small\item\em Create an \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter}{Omnibus\+Noise\+Filter}. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ac26a3997c8b8640c2a43b4bd1cec03fc}{$\sim$\+Omnibus\+Noise\+Filter} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a861a76be3558adf47d2f7da5b00357f1}{operator()} (const \hyperlink{class_wire_cell_1_1_i_function_node_a55c0946156df9b712b8ad1a0b59b2db6}{input\+\_\+pointer} \&in, \hyperlink{class_wire_cell_1_1_i_function_node_afc02f1ec60d31aacddf64963f9ca650b}{output\+\_\+pointer} \&out)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_frame_filter}{I\+Frame\+Filter} interface. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ab0cec8bc8e82f741f33cc663dc9eddc5}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_configurable}{I\+Configurable} interface. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_afb8457ee3c6181bfeee597b11fe8e4f7}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ae85bd8dd4a3582fa2122008a67f8edec}{set\+\_\+channel\+\_\+filters} (std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{Wire\+Cell\+::\+I\+Channel\+Filter\+::pointer} $>$ filters)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ac180c268b1f1424c3f7db20732b2c718}{set\+\_\+channel\+\_\+status\+\_\+filters} (std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{Wire\+Cell\+::\+I\+Channel\+Filter\+::pointer} $>$ filters)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ad4f98e813bc0067aef019484617c9440}{set\+\_\+grouped\+\_\+filters} (std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{Wire\+Cell\+::\+I\+Channel\+Filter\+::pointer} $>$ filters)
+\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a113bab32abdbe75ef47187e65007140c}{set\+\_\+channel\+\_\+noisedb} (\hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::pointer} ndb)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus}{Omnibus} Noise Filter applies two series of \hyperlink{class_wire_cell_1_1_i_channel_filter}{I\+Channel\+Filter} objects. The first series is applied on a per-\/channel basis and the second is applied on groups of channels as determined by its channel grouping. 
+
+Definition at line 32 of file Omnibus\+Noise\+Filter.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a9f1abbd77ac8a8b21fcc71a9578d650e}\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a9f1abbd77ac8a8b21fcc71a9578d650e}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}!grouped\+\_\+channels\+\_\+t@{grouped\+\_\+channels\+\_\+t}}
+\index{grouped\+\_\+channels\+\_\+t@{grouped\+\_\+channels\+\_\+t}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+\subsubsection{\texorpdfstring{grouped\+\_\+channels\+\_\+t}{grouped\_channels\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$ std\+::vector$<$int$>$ $>$ \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a9f1abbd77ac8a8b21fcc71a9578d650e}{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter\+::grouped\+\_\+channels\+\_\+t}}
+
+
+
+Definition at line 34 of file Omnibus\+Noise\+Filter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_aa968cf19dcd4e95020cc7959deffcc63}\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_aa968cf19dcd4e95020cc7959deffcc63}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}!Omnibus\+Noise\+Filter@{Omnibus\+Noise\+Filter}}
+\index{Omnibus\+Noise\+Filter@{Omnibus\+Noise\+Filter}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+\subsubsection{\texorpdfstring{Omnibus\+Noise\+Filter()}{OmnibusNoiseFilter()}}
+{\footnotesize\ttfamily Omnibus\+Noise\+Filter\+::\+Omnibus\+Noise\+Filter (\begin{DoxyParamCaption}\item[{std\+::string}]{intag = {\ttfamily \char`\"{}orig\char`\"{}},  }\item[{std\+::string}]{outtag = {\ttfamily \char`\"{}raw\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Create an \hyperlink{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter}{Omnibus\+Noise\+Filter}. 
+
+
+
+Definition at line 24 of file Omnibus\+Noise\+Filter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ac26a3997c8b8640c2a43b4bd1cec03fc}\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ac26a3997c8b8640c2a43b4bd1cec03fc}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}!````~Omnibus\+Noise\+Filter@{$\sim$\+Omnibus\+Noise\+Filter}}
+\index{````~Omnibus\+Noise\+Filter@{$\sim$\+Omnibus\+Noise\+Filter}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+\subsubsection{\texorpdfstring{$\sim$\+Omnibus\+Noise\+Filter()}{~OmnibusNoiseFilter()}}
+{\footnotesize\ttfamily Omnibus\+Noise\+Filter\+::$\sim$\+Omnibus\+Noise\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 31 of file Omnibus\+Noise\+Filter.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ab0cec8bc8e82f741f33cc663dc9eddc5}\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ab0cec8bc8e82f741f33cc663dc9eddc5}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Omnibus\+Noise\+Filter\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_configurable}{I\+Configurable} interface. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 35 of file Omnibus\+Noise\+Filter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_afb8457ee3c6181bfeee597b11fe8e4f7}\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_afb8457ee3c6181bfeee597b11fe8e4f7}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Omnibus\+Noise\+Filter\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 78 of file Omnibus\+Noise\+Filter.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a861a76be3558adf47d2f7da5b00357f1}\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a861a76be3558adf47d2f7da5b00357f1}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Omnibus\+Noise\+Filter\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_function_node_a55c0946156df9b712b8ad1a0b59b2db6}{input\+\_\+pointer} \&}]{in,  }\item[{\hyperlink{class_wire_cell_1_1_i_function_node_afc02f1ec60d31aacddf64963f9ca650b}{output\+\_\+pointer} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_frame_filter}{I\+Frame\+Filter} interface. 
+
+
+
+Definition at line 100 of file Omnibus\+Noise\+Filter.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a861a76be3558adf47d2f7da5b00357f1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ae85bd8dd4a3582fa2122008a67f8edec}\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ae85bd8dd4a3582fa2122008a67f8edec}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}!set\+\_\+channel\+\_\+filters@{set\+\_\+channel\+\_\+filters}}
+\index{set\+\_\+channel\+\_\+filters@{set\+\_\+channel\+\_\+filters}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+\subsubsection{\texorpdfstring{set\+\_\+channel\+\_\+filters()}{set\_channel\_filters()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter\+::set\+\_\+channel\+\_\+filters (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{Wire\+Cell\+::\+I\+Channel\+Filter\+::pointer} $>$}]{filters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 52 of file Omnibus\+Noise\+Filter.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a113bab32abdbe75ef47187e65007140c}\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_a113bab32abdbe75ef47187e65007140c}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}!set\+\_\+channel\+\_\+noisedb@{set\+\_\+channel\+\_\+noisedb}}
+\index{set\+\_\+channel\+\_\+noisedb@{set\+\_\+channel\+\_\+noisedb}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+\subsubsection{\texorpdfstring{set\+\_\+channel\+\_\+noisedb()}{set\_channel\_noisedb()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter\+::set\+\_\+channel\+\_\+noisedb (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::pointer}}]{ndb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file Omnibus\+Noise\+Filter.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ac180c268b1f1424c3f7db20732b2c718}\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ac180c268b1f1424c3f7db20732b2c718}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}!set\+\_\+channel\+\_\+status\+\_\+filters@{set\+\_\+channel\+\_\+status\+\_\+filters}}
+\index{set\+\_\+channel\+\_\+status\+\_\+filters@{set\+\_\+channel\+\_\+status\+\_\+filters}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+\subsubsection{\texorpdfstring{set\+\_\+channel\+\_\+status\+\_\+filters()}{set\_channel\_status\_filters()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter\+::set\+\_\+channel\+\_\+status\+\_\+filters (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{Wire\+Cell\+::\+I\+Channel\+Filter\+::pointer} $>$}]{filters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 55 of file Omnibus\+Noise\+Filter.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ad4f98e813bc0067aef019484617c9440}\label{class_wire_cell_1_1_sig_proc_1_1_omnibus_noise_filter_ad4f98e813bc0067aef019484617c9440}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}!set\+\_\+grouped\+\_\+filters@{set\+\_\+grouped\+\_\+filters}}
+\index{set\+\_\+grouped\+\_\+filters@{set\+\_\+grouped\+\_\+filters}!Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter@{Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter}}
+\subsubsection{\texorpdfstring{set\+\_\+grouped\+\_\+filters()}{set\_grouped\_filters()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Sig\+Proc\+::\+Omnibus\+Noise\+Filter\+::set\+\_\+grouped\+\_\+filters (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{Wire\+Cell\+::\+I\+Channel\+Filter\+::pointer} $>$}]{filters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file Omnibus\+Noise\+Filter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_omnibus_noise_filter_8h}{Omnibus\+Noise\+Filter.\+h}\item 
+sigproc/src/\hyperlink{_omnibus_noise_filter_8cxx}{Omnibus\+Noise\+Filter.\+cxx}\end{DoxyCompactItemize}

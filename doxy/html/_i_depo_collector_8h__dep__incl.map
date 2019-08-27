@@ -1,0 +1,7 @@
+<map id="iface/inc/WireCellIface/IDepoCollector.h" name="iface/inc/WireCellIface/IDepoCollector.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_depo_bagger_8h.html" title="gen/inc/WireCellGen\l/DepoBagger.h" alt="" coords="235,95,378,136"/>
+<area shape="rect" id="node5" href="$_depo_chunker_8h.html" title="gen/inc/WireCellGen\l/DepoChunker.h" alt="" coords="415,95,558,136"/>
+<area shape="rect" id="node4" href="$_depo_bagger_8cxx.html" title="gen/src/DepoBagger.cxx" alt="" coords="215,184,382,211"/>
+<area shape="rect" id="node6" href="$_depo_chunker_8cxx.html" title="gen/src/DepoChunker.cxx" alt="" coords="406,184,581,211"/>
+</map>

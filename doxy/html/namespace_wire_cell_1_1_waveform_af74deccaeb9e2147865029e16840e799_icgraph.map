@@ -1,0 +1,14 @@
+<map id="WireCell::Waveform::increase" name="WireCell::Waveform::increase">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_add_noise.html#aa5bdb418d61bfb70d1507bd4b1798d53" title="IFrameFilter. " alt="" coords="210,5,379,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_impact_zipper.html#a542bc19237317cce10742ae097e647ec" title="WireCell::Gen::ImpactZipper\l::waveform" alt="" coords="201,71,389,112"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_gen_1_1_truth_smearer.html#a75e03e4110e01b8ff31ad3aba5e7804d" title="Accept a configuration. " alt="" coords="199,136,390,177"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_gen_1_1_truth_trace_i_d.html#adeed1a28e9ed6d5da7e07378b172bd48" title="Accept a configuration. " alt="" coords="207,201,382,243"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_one_channel_noise.html#a4d5cb537b5d9ca736fc1bbd3c463b76f" title="WireCell::SigProc::\lMicroboone::OneChannelNoise\l::apply" alt="" coords="193,267,396,323"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_sig_proc_1_1_protodune_1_1_one_channel_noise.html#a2f0a41f11d154f971da95d9127be594d" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="197,347,392,403"/>
+<area shape="rect" id="node13" href="$namespace_wire_cell_1_1_waveform.html#a3e92e2c63b937617bf8870412e7a6da7" title="WireCell::Waveform\l::increase" alt="" coords="225,428,365,469"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_depo_zipper.html#af883a6a654a4a374d17f4db84d268510" title="WireCell::Gen::DepoZipper\l::operator()" alt="" coords="444,39,623,80"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_ductor.html#afec4558613941dc3bb752a3811aadd3d" title="WireCell::Gen::Ductor\l::process_face" alt="" coords="458,104,609,145"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a1454baebba2e385dea9cd098236dd515" title="WireCell::Gen::Ductor\l::process" alt="" coords="671,104,821,145"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a1a103a685f920781c7d312f168b52841" title="WireCell::Gen::Ductor\l::operator()" alt="" coords="869,104,1020,145"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a331c4314dba8472ab8c49dbc9112ff4b" title="WireCell::Gen::Ductor\l::~Ductor" alt="" coords="1068,104,1219,145"/>
+</map>

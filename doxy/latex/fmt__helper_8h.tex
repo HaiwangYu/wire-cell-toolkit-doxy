@@ -1,0 +1,55 @@
+\hypertarget{fmt__helper_8h}{}\section{util/inc/spdlog/details/fmt\+\_\+helper.h File Reference}
+\label{fmt__helper_8h}\index{util/inc/spdlog/details/fmt\+\_\+helper.\+h@{util/inc/spdlog/details/fmt\+\_\+helper.\+h}}
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include \char`\"{}spdlog/fmt/fmt.\+h\char`\"{}}\newline
+Include dependency graph for fmt\+\_\+helper.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fmt__helper_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fmt__helper_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1details}{spdlog\+::details}
+\item 
+ \hyperlink{namespacespdlog_1_1details_1_1fmt__helper}{spdlog\+::details\+::fmt\+\_\+helper}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t Buffer\+\_\+\+Size$>$ }\\\hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{spdlog\+::string\+\_\+view\+\_\+t} \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_aa2b4191cb8c40474fb61787ad67face5}{spdlog\+::details\+::fmt\+\_\+helper\+::to\+\_\+string\+\_\+view} (const fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&buf) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+{\footnotesize template$<$size\+\_\+t Buffer\+\_\+\+Size1, size\+\_\+t Buffer\+\_\+\+Size2$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a1cd64e7ba833d726c77344aa9fb85e6a}{spdlog\+::details\+::fmt\+\_\+helper\+::append\+\_\+buf} (const fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size1 $>$ \&buf, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size2 $>$ \&dest)
+\item 
+{\footnotesize template$<$size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a603f4d0d8853a61610a0042d5d62fe94}{spdlog\+::details\+::fmt\+\_\+helper\+::append\+\_\+string\+\_\+view} (\hyperlink{namespacespdlog_af48e310b2f366ac6544701e6a3b56247}{spdlog\+::string\+\_\+view\+\_\+t} view, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a0d2621043fa718e54ffcaa2e9812dfa4}{spdlog\+::details\+::fmt\+\_\+helper\+::append\+\_\+int} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T $>$ }\\unsigned \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a976eeb3c4a42ccfb05437aa9a0d4d9f7}{spdlog\+::details\+::fmt\+\_\+helper\+::count\+\_\+digits} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n})
+\item 
+{\footnotesize template$<$size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_ae8d7b70c5b54338c0903cf494b06404a}{spdlog\+::details\+::fmt\+\_\+helper\+::pad2} (int \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a569553750f9f2fa7b16c94a56a398de3}{spdlog\+::details\+::fmt\+\_\+helper\+::pad\+\_\+uint} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, unsigned int width, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_af739ecce102d47ff08a0f344a96897d9}{spdlog\+::details\+::fmt\+\_\+helper\+::pad3} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_aefae60b1ebdae78bc8f11c26b36b2cd6}{spdlog\+::details\+::fmt\+\_\+helper\+::pad6} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t Buffer\+\_\+\+Size$>$ }\\void \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_aad467c706932b56929dae091b39c23f3}{spdlog\+::details\+::fmt\+\_\+helper\+::pad9} (T \hyperlink{format_8h_a9ab7e5832cef391eb8b1505a601fb215}{n}, fmt\+::basic\+\_\+memory\+\_\+buffer$<$ char, Buffer\+\_\+\+Size $>$ \&dest)
+\item 
+{\footnotesize template$<$typename To\+Duration $>$ }\\To\+Duration \hyperlink{namespacespdlog_1_1details_1_1fmt__helper_a27585b20ce58cd861f4e37be0057cc41}{spdlog\+::details\+::fmt\+\_\+helper\+::time\+\_\+fraction} (const log\+\_\+clock\+::time\+\_\+point \&tp)
+\end{DoxyCompactItemize}

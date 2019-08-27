@@ -1,0 +1,6 @@
+<map id="spdlog::logger::incr_msg_counter_" name="spdlog::logger::incr_msg_counter_">
+<area shape="rect" id="node2" href="$classspdlog_1_1async__logger.html#aefd367c3266773bfe756d34150705329" title="spdlog::async_logger\l::sink_it_" alt="" coords="191,5,336,47"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1logger.html#a43ac8d73671a109cba253eadb0b049e2" title="spdlog::logger::sink_it_" alt="" coords="185,71,341,98"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1logger.html#a50417cea5f81704cd4800aaafa944bc5" title="spdlog::logger::log" alt="" coords="400,46,528,73"/>
+<area shape="rect" id="node5" href="$classspdlog_1_1logger.html#a3c5140393ec153b2b8478361aac80eb6" title="spdlog::logger::critical" alt="" coords="389,97,539,123"/>
+</map>

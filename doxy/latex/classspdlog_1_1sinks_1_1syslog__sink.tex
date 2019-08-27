@@ -1,0 +1,166 @@
+\hypertarget{classspdlog_1_1sinks_1_1syslog__sink}{}\section{spdlog\+:\+:sinks\+:\+:syslog\+\_\+sink$<$ Mutex $>$ Class Template Reference}
+\label{classspdlog_1_1sinks_1_1syslog__sink}\index{spdlog\+::sinks\+::syslog\+\_\+sink$<$ Mutex $>$@{spdlog\+::sinks\+::syslog\+\_\+sink$<$ Mutex $>$}}
+
+
+{\ttfamily \#include $<$syslog\+\_\+sink.\+h$>$}
+
+
+
+Inheritance diagram for spdlog\+:\+:sinks\+:\+:syslog\+\_\+sink$<$ Mutex $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classspdlog_1_1sinks_1_1syslog__sink__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for spdlog\+:\+:sinks\+:\+:syslog\+\_\+sink$<$ Mutex $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classspdlog_1_1sinks_1_1syslog__sink__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1syslog__sink_acc60de632a07b329aeba41ee48ced4f6}{syslog\+\_\+sink} (std\+::string ident=\char`\"{}\char`\"{}, int syslog\+\_\+option=0, int syslog\+\_\+facility=L\+O\+G\+\_\+\+U\+S\+ER)
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1syslog__sink_ae440dafe6eca68065ac0b6438761ac38}{$\sim$syslog\+\_\+sink} () override
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1syslog__sink_a505adae200592eab1e093ab258ad0291}{syslog\+\_\+sink} (const \hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{syslog\+\_\+sink} \&)=delete
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{syslog\+\_\+sink} \& \hyperlink{classspdlog_1_1sinks_1_1syslog__sink_a3e2454370f91c3fe2befb3f24e25ede7}{operator=} (const \hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{syslog\+\_\+sink} \&)=delete
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1syslog__sink_a303bccf40cd03356510391c493078005}{sink\+\_\+it\+\_\+} (const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&msg) override
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1syslog__sink_a6afb5ba7ef5e5f2950e624ec650fb562}{flush\+\_\+} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Mutex$>$\newline
+class spdlog\+::sinks\+::syslog\+\_\+sink$<$ Mutex $>$}
+
+Sink that write to syslog using the {\ttfamily syscall()} library call.
+
+Locking is not needed, as {\ttfamily syslog()} itself is thread-\/safe. 
+
+Definition at line 26 of file syslog\+\_\+sink.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1syslog__sink_acc60de632a07b329aeba41ee48ced4f6}\label{classspdlog_1_1sinks_1_1syslog__sink_acc60de632a07b329aeba41ee48ced4f6}} 
+\index{spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}!syslog\+\_\+sink@{syslog\+\_\+sink}}
+\index{syslog\+\_\+sink@{syslog\+\_\+sink}!spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}}
+\subsubsection{\texorpdfstring{syslog\+\_\+sink()}{syslog\_sink()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{spdlog\+::sinks\+::syslog\+\_\+sink}$<$ Mutex $>$\+::\hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{syslog\+\_\+sink} (\begin{DoxyParamCaption}\item[{std\+::string}]{ident = {\ttfamily \char`\"{}\char`\"{}},  }\item[{int}]{syslog\+\_\+option = {\ttfamily 0},  }\item[{int}]{syslog\+\_\+facility = {\ttfamily LOG\+\_\+USER} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 30 of file syslog\+\_\+sink.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classspdlog_1_1sinks_1_1syslog__sink_acc60de632a07b329aeba41ee48ced4f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1syslog__sink_ae440dafe6eca68065ac0b6438761ac38}\label{classspdlog_1_1sinks_1_1syslog__sink_ae440dafe6eca68065ac0b6438761ac38}} 
+\index{spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}!````~syslog\+\_\+sink@{$\sim$syslog\+\_\+sink}}
+\index{````~syslog\+\_\+sink@{$\sim$syslog\+\_\+sink}!spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}}
+\subsubsection{\texorpdfstring{$\sim$syslog\+\_\+sink()}{~syslog\_sink()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{spdlog\+::sinks\+::syslog\+\_\+sink}$<$ Mutex $>$\+::$\sim$\hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{syslog\+\_\+sink} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Definition at line 45 of file syslog\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classspdlog_1_1sinks_1_1syslog__sink_ae440dafe6eca68065ac0b6438761ac38_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1syslog__sink_a505adae200592eab1e093ab258ad0291}\label{classspdlog_1_1sinks_1_1syslog__sink_a505adae200592eab1e093ab258ad0291}} 
+\index{spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}!syslog\+\_\+sink@{syslog\+\_\+sink}}
+\index{syslog\+\_\+sink@{syslog\+\_\+sink}!spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}}
+\subsubsection{\texorpdfstring{syslog\+\_\+sink()}{syslog\_sink()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{spdlog\+::sinks\+::syslog\+\_\+sink}$<$ Mutex $>$\+::\hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{syslog\+\_\+sink} (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{syslog\+\_\+sink}$<$ Mutex $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1syslog__sink_a6afb5ba7ef5e5f2950e624ec650fb562}\label{classspdlog_1_1sinks_1_1syslog__sink_a6afb5ba7ef5e5f2950e624ec650fb562}} 
+\index{spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}!flush\+\_\+@{flush\+\_\+}}
+\index{flush\+\_\+@{flush\+\_\+}!spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}}
+\subsubsection{\texorpdfstring{flush\+\_\+()}{flush\_()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{spdlog\+::sinks\+::syslog\+\_\+sink}$<$ Mutex $>$\+::flush\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1base__sink_a5ac2b237c60f68a18122a1ca09b812b4}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+
+
+Definition at line 59 of file syslog\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1syslog__sink_a3e2454370f91c3fe2befb3f24e25ede7}\label{classspdlog_1_1sinks_1_1syslog__sink_a3e2454370f91c3fe2befb3f24e25ede7}} 
+\index{spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}!operator=@{operator=}}
+\index{operator=@{operator=}!spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{syslog\+\_\+sink}\& \hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{spdlog\+::sinks\+::syslog\+\_\+sink}$<$ Mutex $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{syslog\+\_\+sink}$<$ Mutex $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classspdlog_1_1sinks_1_1syslog__sink_a3e2454370f91c3fe2befb3f24e25ede7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1syslog__sink_a303bccf40cd03356510391c493078005}\label{classspdlog_1_1sinks_1_1syslog__sink_a303bccf40cd03356510391c493078005}} 
+\index{spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}!sink\+\_\+it\+\_\+@{sink\+\_\+it\+\_\+}}
+\index{sink\+\_\+it\+\_\+@{sink\+\_\+it\+\_\+}!spdlog\+::sinks\+::syslog\+\_\+sink@{spdlog\+::sinks\+::syslog\+\_\+sink}}
+\subsubsection{\texorpdfstring{sink\+\_\+it\+\_\+()}{sink\_it\_()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1syslog__sink}{spdlog\+::sinks\+::syslog\+\_\+sink}$<$ Mutex $>$\+::sink\+\_\+it\+\_\+ (\begin{DoxyParamCaption}\item[{const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1base__sink_ad698d300cb7f5e58b2aa1b9907cdbd87}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+
+
+Definition at line 54 of file syslog\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classspdlog_1_1sinks_1_1syslog__sink_a303bccf40cd03356510391c493078005_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/sinks/\hyperlink{syslog__sink_8h}{syslog\+\_\+sink.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="WireCell::D3Vector::cross" name="WireCell::D3Vector::cross">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_wire_params.html#a8d20db605558e5fa6afaa7c5cf53ae4f" title="WireCell::WireParams\l::configure" alt="" coords="201,5,353,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_wire_params.html#a7ad51fcb64c9edae1695873f1bec86dc" title="WireCell::WireParams::set" alt="" coords="188,71,367,98"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_d3_vector.html#ad88cac8d3f57beaddacfc20ecbc76707" title="Return the triple cross product of this vector and the other two. " alt="" coords="207,123,348,164"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_d3_vector.html#ac656a3772a15e4a7db4393a9ffe576c1" title="Return the dot&#45;cross product of this vector and the other two. " alt="" coords="205,188,349,229"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_pimpos.html#a3cced28a957f1b3f9610166e29441934" title="WireCell::Pimpos::Pimpos" alt="" coords="189,254,365,281"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_wire_schema_1_1_store.html#abc4cbd21498604e65dbb8753a437a2c2" title="WireCell::WireSchema\l::Store::wire_pitch" alt="" coords="200,305,355,347"/>
+</map>

@@ -1,0 +1,64 @@
+\hypertarget{android__sink_8h}{}\section{util/inc/spdlog/sinks/android\+\_\+sink.h File Reference}
+\label{android__sink_8h}\index{util/inc/spdlog/sinks/android\+\_\+sink.\+h@{util/inc/spdlog/sinks/android\+\_\+sink.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/spdlog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/fmt\+\_\+helper.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/null\+\_\+mutex.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/os.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/sinks/base\+\_\+sink.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$android/log.\+h$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+Include dependency graph for android\+\_\+sink.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{android__sink_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classspdlog_1_1sinks_1_1android__sink}{spdlog\+::sinks\+::android\+\_\+sink$<$ Mutex $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1sinks}{spdlog\+::sinks}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{android__sink_8h_a8e65ae8a75f7a37ede8942a4311cee5e}{S\+P\+D\+L\+O\+G\+\_\+\+A\+N\+D\+R\+O\+I\+D\+\_\+\+R\+E\+T\+R\+I\+ES}~2
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_afa3ee88e3e87a4908cd80f8ccd4fdd3e}{spdlog\+::sinks\+::android\+\_\+sink\+\_\+mt} = android\+\_\+sink$<$ std\+::mutex $>$
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_a38acf93862031f1db0e4bdcf8e8b18f3}{spdlog\+::sinks\+::android\+\_\+sink\+\_\+st} = android\+\_\+sink$<$ details\+::null\+\_\+mutex $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_a0811adb1075181f73abc87c624fbff7e}{spdlog\+::android\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name, const std\+::string \&tag=\char`\"{}spdlog\char`\"{})
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_aab5b508d51de238919a570cf3ca6d3db}{spdlog\+::android\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name, const std\+::string \&tag=\char`\"{}spdlog\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{android__sink_8h_a8e65ae8a75f7a37ede8942a4311cee5e}\label{android__sink_8h_a8e65ae8a75f7a37ede8942a4311cee5e}} 
+\index{android\+\_\+sink.\+h@{android\+\_\+sink.\+h}!S\+P\+D\+L\+O\+G\+\_\+\+A\+N\+D\+R\+O\+I\+D\+\_\+\+R\+E\+T\+R\+I\+ES@{S\+P\+D\+L\+O\+G\+\_\+\+A\+N\+D\+R\+O\+I\+D\+\_\+\+R\+E\+T\+R\+I\+ES}}
+\index{S\+P\+D\+L\+O\+G\+\_\+\+A\+N\+D\+R\+O\+I\+D\+\_\+\+R\+E\+T\+R\+I\+ES@{S\+P\+D\+L\+O\+G\+\_\+\+A\+N\+D\+R\+O\+I\+D\+\_\+\+R\+E\+T\+R\+I\+ES}!android\+\_\+sink.\+h@{android\+\_\+sink.\+h}}
+\subsubsection{\texorpdfstring{S\+P\+D\+L\+O\+G\+\_\+\+A\+N\+D\+R\+O\+I\+D\+\_\+\+R\+E\+T\+R\+I\+ES}{SPDLOG\_ANDROID\_RETRIES}}
+{\footnotesize\ttfamily \#define S\+P\+D\+L\+O\+G\+\_\+\+A\+N\+D\+R\+O\+I\+D\+\_\+\+R\+E\+T\+R\+I\+ES~2}
+
+
+
+Definition at line 24 of file android\+\_\+sink.\+h.
+

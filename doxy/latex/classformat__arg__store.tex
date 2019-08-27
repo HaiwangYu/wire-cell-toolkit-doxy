@@ -1,0 +1,83 @@
+\hypertarget{classformat__arg__store}{}\section{format\+\_\+arg\+\_\+store$<$ Context, Args $>$ Class Template Reference}
+\label{classformat__arg__store}\index{format\+\_\+arg\+\_\+store$<$ Context, Args $>$@{format\+\_\+arg\+\_\+store$<$ Context, Args $>$}}
+
+
+{\ttfamily \#include $<$core.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classformat__arg__store_a785430d11d4e8e5dcd9f231e7d69695e}{format\+\_\+arg\+\_\+store} (const Args \&... \hyperlink{printf_8h_a47047b7b28fd1342eef756b79c778580}{args})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned long long \hyperlink{classformat__arg__store_a36570336ba52d8ae52c67b0492d4463c}{T\+Y\+P\+ES}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classformat__arg__store_ab8e9e33cc7b78829001a86ef6110ebb6}{basic\+\_\+format\+\_\+args$<$ Context $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Context, typename ... Args$>$\newline
+class format\+\_\+arg\+\_\+store$<$ Context, Args $>$}
+
+An array of references to arguments. It can be implicitly converted into {\ttfamily $\sim$fmt\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}} for passing into type-\/erased formatting functions such as {\ttfamily $\sim$fmt\hyperlink{locale_8h_a1348d1312264bd011c54db919e0602b7}{vformat}}.  
+
+Definition at line 1140 of file core.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classformat__arg__store_a785430d11d4e8e5dcd9f231e7d69695e}\label{classformat__arg__store_a785430d11d4e8e5dcd9f231e7d69695e}} 
+\index{format\+\_\+arg\+\_\+store@{format\+\_\+arg\+\_\+store}!format\+\_\+arg\+\_\+store@{format\+\_\+arg\+\_\+store}}
+\index{format\+\_\+arg\+\_\+store@{format\+\_\+arg\+\_\+store}!format\+\_\+arg\+\_\+store@{format\+\_\+arg\+\_\+store}}
+\subsubsection{\texorpdfstring{format\+\_\+arg\+\_\+store()}{format\_arg\_store()}}
+{\footnotesize\ttfamily template$<$typename Context, typename ... Args$>$ \\
+\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$ Context, Args $>$\+::\hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store} (\begin{DoxyParamCaption}\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1179 of file core.\+h.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classformat__arg__store_ab8e9e33cc7b78829001a86ef6110ebb6}\label{classformat__arg__store_ab8e9e33cc7b78829001a86ef6110ebb6}} 
+\index{format\+\_\+arg\+\_\+store@{format\+\_\+arg\+\_\+store}!basic\+\_\+format\+\_\+args$<$ Context $>$@{basic\+\_\+format\+\_\+args$<$ Context $>$}}
+\index{basic\+\_\+format\+\_\+args$<$ Context $>$@{basic\+\_\+format\+\_\+args$<$ Context $>$}!format\+\_\+arg\+\_\+store@{format\+\_\+arg\+\_\+store}}
+\subsubsection{\texorpdfstring{basic\+\_\+format\+\_\+args$<$ Context $>$}{basic\_format\_args< Context >}}
+{\footnotesize\ttfamily template$<$typename Context, typename ... Args$>$ \\
+friend class \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 1155 of file core.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classformat__arg__store_a36570336ba52d8ae52c67b0492d4463c}\label{classformat__arg__store_a36570336ba52d8ae52c67b0492d4463c}} 
+\index{format\+\_\+arg\+\_\+store@{format\+\_\+arg\+\_\+store}!T\+Y\+P\+ES@{T\+Y\+P\+ES}}
+\index{T\+Y\+P\+ES@{T\+Y\+P\+ES}!format\+\_\+arg\+\_\+store@{format\+\_\+arg\+\_\+store}}
+\subsubsection{\texorpdfstring{T\+Y\+P\+ES}{TYPES}}
+{\footnotesize\ttfamily template$<$typename Context, typename ... Args$>$ \\
+const unsigned long long \hyperlink{classformat__arg__store}{format\+\_\+arg\+\_\+store}$<$ Context, Args $>$\+::T\+Y\+P\+ES\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    get\_types()
+\end{DoxyCode}
+
+
+Definition at line 1167 of file core.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{core_8h}{core.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="iface/inc/WireCellIface/SimpleBlob.h" name="iface/inc/WireCellIface/SimpleBlob.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,95,211,121"/>
+<area shape="rect" id="node3" href="$_blob_set_sync_8cxx.html" title="img/src/BlobSetSync.cxx" alt="" coords="235,95,405,121"/>
+<area shape="rect" id="node4" href="$_blob_solving_8cxx.html" title="img/src/BlobSolving.cxx" alt="" coords="429,95,592,121"/>
+<area shape="rect" id="node5" href="$_grid_tiling_8cxx.html" title="img/src/GridTiling.cxx" alt="" coords="616,95,765,121"/>
+</map>

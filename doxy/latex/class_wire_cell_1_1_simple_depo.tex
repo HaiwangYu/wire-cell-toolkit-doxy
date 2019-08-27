@@ -1,0 +1,229 @@
+\hypertarget{class_wire_cell_1_1_simple_depo}{}\section{Wire\+Cell\+:\+:Simple\+Depo Class Reference}
+\label{class_wire_cell_1_1_simple_depo}\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+
+
+{\ttfamily \#include $<$Simple\+Depo.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Simple\+Depo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_wire_cell_1_1_simple_depo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Simple\+Depo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_wire_cell_1_1_simple_depo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_simple_depo_a9cd203c648b15f9213979a054a8696c5}{Simple\+Depo} (double t, const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Wire\+Cell\+::\+Point} \&\hyperlink{class_wire_cell_1_1_simple_depo_ab41e2325f1fdff081ef6724389419529}{pos}, double \hyperlink{class_wire_cell_1_1_simple_depo_a07e9a03fcc18207e8e55ac3ed201828c}{charge}=1.\+0, \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer} \hyperlink{class_wire_cell_1_1_simple_depo_a23c734fee4ed0184b032e99a193f6f8e}{prior}=nullptr, double \hyperlink{class_wire_cell_1_1_simple_depo_aebb13d9a9c5a5bc0f821d2e690c88c46}{extent\+\_\+long}=0.\+0, double \hyperlink{class_wire_cell_1_1_simple_depo_ac03d9904acf5117c23c363c7168310cd}{extent\+\_\+tran}=0.\+0, int \hyperlink{class_wire_cell_1_1_simple_depo_a30d9b06e6e65bba3d0b4fa17f64c52f5}{id}=0, int \hyperlink{class_wire_cell_1_1_simple_depo_a632331ca715c30e2600b2b115139fb0d}{pdg}=0, double \hyperlink{class_wire_cell_1_1_simple_depo_acea11f65dc7accc767a196963d93cd02}{energy}=1.\+0)
+\item 
+virtual const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Wire\+Cell\+::\+Point} \& \hyperlink{class_wire_cell_1_1_simple_depo_ab41e2325f1fdff081ef6724389419529}{pos} () const
+\begin{DoxyCompactList}\small\item\em The location of the deposition. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_simple_depo_aadb43cf11d4612fcad2279b9a32d697a}{time} () const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_simple_depo_a07e9a03fcc18207e8e55ac3ed201828c}{charge} () const
+\begin{DoxyCompactList}\small\item\em The number charge (in units of number of electrons) deposited. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_simple_depo_acea11f65dc7accc767a196963d93cd02}{energy} () const
+\begin{DoxyCompactList}\small\item\em The energy (in units of MeV) deposited. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_simple_depo_a30d9b06e6e65bba3d0b4fa17f64c52f5}{id} () const
+\begin{DoxyCompactList}\small\item\em Track ID from Geant4. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_simple_depo_a632331ca715c30e2600b2b115139fb0d}{pdg} () const
+\begin{DoxyCompactList}\small\item\em P\+DG code from Geant4. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{Wire\+Cell\+::\+I\+Depo\+::pointer} \hyperlink{class_wire_cell_1_1_simple_depo_a23c734fee4ed0184b032e99a193f6f8e}{prior} () const
+\begin{DoxyCompactList}\small\item\em If the deposition is drifted, this may allow access to the original. \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_wire_cell_1_1_simple_depo_aebb13d9a9c5a5bc0f821d2e690c88c46}{extent\+\_\+long} () const
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_simple_depo_ac03d9904acf5117c23c363c7168310cd}{extent\+\_\+tran} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file Simple\+Depo.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_depo_a9cd203c648b15f9213979a054a8696c5}\label{class_wire_cell_1_1_simple_depo_a9cd203c648b15f9213979a054a8696c5}} 
+\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}!Simple\+Depo@{Simple\+Depo}}
+\index{Simple\+Depo@{Simple\+Depo}!Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+\subsubsection{\texorpdfstring{Simple\+Depo()}{SimpleDepo()}}
+{\footnotesize\ttfamily Simple\+Depo\+::\+Simple\+Depo (\begin{DoxyParamCaption}\item[{double}]{t,  }\item[{const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Wire\+Cell\+::\+Point} \&}]{pos,  }\item[{double}]{charge = {\ttfamily 1.0},  }\item[{\hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{I\+Depo\+::pointer}}]{prior = {\ttfamily nullptr},  }\item[{double}]{extent\+\_\+long = {\ttfamily 0.0},  }\item[{double}]{extent\+\_\+tran = {\ttfamily 0.0},  }\item[{int}]{id = {\ttfamily 0},  }\item[{int}]{pdg = {\ttfamily 0},  }\item[{double}]{energy = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 5 of file Simple\+Depo.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_depo_a07e9a03fcc18207e8e55ac3ed201828c}\label{class_wire_cell_1_1_simple_depo_a07e9a03fcc18207e8e55ac3ed201828c}} 
+\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}!charge@{charge}}
+\index{charge@{charge}!Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+\subsubsection{\texorpdfstring{charge()}{charge()}}
+{\footnotesize\ttfamily double Simple\+Depo\+::charge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The number charge (in units of number of electrons) deposited. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_depo_a096a0b84b90685700f26950b0523c43c}{Wire\+Cell\+::\+I\+Depo}.
+
+
+
+Definition at line 30 of file Simple\+Depo.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_depo_acea11f65dc7accc767a196963d93cd02}\label{class_wire_cell_1_1_simple_depo_acea11f65dc7accc767a196963d93cd02}} 
+\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}!energy@{energy}}
+\index{energy@{energy}!Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+\subsubsection{\texorpdfstring{energy()}{energy()}}
+{\footnotesize\ttfamily double Simple\+Depo\+::energy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The energy (in units of MeV) deposited. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_depo_a5dad2495f4b329fede8397203824f311}{Wire\+Cell\+::\+I\+Depo}.
+
+
+
+Definition at line 34 of file Simple\+Depo.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_depo_aebb13d9a9c5a5bc0f821d2e690c88c46}\label{class_wire_cell_1_1_simple_depo_aebb13d9a9c5a5bc0f821d2e690c88c46}} 
+\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}!extent\+\_\+long@{extent\+\_\+long}}
+\index{extent\+\_\+long@{extent\+\_\+long}!Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+\subsubsection{\texorpdfstring{extent\+\_\+long()}{extent\_long()}}
+{\footnotesize\ttfamily double Simple\+Depo\+::extent\+\_\+long (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Any (half width) extent in the longitudinal (drift) direction (distance). The distribution is implicit but typically it is taken that this is a Gaussian sigma. 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_depo_a196f71d7d22bf0b85948e2ff8e557c9c}{Wire\+Cell\+::\+I\+Depo}.
+
+
+
+Definition at line 44 of file Simple\+Depo.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_depo_ac03d9904acf5117c23c363c7168310cd}\label{class_wire_cell_1_1_simple_depo_ac03d9904acf5117c23c363c7168310cd}} 
+\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}!extent\+\_\+tran@{extent\+\_\+tran}}
+\index{extent\+\_\+tran@{extent\+\_\+tran}!Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+\subsubsection{\texorpdfstring{extent\+\_\+tran()}{extent\_tran()}}
+{\footnotesize\ttfamily double Simple\+Depo\+::extent\+\_\+tran (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Any (half width) extent in the transverse (pitch) direction (distance). The distribution is implicit but typically it is taken that this is a Gaussian sigma. 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_depo_afbb1cebfd10723b572e3959afa665b5e}{Wire\+Cell\+::\+I\+Depo}.
+
+
+
+Definition at line 45 of file Simple\+Depo.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_depo_a30d9b06e6e65bba3d0b4fa17f64c52f5}\label{class_wire_cell_1_1_simple_depo_a30d9b06e6e65bba3d0b4fa17f64c52f5}} 
+\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}!id@{id}}
+\index{id@{id}!Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+\subsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily int Simple\+Depo\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Track ID from Geant4. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_depo_ab32caab0a418f3fc0f185d8fc316537a}{Wire\+Cell\+::\+I\+Depo}.
+
+
+
+Definition at line 42 of file Simple\+Depo.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_depo_a632331ca715c30e2600b2b115139fb0d}\label{class_wire_cell_1_1_simple_depo_a632331ca715c30e2600b2b115139fb0d}} 
+\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}!pdg@{pdg}}
+\index{pdg@{pdg}!Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+\subsubsection{\texorpdfstring{pdg()}{pdg()}}
+{\footnotesize\ttfamily int Simple\+Depo\+::pdg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+P\+DG code from Geant4. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_depo_a3a7a83ccfde95f79761cec6562fff82b}{Wire\+Cell\+::\+I\+Depo}.
+
+
+
+Definition at line 43 of file Simple\+Depo.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_depo_ab41e2325f1fdff081ef6724389419529}\label{class_wire_cell_1_1_simple_depo_ab41e2325f1fdff081ef6724389419529}} 
+\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}!pos@{pos}}
+\index{pos@{pos}!Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+\subsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_ab2b2565fa6432efbb4513c14c988cda9}{Wire\+Cell\+::\+Point} \& Simple\+Depo\+::pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The location of the deposition. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_depo_a6ea54d469c6d0429d16425917ec24241}{Wire\+Cell\+::\+I\+Depo}.
+
+
+
+Definition at line 22 of file Simple\+Depo.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_depo_a23c734fee4ed0184b032e99a193f6f8e}\label{class_wire_cell_1_1_simple_depo_a23c734fee4ed0184b032e99a193f6f8e}} 
+\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}!prior@{prior}}
+\index{prior@{prior}!Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+\subsubsection{\texorpdfstring{prior()}{prior()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_i_data_aff870b3ae8333cf9265941eef62498bc}{Wire\+Cell\+::\+I\+Depo\+::pointer} Simple\+Depo\+::prior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+If the deposition is drifted, this may allow access to the original. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_depo_a440532d005a463cc9df5731ddb96f601}{Wire\+Cell\+::\+I\+Depo}.
+
+
+
+Definition at line 38 of file Simple\+Depo.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_simple_depo_aadb43cf11d4612fcad2279b9a32d697a}\label{class_wire_cell_1_1_simple_depo_aadb43cf11d4612fcad2279b9a32d697a}} 
+\index{Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}!time@{time}}
+\index{time@{time}!Wire\+Cell\+::\+Simple\+Depo@{Wire\+Cell\+::\+Simple\+Depo}}
+\subsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily double Simple\+Depo\+::time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The number of seconds from some absolute start time to when the deposition occur ed. 
+
+Implements \hyperlink{class_wire_cell_1_1_i_depo_abec395a8a8335d76ae07db2baf57ed83}{Wire\+Cell\+::\+I\+Depo}.
+
+
+
+Definition at line 26 of file Simple\+Depo.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_simple_depo_8h}{Simple\+Depo.\+h}\item 
+iface/src/\hyperlink{_simple_depo_8cxx}{Simple\+Depo.\+cxx}\end{DoxyCompactItemize}

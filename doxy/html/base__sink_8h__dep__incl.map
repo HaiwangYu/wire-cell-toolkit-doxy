@@ -1,0 +1,11 @@
+<map id="util/inc/spdlog/sinks/base_sink.h" name="util/inc/spdlog/sinks/base_sink.h">
+<area shape="rect" id="node2" href="$android__sink_8h.html" title="util/inc/spdlog/sinks\l/android_sink.h" alt="" coords="5,95,143,136"/>
+<area shape="rect" id="node3" href="$basic__file__sink_8h.html" title="util/inc/spdlog/sinks\l/basic_file_sink.h" alt="" coords="167,95,304,136"/>
+<area shape="rect" id="node5" href="$daily__file__sink_8h.html" title="util/inc/spdlog/sinks\l/daily_file_sink.h" alt="" coords="328,95,465,136"/>
+<area shape="rect" id="node6" href="$dist__sink_8h.html" title="util/inc/spdlog/sinks\l/dist_sink.h" alt="" coords="489,95,627,136"/>
+<area shape="rect" id="node7" href="$null__sink_8h.html" title="util/inc/spdlog/sinks\l/null_sink.h" alt="" coords="651,95,788,136"/>
+<area shape="rect" id="node8" href="$ostream__sink_8h.html" title="util/inc/spdlog/sinks\l/ostream_sink.h" alt="" coords="812,95,949,136"/>
+<area shape="rect" id="node9" href="$rotating__file__sink_8h.html" title="util/inc/spdlog/sinks\l/rotating_file_sink.h" alt="" coords="973,95,1111,136"/>
+<area shape="rect" id="node10" href="$syslog__sink_8h.html" title="util/inc/spdlog/sinks\l/syslog_sink.h" alt="" coords="1135,95,1272,136"/>
+<area shape="rect" id="node4" href="$_logging_8cxx.html" title="util/src/Logging.cxx" alt="" coords="409,184,544,211"/>
+</map>

@@ -1,0 +1,238 @@
+\hypertarget{class_wire_cell_1_1_i_node}{}\section{Wire\+Cell\+:\+:I\+Node Class Reference}
+\label{class_wire_cell_1_1_i_node}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}
+
+
+{\ttfamily \#include $<$I\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_wire_cell_1_1_i_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_wire_cell_1_1_i_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} \{ \newline
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a91c7cb66e05262fb6b1e5a6d47fc0257}{unknown}, 
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a7cbfecaab254f7741afecce217ace559}{source\+Node}, 
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a313b54cdce0bdfc6d8390376805d3625}{sink\+Node}, 
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803ab0b3b7efc808d5ea16ff51c5324cbee4}{function\+Node}, 
+\newline
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a0ff8b55efa8f153aaaccd81d69220ed3}{queuedout\+Node}, 
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803ab2cfcbeeaaa96a78a4a1e9b8da39b97b}{join\+Node}, 
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a16ae6c629db70d0dbdae7dabf6bcfe8e}{split\+Node}, 
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a1188391668abbbc3177224d52b3b59b0}{fanin\+Node}, 
+\newline
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a190c9ff91670d306a4d24e0499da1b4c}{fanout\+Node}, 
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803ad0b19460ef72739732096b579f2f03fc}{multiout\+Node}, 
+\hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a3a4f018c9b1f2bd6f941a7bc06fd2ab3}{hydra\+Node}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_node_a38004973c3bcb18b6783cc47a75339d9}{$\sim$\+I\+Node} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} \hyperlink{class_wire_cell_1_1_i_node_a58c07f15b165e5fb33bbc7b2e047b39b}{category} ()=0
+\begin{DoxyCompactList}\small\item\em Return the behavior category type. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{class_wire_cell_1_1_i_node_a0b0763465adf5ba7febe8e378162b584}{signature} ()=0
+\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_node_a87d2b7293da4f6955e389ac6a2011306}{concurrency} ()
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_node_ae13fc140c8e815fac9327dfa5b43f853}{input\+\_\+types} ()
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602}{output\+\_\+types} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_i_node_a7bf4dfff146b72f866ab25f7662c56a0}{reset} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A data flow node 
+
+Definition at line 16 of file I\+Node.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}} 
+\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!Node\+Category@{Node\+Category}}
+\index{Node\+Category@{Node\+Category}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}
+\subsubsection{\texorpdfstring{Node\+Category}{NodeCategory}}
+{\footnotesize\ttfamily enum \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Wire\+Cell\+::\+I\+Node\+::\+Node\+Category}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{unknown@{unknown}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!unknown@{unknown}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a91c7cb66e05262fb6b1e5a6d47fc0257}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a91c7cb66e05262fb6b1e5a6d47fc0257}} 
+unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{source\+Node@{source\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!source\+Node@{source\+Node}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a7cbfecaab254f7741afecce217ace559}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a7cbfecaab254f7741afecce217ace559}} 
+source\+Node&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{sink\+Node@{sink\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!sink\+Node@{sink\+Node}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a313b54cdce0bdfc6d8390376805d3625}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a313b54cdce0bdfc6d8390376805d3625}} 
+sink\+Node&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{function\+Node@{function\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!function\+Node@{function\+Node}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803ab0b3b7efc808d5ea16ff51c5324cbee4}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803ab0b3b7efc808d5ea16ff51c5324cbee4}} 
+function\+Node&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{queuedout\+Node@{queuedout\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!queuedout\+Node@{queuedout\+Node}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a0ff8b55efa8f153aaaccd81d69220ed3}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a0ff8b55efa8f153aaaccd81d69220ed3}} 
+queuedout\+Node&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{join\+Node@{join\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!join\+Node@{join\+Node}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803ab2cfcbeeaaa96a78a4a1e9b8da39b97b}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803ab2cfcbeeaaa96a78a4a1e9b8da39b97b}} 
+join\+Node&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{split\+Node@{split\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!split\+Node@{split\+Node}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a16ae6c629db70d0dbdae7dabf6bcfe8e}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a16ae6c629db70d0dbdae7dabf6bcfe8e}} 
+split\+Node&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fanin\+Node@{fanin\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!fanin\+Node@{fanin\+Node}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a1188391668abbbc3177224d52b3b59b0}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a1188391668abbbc3177224d52b3b59b0}} 
+fanin\+Node&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fanout\+Node@{fanout\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!fanout\+Node@{fanout\+Node}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a190c9ff91670d306a4d24e0499da1b4c}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a190c9ff91670d306a4d24e0499da1b4c}} 
+fanout\+Node&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{multiout\+Node@{multiout\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!multiout\+Node@{multiout\+Node}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803ad0b19460ef72739732096b579f2f03fc}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803ad0b19460ef72739732096b579f2f03fc}} 
+multiout\+Node&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{hydra\+Node@{hydra\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!hydra\+Node@{hydra\+Node}}}\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a3a4f018c9b1f2bd6f941a7bc06fd2ab3}\label{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803a3a4f018c9b1f2bd6f941a7bc06fd2ab3}} 
+hydra\+Node&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 21 of file I\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a38004973c3bcb18b6783cc47a75339d9}\label{class_wire_cell_1_1_i_node_a38004973c3bcb18b6783cc47a75339d9}} 
+\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!````~I\+Node@{$\sim$\+I\+Node}}
+\index{````~I\+Node@{$\sim$\+I\+Node}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Node()}{~INode()}}
+{\footnotesize\ttfamily I\+Node\+::$\sim$\+I\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 146 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a58c07f15b165e5fb33bbc7b2e047b39b}\label{class_wire_cell_1_1_i_node_a58c07f15b165e5fb33bbc7b2e047b39b}} 
+\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!category@{category}}
+\index{category@{category}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}
+\subsubsection{\texorpdfstring{category()}{category()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} Wire\+Cell\+::\+I\+Node\+::category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the behavior category type. 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_i_source_node_a1742b49fa591d01cd209ed027a7d29ba}{Wire\+Cell\+::\+I\+Source\+Node$<$ Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_source_node_a1742b49fa591d01cd209ed027a7d29ba}{Wire\+Cell\+::\+I\+Source\+Node$<$ I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_source_node_a1742b49fa591d01cd209ed027a7d29ba}{Wire\+Cell\+::\+I\+Source\+Node$<$ I\+Wire\+::vector $>$}, \hyperlink{class_wire_cell_1_1_i_source_node_a1742b49fa591d01cd209ed027a7d29ba}{Wire\+Cell\+::\+I\+Source\+Node$<$ I\+Depo $>$}, \hyperlink{class_wire_cell_1_1_i_hydra_node_base_a92679ff7dc050dc051993655befae6c0}{Wire\+Cell\+::\+I\+Hydra\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_join_node_base_aa136f23e80aa3919612a3fd396b502f9}{Wire\+Cell\+::\+I\+Join\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_split_node_base_aae628151ca5604b24682381ba267dded}{Wire\+Cell\+::\+I\+Split\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_fanin_node_base_a1eadd634e7beaafcd7d0e93ea35a6f3b}{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_fanout_node_base_a9532dcaebc70f1ecdfaf3526c32f8c40}{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_a45a6b7c8c0af34108868b9b4a0f2a8cf}{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_function_node_base_aea2adac35fc9aa54a82525ccb32471f7}{Wire\+Cell\+::\+I\+Function\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_source_node_base_adc531c3da5aa3192940e60390e683736}{Wire\+Cell\+::\+I\+Source\+Node\+Base}, and \hyperlink{class_wire_cell_1_1_i_sink_node_base_aed8e3945184e47177abf0b16c74e6aff}{Wire\+Cell\+::\+I\+Sink\+Node\+Base}.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a87d2b7293da4f6955e389ac6a2011306}\label{class_wire_cell_1_1_i_node_a87d2b7293da4f6955e389ac6a2011306}} 
+\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!concurrency@{concurrency}}
+\index{concurrency@{concurrency}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}
+\subsubsection{\texorpdfstring{concurrency()}{concurrency()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Node\+::concurrency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_i_hydra_node_base_a6bcaeb0a80fa720c3180d9b9d8b9fd22}{Wire\+Cell\+::\+I\+Hydra\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_join_node_base_a03ae350e6d99bff19fc4e01c9e3d7f6d}{Wire\+Cell\+::\+I\+Join\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_split_node_base_a001e95f0334b6f626049a7d50f6cf55f}{Wire\+Cell\+::\+I\+Split\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_fanin_node_base_af0f007d93e510830bccbc186c6642749}{Wire\+Cell\+::\+I\+Fanin\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_fanout_node_base_abda7275bd1a34eab0dfffa8dc29f3b61}{Wire\+Cell\+::\+I\+Fanout\+Node\+Base}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_aac268591658fea147722dccd6cb5e3a2}{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}, and \hyperlink{class_wire_cell_1_1_i_function_node_base_a19383abea731c6cbafc88fb9ffe11ee9}{Wire\+Cell\+::\+I\+Function\+Node\+Base}.
+
+
+
+Definition at line 49 of file I\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_node_ae13fc140c8e815fac9327dfa5b43f853}\label{class_wire_cell_1_1_i_node_ae13fc140c8e815fac9327dfa5b43f853}} 
+\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!input\+\_\+types@{input\+\_\+types}}
+\index{input\+\_\+types@{input\+\_\+types}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}
+\subsubsection{\texorpdfstring{input\+\_\+types()}{input\_types()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::string$>$ Wire\+Cell\+::\+I\+Node\+::input\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_i_hydra_node_af02cf39a567f4a64d34c527b6c09febf}{Wire\+Cell\+::\+I\+Hydra\+Node$<$ Input\+Tuple, Output\+Tuple $>$}, \hyperlink{class_wire_cell_1_1_i_hydra_node_af02cf39a567f4a64d34c527b6c09febf}{Wire\+Cell\+::\+I\+Hydra\+Node$<$ std\+::tuple$<$ I\+Depo, I\+Depo $>$, std\+::tuple$<$ I\+Depo $>$ $>$}, \hyperlink{class_wire_cell_1_1_i_split_node_a777776f3e11a8fb95c1e8974249a1f8d}{Wire\+Cell\+::\+I\+Split\+Node$<$ Input\+Type, Output\+Tuple $>$}, \hyperlink{class_wire_cell_1_1_i_split_node_a777776f3e11a8fb95c1e8974249a1f8d}{Wire\+Cell\+::\+I\+Split\+Node$<$ I\+Frame, std\+::tuple$<$ I\+Frame, I\+Frame $>$ $>$}, \hyperlink{class_wire_cell_1_1_i_fanin_node_a102c43a647e2e0070e329c397e27c2f5}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$}, \hyperlink{class_wire_cell_1_1_i_join_node_a2a9b72881831998cb7c66825f2101abb}{Wire\+Cell\+::\+I\+Join\+Node$<$ Input\+Tuple, Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_fanin_node_a102c43a647e2e0070e329c397e27c2f5}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ I\+Frame, I\+Frame, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanin_node_a102c43a647e2e0070e329c397e27c2f5}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ I\+Cluster, I\+Cluster, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanin_node_a102c43a647e2e0070e329c397e27c2f5}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ I\+Blob\+Set, I\+Blob\+Set, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_join_node_a2a9b72881831998cb7c66825f2101abb}{Wire\+Cell\+::\+I\+Join\+Node$<$ std\+::tuple$<$ I\+Frame, I\+Frame $>$, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a61d7f915d2c0b6275827e7d63b9a03b2}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ Input\+Type, Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a61d7f915d2c0b6275827e7d63b9a03b2}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Frame, I\+Frame, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a61d7f915d2c0b6275827e7d63b9a03b2}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Blob\+Set\+::vector, I\+Blob\+Set, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a61d7f915d2c0b6275827e7d63b9a03b2}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Slice, I\+Slice, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a61d7f915d2c0b6275827e7d63b9a03b2}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Depo, I\+Depo, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a61d7f915d2c0b6275827e7d63b9a03b2}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Depo\+Set, I\+Depo\+Set, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Diffusion $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Frame, I\+Slice $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Depo\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Blob\+Set, I\+Blob\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Blob\+Set, I\+Cluster $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a5289285ab7c2f8117e9aff75dcbb8077}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Depo $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ Input\+Type, Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Wire\+Parameters, I\+Wire\+::vector $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Depo\+Set, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Slice, I\+Stripe\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Wire\+::vector, I\+Wire\+Summary $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Cluster, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Frame, I\+Slice\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Frame, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Slice, I\+Blob\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Depo, I\+Depo $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_a19aa126e6b3924b2dbc23625e8ff4a8b}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Cluster, I\+Cluster $>$}, \hyperlink{class_wire_cell_1_1_i_sink_node_abe62e5f37a46c15bd6481fb75c86ec85}{Wire\+Cell\+::\+I\+Sink\+Node$<$ Input\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_sink_node_abe62e5f37a46c15bd6481fb75c86ec85}{Wire\+Cell\+::\+I\+Sink\+Node$<$ I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_sink_node_abe62e5f37a46c15bd6481fb75c86ec85}{Wire\+Cell\+::\+I\+Sink\+Node$<$ Point\+Vector $>$}, \hyperlink{class_wire_cell_1_1_i_sink_node_abe62e5f37a46c15bd6481fb75c86ec85}{Wire\+Cell\+::\+I\+Sink\+Node$<$ I\+Cluster $>$}, \hyperlink{class_wire_cell_1_1_i_sink_node_abe62e5f37a46c15bd6481fb75c86ec85}{Wire\+Cell\+::\+I\+Sink\+Node$<$ I\+Blob\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_sink_node_abe62e5f37a46c15bd6481fb75c86ec85}{Wire\+Cell\+::\+I\+Sink\+Node$<$ I\+Stripe\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_sink_node_abe62e5f37a46c15bd6481fb75c86ec85}{Wire\+Cell\+::\+I\+Sink\+Node$<$ I\+Slice\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_sink_node_abe62e5f37a46c15bd6481fb75c86ec85}{Wire\+Cell\+::\+I\+Sink\+Node$<$ Scalar\+Field $>$}, \hyperlink{class_wire_cell_1_1_i_sink_node_abe62e5f37a46c15bd6481fb75c86ec85}{Wire\+Cell\+::\+I\+Sink\+Node$<$ I\+Depo $>$}, \hyperlink{class_wire_cell_1_1_i_cluster_fanin_a4021793d08233b3cb10f788d20d313c2}{Wire\+Cell\+::\+I\+Cluster\+Fanin}, \hyperlink{class_wire_cell_1_1_img_1_1_blob_set_sync_aa32d9014596aec6bcbdcd8ed027a95ad}{Wire\+Cell\+::\+Img\+::\+Blob\+Set\+Sync}, \hyperlink{class_wire_cell_1_1_i_frame_fanin_a7c19800cac1dc1bf67199b067811f500}{Wire\+Cell\+::\+I\+Frame\+Fanin}, \hyperlink{class_wire_cell_1_1_i_blob_set_fanin_a1783b57125c4b9df55a828ec832dbb72}{Wire\+Cell\+::\+I\+Blob\+Set\+Fanin}, and \hyperlink{class_wire_cell_1_1_gen_1_1_frame_fanin_aeba173a6fd84de2b655fe56fd41d8c05}{Wire\+Cell\+::\+Gen\+::\+Frame\+Fanin}.
+
+
+
+Definition at line 53 of file I\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602}\label{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602}} 
+\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!output\+\_\+types@{output\+\_\+types}}
+\index{output\+\_\+types@{output\+\_\+types}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}
+\subsubsection{\texorpdfstring{output\+\_\+types()}{output\_types()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::string$>$ Wire\+Cell\+::\+I\+Node\+::output\+\_\+types (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_i_hydra_node_af668f59ced5931ba78e63df17b25670d}{Wire\+Cell\+::\+I\+Hydra\+Node$<$ Input\+Tuple, Output\+Tuple $>$}, \hyperlink{class_wire_cell_1_1_i_hydra_node_af668f59ced5931ba78e63df17b25670d}{Wire\+Cell\+::\+I\+Hydra\+Node$<$ std\+::tuple$<$ I\+Depo, I\+Depo $>$, std\+::tuple$<$ I\+Depo $>$ $>$}, \hyperlink{class_wire_cell_1_1_i_fanin_node_a4d30445b258b6534fdc7825b63687642}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ Input\+Type, Output\+Type, Fanin\+Multiplicity $>$}, \hyperlink{class_wire_cell_1_1_i_join_node_abd32af32f2ed933356b4b3b7591cded3}{Wire\+Cell\+::\+I\+Join\+Node$<$ Input\+Tuple, Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_split_node_a924ce0894e2f6dec8fb49b14923df91d}{Wire\+Cell\+::\+I\+Split\+Node$<$ Input\+Type, Output\+Tuple $>$}, \hyperlink{class_wire_cell_1_1_i_fanin_node_a4d30445b258b6534fdc7825b63687642}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ I\+Frame, I\+Frame, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanin_node_a4d30445b258b6534fdc7825b63687642}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ I\+Cluster, I\+Cluster, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanin_node_a4d30445b258b6534fdc7825b63687642}{Wire\+Cell\+::\+I\+Fanin\+Node$<$ I\+Blob\+Set, I\+Blob\+Set, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_join_node_abd32af32f2ed933356b4b3b7591cded3}{Wire\+Cell\+::\+I\+Join\+Node$<$ std\+::tuple$<$ I\+Frame, I\+Frame $>$, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_split_node_a924ce0894e2f6dec8fb49b14923df91d}{Wire\+Cell\+::\+I\+Split\+Node$<$ I\+Frame, std\+::tuple$<$ I\+Frame, I\+Frame $>$ $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a2191dc9d44b35d6ff4bda5d5356c6ac5}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ Input\+Type, Output\+Type, Fanout\+Multiplicity $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a2191dc9d44b35d6ff4bda5d5356c6ac5}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Frame, I\+Frame, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a2191dc9d44b35d6ff4bda5d5356c6ac5}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Blob\+Set\+::vector, I\+Blob\+Set, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a2191dc9d44b35d6ff4bda5d5356c6ac5}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Slice, I\+Slice, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a2191dc9d44b35d6ff4bda5d5356c6ac5}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Depo, I\+Depo, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_fanout_node_a2191dc9d44b35d6ff4bda5d5356c6ac5}{Wire\+Cell\+::\+I\+Fanout\+Node$<$ I\+Depo\+Set, I\+Depo\+Set, 0 $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ Input\+Type, Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Diffusion $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Frame, I\+Slice $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Depo\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Blob\+Set, I\+Blob\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Blob\+Set, I\+Cluster $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_ae80f97293240e876e6d47202e7b3cc59}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Depo $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ Input\+Type, Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Wire\+Parameters, I\+Wire\+::vector $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Depo\+Set, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Slice, I\+Stripe\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Wire\+::vector, I\+Wire\+Summary $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Cluster, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Frame, I\+Slice\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Frame, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Slice, I\+Blob\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Depo, I\+Depo $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_aaabdb086807eaa14b9a5d7f00ee290de}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Cluster, I\+Cluster $>$}, \hyperlink{class_wire_cell_1_1_i_source_node_a37037cdba0b75cf5fa50751000a4f436}{Wire\+Cell\+::\+I\+Source\+Node$<$ Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_source_node_a37037cdba0b75cf5fa50751000a4f436}{Wire\+Cell\+::\+I\+Source\+Node$<$ I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_source_node_a37037cdba0b75cf5fa50751000a4f436}{Wire\+Cell\+::\+I\+Source\+Node$<$ I\+Wire\+::vector $>$}, \hyperlink{class_wire_cell_1_1_i_source_node_a37037cdba0b75cf5fa50751000a4f436}{Wire\+Cell\+::\+I\+Source\+Node$<$ I\+Depo $>$}, \hyperlink{class_wire_cell_1_1_sig_proc_1_1_channel_splitter_aae5dd9627d127e38fd31d88a4b61b584}{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Splitter}, \hyperlink{class_wire_cell_1_1_i_frame_fanout_aa54a33e4454b6d2cced872b903641d4a}{Wire\+Cell\+::\+I\+Frame\+Fanout}, \hyperlink{class_wire_cell_1_1_i_slice_fanout_abde53bdfe0cef64ba3b05edcf111db65}{Wire\+Cell\+::\+I\+Slice\+Fanout}, \hyperlink{class_wire_cell_1_1_i_blob_set_fanout_ad70f90237cc742ff5bdac87c661ed644}{Wire\+Cell\+::\+I\+Blob\+Set\+Fanout}, \hyperlink{class_wire_cell_1_1_i_depo_fanout_ade8cfbdf790d316516ab8f7a97818f8e}{Wire\+Cell\+::\+I\+Depo\+Fanout}, \hyperlink{class_wire_cell_1_1_i_depo_set_fanout_a90833e933801d4152272189dc6ba1e38}{Wire\+Cell\+::\+I\+Depo\+Set\+Fanout}, \hyperlink{class_wire_cell_1_1_gen_1_1_frame_fanout_a71041fd4bf1a0e030e78a7565f7f1671}{Wire\+Cell\+::\+Gen\+::\+Frame\+Fanout}, \hyperlink{class_wire_cell_1_1_gen_1_1_depo_set_fanout_a11637470dcf8dc0ea0cbf6691a6984c0}{Wire\+Cell\+::\+Gen\+::\+Depo\+Set\+Fanout}, \hyperlink{class_wire_cell_1_1_img_1_1_slice_fanout_a98fe441e7e47306ff0352f547e9b9066}{Wire\+Cell\+::\+Img\+::\+Slice\+Fanout}, and \hyperlink{class_wire_cell_1_1_gen_1_1_depo_fanout_acb986929b5cd38a5ea197985b103102f}{Wire\+Cell\+::\+Gen\+::\+Depo\+Fanout}.
+
+
+
+Definition at line 58 of file I\+Node.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_node_aba7e537684cb4f2453796ff73da2d602_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a7bf4dfff146b72f866ab25f7662c56a0}\label{class_wire_cell_1_1_i_node_a7bf4dfff146b72f866ab25f7662c56a0}} 
+\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!reset@{reset}}
+\index{reset@{reset}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily virtual void Wire\+Cell\+::\+I\+Node\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Optional hook to be implemented in order to reset after an end of stream is encountered. Fixme\+: this should be removed. 
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_gen_1_1_drifter_a50935de34f9dd1171d76201b6081e9d7}{Wire\+Cell\+::\+Gen\+::\+Drifter}, \hyperlink{class_wire_cell_1_1_diffuser_abeacee310fe7c9ec3067c679319c33bd}{Wire\+Cell\+::\+Diffuser}, and \hyperlink{class_wire_cell_1_1_gen_1_1_truth_trace_i_d_aedeb529661e4353e8666b9b59395b7b5}{Wire\+Cell\+::\+Gen\+::\+Truth\+Trace\+ID}.
+
+
+
+Definition at line 65 of file I\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_node_a0b0763465adf5ba7febe8e378162b584}\label{class_wire_cell_1_1_i_node_a0b0763465adf5ba7febe8e378162b584}} 
+\index{Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}!signature@{signature}}
+\index{signature@{signature}!Wire\+Cell\+::\+I\+Node@{Wire\+Cell\+::\+I\+Node}}
+\subsubsection{\texorpdfstring{signature()}{signature()}}
+{\footnotesize\ttfamily virtual std\+::string Wire\+Cell\+::\+I\+Node\+::signature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+The signature is string unique to all classes that implement a particular calling signature. These should be defined in lower level interfaces such as a mythical I\+My\+Foo\+To\+Bar\+Converter. 
+
+Implemented in \hyperlink{class_wire_cell_1_1_i_source_node_a9361f7cad35e087800c5e59f27939977}{Wire\+Cell\+::\+I\+Source\+Node$<$ Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_source_node_a9361f7cad35e087800c5e59f27939977}{Wire\+Cell\+::\+I\+Source\+Node$<$ I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_source_node_a9361f7cad35e087800c5e59f27939977}{Wire\+Cell\+::\+I\+Source\+Node$<$ I\+Wire\+::vector $>$}, \hyperlink{class_wire_cell_1_1_i_source_node_a9361f7cad35e087800c5e59f27939977}{Wire\+Cell\+::\+I\+Source\+Node$<$ I\+Depo $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ Input\+Type, Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Wire\+Parameters, I\+Wire\+::vector $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Depo\+Set, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Slice, I\+Stripe\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Wire\+::vector, I\+Wire\+Summary $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Cluster, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Frame, I\+Slice\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Frame, I\+Frame $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Slice, I\+Blob\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Depo, I\+Depo $>$}, \hyperlink{class_wire_cell_1_1_i_function_node_af59f46cf19ca9fdf4aade1f289feedf2}{Wire\+Cell\+::\+I\+Function\+Node$<$ I\+Cluster, I\+Cluster $>$}, \hyperlink{class_wire_cell_1_1_i_frame_slicer_a1af9b9d4cc6a0925925a5d7de316e730}{Wire\+Cell\+::\+I\+Frame\+Slicer}, \hyperlink{class_wire_cell_1_1_i_ductor_ac1f7ad244c991efc08719c9bbe38367a}{Wire\+Cell\+::\+I\+Ductor}, \hyperlink{class_wire_cell_1_1_i_diffuser_a2e4e79b2547743bd56edf28e634b85ee}{Wire\+Cell\+::\+I\+Diffuser}, \hyperlink{class_wire_cell_1_1_i_frame_filter_ad6ce7c354f616ea9eec2f857165f936d}{Wire\+Cell\+::\+I\+Frame\+Filter}, \hyperlink{class_wire_cell_1_1_i_frame_slices_acd57c74cab5f5a7ec99fdd89f2bfdb50}{Wire\+Cell\+::\+I\+Frame\+Slices}, \hyperlink{class_wire_cell_1_1_i_drifter_af7f5abc751d9bd227d5bed94aa416a13}{Wire\+Cell\+::\+I\+Drifter}, \hyperlink{class_wire_cell_1_1_i_depo_collector_a0ea88b8d3e723800a2bbe3e4bd0c9793}{Wire\+Cell\+::\+I\+Depo\+Collector}, \hyperlink{class_wire_cell_1_1_i_depo_framer_ad188e2d941d34583f13758689d0c331f}{Wire\+Cell\+::\+I\+Depo\+Framer}, \hyperlink{class_wire_cell_1_1_i_cluster_filter_a8cb61b08cad46dea00a76a5393a402f8}{Wire\+Cell\+::\+I\+Cluster\+Filter}, \hyperlink{class_wire_cell_1_1_i_wire_generator_adfafb9936be3d0d4165ca580d48513c6}{Wire\+Cell\+::\+I\+Wire\+Generator}, \hyperlink{class_wire_cell_1_1_i_clustering_af2961973301a8026eb74caa78937097a}{Wire\+Cell\+::\+I\+Clustering}, \hyperlink{class_wire_cell_1_1_i_frame_joiner_a20082c7707a433faef85496553e7c7c1}{Wire\+Cell\+::\+I\+Frame\+Joiner}, \hyperlink{class_wire_cell_1_1_i_tiling_a6ee9a22c6c5b01b5b56d343e5b69a243}{Wire\+Cell\+::\+I\+Tiling}, \hyperlink{class_wire_cell_1_1_i_blob_set_processor_a387452d24275fc0ff7d5530ac7b96d85}{Wire\+Cell\+::\+I\+Blob\+Set\+Processor}, \hyperlink{class_wire_cell_1_1_i_cluster_fanin_ab6830dadbc5f673427ccaef1b4521023}{Wire\+Cell\+::\+I\+Cluster\+Fanin}, \hyperlink{class_wire_cell_1_1_i_depo_filter_a308041810acd84cc212497121c17ac02}{Wire\+Cell\+::\+I\+Depo\+Filter}, \hyperlink{class_wire_cell_1_1_i_depo_source_a2d49f81dff56ffe7fefed50219395c3b}{Wire\+Cell\+::\+I\+Depo\+Source}, \hyperlink{class_wire_cell_1_1_i_frame_fanout_af76c4f0a2dc33b08bcf3cad1d04b82f8}{Wire\+Cell\+::\+I\+Frame\+Fanout}, \hyperlink{class_wire_cell_1_1_i_frame_sink_af86ff5ba30366290d7ac9155c805e59b}{Wire\+Cell\+::\+I\+Frame\+Sink}, \hyperlink{class_wire_cell_1_1_i_slice_striper_af1d85a4c0813c7e2d7826b3006dca9bc}{Wire\+Cell\+::\+I\+Slice\+Striper}, \hyperlink{class_wire_cell_1_1_i_stripe_set_sink_aaa2c3a55c8466713a949936d192433a6}{Wire\+Cell\+::\+I\+Stripe\+Set\+Sink}, \hyperlink{class_wire_cell_1_1_i_depo_merger_a8a14876da574b0a8ef6989e145188843}{Wire\+Cell\+::\+I\+Depo\+Merger}, \hyperlink{class_wire_cell_1_1_i_frame_fanin_aebfb010bd1a132b11af4c25785e779bb}{Wire\+Cell\+::\+I\+Frame\+Fanin}, \hyperlink{class_wire_cell_1_1_i_slice_fanout_a7f2b90a58e2be888e25625e322f14c8d}{Wire\+Cell\+::\+I\+Slice\+Fanout}, \hyperlink{class_wire_cell_1_1_i_blob_set_fanin_a8649f2b27c10e56d730d47357caa36cc}{Wire\+Cell\+::\+I\+Blob\+Set\+Fanin}, \hyperlink{class_wire_cell_1_1_i_blob_set_fanout_aa5b7abf68906984b11c7f6fe4bc1cf26}{Wire\+Cell\+::\+I\+Blob\+Set\+Fanout}, \hyperlink{class_wire_cell_1_1_i_blob_set_sink_ac868e43c65bd6ebee9a5bceef87e7a57}{Wire\+Cell\+::\+I\+Blob\+Set\+Sink}, \hyperlink{class_wire_cell_1_1_i_cluster_framer_a9609083f2abb8a7fea192970140f165d}{Wire\+Cell\+::\+I\+Cluster\+Framer}, \hyperlink{class_wire_cell_1_1_i_cluster_sink_a0c940c8291898c059685fb78dcafa37c}{Wire\+Cell\+::\+I\+Cluster\+Sink}, \hyperlink{class_wire_cell_1_1_i_depo_fanout_a1c41ee7c457b895198b509027686bd53}{Wire\+Cell\+::\+I\+Depo\+Fanout}, \hyperlink{class_wire_cell_1_1_i_depo_set_fanout_a7cf17fc3925de7224c8c8472e09f689e}{Wire\+Cell\+::\+I\+Depo\+Set\+Fanout}, \hyperlink{class_wire_cell_1_1_i_depo_sink_a9cadeb680909c9d3e4726cd77cfab588}{Wire\+Cell\+::\+I\+Depo\+Sink}, \hyperlink{class_wire_cell_1_1_i_point_field_sink_a1f9b71af0582532c6ca6fce638280550}{Wire\+Cell\+::\+I\+Point\+Field\+Sink}, \hyperlink{class_wire_cell_1_1_i_scalar_field_sink_a4099838f1ea3c6ea0ea2e13bedebbfb7}{Wire\+Cell\+::\+I\+Scalar\+Field\+Sink}, \hyperlink{class_wire_cell_1_1_i_slice_frame_sink_acbe280d082cb788d8101afe67e0f2eaf}{Wire\+Cell\+::\+I\+Slice\+Frame\+Sink}, \hyperlink{class_wire_cell_1_1_i_wire_source_ad72fdd8f8e747a7ea5707fb5b0eef594}{Wire\+Cell\+::\+I\+Wire\+Source}, \hyperlink{class_wire_cell_1_1_i_wire_summarizer_aad4b2478a6e204a3333f3aa84e36a99a}{Wire\+Cell\+::\+I\+Wire\+Summarizer}, and \hyperlink{class_wire_cell_1_1_i_frame_splitter_aab4f057f5241c5c8f6b688450741daec}{Wire\+Cell\+::\+I\+Frame\+Splitter}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_node_8h}{I\+Node.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

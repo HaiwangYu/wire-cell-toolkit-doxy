@@ -1,0 +1,7 @@
+<map id="vsprintf" name="vsprintf">
+<area shape="rect" id="node2" href="$namespaceinternal.html#adb04322abcec003865318281a6952434" title="internal::printf" alt="" coords="146,5,247,32"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="119,56,275,83"/>
+<area shape="rect" id="node4" href="$format_8h.html#afe05b087244838ced775fa3f28134c34" title="to_string" alt="" coords="161,107,233,133"/>
+<area shape="rect" id="node5" href="$printf_8h.html#a185a2245cd387f5548816f3f004f8e33" title="FMT_ENABLE_IF_T" alt="" coords="125,157,268,184"/>
+<area shape="rect" id="node6" href="$format_8h.html#a719e8ab6760f525f663de75c59a68ef3" title="FMT_CHAR" alt="" coords="149,208,244,235"/>
+</map>

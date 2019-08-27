@@ -1,0 +1,8 @@
+<map id="basic_writer::write" name="basic_writer::write">
+<area shape="rect" id="node2" href="$namespaceinternal.html#ac4b0a3ecf8e30e217ef1dacb83170118" title="internal::reserve" alt="" coords="203,31,318,57"/>
+<area shape="rect" id="node5" href="$classbasic__string__view.html#a7fd9f4dcac1782259b0cd217af69d737" title="basic_string_view::size" alt="" coords="181,81,340,108"/>
+<area shape="rect" id="node6" href="$classbasic__string__view.html#a3433da1f079eb7874d97f32245bb08fa" title="basic_string_view::\lbegin" alt="" coords="193,133,328,174"/>
+<area shape="rect" id="node7" href="$classbasic__string__view.html#a7d262051736a662df0f35d6e39ebf773" title="basic_string_view::end" alt="" coords="183,199,338,225"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a8cf1f0f18fd01743349131744dc7c1c3" title="internal::get_container" alt="" coords="393,5,543,32"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a887ca8a3160ba683e62bd9d7418e821f" title="internal::make_checked" alt="" coords="388,56,548,83"/>
+</map>

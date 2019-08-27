@@ -1,0 +1,5 @@
+<map id="WireCell::Gen::AnodeFace::nplanes" name="WireCell::Gen::AnodeFace::nplanes">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_anode_face.html#a6ed6d7c6614695d5ace93aa10b0d2478" title="Return the wire plane with the given ident or nullptr if unknown. " alt="" coords="232,27,411,69"/>
+<area shape="rect" id="node3" href="$format_8h.html#ae6bfbee71e8bd00280b2d936f93f7b88" title="ptr" alt="" coords="529,5,567,32"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_anode_face.html#a57abc0570f11b050da061e694507b17d" title="Return the ident number of this face. " alt="" coords="459,57,637,98"/>
+</map>

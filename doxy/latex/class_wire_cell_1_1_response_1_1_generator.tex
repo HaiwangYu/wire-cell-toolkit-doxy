@@ -1,0 +1,110 @@
+\hypertarget{class_wire_cell_1_1_response_1_1_generator}{}\section{Wire\+Cell\+:\+:Response\+:\+:Generator Class Reference}
+\label{class_wire_cell_1_1_response_1_1_generator}\index{Wire\+Cell\+::\+Response\+::\+Generator@{Wire\+Cell\+::\+Response\+::\+Generator}}
+
+
+{\ttfamily \#include $<$Response.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Response\+:\+:Generator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_wire_cell_1_1_response_1_1_generator__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_response_1_1_generator_ad9bcb3eefdb95af170a2f546b4e46bcf}{$\sim$\+Generator} ()
+\item 
+virtual double \hyperlink{class_wire_cell_1_1_response_1_1_generator_a216d7f7bd22a1a781b6b00bd988e0136}{operator()} (double time) const =0
+\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \hyperlink{class_wire_cell_1_1_response_1_1_generator_aceed932e0bab5af1cb80981507667e5e}{generate} (const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Wire\+Cell\+::\+Waveform\+::\+Domain} \&domain, int nsamples)
+\begin{DoxyCompactList}\small\item\em F\+I\+X\+ME\+: eradicate Domain in favor of \hyperlink{class_wire_cell_1_1_binning}{Binning}. \end{DoxyCompactList}\item 
+\hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} \hyperlink{class_wire_cell_1_1_response_1_1_generator_a571c13c36686dc25f987b0c189a6ce92}{generate} (const \hyperlink{class_wire_cell_1_1_binning}{Wire\+Cell\+::\+Binning} \&tbins)
+\begin{DoxyCompactList}\small\item\em Lay down the function into a binned waveform. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 153 of file Response.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_response_1_1_generator_ad9bcb3eefdb95af170a2f546b4e46bcf}\label{class_wire_cell_1_1_response_1_1_generator_ad9bcb3eefdb95af170a2f546b4e46bcf}} 
+\index{Wire\+Cell\+::\+Response\+::\+Generator@{Wire\+Cell\+::\+Response\+::\+Generator}!````~Generator@{$\sim$\+Generator}}
+\index{````~Generator@{$\sim$\+Generator}!Wire\+Cell\+::\+Response\+::\+Generator@{Wire\+Cell\+::\+Response\+::\+Generator}}
+\subsubsection{\texorpdfstring{$\sim$\+Generator()}{~Generator()}}
+{\footnotesize\ttfamily Response\+::\+Generator\+::$\sim$\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 296 of file Response.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_response_1_1_generator_aceed932e0bab5af1cb80981507667e5e}\label{class_wire_cell_1_1_response_1_1_generator_aceed932e0bab5af1cb80981507667e5e}} 
+\index{Wire\+Cell\+::\+Response\+::\+Generator@{Wire\+Cell\+::\+Response\+::\+Generator}!generate@{generate}}
+\index{generate@{generate}!Wire\+Cell\+::\+Response\+::\+Generator@{Wire\+Cell\+::\+Response\+::\+Generator}}
+\subsubsection{\texorpdfstring{generate()}{generate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} Response\+::\+Generator\+::generate (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_1_1_waveform_aa783b1c2a84242349d5c798b7483727b}{Wire\+Cell\+::\+Waveform\+::\+Domain} \&}]{domain,  }\item[{int}]{nsamples }\end{DoxyParamCaption})}
+
+
+
+F\+I\+X\+ME\+: eradicate Domain in favor of \hyperlink{class_wire_cell_1_1_binning}{Binning}. 
+
+
+
+Definition at line 303 of file Response.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_response_1_1_generator_aceed932e0bab5af1cb80981507667e5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_response_1_1_generator_a571c13c36686dc25f987b0c189a6ce92}\label{class_wire_cell_1_1_response_1_1_generator_a571c13c36686dc25f987b0c189a6ce92}} 
+\index{Wire\+Cell\+::\+Response\+::\+Generator@{Wire\+Cell\+::\+Response\+::\+Generator}!generate@{generate}}
+\index{generate@{generate}!Wire\+Cell\+::\+Response\+::\+Generator@{Wire\+Cell\+::\+Response\+::\+Generator}}
+\subsubsection{\texorpdfstring{generate()}{generate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_waveform_a479175e541c8545e87cd8063b74b6956}{Wire\+Cell\+::\+Waveform\+::realseq\+\_\+t} Response\+::\+Generator\+::generate (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_binning}{Wire\+Cell\+::\+Binning} \&}]{tbins }\end{DoxyParamCaption})}
+
+
+
+Lay down the function into a binned waveform. 
+
+
+
+Definition at line 313 of file Response.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_wire_cell_1_1_response_1_1_generator_a571c13c36686dc25f987b0c189a6ce92_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_response_1_1_generator_a216d7f7bd22a1a781b6b00bd988e0136}\label{class_wire_cell_1_1_response_1_1_generator_a216d7f7bd22a1a781b6b00bd988e0136}} 
+\index{Wire\+Cell\+::\+Response\+::\+Generator@{Wire\+Cell\+::\+Response\+::\+Generator}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Response\+::\+Generator@{Wire\+Cell\+::\+Response\+::\+Generator}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual double Wire\+Cell\+::\+Response\+::\+Generator\+::operator() (\begin{DoxyParamCaption}\item[{double}]{time }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_response_1_1_hf_filter_afef6eabeb4c0632352c574f6f263405b}{Wire\+Cell\+::\+Response\+::\+Hf\+Filter}, \hyperlink{class_wire_cell_1_1_response_1_1_lf_filter_a476aa965cb6af0ba6dada07d6558c856}{Wire\+Cell\+::\+Response\+::\+Lf\+Filter}, \hyperlink{class_wire_cell_1_1_response_1_1_sys_resp_a765f0e9bb4395c2b36344b07e3ee2762}{Wire\+Cell\+::\+Response\+::\+Sys\+Resp}, \hyperlink{class_wire_cell_1_1_response_1_1_simple_r_c_a161bf08999bc62f35b1b1c5569053e06}{Wire\+Cell\+::\+Response\+::\+Simple\+RC}, and \hyperlink{class_wire_cell_1_1_response_1_1_cold_elec_a488dd88ca0566ba96fbd9df9c6d3e9b7}{Wire\+Cell\+::\+Response\+::\+Cold\+Elec}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_response_8h}{Response.\+h}\item 
+util/src/\hyperlink{_response_8cxx}{Response.\+cxx}\end{DoxyCompactItemize}

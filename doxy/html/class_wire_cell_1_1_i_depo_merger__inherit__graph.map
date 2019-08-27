@@ -1,0 +1,8 @@
+<map id="WireCell::IDepoMerger" name="WireCell::IDepoMerger">
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_depo_merger.html" title="WireCell::Gen::DepoMerger" alt="" coords="5,512,188,539"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_hydra_node.html" title="WireCell::IHydraNode\l\&lt; std::tuple\&lt; IDepo,\l IDepo \&gt;, std::tuple\&lt;\l IDepo \&gt; \&gt;" alt="" coords="21,319,172,389"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_hydra_node_base.html" title="WireCell::IHydraNodeBase" alt="" coords="7,244,187,271"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_node.html" title="WireCell::INode" alt="" coords="39,169,154,196"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; INode \&gt;" alt="" coords="21,80,172,121"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="31,5,162,32"/>
+</map>

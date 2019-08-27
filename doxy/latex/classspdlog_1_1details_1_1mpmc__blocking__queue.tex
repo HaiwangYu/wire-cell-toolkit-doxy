@@ -1,0 +1,138 @@
+\hypertarget{classspdlog_1_1details_1_1mpmc__blocking__queue}{}\section{spdlog\+:\+:details\+:\+:mpmc\+\_\+blocking\+\_\+queue$<$ T $>$ Class Template Reference}
+\label{classspdlog_1_1details_1_1mpmc__blocking__queue}\index{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue$<$ T $>$@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue$<$ T $>$}}
+
+
+{\ttfamily \#include $<$mpmc\+\_\+blocking\+\_\+q.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue_abb22a6f25c5fd96af5b163dc93eec397}{item\+\_\+type} = T
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue_ace609561c8f631202988ec49f95422fa}{mpmc\+\_\+blocking\+\_\+queue} (size\+\_\+t max\+\_\+items)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue_a3795640b651fcb2de66a21ef2bc221f1}{enqueue} (T \&\&item)
+\item 
+void \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue_a1280489c9035a705f50f04905a5ed394}{enqueue\+\_\+nowait} (T \&\&item)
+\item 
+bool \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue_af4015ea1657b393755f34d76c97a28d1}{dequeue\+\_\+for} (T \&popped\+\_\+item, std\+::chrono\+::milliseconds wait\+\_\+duration)
+\item 
+size\+\_\+t \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue_a15e3d12dff953034d5aad5590b8282cd}{overrun\+\_\+counter} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue$<$ T $>$}
+
+
+
+Definition at line 24 of file mpmc\+\_\+blocking\+\_\+q.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1mpmc__blocking__queue_abb22a6f25c5fd96af5b163dc93eec397}\label{classspdlog_1_1details_1_1mpmc__blocking__queue_abb22a6f25c5fd96af5b163dc93eec397}} 
+\index{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}!item\+\_\+type@{item\+\_\+type}}
+\index{item\+\_\+type@{item\+\_\+type}!spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}}
+\subsubsection{\texorpdfstring{item\+\_\+type}{item\_type}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+using \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue}{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}$<$ T $>$\+::\hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue_abb22a6f25c5fd96af5b163dc93eec397}{item\+\_\+type} =  T}
+
+
+
+Definition at line 27 of file mpmc\+\_\+blocking\+\_\+q.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1mpmc__blocking__queue_ace609561c8f631202988ec49f95422fa}\label{classspdlog_1_1details_1_1mpmc__blocking__queue_ace609561c8f631202988ec49f95422fa}} 
+\index{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}!mpmc\+\_\+blocking\+\_\+queue@{mpmc\+\_\+blocking\+\_\+queue}}
+\index{mpmc\+\_\+blocking\+\_\+queue@{mpmc\+\_\+blocking\+\_\+queue}!spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}}
+\subsubsection{\texorpdfstring{mpmc\+\_\+blocking\+\_\+queue()}{mpmc\_blocking\_queue()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue}{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}$<$ T $>$\+::\hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue}{mpmc\+\_\+blocking\+\_\+queue} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{max\+\_\+items }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 28 of file mpmc\+\_\+blocking\+\_\+q.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1mpmc__blocking__queue_af4015ea1657b393755f34d76c97a28d1}\label{classspdlog_1_1details_1_1mpmc__blocking__queue_af4015ea1657b393755f34d76c97a28d1}} 
+\index{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}!dequeue\+\_\+for@{dequeue\+\_\+for}}
+\index{dequeue\+\_\+for@{dequeue\+\_\+for}!spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}}
+\subsubsection{\texorpdfstring{dequeue\+\_\+for()}{dequeue\_for()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue}{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}$<$ T $>$\+::dequeue\+\_\+for (\begin{DoxyParamCaption}\item[{T \&}]{popped\+\_\+item,  }\item[{std\+::chrono\+::milliseconds}]{wait\+\_\+duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 57 of file mpmc\+\_\+blocking\+\_\+q.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1mpmc__blocking__queue_af4015ea1657b393755f34d76c97a28d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1mpmc__blocking__queue_a3795640b651fcb2de66a21ef2bc221f1}\label{classspdlog_1_1details_1_1mpmc__blocking__queue_a3795640b651fcb2de66a21ef2bc221f1}} 
+\index{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}}
+\subsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue}{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}$<$ T $>$\+::enqueue (\begin{DoxyParamCaption}\item[{T \&\&}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 35 of file mpmc\+\_\+blocking\+\_\+q.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1mpmc__blocking__queue_a3795640b651fcb2de66a21ef2bc221f1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1mpmc__blocking__queue_a1280489c9035a705f50f04905a5ed394}\label{classspdlog_1_1details_1_1mpmc__blocking__queue_a1280489c9035a705f50f04905a5ed394}} 
+\index{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}!enqueue\+\_\+nowait@{enqueue\+\_\+nowait}}
+\index{enqueue\+\_\+nowait@{enqueue\+\_\+nowait}!spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}}
+\subsubsection{\texorpdfstring{enqueue\+\_\+nowait()}{enqueue\_nowait()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue}{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}$<$ T $>$\+::enqueue\+\_\+nowait (\begin{DoxyParamCaption}\item[{T \&\&}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 46 of file mpmc\+\_\+blocking\+\_\+q.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1details_1_1mpmc__blocking__queue_a1280489c9035a705f50f04905a5ed394_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1details_1_1mpmc__blocking__queue_a15e3d12dff953034d5aad5590b8282cd}\label{classspdlog_1_1details_1_1mpmc__blocking__queue_a15e3d12dff953034d5aad5590b8282cd}} 
+\index{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}!overrun\+\_\+counter@{overrun\+\_\+counter}}
+\index{overrun\+\_\+counter@{overrun\+\_\+counter}!spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue@{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}}
+\subsubsection{\texorpdfstring{overrun\+\_\+counter()}{overrun\_counter()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+size\+\_\+t \hyperlink{classspdlog_1_1details_1_1mpmc__blocking__queue}{spdlog\+::details\+::mpmc\+\_\+blocking\+\_\+queue}$<$ T $>$\+::overrun\+\_\+counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 108 of file mpmc\+\_\+blocking\+\_\+q.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/details/\hyperlink{mpmc__blocking__q_8h}{mpmc\+\_\+blocking\+\_\+q.\+h}\end{DoxyCompactItemize}

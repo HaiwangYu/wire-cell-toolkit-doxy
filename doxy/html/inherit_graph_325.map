@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_wire_cell_tbb_1_1_node_wrapper.html" title="WireCellTbb::NodeWrapper" alt="" coords="5,132,188,159"/>
+<area shape="rect" id="node2" href="$class_wire_cell_tbb_1_1_fanin_wrapper.html" title="WireCellTbb::FaninWrapper" alt="" coords="256,5,439,32"/>
+<area shape="rect" id="node3" href="$class_wire_cell_tbb_1_1_function_wrapper.html" title="WireCellTbb::FunctionWrapper" alt="" coords="247,56,448,83"/>
+<area shape="rect" id="node4" href="$class_wire_cell_tbb_1_1_join_wrapper.html" title="WireCellTbb::JoinWrapper" alt="" coords="260,107,435,133"/>
+<area shape="rect" id="node5" href="$class_wire_cell_tbb_1_1_queuedout_wrapper.html" title="WireCellTbb::QueuedoutWrapper" alt="" coords="240,157,455,184"/>
+<area shape="rect" id="node6" href="$class_wire_cell_tbb_1_1_sink_node_wrapper.html" title="WireCellTbb::SinkNodeWrapper" alt="" coords="243,208,451,235"/>
+<area shape="rect" id="node7" href="$class_wire_cell_tbb_1_1_source_node_wrapper.html" title="WireCellTbb::SourceNodeWrapper" alt="" coords="236,259,459,285"/>
+</map>

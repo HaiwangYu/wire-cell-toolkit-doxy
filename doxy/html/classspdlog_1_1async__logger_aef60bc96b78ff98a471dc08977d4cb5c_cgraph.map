@@ -1,0 +1,5 @@
+<map id="spdlog::async_logger::clone" name="spdlog::async_logger::clone">
+<area shape="rect" id="node2" href="$classspdlog_1_1logger.html#a20dc8198d08c98f84ae10be635108bef" title="spdlog::logger::level" alt="" coords="199,5,337,32"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1logger.html#a1b9b7304f017163d181692e41101b648" title="spdlog::logger::flush\l_level" alt="" coords="199,57,337,98"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1logger.html#ac6c864952112a3bbe4084884cc1d64a1" title="spdlog::logger::error\l_handler" alt="" coords="199,122,337,163"/>
+</map>

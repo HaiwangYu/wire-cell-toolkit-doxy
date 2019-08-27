@@ -1,0 +1,17 @@
+<map id="WireCell::SigProc::ROI_formation::find_ROI_loose" name="WireCell::SigProc::ROI_formation::find_ROI_loose">
+<area shape="rect" id="node2" href="$namespaceinternal.html#a265f36d9dee68d3f44381347ef2fd5cb" title="internal::begin" alt="" coords="411,193,513,219"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="415,315,509,342"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#aadada4e6a77ac41217a7b8858b26355f" title="WireCell::SigProc::\lROI_formation::extend\l_ROI_loose" alt="" coords="189,239,344,295"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell_1_1_waveform.html#a6aa0cf31fb8548b1f74ffb3f77350668" title="Return sum of square of all entries in sequence. " alt="" coords="392,247,532,288"/>
+<area shape="rect" id="node6" href="$namespace_wire_cell_1_1_waveform.html#af0395e9b0e5e9e86a26579badb834092" title="WireCell::Waveform\l::mean_rms" alt="" coords="591,5,731,47"/>
+<area shape="rect" id="node8" href="$namespace_wire_cell_1_1_waveform.html#af5e9352cbf35ddaf2f95e924d241a2aa" title="WireCell::Waveform\l::median" alt="" coords="591,71,731,112"/>
+<area shape="rect" id="node9" href="$namespace_wire_cell_1_1_waveform.html#a9116b8ebe848721a04d5100fa672b0aa" title="WireCell::Waveform\l::percentile" alt="" coords="807,113,947,155"/>
+<area shape="rect" id="node10" href="$namespace_wire_cell_1_1_waveform.html#a9a72f0b40ec9e5b44713c59f338f6fd3" title="WireCell::Waveform\l::median_binned" alt="" coords="591,188,731,229"/>
+<area shape="rect" id="node11" href="$namespace_wire_cell_1_1_waveform.html#ae080d239c8b4426a6d74f9fd8ce85f1a" title="WireCell::Waveform\l::percentile_binned" alt="" coords="807,204,947,245"/>
+<area shape="rect" id="node12" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="580,305,743,331"/>
+<area shape="rect" id="node13" href="$namespace_wire_cell_1_1_waveform.html#aafc9307577968266045319c91ce3ab66" title="WireCell::Waveform\l::linear_convolve" alt="" coords="591,356,731,397"/>
+<area shape="rect" id="node14" href="$namespace_wire_cell_1_1_waveform.html#abd675d86a770025f3ace47b277bf0e0e" title="WireCell::Waveform\l::replace_convolve" alt="" coords="591,421,731,463"/>
+<area shape="rect" id="node15" href="$namespace_wire_cell_1_1_waveform.html#a69255dad704fcb71fa53745e90a2f0e1" title="WireCell::Waveform\l::idft" alt="" coords="591,487,731,528"/>
+<area shape="rect" id="node16" href="$namespace_wire_cell_1_1_waveform.html#a86192f53532ba1e28516c2f8f3a9fa44" title="Return the smallest, most frequent value to appear in vector. " alt="" coords="591,552,731,593"/>
+<area shape="rect" id="node7" href="$namespace_wire_cell_1_1_waveform.html#a4c7b82a4567d6c94227398f9511ffb92" title="Return sum of all entries in sequence. " alt="" coords="791,13,964,39"/>
+</map>

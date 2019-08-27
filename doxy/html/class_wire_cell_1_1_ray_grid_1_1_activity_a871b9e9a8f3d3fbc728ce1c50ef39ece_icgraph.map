@@ -1,0 +1,7 @@
+<map id="WireCell::RayGrid::Activity::layer" name="WireCell::RayGrid::Activity::layer">
+<area shape="rect" id="node2" href="$namespace_wire_cell_1_1_ray_grid.html#ab7bb8eba0ead6662043107193ad27361" title="WireCell::RayGrid::\loperator\&lt;\&lt;" alt="" coords="189,5,325,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#aed4ac25a6f5ce1a5933b04f04858597e" title="WireCell::RayGrid::\lActivity::Activity" alt="" coords="189,71,325,112"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_ray_grid_1_1_tiling.html#a621e1fdb35b900f3eb6dcd2e933b40d9" title="WireCell::RayGrid::\lTiling::projection" alt="" coords="189,136,325,177"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_ray_grid_1_1_activity.html#a0c8f129658f18402202b7c9605dfe26f" title="WireCell::RayGrid::\lActivity::subspan" alt="" coords="373,71,509,112"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_ray_grid_1_1_tiling.html#a1f7992b6111368304757bd5bab3346e0" title="WireCell::RayGrid::\lTiling::operator()" alt="" coords="373,136,509,177"/>
+</map>

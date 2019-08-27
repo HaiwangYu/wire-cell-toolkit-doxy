@@ -1,0 +1,108 @@
+\hypertarget{class_wire_cell_1_1_i_component}{}\section{Wire\+Cell\+:\+:I\+Component$<$ Type $>$ Class Template Reference}
+\label{class_wire_cell_1_1_i_component}\index{Wire\+Cell\+::\+I\+Component$<$ Type $>$@{Wire\+Cell\+::\+I\+Component$<$ Type $>$}}
+
+
+{\ttfamily \#include $<$I\+Component.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Component$<$ Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_wire_cell_1_1_i_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Component$<$ Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_wire_cell_1_1_i_component__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ Type $>$ \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{pointer}
+\begin{DoxyCompactList}\small\item\em Access subclass facet by pointer. \end{DoxyCompactList}\item 
+typedef std\+::vector$<$ \hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{pointer} $>$ \hyperlink{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}{vector}
+\begin{DoxyCompactList}\small\item\em Vector of shared pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_component_a3415deca75dbbfae924ad33b8cd364d4}{$\sim$\+I\+Component} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Type$>$\newline
+class Wire\+Cell\+::\+I\+Component$<$ Type $>$}
+
+A component calls out a particular interface as being identified as important to the system. Inheriting from \hyperlink{class_wire_cell_1_1_i_component}{I\+Component} follows the C\+R\+TP pattern\+:
+
+class I\+My\+Component \+: public I\+Component$<$\+I\+My\+Component$>$ \{ public\+: void mymethod() = 0; \};
+
+class My\+Concrete\+Component \+: public I\+My\+Component \{ public\+: void mymethod(); \};
+
+I\+My\+Component\+::pointer mycomp(new My\+Concrete\+Component); mycomp-\/$>$mymethod();
+
+See \hyperlink{class_wire_cell_1_1_named_factory}{Wire\+Cell\+::\+Named\+Factory} for one creation pattern that works with I\+Components. 
+
+Definition at line 29 of file I\+Component.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}\label{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}} 
+\index{Wire\+Cell\+::\+I\+Component@{Wire\+Cell\+::\+I\+Component}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Component@{Wire\+Cell\+::\+I\+Component}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+typedef std\+::shared\+\_\+ptr$<$Type$>$ \hyperlink{class_wire_cell_1_1_i_component}{Wire\+Cell\+::\+I\+Component}$<$ Type $>$\+::\hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{pointer}}
+
+
+
+Access subclass facet by pointer. 
+
+
+
+Definition at line 33 of file I\+Component.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}\label{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}} 
+\index{Wire\+Cell\+::\+I\+Component@{Wire\+Cell\+::\+I\+Component}!vector@{vector}}
+\index{vector@{vector}!Wire\+Cell\+::\+I\+Component@{Wire\+Cell\+::\+I\+Component}}
+\subsubsection{\texorpdfstring{vector}{vector}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+typedef std\+::vector$<$\hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{pointer}$>$ \hyperlink{class_wire_cell_1_1_i_component}{Wire\+Cell\+::\+I\+Component}$<$ Type $>$\+::\hyperlink{class_wire_cell_1_1_i_component_a18978d88ce697af5941655a89660fd4e}{vector}}
+
+
+
+Vector of shared pointers. 
+
+
+
+Definition at line 36 of file I\+Component.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_component_a3415deca75dbbfae924ad33b8cd364d4}\label{class_wire_cell_1_1_i_component_a3415deca75dbbfae924ad33b8cd364d4}} 
+\index{Wire\+Cell\+::\+I\+Component@{Wire\+Cell\+::\+I\+Component}!````~I\+Component@{$\sim$\+I\+Component}}
+\index{````~I\+Component@{$\sim$\+I\+Component}!Wire\+Cell\+::\+I\+Component@{Wire\+Cell\+::\+I\+Component}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Component()}{~IComponent()}}
+{\footnotesize\ttfamily template$<$class Type$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_component}{Wire\+Cell\+::\+I\+Component}$<$ Type $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_i_component}{I\+Component} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 38 of file I\+Component.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_i_component_8h}{I\+Component.\+h}\end{DoxyCompactItemize}

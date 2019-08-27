@@ -1,0 +1,8 @@
+<map id="WireCell::IteratorBase::~IteratorBase" name="WireCell::IteratorBase::~IteratorBase">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_iterator_base.html#aa2dc364b16da871fd63983ec04b58ca0" title="WireCell::IteratorBase\l::operator==" alt="" coords="204,5,355,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_iterator_base.html#a25557feb11a250eb324a33b7114f2f40" title="WireCell::IteratorBase\l::operator!=" alt="" coords="204,71,355,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_iterator_base.html#ad62dd2f5a05b89ce63ad9b9e62167856" title="WireCell::IteratorBase\l::operator=" alt="" coords="204,136,355,177"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_iterator_base.html#a8f75296f57c6f4261dc3c4f7c085a5b8" title="WireCell::IteratorBase\l::operator++" alt="" coords="204,201,355,243"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_iterator_base.html#a24cb604201a8b614f8ee4aa8062ae63c" title="WireCell::IteratorBase\l::operator*" alt="" coords="204,267,355,308"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_iterator_base.html#a6bb7f1f53c37dc1518291f09f493f2be" title="WireCell::IteratorBase\l::clone" alt="" coords="204,332,355,373"/>
+</map>

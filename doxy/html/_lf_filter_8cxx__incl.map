@@ -1,0 +1,29 @@
+<map id="sigproc/src/LfFilter.cxx" name="sigproc/src/LfFilter.cxx">
+<area shape="rect" id="node2" href="$_lf_filter_8h.html" title="WireCellSigProc/LfFilter.h" alt="" coords="749,229,922,256"/>
+<area shape="rect" id="node31" href="$_named_factory_8h.html" title="WireCellUtil/NamedFactory.h" alt="" coords="1775,80,1968,107"/>
+<area shape="rect" id="node3" href="$_i_filter_waveform_8h.html" title="WireCellIface/IFilterWaveform.h" alt="" coords="292,379,501,405"/>
+<area shape="rect" id="node15" href="$_i_configurable_8h.html" title="WireCellIface/IConfigurable.h" alt="" coords="525,379,719,405"/>
+<area shape="rect" id="node21" href="$_response_8h.html" title="WireCellUtil/Response.h" alt="" coords="879,304,1045,331"/>
+<area shape="rect" id="node4" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="245,453,423,480"/>
+<area shape="rect" id="node8" href="$_waveform_8h.html" title="WireCellUtil/Waveform.h" alt="" coords="448,453,615,480"/>
+<area shape="rect" id="node5" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="5,535,164,562"/>
+<area shape="rect" id="node16" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="639,453,823,480"/>
+<area shape="rect" id="node22" href="$_binning_8h.html" title="WireCellUtil/Binning.h" alt="" coords="1464,453,1615,480"/>
+<area shape="rect" id="node25" href="$_units_8h.html" title="WireCellUtil/Units.h" alt="" coords="794,379,933,405"/>
+<area shape="rect" id="node26" href="$_array_8h.html" title="WireCellUtil/Array.h" alt="" coords="957,379,1095,405"/>
+<area shape="rect" id="node28" href="$_point_8h.html" title="WireCellUtil/Point.h" alt="" coords="1123,379,1260,405"/>
+<area shape="rect" id="node29" href="$_d3_vector_8h.html" title="WireCellUtil/D3Vector.h" alt="" coords="1111,453,1274,480"/>
+<area shape="rect" id="node32" href="$_i_factory_8h.html" title="WireCellUtil/IFactory.h" alt="" coords="319,304,474,331"/>
+<area shape="rect" id="node33" href="$_singleton_8h.html" title="WireCellUtil/Singleton.h" alt="" coords="2221,155,2383,181"/>
+<area shape="rect" id="node34" href="$_plugin_manager_8h.html" title="WireCellUtil/PluginManager.h" alt="" coords="1843,155,2036,181"/>
+<area shape="rect" id="node35" href="$_logging_8h.html" title="WireCellUtil/Logging.h" alt="" coords="2137,229,2289,256"/>
+<area shape="rect" id="node43" href="$_type_8h.html" title="WireCellUtil/Type.h" alt="" coords="2061,155,2197,181"/>
+<area shape="rect" id="node45" href="$_string_8h.html" title="WireCellUtil/String.h" alt="" coords="1741,453,1882,480"/>
+<area shape="rect" id="node48" href="$_exceptions_8h.html" title="WireCellUtil/Exceptions.h" alt="" coords="2509,155,2681,181"/>
+<area shape="rect" id="node36" href="$spdlog_8h.html" title="spdlog/spdlog.h" alt="" coords="2283,304,2396,331"/>
+<area shape="rect" id="node42" href="$ostr_8h.html" title="spdlog/fmt/ostr.h" alt="" coords="2138,304,2258,331"/>
+<area shape="rect" id="node37" href="$common_8h.html" title="spdlog/common.h" alt="" coords="2286,535,2411,562"/>
+<area shape="rect" id="node39" href="$registry_8h.html" title="spdlog/details/registry.h" alt="" coords="2379,379,2539,405"/>
+<area shape="rect" id="node40" href="$logger_8h.html" title="spdlog/logger.h" alt="" coords="2193,453,2304,480"/>
+<area shape="rect" id="node41" href="$version_8h.html" title="spdlog/version.h" alt="" coords="2137,379,2254,405"/>
+</map>

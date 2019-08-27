@@ -1,0 +1,241 @@
+\hypertarget{struct_wire_cell_1_1_generator_iter}{}\section{Wire\+Cell\+:\+:Generator\+Iter$<$ Callable, Value $>$ Struct Template Reference}
+\label{struct_wire_cell_1_1_generator_iter}\index{Wire\+Cell\+::\+Generator\+Iter$<$ Callable, Value $>$@{Wire\+Cell\+::\+Generator\+Iter$<$ Callable, Value $>$}}
+
+
+{\ttfamily \#include $<$Generator\+Iter.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Generator\+Iter$<$ Callable, Value $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_generator_iter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Generator\+Iter$<$ Callable, Value $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_generator_iter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_wire_cell_1_1_generator_iter_af83b73da6292cce8ab5548afefa69bb7}{Generator\+Iter} (const Callable \&\hyperlink{struct_wire_cell_1_1_generator_iter_a463078840ddad21cde38fa77db42ae64}{func})
+\item 
+void \hyperlink{struct_wire_cell_1_1_generator_iter_a3b5e2a57fd913539527a00a2600f32b0}{advance} ()
+\item 
+Value \hyperlink{struct_wire_cell_1_1_generator_iter_a6ef28188ca78788ba30d7960b2b48e12}{operator$\ast$} () const
+\item 
+\hyperlink{struct_wire_cell_1_1_generator_iter}{Generator\+Iter} \& \hyperlink{struct_wire_cell_1_1_generator_iter_afdbd700ee6f8d0e518b39ec585de2af8}{operator++} ()
+\item 
+\hyperlink{struct_wire_cell_1_1_generator_iter}{Generator\+Iter} \hyperlink{struct_wire_cell_1_1_generator_iter_a017176bffd48d6849a86840c21a0d97e}{operator++} (int)
+\item 
+bool \hyperlink{struct_wire_cell_1_1_generator_iter_aad7a21fe64122c1626f6af8c7d42d7c6}{operator==} (const \hyperlink{struct_wire_cell_1_1_generator_iter}{Generator\+Iter} \&rhs) const
+\item 
+bool \hyperlink{struct_wire_cell_1_1_generator_iter_a5d54d0b9600540460ee19c5bbc0f0bc7}{operator!=} (const \hyperlink{struct_wire_cell_1_1_generator_iter}{Generator\+Iter} \&rhs) const
+\item 
+\hyperlink{struct_wire_cell_1_1_generator_iter_a1d40f6d528073e96818ea1db9580efa3}{operator bool} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{struct_wire_cell_1_1_generator_iter_a1a458da534a9445b1cffc79256218e0b}{count}
+\item 
+Callable \hyperlink{struct_wire_cell_1_1_generator_iter_a463078840ddad21cde38fa77db42ae64}{func}
+\item 
+Value \hyperlink{struct_wire_cell_1_1_generator_iter_a7b7468149505fd80fbac1ae6a1d77a33}{last\+\_\+val}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Callable, typename Value$>$\newline
+struct Wire\+Cell\+::\+Generator\+Iter$<$ Callable, Value $>$}
+
+A generator iterator using a Callable.
+
+Requirements on Callable
+\begin{DoxyItemize}
+\item returns Value.
+\item evaluates as false when it is not exhausted, true otherwise.
+\item copy-\/by-\/value, copies are independent.
+\item instances must be testable for equality.
+\end{DoxyItemize}
+
+Inspired by\+: \href{http://stackoverflow.com/questions/27604201/implement-lazy-generator-as-forward-iterator-in-c}{\tt http\+://stackoverflow.\+com/questions/27604201/implement-\/lazy-\/generator-\/as-\/forward-\/iterator-\/in-\/c} 
+
+Definition at line 31 of file Generator\+Iter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_af83b73da6292cce8ab5548afefa69bb7}\label{struct_wire_cell_1_1_generator_iter_af83b73da6292cce8ab5548afefa69bb7}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!Generator\+Iter@{Generator\+Iter}}
+\index{Generator\+Iter@{Generator\+Iter}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{Generator\+Iter()}{GeneratorIter()}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+\hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::\hyperlink{struct_wire_cell_1_1_generator_iter}{Generator\+Iter} (\begin{DoxyParamCaption}\item[{const Callable \&}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file Generator\+Iter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_generator_iter_af83b73da6292cce8ab5548afefa69bb7_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_a3b5e2a57fd913539527a00a2600f32b0}\label{struct_wire_cell_1_1_generator_iter_a3b5e2a57fd913539527a00a2600f32b0}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!advance@{advance}}
+\index{advance@{advance}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{advance()}{advance()}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+void \hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::advance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 42 of file Generator\+Iter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_generator_iter_a3b5e2a57fd913539527a00a2600f32b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_a1d40f6d528073e96818ea1db9580efa3}\label{struct_wire_cell_1_1_generator_iter_a1d40f6d528073e96818ea1db9580efa3}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{operator bool()}{operator bool()}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+\hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::operator bool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file Generator\+Iter.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_a5d54d0b9600540460ee19c5bbc0f0bc7}\label{struct_wire_cell_1_1_generator_iter_a5d54d0b9600540460ee19c5bbc0f0bc7}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+bool \hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_generator_iter}{Generator\+Iter}$<$ Callable, Value $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 62 of file Generator\+Iter.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_a6ef28188ca78788ba30d7960b2b48e12}\label{struct_wire_cell_1_1_generator_iter_a6ef28188ca78788ba30d7960b2b48e12}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+Value \hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 47 of file Generator\+Iter.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_afdbd700ee6f8d0e518b39ec585de2af8}\label{struct_wire_cell_1_1_generator_iter_afdbd700ee6f8d0e518b39ec585de2af8}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!operator++@{operator++}}
+\index{operator++@{operator++}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+\hyperlink{struct_wire_cell_1_1_generator_iter}{Generator\+Iter}\& \hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 50 of file Generator\+Iter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_generator_iter_afdbd700ee6f8d0e518b39ec585de2af8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_a017176bffd48d6849a86840c21a0d97e}\label{struct_wire_cell_1_1_generator_iter_a017176bffd48d6849a86840c21a0d97e}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!operator++@{operator++}}
+\index{operator++@{operator++}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+\hyperlink{struct_wire_cell_1_1_generator_iter}{Generator\+Iter} \hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 54 of file Generator\+Iter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_wire_cell_1_1_generator_iter_a017176bffd48d6849a86840c21a0d97e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_aad7a21fe64122c1626f6af8c7d42d7c6}\label{struct_wire_cell_1_1_generator_iter_aad7a21fe64122c1626f6af8c7d42d7c6}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!operator==@{operator==}}
+\index{operator==@{operator==}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+bool \hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_generator_iter}{Generator\+Iter}$<$ Callable, Value $>$ \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 59 of file Generator\+Iter.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_a1a458da534a9445b1cffc79256218e0b}\label{struct_wire_cell_1_1_generator_iter_a1a458da534a9445b1cffc79256218e0b}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!count@{count}}
+\index{count@{count}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+size\+\_\+t \hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::count}
+
+
+
+Definition at line 70 of file Generator\+Iter.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_a463078840ddad21cde38fa77db42ae64}\label{struct_wire_cell_1_1_generator_iter_a463078840ddad21cde38fa77db42ae64}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!func@{func}}
+\index{func@{func}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{func}{func}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+Callable \hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::func}
+
+
+
+Definition at line 71 of file Generator\+Iter.\+h.
+
+\mbox{\Hypertarget{struct_wire_cell_1_1_generator_iter_a7b7468149505fd80fbac1ae6a1d77a33}\label{struct_wire_cell_1_1_generator_iter_a7b7468149505fd80fbac1ae6a1d77a33}} 
+\index{Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}!last\+\_\+val@{last\+\_\+val}}
+\index{last\+\_\+val@{last\+\_\+val}!Wire\+Cell\+::\+Generator\+Iter@{Wire\+Cell\+::\+Generator\+Iter}}
+\subsubsection{\texorpdfstring{last\+\_\+val}{last\_val}}
+{\footnotesize\ttfamily template$<$typename Callable , typename Value $>$ \\
+Value \hyperlink{struct_wire_cell_1_1_generator_iter}{Wire\+Cell\+::\+Generator\+Iter}$<$ Callable, Value $>$\+::last\+\_\+val}
+
+
+
+Definition at line 72 of file Generator\+Iter.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_generator_iter_8h}{Generator\+Iter.\+h}\end{DoxyCompactItemize}

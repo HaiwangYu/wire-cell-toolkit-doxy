@@ -1,0 +1,47 @@
+\hypertarget{rotating__file__sink_8h}{}\section{util/inc/spdlog/sinks/rotating\+\_\+file\+\_\+sink.h File Reference}
+\label{rotating__file__sink_8h}\index{util/inc/spdlog/sinks/rotating\+\_\+file\+\_\+sink.\+h@{util/inc/spdlog/sinks/rotating\+\_\+file\+\_\+sink.\+h}}
+{\ttfamily \#include \char`\"{}spdlog/spdlog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/file\+\_\+helper.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/details/null\+\_\+mutex.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/fmt/fmt.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spdlog/sinks/base\+\_\+sink.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cerrno$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+Include dependency graph for rotating\+\_\+file\+\_\+sink.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rotating__file__sink_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classspdlog_1_1sinks_1_1rotating__file__sink}{spdlog\+::sinks\+::rotating\+\_\+file\+\_\+sink$<$ Mutex $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacespdlog}{spdlog}
+\item 
+ \hyperlink{namespacespdlog_1_1sinks}{spdlog\+::sinks}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_a70b4fab83ca180ef19c4124f4823aeaa}{spdlog\+::sinks\+::rotating\+\_\+file\+\_\+sink\+\_\+mt} = rotating\+\_\+file\+\_\+sink$<$ std\+::mutex $>$
+\item 
+using \hyperlink{namespacespdlog_1_1sinks_a694eff66a11012e2fbe3fa3a1c963c96}{spdlog\+::sinks\+::rotating\+\_\+file\+\_\+sink\+\_\+st} = rotating\+\_\+file\+\_\+sink$<$ details\+::null\+\_\+mutex $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_a42401c73c1dede7000852f7229b7aa9c}{spdlog\+::rotating\+\_\+logger\+\_\+mt} (const std\+::string \&logger\+\_\+name, const filename\+\_\+t \&filename, size\+\_\+t max\+\_\+file\+\_\+size, size\+\_\+t max\+\_\+files)
+\item 
+{\footnotesize template$<$typename Factory  = default\+\_\+factory$>$ }\\std\+::shared\+\_\+ptr$<$ logger $>$ \hyperlink{namespacespdlog_aa94a9f4d699643b6cdecf107ec5340d6}{spdlog\+::rotating\+\_\+logger\+\_\+st} (const std\+::string \&logger\+\_\+name, const filename\+\_\+t \&filename, size\+\_\+t max\+\_\+file\+\_\+size, size\+\_\+t max\+\_\+files)
+\end{DoxyCompactItemize}

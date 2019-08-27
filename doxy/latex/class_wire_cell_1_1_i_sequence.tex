@@ -1,0 +1,361 @@
+\hypertarget{class_wire_cell_1_1_i_sequence}{}\section{Wire\+Cell\+:\+:I\+Sequence$<$ I\+Data\+Class $>$ Class Template Reference}
+\label{class_wire_cell_1_1_i_sequence}\index{Wire\+Cell\+::\+I\+Sequence$<$ I\+Data\+Class $>$@{Wire\+Cell\+::\+I\+Sequence$<$ I\+Data\+Class $>$}}
+
+
+{\ttfamily \#include $<$I\+Sequence.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Sequence$<$ I\+Data\+Class $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_wire_cell_1_1_i_sequence__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{class_wire_cell_1_1_i_sequence}{I\+Sequence}$<$ I\+Data\+Class $>$ \hyperlink{class_wire_cell_1_1_i_sequence_aae676a1415a6c843082041fb7f38b963}{this\+\_\+type}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_sequence_aae676a1415a6c843082041fb7f38b963}{this\+\_\+type} $>$ \hyperlink{class_wire_cell_1_1_i_sequence_aad75bbc31a91c10119d21d458129c05c}{pointer}
+\begin{DoxyCompactList}\small\item\em Access this sequence via shared (non-\/const) pointer. \end{DoxyCompactList}\item 
+typedef I\+Data\+Class\+::iterator \hyperlink{class_wire_cell_1_1_i_sequence_ac9bcf643972944d21c90743d9281f47a}{iterator}
+\item 
+typedef I\+Data\+Class\+::const\+\_\+iterator \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator}
+\item 
+typedef I\+Data\+Class\+::base\+\_\+iterator \hyperlink{class_wire_cell_1_1_i_sequence_af99d3e9815ec440bd96ca06a6e65f26c}{base\+\_\+iterator}
+\item 
+typedef I\+Data\+Class\+::iterator\+\_\+range \hyperlink{class_wire_cell_1_1_i_sequence_ac49f0584f3aaafc13a525953ebafad95}{iterator\+\_\+range}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator} \hyperlink{class_wire_cell_1_1_i_sequence_a2d9cee960a7ae6081d5f5f1f94bdf7f9}{cbegin} () const =0
+\begin{DoxyCompactList}\small\item\em Concrete class must implement\+: \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator} \hyperlink{class_wire_cell_1_1_i_sequence_a0707bb6db2b2cf79cbf7a6e3c05a7e14}{cend} () const =0
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator} \hyperlink{class_wire_cell_1_1_i_sequence_a38e93257d35e23239456ff47ffd6f172}{begin} () const
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator} \hyperlink{class_wire_cell_1_1_i_sequence_afc9e30f4829c0b1ac9b8006f6eefd411}{end} () const
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_ac9bcf643972944d21c90743d9281f47a}{iterator} \hyperlink{class_wire_cell_1_1_i_sequence_a03153c2cdc4d34c0feca9b214d4ed2a8}{begin} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_ac9bcf643972944d21c90743d9281f47a}{iterator} \hyperlink{class_wire_cell_1_1_i_sequence_a4aeda2d0a7c1ffd3b1a708c7e983487a}{end} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_ac49f0584f3aaafc13a525953ebafad95}{iterator\+\_\+range} \hyperlink{class_wire_cell_1_1_i_sequence_a5ea837972a6ba68ef563902edd25a8a4}{range} ()
+\begin{DoxyCompactList}\small\item\em Return begin/end pair as iterator range. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_a961611c1a2718fd8ac5bfe3120e6e46f}{$\sim$\+I\+Sequence} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Other\+Iter $>$ }\\static \hyperlink{class_wire_cell_1_1_i_sequence_ac9bcf643972944d21c90743d9281f47a}{iterator} \hyperlink{class_wire_cell_1_1_i_sequence_a0049905d5140aca88b0ef1fdf5ecc2ac}{adapt} (const Other\+Iter \&itr)
+\begin{DoxyCompactList}\small\item\em Adapt one iterator to the standard facade iterator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Other\+Iter $>$ }\\static \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator} \hyperlink{class_wire_cell_1_1_i_sequence_a14e5cb0b4dbac2c6aa82ee4734ce6b90}{cadapt} (const Other\+Iter \&itr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class I\+Data\+Class$>$\newline
+class Wire\+Cell\+::\+I\+Sequence$<$ I\+Data\+Class $>$}
+
+Abstract base class interface for sequence of data providing facade iterators over abstract base iterators.
+
+If a subclass multiply-\/inherits then one has to do myobj-\/$>$\hyperlink{class_wire_cell_1_1_i_sequence_a03153c2cdc4d34c0feca9b214d4ed2a8}{I\+Sequence$<$\+I\+This\+Data$>$\+::begin()} etc or cast to the desired interface. 
+
+Definition at line 18 of file I\+Sequence.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_af99d3e9815ec440bd96ca06a6e65f26c}\label{class_wire_cell_1_1_i_sequence_af99d3e9815ec440bd96ca06a6e65f26c}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!base\+\_\+iterator@{base\+\_\+iterator}}
+\index{base\+\_\+iterator@{base\+\_\+iterator}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{base\+\_\+iterator}{base\_iterator}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+typedef I\+Data\+Class\+::base\+\_\+iterator \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::\hyperlink{class_wire_cell_1_1_i_sequence_af99d3e9815ec440bd96ca06a6e65f26c}{base\+\_\+iterator}}
+
+
+
+Definition at line 27 of file I\+Sequence.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}\label{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{const\+\_\+iterator}{const\_iterator}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+typedef I\+Data\+Class\+::const\+\_\+iterator \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::\hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator}}
+
+
+
+Definition at line 26 of file I\+Sequence.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_ac9bcf643972944d21c90743d9281f47a}\label{class_wire_cell_1_1_i_sequence_ac9bcf643972944d21c90743d9281f47a}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!iterator@{iterator}}
+\index{iterator@{iterator}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+typedef I\+Data\+Class\+::iterator \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::\hyperlink{class_wire_cell_1_1_i_sequence_ac9bcf643972944d21c90743d9281f47a}{iterator}}
+
+
+
+Definition at line 25 of file I\+Sequence.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_ac49f0584f3aaafc13a525953ebafad95}\label{class_wire_cell_1_1_i_sequence_ac49f0584f3aaafc13a525953ebafad95}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!iterator\+\_\+range@{iterator\+\_\+range}}
+\index{iterator\+\_\+range@{iterator\+\_\+range}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{iterator\+\_\+range}{iterator\_range}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+typedef I\+Data\+Class\+::iterator\+\_\+range \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::\hyperlink{class_wire_cell_1_1_i_sequence_ac49f0584f3aaafc13a525953ebafad95}{iterator\+\_\+range}}
+
+
+
+Definition at line 28 of file I\+Sequence.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_aad75bbc31a91c10119d21d458129c05c}\label{class_wire_cell_1_1_i_sequence_aad75bbc31a91c10119d21d458129c05c}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_sequence_aae676a1415a6c843082041fb7f38b963}{this\+\_\+type}$>$ \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::\hyperlink{class_wire_cell_1_1_i_sequence_aad75bbc31a91c10119d21d458129c05c}{pointer}}
+
+
+
+Access this sequence via shared (non-\/const) pointer. 
+
+
+
+Definition at line 23 of file I\+Sequence.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_aae676a1415a6c843082041fb7f38b963}\label{class_wire_cell_1_1_i_sequence_aae676a1415a6c843082041fb7f38b963}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!this\+\_\+type@{this\+\_\+type}}
+\index{this\+\_\+type@{this\+\_\+type}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{this\+\_\+type}{this\_type}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+typedef \hyperlink{class_wire_cell_1_1_i_sequence}{I\+Sequence}$<$I\+Data\+Class$>$ \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::\hyperlink{class_wire_cell_1_1_i_sequence_aae676a1415a6c843082041fb7f38b963}{this\+\_\+type}}
+
+
+
+Definition at line 20 of file I\+Sequence.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_a961611c1a2718fd8ac5bfe3120e6e46f}\label{class_wire_cell_1_1_i_sequence_a961611c1a2718fd8ac5bfe3120e6e46f}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!````~I\+Sequence@{$\sim$\+I\+Sequence}}
+\index{````~I\+Sequence@{$\sim$\+I\+Sequence}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Sequence()}{~ISequence()}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::$\sim$\hyperlink{class_wire_cell_1_1_i_sequence}{I\+Sequence} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_wire_cell_1_1_i_sequence_a961611c1a2718fd8ac5bfe3120e6e46f_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_a0049905d5140aca88b0ef1fdf5ecc2ac}\label{class_wire_cell_1_1_i_sequence_a0049905d5140aca88b0ef1fdf5ecc2ac}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!adapt@{adapt}}
+\index{adapt@{adapt}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{adapt()}{adapt()}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+template$<$typename Other\+Iter $>$ \\
+static \hyperlink{class_wire_cell_1_1_i_sequence_ac9bcf643972944d21c90743d9281f47a}{iterator} \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::adapt (\begin{DoxyParamCaption}\item[{const Other\+Iter \&}]{itr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Adapt one iterator to the standard facade iterator. 
+
+
+
+Definition at line 32 of file I\+Sequence.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_a38e93257d35e23239456ff47ffd6f172}\label{class_wire_cell_1_1_i_sequence_a38e93257d35e23239456ff47ffd6f172}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!begin@{begin}}
+\index{begin@{begin}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator} \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 43 of file I\+Sequence.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_wire_cell_1_1_i_sequence_a38e93257d35e23239456ff47ffd6f172_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_wire_cell_1_1_i_sequence_a38e93257d35e23239456ff47ffd6f172_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_a03153c2cdc4d34c0feca9b214d4ed2a8}\label{class_wire_cell_1_1_i_sequence_a03153c2cdc4d34c0feca9b214d4ed2a8}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!begin@{begin}}
+\index{begin@{begin}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_ac9bcf643972944d21c90743d9281f47a}{iterator} \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_sequence_adapter_ab9d7082a27f17937871ef9ff97e1b8ad}{Wire\+Cell\+::\+Sequence\+Adapter$<$ I\+Data\+Class $>$}.
+
+
+
+Definition at line 45 of file I\+Sequence.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_wire_cell_1_1_i_sequence_a03153c2cdc4d34c0feca9b214d4ed2a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_a14e5cb0b4dbac2c6aa82ee4734ce6b90}\label{class_wire_cell_1_1_i_sequence_a14e5cb0b4dbac2c6aa82ee4734ce6b90}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!cadapt@{cadapt}}
+\index{cadapt@{cadapt}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{cadapt()}{cadapt()}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+template$<$typename Other\+Iter $>$ \\
+static \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator} \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::cadapt (\begin{DoxyParamCaption}\item[{const Other\+Iter \&}]{itr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 36 of file I\+Sequence.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_wire_cell_1_1_i_sequence_a14e5cb0b4dbac2c6aa82ee4734ce6b90_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_a2d9cee960a7ae6081d5f5f1f94bdf7f9}\label{class_wire_cell_1_1_i_sequence_a2d9cee960a7ae6081d5f5f1f94bdf7f9}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{cbegin()}{cbegin()}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator} \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Concrete class must implement\+: 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_sequence_a2d9cee960a7ae6081d5f5f1f94bdf7f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_a0707bb6db2b2cf79cbf7a6e3c05a7e14}\label{class_wire_cell_1_1_i_sequence_a0707bb6db2b2cf79cbf7a6e3c05a7e14}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!cend@{cend}}
+\index{cend@{cend}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{cend()}{cend()}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator} \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_wire_cell_1_1_i_sequence_a0707bb6db2b2cf79cbf7a6e3c05a7e14_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_afc9e30f4829c0b1ac9b8006f6eefd411}\label{class_wire_cell_1_1_i_sequence_afc9e30f4829c0b1ac9b8006f6eefd411}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!end@{end}}
+\index{end@{end}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_a70e983c18db65df4337838592fa9fd9d}{const\+\_\+iterator} \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 44 of file I\+Sequence.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_sequence_afc9e30f4829c0b1ac9b8006f6eefd411_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_sequence_afc9e30f4829c0b1ac9b8006f6eefd411_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_a4aeda2d0a7c1ffd3b1a708c7e983487a}\label{class_wire_cell_1_1_i_sequence_a4aeda2d0a7c1ffd3b1a708c7e983487a}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!end@{end}}
+\index{end@{end}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_ac9bcf643972944d21c90743d9281f47a}{iterator} \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_sequence_adapter_a7b3736b3876b4a2091254e42cb5d2900}{Wire\+Cell\+::\+Sequence\+Adapter$<$ I\+Data\+Class $>$}.
+
+
+
+Definition at line 46 of file I\+Sequence.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_sequence_a4aeda2d0a7c1ffd3b1a708c7e983487a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_sequence_a5ea837972a6ba68ef563902edd25a8a4}\label{class_wire_cell_1_1_i_sequence_a5ea837972a6ba68ef563902edd25a8a4}} 
+\index{Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}!range@{range}}
+\index{range@{range}!Wire\+Cell\+::\+I\+Sequence@{Wire\+Cell\+::\+I\+Sequence}}
+\subsubsection{\texorpdfstring{range()}{range()}}
+{\footnotesize\ttfamily template$<$class I\+Data\+Class$>$ \\
+virtual \hyperlink{class_wire_cell_1_1_i_sequence_ac49f0584f3aaafc13a525953ebafad95}{iterator\+\_\+range} \hyperlink{class_wire_cell_1_1_i_sequence}{Wire\+Cell\+::\+I\+Sequence}$<$ I\+Data\+Class $>$\+::range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return begin/end pair as iterator range. 
+
+
+
+Definition at line 50 of file I\+Sequence.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_sequence_a5ea837972a6ba68ef563902edd25a8a4_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_sequence_8h}{I\+Sequence.\+h}\end{DoxyCompactItemize}

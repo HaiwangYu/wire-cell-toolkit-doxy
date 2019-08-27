@@ -1,0 +1,154 @@
+\hypertarget{class_wire_cell_1_1_i_queuedout_node_base}{}\section{Wire\+Cell\+:\+:I\+Queuedout\+Node\+Base Class Reference}
+\label{class_wire_cell_1_1_i_queuedout_node_base}\index{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}}
+
+
+{\ttfamily \#include $<$I\+Queuedout\+Node.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:I\+Queuedout\+Node\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_queuedout_node_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:I\+Queuedout\+Node\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_wire_cell_1_1_i_queuedout_node_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_base}{I\+Queuedout\+Node\+Base} $>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_aa63057649c875c83e25d4078b774b4cb}{pointer}
+\item 
+typedef std\+::deque$<$ boost\+::any $>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_a9c144f13ef75e051847fe22888977a11}{queuedany}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_a44f8bacbe74f77b87445765f29b80ec1}{$\sim$\+I\+Queuedout\+Node\+Base} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_ad3723d92a4594fc9e3d6718fc0de9b1c}{operator()} (const boost\+::any \&anyin, \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_a9c144f13ef75e051847fe22888977a11}{queuedany} \&out)=0
+\begin{DoxyCompactList}\small\item\em The calling signature\+: \end{DoxyCompactList}\item 
+virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_a45a6b7c8c0af34108868b9b4a0f2a8cf}{category} ()
+\begin{DoxyCompactList}\small\item\em Return the behavior category type. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_aac268591658fea147722dccd6cb5e3a2}{concurrency} ()
+\begin{DoxyCompactList}\small\item\em By default assume all subclasses maintain state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A node which is a function producing a zero or more output 
+
+Definition at line 14 of file I\+Queuedout\+Node.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_base_aa63057649c875c83e25d4078b774b4cb}\label{class_wire_cell_1_1_i_queuedout_node_base_aa63057649c875c83e25d4078b774b4cb}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}!pointer@{pointer}}
+\index{pointer@{pointer}!Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily typedef std\+::shared\+\_\+ptr$<$\hyperlink{class_wire_cell_1_1_i_queuedout_node_base}{I\+Queuedout\+Node\+Base}$>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_aa63057649c875c83e25d4078b774b4cb}{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base\+::pointer}}
+
+
+
+Definition at line 17 of file I\+Queuedout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_base_a9c144f13ef75e051847fe22888977a11}\label{class_wire_cell_1_1_i_queuedout_node_base_a9c144f13ef75e051847fe22888977a11}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}!queuedany@{queuedany}}
+\index{queuedany@{queuedany}!Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}}
+\subsubsection{\texorpdfstring{queuedany}{queuedany}}
+{\footnotesize\ttfamily typedef std\+::deque$<$boost\+::any$>$ \hyperlink{class_wire_cell_1_1_i_queuedout_node_base_a9c144f13ef75e051847fe22888977a11}{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base\+::queuedany}}
+
+
+
+Definition at line 21 of file I\+Queuedout\+Node.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_base_a44f8bacbe74f77b87445765f29b80ec1}\label{class_wire_cell_1_1_i_queuedout_node_base_a44f8bacbe74f77b87445765f29b80ec1}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}!````~I\+Queuedout\+Node\+Base@{$\sim$\+I\+Queuedout\+Node\+Base}}
+\index{````~I\+Queuedout\+Node\+Base@{$\sim$\+I\+Queuedout\+Node\+Base}!Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Queuedout\+Node\+Base()}{~IQueuedoutNodeBase()}}
+{\footnotesize\ttfamily I\+Queuedout\+Node\+Base\+::$\sim$\+I\+Queuedout\+Node\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 151 of file Iface\+Desctructors.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_base_a45a6b7c8c0af34108868b9b4a0f2a8cf}\label{class_wire_cell_1_1_i_queuedout_node_base_a45a6b7c8c0af34108868b9b4a0f2a8cf}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}!category@{category}}
+\index{category@{category}!Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}}
+\subsubsection{\texorpdfstring{category()}{category()}}
+{\footnotesize\ttfamily virtual \hyperlink{class_wire_cell_1_1_i_node_a5546e64cbb70bd3ac787295cac9ac803}{Node\+Category} Wire\+Cell\+::\+I\+Queuedout\+Node\+Base\+::category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Return the behavior category type. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_node_a58c07f15b165e5fb33bbc7b2e047b39b}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 26 of file I\+Queuedout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_base_aac268591658fea147722dccd6cb5e3a2}\label{class_wire_cell_1_1_i_queuedout_node_base_aac268591658fea147722dccd6cb5e3a2}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}!concurrency@{concurrency}}
+\index{concurrency@{concurrency}!Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}}
+\subsubsection{\texorpdfstring{concurrency()}{concurrency()}}
+{\footnotesize\ttfamily virtual int Wire\+Cell\+::\+I\+Queuedout\+Node\+Base\+::concurrency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+By default assume all subclasses maintain state. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_node_a87d2b7293da4f6955e389ac6a2011306}{Wire\+Cell\+::\+I\+Node}.
+
+
+
+Definition at line 31 of file I\+Queuedout\+Node.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_i_queuedout_node_base_ad3723d92a4594fc9e3d6718fc0de9b1c}\label{class_wire_cell_1_1_i_queuedout_node_base_ad3723d92a4594fc9e3d6718fc0de9b1c}} 
+\index{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+I\+Queuedout\+Node\+Base@{Wire\+Cell\+::\+I\+Queuedout\+Node\+Base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily virtual bool Wire\+Cell\+::\+I\+Queuedout\+Node\+Base\+::operator() (\begin{DoxyParamCaption}\item[{const boost\+::any \&}]{anyin,  }\item[{\hyperlink{class_wire_cell_1_1_i_queuedout_node_base_a9c144f13ef75e051847fe22888977a11}{queuedany} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+The calling signature\+: 
+
+
+
+Implemented in \hyperlink{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ Input\+Type, Output\+Type $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Diffusion $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Frame, I\+Slice $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Depo\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Blob\+Set, I\+Blob\+Set $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Blob\+Set, I\+Cluster $>$}, \hyperlink{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Frame $>$}, and \hyperlink{class_wire_cell_1_1_i_queuedout_node_a38fcceec4026ddc65245206b24e62265}{Wire\+Cell\+::\+I\+Queuedout\+Node$<$ I\+Depo, I\+Depo $>$}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_i_queuedout_node_base_ad3723d92a4594fc9e3d6718fc0de9b1c_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+iface/inc/\+Wire\+Cell\+Iface/\hyperlink{_i_queuedout_node_8h}{I\+Queuedout\+Node.\+h}\item 
+iface/src/\hyperlink{_iface_desctructors_8cxx}{Iface\+Desctructors.\+cxx}\end{DoxyCompactItemize}

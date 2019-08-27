@@ -1,0 +1,204 @@
+\hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates}{}\section{Wire\+Cell\+:\+:Ray\+Grid\+:\+:Coordinates Class Reference}
+\label{class_wire_cell_1_1_ray_grid_1_1_coordinates}\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+
+
+{\ttfamily \#include $<$Ray\+Grid.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_a4b9a727396d48768585d9d13916b88c1}{Coordinates} (const \hyperlink{namespace_wire_cell_a15d47ec1e9e43890c5cb09f1e9d77dd3}{ray\+\_\+pair\+\_\+vector\+\_\+t} \&rays, int normal\+\_\+axis=0, double normal\+\_\+location=0.\+0)
+\item 
+\hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_ae0f4aa61c56a31334041565b3defdf6f}{zero\+\_\+crossing} (\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t} one, \hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t} two) const
+\item 
+\hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_a74db6f8c7255ed721ac5c3b99e45902b}{ray\+\_\+crossing} (const \hyperlink{struct_wire_cell_1_1_ray_grid_1_1coordinate__t}{coordinate\+\_\+t} \&one, const \hyperlink{struct_wire_cell_1_1_ray_grid_1_1coordinate__t}{coordinate\+\_\+t} \&two) const
+\item 
+double \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_ab201bc4926236a43676cbac2a7953158}{pitch\+\_\+location} (const \hyperlink{struct_wire_cell_1_1_ray_grid_1_1coordinate__t}{coordinate\+\_\+t} \&one, const \hyperlink{struct_wire_cell_1_1_ray_grid_1_1coordinate__t}{coordinate\+\_\+t} \&two, \hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t} other) const
+\item 
+int \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_a8b371cd1c56cfdf12677d69f9e58fcbc}{pitch\+\_\+index} (double pitch, \hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t} layer) const
+\item 
+int \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_a7afeb960b9bd444468a4aea62ec4f5ec}{nlayers} () const
+\item 
+const std\+::vector$<$ double $>$ \& \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_ae84a75729cdc5a180fe69d42809f72bc}{pitch\+\_\+mags} () const
+\item 
+const \hyperlink{namespace_wire_cell_1_1_ray_grid_a0406c6b8a3dc5f9127d665b6a2e6854a}{vector\+\_\+array1d\+\_\+t} \& \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_a46010489c24f18c5946bc08f671ec1a9}{pitch\+\_\+dirs} () const
+\item 
+const \hyperlink{namespace_wire_cell_1_1_ray_grid_a0406c6b8a3dc5f9127d665b6a2e6854a}{vector\+\_\+array1d\+\_\+t} \& \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_a71e1eb1063922a3e095f2e1635513110}{centers} () const
+\item 
+const \hyperlink{namespace_wire_cell_1_1_ray_grid_a5fe54fc4af050aa1782db6b9761df515}{vector\+\_\+array2d\+\_\+t} \& \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_aba3b976c309d9e8010104d007674a0b7}{ray\+\_\+jumps} () const
+\item 
+const \hyperlink{namespace_wire_cell_1_1_ray_grid_adaca791d3ebd5f5c455aa89966289111}{tensor\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_af5865a6804daf4b4a38c8d3a132a7e48}{a} () const
+\item 
+const \hyperlink{namespace_wire_cell_1_1_ray_grid_adaca791d3ebd5f5c455aa89966289111}{tensor\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_coordinates_a3fb41fbf5a6d27271b5f11576f502f29}{b} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 66 of file Ray\+Grid.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_a4b9a727396d48768585d9d13916b88c1}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_a4b9a727396d48768585d9d13916b88c1}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!Coordinates@{Coordinates}}
+\index{Coordinates@{Coordinates}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{Coordinates()}{Coordinates()}}
+{\footnotesize\ttfamily Coordinates\+::\+Coordinates (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a15d47ec1e9e43890c5cb09f1e9d77dd3}{ray\+\_\+pair\+\_\+vector\+\_\+t} \&}]{rays,  }\item[{int}]{normal\+\_\+axis = {\ttfamily 0},  }\item[{double}]{normal\+\_\+location = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 7 of file Ray\+Grid.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_coordinates_a4b9a727396d48768585d9d13916b88c1_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_af5865a6804daf4b4a38c8d3a132a7e48}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_af5865a6804daf4b4a38c8d3a132a7e48}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!a@{a}}
+\index{a@{a}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{a()}{a()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_1_1_ray_grid_adaca791d3ebd5f5c455aa89966289111}{tensor\+\_\+t} Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates\+::a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 93 of file Ray\+Grid.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_a3fb41fbf5a6d27271b5f11576f502f29}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_a3fb41fbf5a6d27271b5f11576f502f29}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!b@{b}}
+\index{b@{b}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{b()}{b()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_1_1_ray_grid_adaca791d3ebd5f5c455aa89966289111}{tensor\+\_\+t} Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates\+::b (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 94 of file Ray\+Grid.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_a71e1eb1063922a3e095f2e1635513110}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_a71e1eb1063922a3e095f2e1635513110}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!centers@{centers}}
+\index{centers@{centers}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{centers()}{centers()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_1_1_ray_grid_a0406c6b8a3dc5f9127d665b6a2e6854a}{vector\+\_\+array1d\+\_\+t}\& Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates\+::centers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 89 of file Ray\+Grid.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_a7afeb960b9bd444468a4aea62ec4f5ec}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_a7afeb960b9bd444468a4aea62ec4f5ec}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!nlayers@{nlayers}}
+\index{nlayers@{nlayers}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{nlayers()}{nlayers()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates\+::nlayers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file Ray\+Grid.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_a46010489c24f18c5946bc08f671ec1a9}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_a46010489c24f18c5946bc08f671ec1a9}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!pitch\+\_\+dirs@{pitch\+\_\+dirs}}
+\index{pitch\+\_\+dirs@{pitch\+\_\+dirs}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{pitch\+\_\+dirs()}{pitch\_dirs()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_1_1_ray_grid_a0406c6b8a3dc5f9127d665b6a2e6854a}{vector\+\_\+array1d\+\_\+t}\& Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates\+::pitch\+\_\+dirs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 88 of file Ray\+Grid.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_a8b371cd1c56cfdf12677d69f9e58fcbc}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_a8b371cd1c56cfdf12677d69f9e58fcbc}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!pitch\+\_\+index@{pitch\+\_\+index}}
+\index{pitch\+\_\+index@{pitch\+\_\+index}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{pitch\+\_\+index()}{pitch\_index()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates\+::pitch\+\_\+index (\begin{DoxyParamCaption}\item[{double}]{pitch,  }\item[{\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t}}]{layer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 82 of file Ray\+Grid.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_coordinates_a8b371cd1c56cfdf12677d69f9e58fcbc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_ab201bc4926236a43676cbac2a7953158}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_ab201bc4926236a43676cbac2a7953158}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!pitch\+\_\+location@{pitch\+\_\+location}}
+\index{pitch\+\_\+location@{pitch\+\_\+location}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{pitch\+\_\+location()}{pitch\_location()}}
+{\footnotesize\ttfamily double Coordinates\+::pitch\+\_\+location (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_ray_grid_1_1coordinate__t}{coordinate\+\_\+t} \&}]{one,  }\item[{const \hyperlink{struct_wire_cell_1_1_ray_grid_1_1coordinate__t}{coordinate\+\_\+t} \&}]{two,  }\item[{\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t}}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 133 of file Ray\+Grid.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_coordinates_ab201bc4926236a43676cbac2a7953158_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_ae84a75729cdc5a180fe69d42809f72bc}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_ae84a75729cdc5a180fe69d42809f72bc}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!pitch\+\_\+mags@{pitch\+\_\+mags}}
+\index{pitch\+\_\+mags@{pitch\+\_\+mags}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{pitch\+\_\+mags()}{pitch\_mags()}}
+{\footnotesize\ttfamily const std\+::vector$<$double$>$\& Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates\+::pitch\+\_\+mags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 87 of file Ray\+Grid.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_coordinates_ae84a75729cdc5a180fe69d42809f72bc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_a74db6f8c7255ed721ac5c3b99e45902b}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_a74db6f8c7255ed721ac5c3b99e45902b}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!ray\+\_\+crossing@{ray\+\_\+crossing}}
+\index{ray\+\_\+crossing@{ray\+\_\+crossing}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{ray\+\_\+crossing()}{ray\_crossing()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} Coordinates\+::ray\+\_\+crossing (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_wire_cell_1_1_ray_grid_1_1coordinate__t}{coordinate\+\_\+t} \&}]{one,  }\item[{const \hyperlink{struct_wire_cell_1_1_ray_grid_1_1coordinate__t}{coordinate\+\_\+t} \&}]{two }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 122 of file Ray\+Grid.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_aba3b976c309d9e8010104d007674a0b7}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_aba3b976c309d9e8010104d007674a0b7}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!ray\+\_\+jumps@{ray\+\_\+jumps}}
+\index{ray\+\_\+jumps@{ray\+\_\+jumps}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{ray\+\_\+jumps()}{ray\_jumps()}}
+{\footnotesize\ttfamily const \hyperlink{namespace_wire_cell_1_1_ray_grid_a5fe54fc4af050aa1782db6b9761df515}{vector\+\_\+array2d\+\_\+t}\& Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates\+::ray\+\_\+jumps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 91 of file Ray\+Grid.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_coordinates_ae0f4aa61c56a31334041565b3defdf6f}\label{class_wire_cell_1_1_ray_grid_1_1_coordinates_ae0f4aa61c56a31334041565b3defdf6f}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}!zero\+\_\+crossing@{zero\+\_\+crossing}}
+\index{zero\+\_\+crossing@{zero\+\_\+crossing}!Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates@{Wire\+Cell\+::\+Ray\+Grid\+::\+Coordinates}}
+\subsubsection{\texorpdfstring{zero\+\_\+crossing()}{zero\_crossing()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_aa3c82d3ba85f032b0d278b7004846800}{Vector} Coordinates\+::zero\+\_\+crossing (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t}}]{one,  }\item[{\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t}}]{two }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 117 of file Ray\+Grid.\+cxx.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_ray_grid_8h}{Ray\+Grid.\+h}\item 
+util/src/\hyperlink{_ray_grid_8cxx}{Ray\+Grid.\+cxx}\end{DoxyCompactItemize}

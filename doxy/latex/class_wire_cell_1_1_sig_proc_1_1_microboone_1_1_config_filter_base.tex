@@ -1,0 +1,179 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Microboone\+:\+:Config\+Filter\+Base Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}}
+
+
+{\ttfamily \#include $<$Microboone.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Microboone\+:\+:Config\+Filter\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Microboone\+:\+:Config\+Filter\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_af5f3172d8f68d3834970d590aa348cd8}{Config\+Filter\+Base} (const std\+::string \&anode=\char`\"{}Anode\+Plane\char`\"{}, const std\+::string \&noisedb=\char`\"{}Omni\+Channel\+Noise\+DB\char`\"{})
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_af9010fccd827a5a343ed36dc49a3a239}{$\sim$\+Config\+Filter\+Base} ()
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_ad71e79a991c880b405baf0bd941f9efd}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_configurable}{I\+Configurable} configuration interface. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_a4795943bb21fa1857b5a566f86be67ac}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\item 
+void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_ade9757d913c71d3083f36c667c2ce73c}{set\+\_\+channel\+\_\+noisedb} (\hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::pointer} ndb)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_ab4b3191871b0b4f11b43b14e10bde578}{m\+\_\+anode\+\_\+tn}
+\item 
+std\+::string \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_a62a4e3cf2599f8fb215245a435fc1cba}{m\+\_\+noisedb\+\_\+tn}
+\item 
+\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Anode\+Plane\+::pointer} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_a95e7c5116d032b4a55e7a9b6c4124020}{m\+\_\+anode}
+\item 
+\hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Channel\+Noise\+Database\+::pointer} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_af699e4eaf755a81d4436c5942da2a924}{m\+\_\+noisedb}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 37 of file Microboone.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_af5f3172d8f68d3834970d590aa348cd8}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_af5f3172d8f68d3834970d590aa348cd8}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}!Config\+Filter\+Base@{Config\+Filter\+Base}}
+\index{Config\+Filter\+Base@{Config\+Filter\+Base}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{Config\+Filter\+Base()}{ConfigFilterBase()}}
+{\footnotesize\ttfamily Microboone\+::\+Config\+Filter\+Base\+::\+Config\+Filter\+Base (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{anode = {\ttfamily \char`\"{}AnodePlane\char`\"{}},  }\item[{const std\+::string \&}]{noisedb = {\ttfamily \char`\"{}OmniChannelNoiseDB\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 849 of file Microboone.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_af9010fccd827a5a343ed36dc49a3a239}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_af9010fccd827a5a343ed36dc49a3a239}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}!````~Config\+Filter\+Base@{$\sim$\+Config\+Filter\+Base}}
+\index{````~Config\+Filter\+Base@{$\sim$\+Config\+Filter\+Base}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Config\+Filter\+Base()}{~ConfigFilterBase()}}
+{\footnotesize\ttfamily Microboone\+::\+Config\+Filter\+Base\+::$\sim$\+Config\+Filter\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 852 of file Microboone.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_ad71e79a991c880b405baf0bd941f9efd}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_ad71e79a991c880b405baf0bd941f9efd}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Microboone\+::\+Config\+Filter\+Base\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_configurable}{I\+Configurable} configuration interface. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 853 of file Microboone.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_a4795943bb21fa1857b5a566f86be67ac}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_a4795943bb21fa1857b5a566f86be67ac}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Microboone\+::\+Config\+Filter\+Base\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Definition at line 861 of file Microboone.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_ade9757d913c71d3083f36c667c2ce73c}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_ade9757d913c71d3083f36c667c2ce73c}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}!set\+\_\+channel\+\_\+noisedb@{set\+\_\+channel\+\_\+noisedb}}
+\index{set\+\_\+channel\+\_\+noisedb@{set\+\_\+channel\+\_\+noisedb}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+channel\+\_\+noisedb()}{set\_channel\_noisedb()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base\+::set\+\_\+channel\+\_\+noisedb (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_i_component_a744b962ee9489c909f1b0f1fe2533798}{Wire\+Cell\+::\+I\+Channel\+Noise\+Database\+::pointer}}]{ndb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 49 of file Microboone.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_a95e7c5116d032b4a55e7a9b6c4124020}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_a95e7c5116d032b4a55e7a9b6c4124020}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}!m\+\_\+anode@{m\+\_\+anode}}
+\index{m\+\_\+anode@{m\+\_\+anode}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+anode}{m\_anode}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Anode\+Plane\+::pointer} Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base\+::m\+\_\+anode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file Microboone.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_ab4b3191871b0b4f11b43b14e10bde578}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_ab4b3191871b0b4f11b43b14e10bde578}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}!m\+\_\+anode\+\_\+tn@{m\+\_\+anode\+\_\+tn}}
+\index{m\+\_\+anode\+\_\+tn@{m\+\_\+anode\+\_\+tn}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+anode\+\_\+tn}{m\_anode\_tn}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base\+::m\+\_\+anode\+\_\+tn\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 53 of file Microboone.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_af699e4eaf755a81d4436c5942da2a924}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_af699e4eaf755a81d4436c5942da2a924}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}!m\+\_\+noisedb@{m\+\_\+noisedb}}
+\index{m\+\_\+noisedb@{m\+\_\+noisedb}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+noisedb}{m\_noisedb}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_interface_a09c548fb8266cfa39afb2e74a4615c37}{I\+Channel\+Noise\+Database\+::pointer} Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base\+::m\+\_\+noisedb\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 55 of file Microboone.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_a62a4e3cf2599f8fb215245a435fc1cba}\label{class_wire_cell_1_1_sig_proc_1_1_microboone_1_1_config_filter_base_a62a4e3cf2599f8fb215245a435fc1cba}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}!m\+\_\+noisedb\+\_\+tn@{m\+\_\+noisedb\+\_\+tn}}
+\index{m\+\_\+noisedb\+\_\+tn@{m\+\_\+noisedb\+\_\+tn}!Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base@{Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+noisedb\+\_\+tn}{m\_noisedb\_tn}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Sig\+Proc\+::\+Microboone\+::\+Config\+Filter\+Base\+::m\+\_\+noisedb\+\_\+tn\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 53 of file Microboone.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_microboone_8h}{Microboone.\+h}\item 
+sigproc/src/\hyperlink{_microboone_8cxx}{Microboone.\+cxx}\end{DoxyCompactItemize}

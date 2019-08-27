@@ -1,0 +1,5 @@
+<map id="spdlog::register_logger" name="spdlog::register_logger">
+<area shape="rect" id="node2" href="$classspdlog_1_1details_1_1registry.html#a58a1bbb352f751f6b729bc57bfadd6be" title="spdlog::details::registry\l::instance" alt="" coords="207,5,364,47"/>
+<area shape="rect" id="node4" href="$classspdlog_1_1details_1_1registry.html#ab77fb7513b2e3e6442a83f037543e391" title="spdlog::details::registry\l::register_logger" alt="" coords="207,71,364,112"/>
+<area shape="rect" id="node3" href="$classspdlog_1_1logger.html#a0d0307a6501a9f56689c386a006991fe" title="spdlog::logger::default\l_level" alt="" coords="412,5,563,47"/>
+</map>

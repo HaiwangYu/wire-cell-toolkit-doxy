@@ -1,0 +1,218 @@
+\hypertarget{class_wire_cell_1_1_time_keeper}{}\section{Wire\+Cell\+:\+:Time\+Keeper Class Reference}
+\label{class_wire_cell_1_1_time_keeper}\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+
+
+{\ttfamily \#include $<$Time\+Keeper.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::posix\+\_\+time\+::ptime \hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{ptime}
+\item 
+typedef boost\+::posix\+\_\+time\+::time\+\_\+duration \hyperlink{class_wire_cell_1_1_time_keeper_a3e7203525811fc9902aab31615d18ad2}{deltat}
+\item 
+typedef std\+::pair$<$ \hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{ptime}, std\+::string $>$ \hyperlink{class_wire_cell_1_1_time_keeper_a005e8d06f1e537abed3a83184ccfcc5e}{event}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_time_keeper_a71e344c3be3c8fc0e156fb41cb6bb0f4}{Time\+Keeper} (const std\+::string \&msg=\char`\"{}start\char`\"{}, ptime starting\+\_\+time=boost\+::posix\+\_\+time\+::microsec\+\_\+clock\+::local\+\_\+time())
+\item 
+\hyperlink{class_wire_cell_1_1_time_keeper_aba1d443fcfdba702f0e28031bcad98c8}{$\sim$\+Time\+Keeper} ()
+\item 
+\hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{ptime} \hyperlink{class_wire_cell_1_1_time_keeper_acbe86e72c4991e0bd5143a59580c5e82}{start\+\_\+time} () const
+\begin{DoxyCompactList}\small\item\em Return the time at which this time keeper was started. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{ptime} \hyperlink{class_wire_cell_1_1_time_keeper_a58d3645d65f01238a44978122f388ddc}{last\+\_\+time} () const
+\begin{DoxyCompactList}\small\item\em Return the time of the last event. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_time_keeper_a3e7203525811fc9902aab31615d18ad2}{deltat} \hyperlink{class_wire_cell_1_1_time_keeper_aaa411313dc1302f83db8a880b6bbd719}{last\+\_\+duration} () const
+\begin{DoxyCompactList}\small\item\em Return the duration between the last two events. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_time_keeper_a3e7203525811fc9902aab31615d18ad2}{deltat} \hyperlink{class_wire_cell_1_1_time_keeper_aefe09a82b5a1c45c9cc5be83301277e4}{since} (\hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{ptime} now=boost\+::posix\+\_\+time\+::microsec\+\_\+clock\+::local\+\_\+time()) const
+\begin{DoxyCompactList}\small\item\em Return the time duration between \char`\"{}now\char`\"{} and the start time. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_wire_cell_1_1_time_keeper_a7f27087fcc02a6b5fea15702a83b40c2}{operator()} (std\+::string msg=\char`\"{}$<$tick$>$\char`\"{}, ptime now=boost\+::posix\+\_\+time\+::microsec\+\_\+clock\+::local\+\_\+time())
+\begin{DoxyCompactList}\small\item\em Record an event. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_wire_cell_1_1_time_keeper_a20b7fb14f514bd61e53c77f5cb035e47}{summary} () const
+\begin{DoxyCompactList}\small\item\em Return summary up to now. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_time_keeper_a005e8d06f1e537abed3a83184ccfcc5e}{event} \hyperlink{class_wire_cell_1_1_time_keeper_a2c2df62235506b76bfa328e2a84a9593}{operator\mbox{[}$\,$\mbox{]}} (int ind) const
+\begin{DoxyCompactList}\small\item\em Return event by index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A helper class to give some time keeping.
+
+Use like
+
+\hyperlink{class_wire_cell_1_1_time_keeper}{Time\+Keeper} tk(\char`\"{}starting\char`\"{}); ... tk(\char`\"{}starting long calculation....\char`\"{}); do\+\_\+long\+\_\+calculation(); tk(\char`\"{}...\+done\char`\"{}); ... info(tk.\+summary()); 
+
+Definition at line 21 of file Time\+Keeper.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_a3e7203525811fc9902aab31615d18ad2}\label{class_wire_cell_1_1_time_keeper_a3e7203525811fc9902aab31615d18ad2}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!deltat@{deltat}}
+\index{deltat@{deltat}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{deltat}{deltat}}
+{\footnotesize\ttfamily typedef boost\+::posix\+\_\+time\+::time\+\_\+duration \hyperlink{class_wire_cell_1_1_time_keeper_a3e7203525811fc9902aab31615d18ad2}{Wire\+Cell\+::\+Time\+Keeper\+::deltat}}
+
+
+
+Definition at line 24 of file Time\+Keeper.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_a005e8d06f1e537abed3a83184ccfcc5e}\label{class_wire_cell_1_1_time_keeper_a005e8d06f1e537abed3a83184ccfcc5e}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!event@{event}}
+\index{event@{event}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily typedef std\+::pair$<$\hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{ptime}, std\+::string$>$ \hyperlink{class_wire_cell_1_1_time_keeper_a005e8d06f1e537abed3a83184ccfcc5e}{Wire\+Cell\+::\+Time\+Keeper\+::event}}
+
+
+
+Definition at line 25 of file Time\+Keeper.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}\label{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!ptime@{ptime}}
+\index{ptime@{ptime}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{ptime}{ptime}}
+{\footnotesize\ttfamily typedef boost\+::posix\+\_\+time\+::ptime \hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{Wire\+Cell\+::\+Time\+Keeper\+::ptime}}
+
+
+
+Definition at line 23 of file Time\+Keeper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_a71e344c3be3c8fc0e156fb41cb6bb0f4}\label{class_wire_cell_1_1_time_keeper_a71e344c3be3c8fc0e156fb41cb6bb0f4}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!Time\+Keeper@{Time\+Keeper}}
+\index{Time\+Keeper@{Time\+Keeper}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{Time\+Keeper()}{TimeKeeper()}}
+{\footnotesize\ttfamily Time\+Keeper\+::\+Time\+Keeper (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg = {\ttfamily \char`\"{}start\char`\"{}},  }\item[{\hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{ptime}}]{starting\+\_\+time = {\ttfamily boost\+:\+:posix\+\_\+time\+:\+:microsec\+\_\+clock\+:\+:local\+\_\+time()} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file Time\+Keeper.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_aba1d443fcfdba702f0e28031bcad98c8}\label{class_wire_cell_1_1_time_keeper_aba1d443fcfdba702f0e28031bcad98c8}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!````~Time\+Keeper@{$\sim$\+Time\+Keeper}}
+\index{````~Time\+Keeper@{$\sim$\+Time\+Keeper}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{$\sim$\+Time\+Keeper()}{~TimeKeeper()}}
+{\footnotesize\ttfamily Time\+Keeper\+::$\sim$\+Time\+Keeper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 13 of file Time\+Keeper.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_aaa411313dc1302f83db8a880b6bbd719}\label{class_wire_cell_1_1_time_keeper_aaa411313dc1302f83db8a880b6bbd719}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!last\+\_\+duration@{last\+\_\+duration}}
+\index{last\+\_\+duration@{last\+\_\+duration}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{last\+\_\+duration()}{last\_duration()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_time_keeper_a3e7203525811fc9902aab31615d18ad2}{Time\+Keeper\+::deltat} Time\+Keeper\+::last\+\_\+duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return the duration between the last two events. 
+
+
+
+Definition at line 31 of file Time\+Keeper.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_a58d3645d65f01238a44978122f388ddc}\label{class_wire_cell_1_1_time_keeper_a58d3645d65f01238a44978122f388ddc}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!last\+\_\+time@{last\+\_\+time}}
+\index{last\+\_\+time@{last\+\_\+time}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{last\+\_\+time()}{last\_time()}}
+{\footnotesize\ttfamily boost\+::posix\+\_\+time\+::ptime Time\+Keeper\+::last\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return the time of the last event. 
+
+
+
+Definition at line 27 of file Time\+Keeper.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_a7f27087fcc02a6b5fea15702a83b40c2}\label{class_wire_cell_1_1_time_keeper_a7f27087fcc02a6b5fea15702a83b40c2}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily std\+::string Time\+Keeper\+::operator() (\begin{DoxyParamCaption}\item[{std\+::string}]{msg = {\ttfamily \char`\"{}$<$tick$>$\char`\"{}},  }\item[{\hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{ptime}}]{now = {\ttfamily boost\+:\+:posix\+\_\+time\+:\+:microsec\+\_\+clock\+:\+:local\+\_\+time()} }\end{DoxyParamCaption})}
+
+
+
+Record an event. 
+
+
+
+Definition at line 17 of file Time\+Keeper.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_a2c2df62235506b76bfa328e2a84a9593}\label{class_wire_cell_1_1_time_keeper_a2c2df62235506b76bfa328e2a84a9593}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_time_keeper_a005e8d06f1e537abed3a83184ccfcc5e}{Time\+Keeper\+::event} Time\+Keeper\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption}) const}
+
+
+
+Return event by index. 
+
+
+
+Definition at line 41 of file Time\+Keeper.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_aefe09a82b5a1c45c9cc5be83301277e4}\label{class_wire_cell_1_1_time_keeper_aefe09a82b5a1c45c9cc5be83301277e4}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!since@{since}}
+\index{since@{since}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{since()}{since()}}
+{\footnotesize\ttfamily boost\+::posix\+\_\+time\+::time\+\_\+duration Time\+Keeper\+::since (\begin{DoxyParamCaption}\item[{\hyperlink{class_wire_cell_1_1_time_keeper_a3600404e97a1581a1c2630f92f490603}{ptime}}]{now = {\ttfamily boost\+:\+:posix\+\_\+time\+:\+:microsec\+\_\+clock\+:\+:local\+\_\+time()} }\end{DoxyParamCaption}) const}
+
+
+
+Return the time duration between \char`\"{}now\char`\"{} and the start time. 
+
+
+
+Definition at line 36 of file Time\+Keeper.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_acbe86e72c4991e0bd5143a59580c5e82}\label{class_wire_cell_1_1_time_keeper_acbe86e72c4991e0bd5143a59580c5e82}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!start\+\_\+time@{start\+\_\+time}}
+\index{start\+\_\+time@{start\+\_\+time}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{start\+\_\+time()}{start\_time()}}
+{\footnotesize\ttfamily boost\+::posix\+\_\+time\+::ptime Time\+Keeper\+::start\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return the time at which this time keeper was started. 
+
+
+
+Definition at line 23 of file Time\+Keeper.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_time_keeper_a20b7fb14f514bd61e53c77f5cb035e47}\label{class_wire_cell_1_1_time_keeper_a20b7fb14f514bd61e53c77f5cb035e47}} 
+\index{Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}!summary@{summary}}
+\index{summary@{summary}!Wire\+Cell\+::\+Time\+Keeper@{Wire\+Cell\+::\+Time\+Keeper}}
+\subsubsection{\texorpdfstring{summary()}{summary()}}
+{\footnotesize\ttfamily std\+::string Time\+Keeper\+::summary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return summary up to now. 
+
+
+
+Definition at line 48 of file Time\+Keeper.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_time_keeper_a20b7fb14f514bd61e53c77f5cb035e47_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_time_keeper_8h}{Time\+Keeper.\+h}\item 
+util/src/\hyperlink{_time_keeper_8cxx}{Time\+Keeper.\+cxx}\end{DoxyCompactItemize}

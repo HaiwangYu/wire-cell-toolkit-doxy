@@ -1,0 +1,182 @@
+\hypertarget{class_wire_cell_1_1_sig_proc_1_1_channel_selector}{}\section{Wire\+Cell\+:\+:Sig\+Proc\+:\+:Channel\+Selector Class Reference}
+\label{class_wire_cell_1_1_sig_proc_1_1_channel_selector}\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}}
+
+
+{\ttfamily \#include $<$Channel\+Selector.\+h$>$}
+
+
+
+Inheritance diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Channel\+Selector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_channel_selector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wire\+Cell\+:\+:Sig\+Proc\+:\+:Channel\+Selector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_channel_selector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a4c48ffaf3392f6a27d9f2086adbed89c}{Channel\+Selector} ()
+\item 
+virtual \hyperlink{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a918cd253d71e3a26e6b6bb8b1be52eed}{$\sim$\+Channel\+Selector} ()
+\item 
+virtual bool \hyperlink{class_wire_cell_1_1_sig_proc_1_1_channel_selector_aaca59eb8b7d47e29fed24f6976adc4f3}{operator()} (const \hyperlink{class_wire_cell_1_1_i_function_node_a55c0946156df9b712b8ad1a0b59b2db6}{input\+\_\+pointer} \&in, \hyperlink{class_wire_cell_1_1_i_function_node_afc02f1ec60d31aacddf64963f9ca650b}{output\+\_\+pointer} \&out)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_frame_filter}{I\+Frame\+Filter} interface. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_channel_selector_aa7bedd9af19095a19bdd9f2db59b043a}{configure} (const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&config)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_i_configurable}{I\+Configurable} interface. \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \hyperlink{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a4327241e133cc7aa3d336bec304cc568}{default\+\_\+configuration} () const
+\begin{DoxyCompactList}\small\item\em Optional, override to return a hard-\/coded default configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a4f6162b720052e906073139e952769e5}{set\+\_\+channels} (const std\+::vector$<$ int $>$ \&channels)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file Channel\+Selector.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a4c48ffaf3392f6a27d9f2086adbed89c}\label{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a4c48ffaf3392f6a27d9f2086adbed89c}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}!Channel\+Selector@{Channel\+Selector}}
+\index{Channel\+Selector@{Channel\+Selector}!Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}}
+\subsubsection{\texorpdfstring{Channel\+Selector()}{ChannelSelector()}}
+{\footnotesize\ttfamily Channel\+Selector\+::\+Channel\+Selector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file Channel\+Selector.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a918cd253d71e3a26e6b6bb8b1be52eed}\label{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a918cd253d71e3a26e6b6bb8b1be52eed}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}!````~Channel\+Selector@{$\sim$\+Channel\+Selector}}
+\index{````~Channel\+Selector@{$\sim$\+Channel\+Selector}!Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}}
+\subsubsection{\texorpdfstring{$\sim$\+Channel\+Selector()}{~ChannelSelector()}}
+{\footnotesize\ttfamily Channel\+Selector\+::$\sim$\+Channel\+Selector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 20 of file Channel\+Selector.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_channel_selector_aa7bedd9af19095a19bdd9f2db59b043a}\label{class_wire_cell_1_1_sig_proc_1_1_channel_selector_aa7bedd9af19095a19bdd9f2db59b043a}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}!configure@{configure}}
+\index{configure@{configure}!Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void Channel\+Selector\+::configure (\begin{DoxyParamCaption}\item[{const \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_configurable}{I\+Configurable} interface. 
+
+
+
+Implements \hyperlink{class_wire_cell_1_1_i_configurable_a57ff687923a724093df3de59c6ff237d}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_d_b_channel_selector_ab4b1fc4f57e0d9e9695a962c39ea7a71}{Wire\+Cell\+::\+Sig\+Proc\+::\+D\+B\+Channel\+Selector}.
+
+
+
+Definition at line 39 of file Channel\+Selector.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a4327241e133cc7aa3d336bec304cc568}\label{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a4327241e133cc7aa3d336bec304cc568}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}!default\+\_\+configuration@{default\+\_\+configuration}}
+\index{default\+\_\+configuration@{default\+\_\+configuration}!Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}}
+\subsubsection{\texorpdfstring{default\+\_\+configuration()}{default\_configuration()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_a9f705541fc1d46c608b3d32c182333ee}{Wire\+Cell\+::\+Configuration} Channel\+Selector\+::default\+\_\+configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Optional, override to return a hard-\/coded default configuration. 
+
+Only traces with channels in this array will be in the output.
+
+Only traces with these tags will be in the output. If no tags are given then tags are not considered. 
+
+Reimplemented from \hyperlink{class_wire_cell_1_1_i_configurable_a54841b2da3d1ea02189478bff96f7998}{Wire\+Cell\+::\+I\+Configurable}.
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_d_b_channel_selector_a541cbeeeadfc258ed5e60357c5c7b3d0}{Wire\+Cell\+::\+Sig\+Proc\+::\+D\+B\+Channel\+Selector}.
+
+
+
+Definition at line 25 of file Channel\+Selector.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_channel_selector_aaca59eb8b7d47e29fed24f6976adc4f3}\label{class_wire_cell_1_1_sig_proc_1_1_channel_selector_aaca59eb8b7d47e29fed24f6976adc4f3}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool Channel\+Selector\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_i_function_node_a55c0946156df9b712b8ad1a0b59b2db6}{input\+\_\+pointer} \&}]{in,  }\item[{\hyperlink{class_wire_cell_1_1_i_function_node_afc02f1ec60d31aacddf64963f9ca650b}{output\+\_\+pointer} \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\hyperlink{class_wire_cell_1_1_i_frame_filter}{I\+Frame\+Filter} interface. 
+
+
+
+Reimplemented in \hyperlink{class_wire_cell_1_1_sig_proc_1_1_d_b_channel_selector_aed483bbdb14a86719f307749becf7695}{Wire\+Cell\+::\+Sig\+Proc\+::\+D\+B\+Channel\+Selector}.
+
+
+
+Definition at line 65 of file Channel\+Selector.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_channel_selector_aaca59eb8b7d47e29fed24f6976adc4f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_channel_selector_aaca59eb8b7d47e29fed24f6976adc4f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a4f6162b720052e906073139e952769e5}\label{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a4f6162b720052e906073139e952769e5}} 
+\index{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}!set\+\_\+channels@{set\+\_\+channels}}
+\index{set\+\_\+channels@{set\+\_\+channels}!Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector@{Wire\+Cell\+::\+Sig\+Proc\+::\+Channel\+Selector}}
+\subsubsection{\texorpdfstring{set\+\_\+channels()}{set\_channels()}}
+{\footnotesize\ttfamily void Channel\+Selector\+::set\+\_\+channels (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{channels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 56 of file Channel\+Selector.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_sig_proc_1_1_channel_selector_a4f6162b720052e906073139e952769e5_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sigproc/inc/\+Wire\+Cell\+Sig\+Proc/\hyperlink{_channel_selector_8h}{Channel\+Selector.\+h}\item 
+sigproc/src/\hyperlink{_channel_selector_8cxx}{Channel\+Selector.\+cxx}\end{DoxyCompactItemize}

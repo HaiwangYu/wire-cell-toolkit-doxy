@@ -1,0 +1,5 @@
+<map id="WireCell::Gen::WirePlane" name="WireCell::Gen::WirePlane">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_wire_plane.html" title="WireCell::IWirePlane" alt="" coords="19,169,163,196"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IWirePlane \&gt;" alt="" coords="16,80,167,121"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="26,5,157,32"/>
+</map>

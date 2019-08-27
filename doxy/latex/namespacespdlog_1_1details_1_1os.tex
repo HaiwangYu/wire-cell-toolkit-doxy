@@ -1,0 +1,444 @@
+\hypertarget{namespacespdlog_1_1details_1_1os}{}\section{spdlog\+:\+:details\+:\+:os Namespace Reference}
+\label{namespacespdlog_1_1details_1_1os}\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+spdlog\+::log\+\_\+clock\+::time\+\_\+point \hyperlink{namespacespdlog_1_1details_1_1os_ab86a7d9f1495a0edae71ce647bae6a66}{now} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::tm \hyperlink{namespacespdlog_1_1details_1_1os_aef63b92ee93ec66603c0357d0ac75bed}{localtime} (const std\+::time\+\_\+t \&time\+\_\+tt) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::tm \hyperlink{namespacespdlog_1_1details_1_1os_a3c7704d0c74aed204f258ac1fc7d4576}{localtime} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::tm \hyperlink{namespacespdlog_1_1details_1_1os_ac993ad051e07cd5bda5328be2a54b0a8}{gmtime} (const std\+::time\+\_\+t \&time\+\_\+tt) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::tm \hyperlink{namespacespdlog_1_1details_1_1os_a504776f0a18b0090f66778f7ad8add0b}{gmtime} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+void \hyperlink{namespacespdlog_1_1details_1_1os_a58e68538bb3667c56f3623bf047093d6}{prevent\+\_\+child\+\_\+fd} (F\+I\+LE $\ast$f)
+\item 
+bool \hyperlink{namespacespdlog_1_1details_1_1os_af2d11a0b892e2f0cb3c6beba4c659a47}{fopen\+\_\+s} (F\+I\+LE $\ast$$\ast$fp, const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename, const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&mode)
+\item 
+int \hyperlink{namespacespdlog_1_1details_1_1os_a08477012dc14c38d86657b40edd2f534}{remove} (const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+int \hyperlink{namespacespdlog_1_1details_1_1os_a88940402c9b1b8c9d01ea7dae8f26127}{rename} (const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename1, const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename2) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+bool \hyperlink{namespacespdlog_1_1details_1_1os_a0831288e524f8cf53c98bce8facd0a0c}{file\+\_\+exists} (const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+size\+\_\+t \hyperlink{namespacespdlog_1_1details_1_1os_a6d2fb5a293e8515f651288992d5443cc}{filesize} (F\+I\+LE $\ast$f)
+\item 
+int \hyperlink{namespacespdlog_1_1details_1_1os_a6dce662c3a4ea0b6e95468272ec37047}{utc\+\_\+minutes\+\_\+offset} (const std\+::tm \&tm=\hyperlink{namespacespdlog_1_1details_1_1os_aef63b92ee93ec66603c0357d0ac75bed}{details\+::os\+::localtime}())
+\item 
+size\+\_\+t \hyperlink{namespacespdlog_1_1details_1_1os_a4cb88fcf54ef3878c1ff660456e9819c}{\+\_\+thread\+\_\+id} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+size\+\_\+t \hyperlink{namespacespdlog_1_1details_1_1os_ad0fc3a9bd510324d2d5f31acb3607e90}{thread\+\_\+id} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+void \hyperlink{namespacespdlog_1_1details_1_1os_a49ccbc872aa679db9d1187a48897804e}{sleep\+\_\+for\+\_\+millis} (int milliseconds) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+std\+::string \hyperlink{namespacespdlog_1_1details_1_1os_ac7c0d6af1f3f652f23e57f057217b9a7}{filename\+\_\+to\+\_\+str} (const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&filename)
+\item 
+int \hyperlink{namespacespdlog_1_1details_1_1os_afa5e2f0096ec0aa63c2d20143cb18b17}{pid} ()
+\item 
+bool \hyperlink{namespacespdlog_1_1details_1_1os_a41c3f67d2cbabfcb20e89d0524e5097f}{is\+\_\+color\+\_\+terminal} () \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\item 
+bool \hyperlink{namespacespdlog_1_1details_1_1os_a2d4716c3ff12a2cc7f3bae7f3f769917}{in\+\_\+terminal} (F\+I\+LE $\ast$\hyperlink{classfile}{file}) \hyperlink{common_8h_a15d2dc432e6bb83beb5130be9a4ca8d6}{S\+P\+D\+L\+O\+G\+\_\+\+N\+O\+E\+X\+C\+E\+PT}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a4cb88fcf54ef3878c1ff660456e9819c}\label{namespacespdlog_1_1details_1_1os_a4cb88fcf54ef3878c1ff660456e9819c}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!\+\_\+thread\+\_\+id@{\+\_\+thread\+\_\+id}}
+\index{\+\_\+thread\+\_\+id@{\+\_\+thread\+\_\+id}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{\+\_\+thread\+\_\+id()}{\_thread\_id()}}
+{\footnotesize\ttfamily size\+\_\+t spdlog\+::details\+::os\+::\+\_\+thread\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 316 of file os.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_a4cb88fcf54ef3878c1ff660456e9819c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a0831288e524f8cf53c98bce8facd0a0c}\label{namespacespdlog_1_1details_1_1os_a0831288e524f8cf53c98bce8facd0a0c}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!file\+\_\+exists@{file\+\_\+exists}}
+\index{file\+\_\+exists@{file\+\_\+exists}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{file\+\_\+exists()}{file\_exists()}}
+{\footnotesize\ttfamily bool spdlog\+::details\+::os\+::file\+\_\+exists (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 188 of file os.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_a0831288e524f8cf53c98bce8facd0a0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_ac7c0d6af1f3f652f23e57f057217b9a7}\label{namespacespdlog_1_1details_1_1os_ac7c0d6af1f3f652f23e57f057217b9a7}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!filename\+\_\+to\+\_\+str@{filename\+\_\+to\+\_\+str}}
+\index{filename\+\_\+to\+\_\+str@{filename\+\_\+to\+\_\+str}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{filename\+\_\+to\+\_\+str()}{filename\_to\_str()}}
+{\footnotesize\ttfamily std\+::string spdlog\+::details\+::os\+::filename\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 370 of file os.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_ac7c0d6af1f3f652f23e57f057217b9a7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a6d2fb5a293e8515f651288992d5443cc}\label{namespacespdlog_1_1details_1_1os_a6d2fb5a293e8515f651288992d5443cc}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!filesize@{filesize}}
+\index{filesize@{filesize}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{filesize()}{filesize()}}
+{\footnotesize\ttfamily size\+\_\+t spdlog\+::details\+::os\+::filesize (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 204 of file os.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_a6d2fb5a293e8515f651288992d5443cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_af2d11a0b892e2f0cb3c6beba4c659a47}\label{namespacespdlog_1_1details_1_1os_af2d11a0b892e2f0cb3c6beba4c659a47}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!fopen\+\_\+s@{fopen\+\_\+s}}
+\index{fopen\+\_\+s@{fopen\+\_\+s}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{fopen\+\_\+s()}{fopen\_s()}}
+{\footnotesize\ttfamily bool spdlog\+::details\+::os\+::fopen\+\_\+s (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$$\ast$}]{fp,  }\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename,  }\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 148 of file os.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{namespacespdlog_1_1details_1_1os_af2d11a0b892e2f0cb3c6beba4c659a47_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_af2d11a0b892e2f0cb3c6beba4c659a47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_ac993ad051e07cd5bda5328be2a54b0a8}\label{namespacespdlog_1_1details_1_1os_ac993ad051e07cd5bda5328be2a54b0a8}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!gmtime@{gmtime}}
+\index{gmtime@{gmtime}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{gmtime()}{gmtime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::tm spdlog\+::details\+::os\+::gmtime (\begin{DoxyParamCaption}\item[{const std\+::time\+\_\+t \&}]{time\+\_\+tt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 92 of file os.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{namespacespdlog_1_1details_1_1os_ac993ad051e07cd5bda5328be2a54b0a8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_ac993ad051e07cd5bda5328be2a54b0a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a504776f0a18b0090f66778f7ad8add0b}\label{namespacespdlog_1_1details_1_1os_a504776f0a18b0090f66778f7ad8add0b}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!gmtime@{gmtime}}
+\index{gmtime@{gmtime}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{gmtime()}{gmtime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::tm spdlog\+::details\+::os\+::gmtime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file os.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_a504776f0a18b0090f66778f7ad8add0b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a2d4716c3ff12a2cc7f3bae7f3f769917}\label{namespacespdlog_1_1details_1_1os_a2d4716c3ff12a2cc7f3bae7f3f769917}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!in\+\_\+terminal@{in\+\_\+terminal}}
+\index{in\+\_\+terminal@{in\+\_\+terminal}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{in\+\_\+terminal()}{in\_terminal()}}
+{\footnotesize\ttfamily bool spdlog\+::details\+::os\+::in\+\_\+terminal (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 410 of file os.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{namespacespdlog_1_1details_1_1os_a2d4716c3ff12a2cc7f3bae7f3f769917_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a41c3f67d2cbabfcb20e89d0524e5097f}\label{namespacespdlog_1_1details_1_1os_a41c3f67d2cbabfcb20e89d0524e5097f}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!is\+\_\+color\+\_\+terminal@{is\+\_\+color\+\_\+terminal}}
+\index{is\+\_\+color\+\_\+terminal@{is\+\_\+color\+\_\+terminal}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{is\+\_\+color\+\_\+terminal()}{is\_color\_terminal()}}
+{\footnotesize\ttfamily bool spdlog\+::details\+::os\+::is\+\_\+color\+\_\+terminal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 388 of file os.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{namespacespdlog_1_1details_1_1os_a41c3f67d2cbabfcb20e89d0524e5097f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{namespacespdlog_1_1details_1_1os_a41c3f67d2cbabfcb20e89d0524e5097f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_aef63b92ee93ec66603c0357d0ac75bed}\label{namespacespdlog_1_1details_1_1os_aef63b92ee93ec66603c0357d0ac75bed}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!localtime@{localtime}}
+\index{localtime@{localtime}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{localtime()}{localtime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::tm spdlog\+::details\+::os\+::localtime (\begin{DoxyParamCaption}\item[{const std\+::time\+\_\+t \&}]{time\+\_\+tt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 73 of file os.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{namespacespdlog_1_1details_1_1os_aef63b92ee93ec66603c0357d0ac75bed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_aef63b92ee93ec66603c0357d0ac75bed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a3c7704d0c74aed204f258ac1fc7d4576}\label{namespacespdlog_1_1details_1_1os_a3c7704d0c74aed204f258ac1fc7d4576}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!localtime@{localtime}}
+\index{localtime@{localtime}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{localtime()}{localtime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::tm spdlog\+::details\+::os\+::localtime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file os.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_a3c7704d0c74aed204f258ac1fc7d4576_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_ab86a7d9f1495a0edae71ce647bae6a66}\label{namespacespdlog_1_1details_1_1os_ab86a7d9f1495a0edae71ce647bae6a66}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!now@{now}}
+\index{now@{now}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily spdlog\+::log\+\_\+clock\+::time\+\_\+point spdlog\+::details\+::os\+::now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file os.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_ab86a7d9f1495a0edae71ce647bae6a66_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_afa5e2f0096ec0aa63c2d20143cb18b17}\label{namespacespdlog_1_1details_1_1os_afa5e2f0096ec0aa63c2d20143cb18b17}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!pid@{pid}}
+\index{pid@{pid}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{pid()}{pid()}}
+{\footnotesize\ttfamily int spdlog\+::details\+::os\+::pid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 376 of file os.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_afa5e2f0096ec0aa63c2d20143cb18b17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a58e68538bb3667c56f3623bf047093d6}\label{namespacespdlog_1_1details_1_1os_a58e68538bb3667c56f3623bf047093d6}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!prevent\+\_\+child\+\_\+fd@{prevent\+\_\+child\+\_\+fd}}
+\index{prevent\+\_\+child\+\_\+fd@{prevent\+\_\+child\+\_\+fd}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{prevent\+\_\+child\+\_\+fd()}{prevent\_child\_fd()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::os\+::prevent\+\_\+child\+\_\+fd (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 129 of file os.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_a58e68538bb3667c56f3623bf047093d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a08477012dc14c38d86657b40edd2f534}\label{namespacespdlog_1_1details_1_1os_a08477012dc14c38d86657b40edd2f534}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!remove@{remove}}
+\index{remove@{remove}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily int spdlog\+::details\+::os\+::remove (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 169 of file os.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{namespacespdlog_1_1details_1_1os_a08477012dc14c38d86657b40edd2f534_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a88940402c9b1b8c9d01ea7dae8f26127}\label{namespacespdlog_1_1details_1_1os_a88940402c9b1b8c9d01ea7dae8f26127}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!rename@{rename}}
+\index{rename@{rename}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{rename()}{rename()}}
+{\footnotesize\ttfamily int spdlog\+::details\+::os\+::rename (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename1,  }\item[{const \hyperlink{namespacespdlog_acf7ce125b3622e44f8f1702d699e0b06}{filename\+\_\+t} \&}]{filename2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 178 of file os.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{namespacespdlog_1_1details_1_1os_a88940402c9b1b8c9d01ea7dae8f26127_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a49ccbc872aa679db9d1187a48897804e}\label{namespacespdlog_1_1details_1_1os_a49ccbc872aa679db9d1187a48897804e}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!sleep\+\_\+for\+\_\+millis@{sleep\+\_\+for\+\_\+millis}}
+\index{sleep\+\_\+for\+\_\+millis@{sleep\+\_\+for\+\_\+millis}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{sleep\+\_\+for\+\_\+millis()}{sleep\_for\_millis()}}
+{\footnotesize\ttfamily void spdlog\+::details\+::os\+::sleep\+\_\+for\+\_\+millis (\begin{DoxyParamCaption}\item[{int}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 351 of file os.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{namespacespdlog_1_1details_1_1os_a49ccbc872aa679db9d1187a48897804e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_a49ccbc872aa679db9d1187a48897804e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_ad0fc3a9bd510324d2d5f31acb3607e90}\label{namespacespdlog_1_1details_1_1os_ad0fc3a9bd510324d2d5f31acb3607e90}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!thread\+\_\+id@{thread\+\_\+id}}
+\index{thread\+\_\+id@{thread\+\_\+id}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{thread\+\_\+id()}{thread\_id()}}
+{\footnotesize\ttfamily size\+\_\+t spdlog\+::details\+::os\+::thread\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 339 of file os.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{namespacespdlog_1_1details_1_1os_ad0fc3a9bd510324d2d5f31acb3607e90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_ad0fc3a9bd510324d2d5f31acb3607e90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacespdlog_1_1details_1_1os_a6dce662c3a4ea0b6e95468272ec37047}\label{namespacespdlog_1_1details_1_1os_a6dce662c3a4ea0b6e95468272ec37047}} 
+\index{spdlog\+::details\+::os@{spdlog\+::details\+::os}!utc\+\_\+minutes\+\_\+offset@{utc\+\_\+minutes\+\_\+offset}}
+\index{utc\+\_\+minutes\+\_\+offset@{utc\+\_\+minutes\+\_\+offset}!spdlog\+::details\+::os@{spdlog\+::details\+::os}}
+\subsubsection{\texorpdfstring{utc\+\_\+minutes\+\_\+offset()}{utc\_minutes\_offset()}}
+{\footnotesize\ttfamily int spdlog\+::details\+::os\+::utc\+\_\+minutes\+\_\+offset (\begin{DoxyParamCaption}\item[{const std\+::tm \&}]{tm = {\ttfamily \hyperlink{namespacespdlog_1_1details_1_1os_aef63b92ee93ec66603c0357d0ac75bed}{details\+::os\+::localtime}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 249 of file os.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacespdlog_1_1details_1_1os_a6dce662c3a4ea0b6e95468272ec37047_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{namespacespdlog_1_1details_1_1os_a6dce662c3a4ea0b6e95468272ec37047_icgraph}
+\end{center}
+\end{figure}

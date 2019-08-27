@@ -1,0 +1,58 @@
+\hypertarget{_i_wire_8h}{}\section{iface/inc/\+Wire\+Cell\+Iface/\+I\+Wire.h File Reference}
+\label{_i_wire_8h}\index{iface/inc/\+Wire\+Cell\+Iface/\+I\+Wire.\+h@{iface/inc/\+Wire\+Cell\+Iface/\+I\+Wire.\+h}}
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Util/\+Point.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+I\+Sequence.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Cell\+Iface/\+Wire\+Plane\+Id.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+Include dependency graph for I\+Wire.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_i_wire_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_i_wire_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1_i_wire}{Wire\+Cell\+::\+I\+Wire}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_wire_cell_1_1_interface}{Interface} to information about a physical wire segment. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_wire_cell_1_1_i_wire_compare_ident}{Wire\+Cell\+::\+I\+Wire\+Compare\+Ident}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_i_wire_compare_index}{Wire\+Cell\+::\+I\+Wire\+Compare\+Index}
+\item 
+struct \hyperlink{struct_wire_cell_1_1_i_wire_compare_segment}{Wire\+Cell\+::\+I\+Wire\+Compare\+Segment}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_wire_cell}{Wire\+Cell}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ I\+Wire\+::pointer, I\+Wire\+::pointer $>$ \hyperlink{namespace_wire_cell_ad5f0e75d8f0e885d9ae4e9154e812d76}{Wire\+Cell\+::\+I\+Wire\+Pair}
+\begin{DoxyCompactList}\small\item\em Some common collections. \end{DoxyCompactList}\item 
+typedef std\+::set$<$ I\+Wire\+::pointer, I\+Wire\+Compare\+Ident $>$ \hyperlink{namespace_wire_cell_a18a6e1194ae1b701ea3ce7f931304e19}{Wire\+Cell\+::\+I\+Wire\+Set}
+\item 
+typedef std\+::set$<$ I\+Wire\+::pointer, I\+Wire\+Compare\+Index $>$ \hyperlink{namespace_wire_cell_a59529e31ab6cb85f53642db06acdadac}{Wire\+Cell\+::\+I\+Wire\+Index\+Set}
+\item 
+typedef std\+::set$<$ I\+Wire\+::pointer, I\+Wire\+Compare\+Segment $>$ \hyperlink{namespace_wire_cell_aff640c8ffcb5478403ad4bcede30c54b}{Wire\+Cell\+::\+I\+Wire\+Segment\+Set}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespace_wire_cell_a3e32120de947bdb96c9d47747170d90d}{Wire\+Cell\+::ascending\+\_\+index} (I\+Wire\+::pointer lhs, I\+Wire\+::pointer rhs)
+\end{DoxyCompactItemize}

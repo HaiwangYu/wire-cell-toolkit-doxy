@@ -1,0 +1,5 @@
+<map id="WireCell::BoundingBox::operator()" name="WireCell::BoundingBox::operator()">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_bounding_box.html#a3a0816d852fb478e057496a0409e0c72" title="Return the ray representing the bounds. " alt="" coords="211,5,368,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a2d1c7a1dded73fe3b51cbcfb8d9e0e04" title="Accept a configuration. " alt="" coords="416,5,599,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a41df48506ad084531fa7ac376f454894" title="WireCell::Gen::AnodePlane\l::~AnodePlane" alt="" coords="647,5,829,47"/>
+</map>

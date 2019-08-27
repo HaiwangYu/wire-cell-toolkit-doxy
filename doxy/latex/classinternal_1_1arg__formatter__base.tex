@@ -1,0 +1,299 @@
+\hypertarget{classinternal_1_1arg__formatter__base}{}\section{internal\+:\+:arg\+\_\+formatter\+\_\+base$<$ Range $>$ Class Template Reference}
+\label{classinternal_1_1arg__formatter__base}\index{internal\+::arg\+\_\+formatter\+\_\+base$<$ Range $>$@{internal\+::arg\+\_\+formatter\+\_\+base$<$ Range $>$}}
+
+
+{\ttfamily \#include $<$format.\+h$>$}
+
+
+
+Inheritance diagram for internal\+:\+:arg\+\_\+formatter\+\_\+base$<$ Range $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classinternal_1_1arg__formatter__base__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structinternal_1_1arg__formatter__base_1_1char__spec__handler}{char\+\_\+spec\+\_\+handler}
+\item 
+struct \hyperlink{structinternal_1_1arg__formatter__base_1_1cstring__spec__handler}{cstring\+\_\+spec\+\_\+handler}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Range\+::value\+\_\+type \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type}
+\item 
+typedef \hyperlink{structbasic__format__specs}{basic\+\_\+format\+\_\+specs}$<$ \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $>$ \hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{format\+\_\+specs}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinternal_1_1arg__formatter__base_ad70a5b77be0b45b880609cc8fdf1c151}{arg\+\_\+formatter\+\_\+base} (Range r, \hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{format\+\_\+specs} $\ast$s, \hyperlink{classinternal_1_1locale__ref}{locale\+\_\+ref} loc)
+\item 
+\hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} \hyperlink{classinternal_1_1arg__formatter__base_a5fa077fa175a4a91af8a6774f548411f}{operator()} (\hyperlink{structmonostate}{monostate})
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+integral$<$ T $>$\+::\hyperlink{classinternal_1_1value}{value}$\vert$$\vert$std\+::is\+\_\+same$<$ T, \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $>$\+::\hyperlink{classinternal_1_1value}{value}, \hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} $>$\+::\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038}{type} \hyperlink{classinternal_1_1arg__formatter__base_a7cf58948dafdb66e977cfadb03176de5}{operator()} (T \hyperlink{classinternal_1_1value}{value})
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+floating\+\_\+point$<$ T $>$\+::\hyperlink{classinternal_1_1value}{value}, \hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} $>$\+::\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038}{type} \hyperlink{classinternal_1_1arg__formatter__base_ad3ecb94ca4a29768ea6b559ee37be3d3}{operator()} (T \hyperlink{classinternal_1_1value}{value})
+\item 
+\hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} \hyperlink{classinternal_1_1arg__formatter__base_a6430303a592b0f1f1abb82dd0a745cc6}{operator()} (const \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $\ast$\hyperlink{classinternal_1_1value}{value})
+\item 
+\hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} \hyperlink{classinternal_1_1arg__formatter__base_a3883b00024fb661ac96cd0e182002ff2}{operator()} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $>$ \hyperlink{classinternal_1_1value}{value})
+\item 
+\hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} \hyperlink{classinternal_1_1arg__formatter__base_a77a4267b70ae9bd069e6134a7b2af862}{operator()} (const void $\ast$\hyperlink{classinternal_1_1value}{value})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+decltype(\hyperlink{namespaceinternal_a5f61aadb1d6afc8b79ef7ea57c39eafc}{internal\+::declval}$<$ Range $>$().\hyperlink{namespaceinternal_a265f36d9dee68d3f44381347ef2fd5cb}{begin}()) typedef \hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbasic__writer}{writer\+\_\+type} \& \hyperlink{classinternal_1_1arg__formatter__base_ad58c7a9790ec2bf6ed16f2caa1aa3a1f}{writer} ()
+\item 
+\hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{format\+\_\+specs} $\ast$ \hyperlink{classinternal_1_1arg__formatter__base_aee5efc224d29ce5352d856cbb9afeffa}{spec} ()
+\item 
+\hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} \hyperlink{classinternal_1_1arg__formatter__base_a01c4577755b7ce197ce0da3a94b5fc82}{out} ()
+\item 
+void \hyperlink{classinternal_1_1arg__formatter__base_afec2f8db2cc820b66ae5065737cbda8a}{write} (bool \hyperlink{classinternal_1_1value}{value})
+\item 
+void \hyperlink{classinternal_1_1arg__formatter__base_ab31e5e8e9512fba38b91b53d530fbff0}{write} (const \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $\ast$\hyperlink{classinternal_1_1value}{value})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Range$>$\newline
+class internal\+::arg\+\_\+formatter\+\_\+base$<$ Range $>$}
+
+
+
+Definition at line 1305 of file format.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}\label{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!char\+\_\+type@{char\+\_\+type}}
+\index{char\+\_\+type@{char\+\_\+type}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{char\+\_\+type}{char\_type}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+typedef Range\+::value\+\_\+type \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::\hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type}}
+
+
+
+Definition at line 1307 of file format.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}\label{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!format\+\_\+specs@{format\+\_\+specs}}
+\index{format\+\_\+specs@{format\+\_\+specs}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{format\+\_\+specs}{format\_specs}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+typedef \hyperlink{structbasic__format__specs}{basic\+\_\+format\+\_\+specs}$<$\hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type}$>$ \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::\hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{format\+\_\+specs}}
+
+
+
+Definition at line 1309 of file format.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_ad70a5b77be0b45b880609cc8fdf1c151}\label{classinternal_1_1arg__formatter__base_ad70a5b77be0b45b880609cc8fdf1c151}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!arg\+\_\+formatter\+\_\+base@{arg\+\_\+formatter\+\_\+base}}
+\index{arg\+\_\+formatter\+\_\+base@{arg\+\_\+formatter\+\_\+base}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{arg\+\_\+formatter\+\_\+base()}{arg\_formatter\_base()}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+\hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::\hyperlink{classinternal_1_1arg__formatter__base}{arg\+\_\+formatter\+\_\+base} (\begin{DoxyParamCaption}\item[{Range}]{r,  }\item[{\hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{format\+\_\+specs} $\ast$}]{s,  }\item[{\hyperlink{classinternal_1_1locale__ref}{locale\+\_\+ref}}]{loc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1359 of file format.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_a5fa077fa175a4a91af8a6774f548411f}\label{classinternal_1_1arg__formatter__base_a5fa077fa175a4a91af8a6774f548411f}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!operator()@{operator()}}
+\index{operator()@{operator()}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+\hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{structmonostate}{monostate}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1362 of file format.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_a7cf58948dafdb66e977cfadb03176de5}\label{classinternal_1_1arg__formatter__base_a7cf58948dafdb66e977cfadb03176de5}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!operator()@{operator()}}
+\index{operator()@{operator()}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+template$<$typename T $>$ \\
+std\+::enable\+\_\+if$<$ std\+::is\+\_\+integral$<$T$>$\+::\hyperlink{classinternal_1_1value}{value} $\vert$$\vert$ std\+::is\+\_\+same$<$T, \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type}$>$\+::\hyperlink{classinternal_1_1value}{value}, \hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator}$>$\+::\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038}{type} \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1370 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1arg__formatter__base_a7cf58948dafdb66e977cfadb03176de5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_ad3ecb94ca4a29768ea6b559ee37be3d3}\label{classinternal_1_1arg__formatter__base_ad3ecb94ca4a29768ea6b559ee37be3d3}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!operator()@{operator()}}
+\index{operator()@{operator()}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+template$<$typename T $>$ \\
+std\+::enable\+\_\+if$<$std\+::is\+\_\+floating\+\_\+point$<$T$>$\+::\hyperlink{classinternal_1_1value}{value}, \hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator}$>$\+::\hyperlink{namespaceinternal_a8661864098ac0acff9a6dd7e66f59038}{type} \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1388 of file format.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_a6430303a592b0f1f1abb82dd0a745cc6}\label{classinternal_1_1arg__formatter__base_a6430303a592b0f1f1abb82dd0a745cc6}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!operator()@{operator()}}
+\index{operator()@{operator()}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+\hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{const \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1420 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1arg__formatter__base_a6430303a592b0f1f1abb82dd0a745cc6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_a3883b00024fb661ac96cd0e182002ff2}\label{classinternal_1_1arg__formatter__base_a3883b00024fb661ac96cd0e182002ff2}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!operator()@{operator()}}
+\index{operator()@{operator()}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+\hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $>$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1427 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classinternal_1_1arg__formatter__base_a3883b00024fb661ac96cd0e182002ff2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_a77a4267b70ae9bd069e6134a7b2af862}\label{classinternal_1_1arg__formatter__base_a77a4267b70ae9bd069e6134a7b2af862}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!operator()@{operator()}}
+\index{operator()@{operator()}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+\hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::operator() (\begin{DoxyParamCaption}\item[{const void $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1438 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classinternal_1_1arg__formatter__base_a77a4267b70ae9bd069e6134a7b2af862_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_a01c4577755b7ce197ce0da3a94b5fc82}\label{classinternal_1_1arg__formatter__base_a01c4577755b7ce197ce0da3a94b5fc82}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!out@{out}}
+\index{out@{out}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{out()}{out()}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+\hyperlink{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}{iterator} \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 1343 of file format.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_aee5efc224d29ce5352d856cbb9afeffa}\label{classinternal_1_1arg__formatter__base_aee5efc224d29ce5352d856cbb9afeffa}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!spec@{spec}}
+\index{spec@{spec}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{spec()}{spec()}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+\hyperlink{classinternal_1_1arg__formatter__base_acff46f7da1afa536210eb77a2ea0d775}{format\+\_\+specs}$\ast$ \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::spec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 1342 of file format.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_afec2f8db2cc820b66ae5065737cbda8a}\label{classinternal_1_1arg__formatter__base_afec2f8db2cc820b66ae5065737cbda8a}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!write@{write}}
+\index{write@{write}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+void \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 1345 of file format.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinternal_1_1arg__formatter__base_afec2f8db2cc820b66ae5065737cbda8a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_ab31e5e8e9512fba38b91b53d530fbff0}\label{classinternal_1_1arg__formatter__base_ab31e5e8e9512fba38b91b53d530fbff0}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!write@{write}}
+\index{write@{write}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{write()}{write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+void \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::write (\begin{DoxyParamCaption}\item[{const \hyperlink{classinternal_1_1arg__formatter__base_a407930bf282880d2ca45dfa8f5d2034b}{char\+\_\+type} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 1350 of file format.\+h.
+
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_ad58c7a9790ec2bf6ed16f2caa1aa3a1f}\label{classinternal_1_1arg__formatter__base_ad58c7a9790ec2bf6ed16f2caa1aa3a1f}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!writer@{writer}}
+\index{writer@{writer}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{writer()}{writer()}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+\hyperlink{classbasic__writer}{writer\+\_\+type}\& \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::\hyperlink{format_8h_a67c42c49f4b855aef779fce445a884bf}{writer} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 1341 of file format.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}\label{classinternal_1_1arg__formatter__base_a87622fdc9716fee6a6de2ae496e3a54f}} 
+\index{internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}!iterator@{iterator}}
+\index{iterator@{iterator}!internal\+::arg\+\_\+formatter\+\_\+base@{internal\+::arg\+\_\+formatter\+\_\+base}}
+\subsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily template$<$typename Range $>$ \\
+decltype(\hyperlink{namespaceinternal_a5f61aadb1d6afc8b79ef7ea57c39eafc}{internal\+::declval}$<$Range$>$().\hyperlink{namespaceinternal_a265f36d9dee68d3f44381347ef2fd5cb}{begin}()) typedef \hyperlink{classinternal_1_1arg__formatter__base}{internal\+::arg\+\_\+formatter\+\_\+base}$<$ Range $>$\+::iterator}
+
+
+
+Definition at line 1308 of file format.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{format_8h}{format.\+h}\end{DoxyCompactItemize}

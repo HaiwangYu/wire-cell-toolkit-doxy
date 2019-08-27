@@ -1,0 +1,19 @@
+<map id="spdlog::logger::default_err_handler_" name="spdlog::logger::default_err_handler_">
+<area shape="rect" id="node2" href="$namespacespdlog_1_1details_1_1os.html#ab86a7d9f1495a0edae71ce647bae6a66" title="spdlog::details::os::now" alt="" coords="204,5,364,32"/>
+<area shape="rect" id="node3" href="$namespacespdlog_1_1details_1_1os.html#aef63b92ee93ec66603c0357d0ac75bed" title="spdlog::details::os\l::localtime" alt="" coords="220,57,348,98"/>
+<area shape="rect" id="node5" href="$namespaceinternal.html#a1358037a310a2e6f3d05538df58ff412" title="internal::strftime" alt="" coords="226,123,342,149"/>
+<area shape="rect" id="node7" href="$color_8h.html#a63c7b66bfbfbf84f72a2c752cf28ff3e" title="print" alt="" coords="261,173,307,200"/>
+<area shape="rect" id="node18" href="$classspdlog_1_1logger.html#ac7c6ed0f30ace90402254dc2d3ef1453" title="spdlog::logger::name" alt="" coords="213,224,355,251"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a990db8ce6eb1702f344b5993587f37af" title="internal::localtime_s" alt="" coords="418,64,557,91"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#aaa347e326b504b866752fd087f46d2b0" title="internal::strftime" alt="" coords="429,115,545,141"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#a14d62818b14fe8556fdb1718e12fd1ab" title="internal::check_format\l_string" alt="" coords="412,166,563,207"/>
+<area shape="rect" id="node9" href="$color_8h.html#a42974a7a26c04b309f65d3fbba3494f8" title="vprint" alt="" coords="460,232,515,259"/>
+<area shape="rect" id="node10" href="$classtext__style.html#a57443deabb81d0e013d81813fc4d55cb" title="text_style::has_emphasis" alt="" coords="617,105,787,132"/>
+<area shape="rect" id="node11" href="$classtext__style.html#aecbbaaf438871b55905c4beaea7318b5" title="text_style::get_emphasis" alt="" coords="618,156,786,183"/>
+<area shape="rect" id="node14" href="$classtext__style.html#ad605ce62796a99d87f0e9744617cf402" title="text_style::has_foreground" alt="" coords="614,207,790,233"/>
+<area shape="rect" id="node15" href="$classtext__style.html#a695368429b582c3fef9b28e138beec4a" title="text_style::get_foreground" alt="" coords="615,257,789,284"/>
+<area shape="rect" id="node16" href="$classtext__style.html#afa9f90cd308a4a4b61ab8f6d6178a581" title="text_style::has_background" alt="" coords="611,308,793,335"/>
+<area shape="rect" id="node17" href="$classtext__style.html#a00fb4a1cc65844bc819f71a80050181f" title="text_style::get_background" alt="" coords="613,359,791,385"/>
+<area shape="rect" id="node12" href="$color_8h.html#a518db112c4d8afd36fd1ac6f5383399b" title="fg" alt="" coords="841,131,880,157"/>
+<area shape="rect" id="node13" href="$color_8h.html#a0993505119ca965ee31dbde1972ff33f" title="bg" alt="" coords="841,181,880,208"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="WireCell::IRecombinationModel" name="WireCell::IRecombinationModel">
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_birks_recombination.html" title="WireCell::Gen::BirksRecombination" alt="" coords="623,5,852,32"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_box_recombination.html" title="WireCell::Gen::BoxRecombination" alt="" coords="626,56,849,83"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_mip_recombination.html" title="Model for a MIP, dQ = (Rmip/Wi)*dE. " alt="" coords="627,107,847,133"/>
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_component.html" title="WireCell::IComponent\l\&lt; IRecombinationModel \&gt;" alt="" coords="184,49,356,90"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_interface.html" title="WireCell::Interface" alt="" coords="5,56,136,83"/>
+</map>

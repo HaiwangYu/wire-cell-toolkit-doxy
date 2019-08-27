@@ -1,0 +1,549 @@
+\hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink}{}\section{spdlog\+:\+:sinks\+:\+:ansicolor\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$ Class Template Reference}
+\label{classspdlog_1_1sinks_1_1ansicolor__sink}\index{spdlog\+::sinks\+::ansicolor\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$@{spdlog\+::sinks\+::ansicolor\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$}}
+
+
+{\ttfamily \#include $<$ansicolor\+\_\+sink.\+h$>$}
+
+
+
+Inheritance diagram for spdlog\+:\+:sinks\+:\+:ansicolor\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classspdlog_1_1sinks_1_1ansicolor__sink__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for spdlog\+:\+:sinks\+:\+:ansicolor\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classspdlog_1_1sinks_1_1ansicolor__sink__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a99718be9a953edac6cae0371bc00fb2f}{mutex\+\_\+t} = typename Console\+Mutex\+::mutex\+\_\+t
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_aed8c41cc6f792b27bc37d2f46536268d}{ansicolor\+\_\+sink} ()
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_abca2e1439a310ff1a4d75044a5c718d1}{$\sim$ansicolor\+\_\+sink} () override=default
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_ab169c076bac30ee54cf369a7f6bfb2ea}{ansicolor\+\_\+sink} (const \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{ansicolor\+\_\+sink} \&other)=delete
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{ansicolor\+\_\+sink} \& \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a7d2fcd5a2f9a3f02e64648a609a45fb1}{operator=} (const \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{ansicolor\+\_\+sink} \&other)=delete
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_ad19df81408ed6dbbe62fe4a1e5a7fca8}{set\+\_\+color} (\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum} color\+\_\+level, const std\+::string \&\hyperlink{color_8h_a80d1dc5f416b97f92939a4166d41203c}{color})
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a042a6ab886430570095737e1984e7c6e}{log} (const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&msg) override
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a3c0587e868d2a42f96b878c6031333a0}{flush} () override
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_ab84f8a9299e060e55dcfbe333806aedc}{set\+\_\+pattern} (const std\+::string \&pattern) final
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a030c3495398d4f320ad444ca940b4731}{set\+\_\+formatter} (std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$ sink\+\_\+formatter) override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a7a232ef41d85a03d99053ee931fb11a4}{reset} = \char`\"{}\textbackslash{}033\mbox{[}m\char`\"{}
+\begin{DoxyCompactList}\small\item\em Formatting codes. \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_ab3b3847f7cfac7e21e5a4300ef0295f0}{bold} = \char`\"{}\textbackslash{}033\mbox{[}1m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a3802a11d60d725bb27b3a6aaff62bfed}{dark} = \char`\"{}\textbackslash{}033\mbox{[}2m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a22d86f2cb36da074052308603f058764}{underline} = \char`\"{}\textbackslash{}033\mbox{[}4m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_addca553132fac957295bd585ce6f59a8}{blink} = \char`\"{}\textbackslash{}033\mbox{[}5m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_ac755cd237351fa5cdf4910e491ddbf97}{reverse} = \char`\"{}\textbackslash{}033\mbox{[}7m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a681736d8ce3d3551bdb51e053a839fc3}{concealed} = \char`\"{}\textbackslash{}033\mbox{[}8m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_aa52fbe671a7c1fbeaf784b8a325745c6}{clear\+\_\+line} = \char`\"{}\textbackslash{}033\mbox{[}K\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_afe5bffc4e1d4977d2a351c8772f2f676}{black} = \char`\"{}\textbackslash{}033\mbox{[}30m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_ab5c0ce75c9457f5125a441555287b8d2}{red} = \char`\"{}\textbackslash{}033\mbox{[}31m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_ab762e65612c98bbc6b264fb4b042fc9c}{green} = \char`\"{}\textbackslash{}033\mbox{[}32m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a2677f9c054be6ae2a2e673a92ba27189}{yellow} = \char`\"{}\textbackslash{}033\mbox{[}33m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_aa5f719a0fe17fe167d2c90e65173865d}{blue} = \char`\"{}\textbackslash{}033\mbox{[}34m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a9a665375cbfd2c7ab4a07004df386fce}{magenta} = \char`\"{}\textbackslash{}033\mbox{[}35m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a6b2e0a6f8d365e054a255b631c4d4046}{cyan} = \char`\"{}\textbackslash{}033\mbox{[}36m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a74514f96774a00d0a7300b7a625c5044}{white} = \char`\"{}\textbackslash{}033\mbox{[}37m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_ac887dfeac8f16dbd96128398333786f5}{on\+\_\+black} = \char`\"{}\textbackslash{}033\mbox{[}40m\char`\"{}
+\begin{DoxyCompactList}\small\item\em Background colors. \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_aa66893db05fcfebc131c66b7db30ea49}{on\+\_\+red} = \char`\"{}\textbackslash{}033\mbox{[}41m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_addc3addb0060ca767421a4a3149c4747}{on\+\_\+green} = \char`\"{}\textbackslash{}033\mbox{[}42m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a7450ec0f85ad82c7830b11e1f54f1606}{on\+\_\+yellow} = \char`\"{}\textbackslash{}033\mbox{[}43m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a8b4b2900e0db2ed81b1d87531c75db70}{on\+\_\+blue} = \char`\"{}\textbackslash{}033\mbox{[}44m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a0cf149033d141e033f2ffb4b239f84f6}{on\+\_\+magenta} = \char`\"{}\textbackslash{}033\mbox{[}45m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a628bbe153b16a66b33566608794b82fc}{on\+\_\+cyan} = \char`\"{}\textbackslash{}033\mbox{[}46m\char`\"{}
+\item 
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_ab42fb978ba2ad9d004bf31903f0d0edc}{on\+\_\+white} = \char`\"{}\textbackslash{}033\mbox{[}47m\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Target\+Stream, class Console\+Mutex$>$\newline
+class spdlog\+::sinks\+::ansicolor\+\_\+sink$<$ Target\+Stream, Console\+Mutex $>$}
+
+This sink prefixes the output with an A\+N\+SI escape sequence color code depending on the severity of the message. If no color terminal detected, omit the escape codes. 
+
+Definition at line 32 of file ansicolor\+\_\+sink.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a99718be9a953edac6cae0371bc00fb2f}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a99718be9a953edac6cae0371bc00fb2f}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!mutex\+\_\+t@{mutex\+\_\+t}}
+\index{mutex\+\_\+t@{mutex\+\_\+t}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{mutex\+\_\+t}{mutex\_t}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+using \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink_a99718be9a953edac6cae0371bc00fb2f}{mutex\+\_\+t} =  typename Console\+Mutex\+::mutex\+\_\+t}
+
+
+
+Definition at line 35 of file ansicolor\+\_\+sink.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_aed8c41cc6f792b27bc37d2f46536268d}\label{classspdlog_1_1sinks_1_1ansicolor__sink_aed8c41cc6f792b27bc37d2f46536268d}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!ansicolor\+\_\+sink@{ansicolor\+\_\+sink}}
+\index{ansicolor\+\_\+sink@{ansicolor\+\_\+sink}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{ansicolor\+\_\+sink()}{ansicolor\_sink()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{ansicolor\+\_\+sink} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 36 of file ansicolor\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1sinks_1_1ansicolor__sink_aed8c41cc6f792b27bc37d2f46536268d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_abca2e1439a310ff1a4d75044a5c718d1}\label{classspdlog_1_1sinks_1_1ansicolor__sink_abca2e1439a310ff1a4d75044a5c718d1}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!````~ansicolor\+\_\+sink@{$\sim$ansicolor\+\_\+sink}}
+\index{````~ansicolor\+\_\+sink@{$\sim$ansicolor\+\_\+sink}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{$\sim$ansicolor\+\_\+sink()}{~ansicolor\_sink()}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::$\sim$\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{ansicolor\+\_\+sink} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1sinks_1_1ansicolor__sink_abca2e1439a310ff1a4d75044a5c718d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_ab169c076bac30ee54cf369a7f6bfb2ea}\label{classspdlog_1_1sinks_1_1ansicolor__sink_ab169c076bac30ee54cf369a7f6bfb2ea}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!ansicolor\+\_\+sink@{ansicolor\+\_\+sink}}
+\index{ansicolor\+\_\+sink@{ansicolor\+\_\+sink}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{ansicolor\+\_\+sink()}{ansicolor\_sink()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{ansicolor\+\_\+sink} (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a3c0587e868d2a42f96b878c6031333a0}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a3c0587e868d2a42f96b878c6031333a0}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!flush@{flush}}
+\index{flush@{flush}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1sink_a8a0674ae3bca8f1617aef820e23a2ccd}{spdlog\+::sinks\+::sink}.
+
+
+
+Definition at line 118 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a042a6ab886430570095737e1984e7c6e}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a042a6ab886430570095737e1984e7c6e}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!log@{log}}
+\index{log@{log}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::log (\begin{DoxyParamCaption}\item[{const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1sink_a51d8f34ad79064e0dc13c6013236e427}{spdlog\+::sinks\+::sink}.
+
+
+
+Definition at line 92 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a7d2fcd5a2f9a3f02e64648a609a45fb1}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a7d2fcd5a2f9a3f02e64648a609a45fb1}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!operator=@{operator=}}
+\index{operator=@{operator=}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{ansicolor\+\_\+sink}\& \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1sinks_1_1ansicolor__sink_a7d2fcd5a2f9a3f02e64648a609a45fb1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_ad19df81408ed6dbbe62fe4a1e5a7fca8}\label{classspdlog_1_1sinks_1_1ansicolor__sink_ad19df81408ed6dbbe62fe4a1e5a7fca8}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!set\+\_\+color@{set\+\_\+color}}
+\index{set\+\_\+color@{set\+\_\+color}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{set\+\_\+color()}{set\_color()}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{\hyperlink{namespacespdlog_1_1level_a35f5227e5daf228d28a207b7b2aefc8b}{level\+::level\+\_\+enum}}]{color\+\_\+level,  }\item[{const std\+::string \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a030c3495398d4f320ad444ca940b4731}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a030c3495398d4f320ad444ca940b4731}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!set\+\_\+formatter@{set\+\_\+formatter}}
+\index{set\+\_\+formatter@{set\+\_\+formatter}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{set\+\_\+formatter()}{set\_formatter()}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::set\+\_\+formatter (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$}]{sink\+\_\+formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1sink_ac410f2229e583a75337a5fdf45d020be}{spdlog\+::sinks\+::sink}.
+
+
+
+Definition at line 130 of file ansicolor\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classspdlog_1_1sinks_1_1ansicolor__sink_a030c3495398d4f320ad444ca940b4731_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_ab84f8a9299e060e55dcfbe333806aedc}\label{classspdlog_1_1sinks_1_1ansicolor__sink_ab84f8a9299e060e55dcfbe333806aedc}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!set\+\_\+pattern@{set\+\_\+pattern}}
+\index{set\+\_\+pattern@{set\+\_\+pattern}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{set\+\_\+pattern()}{set\_pattern()}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::set\+\_\+pattern (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1sink_a7e5cfd4b683c8bfa8fbd602d7f409632}{spdlog\+::sinks\+::sink}.
+
+
+
+Definition at line 124 of file ansicolor\+\_\+sink.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_afe5bffc4e1d4977d2a351c8772f2f676}\label{classspdlog_1_1sinks_1_1ansicolor__sink_afe5bffc4e1d4977d2a351c8772f2f676}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!black@{black}}
+\index{black@{black}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{black}{black}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::black = \char`\"{}\textbackslash{}033\mbox{[}30m\char`\"{}}
+
+
+
+Definition at line 73 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_addca553132fac957295bd585ce6f59a8}\label{classspdlog_1_1sinks_1_1ansicolor__sink_addca553132fac957295bd585ce6f59a8}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!blink@{blink}}
+\index{blink@{blink}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{blink}{blink}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::blink = \char`\"{}\textbackslash{}033\mbox{[}5m\char`\"{}}
+
+
+
+Definition at line 67 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_aa5f719a0fe17fe167d2c90e65173865d}\label{classspdlog_1_1sinks_1_1ansicolor__sink_aa5f719a0fe17fe167d2c90e65173865d}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!blue@{blue}}
+\index{blue@{blue}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{blue}{blue}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::blue = \char`\"{}\textbackslash{}033\mbox{[}34m\char`\"{}}
+
+
+
+Definition at line 77 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_ab3b3847f7cfac7e21e5a4300ef0295f0}\label{classspdlog_1_1sinks_1_1ansicolor__sink_ab3b3847f7cfac7e21e5a4300ef0295f0}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!bold@{bold}}
+\index{bold@{bold}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{bold}{bold}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::bold = \char`\"{}\textbackslash{}033\mbox{[}1m\char`\"{}}
+
+
+
+Definition at line 64 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_aa52fbe671a7c1fbeaf784b8a325745c6}\label{classspdlog_1_1sinks_1_1ansicolor__sink_aa52fbe671a7c1fbeaf784b8a325745c6}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!clear\+\_\+line@{clear\+\_\+line}}
+\index{clear\+\_\+line@{clear\+\_\+line}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{clear\+\_\+line}{clear\_line}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::clear\+\_\+line = \char`\"{}\textbackslash{}033\mbox{[}K\char`\"{}}
+
+
+
+Definition at line 70 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a681736d8ce3d3551bdb51e053a839fc3}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a681736d8ce3d3551bdb51e053a839fc3}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!concealed@{concealed}}
+\index{concealed@{concealed}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{concealed}{concealed}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::concealed = \char`\"{}\textbackslash{}033\mbox{[}8m\char`\"{}}
+
+
+
+Definition at line 69 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a6b2e0a6f8d365e054a255b631c4d4046}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a6b2e0a6f8d365e054a255b631c4d4046}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!cyan@{cyan}}
+\index{cyan@{cyan}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{cyan}{cyan}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::cyan = \char`\"{}\textbackslash{}033\mbox{[}36m\char`\"{}}
+
+
+
+Definition at line 79 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a3802a11d60d725bb27b3a6aaff62bfed}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a3802a11d60d725bb27b3a6aaff62bfed}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!dark@{dark}}
+\index{dark@{dark}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{dark}{dark}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::dark = \char`\"{}\textbackslash{}033\mbox{[}2m\char`\"{}}
+
+
+
+Definition at line 65 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_ab762e65612c98bbc6b264fb4b042fc9c}\label{classspdlog_1_1sinks_1_1ansicolor__sink_ab762e65612c98bbc6b264fb4b042fc9c}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!green@{green}}
+\index{green@{green}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{green}{green}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::green = \char`\"{}\textbackslash{}033\mbox{[}32m\char`\"{}}
+
+
+
+Definition at line 75 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a9a665375cbfd2c7ab4a07004df386fce}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a9a665375cbfd2c7ab4a07004df386fce}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!magenta@{magenta}}
+\index{magenta@{magenta}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{magenta}{magenta}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::magenta = \char`\"{}\textbackslash{}033\mbox{[}35m\char`\"{}}
+
+
+
+Definition at line 78 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_ac887dfeac8f16dbd96128398333786f5}\label{classspdlog_1_1sinks_1_1ansicolor__sink_ac887dfeac8f16dbd96128398333786f5}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!on\+\_\+black@{on\+\_\+black}}
+\index{on\+\_\+black@{on\+\_\+black}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{on\+\_\+black}{on\_black}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::on\+\_\+black = \char`\"{}\textbackslash{}033\mbox{[}40m\char`\"{}}
+
+
+
+Background colors. 
+
+
+
+Definition at line 83 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a8b4b2900e0db2ed81b1d87531c75db70}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a8b4b2900e0db2ed81b1d87531c75db70}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!on\+\_\+blue@{on\+\_\+blue}}
+\index{on\+\_\+blue@{on\+\_\+blue}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{on\+\_\+blue}{on\_blue}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::on\+\_\+blue = \char`\"{}\textbackslash{}033\mbox{[}44m\char`\"{}}
+
+
+
+Definition at line 87 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a628bbe153b16a66b33566608794b82fc}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a628bbe153b16a66b33566608794b82fc}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!on\+\_\+cyan@{on\+\_\+cyan}}
+\index{on\+\_\+cyan@{on\+\_\+cyan}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{on\+\_\+cyan}{on\_cyan}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::on\+\_\+cyan = \char`\"{}\textbackslash{}033\mbox{[}46m\char`\"{}}
+
+
+
+Definition at line 89 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_addc3addb0060ca767421a4a3149c4747}\label{classspdlog_1_1sinks_1_1ansicolor__sink_addc3addb0060ca767421a4a3149c4747}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!on\+\_\+green@{on\+\_\+green}}
+\index{on\+\_\+green@{on\+\_\+green}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{on\+\_\+green}{on\_green}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::on\+\_\+green = \char`\"{}\textbackslash{}033\mbox{[}42m\char`\"{}}
+
+
+
+Definition at line 85 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a0cf149033d141e033f2ffb4b239f84f6}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a0cf149033d141e033f2ffb4b239f84f6}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!on\+\_\+magenta@{on\+\_\+magenta}}
+\index{on\+\_\+magenta@{on\+\_\+magenta}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{on\+\_\+magenta}{on\_magenta}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::on\+\_\+magenta = \char`\"{}\textbackslash{}033\mbox{[}45m\char`\"{}}
+
+
+
+Definition at line 88 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_aa66893db05fcfebc131c66b7db30ea49}\label{classspdlog_1_1sinks_1_1ansicolor__sink_aa66893db05fcfebc131c66b7db30ea49}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!on\+\_\+red@{on\+\_\+red}}
+\index{on\+\_\+red@{on\+\_\+red}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{on\+\_\+red}{on\_red}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::on\+\_\+red = \char`\"{}\textbackslash{}033\mbox{[}41m\char`\"{}}
+
+
+
+Definition at line 84 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_ab42fb978ba2ad9d004bf31903f0d0edc}\label{classspdlog_1_1sinks_1_1ansicolor__sink_ab42fb978ba2ad9d004bf31903f0d0edc}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!on\+\_\+white@{on\+\_\+white}}
+\index{on\+\_\+white@{on\+\_\+white}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{on\+\_\+white}{on\_white}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::on\+\_\+white = \char`\"{}\textbackslash{}033\mbox{[}47m\char`\"{}}
+
+
+
+Definition at line 90 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a7450ec0f85ad82c7830b11e1f54f1606}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a7450ec0f85ad82c7830b11e1f54f1606}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!on\+\_\+yellow@{on\+\_\+yellow}}
+\index{on\+\_\+yellow@{on\+\_\+yellow}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{on\+\_\+yellow}{on\_yellow}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::on\+\_\+yellow = \char`\"{}\textbackslash{}033\mbox{[}43m\char`\"{}}
+
+
+
+Definition at line 86 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_ab5c0ce75c9457f5125a441555287b8d2}\label{classspdlog_1_1sinks_1_1ansicolor__sink_ab5c0ce75c9457f5125a441555287b8d2}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!red@{red}}
+\index{red@{red}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{red}{red}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::red = \char`\"{}\textbackslash{}033\mbox{[}31m\char`\"{}}
+
+
+
+Definition at line 74 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a7a232ef41d85a03d99053ee931fb11a4}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a7a232ef41d85a03d99053ee931fb11a4}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!reset@{reset}}
+\index{reset@{reset}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{reset}{reset}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::reset = \char`\"{}\textbackslash{}033\mbox{[}m\char`\"{}}
+
+
+
+Formatting codes. 
+
+
+
+Definition at line 63 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_ac755cd237351fa5cdf4910e491ddbf97}\label{classspdlog_1_1sinks_1_1ansicolor__sink_ac755cd237351fa5cdf4910e491ddbf97}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!reverse@{reverse}}
+\index{reverse@{reverse}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{reverse}{reverse}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::reverse = \char`\"{}\textbackslash{}033\mbox{[}7m\char`\"{}}
+
+
+
+Definition at line 68 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a22d86f2cb36da074052308603f058764}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a22d86f2cb36da074052308603f058764}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!underline@{underline}}
+\index{underline@{underline}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{underline}{underline}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::underline = \char`\"{}\textbackslash{}033\mbox{[}4m\char`\"{}}
+
+
+
+Definition at line 66 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a74514f96774a00d0a7300b7a625c5044}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a74514f96774a00d0a7300b7a625c5044}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!white@{white}}
+\index{white@{white}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{white}{white}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::white = \char`\"{}\textbackslash{}033\mbox{[}37m\char`\"{}}
+
+
+
+Definition at line 80 of file ansicolor\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1ansicolor__sink_a2677f9c054be6ae2a2e673a92ba27189}\label{classspdlog_1_1sinks_1_1ansicolor__sink_a2677f9c054be6ae2a2e673a92ba27189}} 
+\index{spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}!yellow@{yellow}}
+\index{yellow@{yellow}!spdlog\+::sinks\+::ansicolor\+\_\+sink@{spdlog\+::sinks\+::ansicolor\+\_\+sink}}
+\subsubsection{\texorpdfstring{yellow}{yellow}}
+{\footnotesize\ttfamily template$<$typename Target\+Stream , class Console\+Mutex $>$ \\
+const std\+::string \hyperlink{classspdlog_1_1sinks_1_1ansicolor__sink}{spdlog\+::sinks\+::ansicolor\+\_\+sink}$<$ Target\+Stream, Console\+Mutex $>$\+::yellow = \char`\"{}\textbackslash{}033\mbox{[}33m\char`\"{}}
+
+
+
+Definition at line 76 of file ansicolor\+\_\+sink.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/sinks/\hyperlink{ansicolor__sink_8h}{ansicolor\+\_\+sink.\+h}\end{DoxyCompactItemize}

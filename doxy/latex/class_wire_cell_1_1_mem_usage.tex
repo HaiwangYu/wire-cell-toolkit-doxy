@@ -1,0 +1,170 @@
+\hypertarget{class_wire_cell_1_1_mem_usage}{}\section{Wire\+Cell\+:\+:Mem\+Usage Class Reference}
+\label{class_wire_cell_1_1_mem_usage}\index{Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}}
+
+
+{\ttfamily \#include $<$Mem\+Usage.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ double, double $>$ \hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{memusage}
+\item 
+typedef std\+::pair$<$ \hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{memusage}, std\+::string $>$ \hyperlink{class_wire_cell_1_1_mem_usage_ac40a9ad5d6984d90924a179ca77aab3b}{event}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_mem_usage_a0310c0e9d34fb5b037f95cc147c21d08}{Mem\+Usage} (const std\+::string \&msg=\char`\"{}start\char`\"{})
+\item 
+\hyperlink{class_wire_cell_1_1_mem_usage_ad49a857aebe91c9c8bb1c3cb549807ac}{$\sim$\+Mem\+Usage} ()
+\item 
+void \hyperlink{class_wire_cell_1_1_mem_usage_af58b3442b7ec01350398c8977541d06c}{push} (const std\+::string \&msg, \hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{Mem\+Usage\+::memusage} mu=\hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{memusage}(-\/1,-\/1))
+\item 
+std\+::string \hyperlink{class_wire_cell_1_1_mem_usage_a3ab27a762267e6401a3e10f1487c34d3}{operator()} (std\+::string msg=\char`\"{}$<$tick$>$\char`\"{}, Mem\+Usage\+::memusage mu=\hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{memusage}(-\/1,-\/1))
+\begin{DoxyCompactList}\small\item\em Record an event. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_wire_cell_1_1_mem_usage_acdcd1e9ea7c3e3bcb261be506eae47e9}{summary} () const
+\begin{DoxyCompactList}\small\item\em Return summary up to now. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_mem_usage_ac40a9ad5d6984d90924a179ca77aab3b}{event} \hyperlink{class_wire_cell_1_1_mem_usage_a136b6c458ca2cae89527fbceb33ea2c4}{operator\mbox{[}$\,$\mbox{]}} (int ind) const
+\begin{DoxyCompactList}\small\item\em Return event by index. \end{DoxyCompactList}\item 
+\hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{memusage} \hyperlink{class_wire_cell_1_1_mem_usage_a0413f9a3a49204c96d5462dbb3922b44}{current} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file Mem\+Usage.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_mem_usage_ac40a9ad5d6984d90924a179ca77aab3b}\label{class_wire_cell_1_1_mem_usage_ac40a9ad5d6984d90924a179ca77aab3b}} 
+\index{Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}!event@{event}}
+\index{event@{event}!Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}}
+\subsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily typedef std\+::pair$<$\hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{memusage}, std\+::string$>$ \hyperlink{class_wire_cell_1_1_mem_usage_ac40a9ad5d6984d90924a179ca77aab3b}{Wire\+Cell\+::\+Mem\+Usage\+::event}}
+
+
+
+Definition at line 22 of file Mem\+Usage.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}\label{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}} 
+\index{Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}!memusage@{memusage}}
+\index{memusage@{memusage}!Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}}
+\subsubsection{\texorpdfstring{memusage}{memusage}}
+{\footnotesize\ttfamily typedef std\+::pair$<$double, double$>$ \hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{Wire\+Cell\+::\+Mem\+Usage\+::memusage}}
+
+
+
+Definition at line 21 of file Mem\+Usage.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_mem_usage_a0310c0e9d34fb5b037f95cc147c21d08}\label{class_wire_cell_1_1_mem_usage_a0310c0e9d34fb5b037f95cc147c21d08}} 
+\index{Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}!Mem\+Usage@{Mem\+Usage}}
+\index{Mem\+Usage@{Mem\+Usage}!Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}}
+\subsubsection{\texorpdfstring{Mem\+Usage()}{MemUsage()}}
+{\footnotesize\ttfamily Mem\+Usage\+::\+Mem\+Usage (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg = {\ttfamily \char`\"{}start\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file Mem\+Usage.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_mem_usage_ad49a857aebe91c9c8bb1c3cb549807ac}\label{class_wire_cell_1_1_mem_usage_ad49a857aebe91c9c8bb1c3cb549807ac}} 
+\index{Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}!````~Mem\+Usage@{$\sim$\+Mem\+Usage}}
+\index{````~Mem\+Usage@{$\sim$\+Mem\+Usage}!Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}}
+\subsubsection{\texorpdfstring{$\sim$\+Mem\+Usage()}{~MemUsage()}}
+{\footnotesize\ttfamily Mem\+Usage\+::$\sim$\+Mem\+Usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file Mem\+Usage.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_mem_usage_a0413f9a3a49204c96d5462dbb3922b44}\label{class_wire_cell_1_1_mem_usage_a0413f9a3a49204c96d5462dbb3922b44}} 
+\index{Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}!current@{current}}
+\index{current@{current}!Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}}
+\subsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{Mem\+Usage\+::memusage} Mem\+Usage\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 75 of file Mem\+Usage.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_mem_usage_a0413f9a3a49204c96d5462dbb3922b44_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_mem_usage_a3ab27a762267e6401a3e10f1487c34d3}\label{class_wire_cell_1_1_mem_usage_a3ab27a762267e6401a3e10f1487c34d3}} 
+\index{Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}!operator()@{operator()}}
+\index{operator()@{operator()}!Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily std\+::string Mem\+Usage\+::operator() (\begin{DoxyParamCaption}\item[{std\+::string}]{msg = {\ttfamily \char`\"{}$<$tick$>$\char`\"{}},  }\item[{\hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{Mem\+Usage\+::memusage}}]{mu = {\ttfamily \hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{memusage}(-\/1,-\/1)} }\end{DoxyParamCaption})}
+
+
+
+Record an event. 
+
+
+
+Definition at line 87 of file Mem\+Usage.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_mem_usage_a136b6c458ca2cae89527fbceb33ea2c4}\label{class_wire_cell_1_1_mem_usage_a136b6c458ca2cae89527fbceb33ea2c4}} 
+\index{Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_mem_usage_ac40a9ad5d6984d90924a179ca77aab3b}{Mem\+Usage\+::event} Mem\+Usage\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{ind }\end{DoxyParamCaption}) const}
+
+
+
+Return event by index. 
+
+
+
+Definition at line 94 of file Mem\+Usage.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_mem_usage_af58b3442b7ec01350398c8977541d06c}\label{class_wire_cell_1_1_mem_usage_af58b3442b7ec01350398c8977541d06c}} 
+\index{Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}!push@{push}}
+\index{push@{push}!Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void Mem\+Usage\+::push (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg,  }\item[{\hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{Mem\+Usage\+::memusage}}]{mu = {\ttfamily \hyperlink{class_wire_cell_1_1_mem_usage_ab022bc829c4166d0161f3c91195f062f}{memusage}(-\/1,-\/1)} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 79 of file Mem\+Usage.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_mem_usage_acdcd1e9ea7c3e3bcb261be506eae47e9}\label{class_wire_cell_1_1_mem_usage_acdcd1e9ea7c3e3bcb261be506eae47e9}} 
+\index{Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}!summary@{summary}}
+\index{summary@{summary}!Wire\+Cell\+::\+Mem\+Usage@{Wire\+Cell\+::\+Mem\+Usage}}
+\subsubsection{\texorpdfstring{summary()}{summary()}}
+{\footnotesize\ttfamily std\+::string Mem\+Usage\+::summary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return summary up to now. 
+
+
+
+Definition at line 101 of file Mem\+Usage.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_mem_usage_acdcd1e9ea7c3e3bcb261be506eae47e9_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_mem_usage_8h}{Mem\+Usage.\+h}\item 
+util/src/\hyperlink{_mem_usage_8cxx}{Mem\+Usage.\+cxx}\end{DoxyCompactItemize}

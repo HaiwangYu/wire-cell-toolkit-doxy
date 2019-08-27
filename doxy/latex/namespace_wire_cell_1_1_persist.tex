@@ -1,0 +1,270 @@
+\hypertarget{namespace_wire_cell_1_1_persist}{}\section{Wire\+Cell\+:\+:Persist Namespace Reference}
+\label{namespace_wire_cell_1_1_persist}\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wire_cell_1_1_persist_1_1_parser}{Parser}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, std\+::string $>$ \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespace_wire_cell_1_1_persist_a3b9a35a2580c04da89629682d43eae40}{exists} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Return true file exists (no file resolution performed). \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespace_wire_cell_1_1_persist_a222a8187746d148cdc44b0b43b109e53}{resolve} (const std\+::string \&filename)
+\item 
+std\+::string \hyperlink{namespace_wire_cell_1_1_persist_a65787a912677f1990c010e7ee4610a9f}{slurp} (const std\+::string \&filename)
+\item 
+void \hyperlink{namespace_wire_cell_1_1_persist_a2acf48c85b54dfa84e3a42b610cdf780}{dump} (const std\+::string \&filename, const Json\+::\+Value \&top, bool pretty=false)
+\item 
+std\+::string \hyperlink{namespace_wire_cell_1_1_persist_aaaf7c0173c5331a2c4f675e8d077abf9}{dumps} (const Json\+::\+Value \&top, bool pretty=false)
+\begin{DoxyCompactList}\small\item\em As above but dump to a J\+S\+ON text string. \end{DoxyCompactList}\item 
+Json\+::\+Value \hyperlink{namespace_wire_cell_1_1_persist_ab922ff3e9c80bcbc9d4e8342f7d3223d}{load} (const std\+::string \&filename, const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&extvar=\hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}(), const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&extcode=\hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}())
+\item 
+Json\+::\+Value \hyperlink{namespace_wire_cell_1_1_persist_adce7b2acfe82eb122ed5d06f261e155e}{loads} (const std\+::string \&text, const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&extvar=\hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}(), const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&extcode=\hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}())
+\item 
+std\+::string \hyperlink{namespace_wire_cell_1_1_persist_ab70e06414625bf66f10b20dd41112697}{evaluate\+\_\+jsonnet\+\_\+file} (const std\+::string \&filename, const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&extvar=\hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}(), const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&extcode=\hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}())
+\item 
+std\+::string \hyperlink{namespace_wire_cell_1_1_persist_ab593a212dbed0b2185fe5fe70b29fc68}{evaluate\+\_\+jsonnet\+\_\+text} (const std\+::string \&text, const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&extvar=\hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}(), const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&extcode=\hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}())
+\item 
+Json\+::\+Value \hyperlink{namespace_wire_cell_1_1_persist_a25359fd9189802ba07dce1de7e450315}{json2object} (const std\+::string \&text)
+\item 
+{\footnotesize template$<$typename Iterable $>$ }\\Json\+::\+Value \hyperlink{namespace_wire_cell_1_1_persist_a5a19d242eec54e2353002379147473ad}{iterable2json} (Iterable const \&cont)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}\label{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!externalvars\+\_\+t@{externalvars\+\_\+t}}
+\index{externalvars\+\_\+t@{externalvars\+\_\+t}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{externalvars\+\_\+t}{externalvars\_t}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, std\+::string$>$ \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{Wire\+Cell\+::\+Persist\+::externalvars\+\_\+t}}
+
+This can hold either Jsonnet external variable/value pairs The value is a string representation of a simple scalar value, or a data structure if used as code. This type may also be used to hold J\+S\+ON path/value pairs. 
+
+Definition at line 69 of file Persist.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_a2acf48c85b54dfa84e3a42b610cdf780}\label{namespace_wire_cell_1_1_persist_a2acf48c85b54dfa84e3a42b610cdf780}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!dump@{dump}}
+\index{dump@{dump}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Wire\+Cell\+::\+Persist\+::dump (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const Json\+::\+Value \&}]{top,  }\item[{bool}]{pretty = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Save the data structure held by the given top Json\+::\+Value in to a file of the given name. The format of the file is determined by the file name extension. Valid extensions are\+:
+
+
+\begin{DoxyItemize}
+\item .json \+:\+: J\+S\+ON text format
+\item .json.\+bz2 \+:\+: J\+S\+ON text format compressed with bzip2
+\end{DoxyItemize}
+
+If {\ttfamily pretty} is true then format the J\+S\+ON text with indents. If also compressed, this formatting can actually lead to {\itshape smaller} files. default to .json.\+bz2 regardless of extension. 
+
+Definition at line 37 of file Persist.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_persist_a2acf48c85b54dfa84e3a42b610cdf780_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_aaaf7c0173c5331a2c4f675e8d077abf9}\label{namespace_wire_cell_1_1_persist_aaaf7c0173c5331a2c4f675e8d077abf9}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!dumps@{dumps}}
+\index{dumps@{dumps}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{dumps()}{dumps()}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Persist\+::dumps (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{top,  }\item[{bool}]{pretty = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+As above but dump to a J\+S\+ON text string. 
+
+
+
+Definition at line 58 of file Persist.\+cxx.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_ab70e06414625bf66f10b20dd41112697}\label{namespace_wire_cell_1_1_persist_ab70e06414625bf66f10b20dd41112697}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!evaluate\+\_\+jsonnet\+\_\+file@{evaluate\+\_\+jsonnet\+\_\+file}}
+\index{evaluate\+\_\+jsonnet\+\_\+file@{evaluate\+\_\+jsonnet\+\_\+file}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{evaluate\+\_\+jsonnet\+\_\+file()}{evaluate\_jsonnet\_file()}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Persist\+::evaluate\+\_\+jsonnet\+\_\+file (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&}]{extvar = {\ttfamily \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}()},  }\item[{const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&}]{extcode = {\ttfamily \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}()} }\end{DoxyParamCaption})}
+
+Explicitly evaluate contents of file with Jsonnet. If no support for Jsonnet is built, return the contents of file. Return empty string if Jsonnet evaluation failes.
+
+\hyperlink{class_wire_cell_1_1_i_o_error}{Wire\+Cell\+::\+I\+O\+Error} is thrown if file is not found. \hyperlink{struct_wire_cell_1_1_value_error}{Wire\+Cell\+::\+Value\+Error} is thrown parsing fails. 
+
+Definition at line 185 of file Persist.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{namespace_wire_cell_1_1_persist_ab70e06414625bf66f10b20dd41112697_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_ab593a212dbed0b2185fe5fe70b29fc68}\label{namespace_wire_cell_1_1_persist_ab593a212dbed0b2185fe5fe70b29fc68}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!evaluate\+\_\+jsonnet\+\_\+text@{evaluate\+\_\+jsonnet\+\_\+text}}
+\index{evaluate\+\_\+jsonnet\+\_\+text@{evaluate\+\_\+jsonnet\+\_\+text}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{evaluate\+\_\+jsonnet\+\_\+text()}{evaluate\_jsonnet\_text()}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Persist\+::evaluate\+\_\+jsonnet\+\_\+text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&}]{extvar = {\ttfamily \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}()},  }\item[{const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&}]{extcode = {\ttfamily \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}()} }\end{DoxyParamCaption})}
+
+Explicitly evaluate text with J\+Sonnet. If no support for Jsonnet is built, return the text. Return empty string if Jsonnet evaluation failes.
+
+\hyperlink{struct_wire_cell_1_1_value_error}{Wire\+Cell\+::\+Value\+Error} is thrown parsing fails. 
+
+Definition at line 205 of file Persist.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_persist_ab593a212dbed0b2185fe5fe70b29fc68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_a3b9a35a2580c04da89629682d43eae40}\label{namespace_wire_cell_1_1_persist_a3b9a35a2580c04da89629682d43eae40}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!exists@{exists}}
+\index{exists@{exists}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily bool Wire\+Cell\+::\+Persist\+::exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Return true file exists (no file resolution performed). 
+
+
+
+Definition at line 79 of file Persist.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{namespace_wire_cell_1_1_persist_a3b9a35a2580c04da89629682d43eae40_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_a5a19d242eec54e2353002379147473ad}\label{namespace_wire_cell_1_1_persist_a5a19d242eec54e2353002379147473ad}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!iterable2json@{iterable2json}}
+\index{iterable2json@{iterable2json}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{iterable2json()}{iterable2json()}}
+{\footnotesize\ttfamily template$<$typename Iterable $>$ \\
+Json\+::\+Value Wire\+Cell\+::\+Persist\+::iterable2json (\begin{DoxyParamCaption}\item[{Iterable const \&}]{cont }\end{DoxyParamCaption})}
+
+Convert a collection to a Json\+::\+Value 
+
+Definition at line 117 of file Persist.\+h.
+
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_a25359fd9189802ba07dce1de7e450315}\label{namespace_wire_cell_1_1_persist_a25359fd9189802ba07dce1de7e450315}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!json2object@{json2object}}
+\index{json2object@{json2object}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{json2object()}{json2object()}}
+{\footnotesize\ttfamily Json\+::\+Value Wire\+Cell\+::\+Persist\+::json2object (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+Explicitly convert J\+S\+ON text to Json\+::\+Value object 
+
+Definition at line 161 of file Persist.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_persist_a25359fd9189802ba07dce1de7e450315_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_ab922ff3e9c80bcbc9d4e8342f7d3223d}\label{namespace_wire_cell_1_1_persist_ab922ff3e9c80bcbc9d4e8342f7d3223d}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!load@{load}}
+\index{load@{load}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily Json\+::\+Value Wire\+Cell\+::\+Persist\+::load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&}]{extvar = {\ttfamily \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}()},  }\item[{const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&}]{extcode = {\ttfamily \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}()} }\end{DoxyParamCaption})}
+
+Load a file and return the top J\+S\+ON value. \begin{DoxyVerb}If extension is `.jsonnet` and Jsonnet support is compiled
+in, evaluate the file and use the resulting JSON.  Other
+supported extensions include raw (`.json`) or compressed
+(`.json.bz2`) files.  
+
+WireCell::IOError is thrown if file is not found.\end{DoxyVerb}
+ 
+
+Definition at line 121 of file Persist.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_persist_ab922ff3e9c80bcbc9d4e8342f7d3223d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_adce7b2acfe82eb122ed5d06f261e155e}\label{namespace_wire_cell_1_1_persist_adce7b2acfe82eb122ed5d06f261e155e}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!loads@{loads}}
+\index{loads@{loads}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{loads()}{loads()}}
+{\footnotesize\ttfamily Json\+::\+Value Wire\+Cell\+::\+Persist\+::loads (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&}]{extvar = {\ttfamily \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}()},  }\item[{const \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t} \&}]{extcode = {\ttfamily \hyperlink{namespace_wire_cell_1_1_persist_ae031fc57de5b5814ccd700d007bc847b}{externalvars\+\_\+t}()} }\end{DoxyParamCaption})}
+
+Load a J\+S\+ON or Jsonnet string, returning a Json\+::\+Value. 
+
+Definition at line 152 of file Persist.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{namespace_wire_cell_1_1_persist_adce7b2acfe82eb122ed5d06f261e155e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{namespace_wire_cell_1_1_persist_adce7b2acfe82eb122ed5d06f261e155e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_a222a8187746d148cdc44b0b43b109e53}\label{namespace_wire_cell_1_1_persist_a222a8187746d148cdc44b0b43b109e53}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!resolve@{resolve}}
+\index{resolve@{resolve}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Persist\+::resolve (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Return full path to a file of the given filename. If the file is not directly located and is a relative path then the file will be first located in the current working directory. Failing that if the {\ttfamily W\+I\+R\+E\+C\+E\+L\+L\+\_\+\+P\+A\+TH} environment variable is defined and set as a {\ttfamily \+:}-\/separated list it will be checked. Failure to resolve returns an empty string. 
+
+Definition at line 99 of file Persist.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespace_wire_cell_1_1_persist_a222a8187746d148cdc44b0b43b109e53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespace_wire_cell_1_1_persist_a65787a912677f1990c010e7ee4610a9f}\label{namespace_wire_cell_1_1_persist_a65787a912677f1990c010e7ee4610a9f}} 
+\index{Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}!slurp@{slurp}}
+\index{slurp@{slurp}!Wire\+Cell\+::\+Persist@{Wire\+Cell\+::\+Persist}}
+\subsubsection{\texorpdfstring{slurp()}{slurp()}}
+{\footnotesize\ttfamily std\+::string Wire\+Cell\+::\+Persist\+::slurp (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Return a string holding the entire contents of the file. File resolution is performed. \hyperlink{class_wire_cell_1_1_i_o_error}{Wire\+Cell\+::\+I\+O\+Error} is thrown if file is not found. 
+
+Definition at line 65 of file Persist.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{namespace_wire_cell_1_1_persist_a65787a912677f1990c010e7ee4610a9f_cgraph}
+\end{center}
+\end{figure}

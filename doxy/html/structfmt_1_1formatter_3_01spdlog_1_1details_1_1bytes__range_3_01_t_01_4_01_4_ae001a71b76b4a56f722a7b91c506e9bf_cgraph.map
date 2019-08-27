@@ -1,0 +1,5 @@
+<map id="fmt::formatter&lt; spdlog::details::bytes_range&lt; T &gt; &gt;::put_newline" name="fmt::formatter&lt; spdlog::details::bytes_range&lt; T &gt; &gt;::put_newline">
+<area shape="rect" id="node2" href="$core_8h.html#a7f023637311ff6fae516e0da2caf05d3" title="format_to" alt="" coords="204,31,281,57"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a9f6f592ec8a979251038265f241e7d48" title="internal::vformat_to" alt="" coords="329,5,464,32"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a153fda3826e43649ab74f70396f9d5bc" title="internal::to_string_view" alt="" coords="512,31,668,57"/>
+</map>

@@ -1,0 +1,29 @@
+<map id="ptr" name="ptr">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_anode_face.html#a6ed6d7c6614695d5ace93aa10b0d2478" title="Return the wire plane with the given ident or nullptr if unknown. " alt="" coords="114,5,293,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a429403f80c922cd168213c049ecadeea" title="Return a anode face by its ident number. " alt="" coords="112,71,295,112"/>
+<area shape="rect" id="node8" href="$class_wire_cell_tbb_1_1_fanin_wrapper.html#a03e6bbc3d8adc82c6203a72d615c1ba7" title="WireCellTbb::FaninWrapper\l::sender_ports" alt="" coords="112,136,295,177"/>
+<area shape="rect" id="node9" href="$class_wire_cell_tbb_1_1_join_wrapper.html#a5f533ec15abe6bbc05b852af154cb9a1" title="WireCellTbb::JoinWrapper\l::sender_ports" alt="" coords="116,201,291,243"/>
+<area shape="rect" id="node10" href="$class_wire_cell_tbb_1_1_queuedout_wrapper.html#ad834a6bf647b8ee3126b868f7f37c80f" title="WireCellTbb::QueuedoutWrapper\l::receiver_ports" alt="" coords="96,267,311,308"/>
+<area shape="rect" id="node11" href="$class_wire_cell_tbb_1_1_queuedout_wrapper.html#a3fbda43473c83b36b82fc53de70a9018" title="WireCellTbb::QueuedoutWrapper\l::sender_ports" alt="" coords="96,332,311,373"/>
+<area shape="rect" id="node12" href="$class_wire_cell_tbb_1_1_sink_node_wrapper.html#a09c612e3812953234b60b9e184c598cd" title="WireCellTbb::SinkNodeWrapper\l::receiver_ports" alt="" coords="99,397,307,439"/>
+<area shape="rect" id="node13" href="$class_wire_cell_tbb_1_1_source_node_wrapper.html#acd2f3593b008c9570593412192b99b33" title="WireCellTbb::SourceNodeWrapper\l::sender_ports" alt="" coords="92,463,315,504"/>
+<area shape="rect" id="node14" href="$namespaceinternal.html#adb293fc437669ac43eac0ca61734db90" title="internal::parse_chrono\l_format" alt="" coords="128,528,279,569"/>
+<area shape="rect" id="node17" href="$classinternal_1_1null__terminating__iterator.html#a91b88c0a6cbe8b2857227e0536153324" title="internal::null_terminating\l_iterator::operator=" alt="" coords="122,593,285,635"/>
+<area shape="rect" id="node18" href="$namespace_wire_cell.html#a86bf5b387104e6d8db8e9b8fa2d09e9c" title="Put value in configuration at the dotted path. " alt="" coords="154,741,253,767"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_anode_face.html#aa4becde47c5ca6e98a08674a61b33b72" title="Return the number of wire planes in the given side. " alt="" coords="375,5,553,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a67547b54d01b3112b8a194660d1d2f2a" title="Return number of faces (eg, MicroBooNE=1, DUNE=2) " alt="" coords="373,181,555,223"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a2d1c7a1dded73fe3b51cbcfb8d9e0e04" title="Accept a configuration. " alt="" coords="613,248,796,289"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#a41df48506ad084531fa7ac376f454894" title="WireCell::Gen::AnodePlane\l::~AnodePlane" alt="" coords="844,347,1027,388"/>
+<area shape="rect" id="node15" href="$structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a0b4553a087ee08ec032965fe1fc35ff4" title="formatter\&lt; std::chrono\l::duration\&lt; Rep, Period\l \&gt;, Char \&gt;::parse" alt="" coords="385,358,543,414"/>
+<area shape="rect" id="node16" href="$structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html#a8e85fb782f4dddcd3cb1fa207f2dd48c" title="formatter\&lt; std::chrono\l::duration\&lt; Rep, Period\l \&gt;, Char \&gt;::format" alt="" coords="385,438,543,494"/>
+<area shape="rect" id="node19" href="$class_wire_cell_1_1_gen_1_1_anode_plane.html#acc2e184daee40976feb1b2a1b6171905" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="613,444,796,485"/>
+<area shape="rect" id="node20" href="$class_wire_cell_1_1_gen_1_1_depo_framer.html#adee1889f1ab532a31f8ae66e149ee8a4" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="372,569,556,611"/>
+<area shape="rect" id="node21" href="$class_wire_cell_1_1_gen_1_1_depo_transform.html#aa3f2c3fcf0aae6b353296fd5d784cb8d" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="363,635,565,676"/>
+<area shape="rect" id="node22" href="$class_wire_cell_1_1_gen_1_1_depo_zipper.html#aaecdc02da3fb1362266b4606cfe9e03f" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="375,700,553,741"/>
+<area shape="rect" id="node23" href="$class_wire_cell_1_1_gen_1_1_digitizer.html#a6f8c0cf139021b7b54162e1dc42d9668" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="384,765,544,807"/>
+<area shape="rect" id="node24" href="$class_wire_cell_1_1_gen_1_1_ductor.html#ab9486eb33932f6f7c0ff321675829178" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="389,831,539,872"/>
+<area shape="rect" id="node26" href="$class_wire_cell_1_1_gen_1_1_fourdee.html#a36c5e467b00f1598b8063f30aa33d981" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="385,896,543,937"/>
+<area shape="rect" id="node27" href="$class_wire_cell_1_1_gen_1_1_truth_smearer.html#a9ba841f3a493bb16e41d87e69448843c" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="369,961,559,1003"/>
+<area shape="rect" id="node28" href="$class_wire_cell_1_1_gen_1_1_truth_trace_i_d.html#a315b5e6491134d84248cfc2ed8f8e0b1" title="Optional, override to return a hard&#45;coded default configuration. " alt="" coords="377,1027,551,1068"/>
+<area shape="rect" id="node25" href="$class_wire_cell_1_1_gen_1_1_ductor.html#a331c4314dba8472ab8c49dbc9112ff4b" title="WireCell::Gen::Ductor\l::~Ductor" alt="" coords="629,831,780,872"/>
+</map>

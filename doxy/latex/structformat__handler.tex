@@ -1,0 +1,240 @@
+\hypertarget{structformat__handler}{}\section{format\+\_\+handler$<$ Arg\+Formatter, Char, Context $>$ Struct Template Reference}
+\label{structformat__handler}\index{format\+\_\+handler$<$ Arg\+Formatter, Char, Context $>$@{format\+\_\+handler$<$ Arg\+Formatter, Char, Context $>$}}
+
+
+{\ttfamily \#include $<$format.\+h$>$}
+
+
+
+Inheritance diagram for format\+\_\+handler$<$ Arg\+Formatter, Char, Context $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{structformat__handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for format\+\_\+handler$<$ Arg\+Formatter, Char, Context $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{structformat__handler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Arg\+Formatter\+::range \hyperlink{structformat__handler_ac65f0cea520d6e2db8e8738bdbbfa246}{range}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structformat__handler_a9bfd742776e1ff31e5ef9801d28fcf78}{format\+\_\+handler} (\hyperlink{structformat__handler_ac65f0cea520d6e2db8e8738bdbbfa246}{range} r, \hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ str, \hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$ \hyperlink{structformat__args}{format\+\_\+args}, \hyperlink{classinternal_1_1locale__ref}{internal\+::locale\+\_\+ref} loc)
+\item 
+void \hyperlink{structformat__handler_a0658a1b87089088fae4267f567e9ee7d}{on\+\_\+text} (const Char $\ast$begin, const Char $\ast$end)
+\item 
+void \hyperlink{structformat__handler_a68a3fd78bb89496cb6b27f67b0ecb168}{on\+\_\+arg\+\_\+id} ()
+\item 
+void \hyperlink{structformat__handler_a7af75f0c8c9bfd281525c23c557610df}{on\+\_\+arg\+\_\+id} (unsigned id)
+\item 
+void \hyperlink{structformat__handler_a5030233b6e1cb1824e131712a3ec5156}{on\+\_\+arg\+\_\+id} (\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$ id)
+\item 
+void \hyperlink{structformat__handler_abe898802a15ef6686480569ab638b38a}{on\+\_\+replacement\+\_\+field} (const Char $\ast$p)
+\item 
+const Char $\ast$ \hyperlink{structformat__handler_a4d16ddae0958acb12d0606038c393b24}{on\+\_\+format\+\_\+specs} (const Char $\ast$begin, const Char $\ast$end)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Context \hyperlink{structformat__handler_ac4b040908991e61745acef69487df339}{context}
+\item 
+\hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$ Context $>$ \hyperlink{structformat__handler_a36cf5020da11b151d4ba46b0354a6356}{arg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Arg\+Formatter, typename Char, typename Context$>$\newline
+struct format\+\_\+handler$<$ Arg\+Formatter, Char, Context $>$}
+
+
+
+Definition at line 3068 of file format.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structformat__handler_ac65f0cea520d6e2db8e8738bdbbfa246}\label{structformat__handler_ac65f0cea520d6e2db8e8738bdbbfa246}} 
+\index{format\+\_\+handler@{format\+\_\+handler}!range@{range}}
+\index{range@{range}!format\+\_\+handler@{format\+\_\+handler}}
+\subsubsection{\texorpdfstring{range}{range}}
+{\footnotesize\ttfamily template$<$typename Arg\+Formatter, typename Char, typename Context$>$ \\
+typedef Arg\+Formatter\+::range \hyperlink{structformat__handler}{format\+\_\+handler}$<$ Arg\+Formatter, Char, Context $>$\+::\hyperlink{structformat__handler_ac65f0cea520d6e2db8e8738bdbbfa246}{range}}
+
+
+
+Definition at line 3069 of file format.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structformat__handler_a9bfd742776e1ff31e5ef9801d28fcf78}\label{structformat__handler_a9bfd742776e1ff31e5ef9801d28fcf78}} 
+\index{format\+\_\+handler@{format\+\_\+handler}!format\+\_\+handler@{format\+\_\+handler}}
+\index{format\+\_\+handler@{format\+\_\+handler}!format\+\_\+handler@{format\+\_\+handler}}
+\subsubsection{\texorpdfstring{format\+\_\+handler()}{format\_handler()}}
+{\footnotesize\ttfamily template$<$typename Arg\+Formatter, typename Char, typename Context$>$ \\
+\hyperlink{structformat__handler}{format\+\_\+handler}$<$ Arg\+Formatter, Char, Context $>$\+::\hyperlink{structformat__handler}{format\+\_\+handler} (\begin{DoxyParamCaption}\item[{\hyperlink{structformat__handler_ac65f0cea520d6e2db8e8738bdbbfa246}{range}}]{r,  }\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{str,  }\item[{\hyperlink{classbasic__format__args}{basic\+\_\+format\+\_\+args}$<$ Context $>$}]{format\+\_\+args,  }\item[{\hyperlink{classinternal_1_1locale__ref}{internal\+::locale\+\_\+ref}}]{loc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3071 of file format.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structformat__handler_a68a3fd78bb89496cb6b27f67b0ecb168}\label{structformat__handler_a68a3fd78bb89496cb6b27f67b0ecb168}} 
+\index{format\+\_\+handler@{format\+\_\+handler}!on\+\_\+arg\+\_\+id@{on\+\_\+arg\+\_\+id}}
+\index{on\+\_\+arg\+\_\+id@{on\+\_\+arg\+\_\+id}!format\+\_\+handler@{format\+\_\+handler}}
+\subsubsection{\texorpdfstring{on\+\_\+arg\+\_\+id()}{on\_arg\_id()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Arg\+Formatter, typename Char, typename Context$>$ \\
+void \hyperlink{structformat__handler}{format\+\_\+handler}$<$ Arg\+Formatter, Char, Context $>$\+::on\+\_\+arg\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3084 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{structformat__handler_a68a3fd78bb89496cb6b27f67b0ecb168_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structformat__handler_a7af75f0c8c9bfd281525c23c557610df}\label{structformat__handler_a7af75f0c8c9bfd281525c23c557610df}} 
+\index{format\+\_\+handler@{format\+\_\+handler}!on\+\_\+arg\+\_\+id@{on\+\_\+arg\+\_\+id}}
+\index{on\+\_\+arg\+\_\+id@{on\+\_\+arg\+\_\+id}!format\+\_\+handler@{format\+\_\+handler}}
+\subsubsection{\texorpdfstring{on\+\_\+arg\+\_\+id()}{on\_arg\_id()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Arg\+Formatter, typename Char, typename Context$>$ \\
+void \hyperlink{structformat__handler}{format\+\_\+handler}$<$ Arg\+Formatter, Char, Context $>$\+::on\+\_\+arg\+\_\+id (\begin{DoxyParamCaption}\item[{unsigned}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3085 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{structformat__handler_a7af75f0c8c9bfd281525c23c557610df_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structformat__handler_a5030233b6e1cb1824e131712a3ec5156}\label{structformat__handler_a5030233b6e1cb1824e131712a3ec5156}} 
+\index{format\+\_\+handler@{format\+\_\+handler}!on\+\_\+arg\+\_\+id@{on\+\_\+arg\+\_\+id}}
+\index{on\+\_\+arg\+\_\+id@{on\+\_\+arg\+\_\+id}!format\+\_\+handler@{format\+\_\+handler}}
+\subsubsection{\texorpdfstring{on\+\_\+arg\+\_\+id()}{on\_arg\_id()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Arg\+Formatter, typename Char, typename Context$>$ \\
+void \hyperlink{structformat__handler}{format\+\_\+handler}$<$ Arg\+Formatter, Char, Context $>$\+::on\+\_\+arg\+\_\+id (\begin{DoxyParamCaption}\item[{\hyperlink{classbasic__string__view}{basic\+\_\+string\+\_\+view}$<$ Char $>$}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3089 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{structformat__handler_a5030233b6e1cb1824e131712a3ec5156_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structformat__handler_a4d16ddae0958acb12d0606038c393b24}\label{structformat__handler_a4d16ddae0958acb12d0606038c393b24}} 
+\index{format\+\_\+handler@{format\+\_\+handler}!on\+\_\+format\+\_\+specs@{on\+\_\+format\+\_\+specs}}
+\index{on\+\_\+format\+\_\+specs@{on\+\_\+format\+\_\+specs}!format\+\_\+handler@{format\+\_\+handler}}
+\subsubsection{\texorpdfstring{on\+\_\+format\+\_\+specs()}{on\_format\_specs()}}
+{\footnotesize\ttfamily template$<$typename Arg\+Formatter, typename Char, typename Context$>$ \\
+const Char$\ast$ \hyperlink{structformat__handler}{format\+\_\+handler}$<$ Arg\+Formatter, Char, Context $>$\+::on\+\_\+format\+\_\+specs (\begin{DoxyParamCaption}\item[{const Char $\ast$}]{begin,  }\item[{const Char $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3100 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structformat__handler_a4d16ddae0958acb12d0606038c393b24_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structformat__handler_abe898802a15ef6686480569ab638b38a}\label{structformat__handler_abe898802a15ef6686480569ab638b38a}} 
+\index{format\+\_\+handler@{format\+\_\+handler}!on\+\_\+replacement\+\_\+field@{on\+\_\+replacement\+\_\+field}}
+\index{on\+\_\+replacement\+\_\+field@{on\+\_\+replacement\+\_\+field}!format\+\_\+handler@{format\+\_\+handler}}
+\subsubsection{\texorpdfstring{on\+\_\+replacement\+\_\+field()}{on\_replacement\_field()}}
+{\footnotesize\ttfamily template$<$typename Arg\+Formatter, typename Char, typename Context$>$ \\
+void \hyperlink{structformat__handler}{format\+\_\+handler}$<$ Arg\+Formatter, Char, Context $>$\+::on\+\_\+replacement\+\_\+field (\begin{DoxyParamCaption}\item[{const Char $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3093 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{structformat__handler_abe898802a15ef6686480569ab638b38a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structformat__handler_a0658a1b87089088fae4267f567e9ee7d}\label{structformat__handler_a0658a1b87089088fae4267f567e9ee7d}} 
+\index{format\+\_\+handler@{format\+\_\+handler}!on\+\_\+text@{on\+\_\+text}}
+\index{on\+\_\+text@{on\+\_\+text}!format\+\_\+handler@{format\+\_\+handler}}
+\subsubsection{\texorpdfstring{on\+\_\+text()}{on\_text()}}
+{\footnotesize\ttfamily template$<$typename Arg\+Formatter, typename Char, typename Context$>$ \\
+void \hyperlink{structformat__handler}{format\+\_\+handler}$<$ Arg\+Formatter, Char, Context $>$\+::on\+\_\+text (\begin{DoxyParamCaption}\item[{const Char $\ast$}]{begin,  }\item[{const Char $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3076 of file format.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structformat__handler_a0658a1b87089088fae4267f567e9ee7d_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structformat__handler_a36cf5020da11b151d4ba46b0354a6356}\label{structformat__handler_a36cf5020da11b151d4ba46b0354a6356}} 
+\index{format\+\_\+handler@{format\+\_\+handler}!arg@{arg}}
+\index{arg@{arg}!format\+\_\+handler@{format\+\_\+handler}}
+\subsubsection{\texorpdfstring{arg}{arg}}
+{\footnotesize\ttfamily template$<$typename Arg\+Formatter, typename Char, typename Context$>$ \\
+\hyperlink{classbasic__format__arg}{basic\+\_\+format\+\_\+arg}$<$Context$>$ \hyperlink{structformat__handler}{format\+\_\+handler}$<$ Arg\+Formatter, Char, Context $>$\+::arg}
+
+
+
+Definition at line 3119 of file format.\+h.
+
+\mbox{\Hypertarget{structformat__handler_ac4b040908991e61745acef69487df339}\label{structformat__handler_ac4b040908991e61745acef69487df339}} 
+\index{format\+\_\+handler@{format\+\_\+handler}!context@{context}}
+\index{context@{context}!format\+\_\+handler@{format\+\_\+handler}}
+\subsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily template$<$typename Arg\+Formatter, typename Char, typename Context$>$ \\
+Context \hyperlink{structformat__handler}{format\+\_\+handler}$<$ Arg\+Formatter, Char, Context $>$\+::\hyperlink{format_8h_af1dcf0d1d6738a06a6d7fd63e0bd1859}{context}}
+
+
+
+Definition at line 3118 of file format.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/fmt/bundled/\hyperlink{format_8h}{format.\+h}\end{DoxyCompactItemize}

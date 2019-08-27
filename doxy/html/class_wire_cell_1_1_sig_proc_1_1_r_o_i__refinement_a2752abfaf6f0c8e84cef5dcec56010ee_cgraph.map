@@ -1,0 +1,34 @@
+<map id="WireCell::SigProc::ROI_refinement::load_data" name="WireCell::SigProc::ROI_refinement::load_data">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#a285fb34576a925bea63de0de7051e5bc" title="WireCell::SigProc::\lROI_formation::get_uplane_rms" alt="" coords="234,5,441,47"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#acab588261e8829edd8ba9f2c7dd90780" title="WireCell::SigProc::\lROI_formation::get_vplane_rms" alt="" coords="234,71,441,112"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#afe5f0a8059b5d5b9b7e34077fea64c0a" title="WireCell::SigProc::\lROI_formation::get_wplane_rms" alt="" coords="232,136,443,177"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#aa22dcb0af16abe3380c1d6c12c2d862d" title="WireCell::SigProc::\lROI_formation::get_self_rois" alt="" coords="243,201,432,243"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#ad7adf2e8940e21c808371578e16eeac8" title="WireCell::SigProc::\lSignalROI::get_above\l_threshold" alt="" coords="507,289,657,345"/>
+<area shape="rect" id="node7" href="$namespaceinternal.html#a94820de1710dc8038fa6f188adfe299b" title="internal::end" alt="" coords="757,271,851,298"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#a265f36d9dee68d3f44381347ef2fd5cb" title="internal::begin" alt="" coords="286,638,389,665"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a2b79f88f3551f06ccb3f61aaa00da118" title="WireCell::SigProc::\lSignalROI::overlap" alt="" coords="515,485,649,527"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#acfe33b6d693694e95f905a34a2940c32" title="WireCell::SigProc::\lSignalROI::get_start_bin" alt="" coords="721,405,887,447"/>
+<area shape="rect" id="node11" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a826112ffb7fed5ffeff403e4a34c036c" title="WireCell::SigProc::\lSignalROI::get_end_bin" alt="" coords="724,515,884,556"/>
+<area shape="rect" id="node12" href="$class_wire_cell_1_1_sig_proc_1_1_r_o_i__formation.html#a851997f497e0bdf05982e955d6d4007d" title="WireCell::SigProc::\lROI_formation::get_loose_rois" alt="" coords="238,689,437,731"/>
+<area shape="rect" id="node13" href="$namespace_wire_cell.html#aeda39bc129b6bab40d0e35ffb4af55ef" title="Return dictionary in given list if it value at dotpath matches. " alt="" coords="287,755,388,782"/>
+<area shape="rect" id="node16" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a92565abca22adcc336111be6f487f9c9" title="WireCell::SigProc::\lSignalROI::get_chid" alt="" coords="268,807,407,848"/>
+<area shape="rect" id="node17" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#aed20acd4564c60d6ebfc1d0c0b3c27b6" title="WireCell::SigProc::\lSignalROI::get_average\l_heights" alt="" coords="501,602,663,658"/>
+<area shape="rect" id="node30" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#ab3dee5cfbcf601f4ac56bc7968c74fda" title="WireCell::SigProc::\lSignalROI::get_plane" alt="" coords="264,872,411,913"/>
+<area shape="rect" id="node31" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#aa2fee1613b1c49322cf5d738261cf1c9" title="WireCell::SigProc::\lSignalROI::get_contents" alt="" coords="255,420,420,461"/>
+<area shape="rect" id="node33" href="$namespaceinternal.html#a1fb268779155d9e5cb2ee01298cf5541" title="internal::find" alt="" coords="291,938,384,965"/>
+<area shape="rect" id="node14" href="$namespace_wire_cell.html#ade8a8d63c0beb7335d7f969903bfeedc" title="Follow a dot.separated.path and return the branch there. " alt="" coords="523,755,641,782"/>
+<area shape="rect" id="node15" href="$namespace_wire_cell_1_1_string.html#aef23d7b89dbe21e34a499c9156dd1e60" title="WireCell::String::split" alt="" coords="731,755,877,782"/>
+<area shape="rect" id="node18" href="$namespace_wire_cell_1_1_waveform.html#a6aa0cf31fb8548b1f74ffb3f77350668" title="Return sum of square of all entries in sequence. " alt="" coords="734,609,874,651"/>
+<area shape="rect" id="node19" href="$namespace_wire_cell_1_1_waveform.html#af0395e9b0e5e9e86a26579badb834092" title="WireCell::Waveform\l::mean_rms" alt="" coords="946,375,1086,416"/>
+<area shape="rect" id="node21" href="$namespace_wire_cell_1_1_waveform.html#af5e9352cbf35ddaf2f95e924d241a2aa" title="WireCell::Waveform\l::median" alt="" coords="946,492,1086,533"/>
+<area shape="rect" id="node22" href="$namespace_wire_cell_1_1_waveform.html#a9116b8ebe848721a04d5100fa672b0aa" title="WireCell::Waveform\l::percentile" alt="" coords="1162,476,1302,517"/>
+<area shape="rect" id="node23" href="$namespace_wire_cell_1_1_waveform.html#a9a72f0b40ec9e5b44713c59f338f6fd3" title="WireCell::Waveform\l::median_binned" alt="" coords="946,609,1086,651"/>
+<area shape="rect" id="node24" href="$namespace_wire_cell_1_1_waveform.html#ae080d239c8b4426a6d74f9fd8ce85f1a" title="WireCell::Waveform\l::percentile_binned" alt="" coords="1162,567,1302,608"/>
+<area shape="rect" id="node25" href="$namespace_wire_cell_1_1_waveform.html#a6cfae9f74c1bf06f69d6991f3f82cef5" title="WireCell::Waveform::dft" alt="" coords="935,675,1097,702"/>
+<area shape="rect" id="node26" href="$namespace_wire_cell_1_1_waveform.html#aafc9307577968266045319c91ce3ab66" title="WireCell::Waveform\l::linear_convolve" alt="" coords="946,727,1086,768"/>
+<area shape="rect" id="node27" href="$namespace_wire_cell_1_1_waveform.html#abd675d86a770025f3ace47b277bf0e0e" title="WireCell::Waveform\l::replace_convolve" alt="" coords="946,792,1086,833"/>
+<area shape="rect" id="node28" href="$namespace_wire_cell_1_1_waveform.html#a69255dad704fcb71fa53745e90a2f0e1" title="WireCell::Waveform\l::idft" alt="" coords="946,857,1086,899"/>
+<area shape="rect" id="node29" href="$namespace_wire_cell_1_1_waveform.html#a86192f53532ba1e28516c2f8f3a9fa44" title="Return the smallest, most frequent value to appear in vector. " alt="" coords="946,923,1086,964"/>
+<area shape="rect" id="node20" href="$namespace_wire_cell_1_1_waveform.html#a4c7b82a4567d6c94227398f9511ffb92" title="Return sum of all entries in sequence. " alt="" coords="1145,382,1319,409"/>
+<area shape="rect" id="node32" href="$class_wire_cell_1_1_sig_proc_1_1_signal_r_o_i.html#a32fab4e24000404a740a19813892e105" title="WireCell::SigProc::\lSignalROI::get_max_height" alt="" coords="491,420,673,461"/>
+</map>

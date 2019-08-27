@@ -1,0 +1,6 @@
+<map id="WireCell::Diffusion::Diffusion" name="WireCell::Diffusion::Diffusion">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_i_diffusion.html#ac82a15088681538902392c880666aa3e" title="Return bins size in longitudinal direction. " alt="" coords="185,5,321,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_i_diffusion.html#abf2ecc1831078625a9f0fd439d773ce8" title="Return bins size in transverse direction. " alt="" coords="185,71,321,112"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_i_diffusion.html#a6e85228ca6d4b6848bb8f80a1018a2aa" title="WireCell::IDiffusion\l::lpos" alt="" coords="369,5,505,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_i_diffusion.html#a0f9fd1a277828333fa08f77fd9a6315d" title="WireCell::IDiffusion\l::tpos" alt="" coords="369,71,505,112"/>
+</map>

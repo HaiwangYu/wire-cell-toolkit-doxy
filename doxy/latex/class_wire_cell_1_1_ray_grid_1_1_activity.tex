@@ -1,0 +1,398 @@
+\hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity}{}\section{Wire\+Cell\+:\+:Ray\+Grid\+:\+:Activity Class Reference}
+\label{class_wire_cell_1_1_ray_grid_1_1_activity}\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+
+
+{\ttfamily \#include $<$Ray\+Tiling.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef double \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a19d09025219df912a8f57910468b4017}{value\+\_\+t}
+\item 
+typedef std\+::vector$<$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a19d09025219df912a8f57910468b4017}{value\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_af39e49aa9b463dc4f10271e0da7245a8}{vector\+\_\+t}
+\item 
+typedef vector\+\_\+t\+::const\+\_\+iterator \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{iterator\+\_\+t}
+\item 
+typedef std\+::pair$<$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{iterator\+\_\+t}, \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{iterator\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_af70e5851ae6fb8d76415033c0f90cb3e}{range\+\_\+t}
+\item 
+typedef std\+::vector$<$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_af70e5851ae6fb8d76415033c0f90cb3e}{range\+\_\+t} $>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_ac1614e7c72c06f7be7c03a80a25b024b}{ranges\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_aed4ac25a6f5ce1a5933b04f04858597e}{Activity} (\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a871b9e9a8f3d3fbc728ce1c50ef39ece}{layer})
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_abc20e03d0590c69828e595867a96b956}{Activity} (\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a871b9e9a8f3d3fbc728ce1c50ef39ece}{layer}, const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_af70e5851ae6fb8d76415033c0f90cb3e}{range\+\_\+t} \&span, int \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a8c051a729c264f4ca6e91e21e6edf729}{offset}=0, double threshold=0.\+0)
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a455f994f3f4edeadcb60daab1ed10a19}{Activity} (\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a871b9e9a8f3d3fbc728ce1c50ef39ece}{layer}, size\+\_\+t span, double value, int \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a8c051a729c264f4ca6e91e21e6edf729}{offset}=0, double threshold=0.\+0)
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity}{Activity} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a0c8f129658f18402202b7c9605dfe26f}{subspan} (int pi\+\_\+begin, int pi\+\_\+end) const
+\item 
+\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a871b9e9a8f3d3fbc728ce1c50ef39ece}{layer} () const
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{iterator\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_abb7e7e8dd7757d7efbd31b3f85f2a69a}{begin} () const
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{iterator\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_acb7cccddf07994a3bdc300dfb818dbf8}{end} () const
+\item 
+bool \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a3b387437e1942ce62001daa39cd1631f}{empty} () const
+\item 
+int \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_add0847697b47de9b2e1c6c6d46cc31e7}{pitch\+\_\+index} (const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{iterator\+\_\+t} \&it) const
+\item 
+\hyperlink{struct_wire_cell_1_1_ray_grid_1_1_strip}{Strip} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a08432ca0d7411ba1c990e2e53b46975d}{make\+\_\+strip} (const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_af70e5851ae6fb8d76415033c0f90cb3e}{range\+\_\+t} \&\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a0c8f129658f18402202b7c9605dfe26f}{subspan}) const
+\item 
+\hyperlink{namespace_wire_cell_1_1_ray_grid_a06c9ce08c0358d22fae3185aff8a9b7c}{strips\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4319dbeecdffdfe805f768530e0cbe9f}{make\+\_\+strips} () const
+\item 
+\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_ac1614e7c72c06f7be7c03a80a25b024b}{ranges\+\_\+t} \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_aae8ad1d5d95c9f5f4668975db2b68f3b}{active\+\_\+ranges} () const
+\item 
+int \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a8c051a729c264f4ca6e91e21e6edf729}{offset} () const
+\item 
+std\+::string \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_ad8e90c0bc1426818082926b28e280b50}{as\+\_\+string} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 51 of file Ray\+Tiling.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}\label{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!iterator\+\_\+t@{iterator\+\_\+t}}
+\index{iterator\+\_\+t@{iterator\+\_\+t}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{iterator\+\_\+t}{iterator\_t}}
+{\footnotesize\ttfamily typedef vector\+\_\+t\+::const\+\_\+iterator \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity\+::iterator\+\_\+t}}
+
+
+
+Definition at line 55 of file Ray\+Tiling.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_af70e5851ae6fb8d76415033c0f90cb3e}\label{class_wire_cell_1_1_ray_grid_1_1_activity_af70e5851ae6fb8d76415033c0f90cb3e}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!range\+\_\+t@{range\+\_\+t}}
+\index{range\+\_\+t@{range\+\_\+t}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{range\+\_\+t}{range\_t}}
+{\footnotesize\ttfamily typedef std\+::pair$<$\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{iterator\+\_\+t},\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{iterator\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_af70e5851ae6fb8d76415033c0f90cb3e}{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity\+::range\+\_\+t}}
+
+
+
+Definition at line 56 of file Ray\+Tiling.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_ac1614e7c72c06f7be7c03a80a25b024b}\label{class_wire_cell_1_1_ray_grid_1_1_activity_ac1614e7c72c06f7be7c03a80a25b024b}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!ranges\+\_\+t@{ranges\+\_\+t}}
+\index{ranges\+\_\+t@{ranges\+\_\+t}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{ranges\+\_\+t}{ranges\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_af70e5851ae6fb8d76415033c0f90cb3e}{range\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_ac1614e7c72c06f7be7c03a80a25b024b}{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity\+::ranges\+\_\+t}}
+
+
+
+Definition at line 57 of file Ray\+Tiling.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_a19d09025219df912a8f57910468b4017}\label{class_wire_cell_1_1_ray_grid_1_1_activity_a19d09025219df912a8f57910468b4017}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!value\+\_\+t@{value\+\_\+t}}
+\index{value\+\_\+t@{value\+\_\+t}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{value\+\_\+t}{value\_t}}
+{\footnotesize\ttfamily typedef double \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a19d09025219df912a8f57910468b4017}{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity\+::value\+\_\+t}}
+
+
+
+Definition at line 53 of file Ray\+Tiling.\+h.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_af39e49aa9b463dc4f10271e0da7245a8}\label{class_wire_cell_1_1_ray_grid_1_1_activity_af39e49aa9b463dc4f10271e0da7245a8}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!vector\+\_\+t@{vector\+\_\+t}}
+\index{vector\+\_\+t@{vector\+\_\+t}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{vector\+\_\+t}{vector\_t}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a19d09025219df912a8f57910468b4017}{value\+\_\+t}$>$ \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_af39e49aa9b463dc4f10271e0da7245a8}{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity\+::vector\+\_\+t}}
+
+
+
+Definition at line 54 of file Ray\+Tiling.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_aed4ac25a6f5ce1a5933b04f04858597e}\label{class_wire_cell_1_1_ray_grid_1_1_activity_aed4ac25a6f5ce1a5933b04f04858597e}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!Activity@{Activity}}
+\index{Activity@{Activity}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{Activity()}{Activity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Activity\+::\+Activity (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t}}]{layer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file Ray\+Tiling.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_activity_aed4ac25a6f5ce1a5933b04f04858597e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_wire_cell_1_1_ray_grid_1_1_activity_aed4ac25a6f5ce1a5933b04f04858597e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_abc20e03d0590c69828e595867a96b956}\label{class_wire_cell_1_1_ray_grid_1_1_activity_abc20e03d0590c69828e595867a96b956}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!Activity@{Activity}}
+\index{Activity@{Activity}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{Activity()}{Activity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Activity\+::\+Activity (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t}}]{layer,  }\item[{const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_af70e5851ae6fb8d76415033c0f90cb3e}{range\+\_\+t} \&}]{span,  }\item[{int}]{offset = {\ttfamily 0},  }\item[{double}]{threshold = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file Ray\+Tiling.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_activity_abc20e03d0590c69828e595867a96b956_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_a455f994f3f4edeadcb60daab1ed10a19}\label{class_wire_cell_1_1_ray_grid_1_1_activity_a455f994f3f4edeadcb60daab1ed10a19}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!Activity@{Activity}}
+\index{Activity@{Activity}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{Activity()}{Activity()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Activity\+::\+Activity (\begin{DoxyParamCaption}\item[{\hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t}}]{layer,  }\item[{size\+\_\+t}]{span,  }\item[{double}]{value,  }\item[{int}]{offset = {\ttfamily 0},  }\item[{double}]{threshold = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file Ray\+Tiling.\+cxx.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_aae8ad1d5d95c9f5f4668975db2b68f3b}\label{class_wire_cell_1_1_ray_grid_1_1_activity_aae8ad1d5d95c9f5f4668975db2b68f3b}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!active\+\_\+ranges@{active\+\_\+ranges}}
+\index{active\+\_\+ranges@{active\+\_\+ranges}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{active\+\_\+ranges()}{active\_ranges()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_ac1614e7c72c06f7be7c03a80a25b024b}{Activity\+::ranges\+\_\+t} Activity\+::active\+\_\+ranges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 102 of file Ray\+Tiling.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_wire_cell_1_1_ray_grid_1_1_activity_aae8ad1d5d95c9f5f4668975db2b68f3b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_activity_aae8ad1d5d95c9f5f4668975db2b68f3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_ad8e90c0bc1426818082926b28e280b50}\label{class_wire_cell_1_1_ray_grid_1_1_activity_ad8e90c0bc1426818082926b28e280b50}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!as\+\_\+string@{as\+\_\+string}}
+\index{as\+\_\+string@{as\+\_\+string}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{as\+\_\+string()}{as\_string()}}
+{\footnotesize\ttfamily std\+::string Activity\+::as\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 291 of file Ray\+Tiling.\+cxx.
+
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_abb7e7e8dd7757d7efbd31b3f85f2a69a}\label{class_wire_cell_1_1_ray_grid_1_1_activity_abb7e7e8dd7757d7efbd31b3f85f2a69a}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!begin@{begin}}
+\index{begin@{begin}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{Activity\+::iterator\+\_\+t} Activity\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 50 of file Ray\+Tiling.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_activity_abb7e7e8dd7757d7efbd31b3f85f2a69a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_a3b387437e1942ce62001daa39cd1631f}\label{class_wire_cell_1_1_ray_grid_1_1_activity_a3b387437e1942ce62001daa39cd1631f}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!empty@{empty}}
+\index{empty@{empty}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool Activity\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 60 of file Ray\+Tiling.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_wire_cell_1_1_ray_grid_1_1_activity_a3b387437e1942ce62001daa39cd1631f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_acb7cccddf07994a3bdc300dfb818dbf8}\label{class_wire_cell_1_1_ray_grid_1_1_activity_acb7cccddf07994a3bdc300dfb818dbf8}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!end@{end}}
+\index{end@{end}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{Activity\+::iterator\+\_\+t} Activity\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 55 of file Ray\+Tiling.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_activity_acb7cccddf07994a3bdc300dfb818dbf8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_a871b9e9a8f3d3fbc728ce1c50ef39ece}\label{class_wire_cell_1_1_ray_grid_1_1_activity_a871b9e9a8f3d3fbc728ce1c50ef39ece}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!layer@{layer}}
+\index{layer@{layer}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{layer()}{layer()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_ray_grid_ab7562e54b58eede813d5b70b5eb85812}{layer\+\_\+index\+\_\+t} Wire\+Cell\+::\+Ray\+Grid\+::\+Activity\+::layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 75 of file Ray\+Tiling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_wire_cell_1_1_ray_grid_1_1_activity_a871b9e9a8f3d3fbc728ce1c50ef39ece_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_activity_a871b9e9a8f3d3fbc728ce1c50ef39ece_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_a08432ca0d7411ba1c990e2e53b46975d}\label{class_wire_cell_1_1_ray_grid_1_1_activity_a08432ca0d7411ba1c990e2e53b46975d}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!make\+\_\+strip@{make\+\_\+strip}}
+\index{make\+\_\+strip@{make\+\_\+strip}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{make\+\_\+strip()}{make\_strip()}}
+{\footnotesize\ttfamily \hyperlink{struct_wire_cell_1_1_ray_grid_1_1_strip}{Strip} Activity\+::make\+\_\+strip (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_af70e5851ae6fb8d76415033c0f90cb3e}{range\+\_\+t} \&}]{subspan }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 86 of file Ray\+Tiling.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_wire_cell_1_1_ray_grid_1_1_activity_a08432ca0d7411ba1c990e2e53b46975d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_activity_a08432ca0d7411ba1c990e2e53b46975d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_a4319dbeecdffdfe805f768530e0cbe9f}\label{class_wire_cell_1_1_ray_grid_1_1_activity_a4319dbeecdffdfe805f768530e0cbe9f}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!make\+\_\+strips@{make\+\_\+strips}}
+\index{make\+\_\+strips@{make\+\_\+strips}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{make\+\_\+strips()}{make\_strips()}}
+{\footnotesize\ttfamily \hyperlink{namespace_wire_cell_1_1_ray_grid_a06c9ce08c0358d22fae3185aff8a9b7c}{strips\+\_\+t} Activity\+::make\+\_\+strips (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 92 of file Ray\+Tiling.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_activity_a4319dbeecdffdfe805f768530e0cbe9f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_wire_cell_1_1_ray_grid_1_1_activity_a4319dbeecdffdfe805f768530e0cbe9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_a8c051a729c264f4ca6e91e21e6edf729}\label{class_wire_cell_1_1_ray_grid_1_1_activity_a8c051a729c264f4ca6e91e21e6edf729}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!offset@{offset}}
+\index{offset@{offset}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{offset()}{offset()}}
+{\footnotesize\ttfamily int Wire\+Cell\+::\+Ray\+Grid\+::\+Activity\+::offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 96 of file Ray\+Tiling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_wire_cell_1_1_ray_grid_1_1_activity_a8c051a729c264f4ca6e91e21e6edf729_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_add0847697b47de9b2e1c6c6d46cc31e7}\label{class_wire_cell_1_1_ray_grid_1_1_activity_add0847697b47de9b2e1c6c6d46cc31e7}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!pitch\+\_\+index@{pitch\+\_\+index}}
+\index{pitch\+\_\+index@{pitch\+\_\+index}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{pitch\+\_\+index()}{pitch\_index()}}
+{\footnotesize\ttfamily int Activity\+::pitch\+\_\+index (\begin{DoxyParamCaption}\item[{const \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity_a4e6dc9c676d517a5819962b10a2638fe}{iterator\+\_\+t} \&}]{it }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 65 of file Ray\+Tiling.\+cxx.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_activity_add0847697b47de9b2e1c6c6d46cc31e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_wire_cell_1_1_ray_grid_1_1_activity_a0c8f129658f18402202b7c9605dfe26f}\label{class_wire_cell_1_1_ray_grid_1_1_activity_a0c8f129658f18402202b7c9605dfe26f}} 
+\index{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}!subspan@{subspan}}
+\index{subspan@{subspan}!Wire\+Cell\+::\+Ray\+Grid\+::\+Activity@{Wire\+Cell\+::\+Ray\+Grid\+::\+Activity}}
+\subsubsection{\texorpdfstring{subspan()}{subspan()}}
+{\footnotesize\ttfamily \hyperlink{class_wire_cell_1_1_ray_grid_1_1_activity}{Activity} Activity\+::subspan (\begin{DoxyParamCaption}\item[{int}]{pi\+\_\+begin,  }\item[{int}]{pi\+\_\+end }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 70 of file Ray\+Tiling.\+cxx.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_wire_cell_1_1_ray_grid_1_1_activity_a0c8f129658f18402202b7c9605dfe26f_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/\+Wire\+Cell\+Util/\hyperlink{_ray_tiling_8h}{Ray\+Tiling.\+h}\item 
+util/src/\hyperlink{_ray_tiling_8cxx}{Ray\+Tiling.\+cxx}\end{DoxyCompactItemize}

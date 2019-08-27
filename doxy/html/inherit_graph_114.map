@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$structinternal_1_1is__like__std__string_3_01fmt_1_1basic__string__view_3_01_char_01_4_01_4.html" title="internal::is_like_std\l_string\&lt; fmt::basic_string\l_view\&lt; Char \&gt; \&gt;" alt="" coords="151,5,322,61"/>
+<area shape="rect" id="node3" href="$structinternal_1_1is__range___3_01_t_00_01typename_01std_1_1conditional_3_01false_00_01condition3cb3b849b8281fb701deab896849f46a.html" title="internal::is_range\l_\&lt; T, typename std::\lconditional\&lt; false, conditional\l_helper\&lt; decltype(internal\l::declval\&lt; T \&gt;().begin()), decltype\l(internal::declval\&lt; T \&gt;().end())\&gt;\l, void \&gt;::type \&gt;" alt="" coords="129,85,344,200"/>
+<area shape="rect" id="node4" href="$structis__contiguous_3_01internal_1_1basic__buffer_3_01_char_01_4_01_4.html" title="is_contiguous\&lt; internal\l::basic_buffer\&lt; Char \&gt; \&gt;" alt="" coords="154,225,319,266"/>
+<area shape="rect" id="node5" href="$structis__contiguous_3_01std_1_1basic__string_3_01_char_01_4_01_4.html" title="is_contiguous\&lt; std\l::basic_string\&lt; Char \&gt; \&gt;" alt="" coords="155,290,319,331"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="WireCell::Gen::BinnedDiffusion_transform::get_charge_vec" name="WireCell::Gen::BinnedDiffusion_transform::get_charge_vec">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_binned_diffusion__transform.html#a57f26ea414abfae84cf54bdbe7992db5" title="WireCell::Gen::BinnedDiffusion\l_transform::tbins" alt="" coords="261,5,465,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_impact_transform.html#ad467b6b26b2e740a1c170cb8a5223e6e" title="WireCell::Gen::ImpactTransform\l::ImpactTransform" alt="" coords="257,71,468,112"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_impact_transform.html#ad65b81bab03b2a6f8836782c732556bc" title="WireCell::Gen::ImpactTransform\l::waveform" alt="" coords="516,5,727,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_depo_transform.html#a72bd0b9e256a8e9f4311c61cf6b5692b" title="WireCell::Gen::DepoTransform\l::operator()" alt="" coords="775,5,977,47"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="WireCell::Factory::lookup" name="WireCell::Factory::lookup">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_named_factory_registry.html#a81b540cbf24b04c728ad24a7e0af6c2e" title="WireCell::NamedFactoryRegistry\l::instance" alt="" coords="185,179,400,221"/>
+<area shape="rect" id="node12" href="$namespacespdlog.html#a852b420dc3dd5e5193a21f61f8577e62" title="spdlog::create" alt="" coords="481,289,585,316"/>
+<area shape="rect" id="node3" href="$namespace_wire_cell_1_1_factory.html#a33318e89ff05184cf57267d20bdc076c" title="Lookup up a factory for the given type. " alt="" coords="467,106,599,147"/>
+<area shape="rect" id="node6" href="$class_wire_cell_1_1_i_named_factory.html#a4e87a7c8957a57aa6d23fef2f9e1dbd3" title="Return existing instance or nullptr if not found. " alt="" coords="929,187,1100,229"/>
+<area shape="rect" id="node13" href="$class_wire_cell_1_1_i_named_factory.html#aab305aa4c3d65450f97f95b26475d3fe" title="Create an instance by name. " alt="" coords="448,223,619,265"/>
+<area shape="rect" id="node14" href="$namespace_wire_cell.html#a1f69a2598e2cdb413ffac1157b50670a" title="WireCell::type" alt="" coords="721,23,827,49"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_named_factory_registry.html#a355e9be03e1950d63a14ae9bb2989918" title="Look up an existing factory by the name of the &quot;class&quot; it can create. " alt="" coords="667,106,881,147"/>
+<area shape="rect" id="node5" href="$namespace_wire_cell.html#a7d0326b3a49de0eeba671d6dc20a1959" title="WireCell::demangle" alt="" coords="947,5,1083,32"/>
+<area shape="rect" id="node7" href="$class_wire_cell_1_1_plugin_manager.html#aa1a081d67e99b8ef796b879e450fc8e0" title="WireCell::PluginManager\l::instance" alt="" coords="931,122,1098,163"/>
+<area shape="rect" id="node8" href="$class_wire_cell_1_1_plugin_manager.html#ad83fad032405351bde15ad4abeeef819" title="WireCell::PluginManager\l::find" alt="" coords="931,57,1098,98"/>
+<area shape="rect" id="node9" href="$class_wire_cell_1_1_plugin.html#ab8f49d4beba0924fa53ba45ec54ad649" title="WireCell::Plugin::contains" alt="" coords="1148,39,1321,65"/>
+<area shape="rect" id="node11" href="$namespace_wire_cell_1_1_log.html#a7675bcc4bf25b2bc66314d5c096cf676" title="WireCell::Log::logger" alt="" coords="1163,89,1307,116"/>
+<area shape="rect" id="node10" href="$class_wire_cell_1_1_plugin.html#a6532d3eb05241c25780a18194cd6572f" title="WireCell::Plugin::raw" alt="" coords="1369,39,1515,65"/>
+</map>

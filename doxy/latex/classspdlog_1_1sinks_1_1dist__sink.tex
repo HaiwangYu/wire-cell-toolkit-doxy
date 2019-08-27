@@ -1,0 +1,254 @@
+\hypertarget{classspdlog_1_1sinks_1_1dist__sink}{}\section{spdlog\+:\+:sinks\+:\+:dist\+\_\+sink$<$ Mutex $>$ Class Template Reference}
+\label{classspdlog_1_1sinks_1_1dist__sink}\index{spdlog\+::sinks\+::dist\+\_\+sink$<$ Mutex $>$@{spdlog\+::sinks\+::dist\+\_\+sink$<$ Mutex $>$}}
+
+
+{\ttfamily \#include $<$dist\+\_\+sink.\+h$>$}
+
+
+
+Inheritance diagram for spdlog\+:\+:sinks\+:\+:dist\+\_\+sink$<$ Mutex $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classspdlog_1_1sinks_1_1dist__sink__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for spdlog\+:\+:sinks\+:\+:dist\+\_\+sink$<$ Mutex $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classspdlog_1_1sinks_1_1dist__sink__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1dist__sink_ab5cfe7f044b6381435eac6dc273384e5}{dist\+\_\+sink} ()=default
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1dist__sink_afadef20aeb435c8b62b2efa2f0906de5}{dist\+\_\+sink} (const \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{dist\+\_\+sink} \&)=delete
+\item 
+\hyperlink{classspdlog_1_1sinks_1_1dist__sink}{dist\+\_\+sink} \& \hyperlink{classspdlog_1_1sinks_1_1dist__sink_a6f91b5522c12fd448ca2fd7cb8fe0097}{operator=} (const \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{dist\+\_\+sink} \&)=delete
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink_ae2250f59f23ecaf3214da6059198ad3c}{add\+\_\+sink} (std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1sinks_1_1sink}{sink} $>$ \hyperlink{classspdlog_1_1sinks_1_1sink}{sink})
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink_ac1537fdc6225fd57cc819e1fb9c5f8c7}{remove\+\_\+sink} (std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1sinks_1_1sink}{sink} $>$ \hyperlink{classspdlog_1_1sinks_1_1sink}{sink})
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink_aa0e154cef03e368fefaa7bc845d682a1}{set\+\_\+sinks} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1sinks_1_1sink}{sink} $>$$>$ sinks)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink_a516ef929a8cd73df2ead2e0086e04607}{sink\+\_\+it\+\_\+} (const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&msg) override
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink_a790a80f63276473cedbce99047adcab0}{flush\+\_\+} () override
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink_a6f77a1e2f45ed85ee8ed554cf7442d4e}{set\+\_\+pattern\+\_\+} (const std\+::string \&pattern) override
+\item 
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink_a5e83e285fcceaab7ee4c4736c2decef0}{set\+\_\+formatter\+\_\+} (std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$ sink\+\_\+formatter) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1sinks_1_1sink}{sink} $>$ $>$ \hyperlink{classspdlog_1_1sinks_1_1dist__sink_a3d9d8c330d7d6455f45db77d4e6977f4}{sinks\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Mutex$>$\newline
+class spdlog\+::sinks\+::dist\+\_\+sink$<$ Mutex $>$}
+
+
+
+Definition at line 28 of file dist\+\_\+sink.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_ab5cfe7f044b6381435eac6dc273384e5}\label{classspdlog_1_1sinks_1_1dist__sink_ab5cfe7f044b6381435eac6dc273384e5}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!dist\+\_\+sink@{dist\+\_\+sink}}
+\index{dist\+\_\+sink@{dist\+\_\+sink}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{dist\+\_\+sink()}{dist\_sink()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::\hyperlink{classspdlog_1_1sinks_1_1dist__sink}{dist\+\_\+sink} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_afadef20aeb435c8b62b2efa2f0906de5}\label{classspdlog_1_1sinks_1_1dist__sink_afadef20aeb435c8b62b2efa2f0906de5}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!dist\+\_\+sink@{dist\+\_\+sink}}
+\index{dist\+\_\+sink@{dist\+\_\+sink}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{dist\+\_\+sink()}{dist\_sink()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::\hyperlink{classspdlog_1_1sinks_1_1dist__sink}{dist\+\_\+sink} (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{dist\+\_\+sink}$<$ Mutex $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_ae2250f59f23ecaf3214da6059198ad3c}\label{classspdlog_1_1sinks_1_1dist__sink_ae2250f59f23ecaf3214da6059198ad3c}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!add\+\_\+sink@{add\+\_\+sink}}
+\index{add\+\_\+sink@{add\+\_\+sink}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{add\+\_\+sink()}{add\_sink()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::add\+\_\+sink (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1sinks_1_1sink}{sink} $>$}]{sink }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 35 of file dist\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_a790a80f63276473cedbce99047adcab0}\label{classspdlog_1_1sinks_1_1dist__sink_a790a80f63276473cedbce99047adcab0}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!flush\+\_\+@{flush\+\_\+}}
+\index{flush\+\_\+@{flush\+\_\+}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{flush\+\_\+()}{flush\_()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::flush\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1base__sink_a5ac2b237c60f68a18122a1ca09b812b4}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+
+
+Definition at line 66 of file dist\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classspdlog_1_1sinks_1_1dist__sink_a790a80f63276473cedbce99047adcab0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_a6f91b5522c12fd448ca2fd7cb8fe0097}\label{classspdlog_1_1sinks_1_1dist__sink_a6f91b5522c12fd448ca2fd7cb8fe0097}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!operator=@{operator=}}
+\index{operator=@{operator=}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+\hyperlink{classspdlog_1_1sinks_1_1dist__sink}{dist\+\_\+sink}\& \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{dist\+\_\+sink}$<$ Mutex $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_ac1537fdc6225fd57cc819e1fb9c5f8c7}\label{classspdlog_1_1sinks_1_1dist__sink_ac1537fdc6225fd57cc819e1fb9c5f8c7}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!remove\+\_\+sink@{remove\+\_\+sink}}
+\index{remove\+\_\+sink@{remove\+\_\+sink}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{remove\+\_\+sink()}{remove\_sink()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::remove\+\_\+sink (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1sinks_1_1sink}{sink} $>$}]{sink }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 41 of file dist\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classspdlog_1_1sinks_1_1dist__sink_ac1537fdc6225fd57cc819e1fb9c5f8c7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_a5e83e285fcceaab7ee4c4736c2decef0}\label{classspdlog_1_1sinks_1_1dist__sink_a5e83e285fcceaab7ee4c4736c2decef0}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!set\+\_\+formatter\+\_\+@{set\+\_\+formatter\+\_\+}}
+\index{set\+\_\+formatter\+\_\+@{set\+\_\+formatter\+\_\+}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{set\+\_\+formatter\+\_\+()}{set\_formatter\_()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::set\+\_\+formatter\+\_\+ (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \hyperlink{classspdlog_1_1formatter}{spdlog\+::formatter} $>$}]{sink\+\_\+formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classspdlog_1_1sinks_1_1base__sink_aed93aabfba62b684e603eb525671c864}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+
+
+Definition at line 79 of file dist\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classspdlog_1_1sinks_1_1dist__sink_a5e83e285fcceaab7ee4c4736c2decef0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classspdlog_1_1sinks_1_1dist__sink_a5e83e285fcceaab7ee4c4736c2decef0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_a6f77a1e2f45ed85ee8ed554cf7442d4e}\label{classspdlog_1_1sinks_1_1dist__sink_a6f77a1e2f45ed85ee8ed554cf7442d4e}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!set\+\_\+pattern\+\_\+@{set\+\_\+pattern\+\_\+}}
+\index{set\+\_\+pattern\+\_\+@{set\+\_\+pattern\+\_\+}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{set\+\_\+pattern\+\_\+()}{set\_pattern\_()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::set\+\_\+pattern\+\_\+ (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{classspdlog_1_1sinks_1_1base__sink_a56bc5fc8e03dc0aeb6679856ffee7fb4}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+
+
+Definition at line 74 of file dist\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classspdlog_1_1sinks_1_1dist__sink_a6f77a1e2f45ed85ee8ed554cf7442d4e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_aa0e154cef03e368fefaa7bc845d682a1}\label{classspdlog_1_1sinks_1_1dist__sink_aa0e154cef03e368fefaa7bc845d682a1}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!set\+\_\+sinks@{set\+\_\+sinks}}
+\index{set\+\_\+sinks@{set\+\_\+sinks}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{set\+\_\+sinks()}{set\_sinks()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::set\+\_\+sinks (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classspdlog_1_1sinks_1_1sink}{sink} $>$$>$}]{sinks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 47 of file dist\+\_\+sink.\+h.
+
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_a516ef929a8cd73df2ead2e0086e04607}\label{classspdlog_1_1sinks_1_1dist__sink_a516ef929a8cd73df2ead2e0086e04607}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!sink\+\_\+it\+\_\+@{sink\+\_\+it\+\_\+}}
+\index{sink\+\_\+it\+\_\+@{sink\+\_\+it\+\_\+}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{sink\+\_\+it\+\_\+()}{sink\_it\_()}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+void \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::sink\+\_\+it\+\_\+ (\begin{DoxyParamCaption}\item[{const \hyperlink{structspdlog_1_1details_1_1log__msg}{details\+::log\+\_\+msg} \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classspdlog_1_1sinks_1_1base__sink_ad698d300cb7f5e58b2aa1b9907cdbd87}{spdlog\+::sinks\+::base\+\_\+sink$<$ Mutex $>$}.
+
+
+
+Definition at line 54 of file dist\+\_\+sink.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classspdlog_1_1sinks_1_1dist__sink_a516ef929a8cd73df2ead2e0086e04607_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classspdlog_1_1sinks_1_1dist__sink_a3d9d8c330d7d6455f45db77d4e6977f4}\label{classspdlog_1_1sinks_1_1dist__sink_a3d9d8c330d7d6455f45db77d4e6977f4}} 
+\index{spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}!sinks\+\_\+@{sinks\+\_\+}}
+\index{sinks\+\_\+@{sinks\+\_\+}!spdlog\+::sinks\+::dist\+\_\+sink@{spdlog\+::sinks\+::dist\+\_\+sink}}
+\subsubsection{\texorpdfstring{sinks\+\_\+}{sinks\_}}
+{\footnotesize\ttfamily template$<$typename Mutex $>$ \\
+std\+::vector$<$std\+::shared\+\_\+ptr$<$\hyperlink{classspdlog_1_1sinks_1_1sink}{sink}$>$ $>$ \hyperlink{classspdlog_1_1sinks_1_1dist__sink}{spdlog\+::sinks\+::dist\+\_\+sink}$<$ Mutex $>$\+::sinks\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 87 of file dist\+\_\+sink.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util/inc/spdlog/sinks/\hyperlink{dist__sink_8h}{dist\+\_\+sink.\+h}\end{DoxyCompactItemize}

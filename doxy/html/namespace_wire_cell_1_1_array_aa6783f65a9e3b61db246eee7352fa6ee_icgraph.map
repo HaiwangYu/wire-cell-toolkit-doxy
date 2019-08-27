@@ -1,0 +1,6 @@
+<map id="WireCell::Array::dft" name="WireCell::Array::dft">
+<area shape="rect" id="node2" href="$class_wire_cell_1_1_gen_1_1_impact_response.html#a8bd5c0dbe10911359e29892d4f1380c1" title="Frequency&#45;domain spectrum of response. " alt="" coords="188,5,399,47"/>
+<area shape="rect" id="node4" href="$class_wire_cell_1_1_gen_1_1_impact_response.html#a8d8bd238c6286a8e6c70dc7a543a5ca3" title="WireCell::Gen::ImpactResponse\l::long_aux_spectrum" alt="" coords="188,71,399,112"/>
+<area shape="rect" id="node3" href="$class_wire_cell_1_1_gen_1_1_impact_response.html#ad10810e7b4dfbc2ab17cd79ff3b962f5" title="WireCell::Gen::ImpactResponse\l::ImpactResponse" alt="" coords="447,5,657,47"/>
+<area shape="rect" id="node5" href="$class_wire_cell_1_1_gen_1_1_impact_response.html#a11a5437cb671e68e35244757d92dda56" title="WireCell::Gen::ImpactResponse\l::waveform_pad" alt="" coords="447,71,657,112"/>
+</map>

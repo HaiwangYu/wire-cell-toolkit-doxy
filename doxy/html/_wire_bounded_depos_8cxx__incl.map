@@ -1,0 +1,34 @@
+<map id="gen/src/WireBoundedDepos.cxx" name="gen/src/WireBoundedDepos.cxx">
+<area shape="rect" id="node2" href="$_wire_bounded_depos_8h.html" title="WireCellGen/WireBoundedDepos.h" alt="" coords="1181,80,1407,107"/>
+<area shape="rect" id="node13" href="$_units_8h.html" title="WireCellUtil/Units.h" alt="" coords="869,453,1007,480"/>
+<area shape="rect" id="node17" href="$_i_anode_plane_8h.html" title="WireCellIface/IAnodePlane.h" alt="" coords="635,155,825,181"/>
+<area shape="rect" id="node18" href="$_i_anode_face_8h.html" title="WireCellIface/IAnodeFace.h" alt="" coords="1029,229,1215,256"/>
+<area shape="rect" id="node22" href="$_i_wire_plane_8h.html" title="WireCellIface/IWirePlane.h" alt="" coords="600,304,780,331"/>
+<area shape="rect" id="node31" href="$_named_factory_8h.html" title="WireCellUtil/NamedFactory.h" alt="" coords="2065,304,2259,331"/>
+<area shape="rect" id="node41" href="$_string_8h.html" title="WireCellUtil/String.h" alt="" coords="2777,453,2918,480"/>
+<area shape="rect" id="node49" href="$_simple_depo_8h.html" title="WireCellIface/SimpleDepo.h" alt="" coords="767,229,954,256"/>
+<area shape="rect" id="node3" href="$_i_drifter_8h.html" title="WireCellIface/IDrifter.h" alt="" coords="1291,304,1447,331"/>
+<area shape="rect" id="node14" href="$_i_configurable_8h.html" title="WireCellIface/IConfigurable.h" alt="" coords="1133,379,1327,405"/>
+<area shape="rect" id="node4" href="$_i_queuedout_node_8h.html" title="WireCellIface/IQueuedout\lNode.h" alt="" coords="1345,603,1517,644"/>
+<area shape="rect" id="node6" href="$_i_depo_8h.html" title="WireCellIface/IDepo.h" alt="" coords="479,379,629,405"/>
+<area shape="rect" id="node7" href="$_i_data_8h.html" title="WireCellIface/IData.h" alt="" coords="5,528,153,555"/>
+<area shape="rect" id="node9" href="$_point_8h.html" title="WireCellUtil/Point.h" alt="" coords="979,528,1116,555"/>
+<area shape="rect" id="node10" href="$_configuration_8h.html" title="WireCellUtil/Configuration.h" alt="" coords="1035,610,1219,637"/>
+<area shape="rect" id="node15" href="$_i_component_8h.html" title="WireCellUtil/IComponent.h" alt="" coords="1082,453,1261,480"/>
+<area shape="rect" id="node16" href="$_interface_8h.html" title="WireCellUtil/Interface.h" alt="" coords="533,528,692,555"/>
+<area shape="rect" id="node24" href="$_i_wire_8h.html" title="WireCellIface/IWire.h" alt="" coords="235,453,382,480"/>
+<area shape="rect" id="node26" href="$_wire_plane_id_8h.html" title="WireCellIface/WirePlaneId.h" alt="" coords="717,528,903,555"/>
+<area shape="rect" id="node29" href="$_i_channel_8h.html" title="WireCellIface/IChannel.h" alt="" coords="134,379,302,405"/>
+<area shape="rect" id="node19" href="$_bounding_box_8h.html" title="WireCellUtil/BoundingBox.h" alt="" coords="930,304,1114,331"/>
+<area shape="rect" id="node20" href="$_ray_grid_8h.html" title="WireCellUtil/RayGrid.h" alt="" coords="1398,453,1553,480"/>
+<area shape="rect" id="node23" href="$_pimpos_8h.html" title="WireCellUtil/Pimpos.h" alt="" coords="653,379,804,405"/>
+<area shape="rect" id="node25" href="$_i_sequence_8h.html" title="WireCellIface/ISequence.h" alt="" coords="279,528,458,555"/>
+<area shape="rect" id="node32" href="$_i_factory_8h.html" title="WireCellUtil/IFactory.h" alt="" coords="1351,379,1506,405"/>
+<area shape="rect" id="node33" href="$_singleton_8h.html" title="WireCellUtil/Singleton.h" alt="" coords="1784,379,1945,405"/>
+<area shape="rect" id="node34" href="$_plugin_manager_8h.html" title="WireCellUtil/PluginManager.h" alt="" coords="2316,379,2509,405"/>
+<area shape="rect" id="node35" href="$_logging_8h.html" title="WireCellUtil/Logging.h" alt="" coords="2266,453,2418,480"/>
+<area shape="rect" id="node39" href="$_type_8h.html" title="WireCellUtil/Type.h" alt="" coords="2021,379,2157,405"/>
+<area shape="rect" id="node44" href="$_exceptions_8h.html" title="WireCellUtil/Exceptions.h" alt="" coords="2636,379,2808,405"/>
+<area shape="rect" id="node36" href="$spdlog_8h.html" title="spdlog/spdlog.h" alt="" coords="1683,528,1796,555"/>
+<area shape="rect" id="node38" href="$ostr_8h.html" title="spdlog/fmt/ostr.h" alt="" coords="2266,528,2386,555"/>
+</map>

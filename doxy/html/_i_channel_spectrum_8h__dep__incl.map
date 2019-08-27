@@ -1,0 +1,9 @@
+<map id="iface/inc/WireCellIface/IChannelSpectrum.h" name="iface/inc/WireCellIface/IChannelSpectrum.h">
+<area shape="rect" id="node2" href="$_iface_desctructors_8cxx.html" title="iface/src/IfaceDesctructors.cxx" alt="" coords="5,102,211,129"/>
+<area shape="rect" id="node3" href="$_add_noise_8h.html" title="gen/inc/WireCellGen\l/AddNoise.h" alt="" coords="235,95,378,136"/>
+<area shape="rect" id="node5" href="$_empirical_noise_model_8h.html" title="gen/inc/WireCellGen\l/EmpiricalNoiseModel.h" alt="" coords="403,95,563,136"/>
+<area shape="rect" id="node7" href="$_noise_source_8h.html" title="gen/inc/WireCellGen\l/NoiseSource.h" alt="" coords="609,95,751,136"/>
+<area shape="rect" id="node4" href="$_add_noise_8cxx.html" title="gen/src/AddNoise.cxx" alt="" coords="199,184,350,211"/>
+<area shape="rect" id="node6" href="$_empirical_noise_model_8cxx.html" title="gen/src/EmpiricalNoiseModel.cxx" alt="" coords="374,184,591,211"/>
+<area shape="rect" id="node8" href="$_noise_source_8cxx.html" title="gen/src/NoiseSource.cxx" alt="" coords="615,184,785,211"/>
+</map>
